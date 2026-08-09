@@ -55,6 +55,7 @@ poryscript
 generators.py
 data/maps/*/*scripts.inc
 dockerfile
+!Dockerfile
 dd_lazy_utils/ # doubledot stuff
 *.ups
 *.bps

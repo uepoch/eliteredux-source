@@ -141,9 +141,13 @@ RAMSCRGEN := tools/ramscrgen/ramscrgen$(EXE)
 FIX := tools/gbafix/gbafix$(EXE)
 MAPJSON := tools/mapjson/mapjson$(EXE)
 JSONPROC := tools/jsonproc/jsonproc$(EXE)
-SCRIPT := tools/poryscript/poryscript$(EXE) tools/poryscript/command_config.json tools/poryscript/font_config.json
+PORYSCRIPT_DIR ?= tools/poryscript
+SCRIPT := $(PORYSCRIPT_DIR)/poryscript$(EXE)
+PORYSCRIPT_CONFIGS := $(PORYSCRIPT_DIR)/command_config.json $(PORYSCRIPT_DIR)/font_config.json
 
 PERL := perl
+
+DOCKER_TARGETS := docker-bps docker-codegen docker-protos docker-check-protos docker-test-codegen docker-shell
 
 TOOLDIRS := $(filter-out tools/agbcc tools/binutils tools/poryscript,$(wildcard tools/*))
 TOOLBASE = $(TOOLDIRS:tools/%=%)
@@ -161,7 +165,7 @@ MAKEFLAGS += --no-print-directory
 # Secondary expansion is required for dependency variables in object rules.
 .SECONDEXPANSION:
 
-.PHONY: all rom clean compare tidy tools mostlyclean clean-tools $(TOOLDIRS) libagbsyscall modern tidymodern tidynonmodern
+.PHONY: all rom clean compare tidy tools mostlyclean clean-tools $(TOOLDIRS) libagbsyscall modern tidymodern tidynonmodern $(DOCKER_TARGETS)
 
 infoshell = $(foreach line, $(shell $1 | sed "s/ /__SPACE__/g"), $(info $(subst __SPACE__, ,$(line))))
 
@@ -181,7 +185,7 @@ ifeq (,$(MAKECMDGOALS))
 else
   # clean, tidy, tools, mostlyclean, clean-tools, $(TOOLDIRS), tidymodern, tidynonmodern don't even build the ROM
   # berry_fix and libagbsyscall do their own thing
-  ifeq (,$(filter-out clean tidy tools mostlyclean clean-tools $(TOOLDIRS) tidymodern tidynonmodern libagbsyscall,$(MAKECMDGOALS)))
+  ifeq (,$(filter-out clean tidy tools mostlyclean clean-tools $(TOOLDIRS) tidymodern tidynonmodern libagbsyscall $(DOCKER_TARGETS),$(MAKECMDGOALS)))
     SCAN_DEPS ?= 0
   else
     SCAN_DEPS ?= 1
@@ -226,6 +230,24 @@ endif
 AUTO_GEN_TARGETS :=
 
 all: rom
+
+docker-bps:
+	@./docker/build-bps.sh bps
+
+docker-codegen:
+	@./docker/build-bps.sh codegen
+
+docker-protos:
+	@./docker/build-bps.sh protos
+
+docker-check-protos:
+	@./docker/build-bps.sh check-protos
+
+docker-test-codegen:
+	@./docker/build-bps.sh test-codegen
+
+docker-shell:
+	@./docker/build-bps.sh shell
 
 tools: $(TOOLDIRS)
 
@@ -303,7 +325,7 @@ include songs.mk
 $(CRY_SUBDIR)/uncomp_%.bin: $(CRY_SUBDIR)/uncomp_%.aif ; $(AIF) $< $@
 $(CRY_SUBDIR)/%.bin: $(CRY_SUBDIR)/%.aif ; $(AIF) $< $@ --compress
 sound/%.bin: sound/%.aif ; $(AIF) $< $@
-data/%.inc: data/%.pory; $(SCRIPT) -i $< -o $@ -fc tools/poryscript/font_config.json -cc tools/poryscript/command_config.json
+data/%.inc: data/%.pory $(SCRIPT) $(PORYSCRIPT_CONFIGS); $(SCRIPT) -i $< -o $@ -fc $(PORYSCRIPT_DIR)/font_config.json -cc $(PORYSCRIPT_DIR)/command_config.json
 
 
 ifeq ($(MODERN),0)

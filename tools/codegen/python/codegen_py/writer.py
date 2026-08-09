@@ -317,7 +317,7 @@ def file_id(s: str) -> str:
     import re
     return re.sub(
         r'[^a-z0-9_]',
-        lambda m: f"E{ord(m.group(0).replace('\\\\', '/')[0])}",
+        lambda m: "E" + str(ord(m.group(0).replace("\\", "/")[0])),
         s.lower(),
     )
 

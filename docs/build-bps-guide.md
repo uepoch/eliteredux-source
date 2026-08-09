@@ -4,6 +4,41 @@ This document explains how to compile a `.bps` patch file from the Elite Redux s
 
 A `.bps` file is a **binary patch** — it contains only the *differences* between a clean vanilla Pokémon Emerald ROM and the modified Elite Redux ROM. Players apply it to a clean Emerald ROM using a patching tool like [FLIPS](https://github.com/Alcaro/Flips). The build process therefore requires **two** ROMs: the base (vanilla) and the hack (Elite Redux), which are then diffed into a single `.bps`.
 
+## Docker build (recommended)
+
+With Docker running, build the image and create the patch with:
+
+```sh
+make docker-bps
+```
+
+The wrapper builds a compact Debian image containing the ARM toolchain, host
+compiler, Poryscript, Python protobuf runtime, protoc 29.2, and a verified
+vanilla Emerald ROM. A CLI-only FLIPS binary is compiled from its pinned
+official source without GTK. The wrapper bind-mounts the repository at `/workspace`, so the
+result is written to `EliteRedux.bps` in the repository and is owned by the
+current host user.
+
+The same image can regenerate or validate codegen output:
+
+```sh
+make docker-codegen       # regenerate generated C headers
+make docker-protos        # regenerate committed Python protobuf bindings
+make docker-check-protos  # verify the committed bindings
+make docker-test-codegen  # run the Python codegen tests
+make docker-shell         # open a shell in the build environment
+```
+
+Set `DOCKER_IMAGE` to choose another local image tag, `DOCKER_PLATFORM` to
+override the default `linux/amd64` platform, or `JOBS` to limit parallelism.
+The amd64 default is required by the Poryscript 3.5.2 Linux release.
+
+The Docker context excludes the source tree because it is mounted only when
+the container runs. Multi-stage builds retain only the 16 MB verified vanilla
+ROM rather than its source and build tree. Use `docker system df` to inspect
+usage; removing `eliteredux-bps-build:local` is sufficient to remove the final
+image when it is no longer needed.
+
 ---
 
 ## Prerequisites
@@ -15,10 +50,11 @@ The build needs three categories of tools: the **ARM cross-compiler** (to compil
 The GBA uses an ARM7TDMI CPU. You need a cross-compiler that targets it:
 
 - `arm-none-eabi-gcc` / `arm-none-eabi-binutils` — compiles and links C/assembly into ARM machine code
+- ARM newlib and libstdc++ headers — provide the embedded C/C++ standard headers
 
 | Distro | Command |
 |---|---|
-| Debian/Ubuntu | `sudo apt install gcc-arm-none-eabi binutils-arm-none-eabi` |
+| Debian/Ubuntu | `sudo apt install gcc-arm-none-eabi binutils-arm-none-eabi libnewlib-arm-none-eabi libstdc++-arm-none-eabi-dev` |
 | Arch Linux | `sudo pacman -S arm-none-eabi-gcc arm-none-eabi-binutils arm-none-eabi-newlib` |
 
 ### 2. Host Build Tools
