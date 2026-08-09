@@ -1,0 +1,371 @@
+from google.protobuf.internal import enum_type_wrapper as _enum_type_wrapper
+from google.protobuf import descriptor as _descriptor
+from typing import ClassVar as _ClassVar
+
+DESCRIPTOR: _descriptor.FileDescriptor
+
+class FrontAnim(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
+    __slots__ = ()
+    ANIM_V_SQUISH_AND_BOUNCE: _ClassVar[FrontAnim]
+    ANIM_CIRCULAR_STRETCH_TWICE: _ClassVar[FrontAnim]
+    ANIM_H_VIBRATE: _ClassVar[FrontAnim]
+    ANIM_H_SLIDE: _ClassVar[FrontAnim]
+    ANIM_V_SLIDE: _ClassVar[FrontAnim]
+    ANIM_BOUNCE_ROTATE_TO_SIDES: _ClassVar[FrontAnim]
+    ANIM_V_JUMPS_H_JUMPS: _ClassVar[FrontAnim]
+    ANIM_ROTATE_TO_SIDES: _ClassVar[FrontAnim]
+    ANIM_ROTATE_TO_SIDES_TWICE: _ClassVar[FrontAnim]
+    ANIM_GROW_VIBRATE: _ClassVar[FrontAnim]
+    ANIM_ZIGZAG_FAST: _ClassVar[FrontAnim]
+    ANIM_SWING_CONCAVE: _ClassVar[FrontAnim]
+    ANIM_SWING_CONCAVE_FAST: _ClassVar[FrontAnim]
+    ANIM_SWING_CONVEX: _ClassVar[FrontAnim]
+    ANIM_SWING_CONVEX_FAST: _ClassVar[FrontAnim]
+    ANIM_H_SHAKE: _ClassVar[FrontAnim]
+    ANIM_V_SHAKE: _ClassVar[FrontAnim]
+    ANIM_CIRCULAR_VIBRATE: _ClassVar[FrontAnim]
+    ANIM_TWIST: _ClassVar[FrontAnim]
+    ANIM_SHRINK_GROW: _ClassVar[FrontAnim]
+    ANIM_CIRCLE_C_CLOCKWISE: _ClassVar[FrontAnim]
+    ANIM_GLOW_BLACK: _ClassVar[FrontAnim]
+    ANIM_H_STRETCH: _ClassVar[FrontAnim]
+    ANIM_V_STRETCH: _ClassVar[FrontAnim]
+    ANIM_RISING_WOBBLE: _ClassVar[FrontAnim]
+    ANIM_V_SHAKE_TWICE: _ClassVar[FrontAnim]
+    ANIM_TIP_MOVE_FORWARD: _ClassVar[FrontAnim]
+    ANIM_H_PIVOT: _ClassVar[FrontAnim]
+    ANIM_V_SLIDE_WOBBLE: _ClassVar[FrontAnim]
+    ANIM_H_SLIDE_WOBBLE: _ClassVar[FrontAnim]
+    ANIM_V_JUMPS_BIG: _ClassVar[FrontAnim]
+    ANIM_SPIN_LONG: _ClassVar[FrontAnim]
+    ANIM_GLOW_ORANGE: _ClassVar[FrontAnim]
+    ANIM_GLOW_RED: _ClassVar[FrontAnim]
+    ANIM_GLOW_BLUE: _ClassVar[FrontAnim]
+    ANIM_GLOW_YELLOW: _ClassVar[FrontAnim]
+    ANIM_GLOW_PURPLE: _ClassVar[FrontAnim]
+    ANIM_BACK_AND_LUNGE: _ClassVar[FrontAnim]
+    ANIM_BACK_FLIP: _ClassVar[FrontAnim]
+    ANIM_FLICKER: _ClassVar[FrontAnim]
+    ANIM_BACK_FLIP_BIG: _ClassVar[FrontAnim]
+    ANIM_FRONT_FLIP: _ClassVar[FrontAnim]
+    ANIM_TUMBLING_FRONT_FLIP: _ClassVar[FrontAnim]
+    ANIM_FIGURE_8: _ClassVar[FrontAnim]
+    ANIM_FLASH_YELLOW: _ClassVar[FrontAnim]
+    ANIM_SWING_CONCAVE_FAST_SHORT: _ClassVar[FrontAnim]
+    ANIM_SWING_CONVEX_FAST_SHORT: _ClassVar[FrontAnim]
+    ANIM_ROTATE_UP_SLAM_DOWN: _ClassVar[FrontAnim]
+    ANIM_DEEP_V_SQUISH_AND_BOUNCE: _ClassVar[FrontAnim]
+    ANIM_H_JUMPS: _ClassVar[FrontAnim]
+    ANIM_H_JUMPS_V_STRETCH: _ClassVar[FrontAnim]
+    ANIM_ROTATE_TO_SIDES_FAST: _ClassVar[FrontAnim]
+    ANIM_ROTATE_UP_TO_SIDES: _ClassVar[FrontAnim]
+    ANIM_FLICKER_INCREASING: _ClassVar[FrontAnim]
+    ANIM_TIP_HOP_FORWARD: _ClassVar[FrontAnim]
+    ANIM_PIVOT_SHAKE: _ClassVar[FrontAnim]
+    ANIM_TIP_AND_SHAKE: _ClassVar[FrontAnim]
+    ANIM_VIBRATE_TO_CORNERS: _ClassVar[FrontAnim]
+    ANIM_GROW_IN_STAGES: _ClassVar[FrontAnim]
+    ANIM_V_SPRING: _ClassVar[FrontAnim]
+    ANIM_V_REPEATED_SPRING: _ClassVar[FrontAnim]
+    ANIM_SPRING_RISING: _ClassVar[FrontAnim]
+    ANIM_H_SPRING: _ClassVar[FrontAnim]
+    ANIM_H_REPEATED_SPRING_SLOW: _ClassVar[FrontAnim]
+    ANIM_H_SLIDE_SHRINK: _ClassVar[FrontAnim]
+    ANIM_LUNGE_GROW: _ClassVar[FrontAnim]
+    ANIM_CIRCLE_INTO_BG: _ClassVar[FrontAnim]
+    ANIM_RAPID_H_HOPS: _ClassVar[FrontAnim]
+    ANIM_FOUR_PETAL: _ClassVar[FrontAnim]
+    ANIM_V_SQUISH_AND_BOUNCE_SLOW: _ClassVar[FrontAnim]
+    ANIM_H_SLIDE_SLOW: _ClassVar[FrontAnim]
+    ANIM_V_SLIDE_SLOW: _ClassVar[FrontAnim]
+    ANIM_BOUNCE_ROTATE_TO_SIDES_SMALL: _ClassVar[FrontAnim]
+    ANIM_BOUNCE_ROTATE_TO_SIDES_SLOW: _ClassVar[FrontAnim]
+    ANIM_BOUNCE_ROTATE_TO_SIDES_SMALL_SLOW: _ClassVar[FrontAnim]
+    ANIM_ZIGZAG_SLOW: _ClassVar[FrontAnim]
+    ANIM_H_SHAKE_SLOW: _ClassVar[FrontAnim]
+    ANIM_V_SHAKE_SLOW: _ClassVar[FrontAnim]
+    ANIM_TWIST_TWICE: _ClassVar[FrontAnim]
+    ANIM_CIRCLE_C_CLOCKWISE_SLOW: _ClassVar[FrontAnim]
+    ANIM_V_SHAKE_TWICE_SLOW: _ClassVar[FrontAnim]
+    ANIM_V_SLIDE_WOBBLE_SMALL: _ClassVar[FrontAnim]
+    ANIM_V_JUMPS_SMALL: _ClassVar[FrontAnim]
+    ANIM_SPIN: _ClassVar[FrontAnim]
+    ANIM_TUMBLING_FRONT_FLIP_TWICE: _ClassVar[FrontAnim]
+    ANIM_DEEP_V_SQUISH_AND_BOUNCE_TWICE: _ClassVar[FrontAnim]
+    ANIM_H_JUMPS_V_STRETCH_TWICE: _ClassVar[FrontAnim]
+    ANIM_V_SHAKE_BACK: _ClassVar[FrontAnim]
+    ANIM_V_SHAKE_BACK_SLOW: _ClassVar[FrontAnim]
+    ANIM_V_SHAKE_H_SLIDE_SLOW: _ClassVar[FrontAnim]
+    ANIM_V_STRETCH_BOTH_ENDS_SLOW: _ClassVar[FrontAnim]
+    ANIM_H_STRETCH_FAR_SLOW: _ClassVar[FrontAnim]
+    ANIM_V_SHAKE_LOW_TWICE: _ClassVar[FrontAnim]
+    ANIM_H_SHAKE_FAST: _ClassVar[FrontAnim]
+    ANIM_H_SLIDE_FAST: _ClassVar[FrontAnim]
+    ANIM_H_VIBRATE_FAST: _ClassVar[FrontAnim]
+    ANIM_H_VIBRATE_FASTEST: _ClassVar[FrontAnim]
+    ANIM_V_SHAKE_BACK_FAST: _ClassVar[FrontAnim]
+    ANIM_V_SHAKE_LOW_TWICE_SLOW: _ClassVar[FrontAnim]
+    ANIM_V_SHAKE_LOW_TWICE_FAST: _ClassVar[FrontAnim]
+    ANIM_CIRCLE_C_CLOCKWISE_LONG: _ClassVar[FrontAnim]
+    ANIM_GROW_STUTTER_SLOW: _ClassVar[FrontAnim]
+    ANIM_V_SHAKE_H_SLIDE: _ClassVar[FrontAnim]
+    ANIM_V_SHAKE_H_SLIDE_FAST: _ClassVar[FrontAnim]
+    ANIM_TRIANGLE_DOWN_SLOW: _ClassVar[FrontAnim]
+    ANIM_TRIANGLE_DOWN: _ClassVar[FrontAnim]
+    ANIM_TRIANGLE_DOWN_TWICE: _ClassVar[FrontAnim]
+    ANIM_GROW: _ClassVar[FrontAnim]
+    ANIM_GROW_TWICE: _ClassVar[FrontAnim]
+    ANIM_H_SPRING_FAST: _ClassVar[FrontAnim]
+    ANIM_H_SPRING_SLOW: _ClassVar[FrontAnim]
+    ANIM_H_REPEATED_SPRING_FAST: _ClassVar[FrontAnim]
+    ANIM_H_REPEATED_SPRING: _ClassVar[FrontAnim]
+    ANIM_SHRINK_GROW_FAST: _ClassVar[FrontAnim]
+    ANIM_SHRINK_GROW_SLOW: _ClassVar[FrontAnim]
+    ANIM_V_STRETCH_BOTH_ENDS: _ClassVar[FrontAnim]
+    ANIM_V_STRETCH_BOTH_ENDS_TWICE: _ClassVar[FrontAnim]
+    ANIM_H_STRETCH_FAR_TWICE: _ClassVar[FrontAnim]
+    ANIM_H_STRETCH_FAR: _ClassVar[FrontAnim]
+    ANIM_GROW_STUTTER_TWICE: _ClassVar[FrontAnim]
+    ANIM_GROW_STUTTER: _ClassVar[FrontAnim]
+    ANIM_CONCAVE_ARC_LARGE_SLOW: _ClassVar[FrontAnim]
+    ANIM_CONCAVE_ARC_LARGE: _ClassVar[FrontAnim]
+    ANIM_CONCAVE_ARC_LARGE_TWICE: _ClassVar[FrontAnim]
+    ANIM_CONVEX_DOUBLE_ARC_SLOW: _ClassVar[FrontAnim]
+    ANIM_CONVEX_DOUBLE_ARC: _ClassVar[FrontAnim]
+    ANIM_CONVEX_DOUBLE_ARC_TWICE: _ClassVar[FrontAnim]
+    ANIM_CONCAVE_ARC_SMALL_SLOW: _ClassVar[FrontAnim]
+    ANIM_CONCAVE_ARC_SMALL: _ClassVar[FrontAnim]
+    ANIM_CONCAVE_ARC_SMALL_TWICE: _ClassVar[FrontAnim]
+    ANIM_H_DIP: _ClassVar[FrontAnim]
+    ANIM_H_DIP_FAST: _ClassVar[FrontAnim]
+    ANIM_H_DIP_TWICE: _ClassVar[FrontAnim]
+    ANIM_SHRINK_GROW_VIBRATE_FAST: _ClassVar[FrontAnim]
+    ANIM_SHRINK_GROW_VIBRATE: _ClassVar[FrontAnim]
+    ANIM_SHRINK_GROW_VIBRATE_SLOW: _ClassVar[FrontAnim]
+    ANIM_JOLT_RIGHT_FAST: _ClassVar[FrontAnim]
+    ANIM_JOLT_RIGHT: _ClassVar[FrontAnim]
+    ANIM_JOLT_RIGHT_SLOW: _ClassVar[FrontAnim]
+    ANIM_SHAKE_FLASH_YELLOW_FAST: _ClassVar[FrontAnim]
+    ANIM_SHAKE_FLASH_YELLOW: _ClassVar[FrontAnim]
+    ANIM_SHAKE_FLASH_YELLOW_SLOW: _ClassVar[FrontAnim]
+    ANIM_SHAKE_GLOW_RED_FAST: _ClassVar[FrontAnim]
+    ANIM_SHAKE_GLOW_RED: _ClassVar[FrontAnim]
+    ANIM_SHAKE_GLOW_RED_SLOW: _ClassVar[FrontAnim]
+    ANIM_SHAKE_GLOW_GREEN_FAST: _ClassVar[FrontAnim]
+    ANIM_SHAKE_GLOW_GREEN: _ClassVar[FrontAnim]
+    ANIM_SHAKE_GLOW_GREEN_SLOW: _ClassVar[FrontAnim]
+    ANIM_SHAKE_GLOW_BLUE_FAST: _ClassVar[FrontAnim]
+    ANIM_SHAKE_GLOW_BLUE: _ClassVar[FrontAnim]
+    ANIM_SHAKE_GLOW_BLUE_SLOW: _ClassVar[FrontAnim]
+    ANIM_SHAKE_GLOW_BLACK_SLOW: _ClassVar[FrontAnim]
+    ANIM_SHAKE_GLOW_WHITE_SLOW: _ClassVar[FrontAnim]
+    ANIM_SHAKE_GLOW_PURPLE_SLOW: _ClassVar[FrontAnim]
+
+class BackAnim(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
+    __slots__ = ()
+    BACK_ANIM_NONE: _ClassVar[BackAnim]
+    BACK_ANIM_H_VIBRATE: _ClassVar[BackAnim]
+    BACK_ANIM_H_SLIDE: _ClassVar[BackAnim]
+    BACK_ANIM_H_SPRING: _ClassVar[BackAnim]
+    BACK_ANIM_H_SPRING_REPEATED: _ClassVar[BackAnim]
+    BACK_ANIM_SHRINK_GROW: _ClassVar[BackAnim]
+    BACK_ANIM_GROW: _ClassVar[BackAnim]
+    BACK_ANIM_CIRCLE_COUNTERCLOCKWISE: _ClassVar[BackAnim]
+    BACK_ANIM_H_SHAKE: _ClassVar[BackAnim]
+    BACK_ANIM_V_SHAKE: _ClassVar[BackAnim]
+    BACK_ANIM_V_SHAKE_H_SLIDE: _ClassVar[BackAnim]
+    BACK_ANIM_V_STRETCH: _ClassVar[BackAnim]
+    BACK_ANIM_H_STRETCH: _ClassVar[BackAnim]
+    BACK_ANIM_GROW_STUTTER: _ClassVar[BackAnim]
+    BACK_ANIM_V_SHAKE_LOW: _ClassVar[BackAnim]
+    BACK_ANIM_TRIANGLE_DOWN: _ClassVar[BackAnim]
+    BACK_ANIM_CONCAVE_ARC_LARGE: _ClassVar[BackAnim]
+    BACK_ANIM_CONVEX_DOUBLE_ARC: _ClassVar[BackAnim]
+    BACK_ANIM_CONCAVE_ARC_SMALL: _ClassVar[BackAnim]
+    BACK_ANIM_DIP_RIGHT_SIDE: _ClassVar[BackAnim]
+    BACK_ANIM_SHRINK_GROW_VIBRATE: _ClassVar[BackAnim]
+    BACK_ANIM_JOLT_RIGHT: _ClassVar[BackAnim]
+    BACK_ANIM_SHAKE_FLASH_YELLOW: _ClassVar[BackAnim]
+    BACK_ANIM_SHAKE_GLOW_RED: _ClassVar[BackAnim]
+    BACK_ANIM_SHAKE_GLOW_GREEN: _ClassVar[BackAnim]
+    BACK_ANIM_SHAKE_GLOW_BLUE: _ClassVar[BackAnim]
+ANIM_V_SQUISH_AND_BOUNCE: FrontAnim
+ANIM_CIRCULAR_STRETCH_TWICE: FrontAnim
+ANIM_H_VIBRATE: FrontAnim
+ANIM_H_SLIDE: FrontAnim
+ANIM_V_SLIDE: FrontAnim
+ANIM_BOUNCE_ROTATE_TO_SIDES: FrontAnim
+ANIM_V_JUMPS_H_JUMPS: FrontAnim
+ANIM_ROTATE_TO_SIDES: FrontAnim
+ANIM_ROTATE_TO_SIDES_TWICE: FrontAnim
+ANIM_GROW_VIBRATE: FrontAnim
+ANIM_ZIGZAG_FAST: FrontAnim
+ANIM_SWING_CONCAVE: FrontAnim
+ANIM_SWING_CONCAVE_FAST: FrontAnim
+ANIM_SWING_CONVEX: FrontAnim
+ANIM_SWING_CONVEX_FAST: FrontAnim
+ANIM_H_SHAKE: FrontAnim
+ANIM_V_SHAKE: FrontAnim
+ANIM_CIRCULAR_VIBRATE: FrontAnim
+ANIM_TWIST: FrontAnim
+ANIM_SHRINK_GROW: FrontAnim
+ANIM_CIRCLE_C_CLOCKWISE: FrontAnim
+ANIM_GLOW_BLACK: FrontAnim
+ANIM_H_STRETCH: FrontAnim
+ANIM_V_STRETCH: FrontAnim
+ANIM_RISING_WOBBLE: FrontAnim
+ANIM_V_SHAKE_TWICE: FrontAnim
+ANIM_TIP_MOVE_FORWARD: FrontAnim
+ANIM_H_PIVOT: FrontAnim
+ANIM_V_SLIDE_WOBBLE: FrontAnim
+ANIM_H_SLIDE_WOBBLE: FrontAnim
+ANIM_V_JUMPS_BIG: FrontAnim
+ANIM_SPIN_LONG: FrontAnim
+ANIM_GLOW_ORANGE: FrontAnim
+ANIM_GLOW_RED: FrontAnim
+ANIM_GLOW_BLUE: FrontAnim
+ANIM_GLOW_YELLOW: FrontAnim
+ANIM_GLOW_PURPLE: FrontAnim
+ANIM_BACK_AND_LUNGE: FrontAnim
+ANIM_BACK_FLIP: FrontAnim
+ANIM_FLICKER: FrontAnim
+ANIM_BACK_FLIP_BIG: FrontAnim
+ANIM_FRONT_FLIP: FrontAnim
+ANIM_TUMBLING_FRONT_FLIP: FrontAnim
+ANIM_FIGURE_8: FrontAnim
+ANIM_FLASH_YELLOW: FrontAnim
+ANIM_SWING_CONCAVE_FAST_SHORT: FrontAnim
+ANIM_SWING_CONVEX_FAST_SHORT: FrontAnim
+ANIM_ROTATE_UP_SLAM_DOWN: FrontAnim
+ANIM_DEEP_V_SQUISH_AND_BOUNCE: FrontAnim
+ANIM_H_JUMPS: FrontAnim
+ANIM_H_JUMPS_V_STRETCH: FrontAnim
+ANIM_ROTATE_TO_SIDES_FAST: FrontAnim
+ANIM_ROTATE_UP_TO_SIDES: FrontAnim
+ANIM_FLICKER_INCREASING: FrontAnim
+ANIM_TIP_HOP_FORWARD: FrontAnim
+ANIM_PIVOT_SHAKE: FrontAnim
+ANIM_TIP_AND_SHAKE: FrontAnim
+ANIM_VIBRATE_TO_CORNERS: FrontAnim
+ANIM_GROW_IN_STAGES: FrontAnim
+ANIM_V_SPRING: FrontAnim
+ANIM_V_REPEATED_SPRING: FrontAnim
+ANIM_SPRING_RISING: FrontAnim
+ANIM_H_SPRING: FrontAnim
+ANIM_H_REPEATED_SPRING_SLOW: FrontAnim
+ANIM_H_SLIDE_SHRINK: FrontAnim
+ANIM_LUNGE_GROW: FrontAnim
+ANIM_CIRCLE_INTO_BG: FrontAnim
+ANIM_RAPID_H_HOPS: FrontAnim
+ANIM_FOUR_PETAL: FrontAnim
+ANIM_V_SQUISH_AND_BOUNCE_SLOW: FrontAnim
+ANIM_H_SLIDE_SLOW: FrontAnim
+ANIM_V_SLIDE_SLOW: FrontAnim
+ANIM_BOUNCE_ROTATE_TO_SIDES_SMALL: FrontAnim
+ANIM_BOUNCE_ROTATE_TO_SIDES_SLOW: FrontAnim
+ANIM_BOUNCE_ROTATE_TO_SIDES_SMALL_SLOW: FrontAnim
+ANIM_ZIGZAG_SLOW: FrontAnim
+ANIM_H_SHAKE_SLOW: FrontAnim
+ANIM_V_SHAKE_SLOW: FrontAnim
+ANIM_TWIST_TWICE: FrontAnim
+ANIM_CIRCLE_C_CLOCKWISE_SLOW: FrontAnim
+ANIM_V_SHAKE_TWICE_SLOW: FrontAnim
+ANIM_V_SLIDE_WOBBLE_SMALL: FrontAnim
+ANIM_V_JUMPS_SMALL: FrontAnim
+ANIM_SPIN: FrontAnim
+ANIM_TUMBLING_FRONT_FLIP_TWICE: FrontAnim
+ANIM_DEEP_V_SQUISH_AND_BOUNCE_TWICE: FrontAnim
+ANIM_H_JUMPS_V_STRETCH_TWICE: FrontAnim
+ANIM_V_SHAKE_BACK: FrontAnim
+ANIM_V_SHAKE_BACK_SLOW: FrontAnim
+ANIM_V_SHAKE_H_SLIDE_SLOW: FrontAnim
+ANIM_V_STRETCH_BOTH_ENDS_SLOW: FrontAnim
+ANIM_H_STRETCH_FAR_SLOW: FrontAnim
+ANIM_V_SHAKE_LOW_TWICE: FrontAnim
+ANIM_H_SHAKE_FAST: FrontAnim
+ANIM_H_SLIDE_FAST: FrontAnim
+ANIM_H_VIBRATE_FAST: FrontAnim
+ANIM_H_VIBRATE_FASTEST: FrontAnim
+ANIM_V_SHAKE_BACK_FAST: FrontAnim
+ANIM_V_SHAKE_LOW_TWICE_SLOW: FrontAnim
+ANIM_V_SHAKE_LOW_TWICE_FAST: FrontAnim
+ANIM_CIRCLE_C_CLOCKWISE_LONG: FrontAnim
+ANIM_GROW_STUTTER_SLOW: FrontAnim
+ANIM_V_SHAKE_H_SLIDE: FrontAnim
+ANIM_V_SHAKE_H_SLIDE_FAST: FrontAnim
+ANIM_TRIANGLE_DOWN_SLOW: FrontAnim
+ANIM_TRIANGLE_DOWN: FrontAnim
+ANIM_TRIANGLE_DOWN_TWICE: FrontAnim
+ANIM_GROW: FrontAnim
+ANIM_GROW_TWICE: FrontAnim
+ANIM_H_SPRING_FAST: FrontAnim
+ANIM_H_SPRING_SLOW: FrontAnim
+ANIM_H_REPEATED_SPRING_FAST: FrontAnim
+ANIM_H_REPEATED_SPRING: FrontAnim
+ANIM_SHRINK_GROW_FAST: FrontAnim
+ANIM_SHRINK_GROW_SLOW: FrontAnim
+ANIM_V_STRETCH_BOTH_ENDS: FrontAnim
+ANIM_V_STRETCH_BOTH_ENDS_TWICE: FrontAnim
+ANIM_H_STRETCH_FAR_TWICE: FrontAnim
+ANIM_H_STRETCH_FAR: FrontAnim
+ANIM_GROW_STUTTER_TWICE: FrontAnim
+ANIM_GROW_STUTTER: FrontAnim
+ANIM_CONCAVE_ARC_LARGE_SLOW: FrontAnim
+ANIM_CONCAVE_ARC_LARGE: FrontAnim
+ANIM_CONCAVE_ARC_LARGE_TWICE: FrontAnim
+ANIM_CONVEX_DOUBLE_ARC_SLOW: FrontAnim
+ANIM_CONVEX_DOUBLE_ARC: FrontAnim
+ANIM_CONVEX_DOUBLE_ARC_TWICE: FrontAnim
+ANIM_CONCAVE_ARC_SMALL_SLOW: FrontAnim
+ANIM_CONCAVE_ARC_SMALL: FrontAnim
+ANIM_CONCAVE_ARC_SMALL_TWICE: FrontAnim
+ANIM_H_DIP: FrontAnim
+ANIM_H_DIP_FAST: FrontAnim
+ANIM_H_DIP_TWICE: FrontAnim
+ANIM_SHRINK_GROW_VIBRATE_FAST: FrontAnim
+ANIM_SHRINK_GROW_VIBRATE: FrontAnim
+ANIM_SHRINK_GROW_VIBRATE_SLOW: FrontAnim
+ANIM_JOLT_RIGHT_FAST: FrontAnim
+ANIM_JOLT_RIGHT: FrontAnim
+ANIM_JOLT_RIGHT_SLOW: FrontAnim
+ANIM_SHAKE_FLASH_YELLOW_FAST: FrontAnim
+ANIM_SHAKE_FLASH_YELLOW: FrontAnim
+ANIM_SHAKE_FLASH_YELLOW_SLOW: FrontAnim
+ANIM_SHAKE_GLOW_RED_FAST: FrontAnim
+ANIM_SHAKE_GLOW_RED: FrontAnim
+ANIM_SHAKE_GLOW_RED_SLOW: FrontAnim
+ANIM_SHAKE_GLOW_GREEN_FAST: FrontAnim
+ANIM_SHAKE_GLOW_GREEN: FrontAnim
+ANIM_SHAKE_GLOW_GREEN_SLOW: FrontAnim
+ANIM_SHAKE_GLOW_BLUE_FAST: FrontAnim
+ANIM_SHAKE_GLOW_BLUE: FrontAnim
+ANIM_SHAKE_GLOW_BLUE_SLOW: FrontAnim
+ANIM_SHAKE_GLOW_BLACK_SLOW: FrontAnim
+ANIM_SHAKE_GLOW_WHITE_SLOW: FrontAnim
+ANIM_SHAKE_GLOW_PURPLE_SLOW: FrontAnim
+BACK_ANIM_NONE: BackAnim
+BACK_ANIM_H_VIBRATE: BackAnim
+BACK_ANIM_H_SLIDE: BackAnim
+BACK_ANIM_H_SPRING: BackAnim
+BACK_ANIM_H_SPRING_REPEATED: BackAnim
+BACK_ANIM_SHRINK_GROW: BackAnim
+BACK_ANIM_GROW: BackAnim
+BACK_ANIM_CIRCLE_COUNTERCLOCKWISE: BackAnim
+BACK_ANIM_H_SHAKE: BackAnim
+BACK_ANIM_V_SHAKE: BackAnim
+BACK_ANIM_V_SHAKE_H_SLIDE: BackAnim
+BACK_ANIM_V_STRETCH: BackAnim
+BACK_ANIM_H_STRETCH: BackAnim
+BACK_ANIM_GROW_STUTTER: BackAnim
+BACK_ANIM_V_SHAKE_LOW: BackAnim
+BACK_ANIM_TRIANGLE_DOWN: BackAnim
+BACK_ANIM_CONCAVE_ARC_LARGE: BackAnim
+BACK_ANIM_CONVEX_DOUBLE_ARC: BackAnim
+BACK_ANIM_CONCAVE_ARC_SMALL: BackAnim
+BACK_ANIM_DIP_RIGHT_SIDE: BackAnim
+BACK_ANIM_SHRINK_GROW_VIBRATE: BackAnim
+BACK_ANIM_JOLT_RIGHT: BackAnim
+BACK_ANIM_SHAKE_FLASH_YELLOW: BackAnim
+BACK_ANIM_SHAKE_GLOW_RED: BackAnim
+BACK_ANIM_SHAKE_GLOW_GREEN: BackAnim
+BACK_ANIM_SHAKE_GLOW_BLUE: BackAnim

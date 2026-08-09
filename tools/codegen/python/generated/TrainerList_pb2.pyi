@@ -1,0 +1,521 @@
+import MoveEnum_pb2 as _MoveEnum_pb2
+import SpeciesEnum_pb2 as _SpeciesEnum_pb2
+import AbilityEnum_pb2 as _AbilityEnum_pb2
+import ItemEnum_pb2 as _ItemEnum_pb2
+import SpeciesList_pb2 as _SpeciesList_pb2
+import Types_pb2 as _Types_pb2
+import TrainerEnum_pb2 as _TrainerEnum_pb2
+from google.protobuf.internal import containers as _containers
+from google.protobuf.internal import enum_type_wrapper as _enum_type_wrapper
+from google.protobuf import descriptor as _descriptor
+from google.protobuf import message as _message
+from typing import ClassVar as _ClassVar, Iterable as _Iterable, Mapping as _Mapping, Optional as _Optional, Union as _Union
+
+DESCRIPTOR: _descriptor.FileDescriptor
+
+class TrainerPic(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
+    __slots__ = ()
+    TRAINER_PIC_HIKER: _ClassVar[TrainerPic]
+    TRAINER_PIC_AQUA_GRUNT_M: _ClassVar[TrainerPic]
+    TRAINER_PIC_POKEMON_BREEDER_F: _ClassVar[TrainerPic]
+    TRAINER_PIC_COOLTRAINER_M: _ClassVar[TrainerPic]
+    TRAINER_PIC_BIRD_KEEPER: _ClassVar[TrainerPic]
+    TRAINER_PIC_COLLECTOR: _ClassVar[TrainerPic]
+    TRAINER_PIC_AQUA_GRUNT_F: _ClassVar[TrainerPic]
+    TRAINER_PIC_SWIMMER_M: _ClassVar[TrainerPic]
+    TRAINER_PIC_MAGMA_GRUNT_M: _ClassVar[TrainerPic]
+    TRAINER_PIC_EXPERT_M: _ClassVar[TrainerPic]
+    TRAINER_PIC_AQUA_ADMIN_M: _ClassVar[TrainerPic]
+    TRAINER_PIC_BLACK_BELT: _ClassVar[TrainerPic]
+    TRAINER_PIC_AQUA_ADMIN_F: _ClassVar[TrainerPic]
+    TRAINER_PIC_AQUA_LEADER_ARCHIE: _ClassVar[TrainerPic]
+    TRAINER_PIC_HEX_MANIAC: _ClassVar[TrainerPic]
+    TRAINER_PIC_AROMA_LADY: _ClassVar[TrainerPic]
+    TRAINER_PIC_RUIN_MANIAC: _ClassVar[TrainerPic]
+    TRAINER_PIC_INTERVIEWER: _ClassVar[TrainerPic]
+    TRAINER_PIC_TUBER_F: _ClassVar[TrainerPic]
+    TRAINER_PIC_TUBER_M: _ClassVar[TrainerPic]
+    TRAINER_PIC_COOLTRAINER_F: _ClassVar[TrainerPic]
+    TRAINER_PIC_LADY: _ClassVar[TrainerPic]
+    TRAINER_PIC_BEAUTY: _ClassVar[TrainerPic]
+    TRAINER_PIC_RICH_BOY: _ClassVar[TrainerPic]
+    TRAINER_PIC_EXPERT_F: _ClassVar[TrainerPic]
+    TRAINER_PIC_POKEMANIAC: _ClassVar[TrainerPic]
+    TRAINER_PIC_MAGMA_GRUNT_F: _ClassVar[TrainerPic]
+    TRAINER_PIC_GUITARIST: _ClassVar[TrainerPic]
+    TRAINER_PIC_KINDLER: _ClassVar[TrainerPic]
+    TRAINER_PIC_CAMPER: _ClassVar[TrainerPic]
+    TRAINER_PIC_PICNICKER: _ClassVar[TrainerPic]
+    TRAINER_PIC_BUG_MANIAC: _ClassVar[TrainerPic]
+    TRAINER_PIC_POKEMON_BREEDER_M: _ClassVar[TrainerPic]
+    TRAINER_PIC_PSYCHIC_M: _ClassVar[TrainerPic]
+    TRAINER_PIC_PSYCHIC_F: _ClassVar[TrainerPic]
+    TRAINER_PIC_GENTLEMAN: _ClassVar[TrainerPic]
+    TRAINER_PIC_ELITE_FOUR_SIDNEY: _ClassVar[TrainerPic]
+    TRAINER_PIC_ELITE_FOUR_PHOEBE: _ClassVar[TrainerPic]
+    TRAINER_PIC_ELITE_FOUR_GLACIA: _ClassVar[TrainerPic]
+    TRAINER_PIC_ELITE_FOUR_DRAKE: _ClassVar[TrainerPic]
+    TRAINER_PIC_LEADER_ROXANNE: _ClassVar[TrainerPic]
+    TRAINER_PIC_LEADER_BRAWLY: _ClassVar[TrainerPic]
+    TRAINER_PIC_LEADER_WATTSON: _ClassVar[TrainerPic]
+    TRAINER_PIC_LEADER_FLANNERY: _ClassVar[TrainerPic]
+    TRAINER_PIC_LEADER_NORMAN: _ClassVar[TrainerPic]
+    TRAINER_PIC_LEADER_WINONA: _ClassVar[TrainerPic]
+    TRAINER_PIC_LEADER_TATE_AND_LIZA: _ClassVar[TrainerPic]
+    TRAINER_PIC_LEADER_JUAN: _ClassVar[TrainerPic]
+    TRAINER_PIC_SCHOOL_KID_M: _ClassVar[TrainerPic]
+    TRAINER_PIC_SCHOOL_KID_F: _ClassVar[TrainerPic]
+    TRAINER_PIC_SR_AND_JR: _ClassVar[TrainerPic]
+    TRAINER_PIC_POKEFAN_M: _ClassVar[TrainerPic]
+    TRAINER_PIC_POKEFAN_F: _ClassVar[TrainerPic]
+    TRAINER_PIC_YOUNGSTER: _ClassVar[TrainerPic]
+    TRAINER_PIC_CHAMPION_WALLACE: _ClassVar[TrainerPic]
+    TRAINER_PIC_FISHERMAN: _ClassVar[TrainerPic]
+    TRAINER_PIC_CYCLING_TRIATHLETE_M: _ClassVar[TrainerPic]
+    TRAINER_PIC_CYCLING_TRIATHLETE_F: _ClassVar[TrainerPic]
+    TRAINER_PIC_RUNNING_TRIATHLETE_M: _ClassVar[TrainerPic]
+    TRAINER_PIC_RUNNING_TRIATHLETE_F: _ClassVar[TrainerPic]
+    TRAINER_PIC_SWIMMING_TRIATHLETE_M: _ClassVar[TrainerPic]
+    TRAINER_PIC_SWIMMING_TRIATHLETE_F: _ClassVar[TrainerPic]
+    TRAINER_PIC_DRAGON_TAMER: _ClassVar[TrainerPic]
+    TRAINER_PIC_NINJA_BOY: _ClassVar[TrainerPic]
+    TRAINER_PIC_BATTLE_GIRL: _ClassVar[TrainerPic]
+    TRAINER_PIC_PARASOL_LADY: _ClassVar[TrainerPic]
+    TRAINER_PIC_SWIMMER_F: _ClassVar[TrainerPic]
+    TRAINER_PIC_TWINS: _ClassVar[TrainerPic]
+    TRAINER_PIC_SAILOR: _ClassVar[TrainerPic]
+    TRAINER_PIC_MAGMA_ADMIN: _ClassVar[TrainerPic]
+    TRAINER_PIC_WALLY: _ClassVar[TrainerPic]
+    TRAINER_PIC_BRENDAN: _ClassVar[TrainerPic]
+    TRAINER_PIC_MAY: _ClassVar[TrainerPic]
+    TRAINER_PIC_BUG_CATCHER: _ClassVar[TrainerPic]
+    TRAINER_PIC_POKEMON_RANGER_M: _ClassVar[TrainerPic]
+    TRAINER_PIC_POKEMON_RANGER_F: _ClassVar[TrainerPic]
+    TRAINER_PIC_MAGMA_LEADER_MAXIE: _ClassVar[TrainerPic]
+    TRAINER_PIC_LASS: _ClassVar[TrainerPic]
+    TRAINER_PIC_YOUNG_COUPLE: _ClassVar[TrainerPic]
+    TRAINER_PIC_OLD_COUPLE: _ClassVar[TrainerPic]
+    TRAINER_PIC_SIS_AND_BRO: _ClassVar[TrainerPic]
+    TRAINER_PIC_STEVEN: _ClassVar[TrainerPic]
+    TRAINER_PIC_SALON_MAIDEN_ANABEL: _ClassVar[TrainerPic]
+    TRAINER_PIC_DOME_ACE_TUCKER: _ClassVar[TrainerPic]
+    TRAINER_PIC_PALACE_MAVEN_SPENSER: _ClassVar[TrainerPic]
+    TRAINER_PIC_ARENA_TYCOON_GRETA: _ClassVar[TrainerPic]
+    TRAINER_PIC_FACTORY_HEAD_NOLAND: _ClassVar[TrainerPic]
+    TRAINER_PIC_PIKE_QUEEN_LUCY: _ClassVar[TrainerPic]
+    TRAINER_PIC_PYRAMID_KING_BRANDON: _ClassVar[TrainerPic]
+    TRAINER_PIC_RED: _ClassVar[TrainerPic]
+    TRAINER_PIC_LEAF: _ClassVar[TrainerPic]
+    TRAINER_PIC_RS_BRENDAN: _ClassVar[TrainerPic]
+    TRAINER_PIC_RS_MAY: _ClassVar[TrainerPic]
+    TRAINER_PIC_MAGMA_ADMIN_F: _ClassVar[TrainerPic]
+    TRAINER_PIC_CYNTHIA: _ClassVar[TrainerPic]
+    TRAINER_PIC_BANEFUL: _ClassVar[TrainerPic]
+    TRAINER_PIC_SKIER_F: _ClassVar[TrainerPic]
+    TRAINER_PIC_SKIER_M: _ClassVar[TrainerPic]
+
+class TrainerMusic(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
+    __slots__ = ()
+    TRAINER_ENCOUNTER_MUSIC_MALE: _ClassVar[TrainerMusic]
+    TRAINER_ENCOUNTER_MUSIC_FEMALE: _ClassVar[TrainerMusic]
+    TRAINER_ENCOUNTER_MUSIC_GIRL: _ClassVar[TrainerMusic]
+    TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS: _ClassVar[TrainerMusic]
+    TRAINER_ENCOUNTER_MUSIC_INTENSE: _ClassVar[TrainerMusic]
+    TRAINER_ENCOUNTER_MUSIC_COOL: _ClassVar[TrainerMusic]
+    TRAINER_ENCOUNTER_MUSIC_AQUA: _ClassVar[TrainerMusic]
+    TRAINER_ENCOUNTER_MUSIC_MAGMA: _ClassVar[TrainerMusic]
+    TRAINER_ENCOUNTER_MUSIC_SWIMMER: _ClassVar[TrainerMusic]
+    TRAINER_ENCOUNTER_MUSIC_TWINS: _ClassVar[TrainerMusic]
+    TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR: _ClassVar[TrainerMusic]
+    TRAINER_ENCOUNTER_MUSIC_HIKER: _ClassVar[TrainerMusic]
+    TRAINER_ENCOUNTER_MUSIC_INTERVIEWER: _ClassVar[TrainerMusic]
+    TRAINER_ENCOUNTER_MUSIC_RICH: _ClassVar[TrainerMusic]
+
+class TrainerClass(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
+    __slots__ = ()
+    TRAINER_CLASS_PKMN_TRAINER_1: _ClassVar[TrainerClass]
+    TRAINER_CLASS_PKMN_TRAINER_2: _ClassVar[TrainerClass]
+    TRAINER_CLASS_HIKER: _ClassVar[TrainerClass]
+    TRAINER_CLASS_TEAM_AQUA: _ClassVar[TrainerClass]
+    TRAINER_CLASS_PKMN_BREEDER: _ClassVar[TrainerClass]
+    TRAINER_CLASS_COOLTRAINER: _ClassVar[TrainerClass]
+    TRAINER_CLASS_BIRD_KEEPER: _ClassVar[TrainerClass]
+    TRAINER_CLASS_COLLECTOR: _ClassVar[TrainerClass]
+    TRAINER_CLASS_SWIMMER_M: _ClassVar[TrainerClass]
+    TRAINER_CLASS_TEAM_MAGMA: _ClassVar[TrainerClass]
+    TRAINER_CLASS_EXPERT: _ClassVar[TrainerClass]
+    TRAINER_CLASS_AQUA_ADMIN: _ClassVar[TrainerClass]
+    TRAINER_CLASS_BLACK_BELT: _ClassVar[TrainerClass]
+    TRAINER_CLASS_AQUA_LEADER: _ClassVar[TrainerClass]
+    TRAINER_CLASS_HEX_MANIAC: _ClassVar[TrainerClass]
+    TRAINER_CLASS_AROMA_LADY: _ClassVar[TrainerClass]
+    TRAINER_CLASS_RUIN_MANIAC: _ClassVar[TrainerClass]
+    TRAINER_CLASS_INTERVIEWER: _ClassVar[TrainerClass]
+    TRAINER_CLASS_TUBER_F: _ClassVar[TrainerClass]
+    TRAINER_CLASS_TUBER_M: _ClassVar[TrainerClass]
+    TRAINER_CLASS_LADY: _ClassVar[TrainerClass]
+    TRAINER_CLASS_BEAUTY: _ClassVar[TrainerClass]
+    TRAINER_CLASS_RICH_BOY: _ClassVar[TrainerClass]
+    TRAINER_CLASS_POKEMANIAC: _ClassVar[TrainerClass]
+    TRAINER_CLASS_GUITARIST: _ClassVar[TrainerClass]
+    TRAINER_CLASS_KINDLER: _ClassVar[TrainerClass]
+    TRAINER_CLASS_CAMPER: _ClassVar[TrainerClass]
+    TRAINER_CLASS_PICNICKER: _ClassVar[TrainerClass]
+    TRAINER_CLASS_BUG_MANIAC: _ClassVar[TrainerClass]
+    TRAINER_CLASS_PSYCHIC: _ClassVar[TrainerClass]
+    TRAINER_CLASS_GENTLEMAN: _ClassVar[TrainerClass]
+    TRAINER_CLASS_ELITE_FOUR: _ClassVar[TrainerClass]
+    TRAINER_CLASS_LEADER: _ClassVar[TrainerClass]
+    TRAINER_CLASS_SCHOOL_KID: _ClassVar[TrainerClass]
+    TRAINER_CLASS_SR_AND_JR: _ClassVar[TrainerClass]
+    TRAINER_CLASS_WINSTRATE: _ClassVar[TrainerClass]
+    TRAINER_CLASS_POKEFAN: _ClassVar[TrainerClass]
+    TRAINER_CLASS_YOUNGSTER: _ClassVar[TrainerClass]
+    TRAINER_CLASS_CHAMPION: _ClassVar[TrainerClass]
+    TRAINER_CLASS_FISHERMAN: _ClassVar[TrainerClass]
+    TRAINER_CLASS_TRIATHLETE: _ClassVar[TrainerClass]
+    TRAINER_CLASS_DRAGON_TAMER: _ClassVar[TrainerClass]
+    TRAINER_CLASS_NINJA_BOY: _ClassVar[TrainerClass]
+    TRAINER_CLASS_BATTLE_GIRL: _ClassVar[TrainerClass]
+    TRAINER_CLASS_PARASOL_LADY: _ClassVar[TrainerClass]
+    TRAINER_CLASS_SWIMMER_F: _ClassVar[TrainerClass]
+    TRAINER_CLASS_TWINS: _ClassVar[TrainerClass]
+    TRAINER_CLASS_SAILOR: _ClassVar[TrainerClass]
+    TRAINER_CLASS_COOLTRAINER_2: _ClassVar[TrainerClass]
+    TRAINER_CLASS_MAGMA_ADMIN: _ClassVar[TrainerClass]
+    TRAINER_CLASS_PKMN_TRAINER_3: _ClassVar[TrainerClass]
+    TRAINER_CLASS_BUG_CATCHER: _ClassVar[TrainerClass]
+    TRAINER_CLASS_PKMN_RANGER: _ClassVar[TrainerClass]
+    TRAINER_CLASS_MAGMA_LEADER: _ClassVar[TrainerClass]
+    TRAINER_CLASS_LASS: _ClassVar[TrainerClass]
+    TRAINER_CLASS_YOUNG_COUPLE: _ClassVar[TrainerClass]
+    TRAINER_CLASS_OLD_COUPLE: _ClassVar[TrainerClass]
+    TRAINER_CLASS_SIS_AND_BRO: _ClassVar[TrainerClass]
+    TRAINER_CLASS_SALON_MAIDEN: _ClassVar[TrainerClass]
+    TRAINER_CLASS_DOME_ACE: _ClassVar[TrainerClass]
+    TRAINER_CLASS_PALACE_MAVEN: _ClassVar[TrainerClass]
+    TRAINER_CLASS_ARENA_TYCOON: _ClassVar[TrainerClass]
+    TRAINER_CLASS_FACTORY_HEAD: _ClassVar[TrainerClass]
+    TRAINER_CLASS_PIKE_QUEEN: _ClassVar[TrainerClass]
+    TRAINER_CLASS_PYRAMID_KING: _ClassVar[TrainerClass]
+    TRAINER_CLASS_RS_PROTAG: _ClassVar[TrainerClass]
+    TRAINER_CLASS_MAGIKARP_GUY: _ClassVar[TrainerClass]
+    TRAINER_CLASS_PKMN_TRAINER_4: _ClassVar[TrainerClass]
+    TRAINER_CLASS_PKMN_TRAINER_5: _ClassVar[TrainerClass]
+    TRAINER_CLASS_BUFFEL: _ClassVar[TrainerClass]
+    TRAINER_CLASS_JOHTO_CHAMP: _ClassVar[TrainerClass]
+    TRAINER_CLASS_MONOTYPE_CHAMPION: _ClassVar[TrainerClass]
+    TRAINER_CLASS_SKIER: _ClassVar[TrainerClass]
+TRAINER_PIC_HIKER: TrainerPic
+TRAINER_PIC_AQUA_GRUNT_M: TrainerPic
+TRAINER_PIC_POKEMON_BREEDER_F: TrainerPic
+TRAINER_PIC_COOLTRAINER_M: TrainerPic
+TRAINER_PIC_BIRD_KEEPER: TrainerPic
+TRAINER_PIC_COLLECTOR: TrainerPic
+TRAINER_PIC_AQUA_GRUNT_F: TrainerPic
+TRAINER_PIC_SWIMMER_M: TrainerPic
+TRAINER_PIC_MAGMA_GRUNT_M: TrainerPic
+TRAINER_PIC_EXPERT_M: TrainerPic
+TRAINER_PIC_AQUA_ADMIN_M: TrainerPic
+TRAINER_PIC_BLACK_BELT: TrainerPic
+TRAINER_PIC_AQUA_ADMIN_F: TrainerPic
+TRAINER_PIC_AQUA_LEADER_ARCHIE: TrainerPic
+TRAINER_PIC_HEX_MANIAC: TrainerPic
+TRAINER_PIC_AROMA_LADY: TrainerPic
+TRAINER_PIC_RUIN_MANIAC: TrainerPic
+TRAINER_PIC_INTERVIEWER: TrainerPic
+TRAINER_PIC_TUBER_F: TrainerPic
+TRAINER_PIC_TUBER_M: TrainerPic
+TRAINER_PIC_COOLTRAINER_F: TrainerPic
+TRAINER_PIC_LADY: TrainerPic
+TRAINER_PIC_BEAUTY: TrainerPic
+TRAINER_PIC_RICH_BOY: TrainerPic
+TRAINER_PIC_EXPERT_F: TrainerPic
+TRAINER_PIC_POKEMANIAC: TrainerPic
+TRAINER_PIC_MAGMA_GRUNT_F: TrainerPic
+TRAINER_PIC_GUITARIST: TrainerPic
+TRAINER_PIC_KINDLER: TrainerPic
+TRAINER_PIC_CAMPER: TrainerPic
+TRAINER_PIC_PICNICKER: TrainerPic
+TRAINER_PIC_BUG_MANIAC: TrainerPic
+TRAINER_PIC_POKEMON_BREEDER_M: TrainerPic
+TRAINER_PIC_PSYCHIC_M: TrainerPic
+TRAINER_PIC_PSYCHIC_F: TrainerPic
+TRAINER_PIC_GENTLEMAN: TrainerPic
+TRAINER_PIC_ELITE_FOUR_SIDNEY: TrainerPic
+TRAINER_PIC_ELITE_FOUR_PHOEBE: TrainerPic
+TRAINER_PIC_ELITE_FOUR_GLACIA: TrainerPic
+TRAINER_PIC_ELITE_FOUR_DRAKE: TrainerPic
+TRAINER_PIC_LEADER_ROXANNE: TrainerPic
+TRAINER_PIC_LEADER_BRAWLY: TrainerPic
+TRAINER_PIC_LEADER_WATTSON: TrainerPic
+TRAINER_PIC_LEADER_FLANNERY: TrainerPic
+TRAINER_PIC_LEADER_NORMAN: TrainerPic
+TRAINER_PIC_LEADER_WINONA: TrainerPic
+TRAINER_PIC_LEADER_TATE_AND_LIZA: TrainerPic
+TRAINER_PIC_LEADER_JUAN: TrainerPic
+TRAINER_PIC_SCHOOL_KID_M: TrainerPic
+TRAINER_PIC_SCHOOL_KID_F: TrainerPic
+TRAINER_PIC_SR_AND_JR: TrainerPic
+TRAINER_PIC_POKEFAN_M: TrainerPic
+TRAINER_PIC_POKEFAN_F: TrainerPic
+TRAINER_PIC_YOUNGSTER: TrainerPic
+TRAINER_PIC_CHAMPION_WALLACE: TrainerPic
+TRAINER_PIC_FISHERMAN: TrainerPic
+TRAINER_PIC_CYCLING_TRIATHLETE_M: TrainerPic
+TRAINER_PIC_CYCLING_TRIATHLETE_F: TrainerPic
+TRAINER_PIC_RUNNING_TRIATHLETE_M: TrainerPic
+TRAINER_PIC_RUNNING_TRIATHLETE_F: TrainerPic
+TRAINER_PIC_SWIMMING_TRIATHLETE_M: TrainerPic
+TRAINER_PIC_SWIMMING_TRIATHLETE_F: TrainerPic
+TRAINER_PIC_DRAGON_TAMER: TrainerPic
+TRAINER_PIC_NINJA_BOY: TrainerPic
+TRAINER_PIC_BATTLE_GIRL: TrainerPic
+TRAINER_PIC_PARASOL_LADY: TrainerPic
+TRAINER_PIC_SWIMMER_F: TrainerPic
+TRAINER_PIC_TWINS: TrainerPic
+TRAINER_PIC_SAILOR: TrainerPic
+TRAINER_PIC_MAGMA_ADMIN: TrainerPic
+TRAINER_PIC_WALLY: TrainerPic
+TRAINER_PIC_BRENDAN: TrainerPic
+TRAINER_PIC_MAY: TrainerPic
+TRAINER_PIC_BUG_CATCHER: TrainerPic
+TRAINER_PIC_POKEMON_RANGER_M: TrainerPic
+TRAINER_PIC_POKEMON_RANGER_F: TrainerPic
+TRAINER_PIC_MAGMA_LEADER_MAXIE: TrainerPic
+TRAINER_PIC_LASS: TrainerPic
+TRAINER_PIC_YOUNG_COUPLE: TrainerPic
+TRAINER_PIC_OLD_COUPLE: TrainerPic
+TRAINER_PIC_SIS_AND_BRO: TrainerPic
+TRAINER_PIC_STEVEN: TrainerPic
+TRAINER_PIC_SALON_MAIDEN_ANABEL: TrainerPic
+TRAINER_PIC_DOME_ACE_TUCKER: TrainerPic
+TRAINER_PIC_PALACE_MAVEN_SPENSER: TrainerPic
+TRAINER_PIC_ARENA_TYCOON_GRETA: TrainerPic
+TRAINER_PIC_FACTORY_HEAD_NOLAND: TrainerPic
+TRAINER_PIC_PIKE_QUEEN_LUCY: TrainerPic
+TRAINER_PIC_PYRAMID_KING_BRANDON: TrainerPic
+TRAINER_PIC_RED: TrainerPic
+TRAINER_PIC_LEAF: TrainerPic
+TRAINER_PIC_RS_BRENDAN: TrainerPic
+TRAINER_PIC_RS_MAY: TrainerPic
+TRAINER_PIC_MAGMA_ADMIN_F: TrainerPic
+TRAINER_PIC_CYNTHIA: TrainerPic
+TRAINER_PIC_BANEFUL: TrainerPic
+TRAINER_PIC_SKIER_F: TrainerPic
+TRAINER_PIC_SKIER_M: TrainerPic
+TRAINER_ENCOUNTER_MUSIC_MALE: TrainerMusic
+TRAINER_ENCOUNTER_MUSIC_FEMALE: TrainerMusic
+TRAINER_ENCOUNTER_MUSIC_GIRL: TrainerMusic
+TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS: TrainerMusic
+TRAINER_ENCOUNTER_MUSIC_INTENSE: TrainerMusic
+TRAINER_ENCOUNTER_MUSIC_COOL: TrainerMusic
+TRAINER_ENCOUNTER_MUSIC_AQUA: TrainerMusic
+TRAINER_ENCOUNTER_MUSIC_MAGMA: TrainerMusic
+TRAINER_ENCOUNTER_MUSIC_SWIMMER: TrainerMusic
+TRAINER_ENCOUNTER_MUSIC_TWINS: TrainerMusic
+TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR: TrainerMusic
+TRAINER_ENCOUNTER_MUSIC_HIKER: TrainerMusic
+TRAINER_ENCOUNTER_MUSIC_INTERVIEWER: TrainerMusic
+TRAINER_ENCOUNTER_MUSIC_RICH: TrainerMusic
+TRAINER_CLASS_PKMN_TRAINER_1: TrainerClass
+TRAINER_CLASS_PKMN_TRAINER_2: TrainerClass
+TRAINER_CLASS_HIKER: TrainerClass
+TRAINER_CLASS_TEAM_AQUA: TrainerClass
+TRAINER_CLASS_PKMN_BREEDER: TrainerClass
+TRAINER_CLASS_COOLTRAINER: TrainerClass
+TRAINER_CLASS_BIRD_KEEPER: TrainerClass
+TRAINER_CLASS_COLLECTOR: TrainerClass
+TRAINER_CLASS_SWIMMER_M: TrainerClass
+TRAINER_CLASS_TEAM_MAGMA: TrainerClass
+TRAINER_CLASS_EXPERT: TrainerClass
+TRAINER_CLASS_AQUA_ADMIN: TrainerClass
+TRAINER_CLASS_BLACK_BELT: TrainerClass
+TRAINER_CLASS_AQUA_LEADER: TrainerClass
+TRAINER_CLASS_HEX_MANIAC: TrainerClass
+TRAINER_CLASS_AROMA_LADY: TrainerClass
+TRAINER_CLASS_RUIN_MANIAC: TrainerClass
+TRAINER_CLASS_INTERVIEWER: TrainerClass
+TRAINER_CLASS_TUBER_F: TrainerClass
+TRAINER_CLASS_TUBER_M: TrainerClass
+TRAINER_CLASS_LADY: TrainerClass
+TRAINER_CLASS_BEAUTY: TrainerClass
+TRAINER_CLASS_RICH_BOY: TrainerClass
+TRAINER_CLASS_POKEMANIAC: TrainerClass
+TRAINER_CLASS_GUITARIST: TrainerClass
+TRAINER_CLASS_KINDLER: TrainerClass
+TRAINER_CLASS_CAMPER: TrainerClass
+TRAINER_CLASS_PICNICKER: TrainerClass
+TRAINER_CLASS_BUG_MANIAC: TrainerClass
+TRAINER_CLASS_PSYCHIC: TrainerClass
+TRAINER_CLASS_GENTLEMAN: TrainerClass
+TRAINER_CLASS_ELITE_FOUR: TrainerClass
+TRAINER_CLASS_LEADER: TrainerClass
+TRAINER_CLASS_SCHOOL_KID: TrainerClass
+TRAINER_CLASS_SR_AND_JR: TrainerClass
+TRAINER_CLASS_WINSTRATE: TrainerClass
+TRAINER_CLASS_POKEFAN: TrainerClass
+TRAINER_CLASS_YOUNGSTER: TrainerClass
+TRAINER_CLASS_CHAMPION: TrainerClass
+TRAINER_CLASS_FISHERMAN: TrainerClass
+TRAINER_CLASS_TRIATHLETE: TrainerClass
+TRAINER_CLASS_DRAGON_TAMER: TrainerClass
+TRAINER_CLASS_NINJA_BOY: TrainerClass
+TRAINER_CLASS_BATTLE_GIRL: TrainerClass
+TRAINER_CLASS_PARASOL_LADY: TrainerClass
+TRAINER_CLASS_SWIMMER_F: TrainerClass
+TRAINER_CLASS_TWINS: TrainerClass
+TRAINER_CLASS_SAILOR: TrainerClass
+TRAINER_CLASS_COOLTRAINER_2: TrainerClass
+TRAINER_CLASS_MAGMA_ADMIN: TrainerClass
+TRAINER_CLASS_PKMN_TRAINER_3: TrainerClass
+TRAINER_CLASS_BUG_CATCHER: TrainerClass
+TRAINER_CLASS_PKMN_RANGER: TrainerClass
+TRAINER_CLASS_MAGMA_LEADER: TrainerClass
+TRAINER_CLASS_LASS: TrainerClass
+TRAINER_CLASS_YOUNG_COUPLE: TrainerClass
+TRAINER_CLASS_OLD_COUPLE: TrainerClass
+TRAINER_CLASS_SIS_AND_BRO: TrainerClass
+TRAINER_CLASS_SALON_MAIDEN: TrainerClass
+TRAINER_CLASS_DOME_ACE: TrainerClass
+TRAINER_CLASS_PALACE_MAVEN: TrainerClass
+TRAINER_CLASS_ARENA_TYCOON: TrainerClass
+TRAINER_CLASS_FACTORY_HEAD: TrainerClass
+TRAINER_CLASS_PIKE_QUEEN: TrainerClass
+TRAINER_CLASS_PYRAMID_KING: TrainerClass
+TRAINER_CLASS_RS_PROTAG: TrainerClass
+TRAINER_CLASS_MAGIKARP_GUY: TrainerClass
+TRAINER_CLASS_PKMN_TRAINER_4: TrainerClass
+TRAINER_CLASS_PKMN_TRAINER_5: TrainerClass
+TRAINER_CLASS_BUFFEL: TrainerClass
+TRAINER_CLASS_JOHTO_CHAMP: TrainerClass
+TRAINER_CLASS_MONOTYPE_CHAMPION: TrainerClass
+TRAINER_CLASS_SKIER: TrainerClass
+
+class TrainerList(_message.Message):
+    __slots__ = ("trainer",)
+    TRAINER_FIELD_NUMBER: _ClassVar[int]
+    trainer: _containers.RepeatedCompositeFieldContainer[Trainer]
+    def __init__(self, trainer: _Optional[_Iterable[_Union[Trainer, _Mapping]]] = ...) -> None: ...
+
+class TrainerParty(_message.Message):
+    __slots__ = ("mon",)
+    class TrainerMon(_message.Message):
+        __slots__ = ("nonstandard", "species", "item", "nature", "ability", "hp_ev", "atk_ev", "def_ev", "spatk_ev", "spdef_ev", "spe_ev", "iron_pill", "move", "hidden_power_type")
+        class Nature(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
+            __slots__ = ()
+            NATURE_HARDY: _ClassVar[TrainerParty.TrainerMon.Nature]
+            NATURE_LONELY: _ClassVar[TrainerParty.TrainerMon.Nature]
+            NATURE_BRAVE: _ClassVar[TrainerParty.TrainerMon.Nature]
+            NATURE_ADAMANT: _ClassVar[TrainerParty.TrainerMon.Nature]
+            NATURE_NAUGHTY: _ClassVar[TrainerParty.TrainerMon.Nature]
+            NATURE_BOLD: _ClassVar[TrainerParty.TrainerMon.Nature]
+            NATURE_DOCILE: _ClassVar[TrainerParty.TrainerMon.Nature]
+            NATURE_RELAXED: _ClassVar[TrainerParty.TrainerMon.Nature]
+            NATURE_IMPISH: _ClassVar[TrainerParty.TrainerMon.Nature]
+            NATURE_LAX: _ClassVar[TrainerParty.TrainerMon.Nature]
+            NATURE_TIMID: _ClassVar[TrainerParty.TrainerMon.Nature]
+            NATURE_HASTY: _ClassVar[TrainerParty.TrainerMon.Nature]
+            NATURE_SERIOUS: _ClassVar[TrainerParty.TrainerMon.Nature]
+            NATURE_JOLLY: _ClassVar[TrainerParty.TrainerMon.Nature]
+            NATURE_NAIVE: _ClassVar[TrainerParty.TrainerMon.Nature]
+            NATURE_MODEST: _ClassVar[TrainerParty.TrainerMon.Nature]
+            NATURE_MILD: _ClassVar[TrainerParty.TrainerMon.Nature]
+            NATURE_QUIET: _ClassVar[TrainerParty.TrainerMon.Nature]
+            NATURE_BASHFUL: _ClassVar[TrainerParty.TrainerMon.Nature]
+            NATURE_RASH: _ClassVar[TrainerParty.TrainerMon.Nature]
+            NATURE_CALM: _ClassVar[TrainerParty.TrainerMon.Nature]
+            NATURE_GENTLE: _ClassVar[TrainerParty.TrainerMon.Nature]
+            NATURE_SASSY: _ClassVar[TrainerParty.TrainerMon.Nature]
+            NATURE_CAREFUL: _ClassVar[TrainerParty.TrainerMon.Nature]
+            NATURE_QUIRKY: _ClassVar[TrainerParty.TrainerMon.Nature]
+        NATURE_HARDY: TrainerParty.TrainerMon.Nature
+        NATURE_LONELY: TrainerParty.TrainerMon.Nature
+        NATURE_BRAVE: TrainerParty.TrainerMon.Nature
+        NATURE_ADAMANT: TrainerParty.TrainerMon.Nature
+        NATURE_NAUGHTY: TrainerParty.TrainerMon.Nature
+        NATURE_BOLD: TrainerParty.TrainerMon.Nature
+        NATURE_DOCILE: TrainerParty.TrainerMon.Nature
+        NATURE_RELAXED: TrainerParty.TrainerMon.Nature
+        NATURE_IMPISH: TrainerParty.TrainerMon.Nature
+        NATURE_LAX: TrainerParty.TrainerMon.Nature
+        NATURE_TIMID: TrainerParty.TrainerMon.Nature
+        NATURE_HASTY: TrainerParty.TrainerMon.Nature
+        NATURE_SERIOUS: TrainerParty.TrainerMon.Nature
+        NATURE_JOLLY: TrainerParty.TrainerMon.Nature
+        NATURE_NAIVE: TrainerParty.TrainerMon.Nature
+        NATURE_MODEST: TrainerParty.TrainerMon.Nature
+        NATURE_MILD: TrainerParty.TrainerMon.Nature
+        NATURE_QUIET: TrainerParty.TrainerMon.Nature
+        NATURE_BASHFUL: TrainerParty.TrainerMon.Nature
+        NATURE_RASH: TrainerParty.TrainerMon.Nature
+        NATURE_CALM: TrainerParty.TrainerMon.Nature
+        NATURE_GENTLE: TrainerParty.TrainerMon.Nature
+        NATURE_SASSY: TrainerParty.TrainerMon.Nature
+        NATURE_CAREFUL: TrainerParty.TrainerMon.Nature
+        NATURE_QUIRKY: TrainerParty.TrainerMon.Nature
+        NONSTANDARD_FIELD_NUMBER: _ClassVar[int]
+        SPECIES_FIELD_NUMBER: _ClassVar[int]
+        ITEM_FIELD_NUMBER: _ClassVar[int]
+        NATURE_FIELD_NUMBER: _ClassVar[int]
+        ABILITY_FIELD_NUMBER: _ClassVar[int]
+        HP_EV_FIELD_NUMBER: _ClassVar[int]
+        ATK_EV_FIELD_NUMBER: _ClassVar[int]
+        DEF_EV_FIELD_NUMBER: _ClassVar[int]
+        SPATK_EV_FIELD_NUMBER: _ClassVar[int]
+        SPDEF_EV_FIELD_NUMBER: _ClassVar[int]
+        SPE_EV_FIELD_NUMBER: _ClassVar[int]
+        IRON_PILL_FIELD_NUMBER: _ClassVar[int]
+        MOVE_FIELD_NUMBER: _ClassVar[int]
+        HIDDEN_POWER_TYPE_FIELD_NUMBER: _ClassVar[int]
+        nonstandard: str
+        species: _SpeciesEnum_pb2.SpeciesEnum
+        item: _ItemEnum_pb2.ItemEnum
+        nature: TrainerParty.TrainerMon.Nature
+        ability: _AbilityEnum_pb2.AbilityEnum
+        hp_ev: int
+        atk_ev: int
+        def_ev: int
+        spatk_ev: int
+        spdef_ev: int
+        spe_ev: int
+        iron_pill: bool
+        move: _containers.RepeatedScalarFieldContainer[_MoveEnum_pb2.MoveEnum]
+        hidden_power_type: _Types_pb2.Type
+        def __init__(self, nonstandard: _Optional[str] = ..., species: _Optional[_Union[_SpeciesEnum_pb2.SpeciesEnum, str]] = ..., item: _Optional[_Union[_ItemEnum_pb2.ItemEnum, str]] = ..., nature: _Optional[_Union[TrainerParty.TrainerMon.Nature, str]] = ..., ability: _Optional[_Union[_AbilityEnum_pb2.AbilityEnum, str]] = ..., hp_ev: _Optional[int] = ..., atk_ev: _Optional[int] = ..., def_ev: _Optional[int] = ..., spatk_ev: _Optional[int] = ..., spdef_ev: _Optional[int] = ..., spe_ev: _Optional[int] = ..., iron_pill: bool = ..., move: _Optional[_Iterable[_Union[_MoveEnum_pb2.MoveEnum, str]]] = ..., hidden_power_type: _Optional[_Union[_Types_pb2.Type, str]] = ...) -> None: ...
+    MON_FIELD_NUMBER: _ClassVar[int]
+    mon: _containers.RepeatedCompositeFieldContainer[TrainerParty.TrainerMon]
+    def __init__(self, mon: _Optional[_Iterable[_Union[TrainerParty.TrainerMon, _Mapping]]] = ...) -> None: ...
+
+class Trainer(_message.Message):
+    __slots__ = ("id", "name", "has_trainer_flag", "forced_double", "risky", "prefer_status", "prefer_stall", "no_switching", "gender", "pic", "music", "ace", "elite", "hell")
+    ID_FIELD_NUMBER: _ClassVar[int]
+    NAME_FIELD_NUMBER: _ClassVar[int]
+    HAS_TRAINER_FLAG_FIELD_NUMBER: _ClassVar[int]
+    FORCED_DOUBLE_FIELD_NUMBER: _ClassVar[int]
+    RISKY_FIELD_NUMBER: _ClassVar[int]
+    PREFER_STATUS_FIELD_NUMBER: _ClassVar[int]
+    PREFER_STALL_FIELD_NUMBER: _ClassVar[int]
+    NO_SWITCHING_FIELD_NUMBER: _ClassVar[int]
+    GENDER_FIELD_NUMBER: _ClassVar[int]
+    CLASS_FIELD_NUMBER: _ClassVar[int]
+    PIC_FIELD_NUMBER: _ClassVar[int]
+    MUSIC_FIELD_NUMBER: _ClassVar[int]
+    ACE_FIELD_NUMBER: _ClassVar[int]
+    ELITE_FIELD_NUMBER: _ClassVar[int]
+    HELL_FIELD_NUMBER: _ClassVar[int]
+    id: _TrainerEnum_pb2.TrainerEnum
+    name: str
+    has_trainer_flag: bool
+    forced_double: bool
+    risky: bool
+    prefer_status: bool
+    prefer_stall: bool
+    no_switching: bool
+    gender: _SpeciesList_pb2.Species.Gender
+    pic: TrainerPic
+    music: TrainerMusic
+    ace: TrainerParty
+    elite: TrainerParty
+    hell: TrainerParty
+    def __init__(self, id: _Optional[_Union[_TrainerEnum_pb2.TrainerEnum, str]] = ..., name: _Optional[str] = ..., has_trainer_flag: bool = ..., forced_double: bool = ..., risky: bool = ..., prefer_status: bool = ..., prefer_stall: bool = ..., no_switching: bool = ..., gender: _Optional[_Union[_SpeciesList_pb2.Species.Gender, str]] = ..., pic: _Optional[_Union[TrainerPic, str]] = ..., music: _Optional[_Union[TrainerMusic, str]] = ..., ace: _Optional[_Union[TrainerParty, _Mapping]] = ..., elite: _Optional[_Union[TrainerParty, _Mapping]] = ..., hell: _Optional[_Union[TrainerParty, _Mapping]] = ..., **kwargs) -> None: ...

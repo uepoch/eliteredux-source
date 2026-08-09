@@ -1,0 +1,1868 @@
+from google.protobuf.internal import enum_type_wrapper as _enum_type_wrapper
+from google.protobuf import descriptor as _descriptor
+from typing import ClassVar as _ClassVar
+
+DESCRIPTOR: _descriptor.FileDescriptor
+
+class ItemEnum(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
+    __slots__ = ()
+    ITEM_NONE: _ClassVar[ItemEnum]
+    ITEM_MASTER_BALL: _ClassVar[ItemEnum]
+    ITEM_ULTRA_BALL: _ClassVar[ItemEnum]
+    ITEM_GREAT_BALL: _ClassVar[ItemEnum]
+    ITEM_POKE_BALL: _ClassVar[ItemEnum]
+    ITEM_SAFARI_BALL: _ClassVar[ItemEnum]
+    ITEM_NET_BALL: _ClassVar[ItemEnum]
+    ITEM_DIVE_BALL: _ClassVar[ItemEnum]
+    ITEM_NEST_BALL: _ClassVar[ItemEnum]
+    ITEM_REPEAT_BALL: _ClassVar[ItemEnum]
+    ITEM_TIMER_BALL: _ClassVar[ItemEnum]
+    ITEM_LUXURY_BALL: _ClassVar[ItemEnum]
+    ITEM_DUSK_BALL: _ClassVar[ItemEnum]
+    ITEM_HEAL_BALL: _ClassVar[ItemEnum]
+    ITEM_QUICK_BALL: _ClassVar[ItemEnum]
+    ITEM_CHERISH_BALL: _ClassVar[ItemEnum]
+    ITEM_FAST_BALL: _ClassVar[ItemEnum]
+    ITEM_LEVEL_BALL: _ClassVar[ItemEnum]
+    ITEM_LURE_BALL: _ClassVar[ItemEnum]
+    ITEM_HEAVY_BALL: _ClassVar[ItemEnum]
+    ITEM_LOVE_BALL: _ClassVar[ItemEnum]
+    ITEM_FRIEND_BALL: _ClassVar[ItemEnum]
+    ITEM_MOON_BALL: _ClassVar[ItemEnum]
+    ITEM_SPORT_BALL: _ClassVar[ItemEnum]
+    ITEM_PARK_BALL: _ClassVar[ItemEnum]
+    ITEM_DREAM_BALL: _ClassVar[ItemEnum]
+    ITEM_BEAST_BALL: _ClassVar[ItemEnum]
+    ITEM_PREMIER_BALL: _ClassVar[ItemEnum]
+    ITEM_POTION: _ClassVar[ItemEnum]
+    ITEM_ANTIDOTE: _ClassVar[ItemEnum]
+    ITEM_BURN_HEAL: _ClassVar[ItemEnum]
+    ITEM_ICE_HEAL: _ClassVar[ItemEnum]
+    ITEM_AWAKENING: _ClassVar[ItemEnum]
+    ITEM_PARALYZE_HEAL: _ClassVar[ItemEnum]
+    ITEM_FULL_RESTORE: _ClassVar[ItemEnum]
+    ITEM_MAX_POTION: _ClassVar[ItemEnum]
+    ITEM_HYPER_POTION: _ClassVar[ItemEnum]
+    ITEM_SUPER_POTION: _ClassVar[ItemEnum]
+    ITEM_FULL_HEAL: _ClassVar[ItemEnum]
+    ITEM_REVIVE: _ClassVar[ItemEnum]
+    ITEM_MAX_REVIVE: _ClassVar[ItemEnum]
+    ITEM_FRESH_WATER: _ClassVar[ItemEnum]
+    ITEM_SODA_POP: _ClassVar[ItemEnum]
+    ITEM_LEMONADE: _ClassVar[ItemEnum]
+    ITEM_MOOMOO_MILK: _ClassVar[ItemEnum]
+    ITEM_ENERGY_POWDER: _ClassVar[ItemEnum]
+    ITEM_ENERGY_ROOT: _ClassVar[ItemEnum]
+    ITEM_HEAL_POWDER: _ClassVar[ItemEnum]
+    ITEM_REVIVAL_HERB: _ClassVar[ItemEnum]
+    ITEM_ETHER: _ClassVar[ItemEnum]
+    ITEM_MAX_ETHER: _ClassVar[ItemEnum]
+    ITEM_ELIXIR: _ClassVar[ItemEnum]
+    ITEM_MAX_ELIXIR: _ClassVar[ItemEnum]
+    ITEM_LAVA_COOKIE: _ClassVar[ItemEnum]
+    ITEM_BERRY_JUICE: _ClassVar[ItemEnum]
+    ITEM_SWEET_HEART: _ClassVar[ItemEnum]
+    ITEM_BIG_MALASADA: _ClassVar[ItemEnum]
+    ITEM_OLD_GATEAU: _ClassVar[ItemEnum]
+    ITEM_SACRED_ASH: _ClassVar[ItemEnum]
+    ITEM_HP_UP: _ClassVar[ItemEnum]
+    ITEM_PROTEIN: _ClassVar[ItemEnum]
+    ITEM_IRON: _ClassVar[ItemEnum]
+    ITEM_CARBOS: _ClassVar[ItemEnum]
+    ITEM_CALCIUM: _ClassVar[ItemEnum]
+    ITEM_RARE_CANDY: _ClassVar[ItemEnum]
+    ITEM_PP_UP: _ClassVar[ItemEnum]
+    ITEM_ZINC: _ClassVar[ItemEnum]
+    ITEM_PP_MAX: _ClassVar[ItemEnum]
+    ITEM_ABILITY_CAPSULE: _ClassVar[ItemEnum]
+    ITEM_ABILITY_PATCH: _ClassVar[ItemEnum]
+    ITEM_CHERI_BERRY: _ClassVar[ItemEnum]
+    ITEM_CHESTO_BERRY: _ClassVar[ItemEnum]
+    ITEM_PECHA_BERRY: _ClassVar[ItemEnum]
+    ITEM_RAWST_BERRY: _ClassVar[ItemEnum]
+    ITEM_ASPEAR_BERRY: _ClassVar[ItemEnum]
+    ITEM_LEPPA_BERRY: _ClassVar[ItemEnum]
+    ITEM_ORAN_BERRY: _ClassVar[ItemEnum]
+    ITEM_PERSIM_BERRY: _ClassVar[ItemEnum]
+    ITEM_LUM_BERRY: _ClassVar[ItemEnum]
+    ITEM_SITRUS_BERRY: _ClassVar[ItemEnum]
+    ITEM_FIGY_BERRY: _ClassVar[ItemEnum]
+    ITEM_WIKI_BERRY: _ClassVar[ItemEnum]
+    ITEM_MAGO_BERRY: _ClassVar[ItemEnum]
+    ITEM_AGUAV_BERRY: _ClassVar[ItemEnum]
+    ITEM_IAPAPA_BERRY: _ClassVar[ItemEnum]
+    ITEM_RAZZ_BERRY: _ClassVar[ItemEnum]
+    ITEM_BLUK_BERRY: _ClassVar[ItemEnum]
+    ITEM_NANAB_BERRY: _ClassVar[ItemEnum]
+    ITEM_WEPEAR_BERRY: _ClassVar[ItemEnum]
+    ITEM_PINAP_BERRY: _ClassVar[ItemEnum]
+    ITEM_POMEG_BERRY: _ClassVar[ItemEnum]
+    ITEM_KELPSY_BERRY: _ClassVar[ItemEnum]
+    ITEM_QUALOT_BERRY: _ClassVar[ItemEnum]
+    ITEM_HONDEW_BERRY: _ClassVar[ItemEnum]
+    ITEM_GREPA_BERRY: _ClassVar[ItemEnum]
+    ITEM_TAMATO_BERRY: _ClassVar[ItemEnum]
+    ITEM_CORNN_BERRY: _ClassVar[ItemEnum]
+    ITEM_MAGOST_BERRY: _ClassVar[ItemEnum]
+    ITEM_RABUTA_BERRY: _ClassVar[ItemEnum]
+    ITEM_NOMEL_BERRY: _ClassVar[ItemEnum]
+    ITEM_SPELON_BERRY: _ClassVar[ItemEnum]
+    ITEM_PAMTRE_BERRY: _ClassVar[ItemEnum]
+    ITEM_WATMEL_BERRY: _ClassVar[ItemEnum]
+    ITEM_DURIN_BERRY: _ClassVar[ItemEnum]
+    ITEM_BELUE_BERRY: _ClassVar[ItemEnum]
+    ITEM_OCCA_BERRY: _ClassVar[ItemEnum]
+    ITEM_PASSHO_BERRY: _ClassVar[ItemEnum]
+    ITEM_WACAN_BERRY: _ClassVar[ItemEnum]
+    ITEM_RINDO_BERRY: _ClassVar[ItemEnum]
+    ITEM_YACHE_BERRY: _ClassVar[ItemEnum]
+    ITEM_CHOPLE_BERRY: _ClassVar[ItemEnum]
+    ITEM_KEBIA_BERRY: _ClassVar[ItemEnum]
+    ITEM_SHUCA_BERRY: _ClassVar[ItemEnum]
+    ITEM_COBA_BERRY: _ClassVar[ItemEnum]
+    ITEM_PAYAPA_BERRY: _ClassVar[ItemEnum]
+    ITEM_TANGA_BERRY: _ClassVar[ItemEnum]
+    ITEM_CHARTI_BERRY: _ClassVar[ItemEnum]
+    ITEM_KASIB_BERRY: _ClassVar[ItemEnum]
+    ITEM_HABAN_BERRY: _ClassVar[ItemEnum]
+    ITEM_COLBUR_BERRY: _ClassVar[ItemEnum]
+    ITEM_BABIRI_BERRY: _ClassVar[ItemEnum]
+    ITEM_CHILAN_BERRY: _ClassVar[ItemEnum]
+    ITEM_ROSELI_BERRY: _ClassVar[ItemEnum]
+    ITEM_LIECHI_BERRY: _ClassVar[ItemEnum]
+    ITEM_GANLON_BERRY: _ClassVar[ItemEnum]
+    ITEM_SALAC_BERRY: _ClassVar[ItemEnum]
+    ITEM_PETAYA_BERRY: _ClassVar[ItemEnum]
+    ITEM_APICOT_BERRY: _ClassVar[ItemEnum]
+    ITEM_LANSAT_BERRY: _ClassVar[ItemEnum]
+    ITEM_STARF_BERRY: _ClassVar[ItemEnum]
+    ITEM_MICLE_BERRY: _ClassVar[ItemEnum]
+    ITEM_CUSTAP_BERRY: _ClassVar[ItemEnum]
+    ITEM_JABOCA_BERRY: _ClassVar[ItemEnum]
+    ITEM_ROWAP_BERRY: _ClassVar[ItemEnum]
+    ITEM_KEE_BERRY: _ClassVar[ItemEnum]
+    ITEM_MARANGA_BERRY: _ClassVar[ItemEnum]
+    ITEM_ENIGMA_BERRY: _ClassVar[ItemEnum]
+    ITEM_SUN_STONE: _ClassVar[ItemEnum]
+    ITEM_MOON_STONE: _ClassVar[ItemEnum]
+    ITEM_FIRE_STONE: _ClassVar[ItemEnum]
+    ITEM_THUNDER_STONE: _ClassVar[ItemEnum]
+    ITEM_WATER_STONE: _ClassVar[ItemEnum]
+    ITEM_LEAF_STONE: _ClassVar[ItemEnum]
+    ITEM_DAWN_STONE: _ClassVar[ItemEnum]
+    ITEM_DUSK_STONE: _ClassVar[ItemEnum]
+    ITEM_SHINY_STONE: _ClassVar[ItemEnum]
+    ITEM_ICE_STONE: _ClassVar[ItemEnum]
+    ITEM_RED_NECTAR: _ClassVar[ItemEnum]
+    ITEM_YELLOW_NECTAR: _ClassVar[ItemEnum]
+    ITEM_PINK_NECTAR: _ClassVar[ItemEnum]
+    ITEM_PURPLE_NECTAR: _ClassVar[ItemEnum]
+    ITEM_SWEET_APPLE: _ClassVar[ItemEnum]
+    ITEM_TART_APPLE: _ClassVar[ItemEnum]
+    ITEM_CRACKED_POT: _ClassVar[ItemEnum]
+    ITEM_GALARICA_CUFF: _ClassVar[ItemEnum]
+    ITEM_GALARICA_WREATH: _ClassVar[ItemEnum]
+    ITEM_STRAWBERRY_SWEET: _ClassVar[ItemEnum]
+    ITEM_LOVE_SWEET: _ClassVar[ItemEnum]
+    ITEM_BERRY_SWEET: _ClassVar[ItemEnum]
+    ITEM_CLOVER_SWEET: _ClassVar[ItemEnum]
+    ITEM_FLOWER_SWEET: _ClassVar[ItemEnum]
+    ITEM_STAR_SWEET: _ClassVar[ItemEnum]
+    ITEM_RIBBON_SWEET: _ClassVar[ItemEnum]
+    ITEM_BLUE_FLUTE: _ClassVar[ItemEnum]
+    ITEM_YELLOW_FLUTE: _ClassVar[ItemEnum]
+    ITEM_RED_FLUTE: _ClassVar[ItemEnum]
+    ITEM_BLACK_FLUTE: _ClassVar[ItemEnum]
+    ITEM_WHITE_FLUTE: _ClassVar[ItemEnum]
+    ITEM_SHOAL_SALT: _ClassVar[ItemEnum]
+    ITEM_SHOAL_SHELL: _ClassVar[ItemEnum]
+    ITEM_RED_SHARD: _ClassVar[ItemEnum]
+    ITEM_BLUE_SHARD: _ClassVar[ItemEnum]
+    ITEM_YELLOW_SHARD: _ClassVar[ItemEnum]
+    ITEM_GREEN_SHARD: _ClassVar[ItemEnum]
+    ITEM_ESCAPE_ROPE: _ClassVar[ItemEnum]
+    ITEM_REPEL: _ClassVar[ItemEnum]
+    ITEM_SUPER_REPEL: _ClassVar[ItemEnum]
+    ITEM_MAX_REPEL: _ClassVar[ItemEnum]
+    ITEM_TINY_MUSHROOM: _ClassVar[ItemEnum]
+    ITEM_BIG_MUSHROOM: _ClassVar[ItemEnum]
+    ITEM_BALM_MUSHROOM: _ClassVar[ItemEnum]
+    ITEM_PEARL: _ClassVar[ItemEnum]
+    ITEM_BIG_PEARL: _ClassVar[ItemEnum]
+    ITEM_PEARL_STRING: _ClassVar[ItemEnum]
+    ITEM_STARDUST: _ClassVar[ItemEnum]
+    ITEM_STAR_PIECE: _ClassVar[ItemEnum]
+    ITEM_COMET_SHARD: _ClassVar[ItemEnum]
+    ITEM_NUGGET: _ClassVar[ItemEnum]
+    ITEM_BIG_NUGGET: _ClassVar[ItemEnum]
+    ITEM_RELIC_COPPER: _ClassVar[ItemEnum]
+    ITEM_RELIC_SILVER: _ClassVar[ItemEnum]
+    ITEM_RELIC_GOLD: _ClassVar[ItemEnum]
+    ITEM_RELIC_VASE: _ClassVar[ItemEnum]
+    ITEM_RELIC_STATUE: _ClassVar[ItemEnum]
+    ITEM_RELIC_BAND: _ClassVar[ItemEnum]
+    ITEM_HEART_SCALE: _ClassVar[ItemEnum]
+    ITEM_BOTTLE_CAP: _ClassVar[ItemEnum]
+    ITEM_GOLD_BOTTLE_CAP: _ClassVar[ItemEnum]
+    ITEM_HONEY: _ClassVar[ItemEnum]
+    ITEM_RARE_BONE: _ClassVar[ItemEnum]
+    ITEM_OVAL_STONE: _ClassVar[ItemEnum]
+    ITEM_PROTECTOR: _ClassVar[ItemEnum]
+    ITEM_ELECTIRIZER: _ClassVar[ItemEnum]
+    ITEM_MAGMARIZER: _ClassVar[ItemEnum]
+    ITEM_DUBIOUS_DISC: _ClassVar[ItemEnum]
+    ITEM_REAPER_CLOTH: _ClassVar[ItemEnum]
+    ITEM_PRISM_SCALE: _ClassVar[ItemEnum]
+    ITEM_WHIPPED_DREAM: _ClassVar[ItemEnum]
+    ITEM_SACHET: _ClassVar[ItemEnum]
+    ITEM_UPGRADE: _ClassVar[ItemEnum]
+    ITEM_RED_SCARF: _ClassVar[ItemEnum]
+    ITEM_BLUE_SCARF: _ClassVar[ItemEnum]
+    ITEM_PINK_SCARF: _ClassVar[ItemEnum]
+    ITEM_GREEN_SCARF: _ClassVar[ItemEnum]
+    ITEM_YELLOW_SCARF: _ClassVar[ItemEnum]
+    ITEM_ARMOR_FOSSIL: _ClassVar[ItemEnum]
+    ITEM_SKULL_FOSSIL: _ClassVar[ItemEnum]
+    ITEM_HELIX_FOSSIL: _ClassVar[ItemEnum]
+    ITEM_DOME_FOSSIL: _ClassVar[ItemEnum]
+    ITEM_COVER_FOSSIL: _ClassVar[ItemEnum]
+    ITEM_PLUME_FOSSIL: _ClassVar[ItemEnum]
+    ITEM_JAW_FOSSIL: _ClassVar[ItemEnum]
+    ITEM_SAIL_FOSSIL: _ClassVar[ItemEnum]
+    ITEM_ROOT_FOSSIL: _ClassVar[ItemEnum]
+    ITEM_CLAW_FOSSIL: _ClassVar[ItemEnum]
+    ITEM_FOSSILIZED_BIRD: _ClassVar[ItemEnum]
+    ITEM_FOSSILIZED_FISH: _ClassVar[ItemEnum]
+    ITEM_FOSSILIZED_DRAKE: _ClassVar[ItemEnum]
+    ITEM_FOSSILIZED_DINO: _ClassVar[ItemEnum]
+    ITEM_OLD_AMBER: _ClassVar[ItemEnum]
+    ITEM_GUARD_SPEC: _ClassVar[ItemEnum]
+    ITEM_DIRE_HIT: _ClassVar[ItemEnum]
+    ITEM_X_ATTACK: _ClassVar[ItemEnum]
+    ITEM_X_DEFENSE: _ClassVar[ItemEnum]
+    ITEM_X_SPEED: _ClassVar[ItemEnum]
+    ITEM_X_ACCURACY: _ClassVar[ItemEnum]
+    ITEM_X_SP_ATK: _ClassVar[ItemEnum]
+    ITEM_X_SP_DEF: _ClassVar[ItemEnum]
+    ITEM_POKE_DOLL: _ClassVar[ItemEnum]
+    ITEM_FLUFFY_TAIL: _ClassVar[ItemEnum]
+    ITEM_BRIGHT_POWDER: _ClassVar[ItemEnum]
+    ITEM_WHITE_HERB: _ClassVar[ItemEnum]
+    ITEM_MACHO_BRACE: _ClassVar[ItemEnum]
+    ITEM_EXP_SHARE: _ClassVar[ItemEnum]
+    ITEM_QUICK_CLAW: _ClassVar[ItemEnum]
+    ITEM_SOOTHE_BELL: _ClassVar[ItemEnum]
+    ITEM_MENTAL_HERB: _ClassVar[ItemEnum]
+    ITEM_CHOICE_BAND: _ClassVar[ItemEnum]
+    ITEM_KINGS_ROCK: _ClassVar[ItemEnum]
+    ITEM_SILVER_POWDER: _ClassVar[ItemEnum]
+    ITEM_AMULET_COIN: _ClassVar[ItemEnum]
+    ITEM_CLEANSE_TAG: _ClassVar[ItemEnum]
+    ITEM_SMOKE_BALL: _ClassVar[ItemEnum]
+    ITEM_EVERSTONE: _ClassVar[ItemEnum]
+    ITEM_FOCUS_BAND: _ClassVar[ItemEnum]
+    ITEM_LUCKY_EGG: _ClassVar[ItemEnum]
+    ITEM_SCOPE_LENS: _ClassVar[ItemEnum]
+    ITEM_METAL_COAT: _ClassVar[ItemEnum]
+    ITEM_SOFT_SAND: _ClassVar[ItemEnum]
+    ITEM_HARD_STONE: _ClassVar[ItemEnum]
+    ITEM_MIRACLE_SEED: _ClassVar[ItemEnum]
+    ITEM_BLACK_GLASSES: _ClassVar[ItemEnum]
+    ITEM_BLACK_BELT: _ClassVar[ItemEnum]
+    ITEM_MAGNET: _ClassVar[ItemEnum]
+    ITEM_MYSTIC_WATER: _ClassVar[ItemEnum]
+    ITEM_SHARP_BEAK: _ClassVar[ItemEnum]
+    ITEM_POISON_BARB: _ClassVar[ItemEnum]
+    ITEM_NEVER_MELT_ICE: _ClassVar[ItemEnum]
+    ITEM_SPELL_TAG: _ClassVar[ItemEnum]
+    ITEM_TWISTED_SPOON: _ClassVar[ItemEnum]
+    ITEM_CHARCOAL: _ClassVar[ItemEnum]
+    ITEM_DRAGON_FANG: _ClassVar[ItemEnum]
+    ITEM_SILK_SCARF: _ClassVar[ItemEnum]
+    ITEM_LEFTOVERS: _ClassVar[ItemEnum]
+    ITEM_DRAGON_SCALE: _ClassVar[ItemEnum]
+    ITEM_RAZOR_CLAW: _ClassVar[ItemEnum]
+    ITEM_RAZOR_FANG: _ClassVar[ItemEnum]
+    ITEM_SHELL_BELL: _ClassVar[ItemEnum]
+    ITEM_POWER_BRACER: _ClassVar[ItemEnum]
+    ITEM_POWER_BELT: _ClassVar[ItemEnum]
+    ITEM_POWER_LENS: _ClassVar[ItemEnum]
+    ITEM_POWER_BAND: _ClassVar[ItemEnum]
+    ITEM_POWER_ANKLET: _ClassVar[ItemEnum]
+    ITEM_POWER_WEIGHT: _ClassVar[ItemEnum]
+    ITEM_POWER_HERB: _ClassVar[ItemEnum]
+    ITEM_CHOICE_SCARF: _ClassVar[ItemEnum]
+    ITEM_CHOICE_SPECS: _ClassVar[ItemEnum]
+    ITEM_FOCUS_SASH: _ClassVar[ItemEnum]
+    ITEM_WIDE_LENS: _ClassVar[ItemEnum]
+    ITEM_ZOOM_LENS: _ClassVar[ItemEnum]
+    ITEM_METRONOME: _ClassVar[ItemEnum]
+    ITEM_MUSCLE_BAND: _ClassVar[ItemEnum]
+    ITEM_WISE_GLASSES: _ClassVar[ItemEnum]
+    ITEM_EXPERT_BELT: _ClassVar[ItemEnum]
+    ITEM_LIGHT_CLAY: _ClassVar[ItemEnum]
+    ITEM_ICY_ROCK: _ClassVar[ItemEnum]
+    ITEM_SMOOTH_ROCK: _ClassVar[ItemEnum]
+    ITEM_HEAT_ROCK: _ClassVar[ItemEnum]
+    ITEM_DAMP_ROCK: _ClassVar[ItemEnum]
+    ITEM_DESTINY_KNOT: _ClassVar[ItemEnum]
+    ITEM_GRIP_CLAW: _ClassVar[ItemEnum]
+    ITEM_LIFE_ORB: _ClassVar[ItemEnum]
+    ITEM_TOXIC_ORB: _ClassVar[ItemEnum]
+    ITEM_FLAME_ORB: _ClassVar[ItemEnum]
+    ITEM_STICKY_BARB: _ClassVar[ItemEnum]
+    ITEM_BLACK_SLUDGE: _ClassVar[ItemEnum]
+    ITEM_IRON_BALL: _ClassVar[ItemEnum]
+    ITEM_LAGGING_TAIL: _ClassVar[ItemEnum]
+    ITEM_SHED_SHELL: _ClassVar[ItemEnum]
+    ITEM_BIG_ROOT: _ClassVar[ItemEnum]
+    ITEM_EVIOLITE: _ClassVar[ItemEnum]
+    ITEM_FLOAT_STONE: _ClassVar[ItemEnum]
+    ITEM_ROCKY_HELMET: _ClassVar[ItemEnum]
+    ITEM_AIR_BALLOON: _ClassVar[ItemEnum]
+    ITEM_RED_CARD: _ClassVar[ItemEnum]
+    ITEM_RING_TARGET: _ClassVar[ItemEnum]
+    ITEM_BINDING_BAND: _ClassVar[ItemEnum]
+    ITEM_EJECT_BUTTON: _ClassVar[ItemEnum]
+    ITEM_ABSORB_BULB: _ClassVar[ItemEnum]
+    ITEM_CELL_BATTERY: _ClassVar[ItemEnum]
+    ITEM_LUMINOUS_MOSS: _ClassVar[ItemEnum]
+    ITEM_SNOWBALL: _ClassVar[ItemEnum]
+    ITEM_WEAKNESS_POLICY: _ClassVar[ItemEnum]
+    ITEM_ASSAULT_VEST: _ClassVar[ItemEnum]
+    ITEM_SAFETY_GOGGLES: _ClassVar[ItemEnum]
+    ITEM_ADRENALINE_ORB: _ClassVar[ItemEnum]
+    ITEM_TERRAIN_EXTENDER: _ClassVar[ItemEnum]
+    ITEM_PROTECTIVE_PADS: _ClassVar[ItemEnum]
+    ITEM_ELECTRIC_SEED: _ClassVar[ItemEnum]
+    ITEM_PSYCHIC_SEED: _ClassVar[ItemEnum]
+    ITEM_MISTY_SEED: _ClassVar[ItemEnum]
+    ITEM_GRASSY_SEED: _ClassVar[ItemEnum]
+    ITEM_BUG_GEM: _ClassVar[ItemEnum]
+    ITEM_DARK_GEM: _ClassVar[ItemEnum]
+    ITEM_DRAGON_GEM: _ClassVar[ItemEnum]
+    ITEM_ELECTRIC_GEM: _ClassVar[ItemEnum]
+    ITEM_FAIRY_GEM: _ClassVar[ItemEnum]
+    ITEM_FIGHTING_GEM: _ClassVar[ItemEnum]
+    ITEM_FIRE_GEM: _ClassVar[ItemEnum]
+    ITEM_FLYING_GEM: _ClassVar[ItemEnum]
+    ITEM_GHOST_GEM: _ClassVar[ItemEnum]
+    ITEM_GRASS_GEM: _ClassVar[ItemEnum]
+    ITEM_GROUND_GEM: _ClassVar[ItemEnum]
+    ITEM_ICE_GEM: _ClassVar[ItemEnum]
+    ITEM_NORMAL_GEM: _ClassVar[ItemEnum]
+    ITEM_POISON_GEM: _ClassVar[ItemEnum]
+    ITEM_PSYCHIC_GEM: _ClassVar[ItemEnum]
+    ITEM_ROCK_GEM: _ClassVar[ItemEnum]
+    ITEM_STEEL_GEM: _ClassVar[ItemEnum]
+    ITEM_WATER_GEM: _ClassVar[ItemEnum]
+    ITEM_THROAT_SPRAY: _ClassVar[ItemEnum]
+    ITEM_EJECT_PACK: _ClassVar[ItemEnum]
+    ITEM_HEAVY_DUTY_BOOTS: _ClassVar[ItemEnum]
+    ITEM_BLUNDER_POLICY: _ClassVar[ItemEnum]
+    ITEM_ROOM_SERVICE: _ClassVar[ItemEnum]
+    ITEM_UTILITY_UMBRELLA: _ClassVar[ItemEnum]
+    ITEM_RUSTED_SWORD: _ClassVar[ItemEnum]
+    ITEM_RUSTED_SHIELD: _ClassVar[ItemEnum]
+    ITEM_INSECT_PLATE: _ClassVar[ItemEnum]
+    ITEM_DREAD_PLATE: _ClassVar[ItemEnum]
+    ITEM_DRACO_PLATE: _ClassVar[ItemEnum]
+    ITEM_ZAP_PLATE: _ClassVar[ItemEnum]
+    ITEM_PIXIE_PLATE: _ClassVar[ItemEnum]
+    ITEM_FIST_PLATE: _ClassVar[ItemEnum]
+    ITEM_FLAME_PLATE: _ClassVar[ItemEnum]
+    ITEM_SKY_PLATE: _ClassVar[ItemEnum]
+    ITEM_SPOOKY_PLATE: _ClassVar[ItemEnum]
+    ITEM_MEADOW_PLATE: _ClassVar[ItemEnum]
+    ITEM_EARTH_PLATE: _ClassVar[ItemEnum]
+    ITEM_ICICLE_PLATE: _ClassVar[ItemEnum]
+    ITEM_TOXIC_PLATE: _ClassVar[ItemEnum]
+    ITEM_MIND_PLATE: _ClassVar[ItemEnum]
+    ITEM_STONE_PLATE: _ClassVar[ItemEnum]
+    ITEM_IRON_PLATE: _ClassVar[ItemEnum]
+    ITEM_SPLASH_PLATE: _ClassVar[ItemEnum]
+    ITEM_SOUL_DEW: _ClassVar[ItemEnum]
+    ITEM_DEEP_SEA_TOOTH: _ClassVar[ItemEnum]
+    ITEM_DEEP_SEA_SCALE: _ClassVar[ItemEnum]
+    ITEM_LUCKY_PUNCH: _ClassVar[ItemEnum]
+    ITEM_METAL_POWDER: _ClassVar[ItemEnum]
+    ITEM_THICK_CLUB: _ClassVar[ItemEnum]
+    ITEM_LEEK: _ClassVar[ItemEnum]
+    ITEM_LIGHT_BALL: _ClassVar[ItemEnum]
+    ITEM_QUICK_POWDER: _ClassVar[ItemEnum]
+    ITEM_ADAMANT_ORB: _ClassVar[ItemEnum]
+    ITEM_LUSTROUS_ORB: _ClassVar[ItemEnum]
+    ITEM_GRISEOUS_ORB: _ClassVar[ItemEnum]
+    ITEM_DOUSE_DRIVE: _ClassVar[ItemEnum]
+    ITEM_SHOCK_DRIVE: _ClassVar[ItemEnum]
+    ITEM_BURN_DRIVE: _ClassVar[ItemEnum]
+    ITEM_CHILL_DRIVE: _ClassVar[ItemEnum]
+    ITEM_SEA_INCENSE: _ClassVar[ItemEnum]
+    ITEM_LAX_INCENSE: _ClassVar[ItemEnum]
+    ITEM_ODD_INCENSE: _ClassVar[ItemEnum]
+    ITEM_ROCK_INCENSE: _ClassVar[ItemEnum]
+    ITEM_FULL_INCENSE: _ClassVar[ItemEnum]
+    ITEM_WAVE_INCENSE: _ClassVar[ItemEnum]
+    ITEM_ROSE_INCENSE: _ClassVar[ItemEnum]
+    ITEM_LUCK_INCENSE: _ClassVar[ItemEnum]
+    ITEM_PURE_INCENSE: _ClassVar[ItemEnum]
+    ITEM_TRAINING_BAND: _ClassVar[ItemEnum]
+    ITEM_CANDY_BOX: _ClassVar[ItemEnum]
+    ITEM_INFINITE_REPEL: _ClassVar[ItemEnum]
+    ITEM_IRON_PILL: _ClassVar[ItemEnum]
+    ITEM_ABILITY_SHIELD: _ClassVar[ItemEnum]
+    ITEM_CLEAR_AMULET: _ClassVar[ItemEnum]
+    ITEM_MIRROR_HERB: _ClassVar[ItemEnum]
+    ITEM_PUNCHING_GLOVE: _ClassVar[ItemEnum]
+    ITEM_COVERT_CLOAK: _ClassVar[ItemEnum]
+    ITEM_LOADED_DICE: _ClassVar[ItemEnum]
+    ITEM_FAIRY_FEATHER: _ClassVar[ItemEnum]
+    ITEM_FROST_ORB: _ClassVar[ItemEnum]
+    ITEM_TACTICAL_VEST: _ClassVar[ItemEnum]
+    ITEM_BOOSTER_ENERGY: _ClassVar[ItemEnum]
+    ITEM_SWIRLY_GLASSES: _ClassVar[ItemEnum]
+    ITEM_TM01_FOCUS_PUNCH: _ClassVar[ItemEnum]
+    ITEM_TM02_DRAGON_CLAW: _ClassVar[ItemEnum]
+    ITEM_TM03_WATER_PULSE: _ClassVar[ItemEnum]
+    ITEM_TM04_CALM_MIND: _ClassVar[ItemEnum]
+    ITEM_TM05_ROAR: _ClassVar[ItemEnum]
+    ITEM_TM06_TOXIC: _ClassVar[ItemEnum]
+    ITEM_TM07_HAIL: _ClassVar[ItemEnum]
+    ITEM_TM08_BULK_UP: _ClassVar[ItemEnum]
+    ITEM_TM09_BULLET_SEED: _ClassVar[ItemEnum]
+    ITEM_TM10_HIDDEN_POWER: _ClassVar[ItemEnum]
+    ITEM_TM11_SUNNY_DAY: _ClassVar[ItemEnum]
+    ITEM_TM12_TAUNT: _ClassVar[ItemEnum]
+    ITEM_TM13_ICE_BEAM: _ClassVar[ItemEnum]
+    ITEM_TM14_BLIZZARD: _ClassVar[ItemEnum]
+    ITEM_TM15_HYPER_BEAM: _ClassVar[ItemEnum]
+    ITEM_TM16_LIGHT_SCREEN: _ClassVar[ItemEnum]
+    ITEM_TM17_PROTECT: _ClassVar[ItemEnum]
+    ITEM_TM18_RAIN_DANCE: _ClassVar[ItemEnum]
+    ITEM_TM19_GIGA_DRAIN: _ClassVar[ItemEnum]
+    ITEM_TM20_SAFEGUARD: _ClassVar[ItemEnum]
+    ITEM_TM21_FRUSTRATION: _ClassVar[ItemEnum]
+    ITEM_TM22_SOLARBEAM: _ClassVar[ItemEnum]
+    ITEM_TM23_IRON_TAIL: _ClassVar[ItemEnum]
+    ITEM_TM24_THUNDERBOLT: _ClassVar[ItemEnum]
+    ITEM_TM25_THUNDER: _ClassVar[ItemEnum]
+    ITEM_TM26_EARTHQUAKE: _ClassVar[ItemEnum]
+    ITEM_TM27_RETURN: _ClassVar[ItemEnum]
+    ITEM_TM28_DIG: _ClassVar[ItemEnum]
+    ITEM_TM29_PSYCHIC: _ClassVar[ItemEnum]
+    ITEM_TM30_SHADOW_BALL: _ClassVar[ItemEnum]
+    ITEM_TM31_BRICK_BREAK: _ClassVar[ItemEnum]
+    ITEM_TM32_DOUBLE_TEAM: _ClassVar[ItemEnum]
+    ITEM_TM33_REFLECT: _ClassVar[ItemEnum]
+    ITEM_TM34_SLUDGE_WAVE: _ClassVar[ItemEnum]
+    ITEM_TM35_FLAMETHROWER: _ClassVar[ItemEnum]
+    ITEM_TM36_SLUDGE_BOMB: _ClassVar[ItemEnum]
+    ITEM_TM37_SANDSTORM: _ClassVar[ItemEnum]
+    ITEM_TM38_FIRE_BLAST: _ClassVar[ItemEnum]
+    ITEM_TM39_ROCK_TOMB: _ClassVar[ItemEnum]
+    ITEM_TM40_AERIAL_ACE: _ClassVar[ItemEnum]
+    ITEM_TM41_TORMENT: _ClassVar[ItemEnum]
+    ITEM_TM42_FACADE: _ClassVar[ItemEnum]
+    ITEM_TM43_SECRET_POWER: _ClassVar[ItemEnum]
+    ITEM_TM44_REST: _ClassVar[ItemEnum]
+    ITEM_TM45_ATTRACT: _ClassVar[ItemEnum]
+    ITEM_TM46_THIEF: _ClassVar[ItemEnum]
+    ITEM_TM47_STEEL_WING: _ClassVar[ItemEnum]
+    ITEM_TM48_SKILL_SWAP: _ClassVar[ItemEnum]
+    ITEM_TM49_SLEEP_TALK: _ClassVar[ItemEnum]
+    ITEM_TM50_OVERHEAT: _ClassVar[ItemEnum]
+    ITEM_TM51_ROOST: _ClassVar[ItemEnum]
+    ITEM_TM52_FOCUS_BLAST: _ClassVar[ItemEnum]
+    ITEM_TM53_ENERGY_BALL: _ClassVar[ItemEnum]
+    ITEM_TM54_PSYSHOCK: _ClassVar[ItemEnum]
+    ITEM_TM55_SCALD: _ClassVar[ItemEnum]
+    ITEM_TM56_LEECH_LIFE: _ClassVar[ItemEnum]
+    ITEM_TM57_CHARGE_BEAM: _ClassVar[ItemEnum]
+    ITEM_TM58_ENDURE: _ClassVar[ItemEnum]
+    ITEM_TM59_DRAGON_PULSE: _ClassVar[ItemEnum]
+    ITEM_TM60_DRAIN_PUNCH: _ClassVar[ItemEnum]
+    ITEM_TM61_WILL_O_WISP: _ClassVar[ItemEnum]
+    ITEM_TM62_ACROBATICS: _ClassVar[ItemEnum]
+    ITEM_TM63_ROCK_SLIDE: _ClassVar[ItemEnum]
+    ITEM_TM64_EXPLOSION: _ClassVar[ItemEnum]
+    ITEM_TM65_SHADOW_CLAW: _ClassVar[ItemEnum]
+    ITEM_TM66_PAYBACK: _ClassVar[ItemEnum]
+    ITEM_TM67_RECYCLE: _ClassVar[ItemEnum]
+    ITEM_TM68_GIGA_IMPACT: _ClassVar[ItemEnum]
+    ITEM_TM69_ROCK_POLISH: _ClassVar[ItemEnum]
+    ITEM_TM70_AURORA_VEIL: _ClassVar[ItemEnum]
+    ITEM_TM71_STONE_EDGE: _ClassVar[ItemEnum]
+    ITEM_TM72_VOLT_SWITCH: _ClassVar[ItemEnum]
+    ITEM_TM73_THUNDER_WAVE: _ClassVar[ItemEnum]
+    ITEM_TM74_GYRO_BALL: _ClassVar[ItemEnum]
+    ITEM_TM75_SWORDS_DANCE: _ClassVar[ItemEnum]
+    ITEM_TM76_STEALTH_ROCK: _ClassVar[ItemEnum]
+    ITEM_TM77_STRUGGLE_BUG: _ClassVar[ItemEnum]
+    ITEM_TM78_BULLDOZE: _ClassVar[ItemEnum]
+    ITEM_TM79_FREEZE_DRY: _ClassVar[ItemEnum]
+    ITEM_TM80_VENOSHOCK: _ClassVar[ItemEnum]
+    ITEM_TM81_X_SCISSOR: _ClassVar[ItemEnum]
+    ITEM_TM82_DRAGON_TAIL: _ClassVar[ItemEnum]
+    ITEM_TM83_FLAME_CHARGE: _ClassVar[ItemEnum]
+    ITEM_TM84_POISON_JAB: _ClassVar[ItemEnum]
+    ITEM_TM85_DREAM_EATER: _ClassVar[ItemEnum]
+    ITEM_TM86_GRASS_KNOT: _ClassVar[ItemEnum]
+    ITEM_TM87_SMACK_DOWN: _ClassVar[ItemEnum]
+    ITEM_TM88_LOW_SWEEP: _ClassVar[ItemEnum]
+    ITEM_TM89_U_TURN: _ClassVar[ItemEnum]
+    ITEM_TM90_SUBSTITUTE: _ClassVar[ItemEnum]
+    ITEM_TM91_FLASH_CANNON: _ClassVar[ItemEnum]
+    ITEM_TM92_TRICK_ROOM: _ClassVar[ItemEnum]
+    ITEM_TM93_WILD_CHARGE: _ClassVar[ItemEnum]
+    ITEM_TM94_SUCKER_PUNCH: _ClassVar[ItemEnum]
+    ITEM_TM95_SNARL: _ClassVar[ItemEnum]
+    ITEM_TM96_AVALANCHE: _ClassVar[ItemEnum]
+    ITEM_TM97_DARK_PULSE: _ClassVar[ItemEnum]
+    ITEM_TM98_FALSE_SWIPE: _ClassVar[ItemEnum]
+    ITEM_TM99_DAZZLING_GLEAM: _ClassVar[ItemEnum]
+    ITEM_TM100_CURSE: _ClassVar[ItemEnum]
+    ITEM_HM01_CUT: _ClassVar[ItemEnum]
+    ITEM_HM02_FLY: _ClassVar[ItemEnum]
+    ITEM_HM03_SURF: _ClassVar[ItemEnum]
+    ITEM_HM04_STRENGTH: _ClassVar[ItemEnum]
+    ITEM_HM05_FLASH: _ClassVar[ItemEnum]
+    ITEM_HM06_ROCK_SMASH: _ClassVar[ItemEnum]
+    ITEM_HM07_WATERFALL: _ClassVar[ItemEnum]
+    ITEM_HM08_DIVE: _ClassVar[ItemEnum]
+    ITEM_ODD_KEYSTONE: _ClassVar[ItemEnum]
+    ITEM_GRACIDEA: _ClassVar[ItemEnum]
+    ITEM_MEGA_BRACELET: _ClassVar[ItemEnum]
+    ITEM_MACH_BIKE: _ClassVar[ItemEnum]
+    ITEM_COIN_CASE: _ClassVar[ItemEnum]
+    ITEM_ITEMFINDER: _ClassVar[ItemEnum]
+    ITEM_OLD_ROD: _ClassVar[ItemEnum]
+    ITEM_GOOD_ROD: _ClassVar[ItemEnum]
+    ITEM_SUPER_ROD: _ClassVar[ItemEnum]
+    ITEM_SS_TICKET: _ClassVar[ItemEnum]
+    ITEM_CONTEST_PASS: _ClassVar[ItemEnum]
+    ITEM_WAILMER_PAIL: _ClassVar[ItemEnum]
+    ITEM_DEVON_GOODS: _ClassVar[ItemEnum]
+    ITEM_SOOT_SACK: _ClassVar[ItemEnum]
+    ITEM_BASEMENT_KEY: _ClassVar[ItemEnum]
+    ITEM_ACRO_BIKE: _ClassVar[ItemEnum]
+    ITEM_EGG_INCUBATOR: _ClassVar[ItemEnum]
+    ITEM_LETTER: _ClassVar[ItemEnum]
+    ITEM_EON_TICKET: _ClassVar[ItemEnum]
+    ITEM_EXP_CHARM: _ClassVar[ItemEnum]
+    ITEM_PRISON_BOTTLE: _ClassVar[ItemEnum]
+    ITEM_SCANNER: _ClassVar[ItemEnum]
+    ITEM_GO_GOGGLES: _ClassVar[ItemEnum]
+    ITEM_METEORITE: _ClassVar[ItemEnum]
+    ITEM_ROOM_1_KEY: _ClassVar[ItemEnum]
+    ITEM_ROOM_2_KEY: _ClassVar[ItemEnum]
+    ITEM_ROOM_4_KEY: _ClassVar[ItemEnum]
+    ITEM_ROOM_6_KEY: _ClassVar[ItemEnum]
+    ITEM_STORAGE_KEY: _ClassVar[ItemEnum]
+    ITEM_DEVON_SCOPE: _ClassVar[ItemEnum]
+    ITEM_MAGMA_STONE: _ClassVar[ItemEnum]
+    ITEM_LUNAR_WING: _ClassVar[ItemEnum]
+    ITEM_SHINY_CHARM: _ClassVar[ItemEnum]
+    ITEM_OVAL_CHARM: _ClassVar[ItemEnum]
+    ITEM_MAGMA_EMBLEM: _ClassVar[ItemEnum]
+    ITEM_OLD_SEA_MAP: _ClassVar[ItemEnum]
+    ITEM_MYSTIC_TICKET: _ClassVar[ItemEnum]
+    ITEM_AURORA_TICKET: _ClassVar[ItemEnum]
+    ITEM_POWDER_JAR: _ClassVar[ItemEnum]
+    ITEM_REVEAL_GLASS: _ClassVar[ItemEnum]
+    ITEM_DNA_SPLICERS: _ClassVar[ItemEnum]
+    ITEM_POKE_VIAL: _ClassVar[ItemEnum]
+    ITEM_CATCHING_CHARM: _ClassVar[ItemEnum]
+    ITEM_ROTOM_CATALOG: _ClassVar[ItemEnum]
+    ITEM_REINS_OF_UNITY: _ClassVar[ItemEnum]
+    ITEM_ICEROOT_CARROT: _ClassVar[ItemEnum]
+    ITEM_SHADEROOT_CARROT: _ClassVar[ItemEnum]
+    ITEM_WOODEN_CROWN: _ClassVar[ItemEnum]
+    ITEM_N_LUNARIZER: _ClassVar[ItemEnum]
+    ITEM_N_SOLARIZER: _ClassVar[ItemEnum]
+    ITEM_ABOMASITE: _ClassVar[ItemEnum]
+    ITEM_ABSOLITE: _ClassVar[ItemEnum]
+    ITEM_AERODACTYLITE: _ClassVar[ItemEnum]
+    ITEM_AGGRONITE: _ClassVar[ItemEnum]
+    ITEM_ALAKAZITE: _ClassVar[ItemEnum]
+    ITEM_ALTARIANITE: _ClassVar[ItemEnum]
+    ITEM_AMPHAROSITE: _ClassVar[ItemEnum]
+    ITEM_AUDINITE: _ClassVar[ItemEnum]
+    ITEM_BANETTITE: _ClassVar[ItemEnum]
+    ITEM_BEEDRILLITE: _ClassVar[ItemEnum]
+    ITEM_BLASTOISINITE: _ClassVar[ItemEnum]
+    ITEM_BLAZIKENITE: _ClassVar[ItemEnum]
+    ITEM_CAMERUPTITE: _ClassVar[ItemEnum]
+    ITEM_CHARIZARDITE_X: _ClassVar[ItemEnum]
+    ITEM_CHARIZARDITE_Y: _ClassVar[ItemEnum]
+    ITEM_DIANCITE: _ClassVar[ItemEnum]
+    ITEM_GALLADITE: _ClassVar[ItemEnum]
+    ITEM_GARCHOMPITE: _ClassVar[ItemEnum]
+    ITEM_GARDEVOIRITE: _ClassVar[ItemEnum]
+    ITEM_GENGARITE: _ClassVar[ItemEnum]
+    ITEM_GLALITITE: _ClassVar[ItemEnum]
+    ITEM_GYARADOSITE: _ClassVar[ItemEnum]
+    ITEM_HERACRONITE: _ClassVar[ItemEnum]
+    ITEM_HOUNDOOMINITE: _ClassVar[ItemEnum]
+    ITEM_KANGASKHANITE: _ClassVar[ItemEnum]
+    ITEM_LATIASITE: _ClassVar[ItemEnum]
+    ITEM_LATIOSITE: _ClassVar[ItemEnum]
+    ITEM_LOPUNNITE: _ClassVar[ItemEnum]
+    ITEM_LUCARIONITE: _ClassVar[ItemEnum]
+    ITEM_MANECTITE: _ClassVar[ItemEnum]
+    ITEM_MAWILITE: _ClassVar[ItemEnum]
+    ITEM_MEDICHAMITE: _ClassVar[ItemEnum]
+    ITEM_METAGROSSITE: _ClassVar[ItemEnum]
+    ITEM_MEWTWONITE_X: _ClassVar[ItemEnum]
+    ITEM_MEWTWONITE_Y: _ClassVar[ItemEnum]
+    ITEM_PIDGEOTITE: _ClassVar[ItemEnum]
+    ITEM_PINSIRITE: _ClassVar[ItemEnum]
+    ITEM_SABLENITE: _ClassVar[ItemEnum]
+    ITEM_SALAMENCITE: _ClassVar[ItemEnum]
+    ITEM_SCEPTILITE: _ClassVar[ItemEnum]
+    ITEM_SCIZORITE: _ClassVar[ItemEnum]
+    ITEM_SHARPEDONITE: _ClassVar[ItemEnum]
+    ITEM_SLOWBRONITE: _ClassVar[ItemEnum]
+    ITEM_STEELIXITE: _ClassVar[ItemEnum]
+    ITEM_SWAMPERTITE: _ClassVar[ItemEnum]
+    ITEM_TYRANITARITE: _ClassVar[ItemEnum]
+    ITEM_VENUSAURITE: _ClassVar[ItemEnum]
+    ITEM_MILOTICITE: _ClassVar[ItemEnum]
+    ITEM_RED_ORB: _ClassVar[ItemEnum]
+    ITEM_BLUE_ORB: _ClassVar[ItemEnum]
+    ITEM_FLYGONITE: _ClassVar[ItemEnum]
+    ITEM_BUTTERFRENITE: _ClassVar[ItemEnum]
+    ITEM_LAPRASITE_Y: _ClassVar[ItemEnum]
+    ITEM_MACHAMPITE: _ClassVar[ItemEnum]
+    ITEM_KINGLERITE: _ClassVar[ItemEnum]
+    ITEM_KINGDRANITE: _ClassVar[ItemEnum]
+    ITEM_DEWGONGITE: _ClassVar[ItemEnum]
+    ITEM_HITMONCHANITE: _ClassVar[ItemEnum]
+    ITEM_HITMONLEENITE: _ClassVar[ItemEnum]
+    ITEM_HITMONTOPITE: _ClassVar[ItemEnum]
+    ITEM_CROBATITE: _ClassVar[ItemEnum]
+    ITEM_SKARMORITE: _ClassVar[ItemEnum]
+    ITEM_BRUXISHITE: _ClassVar[ItemEnum]
+    ITEM_TORTERRANITE: _ClassVar[ItemEnum]
+    ITEM_INFERNAPENITE: _ClassVar[ItemEnum]
+    ITEM_EMPOLEONITE: _ClassVar[ItemEnum]
+    ITEM_SHUCKLENITE: _ClassVar[ItemEnum]
+    ITEM_RELICANTHITE: _ClassVar[ItemEnum]
+    ITEM_QUAGSIRENITE: _ClassVar[ItemEnum]
+    ITEM_JELLICENTITE: _ClassVar[ItemEnum]
+    ITEM_TOUCANNONITE: _ClassVar[ItemEnum]
+    ITEM_DRAGONINITE: _ClassVar[ItemEnum]
+    ITEM_BRELOOMITE: _ClassVar[ItemEnum]
+    ITEM_SLAKINGITE: _ClassVar[ItemEnum]
+    ITEM_PURPLE_ORB: _ClassVar[ItemEnum]
+    ITEM_SLOWKINGITE: _ClassVar[ItemEnum]
+    ITEM_GYARADOSITE_Y: _ClassVar[ItemEnum]
+    ITEM_FERALIGITE_X: _ClassVar[ItemEnum]
+    ITEM_FERALIGITE_Y: _ClassVar[ItemEnum]
+    ITEM_HAXORUSITE: _ClassVar[ItemEnum]
+    ITEM_LUXRAYNITE: _ClassVar[ItemEnum]
+    ITEM_GRANBULLITE: _ClassVar[ItemEnum]
+    ITEM_TYPHLOSIONITE: _ClassVar[ItemEnum]
+    ITEM_NIDOQUEENITE: _ClassVar[ItemEnum]
+    ITEM_NIDOKINGITE: _ClassVar[ItemEnum]
+    ITEM_SANDSLASHITE: _ClassVar[ItemEnum]
+    ITEM_MEGANIUMITE: _ClassVar[ItemEnum]
+    ITEM_KROOKODILENITE: _ClassVar[ItemEnum]
+    ITEM_MAGNEZONITE: _ClassVar[ItemEnum]
+    ITEM_SHEDINJITE: _ClassVar[ItemEnum]
+    ITEM_SWALOTITE: _ClassVar[ItemEnum]
+    ITEM_LANTURNITE: _ClassVar[ItemEnum]
+    ITEM_LAPRASITE_X: _ClassVar[ItemEnum]
+    ITEM_KINGAMBITITE_R: _ClassVar[ItemEnum]
+    ITEM_RIBOMBITE: _ClassVar[ItemEnum]
+    ITEM_GARCHOMPITE_R: _ClassVar[ItemEnum]
+    ITEM_SKARMORITE_R: _ClassVar[ItemEnum]
+    ITEM_MACHAMPITE_R: _ClassVar[ItemEnum]
+    ITEM_ALAKAZITE_R: _ClassVar[ItemEnum]
+    ITEM_BEEDRILLITE_R: _ClassVar[ItemEnum]
+    ITEM_HOUNDOOMINITE_R: _ClassVar[ItemEnum]
+    ITEM_FROSLASSITE: _ClassVar[ItemEnum]
+    ITEM_SCRAFTINITE: _ClassVar[ItemEnum]
+    ITEM_MAWILITE_R: _ClassVar[ItemEnum]
+    ITEM_SABLENITE_R: _ClassVar[ItemEnum]
+    ITEM_URSALUNITE: _ClassVar[ItemEnum]
+    ITEM_ARCANITE_R: _ClassVar[ItemEnum]
+    ITEM_TYRANITARITE_R: _ClassVar[ItemEnum]
+    ITEM_WIGGLYTUFFITE: _ClassVar[ItemEnum]
+    ITEM_TINKATITE: _ClassVar[ItemEnum]
+    ITEM_GYARADEATHITE_X: _ClassVar[ItemEnum]
+    ITEM_GYARADEATHITE_Y: _ClassVar[ItemEnum]
+    ITEM_LUCARIONITE_Z: _ClassVar[ItemEnum]
+    ITEM_AEGISLASHITE_R: _ClassVar[ItemEnum]
+    ITEM_ARBOKITE: _ClassVar[ItemEnum]
+    ITEM_CLEFABLITE_R: _ClassVar[ItemEnum]
+    ITEM_FLYGONITE_R: _ClassVar[ItemEnum]
+    ITEM_EMPOLEONITE_R: _ClassVar[ItemEnum]
+    ITEM_INFERNAPENITE_R: _ClassVar[ItemEnum]
+    ITEM_FROSLASSITE_R: _ClassVar[ItemEnum]
+    ITEM_GLALITITE_R: _ClassVar[ItemEnum]
+    ITEM_RAPIDASHITE_G: _ClassVar[ItemEnum]
+    ITEM_GOLISOPITE: _ClassVar[ItemEnum]
+    ITEM_HYDREIGONITE_R: _ClassVar[ItemEnum]
+    ITEM_TORTERRANITE_R: _ClassVar[ItemEnum]
+    ITEM_RAPIDASHITE: _ClassVar[ItemEnum]
+    ITEM_CORMOTHITE: _ClassVar[ItemEnum]
+    ITEM_POPCORMITE: _ClassVar[ItemEnum]
+    ITEM_REUNICLUSITE_R: _ClassVar[ItemEnum]
+    ITEM_TOXTRICITITE_R: _ClassVar[ItemEnum]
+    ITEM_ORICORIONITE: _ClassVar[ItemEnum]
+    ITEM_TSAREENITE_R: _ClassVar[ItemEnum]
+    ITEM_URSHIFITE: _ClassVar[ItemEnum]
+    ITEM_AMPHYBUZZITE: _ClassVar[ItemEnum]
+    ITEM_MELMETALITE: _ClassVar[ItemEnum]
+    ITEM_DYNAMAX_ORB: _ClassVar[ItemEnum]
+    ITEM_TERA_ORB: _ClassVar[ItemEnum]
+    ITEM_VENUSAURITE_X: _ClassVar[ItemEnum]
+    ITEM_CHARIZARDITE_Z: _ClassVar[ItemEnum]
+    ITEM_BLASTOISINITE_X: _ClassVar[ItemEnum]
+    ITEM_GENGARITE_X: _ClassVar[ItemEnum]
+    ITEM_SNORLAXITE: _ClassVar[ItemEnum]
+    ITEM_RILLABOOMITE: _ClassVar[ItemEnum]
+    ITEM_CINDERACEITE: _ClassVar[ItemEnum]
+    ITEM_INTELEONITE: _ClassVar[ItemEnum]
+    ITEM_CORVINITE: _ClassVar[ItemEnum]
+    ITEM_DREDNAWITE: _ClassVar[ItemEnum]
+    ITEM_COALOSSITE: _ClassVar[ItemEnum]
+    ITEM_SANDACONDITE: _ClassVar[ItemEnum]
+    ITEM_COPPERAJITE: _ClassVar[ItemEnum]
+    ITEM_HATTERENITE: _ClassVar[ItemEnum]
+    ITEM_GARBODORITE: _ClassVar[ItemEnum]
+    ITEM_ORBEETITE: _ClassVar[ItemEnum]
+    ITEM_GRIMMSNARLITE: _ClassVar[ItemEnum]
+    ITEM_CENTISKITE: _ClassVar[ItemEnum]
+    ITEM_ALCREMITE: _ClassVar[ItemEnum]
+    ITEM_TOXTRICITITE: _ClassVar[ItemEnum]
+    ITEM_PIKANITE: _ClassVar[ItemEnum]
+    ITEM_MEOWTHITE: _ClassVar[ItemEnum]
+    ITEM_EEVITE: _ClassVar[ItemEnum]
+    ITEM_DURALUDITE: _ClassVar[ItemEnum]
+    ITEM_ULTRANECROZIUM_P: _ClassVar[ItemEnum]
+    ITEM_FIDOUGHITE: _ClassVar[ItemEnum]
+    ITEM_WIGGLYTUFFITE_X: _ClassVar[ItemEnum]
+    ITEM_SERPERIORITE: _ClassVar[ItemEnum]
+    ITEM_EMBOARITE: _ClassVar[ItemEnum]
+    ITEM_SAMUROTTITE: _ClassVar[ItemEnum]
+    ITEM_DECIDUITE: _ClassVar[ItemEnum]
+    ITEM_WEAVILEITE: _ClassVar[ItemEnum]
+    ITEM_DECIDUITE_H: _ClassVar[ItemEnum]
+    ITEM_INCINERITE: _ClassVar[ItemEnum]
+    ITEM_MEOWSCARADITE: _ClassVar[ItemEnum]
+    ITEM_PRIMARINITE: _ClassVar[ItemEnum]
+    ITEM_QUAQUAVITE: _ClassVar[ItemEnum]
+    ITEM_SAMUROTTITE_H: _ClassVar[ItemEnum]
+    ITEM_SKELEDIRGEITE: _ClassVar[ItemEnum]
+    ITEM_TYPHLOSIONITE_H: _ClassVar[ItemEnum]
+    ITEM_MIENSHAOITE: _ClassVar[ItemEnum]
+    ITEM_GOODRITE: _ClassVar[ItemEnum]
+    ITEM_SLOWBRONITE_G: _ClassVar[ItemEnum]
+    ITEM_SLOWKINGITE_G: _ClassVar[ItemEnum]
+    ITEM_ROSERADEITE: _ClassVar[ItemEnum]
+    ITEM_ARCANITE: _ClassVar[ItemEnum]
+    ITEM_PHANTOM_METEOR: _ClassVar[ItemEnum]
+    ITEM_YVELTALITE: _ClassVar[ItemEnum]
+    ITEM_GALACTIC_ORB: _ClassVar[ItemEnum]
+    ITEM_CHIEN_PAOITE: _ClassVar[ItemEnum]
+    ITEM_DRACOVISHITE: _ClassVar[ItemEnum]
+    ITEM_MAWILITE_R_B: _ClassVar[ItemEnum]
+    ITEM_RIBOMBITE_R: _ClassVar[ItemEnum]
+    ITEM_WEAVILEITE_R: _ClassVar[ItemEnum]
+    ITEM_FLYGONITE_R_B: _ClassVar[ItemEnum]
+    ITEM_SNORLAX_ORB: _ClassVar[ItemEnum]
+    ITEM_VICTINI_ORB: _ClassVar[ItemEnum]
+    ITEM_WIGGLITUFF_ORB: _ClassVar[ItemEnum]
+    ITEM_ABOMASITE_S: _ClassVar[ItemEnum]
+    ITEM_FAB_MAIL: _ClassVar[ItemEnum]
+    ITEM_RETRO_MAIL: _ClassVar[ItemEnum]
+    ITEM_BUG_MEMORY: _ClassVar[ItemEnum]
+    ITEM_DARK_MEMORY: _ClassVar[ItemEnum]
+    ITEM_DRAGON_MEMORY: _ClassVar[ItemEnum]
+    ITEM_ELECTRIC_MEMORY: _ClassVar[ItemEnum]
+    ITEM_FAIRY_MEMORY: _ClassVar[ItemEnum]
+    ITEM_FIGHTING_MEMORY: _ClassVar[ItemEnum]
+    ITEM_FIRE_MEMORY: _ClassVar[ItemEnum]
+    ITEM_FLYING_MEMORY: _ClassVar[ItemEnum]
+    ITEM_GHOST_MEMORY: _ClassVar[ItemEnum]
+    ITEM_GRASS_MEMORY: _ClassVar[ItemEnum]
+    ITEM_GROUND_MEMORY: _ClassVar[ItemEnum]
+    ITEM_ICE_MEMORY: _ClassVar[ItemEnum]
+    ITEM_POISON_MEMORY: _ClassVar[ItemEnum]
+    ITEM_PSYCHIC_MEMORY: _ClassVar[ItemEnum]
+    ITEM_ROCK_MEMORY: _ClassVar[ItemEnum]
+    ITEM_STEEL_MEMORY: _ClassVar[ItemEnum]
+    ITEM_WATER_MEMORY: _ClassVar[ItemEnum]
+    ITEM_OAKS_PARCEL: _ClassVar[ItemEnum]
+    ITEM_POKE_FLUTE: _ClassVar[ItemEnum]
+    ITEM_SECRET_KEY: _ClassVar[ItemEnum]
+    ITEM_BIKE_VOUCHER: _ClassVar[ItemEnum]
+    ITEM_GOLD_TEETH: _ClassVar[ItemEnum]
+    ITEM_CARD_KEY: _ClassVar[ItemEnum]
+    ITEM_LIFT_KEY: _ClassVar[ItemEnum]
+    ITEM_SILPH_SCOPE: _ClassVar[ItemEnum]
+    ITEM_BICYCLE: _ClassVar[ItemEnum]
+    ITEM_TOWN_MAP: _ClassVar[ItemEnum]
+    ITEM_VS_SEEKER: _ClassVar[ItemEnum]
+    ITEM_FAME_CHECKER: _ClassVar[ItemEnum]
+    ITEM_TM_CASE: _ClassVar[ItemEnum]
+    ITEM_BERRY_POUCH: _ClassVar[ItemEnum]
+    ITEM_TEACHY_TV: _ClassVar[ItemEnum]
+    ITEM_TRI_PASS: _ClassVar[ItemEnum]
+    ITEM_RAINBOW_PASS: _ClassVar[ItemEnum]
+    ITEM_TEA: _ClassVar[ItemEnum]
+    ITEM_RUBY: _ClassVar[ItemEnum]
+    ITEM_SAPPHIRE: _ClassVar[ItemEnum]
+    ITEM_Z_RING: _ClassVar[ItemEnum]
+    ITEM_NORMALIUM_Z: _ClassVar[ItemEnum]
+    ITEM_FIGHTINIUM_Z: _ClassVar[ItemEnum]
+    ITEM_FLYINIUM_Z: _ClassVar[ItemEnum]
+    ITEM_POISONIUM_Z: _ClassVar[ItemEnum]
+    ITEM_GROUNDIUM_Z: _ClassVar[ItemEnum]
+    ITEM_ROCKIUM_Z: _ClassVar[ItemEnum]
+    ITEM_BUGINIUM_Z: _ClassVar[ItemEnum]
+    ITEM_GHOSTIUM_Z: _ClassVar[ItemEnum]
+    ITEM_STEELIUM_Z: _ClassVar[ItemEnum]
+    ITEM_FIRIUM_Z: _ClassVar[ItemEnum]
+    ITEM_WATERIUM_Z: _ClassVar[ItemEnum]
+    ITEM_GRASSIUM_Z: _ClassVar[ItemEnum]
+    ITEM_ELECTRIUM_Z: _ClassVar[ItemEnum]
+    ITEM_PSYCHIUM_Z: _ClassVar[ItemEnum]
+    ITEM_ICIUM_Z: _ClassVar[ItemEnum]
+    ITEM_DRAGONIUM_Z: _ClassVar[ItemEnum]
+    ITEM_DARKINIUM_Z: _ClassVar[ItemEnum]
+    ITEM_FAIRIUM_Z: _ClassVar[ItemEnum]
+    ITEM_ALORAICHIUM_Z: _ClassVar[ItemEnum]
+    ITEM_DECIDIUM_Z: _ClassVar[ItemEnum]
+    ITEM_EEVIUM_Z: _ClassVar[ItemEnum]
+    ITEM_INCINIUM_Z: _ClassVar[ItemEnum]
+    ITEM_KOMMONIUM_Z: _ClassVar[ItemEnum]
+    ITEM_LUNALIUM_Z: _ClassVar[ItemEnum]
+    ITEM_LYCANIUM_Z: _ClassVar[ItemEnum]
+    ITEM_MARSHADIUM_Z: _ClassVar[ItemEnum]
+    ITEM_MEWNIUM_Z: _ClassVar[ItemEnum]
+    ITEM_MIMIKIUM_Z: _ClassVar[ItemEnum]
+    ITEM_PIKANIUM_Z: _ClassVar[ItemEnum]
+    ITEM_PIKASHUNIUM_Z: _ClassVar[ItemEnum]
+    ITEM_PRIMARIUM_Z: _ClassVar[ItemEnum]
+    ITEM_SNORLIUM_Z: _ClassVar[ItemEnum]
+    ITEM_SOLGANIUM_Z: _ClassVar[ItemEnum]
+    ITEM_TAPUNIUM_Z: _ClassVar[ItemEnum]
+    ITEM_ULTRANECROZIUM_Z: _ClassVar[ItemEnum]
+    ITEM_DUDUDUNITE: _ClassVar[ItemEnum]
+    ITEM_TEAL_MASK: _ClassVar[ItemEnum]
+    ITEM_HEARTHFLAME_MASK: _ClassVar[ItemEnum]
+    ITEM_WELLSPRING_MASK: _ClassVar[ItemEnum]
+    ITEM_CORNERSTONE_MASK: _ClassVar[ItemEnum]
+    ITEM_TINKATITE_R: _ClassVar[ItemEnum]
+    ITEM_SCIZORITE_R: _ClassVar[ItemEnum]
+    ITEM_SCYTHERITE_R: _ClassVar[ItemEnum]
+    ITEM_KLEAVITE_R: _ClassVar[ItemEnum]
+    ITEM_KINGLERITE_R: _ClassVar[ItemEnum]
+    ITEM_LUXRAYNITE_R: _ClassVar[ItemEnum]
+    ITEM_KILOZUNITE: _ClassVar[ItemEnum]
+    ITEM_AGGRONITE_R: _ClassVar[ItemEnum]
+    ITEM_GARDEVOIRITE_R: _ClassVar[ItemEnum]
+    ITEM_GALLADITE_R: _ClassVar[ItemEnum]
+    ITEM_CLODSITE: _ClassVar[ItemEnum]
+    ITEM_GOTHITITE: _ClassVar[ItemEnum]
+    ITEM_SNORLAXITE_R: _ClassVar[ItemEnum]
+    ITEM_ARCANITE_H: _ClassVar[ItemEnum]
+    ITEM_REUNICLUSITE: _ClassVar[ItemEnum]
+    ITEM_SWAMPAGEITE: _ClassVar[ItemEnum]
+    ITEM_CHANDELURITE: _ClassVar[ItemEnum]
+    ITEM_ZAPDOSITE: _ClassVar[ItemEnum]
+    ITEM_ARTICUNITE: _ClassVar[ItemEnum]
+    ITEM_MOLTRESITE: _ClassVar[ItemEnum]
+    ITEM_CARBONIXITE: _ClassVar[ItemEnum]
+    ITEM_DRAGAPULTITE: _ClassVar[ItemEnum]
+    ITEM_SANDSLASHITE_A: _ClassVar[ItemEnum]
+    ITEM_KLEAVITE: _ClassVar[ItemEnum]
+    ITEM_SCYTHERITE: _ClassVar[ItemEnum]
+    ITEM_HYDREIGONITE: _ClassVar[ItemEnum]
+    ITEM_VANILLUXEITE: _ClassVar[ItemEnum]
+    ITEM_HERACREUSITE: _ClassVar[ItemEnum]
+    ITEM_EXCADRILLITE_R: _ClassVar[ItemEnum]
+    ITEM_MAMOSWINITE_R: _ClassVar[ItemEnum]
+    ITEM_VANILLUXEITE_R: _ClassVar[ItemEnum]
+    ITEM_CHANDELURITE_R: _ClassVar[ItemEnum]
+    ITEM_SNEASLERITE: _ClassVar[ItemEnum]
+    ITEM_CLEFABLITE: _ClassVar[ItemEnum]
+    ITEM_GOODRITE_H: _ClassVar[ItemEnum]
+    ITEM_TSAREENITE: _ClassVar[ItemEnum]
+    ITEM_ALTARIANITE_R: _ClassVar[ItemEnum]
+    ITEM_HARIYAMITE: _ClassVar[ItemEnum]
+    ITEM_LUXZERITE: _ClassVar[ItemEnum]
+    ITEM_TALONFLAMEITE: _ClassVar[ItemEnum]
+    ITEM_CHESNAUGHTITE: _ClassVar[ItemEnum]
+    ITEM_GRENINJITE: _ClassVar[ItemEnum]
+    ITEM_DELPHOXITE: _ClassVar[ItemEnum]
+    ITEM_CLEFABLITE_Y: _ClassVar[ItemEnum]
+    ITEM_VICTREEBELITE: _ClassVar[ItemEnum]
+    ITEM_STARMINITE: _ClassVar[ItemEnum]
+    ITEM_DRAGONINITE_Y: _ClassVar[ItemEnum]
+    ITEM_EXCADRITE: _ClassVar[ItemEnum]
+    ITEM_SCOLIPITE: _ClassVar[ItemEnum]
+    ITEM_EELEKTROSSITE: _ClassVar[ItemEnum]
+    ITEM_CHANDELURITE_Y: _ClassVar[ItemEnum]
+    ITEM_PYROARITE: _ClassVar[ItemEnum]
+    ITEM_MALAMARITE: _ClassVar[ItemEnum]
+    ITEM_BARBARACITE: _ClassVar[ItemEnum]
+    ITEM_DRAGALGITE: _ClassVar[ItemEnum]
+    ITEM_HAWLUCHANITE: _ClassVar[ItemEnum]
+    ITEM_ZYGARDITE: _ClassVar[ItemEnum]
+    ITEM_DRAMPANITE: _ClassVar[ItemEnum]
+    ITEM_FALINKSITE: _ClassVar[ItemEnum]
+    ITEM_RAICHUNITE_X: _ClassVar[ItemEnum]
+    ITEM_RAICHUNITE_Y: _ClassVar[ItemEnum]
+    ITEM_SCOVILLAINITE: _ClassVar[ItemEnum]
+    ITEM_CHIMECHITE: _ClassVar[ItemEnum]
+    ITEM_CRABOMINITE: _ClassVar[ItemEnum]
+    ITEM_ABSOLITE_Z: _ClassVar[ItemEnum]
+    ITEM_STARAPTITE: _ClassVar[ItemEnum]
+    ITEM_GARCHOMPITE_Z: _ClassVar[ItemEnum]
+    ITEM_HEATRANITE: _ClassVar[ItemEnum]
+    ITEM_DARKRANITE: _ClassVar[ItemEnum]
+    ITEM_GOLURKITE: _ClassVar[ItemEnum]
+    ITEM_MEOWSTICITE: _ClassVar[ItemEnum]
+    ITEM_GOLISOPITE_Y: _ClassVar[ItemEnum]
+    ITEM_MAGEARNITE: _ClassVar[ItemEnum]
+    ITEM_ZERAORITE: _ClassVar[ItemEnum]
+    ITEM_GLIMMORANITE: _ClassVar[ItemEnum]
+    ITEM_TATSUGIRINITE: _ClassVar[ItemEnum]
+    ITEM_BAXCALIBRITE: _ClassVar[ItemEnum]
+    ITEM_EYE_OF_ENDER: _ClassVar[ItemEnum]
+    ITEM_FLOETTITE: _ClassVar[ItemEnum]
+    ITEM_SKARMORITE_Y: _ClassVar[ItemEnum]
+    ITEM_FROSLASSITE_Y: _ClassVar[ItemEnum]
+ITEM_NONE: ItemEnum
+ITEM_MASTER_BALL: ItemEnum
+ITEM_ULTRA_BALL: ItemEnum
+ITEM_GREAT_BALL: ItemEnum
+ITEM_POKE_BALL: ItemEnum
+ITEM_SAFARI_BALL: ItemEnum
+ITEM_NET_BALL: ItemEnum
+ITEM_DIVE_BALL: ItemEnum
+ITEM_NEST_BALL: ItemEnum
+ITEM_REPEAT_BALL: ItemEnum
+ITEM_TIMER_BALL: ItemEnum
+ITEM_LUXURY_BALL: ItemEnum
+ITEM_DUSK_BALL: ItemEnum
+ITEM_HEAL_BALL: ItemEnum
+ITEM_QUICK_BALL: ItemEnum
+ITEM_CHERISH_BALL: ItemEnum
+ITEM_FAST_BALL: ItemEnum
+ITEM_LEVEL_BALL: ItemEnum
+ITEM_LURE_BALL: ItemEnum
+ITEM_HEAVY_BALL: ItemEnum
+ITEM_LOVE_BALL: ItemEnum
+ITEM_FRIEND_BALL: ItemEnum
+ITEM_MOON_BALL: ItemEnum
+ITEM_SPORT_BALL: ItemEnum
+ITEM_PARK_BALL: ItemEnum
+ITEM_DREAM_BALL: ItemEnum
+ITEM_BEAST_BALL: ItemEnum
+ITEM_PREMIER_BALL: ItemEnum
+ITEM_POTION: ItemEnum
+ITEM_ANTIDOTE: ItemEnum
+ITEM_BURN_HEAL: ItemEnum
+ITEM_ICE_HEAL: ItemEnum
+ITEM_AWAKENING: ItemEnum
+ITEM_PARALYZE_HEAL: ItemEnum
+ITEM_FULL_RESTORE: ItemEnum
+ITEM_MAX_POTION: ItemEnum
+ITEM_HYPER_POTION: ItemEnum
+ITEM_SUPER_POTION: ItemEnum
+ITEM_FULL_HEAL: ItemEnum
+ITEM_REVIVE: ItemEnum
+ITEM_MAX_REVIVE: ItemEnum
+ITEM_FRESH_WATER: ItemEnum
+ITEM_SODA_POP: ItemEnum
+ITEM_LEMONADE: ItemEnum
+ITEM_MOOMOO_MILK: ItemEnum
+ITEM_ENERGY_POWDER: ItemEnum
+ITEM_ENERGY_ROOT: ItemEnum
+ITEM_HEAL_POWDER: ItemEnum
+ITEM_REVIVAL_HERB: ItemEnum
+ITEM_ETHER: ItemEnum
+ITEM_MAX_ETHER: ItemEnum
+ITEM_ELIXIR: ItemEnum
+ITEM_MAX_ELIXIR: ItemEnum
+ITEM_LAVA_COOKIE: ItemEnum
+ITEM_BERRY_JUICE: ItemEnum
+ITEM_SWEET_HEART: ItemEnum
+ITEM_BIG_MALASADA: ItemEnum
+ITEM_OLD_GATEAU: ItemEnum
+ITEM_SACRED_ASH: ItemEnum
+ITEM_HP_UP: ItemEnum
+ITEM_PROTEIN: ItemEnum
+ITEM_IRON: ItemEnum
+ITEM_CARBOS: ItemEnum
+ITEM_CALCIUM: ItemEnum
+ITEM_RARE_CANDY: ItemEnum
+ITEM_PP_UP: ItemEnum
+ITEM_ZINC: ItemEnum
+ITEM_PP_MAX: ItemEnum
+ITEM_ABILITY_CAPSULE: ItemEnum
+ITEM_ABILITY_PATCH: ItemEnum
+ITEM_CHERI_BERRY: ItemEnum
+ITEM_CHESTO_BERRY: ItemEnum
+ITEM_PECHA_BERRY: ItemEnum
+ITEM_RAWST_BERRY: ItemEnum
+ITEM_ASPEAR_BERRY: ItemEnum
+ITEM_LEPPA_BERRY: ItemEnum
+ITEM_ORAN_BERRY: ItemEnum
+ITEM_PERSIM_BERRY: ItemEnum
+ITEM_LUM_BERRY: ItemEnum
+ITEM_SITRUS_BERRY: ItemEnum
+ITEM_FIGY_BERRY: ItemEnum
+ITEM_WIKI_BERRY: ItemEnum
+ITEM_MAGO_BERRY: ItemEnum
+ITEM_AGUAV_BERRY: ItemEnum
+ITEM_IAPAPA_BERRY: ItemEnum
+ITEM_RAZZ_BERRY: ItemEnum
+ITEM_BLUK_BERRY: ItemEnum
+ITEM_NANAB_BERRY: ItemEnum
+ITEM_WEPEAR_BERRY: ItemEnum
+ITEM_PINAP_BERRY: ItemEnum
+ITEM_POMEG_BERRY: ItemEnum
+ITEM_KELPSY_BERRY: ItemEnum
+ITEM_QUALOT_BERRY: ItemEnum
+ITEM_HONDEW_BERRY: ItemEnum
+ITEM_GREPA_BERRY: ItemEnum
+ITEM_TAMATO_BERRY: ItemEnum
+ITEM_CORNN_BERRY: ItemEnum
+ITEM_MAGOST_BERRY: ItemEnum
+ITEM_RABUTA_BERRY: ItemEnum
+ITEM_NOMEL_BERRY: ItemEnum
+ITEM_SPELON_BERRY: ItemEnum
+ITEM_PAMTRE_BERRY: ItemEnum
+ITEM_WATMEL_BERRY: ItemEnum
+ITEM_DURIN_BERRY: ItemEnum
+ITEM_BELUE_BERRY: ItemEnum
+ITEM_OCCA_BERRY: ItemEnum
+ITEM_PASSHO_BERRY: ItemEnum
+ITEM_WACAN_BERRY: ItemEnum
+ITEM_RINDO_BERRY: ItemEnum
+ITEM_YACHE_BERRY: ItemEnum
+ITEM_CHOPLE_BERRY: ItemEnum
+ITEM_KEBIA_BERRY: ItemEnum
+ITEM_SHUCA_BERRY: ItemEnum
+ITEM_COBA_BERRY: ItemEnum
+ITEM_PAYAPA_BERRY: ItemEnum
+ITEM_TANGA_BERRY: ItemEnum
+ITEM_CHARTI_BERRY: ItemEnum
+ITEM_KASIB_BERRY: ItemEnum
+ITEM_HABAN_BERRY: ItemEnum
+ITEM_COLBUR_BERRY: ItemEnum
+ITEM_BABIRI_BERRY: ItemEnum
+ITEM_CHILAN_BERRY: ItemEnum
+ITEM_ROSELI_BERRY: ItemEnum
+ITEM_LIECHI_BERRY: ItemEnum
+ITEM_GANLON_BERRY: ItemEnum
+ITEM_SALAC_BERRY: ItemEnum
+ITEM_PETAYA_BERRY: ItemEnum
+ITEM_APICOT_BERRY: ItemEnum
+ITEM_LANSAT_BERRY: ItemEnum
+ITEM_STARF_BERRY: ItemEnum
+ITEM_MICLE_BERRY: ItemEnum
+ITEM_CUSTAP_BERRY: ItemEnum
+ITEM_JABOCA_BERRY: ItemEnum
+ITEM_ROWAP_BERRY: ItemEnum
+ITEM_KEE_BERRY: ItemEnum
+ITEM_MARANGA_BERRY: ItemEnum
+ITEM_ENIGMA_BERRY: ItemEnum
+ITEM_SUN_STONE: ItemEnum
+ITEM_MOON_STONE: ItemEnum
+ITEM_FIRE_STONE: ItemEnum
+ITEM_THUNDER_STONE: ItemEnum
+ITEM_WATER_STONE: ItemEnum
+ITEM_LEAF_STONE: ItemEnum
+ITEM_DAWN_STONE: ItemEnum
+ITEM_DUSK_STONE: ItemEnum
+ITEM_SHINY_STONE: ItemEnum
+ITEM_ICE_STONE: ItemEnum
+ITEM_RED_NECTAR: ItemEnum
+ITEM_YELLOW_NECTAR: ItemEnum
+ITEM_PINK_NECTAR: ItemEnum
+ITEM_PURPLE_NECTAR: ItemEnum
+ITEM_SWEET_APPLE: ItemEnum
+ITEM_TART_APPLE: ItemEnum
+ITEM_CRACKED_POT: ItemEnum
+ITEM_GALARICA_CUFF: ItemEnum
+ITEM_GALARICA_WREATH: ItemEnum
+ITEM_STRAWBERRY_SWEET: ItemEnum
+ITEM_LOVE_SWEET: ItemEnum
+ITEM_BERRY_SWEET: ItemEnum
+ITEM_CLOVER_SWEET: ItemEnum
+ITEM_FLOWER_SWEET: ItemEnum
+ITEM_STAR_SWEET: ItemEnum
+ITEM_RIBBON_SWEET: ItemEnum
+ITEM_BLUE_FLUTE: ItemEnum
+ITEM_YELLOW_FLUTE: ItemEnum
+ITEM_RED_FLUTE: ItemEnum
+ITEM_BLACK_FLUTE: ItemEnum
+ITEM_WHITE_FLUTE: ItemEnum
+ITEM_SHOAL_SALT: ItemEnum
+ITEM_SHOAL_SHELL: ItemEnum
+ITEM_RED_SHARD: ItemEnum
+ITEM_BLUE_SHARD: ItemEnum
+ITEM_YELLOW_SHARD: ItemEnum
+ITEM_GREEN_SHARD: ItemEnum
+ITEM_ESCAPE_ROPE: ItemEnum
+ITEM_REPEL: ItemEnum
+ITEM_SUPER_REPEL: ItemEnum
+ITEM_MAX_REPEL: ItemEnum
+ITEM_TINY_MUSHROOM: ItemEnum
+ITEM_BIG_MUSHROOM: ItemEnum
+ITEM_BALM_MUSHROOM: ItemEnum
+ITEM_PEARL: ItemEnum
+ITEM_BIG_PEARL: ItemEnum
+ITEM_PEARL_STRING: ItemEnum
+ITEM_STARDUST: ItemEnum
+ITEM_STAR_PIECE: ItemEnum
+ITEM_COMET_SHARD: ItemEnum
+ITEM_NUGGET: ItemEnum
+ITEM_BIG_NUGGET: ItemEnum
+ITEM_RELIC_COPPER: ItemEnum
+ITEM_RELIC_SILVER: ItemEnum
+ITEM_RELIC_GOLD: ItemEnum
+ITEM_RELIC_VASE: ItemEnum
+ITEM_RELIC_STATUE: ItemEnum
+ITEM_RELIC_BAND: ItemEnum
+ITEM_HEART_SCALE: ItemEnum
+ITEM_BOTTLE_CAP: ItemEnum
+ITEM_GOLD_BOTTLE_CAP: ItemEnum
+ITEM_HONEY: ItemEnum
+ITEM_RARE_BONE: ItemEnum
+ITEM_OVAL_STONE: ItemEnum
+ITEM_PROTECTOR: ItemEnum
+ITEM_ELECTIRIZER: ItemEnum
+ITEM_MAGMARIZER: ItemEnum
+ITEM_DUBIOUS_DISC: ItemEnum
+ITEM_REAPER_CLOTH: ItemEnum
+ITEM_PRISM_SCALE: ItemEnum
+ITEM_WHIPPED_DREAM: ItemEnum
+ITEM_SACHET: ItemEnum
+ITEM_UPGRADE: ItemEnum
+ITEM_RED_SCARF: ItemEnum
+ITEM_BLUE_SCARF: ItemEnum
+ITEM_PINK_SCARF: ItemEnum
+ITEM_GREEN_SCARF: ItemEnum
+ITEM_YELLOW_SCARF: ItemEnum
+ITEM_ARMOR_FOSSIL: ItemEnum
+ITEM_SKULL_FOSSIL: ItemEnum
+ITEM_HELIX_FOSSIL: ItemEnum
+ITEM_DOME_FOSSIL: ItemEnum
+ITEM_COVER_FOSSIL: ItemEnum
+ITEM_PLUME_FOSSIL: ItemEnum
+ITEM_JAW_FOSSIL: ItemEnum
+ITEM_SAIL_FOSSIL: ItemEnum
+ITEM_ROOT_FOSSIL: ItemEnum
+ITEM_CLAW_FOSSIL: ItemEnum
+ITEM_FOSSILIZED_BIRD: ItemEnum
+ITEM_FOSSILIZED_FISH: ItemEnum
+ITEM_FOSSILIZED_DRAKE: ItemEnum
+ITEM_FOSSILIZED_DINO: ItemEnum
+ITEM_OLD_AMBER: ItemEnum
+ITEM_GUARD_SPEC: ItemEnum
+ITEM_DIRE_HIT: ItemEnum
+ITEM_X_ATTACK: ItemEnum
+ITEM_X_DEFENSE: ItemEnum
+ITEM_X_SPEED: ItemEnum
+ITEM_X_ACCURACY: ItemEnum
+ITEM_X_SP_ATK: ItemEnum
+ITEM_X_SP_DEF: ItemEnum
+ITEM_POKE_DOLL: ItemEnum
+ITEM_FLUFFY_TAIL: ItemEnum
+ITEM_BRIGHT_POWDER: ItemEnum
+ITEM_WHITE_HERB: ItemEnum
+ITEM_MACHO_BRACE: ItemEnum
+ITEM_EXP_SHARE: ItemEnum
+ITEM_QUICK_CLAW: ItemEnum
+ITEM_SOOTHE_BELL: ItemEnum
+ITEM_MENTAL_HERB: ItemEnum
+ITEM_CHOICE_BAND: ItemEnum
+ITEM_KINGS_ROCK: ItemEnum
+ITEM_SILVER_POWDER: ItemEnum
+ITEM_AMULET_COIN: ItemEnum
+ITEM_CLEANSE_TAG: ItemEnum
+ITEM_SMOKE_BALL: ItemEnum
+ITEM_EVERSTONE: ItemEnum
+ITEM_FOCUS_BAND: ItemEnum
+ITEM_LUCKY_EGG: ItemEnum
+ITEM_SCOPE_LENS: ItemEnum
+ITEM_METAL_COAT: ItemEnum
+ITEM_SOFT_SAND: ItemEnum
+ITEM_HARD_STONE: ItemEnum
+ITEM_MIRACLE_SEED: ItemEnum
+ITEM_BLACK_GLASSES: ItemEnum
+ITEM_BLACK_BELT: ItemEnum
+ITEM_MAGNET: ItemEnum
+ITEM_MYSTIC_WATER: ItemEnum
+ITEM_SHARP_BEAK: ItemEnum
+ITEM_POISON_BARB: ItemEnum
+ITEM_NEVER_MELT_ICE: ItemEnum
+ITEM_SPELL_TAG: ItemEnum
+ITEM_TWISTED_SPOON: ItemEnum
+ITEM_CHARCOAL: ItemEnum
+ITEM_DRAGON_FANG: ItemEnum
+ITEM_SILK_SCARF: ItemEnum
+ITEM_LEFTOVERS: ItemEnum
+ITEM_DRAGON_SCALE: ItemEnum
+ITEM_RAZOR_CLAW: ItemEnum
+ITEM_RAZOR_FANG: ItemEnum
+ITEM_SHELL_BELL: ItemEnum
+ITEM_POWER_BRACER: ItemEnum
+ITEM_POWER_BELT: ItemEnum
+ITEM_POWER_LENS: ItemEnum
+ITEM_POWER_BAND: ItemEnum
+ITEM_POWER_ANKLET: ItemEnum
+ITEM_POWER_WEIGHT: ItemEnum
+ITEM_POWER_HERB: ItemEnum
+ITEM_CHOICE_SCARF: ItemEnum
+ITEM_CHOICE_SPECS: ItemEnum
+ITEM_FOCUS_SASH: ItemEnum
+ITEM_WIDE_LENS: ItemEnum
+ITEM_ZOOM_LENS: ItemEnum
+ITEM_METRONOME: ItemEnum
+ITEM_MUSCLE_BAND: ItemEnum
+ITEM_WISE_GLASSES: ItemEnum
+ITEM_EXPERT_BELT: ItemEnum
+ITEM_LIGHT_CLAY: ItemEnum
+ITEM_ICY_ROCK: ItemEnum
+ITEM_SMOOTH_ROCK: ItemEnum
+ITEM_HEAT_ROCK: ItemEnum
+ITEM_DAMP_ROCK: ItemEnum
+ITEM_DESTINY_KNOT: ItemEnum
+ITEM_GRIP_CLAW: ItemEnum
+ITEM_LIFE_ORB: ItemEnum
+ITEM_TOXIC_ORB: ItemEnum
+ITEM_FLAME_ORB: ItemEnum
+ITEM_STICKY_BARB: ItemEnum
+ITEM_BLACK_SLUDGE: ItemEnum
+ITEM_IRON_BALL: ItemEnum
+ITEM_LAGGING_TAIL: ItemEnum
+ITEM_SHED_SHELL: ItemEnum
+ITEM_BIG_ROOT: ItemEnum
+ITEM_EVIOLITE: ItemEnum
+ITEM_FLOAT_STONE: ItemEnum
+ITEM_ROCKY_HELMET: ItemEnum
+ITEM_AIR_BALLOON: ItemEnum
+ITEM_RED_CARD: ItemEnum
+ITEM_RING_TARGET: ItemEnum
+ITEM_BINDING_BAND: ItemEnum
+ITEM_EJECT_BUTTON: ItemEnum
+ITEM_ABSORB_BULB: ItemEnum
+ITEM_CELL_BATTERY: ItemEnum
+ITEM_LUMINOUS_MOSS: ItemEnum
+ITEM_SNOWBALL: ItemEnum
+ITEM_WEAKNESS_POLICY: ItemEnum
+ITEM_ASSAULT_VEST: ItemEnum
+ITEM_SAFETY_GOGGLES: ItemEnum
+ITEM_ADRENALINE_ORB: ItemEnum
+ITEM_TERRAIN_EXTENDER: ItemEnum
+ITEM_PROTECTIVE_PADS: ItemEnum
+ITEM_ELECTRIC_SEED: ItemEnum
+ITEM_PSYCHIC_SEED: ItemEnum
+ITEM_MISTY_SEED: ItemEnum
+ITEM_GRASSY_SEED: ItemEnum
+ITEM_BUG_GEM: ItemEnum
+ITEM_DARK_GEM: ItemEnum
+ITEM_DRAGON_GEM: ItemEnum
+ITEM_ELECTRIC_GEM: ItemEnum
+ITEM_FAIRY_GEM: ItemEnum
+ITEM_FIGHTING_GEM: ItemEnum
+ITEM_FIRE_GEM: ItemEnum
+ITEM_FLYING_GEM: ItemEnum
+ITEM_GHOST_GEM: ItemEnum
+ITEM_GRASS_GEM: ItemEnum
+ITEM_GROUND_GEM: ItemEnum
+ITEM_ICE_GEM: ItemEnum
+ITEM_NORMAL_GEM: ItemEnum
+ITEM_POISON_GEM: ItemEnum
+ITEM_PSYCHIC_GEM: ItemEnum
+ITEM_ROCK_GEM: ItemEnum
+ITEM_STEEL_GEM: ItemEnum
+ITEM_WATER_GEM: ItemEnum
+ITEM_THROAT_SPRAY: ItemEnum
+ITEM_EJECT_PACK: ItemEnum
+ITEM_HEAVY_DUTY_BOOTS: ItemEnum
+ITEM_BLUNDER_POLICY: ItemEnum
+ITEM_ROOM_SERVICE: ItemEnum
+ITEM_UTILITY_UMBRELLA: ItemEnum
+ITEM_RUSTED_SWORD: ItemEnum
+ITEM_RUSTED_SHIELD: ItemEnum
+ITEM_INSECT_PLATE: ItemEnum
+ITEM_DREAD_PLATE: ItemEnum
+ITEM_DRACO_PLATE: ItemEnum
+ITEM_ZAP_PLATE: ItemEnum
+ITEM_PIXIE_PLATE: ItemEnum
+ITEM_FIST_PLATE: ItemEnum
+ITEM_FLAME_PLATE: ItemEnum
+ITEM_SKY_PLATE: ItemEnum
+ITEM_SPOOKY_PLATE: ItemEnum
+ITEM_MEADOW_PLATE: ItemEnum
+ITEM_EARTH_PLATE: ItemEnum
+ITEM_ICICLE_PLATE: ItemEnum
+ITEM_TOXIC_PLATE: ItemEnum
+ITEM_MIND_PLATE: ItemEnum
+ITEM_STONE_PLATE: ItemEnum
+ITEM_IRON_PLATE: ItemEnum
+ITEM_SPLASH_PLATE: ItemEnum
+ITEM_SOUL_DEW: ItemEnum
+ITEM_DEEP_SEA_TOOTH: ItemEnum
+ITEM_DEEP_SEA_SCALE: ItemEnum
+ITEM_LUCKY_PUNCH: ItemEnum
+ITEM_METAL_POWDER: ItemEnum
+ITEM_THICK_CLUB: ItemEnum
+ITEM_LEEK: ItemEnum
+ITEM_LIGHT_BALL: ItemEnum
+ITEM_QUICK_POWDER: ItemEnum
+ITEM_ADAMANT_ORB: ItemEnum
+ITEM_LUSTROUS_ORB: ItemEnum
+ITEM_GRISEOUS_ORB: ItemEnum
+ITEM_DOUSE_DRIVE: ItemEnum
+ITEM_SHOCK_DRIVE: ItemEnum
+ITEM_BURN_DRIVE: ItemEnum
+ITEM_CHILL_DRIVE: ItemEnum
+ITEM_SEA_INCENSE: ItemEnum
+ITEM_LAX_INCENSE: ItemEnum
+ITEM_ODD_INCENSE: ItemEnum
+ITEM_ROCK_INCENSE: ItemEnum
+ITEM_FULL_INCENSE: ItemEnum
+ITEM_WAVE_INCENSE: ItemEnum
+ITEM_ROSE_INCENSE: ItemEnum
+ITEM_LUCK_INCENSE: ItemEnum
+ITEM_PURE_INCENSE: ItemEnum
+ITEM_TRAINING_BAND: ItemEnum
+ITEM_CANDY_BOX: ItemEnum
+ITEM_INFINITE_REPEL: ItemEnum
+ITEM_IRON_PILL: ItemEnum
+ITEM_ABILITY_SHIELD: ItemEnum
+ITEM_CLEAR_AMULET: ItemEnum
+ITEM_MIRROR_HERB: ItemEnum
+ITEM_PUNCHING_GLOVE: ItemEnum
+ITEM_COVERT_CLOAK: ItemEnum
+ITEM_LOADED_DICE: ItemEnum
+ITEM_FAIRY_FEATHER: ItemEnum
+ITEM_FROST_ORB: ItemEnum
+ITEM_TACTICAL_VEST: ItemEnum
+ITEM_BOOSTER_ENERGY: ItemEnum
+ITEM_SWIRLY_GLASSES: ItemEnum
+ITEM_TM01_FOCUS_PUNCH: ItemEnum
+ITEM_TM02_DRAGON_CLAW: ItemEnum
+ITEM_TM03_WATER_PULSE: ItemEnum
+ITEM_TM04_CALM_MIND: ItemEnum
+ITEM_TM05_ROAR: ItemEnum
+ITEM_TM06_TOXIC: ItemEnum
+ITEM_TM07_HAIL: ItemEnum
+ITEM_TM08_BULK_UP: ItemEnum
+ITEM_TM09_BULLET_SEED: ItemEnum
+ITEM_TM10_HIDDEN_POWER: ItemEnum
+ITEM_TM11_SUNNY_DAY: ItemEnum
+ITEM_TM12_TAUNT: ItemEnum
+ITEM_TM13_ICE_BEAM: ItemEnum
+ITEM_TM14_BLIZZARD: ItemEnum
+ITEM_TM15_HYPER_BEAM: ItemEnum
+ITEM_TM16_LIGHT_SCREEN: ItemEnum
+ITEM_TM17_PROTECT: ItemEnum
+ITEM_TM18_RAIN_DANCE: ItemEnum
+ITEM_TM19_GIGA_DRAIN: ItemEnum
+ITEM_TM20_SAFEGUARD: ItemEnum
+ITEM_TM21_FRUSTRATION: ItemEnum
+ITEM_TM22_SOLARBEAM: ItemEnum
+ITEM_TM23_IRON_TAIL: ItemEnum
+ITEM_TM24_THUNDERBOLT: ItemEnum
+ITEM_TM25_THUNDER: ItemEnum
+ITEM_TM26_EARTHQUAKE: ItemEnum
+ITEM_TM27_RETURN: ItemEnum
+ITEM_TM28_DIG: ItemEnum
+ITEM_TM29_PSYCHIC: ItemEnum
+ITEM_TM30_SHADOW_BALL: ItemEnum
+ITEM_TM31_BRICK_BREAK: ItemEnum
+ITEM_TM32_DOUBLE_TEAM: ItemEnum
+ITEM_TM33_REFLECT: ItemEnum
+ITEM_TM34_SLUDGE_WAVE: ItemEnum
+ITEM_TM35_FLAMETHROWER: ItemEnum
+ITEM_TM36_SLUDGE_BOMB: ItemEnum
+ITEM_TM37_SANDSTORM: ItemEnum
+ITEM_TM38_FIRE_BLAST: ItemEnum
+ITEM_TM39_ROCK_TOMB: ItemEnum
+ITEM_TM40_AERIAL_ACE: ItemEnum
+ITEM_TM41_TORMENT: ItemEnum
+ITEM_TM42_FACADE: ItemEnum
+ITEM_TM43_SECRET_POWER: ItemEnum
+ITEM_TM44_REST: ItemEnum
+ITEM_TM45_ATTRACT: ItemEnum
+ITEM_TM46_THIEF: ItemEnum
+ITEM_TM47_STEEL_WING: ItemEnum
+ITEM_TM48_SKILL_SWAP: ItemEnum
+ITEM_TM49_SLEEP_TALK: ItemEnum
+ITEM_TM50_OVERHEAT: ItemEnum
+ITEM_TM51_ROOST: ItemEnum
+ITEM_TM52_FOCUS_BLAST: ItemEnum
+ITEM_TM53_ENERGY_BALL: ItemEnum
+ITEM_TM54_PSYSHOCK: ItemEnum
+ITEM_TM55_SCALD: ItemEnum
+ITEM_TM56_LEECH_LIFE: ItemEnum
+ITEM_TM57_CHARGE_BEAM: ItemEnum
+ITEM_TM58_ENDURE: ItemEnum
+ITEM_TM59_DRAGON_PULSE: ItemEnum
+ITEM_TM60_DRAIN_PUNCH: ItemEnum
+ITEM_TM61_WILL_O_WISP: ItemEnum
+ITEM_TM62_ACROBATICS: ItemEnum
+ITEM_TM63_ROCK_SLIDE: ItemEnum
+ITEM_TM64_EXPLOSION: ItemEnum
+ITEM_TM65_SHADOW_CLAW: ItemEnum
+ITEM_TM66_PAYBACK: ItemEnum
+ITEM_TM67_RECYCLE: ItemEnum
+ITEM_TM68_GIGA_IMPACT: ItemEnum
+ITEM_TM69_ROCK_POLISH: ItemEnum
+ITEM_TM70_AURORA_VEIL: ItemEnum
+ITEM_TM71_STONE_EDGE: ItemEnum
+ITEM_TM72_VOLT_SWITCH: ItemEnum
+ITEM_TM73_THUNDER_WAVE: ItemEnum
+ITEM_TM74_GYRO_BALL: ItemEnum
+ITEM_TM75_SWORDS_DANCE: ItemEnum
+ITEM_TM76_STEALTH_ROCK: ItemEnum
+ITEM_TM77_STRUGGLE_BUG: ItemEnum
+ITEM_TM78_BULLDOZE: ItemEnum
+ITEM_TM79_FREEZE_DRY: ItemEnum
+ITEM_TM80_VENOSHOCK: ItemEnum
+ITEM_TM81_X_SCISSOR: ItemEnum
+ITEM_TM82_DRAGON_TAIL: ItemEnum
+ITEM_TM83_FLAME_CHARGE: ItemEnum
+ITEM_TM84_POISON_JAB: ItemEnum
+ITEM_TM85_DREAM_EATER: ItemEnum
+ITEM_TM86_GRASS_KNOT: ItemEnum
+ITEM_TM87_SMACK_DOWN: ItemEnum
+ITEM_TM88_LOW_SWEEP: ItemEnum
+ITEM_TM89_U_TURN: ItemEnum
+ITEM_TM90_SUBSTITUTE: ItemEnum
+ITEM_TM91_FLASH_CANNON: ItemEnum
+ITEM_TM92_TRICK_ROOM: ItemEnum
+ITEM_TM93_WILD_CHARGE: ItemEnum
+ITEM_TM94_SUCKER_PUNCH: ItemEnum
+ITEM_TM95_SNARL: ItemEnum
+ITEM_TM96_AVALANCHE: ItemEnum
+ITEM_TM97_DARK_PULSE: ItemEnum
+ITEM_TM98_FALSE_SWIPE: ItemEnum
+ITEM_TM99_DAZZLING_GLEAM: ItemEnum
+ITEM_TM100_CURSE: ItemEnum
+ITEM_HM01_CUT: ItemEnum
+ITEM_HM02_FLY: ItemEnum
+ITEM_HM03_SURF: ItemEnum
+ITEM_HM04_STRENGTH: ItemEnum
+ITEM_HM05_FLASH: ItemEnum
+ITEM_HM06_ROCK_SMASH: ItemEnum
+ITEM_HM07_WATERFALL: ItemEnum
+ITEM_HM08_DIVE: ItemEnum
+ITEM_ODD_KEYSTONE: ItemEnum
+ITEM_GRACIDEA: ItemEnum
+ITEM_MEGA_BRACELET: ItemEnum
+ITEM_MACH_BIKE: ItemEnum
+ITEM_COIN_CASE: ItemEnum
+ITEM_ITEMFINDER: ItemEnum
+ITEM_OLD_ROD: ItemEnum
+ITEM_GOOD_ROD: ItemEnum
+ITEM_SUPER_ROD: ItemEnum
+ITEM_SS_TICKET: ItemEnum
+ITEM_CONTEST_PASS: ItemEnum
+ITEM_WAILMER_PAIL: ItemEnum
+ITEM_DEVON_GOODS: ItemEnum
+ITEM_SOOT_SACK: ItemEnum
+ITEM_BASEMENT_KEY: ItemEnum
+ITEM_ACRO_BIKE: ItemEnum
+ITEM_EGG_INCUBATOR: ItemEnum
+ITEM_LETTER: ItemEnum
+ITEM_EON_TICKET: ItemEnum
+ITEM_EXP_CHARM: ItemEnum
+ITEM_PRISON_BOTTLE: ItemEnum
+ITEM_SCANNER: ItemEnum
+ITEM_GO_GOGGLES: ItemEnum
+ITEM_METEORITE: ItemEnum
+ITEM_ROOM_1_KEY: ItemEnum
+ITEM_ROOM_2_KEY: ItemEnum
+ITEM_ROOM_4_KEY: ItemEnum
+ITEM_ROOM_6_KEY: ItemEnum
+ITEM_STORAGE_KEY: ItemEnum
+ITEM_DEVON_SCOPE: ItemEnum
+ITEM_MAGMA_STONE: ItemEnum
+ITEM_LUNAR_WING: ItemEnum
+ITEM_SHINY_CHARM: ItemEnum
+ITEM_OVAL_CHARM: ItemEnum
+ITEM_MAGMA_EMBLEM: ItemEnum
+ITEM_OLD_SEA_MAP: ItemEnum
+ITEM_MYSTIC_TICKET: ItemEnum
+ITEM_AURORA_TICKET: ItemEnum
+ITEM_POWDER_JAR: ItemEnum
+ITEM_REVEAL_GLASS: ItemEnum
+ITEM_DNA_SPLICERS: ItemEnum
+ITEM_POKE_VIAL: ItemEnum
+ITEM_CATCHING_CHARM: ItemEnum
+ITEM_ROTOM_CATALOG: ItemEnum
+ITEM_REINS_OF_UNITY: ItemEnum
+ITEM_ICEROOT_CARROT: ItemEnum
+ITEM_SHADEROOT_CARROT: ItemEnum
+ITEM_WOODEN_CROWN: ItemEnum
+ITEM_N_LUNARIZER: ItemEnum
+ITEM_N_SOLARIZER: ItemEnum
+ITEM_ABOMASITE: ItemEnum
+ITEM_ABSOLITE: ItemEnum
+ITEM_AERODACTYLITE: ItemEnum
+ITEM_AGGRONITE: ItemEnum
+ITEM_ALAKAZITE: ItemEnum
+ITEM_ALTARIANITE: ItemEnum
+ITEM_AMPHAROSITE: ItemEnum
+ITEM_AUDINITE: ItemEnum
+ITEM_BANETTITE: ItemEnum
+ITEM_BEEDRILLITE: ItemEnum
+ITEM_BLASTOISINITE: ItemEnum
+ITEM_BLAZIKENITE: ItemEnum
+ITEM_CAMERUPTITE: ItemEnum
+ITEM_CHARIZARDITE_X: ItemEnum
+ITEM_CHARIZARDITE_Y: ItemEnum
+ITEM_DIANCITE: ItemEnum
+ITEM_GALLADITE: ItemEnum
+ITEM_GARCHOMPITE: ItemEnum
+ITEM_GARDEVOIRITE: ItemEnum
+ITEM_GENGARITE: ItemEnum
+ITEM_GLALITITE: ItemEnum
+ITEM_GYARADOSITE: ItemEnum
+ITEM_HERACRONITE: ItemEnum
+ITEM_HOUNDOOMINITE: ItemEnum
+ITEM_KANGASKHANITE: ItemEnum
+ITEM_LATIASITE: ItemEnum
+ITEM_LATIOSITE: ItemEnum
+ITEM_LOPUNNITE: ItemEnum
+ITEM_LUCARIONITE: ItemEnum
+ITEM_MANECTITE: ItemEnum
+ITEM_MAWILITE: ItemEnum
+ITEM_MEDICHAMITE: ItemEnum
+ITEM_METAGROSSITE: ItemEnum
+ITEM_MEWTWONITE_X: ItemEnum
+ITEM_MEWTWONITE_Y: ItemEnum
+ITEM_PIDGEOTITE: ItemEnum
+ITEM_PINSIRITE: ItemEnum
+ITEM_SABLENITE: ItemEnum
+ITEM_SALAMENCITE: ItemEnum
+ITEM_SCEPTILITE: ItemEnum
+ITEM_SCIZORITE: ItemEnum
+ITEM_SHARPEDONITE: ItemEnum
+ITEM_SLOWBRONITE: ItemEnum
+ITEM_STEELIXITE: ItemEnum
+ITEM_SWAMPERTITE: ItemEnum
+ITEM_TYRANITARITE: ItemEnum
+ITEM_VENUSAURITE: ItemEnum
+ITEM_MILOTICITE: ItemEnum
+ITEM_RED_ORB: ItemEnum
+ITEM_BLUE_ORB: ItemEnum
+ITEM_FLYGONITE: ItemEnum
+ITEM_BUTTERFRENITE: ItemEnum
+ITEM_LAPRASITE_Y: ItemEnum
+ITEM_MACHAMPITE: ItemEnum
+ITEM_KINGLERITE: ItemEnum
+ITEM_KINGDRANITE: ItemEnum
+ITEM_DEWGONGITE: ItemEnum
+ITEM_HITMONCHANITE: ItemEnum
+ITEM_HITMONLEENITE: ItemEnum
+ITEM_HITMONTOPITE: ItemEnum
+ITEM_CROBATITE: ItemEnum
+ITEM_SKARMORITE: ItemEnum
+ITEM_BRUXISHITE: ItemEnum
+ITEM_TORTERRANITE: ItemEnum
+ITEM_INFERNAPENITE: ItemEnum
+ITEM_EMPOLEONITE: ItemEnum
+ITEM_SHUCKLENITE: ItemEnum
+ITEM_RELICANTHITE: ItemEnum
+ITEM_QUAGSIRENITE: ItemEnum
+ITEM_JELLICENTITE: ItemEnum
+ITEM_TOUCANNONITE: ItemEnum
+ITEM_DRAGONINITE: ItemEnum
+ITEM_BRELOOMITE: ItemEnum
+ITEM_SLAKINGITE: ItemEnum
+ITEM_PURPLE_ORB: ItemEnum
+ITEM_SLOWKINGITE: ItemEnum
+ITEM_GYARADOSITE_Y: ItemEnum
+ITEM_FERALIGITE_X: ItemEnum
+ITEM_FERALIGITE_Y: ItemEnum
+ITEM_HAXORUSITE: ItemEnum
+ITEM_LUXRAYNITE: ItemEnum
+ITEM_GRANBULLITE: ItemEnum
+ITEM_TYPHLOSIONITE: ItemEnum
+ITEM_NIDOQUEENITE: ItemEnum
+ITEM_NIDOKINGITE: ItemEnum
+ITEM_SANDSLASHITE: ItemEnum
+ITEM_MEGANIUMITE: ItemEnum
+ITEM_KROOKODILENITE: ItemEnum
+ITEM_MAGNEZONITE: ItemEnum
+ITEM_SHEDINJITE: ItemEnum
+ITEM_SWALOTITE: ItemEnum
+ITEM_LANTURNITE: ItemEnum
+ITEM_LAPRASITE_X: ItemEnum
+ITEM_KINGAMBITITE_R: ItemEnum
+ITEM_RIBOMBITE: ItemEnum
+ITEM_GARCHOMPITE_R: ItemEnum
+ITEM_SKARMORITE_R: ItemEnum
+ITEM_MACHAMPITE_R: ItemEnum
+ITEM_ALAKAZITE_R: ItemEnum
+ITEM_BEEDRILLITE_R: ItemEnum
+ITEM_HOUNDOOMINITE_R: ItemEnum
+ITEM_FROSLASSITE: ItemEnum
+ITEM_SCRAFTINITE: ItemEnum
+ITEM_MAWILITE_R: ItemEnum
+ITEM_SABLENITE_R: ItemEnum
+ITEM_URSALUNITE: ItemEnum
+ITEM_ARCANITE_R: ItemEnum
+ITEM_TYRANITARITE_R: ItemEnum
+ITEM_WIGGLYTUFFITE: ItemEnum
+ITEM_TINKATITE: ItemEnum
+ITEM_GYARADEATHITE_X: ItemEnum
+ITEM_GYARADEATHITE_Y: ItemEnum
+ITEM_LUCARIONITE_Z: ItemEnum
+ITEM_AEGISLASHITE_R: ItemEnum
+ITEM_ARBOKITE: ItemEnum
+ITEM_CLEFABLITE_R: ItemEnum
+ITEM_FLYGONITE_R: ItemEnum
+ITEM_EMPOLEONITE_R: ItemEnum
+ITEM_INFERNAPENITE_R: ItemEnum
+ITEM_FROSLASSITE_R: ItemEnum
+ITEM_GLALITITE_R: ItemEnum
+ITEM_RAPIDASHITE_G: ItemEnum
+ITEM_GOLISOPITE: ItemEnum
+ITEM_HYDREIGONITE_R: ItemEnum
+ITEM_TORTERRANITE_R: ItemEnum
+ITEM_RAPIDASHITE: ItemEnum
+ITEM_CORMOTHITE: ItemEnum
+ITEM_POPCORMITE: ItemEnum
+ITEM_REUNICLUSITE_R: ItemEnum
+ITEM_TOXTRICITITE_R: ItemEnum
+ITEM_ORICORIONITE: ItemEnum
+ITEM_TSAREENITE_R: ItemEnum
+ITEM_URSHIFITE: ItemEnum
+ITEM_AMPHYBUZZITE: ItemEnum
+ITEM_MELMETALITE: ItemEnum
+ITEM_DYNAMAX_ORB: ItemEnum
+ITEM_TERA_ORB: ItemEnum
+ITEM_VENUSAURITE_X: ItemEnum
+ITEM_CHARIZARDITE_Z: ItemEnum
+ITEM_BLASTOISINITE_X: ItemEnum
+ITEM_GENGARITE_X: ItemEnum
+ITEM_SNORLAXITE: ItemEnum
+ITEM_RILLABOOMITE: ItemEnum
+ITEM_CINDERACEITE: ItemEnum
+ITEM_INTELEONITE: ItemEnum
+ITEM_CORVINITE: ItemEnum
+ITEM_DREDNAWITE: ItemEnum
+ITEM_COALOSSITE: ItemEnum
+ITEM_SANDACONDITE: ItemEnum
+ITEM_COPPERAJITE: ItemEnum
+ITEM_HATTERENITE: ItemEnum
+ITEM_GARBODORITE: ItemEnum
+ITEM_ORBEETITE: ItemEnum
+ITEM_GRIMMSNARLITE: ItemEnum
+ITEM_CENTISKITE: ItemEnum
+ITEM_ALCREMITE: ItemEnum
+ITEM_TOXTRICITITE: ItemEnum
+ITEM_PIKANITE: ItemEnum
+ITEM_MEOWTHITE: ItemEnum
+ITEM_EEVITE: ItemEnum
+ITEM_DURALUDITE: ItemEnum
+ITEM_ULTRANECROZIUM_P: ItemEnum
+ITEM_FIDOUGHITE: ItemEnum
+ITEM_WIGGLYTUFFITE_X: ItemEnum
+ITEM_SERPERIORITE: ItemEnum
+ITEM_EMBOARITE: ItemEnum
+ITEM_SAMUROTTITE: ItemEnum
+ITEM_DECIDUITE: ItemEnum
+ITEM_WEAVILEITE: ItemEnum
+ITEM_DECIDUITE_H: ItemEnum
+ITEM_INCINERITE: ItemEnum
+ITEM_MEOWSCARADITE: ItemEnum
+ITEM_PRIMARINITE: ItemEnum
+ITEM_QUAQUAVITE: ItemEnum
+ITEM_SAMUROTTITE_H: ItemEnum
+ITEM_SKELEDIRGEITE: ItemEnum
+ITEM_TYPHLOSIONITE_H: ItemEnum
+ITEM_MIENSHAOITE: ItemEnum
+ITEM_GOODRITE: ItemEnum
+ITEM_SLOWBRONITE_G: ItemEnum
+ITEM_SLOWKINGITE_G: ItemEnum
+ITEM_ROSERADEITE: ItemEnum
+ITEM_ARCANITE: ItemEnum
+ITEM_PHANTOM_METEOR: ItemEnum
+ITEM_YVELTALITE: ItemEnum
+ITEM_GALACTIC_ORB: ItemEnum
+ITEM_CHIEN_PAOITE: ItemEnum
+ITEM_DRACOVISHITE: ItemEnum
+ITEM_MAWILITE_R_B: ItemEnum
+ITEM_RIBOMBITE_R: ItemEnum
+ITEM_WEAVILEITE_R: ItemEnum
+ITEM_FLYGONITE_R_B: ItemEnum
+ITEM_SNORLAX_ORB: ItemEnum
+ITEM_VICTINI_ORB: ItemEnum
+ITEM_WIGGLITUFF_ORB: ItemEnum
+ITEM_ABOMASITE_S: ItemEnum
+ITEM_FAB_MAIL: ItemEnum
+ITEM_RETRO_MAIL: ItemEnum
+ITEM_BUG_MEMORY: ItemEnum
+ITEM_DARK_MEMORY: ItemEnum
+ITEM_DRAGON_MEMORY: ItemEnum
+ITEM_ELECTRIC_MEMORY: ItemEnum
+ITEM_FAIRY_MEMORY: ItemEnum
+ITEM_FIGHTING_MEMORY: ItemEnum
+ITEM_FIRE_MEMORY: ItemEnum
+ITEM_FLYING_MEMORY: ItemEnum
+ITEM_GHOST_MEMORY: ItemEnum
+ITEM_GRASS_MEMORY: ItemEnum
+ITEM_GROUND_MEMORY: ItemEnum
+ITEM_ICE_MEMORY: ItemEnum
+ITEM_POISON_MEMORY: ItemEnum
+ITEM_PSYCHIC_MEMORY: ItemEnum
+ITEM_ROCK_MEMORY: ItemEnum
+ITEM_STEEL_MEMORY: ItemEnum
+ITEM_WATER_MEMORY: ItemEnum
+ITEM_OAKS_PARCEL: ItemEnum
+ITEM_POKE_FLUTE: ItemEnum
+ITEM_SECRET_KEY: ItemEnum
+ITEM_BIKE_VOUCHER: ItemEnum
+ITEM_GOLD_TEETH: ItemEnum
+ITEM_CARD_KEY: ItemEnum
+ITEM_LIFT_KEY: ItemEnum
+ITEM_SILPH_SCOPE: ItemEnum
+ITEM_BICYCLE: ItemEnum
+ITEM_TOWN_MAP: ItemEnum
+ITEM_VS_SEEKER: ItemEnum
+ITEM_FAME_CHECKER: ItemEnum
+ITEM_TM_CASE: ItemEnum
+ITEM_BERRY_POUCH: ItemEnum
+ITEM_TEACHY_TV: ItemEnum
+ITEM_TRI_PASS: ItemEnum
+ITEM_RAINBOW_PASS: ItemEnum
+ITEM_TEA: ItemEnum
+ITEM_RUBY: ItemEnum
+ITEM_SAPPHIRE: ItemEnum
+ITEM_Z_RING: ItemEnum
+ITEM_NORMALIUM_Z: ItemEnum
+ITEM_FIGHTINIUM_Z: ItemEnum
+ITEM_FLYINIUM_Z: ItemEnum
+ITEM_POISONIUM_Z: ItemEnum
+ITEM_GROUNDIUM_Z: ItemEnum
+ITEM_ROCKIUM_Z: ItemEnum
+ITEM_BUGINIUM_Z: ItemEnum
+ITEM_GHOSTIUM_Z: ItemEnum
+ITEM_STEELIUM_Z: ItemEnum
+ITEM_FIRIUM_Z: ItemEnum
+ITEM_WATERIUM_Z: ItemEnum
+ITEM_GRASSIUM_Z: ItemEnum
+ITEM_ELECTRIUM_Z: ItemEnum
+ITEM_PSYCHIUM_Z: ItemEnum
+ITEM_ICIUM_Z: ItemEnum
+ITEM_DRAGONIUM_Z: ItemEnum
+ITEM_DARKINIUM_Z: ItemEnum
+ITEM_FAIRIUM_Z: ItemEnum
+ITEM_ALORAICHIUM_Z: ItemEnum
+ITEM_DECIDIUM_Z: ItemEnum
+ITEM_EEVIUM_Z: ItemEnum
+ITEM_INCINIUM_Z: ItemEnum
+ITEM_KOMMONIUM_Z: ItemEnum
+ITEM_LUNALIUM_Z: ItemEnum
+ITEM_LYCANIUM_Z: ItemEnum
+ITEM_MARSHADIUM_Z: ItemEnum
+ITEM_MEWNIUM_Z: ItemEnum
+ITEM_MIMIKIUM_Z: ItemEnum
+ITEM_PIKANIUM_Z: ItemEnum
+ITEM_PIKASHUNIUM_Z: ItemEnum
+ITEM_PRIMARIUM_Z: ItemEnum
+ITEM_SNORLIUM_Z: ItemEnum
+ITEM_SOLGANIUM_Z: ItemEnum
+ITEM_TAPUNIUM_Z: ItemEnum
+ITEM_ULTRANECROZIUM_Z: ItemEnum
+ITEM_DUDUDUNITE: ItemEnum
+ITEM_TEAL_MASK: ItemEnum
+ITEM_HEARTHFLAME_MASK: ItemEnum
+ITEM_WELLSPRING_MASK: ItemEnum
+ITEM_CORNERSTONE_MASK: ItemEnum
+ITEM_TINKATITE_R: ItemEnum
+ITEM_SCIZORITE_R: ItemEnum
+ITEM_SCYTHERITE_R: ItemEnum
+ITEM_KLEAVITE_R: ItemEnum
+ITEM_KINGLERITE_R: ItemEnum
+ITEM_LUXRAYNITE_R: ItemEnum
+ITEM_KILOZUNITE: ItemEnum
+ITEM_AGGRONITE_R: ItemEnum
+ITEM_GARDEVOIRITE_R: ItemEnum
+ITEM_GALLADITE_R: ItemEnum
+ITEM_CLODSITE: ItemEnum
+ITEM_GOTHITITE: ItemEnum
+ITEM_SNORLAXITE_R: ItemEnum
+ITEM_ARCANITE_H: ItemEnum
+ITEM_REUNICLUSITE: ItemEnum
+ITEM_SWAMPAGEITE: ItemEnum
+ITEM_CHANDELURITE: ItemEnum
+ITEM_ZAPDOSITE: ItemEnum
+ITEM_ARTICUNITE: ItemEnum
+ITEM_MOLTRESITE: ItemEnum
+ITEM_CARBONIXITE: ItemEnum
+ITEM_DRAGAPULTITE: ItemEnum
+ITEM_SANDSLASHITE_A: ItemEnum
+ITEM_KLEAVITE: ItemEnum
+ITEM_SCYTHERITE: ItemEnum
+ITEM_HYDREIGONITE: ItemEnum
+ITEM_VANILLUXEITE: ItemEnum
+ITEM_HERACREUSITE: ItemEnum
+ITEM_EXCADRILLITE_R: ItemEnum
+ITEM_MAMOSWINITE_R: ItemEnum
+ITEM_VANILLUXEITE_R: ItemEnum
+ITEM_CHANDELURITE_R: ItemEnum
+ITEM_SNEASLERITE: ItemEnum
+ITEM_CLEFABLITE: ItemEnum
+ITEM_GOODRITE_H: ItemEnum
+ITEM_TSAREENITE: ItemEnum
+ITEM_ALTARIANITE_R: ItemEnum
+ITEM_HARIYAMITE: ItemEnum
+ITEM_LUXZERITE: ItemEnum
+ITEM_TALONFLAMEITE: ItemEnum
+ITEM_CHESNAUGHTITE: ItemEnum
+ITEM_GRENINJITE: ItemEnum
+ITEM_DELPHOXITE: ItemEnum
+ITEM_CLEFABLITE_Y: ItemEnum
+ITEM_VICTREEBELITE: ItemEnum
+ITEM_STARMINITE: ItemEnum
+ITEM_DRAGONINITE_Y: ItemEnum
+ITEM_EXCADRITE: ItemEnum
+ITEM_SCOLIPITE: ItemEnum
+ITEM_EELEKTROSSITE: ItemEnum
+ITEM_CHANDELURITE_Y: ItemEnum
+ITEM_PYROARITE: ItemEnum
+ITEM_MALAMARITE: ItemEnum
+ITEM_BARBARACITE: ItemEnum
+ITEM_DRAGALGITE: ItemEnum
+ITEM_HAWLUCHANITE: ItemEnum
+ITEM_ZYGARDITE: ItemEnum
+ITEM_DRAMPANITE: ItemEnum
+ITEM_FALINKSITE: ItemEnum
+ITEM_RAICHUNITE_X: ItemEnum
+ITEM_RAICHUNITE_Y: ItemEnum
+ITEM_SCOVILLAINITE: ItemEnum
+ITEM_CHIMECHITE: ItemEnum
+ITEM_CRABOMINITE: ItemEnum
+ITEM_ABSOLITE_Z: ItemEnum
+ITEM_STARAPTITE: ItemEnum
+ITEM_GARCHOMPITE_Z: ItemEnum
+ITEM_HEATRANITE: ItemEnum
+ITEM_DARKRANITE: ItemEnum
+ITEM_GOLURKITE: ItemEnum
+ITEM_MEOWSTICITE: ItemEnum
+ITEM_GOLISOPITE_Y: ItemEnum
+ITEM_MAGEARNITE: ItemEnum
+ITEM_ZERAORITE: ItemEnum
+ITEM_GLIMMORANITE: ItemEnum
+ITEM_TATSUGIRINITE: ItemEnum
+ITEM_BAXCALIBRITE: ItemEnum
+ITEM_EYE_OF_ENDER: ItemEnum
+ITEM_FLOETTITE: ItemEnum
+ITEM_SKARMORITE_Y: ItemEnum
+ITEM_FROSLASSITE_Y: ItemEnum

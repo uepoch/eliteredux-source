@@ -1,0 +1,975 @@
+from google.protobuf import descriptor_pb2 as _descriptor_pb2
+from google.protobuf.internal import enum_type_wrapper as _enum_type_wrapper
+from google.protobuf import descriptor as _descriptor
+from typing import ClassVar as _ClassVar
+
+DESCRIPTOR: _descriptor.FileDescriptor
+
+class MoveBehavior(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
+    __slots__ = ()
+    EFFECT_HIT: _ClassVar[MoveBehavior]
+    EFFECT_SLEEP: _ClassVar[MoveBehavior]
+    EFFECT_POISON_HIT: _ClassVar[MoveBehavior]
+    EFFECT_ABSORB: _ClassVar[MoveBehavior]
+    EFFECT_BURN_HIT: _ClassVar[MoveBehavior]
+    EFFECT_FREEZE_HIT: _ClassVar[MoveBehavior]
+    EFFECT_PARALYZE_HIT: _ClassVar[MoveBehavior]
+    EFFECT_EXPLOSION: _ClassVar[MoveBehavior]
+    EFFECT_DREAM_EATER: _ClassVar[MoveBehavior]
+    EFFECT_MIRROR_MOVE: _ClassVar[MoveBehavior]
+    EFFECT_ATTACK_UP: _ClassVar[MoveBehavior]
+    EFFECT_DEFENSE_UP: _ClassVar[MoveBehavior]
+    EFFECT_SPEED_UP: _ClassVar[MoveBehavior]
+    EFFECT_SPECIAL_ATTACK_UP: _ClassVar[MoveBehavior]
+    EFFECT_SPECIAL_DEFENSE_UP: _ClassVar[MoveBehavior]
+    EFFECT_ACCURACY_UP: _ClassVar[MoveBehavior]
+    EFFECT_EVASION_UP: _ClassVar[MoveBehavior]
+    EFFECT_SPECIAL_ATTACK_UP_3: _ClassVar[MoveBehavior]
+    EFFECT_ATTACK_DOWN: _ClassVar[MoveBehavior]
+    EFFECT_DEFENSE_DOWN: _ClassVar[MoveBehavior]
+    EFFECT_SPEED_DOWN: _ClassVar[MoveBehavior]
+    EFFECT_SPECIAL_ATTACK_DOWN: _ClassVar[MoveBehavior]
+    EFFECT_SPECIAL_DEFENSE_DOWN: _ClassVar[MoveBehavior]
+    EFFECT_ACCURACY_DOWN: _ClassVar[MoveBehavior]
+    EFFECT_EVASION_DOWN: _ClassVar[MoveBehavior]
+    EFFECT_HAZE: _ClassVar[MoveBehavior]
+    EFFECT_BIDE: _ClassVar[MoveBehavior]
+    EFFECT_RAMPAGE: _ClassVar[MoveBehavior]
+    EFFECT_ROAR: _ClassVar[MoveBehavior]
+    EFFECT_MULTI_HIT: _ClassVar[MoveBehavior]
+    EFFECT_CONVERSION: _ClassVar[MoveBehavior]
+    EFFECT_FLINCH_HIT: _ClassVar[MoveBehavior]
+    EFFECT_RESTORE_HP: _ClassVar[MoveBehavior]
+    EFFECT_TOXIC: _ClassVar[MoveBehavior]
+    EFFECT_PAY_DAY: _ClassVar[MoveBehavior]
+    EFFECT_LIGHT_SCREEN: _ClassVar[MoveBehavior]
+    EFFECT_TRI_ATTACK: _ClassVar[MoveBehavior]
+    EFFECT_REST: _ClassVar[MoveBehavior]
+    EFFECT_OHKO: _ClassVar[MoveBehavior]
+    EFFECT_FUSION_COMBO: _ClassVar[MoveBehavior]
+    EFFECT_SUPER_FANG: _ClassVar[MoveBehavior]
+    EFFECT_DRAGON_RAGE: _ClassVar[MoveBehavior]
+    EFFECT_TRAP: _ClassVar[MoveBehavior]
+    EFFECT_HEAL_BLOCK: _ClassVar[MoveBehavior]
+    EFFECT_DOUBLE_HIT: _ClassVar[MoveBehavior]
+    EFFECT_RECOIL_IF_MISS: _ClassVar[MoveBehavior]
+    EFFECT_MIST: _ClassVar[MoveBehavior]
+    EFFECT_FOCUS_ENERGY: _ClassVar[MoveBehavior]
+    EFFECT_RECOIL_25: _ClassVar[MoveBehavior]
+    EFFECT_CONFUSE: _ClassVar[MoveBehavior]
+    EFFECT_ATTACK_UP_2: _ClassVar[MoveBehavior]
+    EFFECT_DEFENSE_UP_2: _ClassVar[MoveBehavior]
+    EFFECT_SPEED_UP_2: _ClassVar[MoveBehavior]
+    EFFECT_SPECIAL_ATTACK_UP_2: _ClassVar[MoveBehavior]
+    EFFECT_SPECIAL_DEFENSE_UP_2: _ClassVar[MoveBehavior]
+    EFFECT_ACCURACY_UP_2: _ClassVar[MoveBehavior]
+    EFFECT_EVASION_UP_2: _ClassVar[MoveBehavior]
+    EFFECT_TRANSFORM: _ClassVar[MoveBehavior]
+    EFFECT_ATTACK_DOWN_2: _ClassVar[MoveBehavior]
+    EFFECT_DEFENSE_DOWN_2: _ClassVar[MoveBehavior]
+    EFFECT_SPEED_DOWN_2: _ClassVar[MoveBehavior]
+    EFFECT_SPECIAL_ATTACK_DOWN_2: _ClassVar[MoveBehavior]
+    EFFECT_SPECIAL_DEFENSE_DOWN_2: _ClassVar[MoveBehavior]
+    EFFECT_ACCURACY_DOWN_2: _ClassVar[MoveBehavior]
+    EFFECT_EVASION_DOWN_2: _ClassVar[MoveBehavior]
+    EFFECT_REFLECT: _ClassVar[MoveBehavior]
+    EFFECT_POISON: _ClassVar[MoveBehavior]
+    EFFECT_PARALYZE: _ClassVar[MoveBehavior]
+    EFFECT_ATTACK_DOWN_HIT: _ClassVar[MoveBehavior]
+    EFFECT_DEFENSE_DOWN_HIT: _ClassVar[MoveBehavior]
+    EFFECT_SPEED_DOWN_HIT: _ClassVar[MoveBehavior]
+    EFFECT_SPECIAL_ATTACK_DOWN_HIT: _ClassVar[MoveBehavior]
+    EFFECT_SPECIAL_DEFENSE_DOWN_HIT: _ClassVar[MoveBehavior]
+    EFFECT_ACCURACY_DOWN_HIT: _ClassVar[MoveBehavior]
+    EFFECT_EVASION_DOWN_HIT: _ClassVar[MoveBehavior]
+    EFFECT_TWO_TURNS_ATTACK: _ClassVar[MoveBehavior]
+    EFFECT_CONFUSE_HIT: _ClassVar[MoveBehavior]
+    EFFECT_TWINEEDLE: _ClassVar[MoveBehavior]
+    EFFECT_VITAL_THROW: _ClassVar[MoveBehavior]
+    EFFECT_SUBSTITUTE: _ClassVar[MoveBehavior]
+    EFFECT_RECHARGE: _ClassVar[MoveBehavior]
+    EFFECT_RAGE: _ClassVar[MoveBehavior]
+    EFFECT_MIMIC: _ClassVar[MoveBehavior]
+    EFFECT_METRONOME: _ClassVar[MoveBehavior]
+    EFFECT_LEECH_SEED: _ClassVar[MoveBehavior]
+    EFFECT_DO_NOTHING: _ClassVar[MoveBehavior]
+    EFFECT_DISABLE: _ClassVar[MoveBehavior]
+    EFFECT_LEVEL_DAMAGE: _ClassVar[MoveBehavior]
+    EFFECT_PSYWAVE: _ClassVar[MoveBehavior]
+    EFFECT_COUNTER: _ClassVar[MoveBehavior]
+    EFFECT_ENCORE: _ClassVar[MoveBehavior]
+    EFFECT_PAIN_SPLIT: _ClassVar[MoveBehavior]
+    EFFECT_SNORE: _ClassVar[MoveBehavior]
+    EFFECT_CONVERSION_2: _ClassVar[MoveBehavior]
+    EFFECT_LOCK_ON: _ClassVar[MoveBehavior]
+    EFFECT_SKETCH: _ClassVar[MoveBehavior]
+    EFFECT_HAMMER_ARM: _ClassVar[MoveBehavior]
+    EFFECT_SLEEP_TALK: _ClassVar[MoveBehavior]
+    EFFECT_DESTINY_BOND: _ClassVar[MoveBehavior]
+    EFFECT_FLAIL: _ClassVar[MoveBehavior]
+    EFFECT_SPITE: _ClassVar[MoveBehavior]
+    EFFECT_FALSE_SWIPE: _ClassVar[MoveBehavior]
+    EFFECT_HEAL_BELL: _ClassVar[MoveBehavior]
+    EFFECT_ALWAYS_CRIT: _ClassVar[MoveBehavior]
+    EFFECT_TRIPLE_KICK: _ClassVar[MoveBehavior]
+    EFFECT_THIEF: _ClassVar[MoveBehavior]
+    EFFECT_MEAN_LOOK: _ClassVar[MoveBehavior]
+    EFFECT_NIGHTMARE: _ClassVar[MoveBehavior]
+    EFFECT_MINIMIZE: _ClassVar[MoveBehavior]
+    EFFECT_CURSE: _ClassVar[MoveBehavior]
+    EFFECT_HEALING_WISH: _ClassVar[MoveBehavior]
+    EFFECT_PROTECT: _ClassVar[MoveBehavior]
+    EFFECT_SPIKES: _ClassVar[MoveBehavior]
+    EFFECT_FORESIGHT: _ClassVar[MoveBehavior]
+    EFFECT_PERISH_SONG: _ClassVar[MoveBehavior]
+    EFFECT_SANDSTORM: _ClassVar[MoveBehavior]
+    EFFECT_ENDURE: _ClassVar[MoveBehavior]
+    EFFECT_ROLLOUT: _ClassVar[MoveBehavior]
+    EFFECT_SWAGGER: _ClassVar[MoveBehavior]
+    EFFECT_FURY_CUTTER: _ClassVar[MoveBehavior]
+    EFFECT_ATTRACT: _ClassVar[MoveBehavior]
+    EFFECT_RETURN: _ClassVar[MoveBehavior]
+    EFFECT_PRESENT: _ClassVar[MoveBehavior]
+    EFFECT_FRUSTRATION: _ClassVar[MoveBehavior]
+    EFFECT_SAFEGUARD: _ClassVar[MoveBehavior]
+    EFFECT_UNUSED_125: _ClassVar[MoveBehavior]
+    EFFECT_MAGNITUDE: _ClassVar[MoveBehavior]
+    EFFECT_BATON_PASS: _ClassVar[MoveBehavior]
+    EFFECT_PURSUIT: _ClassVar[MoveBehavior]
+    EFFECT_RAPID_SPIN: _ClassVar[MoveBehavior]
+    EFFECT_SONICBOOM: _ClassVar[MoveBehavior]
+    EFFECT_CAPTIVATE: _ClassVar[MoveBehavior]
+    EFFECT_MORNING_SUN: _ClassVar[MoveBehavior]
+    EFFECT_SYNTHESIS: _ClassVar[MoveBehavior]
+    EFFECT_MOONLIGHT: _ClassVar[MoveBehavior]
+    EFFECT_HIDDEN_POWER: _ClassVar[MoveBehavior]
+    EFFECT_RAIN_DANCE: _ClassVar[MoveBehavior]
+    EFFECT_SUNNY_DAY: _ClassVar[MoveBehavior]
+    EFFECT_DEFENSE_UP_HIT: _ClassVar[MoveBehavior]
+    EFFECT_ATTACK_UP_HIT: _ClassVar[MoveBehavior]
+    EFFECT_ALL_STATS_UP_HIT: _ClassVar[MoveBehavior]
+    EFFECT_FELL_STINGER: _ClassVar[MoveBehavior]
+    EFFECT_BELLY_DRUM: _ClassVar[MoveBehavior]
+    EFFECT_PSYCH_UP: _ClassVar[MoveBehavior]
+    EFFECT_MIRROR_COAT: _ClassVar[MoveBehavior]
+    EFFECT_SKULL_BASH: _ClassVar[MoveBehavior]
+    EFFECT_TWISTER: _ClassVar[MoveBehavior]
+    EFFECT_EARTHQUAKE: _ClassVar[MoveBehavior]
+    EFFECT_FUTURE_SIGHT: _ClassVar[MoveBehavior]
+    EFFECT_GUST: _ClassVar[MoveBehavior]
+    EFFECT_FLINCH_MINIMIZE_HIT: _ClassVar[MoveBehavior]
+    EFFECT_SOLARBEAM: _ClassVar[MoveBehavior]
+    EFFECT_THUNDER: _ClassVar[MoveBehavior]
+    EFFECT_SWITCH_ARGUMENT: _ClassVar[MoveBehavior]
+    EFFECT_BEAT_UP: _ClassVar[MoveBehavior]
+    EFFECT_SEMI_INVULNERABLE: _ClassVar[MoveBehavior]
+    EFFECT_DEFENSE_CURL: _ClassVar[MoveBehavior]
+    EFFECT_SOFTBOILED: _ClassVar[MoveBehavior]
+    EFFECT_FAKE_OUT: _ClassVar[MoveBehavior]
+    EFFECT_UPROAR: _ClassVar[MoveBehavior]
+    EFFECT_STOCKPILE: _ClassVar[MoveBehavior]
+    EFFECT_SPIT_UP: _ClassVar[MoveBehavior]
+    EFFECT_SWALLOW: _ClassVar[MoveBehavior]
+    EFFECT_WORRY_SEED: _ClassVar[MoveBehavior]
+    EFFECT_HAIL: _ClassVar[MoveBehavior]
+    EFFECT_TORMENT: _ClassVar[MoveBehavior]
+    EFFECT_FLATTER: _ClassVar[MoveBehavior]
+    EFFECT_WILL_O_WISP: _ClassVar[MoveBehavior]
+    EFFECT_MEMENTO: _ClassVar[MoveBehavior]
+    EFFECT_FACADE: _ClassVar[MoveBehavior]
+    EFFECT_FOCUS_PUNCH: _ClassVar[MoveBehavior]
+    EFFECT_SMELLINGSALT: _ClassVar[MoveBehavior]
+    EFFECT_FOLLOW_ME: _ClassVar[MoveBehavior]
+    EFFECT_NATURE_POWER: _ClassVar[MoveBehavior]
+    EFFECT_CHARGE: _ClassVar[MoveBehavior]
+    EFFECT_TAUNT: _ClassVar[MoveBehavior]
+    EFFECT_HELPING_HAND: _ClassVar[MoveBehavior]
+    EFFECT_TRICK: _ClassVar[MoveBehavior]
+    EFFECT_ROLE_PLAY: _ClassVar[MoveBehavior]
+    EFFECT_WISH: _ClassVar[MoveBehavior]
+    EFFECT_ASSIST: _ClassVar[MoveBehavior]
+    EFFECT_INGRAIN: _ClassVar[MoveBehavior]
+    EFFECT_SUPERPOWER: _ClassVar[MoveBehavior]
+    EFFECT_MAGIC_COAT: _ClassVar[MoveBehavior]
+    EFFECT_RECYCLE: _ClassVar[MoveBehavior]
+    EFFECT_REVENGE: _ClassVar[MoveBehavior]
+    EFFECT_BRICK_BREAK: _ClassVar[MoveBehavior]
+    EFFECT_YAWN: _ClassVar[MoveBehavior]
+    EFFECT_KNOCK_OFF: _ClassVar[MoveBehavior]
+    EFFECT_ENDEAVOR: _ClassVar[MoveBehavior]
+    EFFECT_ERUPTION: _ClassVar[MoveBehavior]
+    EFFECT_SKILL_SWAP: _ClassVar[MoveBehavior]
+    EFFECT_IMPRISON: _ClassVar[MoveBehavior]
+    EFFECT_REFRESH: _ClassVar[MoveBehavior]
+    EFFECT_GRUDGE: _ClassVar[MoveBehavior]
+    EFFECT_SNATCH: _ClassVar[MoveBehavior]
+    EFFECT_LOW_KICK: _ClassVar[MoveBehavior]
+    EFFECT_SECRET_POWER: _ClassVar[MoveBehavior]
+    EFFECT_RECOIL_33: _ClassVar[MoveBehavior]
+    EFFECT_TEETER_DANCE: _ClassVar[MoveBehavior]
+    EFFECT_HIT_ESCAPE: _ClassVar[MoveBehavior]
+    EFFECT_MUD_SPORT: _ClassVar[MoveBehavior]
+    EFFECT_POISON_FANG: _ClassVar[MoveBehavior]
+    EFFECT_WEATHER_BALL: _ClassVar[MoveBehavior]
+    EFFECT_OVERHEAT: _ClassVar[MoveBehavior]
+    EFFECT_TICKLE: _ClassVar[MoveBehavior]
+    EFFECT_COSMIC_POWER: _ClassVar[MoveBehavior]
+    EFFECT_SKY_UPPERCUT: _ClassVar[MoveBehavior]
+    EFFECT_BULK_UP: _ClassVar[MoveBehavior]
+    EFFECT_PLACEHOLDER: _ClassVar[MoveBehavior]
+    EFFECT_WATER_SPORT: _ClassVar[MoveBehavior]
+    EFFECT_CALM_MIND: _ClassVar[MoveBehavior]
+    EFFECT_DRAGON_DANCE: _ClassVar[MoveBehavior]
+    EFFECT_CAMOUFLAGE: _ClassVar[MoveBehavior]
+    EFFECT_PLEDGE: _ClassVar[MoveBehavior]
+    EFFECT_FLING: _ClassVar[MoveBehavior]
+    EFFECT_NATURAL_GIFT: _ClassVar[MoveBehavior]
+    EFFECT_WAKE_UP_SLAP: _ClassVar[MoveBehavior]
+    EFFECT_WRING_OUT: _ClassVar[MoveBehavior]
+    EFFECT_HEX: _ClassVar[MoveBehavior]
+    EFFECT_ASSURANCE: _ClassVar[MoveBehavior]
+    EFFECT_TRUMP_CARD: _ClassVar[MoveBehavior]
+    EFFECT_ACROBATICS: _ClassVar[MoveBehavior]
+    EFFECT_HEAT_CRASH: _ClassVar[MoveBehavior]
+    EFFECT_PUNISHMENT: _ClassVar[MoveBehavior]
+    EFFECT_STORED_POWER: _ClassVar[MoveBehavior]
+    EFFECT_ELECTRO_BALL: _ClassVar[MoveBehavior]
+    EFFECT_GYRO_BALL: _ClassVar[MoveBehavior]
+    EFFECT_ECHOED_VOICE: _ClassVar[MoveBehavior]
+    EFFECT_PAYBACK: _ClassVar[MoveBehavior]
+    EFFECT_ROUND: _ClassVar[MoveBehavior]
+    EFFECT_BRINE: _ClassVar[MoveBehavior]
+    EFFECT_VENOSHOCK: _ClassVar[MoveBehavior]
+    EFFECT_RETALIATE: _ClassVar[MoveBehavior]
+    EFFECT_BULLDOZE: _ClassVar[MoveBehavior]
+    EFFECT_FOUL_PLAY: _ClassVar[MoveBehavior]
+    EFFECT_PSYSHOCK: _ClassVar[MoveBehavior]
+    EFFECT_ROOST: _ClassVar[MoveBehavior]
+    EFFECT_GRAVITY: _ClassVar[MoveBehavior]
+    EFFECT_MIRACLE_EYE: _ClassVar[MoveBehavior]
+    EFFECT_TAILWIND: _ClassVar[MoveBehavior]
+    EFFECT_EMBARGO: _ClassVar[MoveBehavior]
+    EFFECT_AQUA_RING: _ClassVar[MoveBehavior]
+    EFFECT_TRICK_ROOM: _ClassVar[MoveBehavior]
+    EFFECT_WONDER_ROOM: _ClassVar[MoveBehavior]
+    EFFECT_MAGIC_ROOM: _ClassVar[MoveBehavior]
+    EFFECT_MAGNET_RISE: _ClassVar[MoveBehavior]
+    EFFECT_TOXIC_SPIKES: _ClassVar[MoveBehavior]
+    EFFECT_GASTRO_ACID: _ClassVar[MoveBehavior]
+    EFFECT_STEALTH_ROCK: _ClassVar[MoveBehavior]
+    EFFECT_TELEKINESIS: _ClassVar[MoveBehavior]
+    EFFECT_POWER_SWAP: _ClassVar[MoveBehavior]
+    EFFECT_GUARD_SWAP: _ClassVar[MoveBehavior]
+    EFFECT_HEART_SWAP: _ClassVar[MoveBehavior]
+    EFFECT_POWER_SPLIT: _ClassVar[MoveBehavior]
+    EFFECT_GUARD_SPLIT: _ClassVar[MoveBehavior]
+    EFFECT_STICKY_WEB: _ClassVar[MoveBehavior]
+    EFFECT_METAL_BURST: _ClassVar[MoveBehavior]
+    EFFECT_LUCKY_CHANT: _ClassVar[MoveBehavior]
+    EFFECT_SUCKER_PUNCH: _ClassVar[MoveBehavior]
+    EFFECT_SPECIAL_DEFENSE_DOWN_HIT_2: _ClassVar[MoveBehavior]
+    EFFECT_SIMPLE_BEAM: _ClassVar[MoveBehavior]
+    EFFECT_ENTRAINMENT: _ClassVar[MoveBehavior]
+    EFFECT_HEAL_PULSE: _ClassVar[MoveBehavior]
+    EFFECT_QUASH: _ClassVar[MoveBehavior]
+    EFFECT_ION_DELUGE: _ClassVar[MoveBehavior]
+    EFFECT_FREEZE_DRY: _ClassVar[MoveBehavior]
+    EFFECT_TOPSY_TURVY: _ClassVar[MoveBehavior]
+    EFFECT_MISTY_TERRAIN: _ClassVar[MoveBehavior]
+    EFFECT_GRASSY_TERRAIN: _ClassVar[MoveBehavior]
+    EFFECT_ELECTRIC_TERRAIN: _ClassVar[MoveBehavior]
+    EFFECT_PSYCHIC_TERRAIN: _ClassVar[MoveBehavior]
+    EFFECT_ATTACK_ACCURACY_UP: _ClassVar[MoveBehavior]
+    EFFECT_ATTACK_SPATK_UP: _ClassVar[MoveBehavior]
+    EFFECT_HURRICANE: _ClassVar[MoveBehavior]
+    EFFECT_TWO_TYPED_MOVE: _ClassVar[MoveBehavior]
+    EFFECT_ME_FIRST: _ClassVar[MoveBehavior]
+    EFFECT_SPEED_UP_HIT: _ClassVar[MoveBehavior]
+    EFFECT_QUIVER_DANCE: _ClassVar[MoveBehavior]
+    EFFECT_COIL: _ClassVar[MoveBehavior]
+    EFFECT_ELECTRIFY: _ClassVar[MoveBehavior]
+    EFFECT_SCALD: _ClassVar[MoveBehavior]
+    EFFECT_REFLECT_TYPE: _ClassVar[MoveBehavior]
+    EFFECT_SOAK: _ClassVar[MoveBehavior]
+    EFFECT_GROWTH: _ClassVar[MoveBehavior]
+    EFFECT_CLOSE_COMBAT: _ClassVar[MoveBehavior]
+    EFFECT_LAST_RESORT: _ClassVar[MoveBehavior]
+    EFFECT_RECOIL_33_STATUS: _ClassVar[MoveBehavior]
+    EFFECT_FLINCH_STATUS: _ClassVar[MoveBehavior]
+    EFFECT_RECOIL_50: _ClassVar[MoveBehavior]
+    EFFECT_SHELL_SMASH: _ClassVar[MoveBehavior]
+    EFFECT_SHIFT_GEAR: _ClassVar[MoveBehavior]
+    EFFECT_DEFENSE_UP_3: _ClassVar[MoveBehavior]
+    EFFECT_NOBLE_ROAR: _ClassVar[MoveBehavior]
+    EFFECT_VENOM_DRENCH: _ClassVar[MoveBehavior]
+    EFFECT_TOXIC_THREAD: _ClassVar[MoveBehavior]
+    EFFECT_CLEAR_SMOG: _ClassVar[MoveBehavior]
+    EFFECT_HIT_SWITCH_TARGET: _ClassVar[MoveBehavior]
+    EFFECT_FINAL_GAMBIT: _ClassVar[MoveBehavior]
+    EFFECT_CHANGE_TYPE_ON_ITEM: _ClassVar[MoveBehavior]
+    EFFECT_AUTOTOMIZE: _ClassVar[MoveBehavior]
+    EFFECT_COPYCAT: _ClassVar[MoveBehavior]
+    EFFECT_DEFOG: _ClassVar[MoveBehavior]
+    EFFECT_HIT_ENEMY_HEAL_ALLY: _ClassVar[MoveBehavior]
+    EFFECT_SMACK_DOWN: _ClassVar[MoveBehavior]
+    EFFECT_SYNCHRONOISE: _ClassVar[MoveBehavior]
+    EFFECT_PSYCHO_SHIFT: _ClassVar[MoveBehavior]
+    EFFECT_POWER_TRICK: _ClassVar[MoveBehavior]
+    EFFECT_FLAME_BURST: _ClassVar[MoveBehavior]
+    EFFECT_AFTER_YOU: _ClassVar[MoveBehavior]
+    EFFECT_BESTOW: _ClassVar[MoveBehavior]
+    EFFECT_ROTOTILLER: _ClassVar[MoveBehavior]
+    EFFECT_FLOWER_SHIELD: _ClassVar[MoveBehavior]
+    EFFECT_HIT_PREVENT_ESCAPE: _ClassVar[MoveBehavior]
+    EFFECT_SPEED_SWAP: _ClassVar[MoveBehavior]
+    EFFECT_DEFENSE_UP2_HIT: _ClassVar[MoveBehavior]
+    EFFECT_REVELATION_DANCE: _ClassVar[MoveBehavior]
+    EFFECT_AURORA_VEIL: _ClassVar[MoveBehavior]
+    EFFECT_THIRD_TYPE: _ClassVar[MoveBehavior]
+    EFFECT_FEINT: _ClassVar[MoveBehavior]
+    EFFECT_SPARKLING_ARIA: _ClassVar[MoveBehavior]
+    EFFECT_ACUPRESSURE: _ClassVar[MoveBehavior]
+    EFFECT_AROMATIC_MIST: _ClassVar[MoveBehavior]
+    EFFECT_POWDER: _ClassVar[MoveBehavior]
+    EFFECT_SP_ATTACK_UP_HIT: _ClassVar[MoveBehavior]
+    EFFECT_BELCH: _ClassVar[MoveBehavior]
+    EFFECT_PARTING_SHOT: _ClassVar[MoveBehavior]
+    EFFECT_SPECTRAL_THIEF: _ClassVar[MoveBehavior]
+    EFFECT_V_CREATE: _ClassVar[MoveBehavior]
+    EFFECT_MAT_BLOCK: _ClassVar[MoveBehavior]
+    EFFECT_STOMPING_TANTRUM: _ClassVar[MoveBehavior]
+    EFFECT_CORE_ENFORCER: _ClassVar[MoveBehavior]
+    EFFECT_INSTRUCT: _ClassVar[MoveBehavior]
+    EFFECT_THROAT_CHOP: _ClassVar[MoveBehavior]
+    EFFECT_LASER_FOCUS: _ClassVar[MoveBehavior]
+    EFFECT_MAGNETIC_FLUX: _ClassVar[MoveBehavior]
+    EFFECT_GEAR_UP: _ClassVar[MoveBehavior]
+    EFFECT_INCINERATE: _ClassVar[MoveBehavior]
+    EFFECT_BUG_BITE: _ClassVar[MoveBehavior]
+    EFFECT_STRENGTH_SAP: _ClassVar[MoveBehavior]
+    EFFECT_MIND_BLOWN: _ClassVar[MoveBehavior]
+    EFFECT_PURIFY: _ClassVar[MoveBehavior]
+    EFFECT_BURN_UP: _ClassVar[MoveBehavior]
+    EFFECT_SHORE_UP: _ClassVar[MoveBehavior]
+    EFFECT_GEOMANCY: _ClassVar[MoveBehavior]
+    EFFECT_FAIRY_LOCK: _ClassVar[MoveBehavior]
+    EFFECT_ALLY_SWITCH: _ClassVar[MoveBehavior]
+    EFFECT_RELIC_SONG: _ClassVar[MoveBehavior]
+    EFFECT_ATTACKER_DEFENSE_DOWN_HIT: _ClassVar[MoveBehavior]
+    EFFECT_BODY_PRESS: _ClassVar[MoveBehavior]
+    EFFECT_EERIE_SPELL: _ClassVar[MoveBehavior]
+    EFFECT_JUNGLE_HEALING: _ClassVar[MoveBehavior]
+    EFFECT_COACHING: _ClassVar[MoveBehavior]
+    EFFECT_LASH_OUT: _ClassVar[MoveBehavior]
+    EFFECT_GRASSY_GLIDE: _ClassVar[MoveBehavior]
+    EFFECT_REMOVE_TERRAIN: _ClassVar[MoveBehavior]
+    EFFECT_DYNAMAX_DOUBLE_DMG: _ClassVar[MoveBehavior]
+    EFFECT_DECORATE: _ClassVar[MoveBehavior]
+    EFFECT_SNIPE_SHOT: _ClassVar[MoveBehavior]
+    EFFECT_TRIPLE_HIT: _ClassVar[MoveBehavior]
+    EFFECT_RECOIL_HP_25: _ClassVar[MoveBehavior]
+    EFFECT_STUFF_CHEEKS: _ClassVar[MoveBehavior]
+    EFFECT_GRAV_APPLE: _ClassVar[MoveBehavior]
+    EFFECT_EVASION_UP_HIT: _ClassVar[MoveBehavior]
+    EFFECT_GLITZY_GLOW: _ClassVar[MoveBehavior]
+    EFFECT_BADDY_BAD: _ClassVar[MoveBehavior]
+    EFFECT_SAPPY_SEED: _ClassVar[MoveBehavior]
+    EFFECT_FREEZY_FROST: _ClassVar[MoveBehavior]
+    EFFECT_SPARKLY_SWIRL: _ClassVar[MoveBehavior]
+    EFFECT_PLASMA_FISTS: _ClassVar[MoveBehavior]
+    EFFECT_HYPERSPACE_FURY: _ClassVar[MoveBehavior]
+    EFFECT_AURA_WHEEL: _ClassVar[MoveBehavior]
+    EFFECT_PHOTON_GEYSER: _ClassVar[MoveBehavior]
+    EFFECT_SHELL_SIDE_ARM: _ClassVar[MoveBehavior]
+    EFFECT_TERRAIN_PULSE: _ClassVar[MoveBehavior]
+    EFFECT_JAW_LOCK: _ClassVar[MoveBehavior]
+    EFFECT_NO_RETREAT: _ClassVar[MoveBehavior]
+    EFFECT_TAR_SHOT: _ClassVar[MoveBehavior]
+    EFFECT_POLTERGEIST: _ClassVar[MoveBehavior]
+    EFFECT_OCTOLOCK: _ClassVar[MoveBehavior]
+    EFFECT_CLANGOROUS_SOUL: _ClassVar[MoveBehavior]
+    EFFECT_BOLT_BEAK: _ClassVar[MoveBehavior]
+    EFFECT_RISING_VOLTAGE: _ClassVar[MoveBehavior]
+    EFFECT_SCALE_SHOT: _ClassVar[MoveBehavior]
+    EFFECT_BEAK_BLAST: _ClassVar[MoveBehavior]
+    EFFECT_EXCALIBUR: _ClassVar[MoveBehavior]
+    EFFECT_FROSTBITE_HIT: _ClassVar[MoveBehavior]
+    EFFECT_EXPANDING_FORCE: _ClassVar[MoveBehavior]
+    EFFECT_STEEL_BEAM: _ClassVar[MoveBehavior]
+    EFFECT_HOWL: _ClassVar[MoveBehavior]
+    EFFECT_ATTRACT_HIT: _ClassVar[MoveBehavior]
+    EFFECT_CURSE_HIT: _ClassVar[MoveBehavior]
+    EFFECT_FLINCH_RECOIL_33: _ClassVar[MoveBehavior]
+    EFFECT_FLINCH_RECOIL_50: _ClassVar[MoveBehavior]
+    EFFECT_IGNORE_TYPE_IMMUNITY: _ClassVar[MoveBehavior]
+    EFFECT_SE_AGAINST_TYPE_HIT: _ClassVar[MoveBehavior]
+    EFFECT_DOUBLE_DMG_IF_STATUS1: _ClassVar[MoveBehavior]
+    EFFECT_STEALTH_ROCK_HIT: _ClassVar[MoveBehavior]
+    EFFECT_LEECH_SEED_HIT: _ClassVar[MoveBehavior]
+    EFFECT_STICKY_WEB_HIT: _ClassVar[MoveBehavior]
+    EFFECT_BLEED_HIT: _ClassVar[MoveBehavior]
+    EFFECT_SLEEP_HIT: _ClassVar[MoveBehavior]
+    EFFECT_BLEED: _ClassVar[MoveBehavior]
+    EFFECT_FROSTBITE: _ClassVar[MoveBehavior]
+    EFFECT_FREEZE: _ClassVar[MoveBehavior]
+    EFFECT_INFERNAL_PARADE: _ClassVar[MoveBehavior]
+    EFFECT_WYRM_WIND: _ClassVar[MoveBehavior]
+    EFFECT_MISTY_TERRAIN_BOOST: _ClassVar[MoveBehavior]
+    EFFECT_BERRY_SMASH: _ClassVar[MoveBehavior]
+    EFFECT_INVERSE_ROOM: _ClassVar[MoveBehavior]
+    EFFECT_DRAIN_BRAIN: _ClassVar[MoveBehavior]
+    EFFECT_TRIPLE_ARROWS: _ClassVar[MoveBehavior]
+    EFFECT_RECOIL_25_STATUS: _ClassVar[MoveBehavior]
+    EFFECT_WEATHER_BOOST: _ClassVar[MoveBehavior]
+    EFFECT_MORTAL_SPIN: _ClassVar[MoveBehavior]
+    EFFECT_KARMA: _ClassVar[MoveBehavior]
+    EFFECT_REMOVE_TERRAIN_NO_FAIL: _ClassVar[MoveBehavior]
+    EFFECT_TEN_HITS: _ClassVar[MoveBehavior]
+    EFFECT_TWO_TURN_SECONDARY: _ClassVar[MoveBehavior]
+    EFFECT_SPECIAL_ATTACK_UP_HIT: _ClassVar[MoveBehavior]
+    EFFECT_ARGUMENT_HIT: _ClassVar[MoveBehavior]
+    EFFECT_EVERY_OTHER_TURN: _ClassVar[MoveBehavior]
+    EFFECT_MISC_HIT: _ClassVar[MoveBehavior]
+    EFFECT_FILLET_AWAY: _ClassVar[MoveBehavior]
+    EFFECT_COURT_CHANGE: _ClassVar[MoveBehavior]
+    EFFECT_CHILLY_RECEPTION: _ClassVar[MoveBehavior]
+    EFFECT_SHED_TAIL: _ClassVar[MoveBehavior]
+    EFFECT_GHASTLY_ECHO: _ClassVar[MoveBehavior]
+    EFFECT_REVIVAL_BLESSING: _ClassVar[MoveBehavior]
+    EFFECT_TIDY_UP: _ClassVar[MoveBehavior]
+    EFFECT_ACID: _ClassVar[MoveBehavior]
+    EFFECT_SLUDGE: _ClassVar[MoveBehavior]
+    EFFECT_POISON_GAS: _ClassVar[MoveBehavior]
+    EFFECT_PARALYZE_IGNORE_TYPE: _ClassVar[MoveBehavior]
+    EFFECT_SUPER_FANG_HAZE: _ClassVar[MoveBehavior]
+    EFFECT_SPICY_EXTRACT: _ClassVar[MoveBehavior]
+    EFFECT_CLEAR_WEATHER_AND_TERRAIN_HIT: _ClassVar[MoveBehavior]
+    EFFECT_MATCHA_GOTCHA: _ClassVar[MoveBehavior]
+    EFFECT_DOODLE: _ClassVar[MoveBehavior]
+    EFFECT_SPIKE_HIT: _ClassVar[MoveBehavior]
+    EFFECT_VICTORY_DANCE: _ClassVar[MoveBehavior]
+    EFFECT_DRAGON_CHEER: _ClassVar[MoveBehavior]
+    EFFECT_SHELTER: _ClassVar[MoveBehavior]
+    EFFECT_ARGUMENT_HIT_IF_STAT_UP: _ClassVar[MoveBehavior]
+    EFFECT_UPPER_HAND: _ClassVar[MoveBehavior]
+    EFFECT_ELECTRO_SHOT: _ClassVar[MoveBehavior]
+    EFFECT_SHARPEN: _ClassVar[MoveBehavior]
+    EFFECT_SCARY_FACE: _ClassVar[MoveBehavior]
+    EFFECT_SMOKESCREEN: _ClassVar[MoveBehavior]
+    EFFECT_EERIE_FOG: _ClassVar[MoveBehavior]
+    EFFECT_MYSTIC_DANCE: _ClassVar[MoveBehavior]
+    EFFECT_SNAP_JAW: _ClassVar[MoveBehavior]
+    EFFECT_RIP_AND_TEAR: _ClassVar[MoveBehavior]
+    EFFECT_SKY_DROP: _ClassVar[MoveBehavior]
+    EFFECT_TERROR_CHARGE: _ClassVar[MoveBehavior]
+    EFFECT_TAILWIND_HIT: _ClassVar[MoveBehavior]
+    EFFECT_SANDSTORM_HIT: _ClassVar[MoveBehavior]
+    EFFECT_RAIN_HIT: _ClassVar[MoveBehavior]
+    EFFECT_FAIRY_TERRAIN_HIT: _ClassVar[MoveBehavior]
+    EFFECT_CREEPING_THORNS_HIT: _ClassVar[MoveBehavior]
+    EFFECT_TAKE_HEART: _ClassVar[MoveBehavior]
+    EFFECT_CLEAR_SKIES: _ClassVar[MoveBehavior]
+    EFFECT_SHOWTIME: _ClassVar[MoveBehavior]
+    EFFECT_TREPIDATION: _ClassVar[MoveBehavior]
+    EFFECT_CHIP_AWAY: _ClassVar[MoveBehavior]
+    EFFECT_MEDITATE: _ClassVar[MoveBehavior]
+    EFFECT_BARRIER: _ClassVar[MoveBehavior]
+    EFFECT_KINESIS: _ClassVar[MoveBehavior]
+    EFFECT_CORROSIVE_GAS: _ClassVar[MoveBehavior]
+    EFFECT_CALTROPS: _ClassVar[MoveBehavior]
+    EFFECT_SWEET_KISS: _ClassVar[MoveBehavior]
+    EFFECT_QUICK_GUARD: _ClassVar[MoveBehavior]
+    EFFECT_TWO_TURN_RETALIATION: _ClassVar[MoveBehavior]
+    EFFECT_SHELL_TRAP: _ClassVar[MoveBehavior]
+    EFFECT_GRASSY_TERRAIN_HIT: _ClassVar[MoveBehavior]
+    EFFECT_TOXIC_TERRAIN: _ClassVar[MoveBehavior]
+    EFFECT_SEPTIC_SWITCH: _ClassVar[MoveBehavior]
+    EFFECT_WHIRLPOOL: _ClassVar[MoveBehavior]
+EFFECT_HIT: MoveBehavior
+EFFECT_SLEEP: MoveBehavior
+EFFECT_POISON_HIT: MoveBehavior
+EFFECT_ABSORB: MoveBehavior
+EFFECT_BURN_HIT: MoveBehavior
+EFFECT_FREEZE_HIT: MoveBehavior
+EFFECT_PARALYZE_HIT: MoveBehavior
+EFFECT_EXPLOSION: MoveBehavior
+EFFECT_DREAM_EATER: MoveBehavior
+EFFECT_MIRROR_MOVE: MoveBehavior
+EFFECT_ATTACK_UP: MoveBehavior
+EFFECT_DEFENSE_UP: MoveBehavior
+EFFECT_SPEED_UP: MoveBehavior
+EFFECT_SPECIAL_ATTACK_UP: MoveBehavior
+EFFECT_SPECIAL_DEFENSE_UP: MoveBehavior
+EFFECT_ACCURACY_UP: MoveBehavior
+EFFECT_EVASION_UP: MoveBehavior
+EFFECT_SPECIAL_ATTACK_UP_3: MoveBehavior
+EFFECT_ATTACK_DOWN: MoveBehavior
+EFFECT_DEFENSE_DOWN: MoveBehavior
+EFFECT_SPEED_DOWN: MoveBehavior
+EFFECT_SPECIAL_ATTACK_DOWN: MoveBehavior
+EFFECT_SPECIAL_DEFENSE_DOWN: MoveBehavior
+EFFECT_ACCURACY_DOWN: MoveBehavior
+EFFECT_EVASION_DOWN: MoveBehavior
+EFFECT_HAZE: MoveBehavior
+EFFECT_BIDE: MoveBehavior
+EFFECT_RAMPAGE: MoveBehavior
+EFFECT_ROAR: MoveBehavior
+EFFECT_MULTI_HIT: MoveBehavior
+EFFECT_CONVERSION: MoveBehavior
+EFFECT_FLINCH_HIT: MoveBehavior
+EFFECT_RESTORE_HP: MoveBehavior
+EFFECT_TOXIC: MoveBehavior
+EFFECT_PAY_DAY: MoveBehavior
+EFFECT_LIGHT_SCREEN: MoveBehavior
+EFFECT_TRI_ATTACK: MoveBehavior
+EFFECT_REST: MoveBehavior
+EFFECT_OHKO: MoveBehavior
+EFFECT_FUSION_COMBO: MoveBehavior
+EFFECT_SUPER_FANG: MoveBehavior
+EFFECT_DRAGON_RAGE: MoveBehavior
+EFFECT_TRAP: MoveBehavior
+EFFECT_HEAL_BLOCK: MoveBehavior
+EFFECT_DOUBLE_HIT: MoveBehavior
+EFFECT_RECOIL_IF_MISS: MoveBehavior
+EFFECT_MIST: MoveBehavior
+EFFECT_FOCUS_ENERGY: MoveBehavior
+EFFECT_RECOIL_25: MoveBehavior
+EFFECT_CONFUSE: MoveBehavior
+EFFECT_ATTACK_UP_2: MoveBehavior
+EFFECT_DEFENSE_UP_2: MoveBehavior
+EFFECT_SPEED_UP_2: MoveBehavior
+EFFECT_SPECIAL_ATTACK_UP_2: MoveBehavior
+EFFECT_SPECIAL_DEFENSE_UP_2: MoveBehavior
+EFFECT_ACCURACY_UP_2: MoveBehavior
+EFFECT_EVASION_UP_2: MoveBehavior
+EFFECT_TRANSFORM: MoveBehavior
+EFFECT_ATTACK_DOWN_2: MoveBehavior
+EFFECT_DEFENSE_DOWN_2: MoveBehavior
+EFFECT_SPEED_DOWN_2: MoveBehavior
+EFFECT_SPECIAL_ATTACK_DOWN_2: MoveBehavior
+EFFECT_SPECIAL_DEFENSE_DOWN_2: MoveBehavior
+EFFECT_ACCURACY_DOWN_2: MoveBehavior
+EFFECT_EVASION_DOWN_2: MoveBehavior
+EFFECT_REFLECT: MoveBehavior
+EFFECT_POISON: MoveBehavior
+EFFECT_PARALYZE: MoveBehavior
+EFFECT_ATTACK_DOWN_HIT: MoveBehavior
+EFFECT_DEFENSE_DOWN_HIT: MoveBehavior
+EFFECT_SPEED_DOWN_HIT: MoveBehavior
+EFFECT_SPECIAL_ATTACK_DOWN_HIT: MoveBehavior
+EFFECT_SPECIAL_DEFENSE_DOWN_HIT: MoveBehavior
+EFFECT_ACCURACY_DOWN_HIT: MoveBehavior
+EFFECT_EVASION_DOWN_HIT: MoveBehavior
+EFFECT_TWO_TURNS_ATTACK: MoveBehavior
+EFFECT_CONFUSE_HIT: MoveBehavior
+EFFECT_TWINEEDLE: MoveBehavior
+EFFECT_VITAL_THROW: MoveBehavior
+EFFECT_SUBSTITUTE: MoveBehavior
+EFFECT_RECHARGE: MoveBehavior
+EFFECT_RAGE: MoveBehavior
+EFFECT_MIMIC: MoveBehavior
+EFFECT_METRONOME: MoveBehavior
+EFFECT_LEECH_SEED: MoveBehavior
+EFFECT_DO_NOTHING: MoveBehavior
+EFFECT_DISABLE: MoveBehavior
+EFFECT_LEVEL_DAMAGE: MoveBehavior
+EFFECT_PSYWAVE: MoveBehavior
+EFFECT_COUNTER: MoveBehavior
+EFFECT_ENCORE: MoveBehavior
+EFFECT_PAIN_SPLIT: MoveBehavior
+EFFECT_SNORE: MoveBehavior
+EFFECT_CONVERSION_2: MoveBehavior
+EFFECT_LOCK_ON: MoveBehavior
+EFFECT_SKETCH: MoveBehavior
+EFFECT_HAMMER_ARM: MoveBehavior
+EFFECT_SLEEP_TALK: MoveBehavior
+EFFECT_DESTINY_BOND: MoveBehavior
+EFFECT_FLAIL: MoveBehavior
+EFFECT_SPITE: MoveBehavior
+EFFECT_FALSE_SWIPE: MoveBehavior
+EFFECT_HEAL_BELL: MoveBehavior
+EFFECT_ALWAYS_CRIT: MoveBehavior
+EFFECT_TRIPLE_KICK: MoveBehavior
+EFFECT_THIEF: MoveBehavior
+EFFECT_MEAN_LOOK: MoveBehavior
+EFFECT_NIGHTMARE: MoveBehavior
+EFFECT_MINIMIZE: MoveBehavior
+EFFECT_CURSE: MoveBehavior
+EFFECT_HEALING_WISH: MoveBehavior
+EFFECT_PROTECT: MoveBehavior
+EFFECT_SPIKES: MoveBehavior
+EFFECT_FORESIGHT: MoveBehavior
+EFFECT_PERISH_SONG: MoveBehavior
+EFFECT_SANDSTORM: MoveBehavior
+EFFECT_ENDURE: MoveBehavior
+EFFECT_ROLLOUT: MoveBehavior
+EFFECT_SWAGGER: MoveBehavior
+EFFECT_FURY_CUTTER: MoveBehavior
+EFFECT_ATTRACT: MoveBehavior
+EFFECT_RETURN: MoveBehavior
+EFFECT_PRESENT: MoveBehavior
+EFFECT_FRUSTRATION: MoveBehavior
+EFFECT_SAFEGUARD: MoveBehavior
+EFFECT_UNUSED_125: MoveBehavior
+EFFECT_MAGNITUDE: MoveBehavior
+EFFECT_BATON_PASS: MoveBehavior
+EFFECT_PURSUIT: MoveBehavior
+EFFECT_RAPID_SPIN: MoveBehavior
+EFFECT_SONICBOOM: MoveBehavior
+EFFECT_CAPTIVATE: MoveBehavior
+EFFECT_MORNING_SUN: MoveBehavior
+EFFECT_SYNTHESIS: MoveBehavior
+EFFECT_MOONLIGHT: MoveBehavior
+EFFECT_HIDDEN_POWER: MoveBehavior
+EFFECT_RAIN_DANCE: MoveBehavior
+EFFECT_SUNNY_DAY: MoveBehavior
+EFFECT_DEFENSE_UP_HIT: MoveBehavior
+EFFECT_ATTACK_UP_HIT: MoveBehavior
+EFFECT_ALL_STATS_UP_HIT: MoveBehavior
+EFFECT_FELL_STINGER: MoveBehavior
+EFFECT_BELLY_DRUM: MoveBehavior
+EFFECT_PSYCH_UP: MoveBehavior
+EFFECT_MIRROR_COAT: MoveBehavior
+EFFECT_SKULL_BASH: MoveBehavior
+EFFECT_TWISTER: MoveBehavior
+EFFECT_EARTHQUAKE: MoveBehavior
+EFFECT_FUTURE_SIGHT: MoveBehavior
+EFFECT_GUST: MoveBehavior
+EFFECT_FLINCH_MINIMIZE_HIT: MoveBehavior
+EFFECT_SOLARBEAM: MoveBehavior
+EFFECT_THUNDER: MoveBehavior
+EFFECT_SWITCH_ARGUMENT: MoveBehavior
+EFFECT_BEAT_UP: MoveBehavior
+EFFECT_SEMI_INVULNERABLE: MoveBehavior
+EFFECT_DEFENSE_CURL: MoveBehavior
+EFFECT_SOFTBOILED: MoveBehavior
+EFFECT_FAKE_OUT: MoveBehavior
+EFFECT_UPROAR: MoveBehavior
+EFFECT_STOCKPILE: MoveBehavior
+EFFECT_SPIT_UP: MoveBehavior
+EFFECT_SWALLOW: MoveBehavior
+EFFECT_WORRY_SEED: MoveBehavior
+EFFECT_HAIL: MoveBehavior
+EFFECT_TORMENT: MoveBehavior
+EFFECT_FLATTER: MoveBehavior
+EFFECT_WILL_O_WISP: MoveBehavior
+EFFECT_MEMENTO: MoveBehavior
+EFFECT_FACADE: MoveBehavior
+EFFECT_FOCUS_PUNCH: MoveBehavior
+EFFECT_SMELLINGSALT: MoveBehavior
+EFFECT_FOLLOW_ME: MoveBehavior
+EFFECT_NATURE_POWER: MoveBehavior
+EFFECT_CHARGE: MoveBehavior
+EFFECT_TAUNT: MoveBehavior
+EFFECT_HELPING_HAND: MoveBehavior
+EFFECT_TRICK: MoveBehavior
+EFFECT_ROLE_PLAY: MoveBehavior
+EFFECT_WISH: MoveBehavior
+EFFECT_ASSIST: MoveBehavior
+EFFECT_INGRAIN: MoveBehavior
+EFFECT_SUPERPOWER: MoveBehavior
+EFFECT_MAGIC_COAT: MoveBehavior
+EFFECT_RECYCLE: MoveBehavior
+EFFECT_REVENGE: MoveBehavior
+EFFECT_BRICK_BREAK: MoveBehavior
+EFFECT_YAWN: MoveBehavior
+EFFECT_KNOCK_OFF: MoveBehavior
+EFFECT_ENDEAVOR: MoveBehavior
+EFFECT_ERUPTION: MoveBehavior
+EFFECT_SKILL_SWAP: MoveBehavior
+EFFECT_IMPRISON: MoveBehavior
+EFFECT_REFRESH: MoveBehavior
+EFFECT_GRUDGE: MoveBehavior
+EFFECT_SNATCH: MoveBehavior
+EFFECT_LOW_KICK: MoveBehavior
+EFFECT_SECRET_POWER: MoveBehavior
+EFFECT_RECOIL_33: MoveBehavior
+EFFECT_TEETER_DANCE: MoveBehavior
+EFFECT_HIT_ESCAPE: MoveBehavior
+EFFECT_MUD_SPORT: MoveBehavior
+EFFECT_POISON_FANG: MoveBehavior
+EFFECT_WEATHER_BALL: MoveBehavior
+EFFECT_OVERHEAT: MoveBehavior
+EFFECT_TICKLE: MoveBehavior
+EFFECT_COSMIC_POWER: MoveBehavior
+EFFECT_SKY_UPPERCUT: MoveBehavior
+EFFECT_BULK_UP: MoveBehavior
+EFFECT_PLACEHOLDER: MoveBehavior
+EFFECT_WATER_SPORT: MoveBehavior
+EFFECT_CALM_MIND: MoveBehavior
+EFFECT_DRAGON_DANCE: MoveBehavior
+EFFECT_CAMOUFLAGE: MoveBehavior
+EFFECT_PLEDGE: MoveBehavior
+EFFECT_FLING: MoveBehavior
+EFFECT_NATURAL_GIFT: MoveBehavior
+EFFECT_WAKE_UP_SLAP: MoveBehavior
+EFFECT_WRING_OUT: MoveBehavior
+EFFECT_HEX: MoveBehavior
+EFFECT_ASSURANCE: MoveBehavior
+EFFECT_TRUMP_CARD: MoveBehavior
+EFFECT_ACROBATICS: MoveBehavior
+EFFECT_HEAT_CRASH: MoveBehavior
+EFFECT_PUNISHMENT: MoveBehavior
+EFFECT_STORED_POWER: MoveBehavior
+EFFECT_ELECTRO_BALL: MoveBehavior
+EFFECT_GYRO_BALL: MoveBehavior
+EFFECT_ECHOED_VOICE: MoveBehavior
+EFFECT_PAYBACK: MoveBehavior
+EFFECT_ROUND: MoveBehavior
+EFFECT_BRINE: MoveBehavior
+EFFECT_VENOSHOCK: MoveBehavior
+EFFECT_RETALIATE: MoveBehavior
+EFFECT_BULLDOZE: MoveBehavior
+EFFECT_FOUL_PLAY: MoveBehavior
+EFFECT_PSYSHOCK: MoveBehavior
+EFFECT_ROOST: MoveBehavior
+EFFECT_GRAVITY: MoveBehavior
+EFFECT_MIRACLE_EYE: MoveBehavior
+EFFECT_TAILWIND: MoveBehavior
+EFFECT_EMBARGO: MoveBehavior
+EFFECT_AQUA_RING: MoveBehavior
+EFFECT_TRICK_ROOM: MoveBehavior
+EFFECT_WONDER_ROOM: MoveBehavior
+EFFECT_MAGIC_ROOM: MoveBehavior
+EFFECT_MAGNET_RISE: MoveBehavior
+EFFECT_TOXIC_SPIKES: MoveBehavior
+EFFECT_GASTRO_ACID: MoveBehavior
+EFFECT_STEALTH_ROCK: MoveBehavior
+EFFECT_TELEKINESIS: MoveBehavior
+EFFECT_POWER_SWAP: MoveBehavior
+EFFECT_GUARD_SWAP: MoveBehavior
+EFFECT_HEART_SWAP: MoveBehavior
+EFFECT_POWER_SPLIT: MoveBehavior
+EFFECT_GUARD_SPLIT: MoveBehavior
+EFFECT_STICKY_WEB: MoveBehavior
+EFFECT_METAL_BURST: MoveBehavior
+EFFECT_LUCKY_CHANT: MoveBehavior
+EFFECT_SUCKER_PUNCH: MoveBehavior
+EFFECT_SPECIAL_DEFENSE_DOWN_HIT_2: MoveBehavior
+EFFECT_SIMPLE_BEAM: MoveBehavior
+EFFECT_ENTRAINMENT: MoveBehavior
+EFFECT_HEAL_PULSE: MoveBehavior
+EFFECT_QUASH: MoveBehavior
+EFFECT_ION_DELUGE: MoveBehavior
+EFFECT_FREEZE_DRY: MoveBehavior
+EFFECT_TOPSY_TURVY: MoveBehavior
+EFFECT_MISTY_TERRAIN: MoveBehavior
+EFFECT_GRASSY_TERRAIN: MoveBehavior
+EFFECT_ELECTRIC_TERRAIN: MoveBehavior
+EFFECT_PSYCHIC_TERRAIN: MoveBehavior
+EFFECT_ATTACK_ACCURACY_UP: MoveBehavior
+EFFECT_ATTACK_SPATK_UP: MoveBehavior
+EFFECT_HURRICANE: MoveBehavior
+EFFECT_TWO_TYPED_MOVE: MoveBehavior
+EFFECT_ME_FIRST: MoveBehavior
+EFFECT_SPEED_UP_HIT: MoveBehavior
+EFFECT_QUIVER_DANCE: MoveBehavior
+EFFECT_COIL: MoveBehavior
+EFFECT_ELECTRIFY: MoveBehavior
+EFFECT_SCALD: MoveBehavior
+EFFECT_REFLECT_TYPE: MoveBehavior
+EFFECT_SOAK: MoveBehavior
+EFFECT_GROWTH: MoveBehavior
+EFFECT_CLOSE_COMBAT: MoveBehavior
+EFFECT_LAST_RESORT: MoveBehavior
+EFFECT_RECOIL_33_STATUS: MoveBehavior
+EFFECT_FLINCH_STATUS: MoveBehavior
+EFFECT_RECOIL_50: MoveBehavior
+EFFECT_SHELL_SMASH: MoveBehavior
+EFFECT_SHIFT_GEAR: MoveBehavior
+EFFECT_DEFENSE_UP_3: MoveBehavior
+EFFECT_NOBLE_ROAR: MoveBehavior
+EFFECT_VENOM_DRENCH: MoveBehavior
+EFFECT_TOXIC_THREAD: MoveBehavior
+EFFECT_CLEAR_SMOG: MoveBehavior
+EFFECT_HIT_SWITCH_TARGET: MoveBehavior
+EFFECT_FINAL_GAMBIT: MoveBehavior
+EFFECT_CHANGE_TYPE_ON_ITEM: MoveBehavior
+EFFECT_AUTOTOMIZE: MoveBehavior
+EFFECT_COPYCAT: MoveBehavior
+EFFECT_DEFOG: MoveBehavior
+EFFECT_HIT_ENEMY_HEAL_ALLY: MoveBehavior
+EFFECT_SMACK_DOWN: MoveBehavior
+EFFECT_SYNCHRONOISE: MoveBehavior
+EFFECT_PSYCHO_SHIFT: MoveBehavior
+EFFECT_POWER_TRICK: MoveBehavior
+EFFECT_FLAME_BURST: MoveBehavior
+EFFECT_AFTER_YOU: MoveBehavior
+EFFECT_BESTOW: MoveBehavior
+EFFECT_ROTOTILLER: MoveBehavior
+EFFECT_FLOWER_SHIELD: MoveBehavior
+EFFECT_HIT_PREVENT_ESCAPE: MoveBehavior
+EFFECT_SPEED_SWAP: MoveBehavior
+EFFECT_DEFENSE_UP2_HIT: MoveBehavior
+EFFECT_REVELATION_DANCE: MoveBehavior
+EFFECT_AURORA_VEIL: MoveBehavior
+EFFECT_THIRD_TYPE: MoveBehavior
+EFFECT_FEINT: MoveBehavior
+EFFECT_SPARKLING_ARIA: MoveBehavior
+EFFECT_ACUPRESSURE: MoveBehavior
+EFFECT_AROMATIC_MIST: MoveBehavior
+EFFECT_POWDER: MoveBehavior
+EFFECT_SP_ATTACK_UP_HIT: MoveBehavior
+EFFECT_BELCH: MoveBehavior
+EFFECT_PARTING_SHOT: MoveBehavior
+EFFECT_SPECTRAL_THIEF: MoveBehavior
+EFFECT_V_CREATE: MoveBehavior
+EFFECT_MAT_BLOCK: MoveBehavior
+EFFECT_STOMPING_TANTRUM: MoveBehavior
+EFFECT_CORE_ENFORCER: MoveBehavior
+EFFECT_INSTRUCT: MoveBehavior
+EFFECT_THROAT_CHOP: MoveBehavior
+EFFECT_LASER_FOCUS: MoveBehavior
+EFFECT_MAGNETIC_FLUX: MoveBehavior
+EFFECT_GEAR_UP: MoveBehavior
+EFFECT_INCINERATE: MoveBehavior
+EFFECT_BUG_BITE: MoveBehavior
+EFFECT_STRENGTH_SAP: MoveBehavior
+EFFECT_MIND_BLOWN: MoveBehavior
+EFFECT_PURIFY: MoveBehavior
+EFFECT_BURN_UP: MoveBehavior
+EFFECT_SHORE_UP: MoveBehavior
+EFFECT_GEOMANCY: MoveBehavior
+EFFECT_FAIRY_LOCK: MoveBehavior
+EFFECT_ALLY_SWITCH: MoveBehavior
+EFFECT_RELIC_SONG: MoveBehavior
+EFFECT_ATTACKER_DEFENSE_DOWN_HIT: MoveBehavior
+EFFECT_BODY_PRESS: MoveBehavior
+EFFECT_EERIE_SPELL: MoveBehavior
+EFFECT_JUNGLE_HEALING: MoveBehavior
+EFFECT_COACHING: MoveBehavior
+EFFECT_LASH_OUT: MoveBehavior
+EFFECT_GRASSY_GLIDE: MoveBehavior
+EFFECT_REMOVE_TERRAIN: MoveBehavior
+EFFECT_DYNAMAX_DOUBLE_DMG: MoveBehavior
+EFFECT_DECORATE: MoveBehavior
+EFFECT_SNIPE_SHOT: MoveBehavior
+EFFECT_TRIPLE_HIT: MoveBehavior
+EFFECT_RECOIL_HP_25: MoveBehavior
+EFFECT_STUFF_CHEEKS: MoveBehavior
+EFFECT_GRAV_APPLE: MoveBehavior
+EFFECT_EVASION_UP_HIT: MoveBehavior
+EFFECT_GLITZY_GLOW: MoveBehavior
+EFFECT_BADDY_BAD: MoveBehavior
+EFFECT_SAPPY_SEED: MoveBehavior
+EFFECT_FREEZY_FROST: MoveBehavior
+EFFECT_SPARKLY_SWIRL: MoveBehavior
+EFFECT_PLASMA_FISTS: MoveBehavior
+EFFECT_HYPERSPACE_FURY: MoveBehavior
+EFFECT_AURA_WHEEL: MoveBehavior
+EFFECT_PHOTON_GEYSER: MoveBehavior
+EFFECT_SHELL_SIDE_ARM: MoveBehavior
+EFFECT_TERRAIN_PULSE: MoveBehavior
+EFFECT_JAW_LOCK: MoveBehavior
+EFFECT_NO_RETREAT: MoveBehavior
+EFFECT_TAR_SHOT: MoveBehavior
+EFFECT_POLTERGEIST: MoveBehavior
+EFFECT_OCTOLOCK: MoveBehavior
+EFFECT_CLANGOROUS_SOUL: MoveBehavior
+EFFECT_BOLT_BEAK: MoveBehavior
+EFFECT_RISING_VOLTAGE: MoveBehavior
+EFFECT_SCALE_SHOT: MoveBehavior
+EFFECT_BEAK_BLAST: MoveBehavior
+EFFECT_EXCALIBUR: MoveBehavior
+EFFECT_FROSTBITE_HIT: MoveBehavior
+EFFECT_EXPANDING_FORCE: MoveBehavior
+EFFECT_STEEL_BEAM: MoveBehavior
+EFFECT_HOWL: MoveBehavior
+EFFECT_ATTRACT_HIT: MoveBehavior
+EFFECT_CURSE_HIT: MoveBehavior
+EFFECT_FLINCH_RECOIL_33: MoveBehavior
+EFFECT_FLINCH_RECOIL_50: MoveBehavior
+EFFECT_IGNORE_TYPE_IMMUNITY: MoveBehavior
+EFFECT_SE_AGAINST_TYPE_HIT: MoveBehavior
+EFFECT_DOUBLE_DMG_IF_STATUS1: MoveBehavior
+EFFECT_STEALTH_ROCK_HIT: MoveBehavior
+EFFECT_LEECH_SEED_HIT: MoveBehavior
+EFFECT_STICKY_WEB_HIT: MoveBehavior
+EFFECT_BLEED_HIT: MoveBehavior
+EFFECT_SLEEP_HIT: MoveBehavior
+EFFECT_BLEED: MoveBehavior
+EFFECT_FROSTBITE: MoveBehavior
+EFFECT_FREEZE: MoveBehavior
+EFFECT_INFERNAL_PARADE: MoveBehavior
+EFFECT_WYRM_WIND: MoveBehavior
+EFFECT_MISTY_TERRAIN_BOOST: MoveBehavior
+EFFECT_BERRY_SMASH: MoveBehavior
+EFFECT_INVERSE_ROOM: MoveBehavior
+EFFECT_DRAIN_BRAIN: MoveBehavior
+EFFECT_TRIPLE_ARROWS: MoveBehavior
+EFFECT_RECOIL_25_STATUS: MoveBehavior
+EFFECT_WEATHER_BOOST: MoveBehavior
+EFFECT_MORTAL_SPIN: MoveBehavior
+EFFECT_KARMA: MoveBehavior
+EFFECT_REMOVE_TERRAIN_NO_FAIL: MoveBehavior
+EFFECT_TEN_HITS: MoveBehavior
+EFFECT_TWO_TURN_SECONDARY: MoveBehavior
+EFFECT_SPECIAL_ATTACK_UP_HIT: MoveBehavior
+EFFECT_ARGUMENT_HIT: MoveBehavior
+EFFECT_EVERY_OTHER_TURN: MoveBehavior
+EFFECT_MISC_HIT: MoveBehavior
+EFFECT_FILLET_AWAY: MoveBehavior
+EFFECT_COURT_CHANGE: MoveBehavior
+EFFECT_CHILLY_RECEPTION: MoveBehavior
+EFFECT_SHED_TAIL: MoveBehavior
+EFFECT_GHASTLY_ECHO: MoveBehavior
+EFFECT_REVIVAL_BLESSING: MoveBehavior
+EFFECT_TIDY_UP: MoveBehavior
+EFFECT_ACID: MoveBehavior
+EFFECT_SLUDGE: MoveBehavior
+EFFECT_POISON_GAS: MoveBehavior
+EFFECT_PARALYZE_IGNORE_TYPE: MoveBehavior
+EFFECT_SUPER_FANG_HAZE: MoveBehavior
+EFFECT_SPICY_EXTRACT: MoveBehavior
+EFFECT_CLEAR_WEATHER_AND_TERRAIN_HIT: MoveBehavior
+EFFECT_MATCHA_GOTCHA: MoveBehavior
+EFFECT_DOODLE: MoveBehavior
+EFFECT_SPIKE_HIT: MoveBehavior
+EFFECT_VICTORY_DANCE: MoveBehavior
+EFFECT_DRAGON_CHEER: MoveBehavior
+EFFECT_SHELTER: MoveBehavior
+EFFECT_ARGUMENT_HIT_IF_STAT_UP: MoveBehavior
+EFFECT_UPPER_HAND: MoveBehavior
+EFFECT_ELECTRO_SHOT: MoveBehavior
+EFFECT_SHARPEN: MoveBehavior
+EFFECT_SCARY_FACE: MoveBehavior
+EFFECT_SMOKESCREEN: MoveBehavior
+EFFECT_EERIE_FOG: MoveBehavior
+EFFECT_MYSTIC_DANCE: MoveBehavior
+EFFECT_SNAP_JAW: MoveBehavior
+EFFECT_RIP_AND_TEAR: MoveBehavior
+EFFECT_SKY_DROP: MoveBehavior
+EFFECT_TERROR_CHARGE: MoveBehavior
+EFFECT_TAILWIND_HIT: MoveBehavior
+EFFECT_SANDSTORM_HIT: MoveBehavior
+EFFECT_RAIN_HIT: MoveBehavior
+EFFECT_FAIRY_TERRAIN_HIT: MoveBehavior
+EFFECT_CREEPING_THORNS_HIT: MoveBehavior
+EFFECT_TAKE_HEART: MoveBehavior
+EFFECT_CLEAR_SKIES: MoveBehavior
+EFFECT_SHOWTIME: MoveBehavior
+EFFECT_TREPIDATION: MoveBehavior
+EFFECT_CHIP_AWAY: MoveBehavior
+EFFECT_MEDITATE: MoveBehavior
+EFFECT_BARRIER: MoveBehavior
+EFFECT_KINESIS: MoveBehavior
+EFFECT_CORROSIVE_GAS: MoveBehavior
+EFFECT_CALTROPS: MoveBehavior
+EFFECT_SWEET_KISS: MoveBehavior
+EFFECT_QUICK_GUARD: MoveBehavior
+EFFECT_TWO_TURN_RETALIATION: MoveBehavior
+EFFECT_SHELL_TRAP: MoveBehavior
+EFFECT_GRASSY_TERRAIN_HIT: MoveBehavior
+EFFECT_TOXIC_TERRAIN: MoveBehavior
+EFFECT_SEPTIC_SWITCH: MoveBehavior
+EFFECT_WHIRLPOOL: MoveBehavior
+NO_SHEER_FORCE_FIELD_NUMBER: _ClassVar[int]
+no_sheer_force: _descriptor.FieldDescriptor
+FLINCH_EFFECT_FIELD_NUMBER: _ClassVar[int]
+flinch_effect: _descriptor.FieldDescriptor
+NO_KINGS_ROCK_FIELD_NUMBER: _ClassVar[int]
+no_kings_rock: _descriptor.FieldDescriptor
+TWO_TURN_FIELD_NUMBER: _ClassVar[int]
+two_turn: _descriptor.FieldDescriptor
+NO_PARENTAL_BOND_FIELD_NUMBER: _ClassVar[int]
+no_parental_bond: _descriptor.FieldDescriptor

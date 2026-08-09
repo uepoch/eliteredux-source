@@ -1,0 +1,22 @@
+{
+  "protoc": "libprotoc 29.2",
+  "schemas": {
+    "AbilityEnum.proto": "bec0bcd002dcfb5bfb6be62da70c14b0cf0f2c4997b7d1abda29ce0bce2e5734",
+    "AbilityList.proto": "118269076efa98f8e969f34aaca6ecfbe694ab0554c0a2f6a9afbcbff43c087d",
+    "Anims.proto": "099fe5c64994df27cbec63fc2c432902a433364af7a5d00872a2c08c6af0b695",
+    "HelpArticles.proto": "b04ddbb29f9da8263b1c003ef019c402f4b6bdf4f0e6d9d4c9c0a2c68b15454f",
+    "ItemEnum.proto": "7fa85c15a52a71f0ddb3c9805066e3893b3dc05c18d36c7c4903c04c5fa44b68",
+    "ItemList.proto": "917c0b3fb2fffb098f92cd326e19760f7e5d0dad25fa8e7271ed84db7c1f3951",
+    "LimitedRandomizerConfig.proto": "82bc8da2636bf1a27a6b0e201e92bf9d4c55565daf66ec051d436765b3211f6d",
+    "MoveBehavior.proto": "e2edac0dc46d14752947543b46a58dd0e60071f495014fe366bf14d4b3b8ac36",
+    "MoveEffect.proto": "e8f5bdd49e99c62b65e65996a4ca998e5c9b9600267c631e6814ecba8d5e3ff2",
+    "MoveEnum.proto": "4859d99fff4638e9ed9e69827fb0086a58ee8088d21d295154c308f04846421e",
+    "MoveList.proto": "623409e3fa21747b465a2d88f608e0d17e894a7e9cd0077c1e504c0f92c08d5b",
+    "SpeciesEnum.proto": "9e4199819c780716e1a98ec53210fdb2caaeaa33d4e41251af4795c8ca300758",
+    "SpeciesList.proto": "5c3e4bd07db0222128eb61a95cbd390b6f286be5cef095fe3660ed7174862e56",
+    "TrainerEnum.proto": "3142fabd400431908d2329aac999028d5fa8dfbc8544c7f21c0dcddfda88d7d1",
+    "TrainerList.proto": "549396fc526bbb594634ef0ba270895179c73b575cd4e2e89224ebf01657cc56",
+    "Types.proto": "47232b3d359e319fc3887d9ab1f47660b4b26443c91577e9711093c37c16347e",
+    "google/protobuf/descriptor.proto": "f6121e224104c53687d2846c9c5f9ca140c00a4b91dad4115f54e45df3601458"
+  }
+}

@@ -1,0 +1,2076 @@
+from google.protobuf.internal import enum_type_wrapper as _enum_type_wrapper
+from google.protobuf import descriptor as _descriptor
+from typing import ClassVar as _ClassVar
+
+DESCRIPTOR: _descriptor.FileDescriptor
+
+class AbilityEnum(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
+    __slots__ = ()
+    ABILITY_NONE: _ClassVar[AbilityEnum]
+    ABILITY_STENCH: _ClassVar[AbilityEnum]
+    ABILITY_DRIZZLE: _ClassVar[AbilityEnum]
+    ABILITY_SPEED_BOOST: _ClassVar[AbilityEnum]
+    ABILITY_BATTLE_ARMOR: _ClassVar[AbilityEnum]
+    ABILITY_STURDY: _ClassVar[AbilityEnum]
+    ABILITY_DAMP: _ClassVar[AbilityEnum]
+    ABILITY_LIMBER: _ClassVar[AbilityEnum]
+    ABILITY_SAND_VEIL: _ClassVar[AbilityEnum]
+    ABILITY_STATIC: _ClassVar[AbilityEnum]
+    ABILITY_VOLT_ABSORB: _ClassVar[AbilityEnum]
+    ABILITY_WATER_ABSORB: _ClassVar[AbilityEnum]
+    ABILITY_OBLIVIOUS: _ClassVar[AbilityEnum]
+    ABILITY_CLOUD_NINE: _ClassVar[AbilityEnum]
+    ABILITY_COMPOUND_EYES: _ClassVar[AbilityEnum]
+    ABILITY_INSOMNIA: _ClassVar[AbilityEnum]
+    ABILITY_COLOR_CHANGE: _ClassVar[AbilityEnum]
+    ABILITY_IMMUNITY: _ClassVar[AbilityEnum]
+    ABILITY_FLASH_FIRE: _ClassVar[AbilityEnum]
+    ABILITY_SHIELD_DUST: _ClassVar[AbilityEnum]
+    ABILITY_OWN_TEMPO: _ClassVar[AbilityEnum]
+    ABILITY_SUCTION_CUPS: _ClassVar[AbilityEnum]
+    ABILITY_INTIMIDATE: _ClassVar[AbilityEnum]
+    ABILITY_SHADOW_TAG: _ClassVar[AbilityEnum]
+    ABILITY_ROUGH_SKIN: _ClassVar[AbilityEnum]
+    ABILITY_WONDER_GUARD: _ClassVar[AbilityEnum]
+    ABILITY_LEVITATE: _ClassVar[AbilityEnum]
+    ABILITY_EFFECT_SPORE: _ClassVar[AbilityEnum]
+    ABILITY_SYNCHRONIZE: _ClassVar[AbilityEnum]
+    ABILITY_CLEAR_BODY: _ClassVar[AbilityEnum]
+    ABILITY_NATURAL_CURE: _ClassVar[AbilityEnum]
+    ABILITY_LIGHTNING_ROD: _ClassVar[AbilityEnum]
+    ABILITY_SERENE_GRACE: _ClassVar[AbilityEnum]
+    ABILITY_SWIFT_SWIM: _ClassVar[AbilityEnum]
+    ABILITY_CHLOROPHYLL: _ClassVar[AbilityEnum]
+    ABILITY_ILLUMINATE: _ClassVar[AbilityEnum]
+    ABILITY_TRACE: _ClassVar[AbilityEnum]
+    ABILITY_HUGE_POWER: _ClassVar[AbilityEnum]
+    ABILITY_POISON_POINT: _ClassVar[AbilityEnum]
+    ABILITY_INNER_FOCUS: _ClassVar[AbilityEnum]
+    ABILITY_MAGMA_ARMOR: _ClassVar[AbilityEnum]
+    ABILITY_WATER_VEIL: _ClassVar[AbilityEnum]
+    ABILITY_MAGNET_PULL: _ClassVar[AbilityEnum]
+    ABILITY_SOUNDPROOF: _ClassVar[AbilityEnum]
+    ABILITY_RAIN_DISH: _ClassVar[AbilityEnum]
+    ABILITY_SAND_STREAM: _ClassVar[AbilityEnum]
+    ABILITY_PRESSURE: _ClassVar[AbilityEnum]
+    ABILITY_THICK_FAT: _ClassVar[AbilityEnum]
+    ABILITY_EARLY_BIRD: _ClassVar[AbilityEnum]
+    ABILITY_FLAME_BODY: _ClassVar[AbilityEnum]
+    ABILITY_RUN_AWAY: _ClassVar[AbilityEnum]
+    ABILITY_KEEN_EYE: _ClassVar[AbilityEnum]
+    ABILITY_HYPER_CUTTER: _ClassVar[AbilityEnum]
+    ABILITY_PICKUP: _ClassVar[AbilityEnum]
+    ABILITY_TRUANT: _ClassVar[AbilityEnum]
+    ABILITY_HUSTLE: _ClassVar[AbilityEnum]
+    ABILITY_CUTE_CHARM: _ClassVar[AbilityEnum]
+    ABILITY_PLUS: _ClassVar[AbilityEnum]
+    ABILITY_MINUS: _ClassVar[AbilityEnum]
+    ABILITY_FORECAST: _ClassVar[AbilityEnum]
+    ABILITY_STICKY_HOLD: _ClassVar[AbilityEnum]
+    ABILITY_SHED_SKIN: _ClassVar[AbilityEnum]
+    ABILITY_GUTS: _ClassVar[AbilityEnum]
+    ABILITY_MARVEL_SCALE: _ClassVar[AbilityEnum]
+    ABILITY_LIQUID_OOZE: _ClassVar[AbilityEnum]
+    ABILITY_OVERGROW: _ClassVar[AbilityEnum]
+    ABILITY_BLAZE: _ClassVar[AbilityEnum]
+    ABILITY_TORRENT: _ClassVar[AbilityEnum]
+    ABILITY_SWARM: _ClassVar[AbilityEnum]
+    ABILITY_ROCK_HEAD: _ClassVar[AbilityEnum]
+    ABILITY_DROUGHT: _ClassVar[AbilityEnum]
+    ABILITY_ARENA_TRAP: _ClassVar[AbilityEnum]
+    ABILITY_VITAL_SPIRIT: _ClassVar[AbilityEnum]
+    ABILITY_WHITE_SMOKE: _ClassVar[AbilityEnum]
+    ABILITY_PURE_POWER: _ClassVar[AbilityEnum]
+    ABILITY_SHELL_ARMOR: _ClassVar[AbilityEnum]
+    ABILITY_AIR_LOCK: _ClassVar[AbilityEnum]
+    ABILITY_TANGLED_FEET: _ClassVar[AbilityEnum]
+    ABILITY_MOTOR_DRIVE: _ClassVar[AbilityEnum]
+    ABILITY_RIVALRY: _ClassVar[AbilityEnum]
+    ABILITY_STEADFAST: _ClassVar[AbilityEnum]
+    ABILITY_SNOW_CLOAK: _ClassVar[AbilityEnum]
+    ABILITY_GLUTTONY: _ClassVar[AbilityEnum]
+    ABILITY_ANGER_POINT: _ClassVar[AbilityEnum]
+    ABILITY_UNBURDEN: _ClassVar[AbilityEnum]
+    ABILITY_HEATPROOF: _ClassVar[AbilityEnum]
+    ABILITY_SIMPLE: _ClassVar[AbilityEnum]
+    ABILITY_DRY_SKIN: _ClassVar[AbilityEnum]
+    ABILITY_DOWNLOAD: _ClassVar[AbilityEnum]
+    ABILITY_IRON_FIST: _ClassVar[AbilityEnum]
+    ABILITY_POISON_HEAL: _ClassVar[AbilityEnum]
+    ABILITY_ADAPTABILITY: _ClassVar[AbilityEnum]
+    ABILITY_SKILL_LINK: _ClassVar[AbilityEnum]
+    ABILITY_HYDRATION: _ClassVar[AbilityEnum]
+    ABILITY_SOLAR_POWER: _ClassVar[AbilityEnum]
+    ABILITY_QUICK_FEET: _ClassVar[AbilityEnum]
+    ABILITY_NORMALIZE: _ClassVar[AbilityEnum]
+    ABILITY_SNIPER: _ClassVar[AbilityEnum]
+    ABILITY_MAGIC_GUARD: _ClassVar[AbilityEnum]
+    ABILITY_NO_GUARD: _ClassVar[AbilityEnum]
+    ABILITY_STALL: _ClassVar[AbilityEnum]
+    ABILITY_TECHNICIAN: _ClassVar[AbilityEnum]
+    ABILITY_LEAF_GUARD: _ClassVar[AbilityEnum]
+    ABILITY_KLUTZ: _ClassVar[AbilityEnum]
+    ABILITY_MOLD_BREAKER: _ClassVar[AbilityEnum]
+    ABILITY_SUPER_LUCK: _ClassVar[AbilityEnum]
+    ABILITY_AFTERMATH: _ClassVar[AbilityEnum]
+    ABILITY_ANTICIPATION: _ClassVar[AbilityEnum]
+    ABILITY_FOREWARN: _ClassVar[AbilityEnum]
+    ABILITY_UNAWARE: _ClassVar[AbilityEnum]
+    ABILITY_TINTED_LENS: _ClassVar[AbilityEnum]
+    ABILITY_FILTER: _ClassVar[AbilityEnum]
+    ABILITY_SLOW_START: _ClassVar[AbilityEnum]
+    ABILITY_SCRAPPY: _ClassVar[AbilityEnum]
+    ABILITY_STORM_DRAIN: _ClassVar[AbilityEnum]
+    ABILITY_ICE_BODY: _ClassVar[AbilityEnum]
+    ABILITY_SOLID_ROCK: _ClassVar[AbilityEnum]
+    ABILITY_SNOW_WARNING: _ClassVar[AbilityEnum]
+    ABILITY_HONEY_GATHER: _ClassVar[AbilityEnum]
+    ABILITY_FRISK: _ClassVar[AbilityEnum]
+    ABILITY_RECKLESS: _ClassVar[AbilityEnum]
+    ABILITY_MULTITYPE: _ClassVar[AbilityEnum]
+    ABILITY_FLOWER_GIFT: _ClassVar[AbilityEnum]
+    ABILITY_BAD_DREAMS: _ClassVar[AbilityEnum]
+    ABILITY_PICKPOCKET: _ClassVar[AbilityEnum]
+    ABILITY_SHEER_FORCE: _ClassVar[AbilityEnum]
+    ABILITY_CONTRARY: _ClassVar[AbilityEnum]
+    ABILITY_UNNERVE: _ClassVar[AbilityEnum]
+    ABILITY_DEFIANT: _ClassVar[AbilityEnum]
+    ABILITY_DEFEATIST: _ClassVar[AbilityEnum]
+    ABILITY_CURSED_BODY: _ClassVar[AbilityEnum]
+    ABILITY_HEALER: _ClassVar[AbilityEnum]
+    ABILITY_FRIEND_GUARD: _ClassVar[AbilityEnum]
+    ABILITY_WEAK_ARMOR: _ClassVar[AbilityEnum]
+    ABILITY_HEAVY_METAL: _ClassVar[AbilityEnum]
+    ABILITY_LIGHT_METAL: _ClassVar[AbilityEnum]
+    ABILITY_MULTISCALE: _ClassVar[AbilityEnum]
+    ABILITY_TOXIC_BOOST: _ClassVar[AbilityEnum]
+    ABILITY_FLARE_BOOST: _ClassVar[AbilityEnum]
+    ABILITY_HARVEST: _ClassVar[AbilityEnum]
+    ABILITY_TELEPATHY: _ClassVar[AbilityEnum]
+    ABILITY_MOODY: _ClassVar[AbilityEnum]
+    ABILITY_OVERCOAT: _ClassVar[AbilityEnum]
+    ABILITY_POISON_TOUCH: _ClassVar[AbilityEnum]
+    ABILITY_REGENERATOR: _ClassVar[AbilityEnum]
+    ABILITY_BIG_PECKS: _ClassVar[AbilityEnum]
+    ABILITY_SAND_RUSH: _ClassVar[AbilityEnum]
+    ABILITY_WONDER_SKIN: _ClassVar[AbilityEnum]
+    ABILITY_ANALYTIC: _ClassVar[AbilityEnum]
+    ABILITY_ILLUSION: _ClassVar[AbilityEnum]
+    ABILITY_IMPOSTER: _ClassVar[AbilityEnum]
+    ABILITY_INFILTRATOR: _ClassVar[AbilityEnum]
+    ABILITY_MUMMY: _ClassVar[AbilityEnum]
+    ABILITY_MOXIE: _ClassVar[AbilityEnum]
+    ABILITY_JUSTIFIED: _ClassVar[AbilityEnum]
+    ABILITY_RATTLED: _ClassVar[AbilityEnum]
+    ABILITY_MAGIC_BOUNCE: _ClassVar[AbilityEnum]
+    ABILITY_SAP_SIPPER: _ClassVar[AbilityEnum]
+    ABILITY_PRANKSTER: _ClassVar[AbilityEnum]
+    ABILITY_SAND_FORCE: _ClassVar[AbilityEnum]
+    ABILITY_IRON_BARBS: _ClassVar[AbilityEnum]
+    ABILITY_ZEN_MODE: _ClassVar[AbilityEnum]
+    ABILITY_VICTORY_STAR: _ClassVar[AbilityEnum]
+    ABILITY_TURBOBLAZE: _ClassVar[AbilityEnum]
+    ABILITY_TERAVOLT: _ClassVar[AbilityEnum]
+    ABILITY_AROMA_VEIL: _ClassVar[AbilityEnum]
+    ABILITY_FLOWER_VEIL: _ClassVar[AbilityEnum]
+    ABILITY_CHEEK_POUCH: _ClassVar[AbilityEnum]
+    ABILITY_PROTEAN: _ClassVar[AbilityEnum]
+    ABILITY_FUR_COAT: _ClassVar[AbilityEnum]
+    ABILITY_MAGICIAN: _ClassVar[AbilityEnum]
+    ABILITY_BULLETPROOF: _ClassVar[AbilityEnum]
+    ABILITY_COMPETITIVE: _ClassVar[AbilityEnum]
+    ABILITY_STRONG_JAW: _ClassVar[AbilityEnum]
+    ABILITY_REFRIGERATE: _ClassVar[AbilityEnum]
+    ABILITY_SWEET_VEIL: _ClassVar[AbilityEnum]
+    ABILITY_STANCE_CHANGE: _ClassVar[AbilityEnum]
+    ABILITY_GALE_WINGS: _ClassVar[AbilityEnum]
+    ABILITY_MEGA_LAUNCHER: _ClassVar[AbilityEnum]
+    ABILITY_GRASS_PELT: _ClassVar[AbilityEnum]
+    ABILITY_SYMBIOSIS: _ClassVar[AbilityEnum]
+    ABILITY_TOUGH_CLAWS: _ClassVar[AbilityEnum]
+    ABILITY_PIXILATE: _ClassVar[AbilityEnum]
+    ABILITY_GOOEY: _ClassVar[AbilityEnum]
+    ABILITY_AERILATE: _ClassVar[AbilityEnum]
+    ABILITY_PARENTAL_BOND: _ClassVar[AbilityEnum]
+    ABILITY_DARK_AURA: _ClassVar[AbilityEnum]
+    ABILITY_FAIRY_AURA: _ClassVar[AbilityEnum]
+    ABILITY_AURA_BREAK: _ClassVar[AbilityEnum]
+    ABILITY_PRIMORDIAL_SEA: _ClassVar[AbilityEnum]
+    ABILITY_DESOLATE_LAND: _ClassVar[AbilityEnum]
+    ABILITY_DELTA_STREAM: _ClassVar[AbilityEnum]
+    ABILITY_STAMINA: _ClassVar[AbilityEnum]
+    ABILITY_WIMP_OUT: _ClassVar[AbilityEnum]
+    ABILITY_EMERGENCY_EXIT: _ClassVar[AbilityEnum]
+    ABILITY_WATER_COMPACTION: _ClassVar[AbilityEnum]
+    ABILITY_MERCILESS: _ClassVar[AbilityEnum]
+    ABILITY_SHIELDS_DOWN: _ClassVar[AbilityEnum]
+    ABILITY_STAKEOUT: _ClassVar[AbilityEnum]
+    ABILITY_WATER_BUBBLE: _ClassVar[AbilityEnum]
+    ABILITY_STEELWORKER: _ClassVar[AbilityEnum]
+    ABILITY_BERSERK: _ClassVar[AbilityEnum]
+    ABILITY_SLUSH_RUSH: _ClassVar[AbilityEnum]
+    ABILITY_LONG_REACH: _ClassVar[AbilityEnum]
+    ABILITY_LIQUID_VOICE: _ClassVar[AbilityEnum]
+    ABILITY_TRIAGE: _ClassVar[AbilityEnum]
+    ABILITY_GALVANIZE: _ClassVar[AbilityEnum]
+    ABILITY_SURGE_SURFER: _ClassVar[AbilityEnum]
+    ABILITY_SCHOOLING: _ClassVar[AbilityEnum]
+    ABILITY_DISGUISE: _ClassVar[AbilityEnum]
+    ABILITY_BATTLE_BOND: _ClassVar[AbilityEnum]
+    ABILITY_POWER_CONSTRUCT: _ClassVar[AbilityEnum]
+    ABILITY_CORROSION: _ClassVar[AbilityEnum]
+    ABILITY_COMATOSE: _ClassVar[AbilityEnum]
+    ABILITY_QUEENLY_MAJESTY: _ClassVar[AbilityEnum]
+    ABILITY_INNARDS_OUT: _ClassVar[AbilityEnum]
+    ABILITY_DANCER: _ClassVar[AbilityEnum]
+    ABILITY_BATTERY: _ClassVar[AbilityEnum]
+    ABILITY_FLUFFY: _ClassVar[AbilityEnum]
+    ABILITY_DAZZLING: _ClassVar[AbilityEnum]
+    ABILITY_SOUL_HEART: _ClassVar[AbilityEnum]
+    ABILITY_TANGLING_HAIR: _ClassVar[AbilityEnum]
+    ABILITY_RECEIVER: _ClassVar[AbilityEnum]
+    ABILITY_POWER_OF_ALCHEMY: _ClassVar[AbilityEnum]
+    ABILITY_BEAST_BOOST: _ClassVar[AbilityEnum]
+    ABILITY_RKS_SYSTEM: _ClassVar[AbilityEnum]
+    ABILITY_ELECTRIC_SURGE: _ClassVar[AbilityEnum]
+    ABILITY_PSYCHIC_SURGE: _ClassVar[AbilityEnum]
+    ABILITY_MISTY_SURGE: _ClassVar[AbilityEnum]
+    ABILITY_GRASSY_SURGE: _ClassVar[AbilityEnum]
+    ABILITY_FULL_METAL_BODY: _ClassVar[AbilityEnum]
+    ABILITY_SHADOW_SHIELD: _ClassVar[AbilityEnum]
+    ABILITY_PRISM_ARMOR: _ClassVar[AbilityEnum]
+    ABILITY_NEUROFORCE: _ClassVar[AbilityEnum]
+    ABILITY_INTREPID_SWORD: _ClassVar[AbilityEnum]
+    ABILITY_DAUNTLESS_SHIELD: _ClassVar[AbilityEnum]
+    ABILITY_LIBERO: _ClassVar[AbilityEnum]
+    ABILITY_BALL_FETCH: _ClassVar[AbilityEnum]
+    ABILITY_COTTON_DOWN: _ClassVar[AbilityEnum]
+    ABILITY_PROPELLER_TAIL: _ClassVar[AbilityEnum]
+    ABILITY_MIRROR_ARMOR: _ClassVar[AbilityEnum]
+    ABILITY_GULP_MISSILE: _ClassVar[AbilityEnum]
+    ABILITY_STALWART: _ClassVar[AbilityEnum]
+    ABILITY_STEAM_ENGINE: _ClassVar[AbilityEnum]
+    ABILITY_PUNK_ROCK: _ClassVar[AbilityEnum]
+    ABILITY_SAND_SPIT: _ClassVar[AbilityEnum]
+    ABILITY_ICE_SCALES: _ClassVar[AbilityEnum]
+    ABILITY_RIPEN: _ClassVar[AbilityEnum]
+    ABILITY_ICE_FACE: _ClassVar[AbilityEnum]
+    ABILITY_POWER_SPOT: _ClassVar[AbilityEnum]
+    ABILITY_MIMICRY: _ClassVar[AbilityEnum]
+    ABILITY_SCREEN_CLEANER: _ClassVar[AbilityEnum]
+    ABILITY_STEELY_SPIRIT: _ClassVar[AbilityEnum]
+    ABILITY_PERISH_BODY: _ClassVar[AbilityEnum]
+    ABILITY_WANDERING_SPIRIT: _ClassVar[AbilityEnum]
+    ABILITY_GORILLA_TACTICS: _ClassVar[AbilityEnum]
+    ABILITY_NEUTRALIZING_GAS: _ClassVar[AbilityEnum]
+    ABILITY_PASTEL_VEIL: _ClassVar[AbilityEnum]
+    ABILITY_HUNGER_SWITCH: _ClassVar[AbilityEnum]
+    ABILITY_QUICK_DRAW: _ClassVar[AbilityEnum]
+    ABILITY_UNSEEN_FIST: _ClassVar[AbilityEnum]
+    ABILITY_CURIOUS_MEDICINE: _ClassVar[AbilityEnum]
+    ABILITY_TRANSISTOR: _ClassVar[AbilityEnum]
+    ABILITY_DRAGONS_MAW: _ClassVar[AbilityEnum]
+    ABILITY_CHILLING_NEIGH: _ClassVar[AbilityEnum]
+    ABILITY_GRIM_NEIGH: _ClassVar[AbilityEnum]
+    ABILITY_AS_ONE_ICE_RIDER: _ClassVar[AbilityEnum]
+    ABILITY_AS_ONE_SHADOW_RIDER: _ClassVar[AbilityEnum]
+    ABILITY_CHLOROPLAST: _ClassVar[AbilityEnum]
+    ABILITY_WHITEOUT: _ClassVar[AbilityEnum]
+    ABILITY_PYROMANCY: _ClassVar[AbilityEnum]
+    ABILITY_KEEN_EDGE: _ClassVar[AbilityEnum]
+    ABILITY_PRISM_SCALES: _ClassVar[AbilityEnum]
+    ABILITY_POWER_FISTS: _ClassVar[AbilityEnum]
+    ABILITY_SAND_SONG: _ClassVar[AbilityEnum]
+    ABILITY_RAMPAGE: _ClassVar[AbilityEnum]
+    ABILITY_VENGEANCE: _ClassVar[AbilityEnum]
+    ABILITY_BLITZ_BOXER: _ClassVar[AbilityEnum]
+    ABILITY_ANTARCTIC_BIRD: _ClassVar[AbilityEnum]
+    ABILITY_IMMOLATE: _ClassVar[AbilityEnum]
+    ABILITY_CRYSTALLIZE: _ClassVar[AbilityEnum]
+    ABILITY_ELECTROCYTES: _ClassVar[AbilityEnum]
+    ABILITY_AERODYNAMICS: _ClassVar[AbilityEnum]
+    ABILITY_CHRISTMAS_SPIRIT: _ClassVar[AbilityEnum]
+    ABILITY_EXPLOIT_WEAKNESS: _ClassVar[AbilityEnum]
+    ABILITY_GROUND_SHOCK: _ClassVar[AbilityEnum]
+    ABILITY_ANCIENT_IDOL: _ClassVar[AbilityEnum]
+    ABILITY_MYSTIC_POWER: _ClassVar[AbilityEnum]
+    ABILITY_PERFECTIONIST: _ClassVar[AbilityEnum]
+    ABILITY_GROWING_TOOTH: _ClassVar[AbilityEnum]
+    ABILITY_INFLATABLE: _ClassVar[AbilityEnum]
+    ABILITY_AURORA_BOREALIS: _ClassVar[AbilityEnum]
+    ABILITY_AVENGER: _ClassVar[AbilityEnum]
+    ABILITY_LETS_ROLL: _ClassVar[AbilityEnum]
+    ABILITY_AQUATIC: _ClassVar[AbilityEnum]
+    ABILITY_LOUD_BANG: _ClassVar[AbilityEnum]
+    ABILITY_LEAD_COAT: _ClassVar[AbilityEnum]
+    ABILITY_AMPHIBIOUS: _ClassVar[AbilityEnum]
+    ABILITY_GROUNDED: _ClassVar[AbilityEnum]
+    ABILITY_EARTHBOUND: _ClassVar[AbilityEnum]
+    ABILITY_FIGHT_SPIRIT: _ClassVar[AbilityEnum]
+    ABILITY_FELINE_PROWESS: _ClassVar[AbilityEnum]
+    ABILITY_COIL_UP: _ClassVar[AbilityEnum]
+    ABILITY_FOSSILIZED: _ClassVar[AbilityEnum]
+    ABILITY_MAGICAL_DUST: _ClassVar[AbilityEnum]
+    ABILITY_DREAMCATCHER: _ClassVar[AbilityEnum]
+    ABILITY_NOCTURNAL: _ClassVar[AbilityEnum]
+    ABILITY_SELF_SUFFICIENT: _ClassVar[AbilityEnum]
+    ABILITY_TECTONIZE: _ClassVar[AbilityEnum]
+    ABILITY_ICE_AGE: _ClassVar[AbilityEnum]
+    ABILITY_HALF_DRAKE: _ClassVar[AbilityEnum]
+    ABILITY_LIQUIFIED: _ClassVar[AbilityEnum]
+    ABILITY_DRAGONFLY: _ClassVar[AbilityEnum]
+    ABILITY_DRAGONSLAYER: _ClassVar[AbilityEnum]
+    ABILITY_MOUNTAINEER: _ClassVar[AbilityEnum]
+    ABILITY_HYDRATE: _ClassVar[AbilityEnum]
+    ABILITY_METALLIC: _ClassVar[AbilityEnum]
+    ABILITY_PERMAFROST: _ClassVar[AbilityEnum]
+    ABILITY_PRIMAL_ARMOR: _ClassVar[AbilityEnum]
+    ABILITY_RAGING_BOXER: _ClassVar[AbilityEnum]
+    ABILITY_AIR_BLOWER: _ClassVar[AbilityEnum]
+    ABILITY_JUGGERNAUT: _ClassVar[AbilityEnum]
+    ABILITY_SHORT_CIRCUIT: _ClassVar[AbilityEnum]
+    ABILITY_MAJESTIC_BIRD: _ClassVar[AbilityEnum]
+    ABILITY_PHANTOM: _ClassVar[AbilityEnum]
+    ABILITY_INTOXICATE: _ClassVar[AbilityEnum]
+    ABILITY_IMPENETRABLE: _ClassVar[AbilityEnum]
+    ABILITY_HYPNOTIST: _ClassVar[AbilityEnum]
+    ABILITY_OVERWHELM: _ClassVar[AbilityEnum]
+    ABILITY_SCARE: _ClassVar[AbilityEnum]
+    ABILITY_MAJESTIC_MOTH: _ClassVar[AbilityEnum]
+    ABILITY_SOUL_EATER: _ClassVar[AbilityEnum]
+    ABILITY_SOUL_LINKER: _ClassVar[AbilityEnum]
+    ABILITY_SWEET_DREAMS: _ClassVar[AbilityEnum]
+    ABILITY_BAD_LUCK: _ClassVar[AbilityEnum]
+    ABILITY_HAUNTED_SPIRIT: _ClassVar[AbilityEnum]
+    ABILITY_ELECTRIC_BURST: _ClassVar[AbilityEnum]
+    ABILITY_RAW_WOOD: _ClassVar[AbilityEnum]
+    ABILITY_SOLENOGLYPHS: _ClassVar[AbilityEnum]
+    ABILITY_SPIDER_LAIR: _ClassVar[AbilityEnum]
+    ABILITY_FATAL_PRECISION: _ClassVar[AbilityEnum]
+    ABILITY_FORT_KNOX: _ClassVar[AbilityEnum]
+    ABILITY_SEAWEED: _ClassVar[AbilityEnum]
+    ABILITY_PSYCHIC_MIND: _ClassVar[AbilityEnum]
+    ABILITY_POISON_ABSORB: _ClassVar[AbilityEnum]
+    ABILITY_SCAVENGER: _ClassVar[AbilityEnum]
+    ABILITY_TWISTED_DIMENSION: _ClassVar[AbilityEnum]
+    ABILITY_MULTI_HEADED: _ClassVar[AbilityEnum]
+    ABILITY_NORTH_WIND: _ClassVar[AbilityEnum]
+    ABILITY_OVERCHARGE: _ClassVar[AbilityEnum]
+    ABILITY_VIOLENT_RUSH: _ClassVar[AbilityEnum]
+    ABILITY_FLAMING_SOUL: _ClassVar[AbilityEnum]
+    ABILITY_SAGE_POWER: _ClassVar[AbilityEnum]
+    ABILITY_BONE_ZONE: _ClassVar[AbilityEnum]
+    ABILITY_WEATHER_CONTROL: _ClassVar[AbilityEnum]
+    ABILITY_SPEED_FORCE: _ClassVar[AbilityEnum]
+    ABILITY_SEA_GUARDIAN: _ClassVar[AbilityEnum]
+    ABILITY_MOLTEN_DOWN: _ClassVar[AbilityEnum]
+    ABILITY_HYPER_AGGRESSIVE: _ClassVar[AbilityEnum]
+    ABILITY_FLOCK: _ClassVar[AbilityEnum]
+    ABILITY_FIELD_EXPLORER: _ClassVar[AbilityEnum]
+    ABILITY_STRIKER: _ClassVar[AbilityEnum]
+    ABILITY_FROZEN_SOUL: _ClassVar[AbilityEnum]
+    ABILITY_PREDATOR: _ClassVar[AbilityEnum]
+    ABILITY_LOOTER: _ClassVar[AbilityEnum]
+    ABILITY_LUNAR_ECLIPSE: _ClassVar[AbilityEnum]
+    ABILITY_SOLAR_FLARE: _ClassVar[AbilityEnum]
+    ABILITY_POWER_CORE: _ClassVar[AbilityEnum]
+    ABILITY_SIGHTING_SYSTEM: _ClassVar[AbilityEnum]
+    ABILITY_BAD_COMPANY: _ClassVar[AbilityEnum]
+    ABILITY_OPPORTUNIST: _ClassVar[AbilityEnum]
+    ABILITY_GIANT_WINGS: _ClassVar[AbilityEnum]
+    ABILITY_MOMENTUM: _ClassVar[AbilityEnum]
+    ABILITY_GRIP_PINCER: _ClassVar[AbilityEnum]
+    ABILITY_BIG_LEAVES: _ClassVar[AbilityEnum]
+    ABILITY_PRECISE_FIST: _ClassVar[AbilityEnum]
+    ABILITY_DEADEYE: _ClassVar[AbilityEnum]
+    ABILITY_ARTILLERY: _ClassVar[AbilityEnum]
+    ABILITY_AMPLIFIER: _ClassVar[AbilityEnum]
+    ABILITY_ICE_DEW: _ClassVar[AbilityEnum]
+    ABILITY_SUN_WORSHIP: _ClassVar[AbilityEnum]
+    ABILITY_POLLINATE: _ClassVar[AbilityEnum]
+    ABILITY_VOLCANO_RAGE: _ClassVar[AbilityEnum]
+    ABILITY_COLD_REBOUND: _ClassVar[AbilityEnum]
+    ABILITY_LOW_BLOW: _ClassVar[AbilityEnum]
+    ABILITY_NOSFERATU: _ClassVar[AbilityEnum]
+    ABILITY_SPECTRAL_SHROUD: _ClassVar[AbilityEnum]
+    ABILITY_DISCIPLINE: _ClassVar[AbilityEnum]
+    ABILITY_THUNDERCALL: _ClassVar[AbilityEnum]
+    ABILITY_MARINE_APEX: _ClassVar[AbilityEnum]
+    ABILITY_MIGHTY_HORN: _ClassVar[AbilityEnum]
+    ABILITY_HARDENED_SHEATH: _ClassVar[AbilityEnum]
+    ABILITY_ARCTIC_FUR: _ClassVar[AbilityEnum]
+    ABILITY_SPECTRALIZE: _ClassVar[AbilityEnum]
+    ABILITY_LETHARGY: _ClassVar[AbilityEnum]
+    ABILITY_IRON_BARRAGE: _ClassVar[AbilityEnum]
+    ABILITY_STEEL_BARREL: _ClassVar[AbilityEnum]
+    ABILITY_PYRO_SHELLS: _ClassVar[AbilityEnum]
+    ABILITY_FUNGAL_INFECTION: _ClassVar[AbilityEnum]
+    ABILITY_PARRY: _ClassVar[AbilityEnum]
+    ABILITY_SCRAPYARD: _ClassVar[AbilityEnum]
+    ABILITY_LOOSE_QUILLS: _ClassVar[AbilityEnum]
+    ABILITY_TOXIC_DEBRIS: _ClassVar[AbilityEnum]
+    ABILITY_ROUNDHOUSE: _ClassVar[AbilityEnum]
+    ABILITY_MINERALIZE: _ClassVar[AbilityEnum]
+    ABILITY_LOOSE_ROCKS: _ClassVar[AbilityEnum]
+    ABILITY_SPINNING_TOP: _ClassVar[AbilityEnum]
+    ABILITY_RETRIBUTION_BLOW: _ClassVar[AbilityEnum]
+    ABILITY_FEARMONGER: _ClassVar[AbilityEnum]
+    ABILITY_KINGS_WRATH: _ClassVar[AbilityEnum]
+    ABILITY_QUEENS_MOURNING: _ClassVar[AbilityEnum]
+    ABILITY_TOXIC_SPILL: _ClassVar[AbilityEnum]
+    ABILITY_DESERT_CLOAK: _ClassVar[AbilityEnum]
+    ABILITY_DRACONIZE: _ClassVar[AbilityEnum]
+    ABILITY_PRETTY_PRINCESS: _ClassVar[AbilityEnum]
+    ABILITY_SELF_REPAIR: _ClassVar[AbilityEnum]
+    ABILITY_ATOMIC_BURST: _ClassVar[AbilityEnum]
+    ABILITY_HELLBLAZE: _ClassVar[AbilityEnum]
+    ABILITY_RIPTIDE: _ClassVar[AbilityEnum]
+    ABILITY_FOREST_RAGE: _ClassVar[AbilityEnum]
+    ABILITY_PRIMAL_MAW: _ClassVar[AbilityEnum]
+    ABILITY_SWEEPING_EDGE: _ClassVar[AbilityEnum]
+    ABILITY_GIFTED_MIND: _ClassVar[AbilityEnum]
+    ABILITY_HYDRO_CIRCUIT: _ClassVar[AbilityEnum]
+    ABILITY_EQUINOX: _ClassVar[AbilityEnum]
+    ABILITY_ABSORBANT: _ClassVar[AbilityEnum]
+    ABILITY_CLUELESS: _ClassVar[AbilityEnum]
+    ABILITY_CHEATING_DEATH: _ClassVar[AbilityEnum]
+    ABILITY_CHEAP_TACTICS: _ClassVar[AbilityEnum]
+    ABILITY_COWARD: _ClassVar[AbilityEnum]
+    ABILITY_VOLT_RUSH: _ClassVar[AbilityEnum]
+    ABILITY_DUNE_TERROR: _ClassVar[AbilityEnum]
+    ABILITY_INFERNAL_RAGE: _ClassVar[AbilityEnum]
+    ABILITY_DUAL_WIELD: _ClassVar[AbilityEnum]
+    ABILITY_ELEMENTAL_CHARGE: _ClassVar[AbilityEnum]
+    ABILITY_AMBUSH: _ClassVar[AbilityEnum]
+    ABILITY_ATLAS: _ClassVar[AbilityEnum]
+    ABILITY_RADIANCE: _ClassVar[AbilityEnum]
+    ABILITY_JAWS_OF_CARNAGE: _ClassVar[AbilityEnum]
+    ABILITY_ANGELS_WRATH: _ClassVar[AbilityEnum]
+    ABILITY_PRISMATIC_FUR: _ClassVar[AbilityEnum]
+    ABILITY_SHOCKING_JAWS: _ClassVar[AbilityEnum]
+    ABILITY_FAE_HUNTER: _ClassVar[AbilityEnum]
+    ABILITY_GRAVITY_WELL: _ClassVar[AbilityEnum]
+    ABILITY_EVAPORATE: _ClassVar[AbilityEnum]
+    ABILITY_LUMBERJACK: _ClassVar[AbilityEnum]
+    ABILITY_WELL_BAKED_BODY: _ClassVar[AbilityEnum]
+    ABILITY_FURNACE: _ClassVar[AbilityEnum]
+    ABILITY_ELECTROMORPHOSIS: _ClassVar[AbilityEnum]
+    ABILITY_ROCKY_PAYLOAD: _ClassVar[AbilityEnum]
+    ABILITY_EARTH_EATER: _ClassVar[AbilityEnum]
+    ABILITY_LINGERING_AROMA: _ClassVar[AbilityEnum]
+    ABILITY_FAIRY_TALE: _ClassVar[AbilityEnum]
+    ABILITY_RAGING_MOTH: _ClassVar[AbilityEnum]
+    ABILITY_ADRENALINE_RUSH: _ClassVar[AbilityEnum]
+    ABILITY_ARCHMAGE: _ClassVar[AbilityEnum]
+    ABILITY_CRYOMANCY: _ClassVar[AbilityEnum]
+    ABILITY_PHANTOM_PAIN: _ClassVar[AbilityEnum]
+    ABILITY_PURGATORY: _ClassVar[AbilityEnum]
+    ABILITY_EMANATE: _ClassVar[AbilityEnum]
+    ABILITY_KUNOICHI_BLADE: _ClassVar[AbilityEnum]
+    ABILITY_MONKEY_BUSINESS: _ClassVar[AbilityEnum]
+    ABILITY_COMBAT_SPECIALIST: _ClassVar[AbilityEnum]
+    ABILITY_JUNGLES_GUARD: _ClassVar[AbilityEnum]
+    ABILITY_HUNTERS_HORN: _ClassVar[AbilityEnum]
+    ABILITY_PIXIE_POWER: _ClassVar[AbilityEnum]
+    ABILITY_PLASMA_LAMP: _ClassVar[AbilityEnum]
+    ABILITY_MAGMA_EATER: _ClassVar[AbilityEnum]
+    ABILITY_SUPER_HOT_GOO: _ClassVar[AbilityEnum]
+    ABILITY_NIKA: _ClassVar[AbilityEnum]
+    ABILITY_ARCHER: _ClassVar[AbilityEnum]
+    ABILITY_COLD_PLASMA: _ClassVar[AbilityEnum]
+    ABILITY_SUPER_SLAMMER: _ClassVar[AbilityEnum]
+    ABILITY_INVERSE_ROOM: _ClassVar[AbilityEnum]
+    ABILITY_ACCELERATE: _ClassVar[AbilityEnum]
+    ABILITY_FROST_BURN: _ClassVar[AbilityEnum]
+    ABILITY_ITCHY_DEFENSE: _ClassVar[AbilityEnum]
+    ABILITY_GENERATOR: _ClassVar[AbilityEnum]
+    ABILITY_MOON_SPIRIT: _ClassVar[AbilityEnum]
+    ABILITY_DUST_CLOUD: _ClassVar[AbilityEnum]
+    ABILITY_BERSERKER_RAGE: _ClassVar[AbilityEnum]
+    ABILITY_TRICKSTER: _ClassVar[AbilityEnum]
+    ABILITY_SAND_GUARD: _ClassVar[AbilityEnum]
+    ABILITY_NATURAL_RECOVERY: _ClassVar[AbilityEnum]
+    ABILITY_WIND_RIDER: _ClassVar[AbilityEnum]
+    ABILITY_SOOTHING_AROMA: _ClassVar[AbilityEnum]
+    ABILITY_PRIM_AND_PROPER: _ClassVar[AbilityEnum]
+    ABILITY_SUPER_STRAIN: _ClassVar[AbilityEnum]
+    ABILITY_TIPPING_POINT: _ClassVar[AbilityEnum]
+    ABILITY_ENLIGHTENED: _ClassVar[AbilityEnum]
+    ABILITY_PEACEFUL_SLUMBER: _ClassVar[AbilityEnum]
+    ABILITY_AFTERSHOCK: _ClassVar[AbilityEnum]
+    ABILITY_FREEZING_POINT: _ClassVar[AbilityEnum]
+    ABILITY_CRYO_PROFICIENCY: _ClassVar[AbilityEnum]
+    ABILITY_ARCANE_FORCE: _ClassVar[AbilityEnum]
+    ABILITY_DOOMBRINGER: _ClassVar[AbilityEnum]
+    ABILITY_WISHMAKER: _ClassVar[AbilityEnum]
+    ABILITY_YUKI_ONNA: _ClassVar[AbilityEnum]
+    ABILITY_SUPPRESS: _ClassVar[AbilityEnum]
+    ABILITY_REFRIGERATOR: _ClassVar[AbilityEnum]
+    ABILITY_HEAVEN_ASUNDER: _ClassVar[AbilityEnum]
+    ABILITY_PURIFYING_WATERS: _ClassVar[AbilityEnum]
+    ABILITY_SEABORNE: _ClassVar[AbilityEnum]
+    ABILITY_HIGH_TIDE: _ClassVar[AbilityEnum]
+    ABILITY_CHANGE_OF_HEART: _ClassVar[AbilityEnum]
+    ABILITY_MYSTIC_BLADES: _ClassVar[AbilityEnum]
+    ABILITY_DETERMINATION: _ClassVar[AbilityEnum]
+    ABILITY_FERTILIZE: _ClassVar[AbilityEnum]
+    ABILITY_PURE_LOVE: _ClassVar[AbilityEnum]
+    ABILITY_FIGHTER: _ClassVar[AbilityEnum]
+    ABILITY_MYCELIUM_MIGHT: _ClassVar[AbilityEnum]
+    ABILITY_TELEKINETIC: _ClassVar[AbilityEnum]
+    ABILITY_COMBUSTION: _ClassVar[AbilityEnum]
+    ABILITY_PONY_POWER: _ClassVar[AbilityEnum]
+    ABILITY_POWDER_BURST: _ClassVar[AbilityEnum]
+    ABILITY_RETRIEVER: _ClassVar[AbilityEnum]
+    ABILITY_MONSTER_MASH: _ClassVar[AbilityEnum]
+    ABILITY_TWO_STEP: _ClassVar[AbilityEnum]
+    ABILITY_SPITEFUL: _ClassVar[AbilityEnum]
+    ABILITY_FORTITUDE: _ClassVar[AbilityEnum]
+    ABILITY_DEVOURER: _ClassVar[AbilityEnum]
+    ABILITY_PHANTOM_THIEF: _ClassVar[AbilityEnum]
+    ABILITY_EARLY_GRAVE: _ClassVar[AbilityEnum]
+    ABILITY_GRAPPLER: _ClassVar[AbilityEnum]
+    ABILITY_BASS_BOOSTED: _ClassVar[AbilityEnum]
+    ABILITY_FLAMING_JAWS: _ClassVar[AbilityEnum]
+    ABILITY_MONSTER_HUNTER: _ClassVar[AbilityEnum]
+    ABILITY_CROWNED_SWORD: _ClassVar[AbilityEnum]
+    ABILITY_CROWNED_SHIELD: _ClassVar[AbilityEnum]
+    ABILITY_BERSERK_DNA: _ClassVar[AbilityEnum]
+    ABILITY_CROWNED_KING: _ClassVar[AbilityEnum]
+    ABILITY_SNAP_TRAP_WHEN_HIT: _ClassVar[AbilityEnum]
+    ABILITY_PERMANENCE: _ClassVar[AbilityEnum]
+    ABILITY_HUBRIS: _ClassVar[AbilityEnum]
+    ABILITY_COSMIC_DAZE: _ClassVar[AbilityEnum]
+    ABILITY_MINDS_EYE: _ClassVar[AbilityEnum]
+    ABILITY_BLOOD_PRICE: _ClassVar[AbilityEnum]
+    ABILITY_SPIKE_ARMOR: _ClassVar[AbilityEnum]
+    ABILITY_VOODOO_POWER: _ClassVar[AbilityEnum]
+    ABILITY_CHROME_COAT: _ClassVar[AbilityEnum]
+    ABILITY_BANSHEE: _ClassVar[AbilityEnum]
+    ABILITY_WEB_SPINNER: _ClassVar[AbilityEnum]
+    ABILITY_SHOWDOWN_MODE: _ClassVar[AbilityEnum]
+    ABILITY_SEED_SOWER: _ClassVar[AbilityEnum]
+    ABILITY_AIRBORNE: _ClassVar[AbilityEnum]
+    ABILITY_PARROTING: _ClassVar[AbilityEnum]
+    ABILITY_SALT_CIRCLE: _ClassVar[AbilityEnum]
+    ABILITY_PURIFYING_SALT: _ClassVar[AbilityEnum]
+    ABILITY_PROTOSYNTHESIS: _ClassVar[AbilityEnum]
+    ABILITY_QUARK_DRIVE: _ClassVar[AbilityEnum]
+    ABILITY_WIND_POWER: _ClassVar[AbilityEnum]
+    ABILITY_IMPULSE: _ClassVar[AbilityEnum]
+    ABILITY_TERMINAL_VELOCITY: _ClassVar[AbilityEnum]
+    ABILITY_GUARD_DOG: _ClassVar[AbilityEnum]
+    ABILITY_ANGER_SHELL: _ClassVar[AbilityEnum]
+    ABILITY_EGOIST: _ClassVar[AbilityEnum]
+    ABILITY_SUBDUE: _ClassVar[AbilityEnum]
+    ABILITY_READIED_ACTION: _ClassVar[AbilityEnum]
+    ABILITY_DARK_GALE_WINGS: _ClassVar[AbilityEnum]
+    ABILITY_GUILT_TRIP: _ClassVar[AbilityEnum]
+    ABILITY_WATER_GALE_WINGS: _ClassVar[AbilityEnum]
+    ABILITY_ZERO_TO_HERO: _ClassVar[AbilityEnum]
+    ABILITY_COSTAR: _ClassVar[AbilityEnum]
+    ABILITY_COMMANDER: _ClassVar[AbilityEnum]
+    ABILITY_EJECT_PACK_ABILITY: _ClassVar[AbilityEnum]
+    ABILITY_VENGEFUL_SPIRIT: _ClassVar[AbilityEnum]
+    ABILITY_CUD_CHEW: _ClassVar[AbilityEnum]
+    ABILITY_ARMOR_TAIL: _ClassVar[AbilityEnum]
+    ABILITY_MIND_CRUSH: _ClassVar[AbilityEnum]
+    ABILITY_SUPREME_OVERLORD: _ClassVar[AbilityEnum]
+    ABILITY_ILL_WILL: _ClassVar[AbilityEnum]
+    ABILITY_FIRE_SCALES: _ClassVar[AbilityEnum]
+    ABILITY_WATCH_YOUR_STEP: _ClassVar[AbilityEnum]
+    ABILITY_RAPID_RESPONSE: _ClassVar[AbilityEnum]
+    ABILITY_DOUBLE_IRON_BARBS: _ClassVar[AbilityEnum]
+    ABILITY_THERMAL_EXCHANGE: _ClassVar[AbilityEnum]
+    ABILITY_GOOD_AS_GOLD: _ClassVar[AbilityEnum]
+    ABILITY_SHARING_IS_CARING: _ClassVar[AbilityEnum]
+    ABILITY_TABLETS_OF_RUIN: _ClassVar[AbilityEnum]
+    ABILITY_SWORD_OF_RUIN: _ClassVar[AbilityEnum]
+    ABILITY_VESSEL_OF_RUIN: _ClassVar[AbilityEnum]
+    ABILITY_BEADS_OF_RUIN: _ClassVar[AbilityEnum]
+    ABILITY_PERMAFROST_CLONE: _ClassVar[AbilityEnum]
+    ABILITY_GALLANTRY: _ClassVar[AbilityEnum]
+    ABILITY_ORICHALCUM_PULSE: _ClassVar[AbilityEnum]
+    ABILITY_SUN_BASKING: _ClassVar[AbilityEnum]
+    ABILITY_WINGED_KING: _ClassVar[AbilityEnum]
+    ABILITY_HADRON_ENGINE: _ClassVar[AbilityEnum]
+    ABILITY_IRON_SERPENT: _ClassVar[AbilityEnum]
+    ABILITY_WEATHER_DOUBLE_BOOST: _ClassVar[AbilityEnum]
+    ABILITY_SWEEPING_EDGE_PLUS: _ClassVar[AbilityEnum]
+    ABILITY_CELESTIAL_BLESSING: _ClassVar[AbilityEnum]
+    ABILITY_MINION_CONTROL: _ClassVar[AbilityEnum]
+    ABILITY_MOLTEN_BLADES: _ClassVar[AbilityEnum]
+    ABILITY_HAUNTING_FRENZY: _ClassVar[AbilityEnum]
+    ABILITY_NOISE_CANCEL: _ClassVar[AbilityEnum]
+    ABILITY_RADIO_JAM: _ClassVar[AbilityEnum]
+    ABILITY_OLE: _ClassVar[AbilityEnum]
+    ABILITY_MALICIOUS: _ClassVar[AbilityEnum]
+    ABILITY_DEAD_POWER: _ClassVar[AbilityEnum]
+    ABILITY_BRAWLING_WYVERN: _ClassVar[AbilityEnum]
+    ABILITY_MYTHICAL_ARROWS: _ClassVar[AbilityEnum]
+    ABILITY_LAWNMOWER: _ClassVar[AbilityEnum]
+    ABILITY_FLOURISH: _ClassVar[AbilityEnum]
+    ABILITY_DESERT_SPIRIT: _ClassVar[AbilityEnum]
+    ABILITY_CONTEMPT: _ClassVar[AbilityEnum]
+    ABILITY_AERIALIST: _ClassVar[AbilityEnum]
+    ABILITY_TERA_SHELL: _ClassVar[AbilityEnum]
+    ABILITY_TOXIC_CHAIN: _ClassVar[AbilityEnum]
+    ABILITY_PARASITIC_SPORES: _ClassVar[AbilityEnum]
+    ABILITY_POISON_PUPPETEER: _ClassVar[AbilityEnum]
+    ABILITY_ENTRANCE: _ClassVar[AbilityEnum]
+    ABILITY_REJECTION: _ClassVar[AbilityEnum]
+    ABILITY_APPLE_ENLIGHTENMENT: _ClassVar[AbilityEnum]
+    ABILITY_BALLOON_BOMBER: _ClassVar[AbilityEnum]
+    ABILITY_FLAMING_MAW: _ClassVar[AbilityEnum]
+    ABILITY_DEMOLITIONIST: _ClassVar[AbilityEnum]
+    ABILITY_ROCKHARD_WILL: _ClassVar[AbilityEnum]
+    ABILITY_FRAGRANT_DAZE: _ClassVar[AbilityEnum]
+    ABILITY_LOW_VISIBILITY: _ClassVar[AbilityEnum]
+    ABILITY_OLD_MARINER: _ClassVar[AbilityEnum]
+    ABILITY_ECTOPLASM: _ClassVar[AbilityEnum]
+    ABILITY_BEAUTIFUL_MUSIC: _ClassVar[AbilityEnum]
+    ABILITY_SURPRISE: _ClassVar[AbilityEnum]
+    ABILITY_SNOW_SONG: _ClassVar[AbilityEnum]
+    ABILITY_GREATER_SPIRIT: _ClassVar[AbilityEnum]
+    ABILITY_RESONANCE: _ClassVar[AbilityEnum]
+    ABILITY_ETHEREAL_RUSH: _ClassVar[AbilityEnum]
+    ABILITY_CUTE_ANTECEDENCE: _ClassVar[AbilityEnum]
+    ABILITY_RECURRING_NIGHTMARE: _ClassVar[AbilityEnum]
+    ABILITY_MENACING_SITUATION: _ClassVar[AbilityEnum]
+    ABILITY_SHINY_LIGHTNING: _ClassVar[AbilityEnum]
+    ABILITY_TERRIFY: _ClassVar[AbilityEnum]
+    ABILITY_ICE_DOWNFALL: _ClassVar[AbilityEnum]
+    ABILITY_LAST_STAND: _ClassVar[AbilityEnum]
+    ABILITY_PYROCLASTIC_FLOW: _ClassVar[AbilityEnum]
+    ABILITY_BLOOD_BATH: _ClassVar[AbilityEnum]
+    ABILITY_BATTLE_AURA: _ClassVar[AbilityEnum]
+    ABILITY_BLOODLUST: _ClassVar[AbilityEnum]
+    ABILITY_PIERCING_SOLO: _ClassVar[AbilityEnum]
+    ABILITY_RHYTHMIC: _ClassVar[AbilityEnum]
+    ABILITY_CHUNKY_BASS_LINE: _ClassVar[AbilityEnum]
+    ABILITY_DUAL_HAMMER: _ClassVar[AbilityEnum]
+    ABILITY_DENTING_BLOWS: _ClassVar[AbilityEnum]
+    ABILITY_ICE_COLD_HUNTER: _ClassVar[AbilityEnum]
+    ABILITY_SOUL_CRUSHER: _ClassVar[AbilityEnum]
+    ABILITY_ARC_FLASH: _ClassVar[AbilityEnum]
+    ABILITY_UNICORN: _ClassVar[AbilityEnum]
+    ABILITY_ON_THE_PROWL: _ClassVar[AbilityEnum]
+    ABILITY_PRETENTIOUS: _ClassVar[AbilityEnum]
+    ABILITY_VENOBLAZE_PINCERS: _ClassVar[AbilityEnum]
+    ABILITY_ETERNAL_BLESSING: _ClassVar[AbilityEnum]
+    ABILITY_SUGAR_RUSH: _ClassVar[AbilityEnum]
+    ABILITY_PEACEFUL_REST: _ClassVar[AbilityEnum]
+    ABILITY_WHITE_NOISE: _ClassVar[AbilityEnum]
+    ABILITY_SMOKEY_MANEUVERS: _ClassVar[AbilityEnum]
+    ABILITY_TAG: _ClassVar[AbilityEnum]
+    ABILITY_POWER_METAL: _ClassVar[AbilityEnum]
+    ABILITY_POWER_EDGE: _ClassVar[AbilityEnum]
+    ABILITY_SUPERCONDUCTOR: _ClassVar[AbilityEnum]
+    ABILITY_ULTRA_INSTINCT: _ClassVar[AbilityEnum]
+    ABILITY_UNLOCKED_POTENTIAL: _ClassVar[AbilityEnum]
+    ABILITY_HIGHER_RANK: _ClassVar[AbilityEnum]
+    ABILITY_FUNERAL_PYRE: _ClassVar[AbilityEnum]
+    ABILITY_FLAME_BUBBLE: _ClassVar[AbilityEnum]
+    ABILITY_ELEMENTAL_VORTEX: _ClassVar[AbilityEnum]
+    ABILITY_SNOWY_WRATH: _ClassVar[AbilityEnum]
+    ABILITY_PATTERN_CHANGE: _ClassVar[AbilityEnum]
+    ABILITY_NO_TURNING_BACK: _ClassVar[AbilityEnum]
+    ABILITY_FLAMMABLE_COAT: _ClassVar[AbilityEnum]
+    ABILITY_DRACO_MORALE: _ClassVar[AbilityEnum]
+    ABILITY_BAD_OMEN: _ClassVar[AbilityEnum]
+    ABILITY_MOSH_PIT: _ClassVar[AbilityEnum]
+    ABILITY_BLOOD_STAIN: _ClassVar[AbilityEnum]
+    ABILITY_BLOOD_STIGMA: _ClassVar[AbilityEnum]
+    ABILITY_MAXIMUM_ACCELERATION: _ClassVar[AbilityEnum]
+    ABILITY_SIDEWINDER: _ClassVar[AbilityEnum]
+    ABILITY_PETRIFY: _ClassVar[AbilityEnum]
+    ABILITY_FLUFFIEST: _ClassVar[AbilityEnum]
+    ABILITY_WAY_OF_PRECISION: _ClassVar[AbilityEnum]
+    ABILITY_WAY_OF_SWIFTNESS: _ClassVar[AbilityEnum]
+    ABILITY_ATOMIC_PUNCH: _ClassVar[AbilityEnum]
+    ABILITY_IRON_GIANT: _ClassVar[AbilityEnum]
+    ABILITY_MASTER_HAND: _ClassVar[AbilityEnum]
+    ABILITY_FINAL_BLOW: _ClassVar[AbilityEnum]
+    ABILITY_HOSPITALITY: _ClassVar[AbilityEnum]
+    ABILITY_BUTTER_UP: _ClassVar[AbilityEnum]
+    ABILITY_VITALITY_STRIKE: _ClassVar[AbilityEnum]
+    ABILITY_HUGE_WINGS: _ClassVar[AbilityEnum]
+    ABILITY_SWORD_OF_DAMNATION: _ClassVar[AbilityEnum]
+    ABILITY_RESTRAINING_ORDER: _ClassVar[AbilityEnum]
+    ABILITY_ASSASSINS_TOOLS: _ClassVar[AbilityEnum]
+    ABILITY_FROSTMAW: _ClassVar[AbilityEnum]
+    ABILITY_PATCHWORK: _ClassVar[AbilityEnum]
+    ABILITY_BLIND_RAGE: _ClassVar[AbilityEnum]
+    ABILITY_SLIPSTREAM: _ClassVar[AbilityEnum]
+    ABILITY_APEX_PREDATOR: _ClassVar[AbilityEnum]
+    ABILITY_DRAGONS_RITUAL: _ClassVar[AbilityEnum]
+    ABILITY_PINNACLE_BLADE: _ClassVar[AbilityEnum]
+    ABILITY_ENERGIZED: _ClassVar[AbilityEnum]
+    ABILITY_COLOR_SPECTRUM: _ClassVar[AbilityEnum]
+    ABILITY_STEEL_BEETLE: _ClassVar[AbilityEnum]
+    ABILITY_FROM_THE_SHADOWS: _ClassVar[AbilityEnum]
+    ABILITY_RAGE_POINT: _ClassVar[AbilityEnum]
+    ABILITY_HOT_COALS: _ClassVar[AbilityEnum]
+    ABILITY_TERASTAL_TREASURE: _ClassVar[AbilityEnum]
+    ABILITY_SHOCKING_MAW: _ClassVar[AbilityEnum]
+    ABILITY_GLEAM_EYES: _ClassVar[AbilityEnum]
+    ABILITY_ROUSED_FANGS: _ClassVar[AbilityEnum]
+    ABILITY_DREAM_STATE: _ClassVar[AbilityEnum]
+    ABILITY_DREAM_WHIMSY: _ClassVar[AbilityEnum]
+    ABILITY_LUNAR_AFFINITY: _ClassVar[AbilityEnum]
+    ABILITY_FLAME_SHIELD: _ClassVar[AbilityEnum]
+    ABILITY_AQUATIC_DWELLER: _ClassVar[AbilityEnum]
+    ABILITY_APPLE_PIE: _ClassVar[AbilityEnum]
+    ABILITY_HOVER: _ClassVar[AbilityEnum]
+    ABILITY_DEPRAVITY: _ClassVar[AbilityEnum]
+    ABILITY_WILDFIRE: _ClassVar[AbilityEnum]
+    ABILITY_JUMP_SCARE: _ClassVar[AbilityEnum]
+    ABILITY_TAR_TOSS: _ClassVar[AbilityEnum]
+    ABILITY_STUN_SHOCK: _ClassVar[AbilityEnum]
+    ABILITY_RAGING_GODDESS: _ClassVar[AbilityEnum]
+    ABILITY_WHIPLASH: _ClassVar[AbilityEnum]
+    ABILITY_SUPERSWEET_SYRUP: _ClassVar[AbilityEnum]
+    ABILITY_LUCKY_HALO: _ClassVar[AbilityEnum]
+    ABILITY_TRASH_HEAP: _ClassVar[AbilityEnum]
+    ABILITY_SLUDGY_MIX: _ClassVar[AbilityEnum]
+    ABILITY_OVERWATCH: _ClassVar[AbilityEnum]
+    ABILITY_WIND_RAGE: _ClassVar[AbilityEnum]
+    ABILITY_VICTORY_BOMB: _ClassVar[AbilityEnum]
+    ABILITY_RAZOR_SHARP: _ClassVar[AbilityEnum]
+    ABILITY_TO_THE_BONE: _ClassVar[AbilityEnum]
+    ABILITY_BLADE_DANCE: _ClassVar[AbilityEnum]
+    ABILITY_TAEKKYEON: _ClassVar[AbilityEnum]
+    ABILITY_APE_SHIFT: _ClassVar[AbilityEnum]
+    ABILITY_KNOW_YOUR_PLACE: _ClassVar[AbilityEnum]
+    ABILITY_DEEP_CUTS: _ClassVar[AbilityEnum]
+    ABILITY_LIFE_STEAL: _ClassVar[AbilityEnum]
+    ABILITY_RUDE_AWAKENING: _ClassVar[AbilityEnum]
+    ABILITY_TERAFORM_ZERO: _ClassVar[AbilityEnum]
+    ABILITY_SET_ABLAZE: _ClassVar[AbilityEnum]
+    ABILITY_BREAKWATER: _ClassVar[AbilityEnum]
+    ABILITY_MAGICAL_FISTS: _ClassVar[AbilityEnum]
+    ABILITY_CUTTHROAT: _ClassVar[AbilityEnum]
+    ABILITY_SAND_BENDER: _ClassVar[AbilityEnum]
+    ABILITY_SAND_PIT: _ClassVar[AbilityEnum]
+    ABILITY_DESOLATE_SUN: _ClassVar[AbilityEnum]
+    ABILITY_DAYBREAK: _ClassVar[AbilityEnum]
+    ABILITY_ENERGY_SIPHON: _ClassVar[AbilityEnum]
+    ABILITY_RESERVOIR: _ClassVar[AbilityEnum]
+    ABILITY_NEUROTOXIN: _ClassVar[AbilityEnum]
+    ABILITY_ENERGIZED_HORNS: _ClassVar[AbilityEnum]
+    ABILITY_SPIDER_LAIR_UPGRADE: _ClassVar[AbilityEnum]
+    ABILITY_CRUST_COAT: _ClassVar[AbilityEnum]
+    ABILITY_PUFFY: _ClassVar[AbilityEnum]
+    ABILITY_BALLOON_BLITZ: _ClassVar[AbilityEnum]
+    ABILITY_STRIKER_PIXILATE: _ClassVar[AbilityEnum]
+    ABILITY_DOOM_BLAST: _ClassVar[AbilityEnum]
+    ABILITY_BRUTEFORCE: _ClassVar[AbilityEnum]
+    ABILITY_FARADAY_CAGE: _ClassVar[AbilityEnum]
+    ABILITY_ACIDIC_SLIME: _ClassVar[AbilityEnum]
+    ABILITY_ROSE_GARDEN: _ClassVar[AbilityEnum]
+    ABILITY_QIGONG: _ClassVar[AbilityEnum]
+    ABILITY_CONJOURER_OF_DECEIT: _ClassVar[AbilityEnum]
+    ABILITY_DEEP_FREEZE: _ClassVar[AbilityEnum]
+    ABILITY_SOUL_DEVOURER: _ClassVar[AbilityEnum]
+    ABILITY_CHAMPIONS_ENTRANCE: _ClassVar[AbilityEnum]
+    ABILITY_PRESTO: _ClassVar[AbilityEnum]
+    ABILITY_SAMBA: _ClassVar[AbilityEnum]
+    ABILITY_JUNSHI_SANDA: _ClassVar[AbilityEnum]
+    ABILITY_GLADIATOR: _ClassVar[AbilityEnum]
+    ABILITY_FORSAKEN_HEART: _ClassVar[AbilityEnum]
+    ABILITY_RELENTLESS: _ClassVar[AbilityEnum]
+    ABILITY_SOOTHSAYER: _ClassVar[AbilityEnum]
+    ABILITY_CORRUPTED_MIND: _ClassVar[AbilityEnum]
+    ABILITY_FLAME_COAT: _ClassVar[AbilityEnum]
+    ABILITY_UNOWN_POWER: _ClassVar[AbilityEnum]
+    ABILITY_SUPER_SCOPE: _ClassVar[AbilityEnum]
+    ABILITY_VENOM_CROWN: _ClassVar[AbilityEnum]
+    ABILITY_BLIGHT_SCALE: _ClassVar[AbilityEnum]
+    ABILITY_GUNMAN: _ClassVar[AbilityEnum]
+    ABILITY_HUNTERS_MARK: _ClassVar[AbilityEnum]
+    ABILITY_HEMOLYSIS: _ClassVar[AbilityEnum]
+    ABILITY_CARETAKER: _ClassVar[AbilityEnum]
+    ABILITY_POSEIDONS_DOMINION: _ClassVar[AbilityEnum]
+    ABILITY_DUAL_SHADOW: _ClassVar[AbilityEnum]
+    ABILITY_LULLABY: _ClassVar[AbilityEnum]
+    ABILITY_CRYO_ARCHITECT: _ClassVar[AbilityEnum]
+    ABILITY_GLACIAL_RAGE: _ClassVar[AbilityEnum]
+    ABILITY_IMMOVABLE_OBJECT: _ClassVar[AbilityEnum]
+    ABILITY_FRENZIED_PHANTOM: _ClassVar[AbilityEnum]
+    ABILITY_DNA_SCRAMBLE: _ClassVar[AbilityEnum]
+    ABILITY_METALLIC_JAWS: _ClassVar[AbilityEnum]
+    ABILITY_CALCULATIVE: _ClassVar[AbilityEnum]
+    ABILITY_DEADLY_PRECISION: _ClassVar[AbilityEnum]
+    ABILITY_EMBODY_ASPECT: _ClassVar[AbilityEnum]
+    ABILITY_EMBODY_ASPECT_HEARTHFLAME: _ClassVar[AbilityEnum]
+    ABILITY_EMBODY_ASPECT_CORNERSTONE: _ClassVar[AbilityEnum]
+    ABILITY_EMBODY_ASPECT_WELLSPRING: _ClassVar[AbilityEnum]
+    ABILITY_ROCKHARD_SHAFT: _ClassVar[AbilityEnum]
+    ABILITY_DEVIATE: _ClassVar[AbilityEnum]
+    ABILITY_SUNS_BOUNTY: _ClassVar[AbilityEnum]
+    ABILITY_RITE_OF_SPRING: _ClassVar[AbilityEnum]
+    ABILITY_HEADSTRONG: _ClassVar[AbilityEnum]
+    ABILITY_FIREFIGHTER: _ClassVar[AbilityEnum]
+    ABILITY_SEPIA_LENS: _ClassVar[AbilityEnum]
+    ABILITY_SUPER_SNIPER: _ClassVar[AbilityEnum]
+    ABILITY_WOODLAND_CURSE: _ClassVar[AbilityEnum]
+    ABILITY_MALODOR: _ClassVar[AbilityEnum]
+    ABILITY_BLUR: _ClassVar[AbilityEnum]
+    ABILITY_ELUDE: _ClassVar[AbilityEnum]
+    ABILITY_DRAKE_OF_RAGE: _ClassVar[AbilityEnum]
+    ABILITY_REVERBATE: _ClassVar[AbilityEnum]
+    ABILITY_MIXED_MARTIAL_ARTS: _ClassVar[AbilityEnum]
+    ABILITY_STRATEGIC_PAUSE: _ClassVar[AbilityEnum]
+    ABILITY_OVERRULE: _ClassVar[AbilityEnum]
+    ABILITY_MENTAL_POLLUTION: _ClassVar[AbilityEnum]
+    ABILITY_MADNESS_ENHANCEMENT: _ClassVar[AbilityEnum]
+    ABILITY_TENTALOCK: _ClassVar[AbilityEnum]
+    ABILITY_SERPENT_BIND: _ClassVar[AbilityEnum]
+    ABILITY_SOUL_TAP: _ClassVar[AbilityEnum]
+    ABILITY_SCARECROW: _ClassVar[AbilityEnum]
+    ABILITY_OMINOUS_SHROUD: _ClassVar[AbilityEnum]
+    ABILITY_CHILLING_PRESENCE: _ClassVar[AbilityEnum]
+    ABILITY_FROSTBIND: _ClassVar[AbilityEnum]
+    ABILITY_GLACIAL_GHOST: _ClassVar[AbilityEnum]
+    ABILITY_TENDER_AFFECTION: _ClassVar[AbilityEnum]
+    ABILITY_WONDER_SCALE: _ClassVar[AbilityEnum]
+    ABILITY_OVERZEALOUS: _ClassVar[AbilityEnum]
+    ABILITY_STAINLESS_STEEL: _ClassVar[AbilityEnum]
+    ABILITY_TEMPORAL_RUPTURE: _ClassVar[AbilityEnum]
+    ABILITY_GRASS_FLUTE: _ClassVar[AbilityEnum]
+    ABILITY_HEMOTOXIN: _ClassVar[AbilityEnum]
+    ABILITY_HARUKAZE: _ClassVar[AbilityEnum]
+    ABILITY_TOXIC_SURGE: _ClassVar[AbilityEnum]
+    ABILITY_ATLANTIC_RULER: _ClassVar[AbilityEnum]
+    ABILITY_BIOFILM: _ClassVar[AbilityEnum]
+    ABILITY_CHOKEHOLD: _ClassVar[AbilityEnum]
+    ABILITY_GUARDIAN_COAT: _ClassVar[AbilityEnum]
+    ABILITY_NEUTRALIZING_FOG: _ClassVar[AbilityEnum]
+    ABILITY_POISON_QUILLS: _ClassVar[AbilityEnum]
+    ABILITY_DRACONIC_MIGHT: _ClassVar[AbilityEnum]
+    ABILITY_FESTIVITIES: _ClassVar[AbilityEnum]
+    ABILITY_FEY_FLIGHT: _ClassVar[AbilityEnum]
+    ABILITY_BEST_OFFENSE: _ClassVar[AbilityEnum]
+    ABILITY_IMPALER: _ClassVar[AbilityEnum]
+    ABILITY_MAGUS_BLADES: _ClassVar[AbilityEnum]
+    ABILITY_LIGHTNING_BORN: _ClassVar[AbilityEnum]
+    ABILITY_SUPERHEAVY: _ClassVar[AbilityEnum]
+    ABILITY_WORLD_SERPENT: _ClassVar[AbilityEnum]
+    ABILITY_LUCKY_WINGS: _ClassVar[AbilityEnum]
+    ABILITY_KOMODO: _ClassVar[AbilityEnum]
+    ABILITY_ENVENOM: _ClassVar[AbilityEnum]
+    ABILITY_PURPLE_HAZE: _ClassVar[AbilityEnum]
+    ABILITY_GNASHING_CANNON: _ClassVar[AbilityEnum]
+    ABILITY_HYPER_CLEANSE: _ClassVar[AbilityEnum]
+    ABILITY_MOLTEN_COAT: _ClassVar[AbilityEnum]
+    ABILITY_ROYAL_DECREE: _ClassVar[AbilityEnum]
+    ABILITY_BREEZY_NEIGH: _ClassVar[AbilityEnum]
+    ABILITY_DREAMSCAPE: _ClassVar[AbilityEnum]
+    ABILITY_HASTE_MAKES_WASTE: _ClassVar[AbilityEnum]
+    ABILITY_HUNGRY_MAWS: _ClassVar[AbilityEnum]
+    ABILITY_THERMAL_SLIDE: _ClassVar[AbilityEnum]
+    ABILITY_THERMOMANCY: _ClassVar[AbilityEnum]
+    ABILITY_CHUCKSTER: _ClassVar[AbilityEnum]
+    ABILITY_HEAT_SINK: _ClassVar[AbilityEnum]
+    ABILITY_RELIC_STONE: _ClassVar[AbilityEnum]
+    ABILITY_SUPERCELL: _ClassVar[AbilityEnum]
+    ABILITY_LIGHTNING_ASPECT: _ClassVar[AbilityEnum]
+    ABILITY_BLISTERING_SUN: _ClassVar[AbilityEnum]
+    ABILITY_MOLTEN_CORE: _ClassVar[AbilityEnum]
+    ABILITY_FIRE_ASPECT: _ClassVar[AbilityEnum]
+    ABILITY_AURORAS_GALE: _ClassVar[AbilityEnum]
+    ABILITY_ICE_PLUMES: _ClassVar[AbilityEnum]
+    ABILITY_WINTER_THRONE: _ClassVar[AbilityEnum]
+    ABILITY_ENERGY_TAP: _ClassVar[AbilityEnum]
+    ABILITY_SLUDGE_SPIT: _ClassVar[AbilityEnum]
+    ABILITY_SWAMP_THING: _ClassVar[AbilityEnum]
+    ABILITY_FROSTY_PRESCENCE: _ClassVar[AbilityEnum]
+    ABILITY_CHILLING_PELLETS: _ClassVar[AbilityEnum]
+    ABILITY_PAINT_SHOT: _ClassVar[AbilityEnum]
+    ABILITY_STONECUTTER: _ClassVar[AbilityEnum]
+    ABILITY_EDGELORD: _ClassVar[AbilityEnum]
+    ABILITY_WARMONGER: _ClassVar[AbilityEnum]
+    ABILITY_LOCUST_SWARM: _ClassVar[AbilityEnum]
+    ABILITY_REVELATION: _ClassVar[AbilityEnum]
+    ABILITY_CURSE_OF_FAMINE: _ClassVar[AbilityEnum]
+    ABILITY_CRYSTALLINE_ARMOR: _ClassVar[AbilityEnum]
+    ABILITY_SOUL_HARVEST: _ClassVar[AbilityEnum]
+    ABILITY_THICK_BLUBBER: _ClassVar[AbilityEnum]
+    ABILITY_CRAVING: _ClassVar[AbilityEnum]
+    ABILITY_RAT_KING: _ClassVar[AbilityEnum]
+    ABILITY_CRISPY_CREAM: _ClassVar[AbilityEnum]
+    ABILITY_DEEP_FRIED: _ClassVar[AbilityEnum]
+    ABILITY_FOOD_LOVERS: _ClassVar[AbilityEnum]
+    ABILITY_LUNAR_WRATH: _ClassVar[AbilityEnum]
+    ABILITY_SPYWARE: _ClassVar[AbilityEnum]
+    ABILITY_VIRUS: _ClassVar[AbilityEnum]
+    ABILITY_POWER_LEAK: _ClassVar[AbilityEnum]
+    ABILITY_BACKUP_POWER: _ClassVar[AbilityEnum]
+    ABILITY_SAND_FIEND: _ClassVar[AbilityEnum]
+    ABILITY_MOUSTACHE: _ClassVar[AbilityEnum]
+    ABILITY_DEPTH_EXPLORER: _ClassVar[AbilityEnum]
+    ABILITY_DUNE_VEIL: _ClassVar[AbilityEnum]
+    ABILITY_STRONG_FOUNDATION: _ClassVar[AbilityEnum]
+    ABILITY_FOG_MACHINE: _ClassVar[AbilityEnum]
+    ABILITY_DROP_BLOCKS: _ClassVar[AbilityEnum]
+    ABILITY_LASER_DRILL: _ClassVar[AbilityEnum]
+    ABILITY_LIGHT_SABER: _ClassVar[AbilityEnum]
+    ABILITY_LOOSE_THORNS: _ClassVar[AbilityEnum]
+    ABILITY_TURF_WAR: _ClassVar[AbilityEnum]
+    ABILITY_GREEDY: _ClassVar[AbilityEnum]
+    ABILITY_MUSICAL_NOTES: _ClassVar[AbilityEnum]
+    ABILITY_STRIKEOUT: _ClassVar[AbilityEnum]
+    ABILITY_HOME_RUN: _ClassVar[AbilityEnum]
+    ABILITY_BRUISER: _ClassVar[AbilityEnum]
+    ABILITY_NARCISSIST: _ClassVar[AbilityEnum]
+    ABILITY_LETS_DANCE: _ClassVar[AbilityEnum]
+    ABILITY_DRAGONFRUIT: _ClassVar[AbilityEnum]
+    ABILITY_LEAD_CLAWS: _ClassVar[AbilityEnum]
+    ABILITY_ROCKY_EXTERIOR: _ClassVar[AbilityEnum]
+    ABILITY_FLAWLESS_PRECISION: _ClassVar[AbilityEnum]
+    ABILITY_EMPRESS: _ClassVar[AbilityEnum]
+    ABILITY_MASHED_POTATO: _ClassVar[AbilityEnum]
+    ABILITY_TASTE_THE_RAINBOW: _ClassVar[AbilityEnum]
+    ABILITY_RAINBOW_SCALES: _ClassVar[AbilityEnum]
+    ABILITY_HYPNOTIC_TOUCH: _ClassVar[AbilityEnum]
+    ABILITY_WINGS_OF_PESTILENCE: _ClassVar[AbilityEnum]
+    ABILITY_HYDRA: _ClassVar[AbilityEnum]
+    ABILITY_SUNDAE: _ClassVar[AbilityEnum]
+    ABILITY_ICE_PICK: _ClassVar[AbilityEnum]
+    ABILITY_HAMMER_FIST: _ClassVar[AbilityEnum]
+    ABILITY_DRAKELP_HEAD: _ClassVar[AbilityEnum]
+    ABILITY_POLARITY: _ClassVar[AbilityEnum]
+    ABILITY_MACH_3: _ClassVar[AbilityEnum]
+    ABILITY_RAGING_STORM: _ClassVar[AbilityEnum]
+    ABILITY_SUMO_GUARD: _ClassVar[AbilityEnum]
+    ABILITY_SUMO_WRESTLER: _ClassVar[AbilityEnum]
+    ABILITY_COSMIC_WINGS: _ClassVar[AbilityEnum]
+    ABILITY_COSMIC_DUST: _ClassVar[AbilityEnum]
+    ABILITY_COOL_EXIT: _ClassVar[AbilityEnum]
+    ABILITY_DEVIOUS_PRESENT: _ClassVar[AbilityEnum]
+    ABILITY_CHRISTMAS_NIGHTMARE: _ClassVar[AbilityEnum]
+    ABILITY_SAP_TRAP: _ClassVar[AbilityEnum]
+    ABILITY_BARK_SKIN: _ClassVar[AbilityEnum]
+    ABILITY_CHAINSAW: _ClassVar[AbilityEnum]
+    ABILITY_GALEFORCE_WINGS: _ClassVar[AbilityEnum]
+    ABILITY_ECHOLOCATION: _ClassVar[AbilityEnum]
+    ABILITY_MASSIVE_PELT: _ClassVar[AbilityEnum]
+    ABILITY_I_AM_STEVE: _ClassVar[AbilityEnum]
+    ABILITY_TANGLED_TAILS: _ClassVar[AbilityEnum]
+    ABILITY_FOAMY_WEB: _ClassVar[AbilityEnum]
+    ABILITY_SHARP_TALONS: _ClassVar[AbilityEnum]
+    ABILITY_ZEN_GARDEN: _ClassVar[AbilityEnum]
+    ABILITY_TUMMYACHE: _ClassVar[AbilityEnum]
+    ABILITY_HYPNOTIC_TRANCE: _ClassVar[AbilityEnum]
+    ABILITY_BRAIN_OVERLOAD: _ClassVar[AbilityEnum]
+    ABILITY_BRAIN_MASS: _ClassVar[AbilityEnum]
+    ABILITY_CHESTNUT_SHIELD: _ClassVar[AbilityEnum]
+    ABILITY_CHESTNUT_AXE: _ClassVar[AbilityEnum]
+    ABILITY_GIANT_SHURIKEN: _ClassVar[AbilityEnum]
+    ABILITY_WITCH_BROOM: _ClassVar[AbilityEnum]
+    ABILITY_ANGELIC_WINGS: _ClassVar[AbilityEnum]
+    ABILITY_WRESTLE_SHOWMAN: _ClassVar[AbilityEnum]
+    ABILITY_LUCHA_LIBRE: _ClassVar[AbilityEnum]
+    ABILITY_FIRE_RULER: _ClassVar[AbilityEnum]
+    ABILITY_CHANDELIER: _ClassVar[AbilityEnum]
+    ABILITY_FOGGY_EYE: _ClassVar[AbilityEnum]
+    ABILITY_TOXIC_SHELL: _ClassVar[AbilityEnum]
+    ABILITY_HAND_BARNACLES: _ClassVar[AbilityEnum]
+    ABILITY_VOLTRON: _ClassVar[AbilityEnum]
+    ABILITY_FIRES_WRATH: _ClassVar[AbilityEnum]
+    ABILITY_EMPERORS_WRATH: _ClassVar[AbilityEnum]
+    ABILITY_LEPIDOPTERAN: _ClassVar[AbilityEnum]
+    ABILITY_BREAK_IT_DOWN: _ClassVar[AbilityEnum]
+    ABILITY_TALON_TRAP: _ClassVar[AbilityEnum]
+    ABILITY_BACKSTREET_BOY: _ClassVar[AbilityEnum]
+    ABILITY_BACKFLIP: _ClassVar[AbilityEnum]
+    ABILITY_CRUSHING_JAW: _ClassVar[AbilityEnum]
+    ABILITY_ETERNAL_FLOWER: _ClassVar[AbilityEnum]
+    ABILITY_NIHIL_BLASTER: _ClassVar[AbilityEnum]
+    ABILITY_HOLLOW_ICE_ZONE: _ClassVar[AbilityEnum]
+    ABILITY_CRYOSTASIS: _ClassVar[AbilityEnum]
+    ABILITY_OVERCAST: _ClassVar[AbilityEnum]
+    ABILITY_FLOWER_NECKLACE: _ClassVar[AbilityEnum]
+    ABILITY_MEGA_DRILL: _ClassVar[AbilityEnum]
+    ABILITY_MUCUS_MEMBRANE: _ClassVar[AbilityEnum]
+    ABILITY_RAIN_SHROUD: _ClassVar[AbilityEnum]
+    ABILITY_CURLIPEDE: _ClassVar[AbilityEnum]
+    ABILITY_STORM_CLOUD: _ClassVar[AbilityEnum]
+    ABILITY_WATERBORNE: _ClassVar[AbilityEnum]
+    ABILITY_RESILIENCE: _ClassVar[AbilityEnum]
+    ABILITY_GOING_BERSERK: _ClassVar[AbilityEnum]
+    ABILITY_THUNDER_CLOUDS: _ClassVar[AbilityEnum]
+    ABILITY_UNRELENTING: _ClassVar[AbilityEnum]
+    ABILITY_ELEMENTAL_AEGIS: _ClassVar[AbilityEnum]
+    ABILITY_AEGIS_WARD: _ClassVar[AbilityEnum]
+    ABILITY_SHATTERED_ARMOR: _ClassVar[AbilityEnum]
+    ABILITY_ACID_REFLUX: _ClassVar[AbilityEnum]
+    ABILITY_GHOST_FRENZY: _ClassVar[AbilityEnum]
+    ABILITY_SURVIVOR_BIAS: _ClassVar[AbilityEnum]
+    ABILITY_BANDIT: _ClassVar[AbilityEnum]
+    ABILITY_FORTRESS: _ClassVar[AbilityEnum]
+    ABILITY_BIRD_OF_PREY: _ClassVar[AbilityEnum]
+    ABILITY_FEATHERCOAT: _ClassVar[AbilityEnum]
+    ABILITY_POWER_OUTAGE: _ClassVar[AbilityEnum]
+    ABILITY_ELECTRO_BOOSTER: _ClassVar[AbilityEnum]
+    ABILITY_CURRENT_CRASH: _ClassVar[AbilityEnum]
+    ABILITY_DAREDEVIL: _ClassVar[AbilityEnum]
+    ABILITY_FROST_DRAGON: _ClassVar[AbilityEnum]
+    ABILITY_THERMAL_ENTROPY: _ClassVar[AbilityEnum]
+    ABILITY_SINISTER_CLAWS: _ClassVar[AbilityEnum]
+    ABILITY_PETAL_SHIELD: _ClassVar[AbilityEnum]
+    ABILITY_MOB_BOSS: _ClassVar[AbilityEnum]
+    ABILITY_GHOST_PEPPER: _ClassVar[AbilityEnum]
+    ABILITY_DROIDEKA: _ClassVar[AbilityEnum]
+    ABILITY_3_GT_1: _ClassVar[AbilityEnum]
+    ABILITY_ABOMINABLE_MONSTER: _ClassVar[AbilityEnum]
+    ABILITY_ICICLE_FIST: _ClassVar[AbilityEnum]
+    ABILITY_WIND_CHIMES: _ClassVar[AbilityEnum]
+    ABILITY_UNSTABLE_CORE: _ClassVar[AbilityEnum]
+    ABILITY_AURA_ARMOR: _ClassVar[AbilityEnum]
+    ABILITY_DEFLECT: _ClassVar[AbilityEnum]
+    ABILITY_OVERWHELMING_MIND: _ClassVar[AbilityEnum]
+    ABILITY_DUALITY: _ClassVar[AbilityEnum]
+    ABILITY_REAPERS_EMBARCE: _ClassVar[AbilityEnum]
+    ABILITY_FOUL_ENERGY: _ClassVar[AbilityEnum]
+    ABILITY_JUNGLE_FEVER: _ClassVar[AbilityEnum]
+    ABILITY_KING_OF_THE_JUNGLE: _ClassVar[AbilityEnum]
+    ABILITY_WARRIORS_SPEAR: _ClassVar[AbilityEnum]
+    ABILITY_SLEEK_SCALES: _ClassVar[AbilityEnum]
+    ABILITY_ROCK_ARMOR: _ClassVar[AbilityEnum]
+    ABILITY_SMOLDERING_WOOD: _ClassVar[AbilityEnum]
+    ABILITY_SLIME_MOLD: _ClassVar[AbilityEnum]
+ABILITY_NONE: AbilityEnum
+ABILITY_STENCH: AbilityEnum
+ABILITY_DRIZZLE: AbilityEnum
+ABILITY_SPEED_BOOST: AbilityEnum
+ABILITY_BATTLE_ARMOR: AbilityEnum
+ABILITY_STURDY: AbilityEnum
+ABILITY_DAMP: AbilityEnum
+ABILITY_LIMBER: AbilityEnum
+ABILITY_SAND_VEIL: AbilityEnum
+ABILITY_STATIC: AbilityEnum
+ABILITY_VOLT_ABSORB: AbilityEnum
+ABILITY_WATER_ABSORB: AbilityEnum
+ABILITY_OBLIVIOUS: AbilityEnum
+ABILITY_CLOUD_NINE: AbilityEnum
+ABILITY_COMPOUND_EYES: AbilityEnum
+ABILITY_INSOMNIA: AbilityEnum
+ABILITY_COLOR_CHANGE: AbilityEnum
+ABILITY_IMMUNITY: AbilityEnum
+ABILITY_FLASH_FIRE: AbilityEnum
+ABILITY_SHIELD_DUST: AbilityEnum
+ABILITY_OWN_TEMPO: AbilityEnum
+ABILITY_SUCTION_CUPS: AbilityEnum
+ABILITY_INTIMIDATE: AbilityEnum
+ABILITY_SHADOW_TAG: AbilityEnum
+ABILITY_ROUGH_SKIN: AbilityEnum
+ABILITY_WONDER_GUARD: AbilityEnum
+ABILITY_LEVITATE: AbilityEnum
+ABILITY_EFFECT_SPORE: AbilityEnum
+ABILITY_SYNCHRONIZE: AbilityEnum
+ABILITY_CLEAR_BODY: AbilityEnum
+ABILITY_NATURAL_CURE: AbilityEnum
+ABILITY_LIGHTNING_ROD: AbilityEnum
+ABILITY_SERENE_GRACE: AbilityEnum
+ABILITY_SWIFT_SWIM: AbilityEnum
+ABILITY_CHLOROPHYLL: AbilityEnum
+ABILITY_ILLUMINATE: AbilityEnum
+ABILITY_TRACE: AbilityEnum
+ABILITY_HUGE_POWER: AbilityEnum
+ABILITY_POISON_POINT: AbilityEnum
+ABILITY_INNER_FOCUS: AbilityEnum
+ABILITY_MAGMA_ARMOR: AbilityEnum
+ABILITY_WATER_VEIL: AbilityEnum
+ABILITY_MAGNET_PULL: AbilityEnum
+ABILITY_SOUNDPROOF: AbilityEnum
+ABILITY_RAIN_DISH: AbilityEnum
+ABILITY_SAND_STREAM: AbilityEnum
+ABILITY_PRESSURE: AbilityEnum
+ABILITY_THICK_FAT: AbilityEnum
+ABILITY_EARLY_BIRD: AbilityEnum
+ABILITY_FLAME_BODY: AbilityEnum
+ABILITY_RUN_AWAY: AbilityEnum
+ABILITY_KEEN_EYE: AbilityEnum
+ABILITY_HYPER_CUTTER: AbilityEnum
+ABILITY_PICKUP: AbilityEnum
+ABILITY_TRUANT: AbilityEnum
+ABILITY_HUSTLE: AbilityEnum
+ABILITY_CUTE_CHARM: AbilityEnum
+ABILITY_PLUS: AbilityEnum
+ABILITY_MINUS: AbilityEnum
+ABILITY_FORECAST: AbilityEnum
+ABILITY_STICKY_HOLD: AbilityEnum
+ABILITY_SHED_SKIN: AbilityEnum
+ABILITY_GUTS: AbilityEnum
+ABILITY_MARVEL_SCALE: AbilityEnum
+ABILITY_LIQUID_OOZE: AbilityEnum
+ABILITY_OVERGROW: AbilityEnum
+ABILITY_BLAZE: AbilityEnum
+ABILITY_TORRENT: AbilityEnum
+ABILITY_SWARM: AbilityEnum
+ABILITY_ROCK_HEAD: AbilityEnum
+ABILITY_DROUGHT: AbilityEnum
+ABILITY_ARENA_TRAP: AbilityEnum
+ABILITY_VITAL_SPIRIT: AbilityEnum
+ABILITY_WHITE_SMOKE: AbilityEnum
+ABILITY_PURE_POWER: AbilityEnum
+ABILITY_SHELL_ARMOR: AbilityEnum
+ABILITY_AIR_LOCK: AbilityEnum
+ABILITY_TANGLED_FEET: AbilityEnum
+ABILITY_MOTOR_DRIVE: AbilityEnum
+ABILITY_RIVALRY: AbilityEnum
+ABILITY_STEADFAST: AbilityEnum
+ABILITY_SNOW_CLOAK: AbilityEnum
+ABILITY_GLUTTONY: AbilityEnum
+ABILITY_ANGER_POINT: AbilityEnum
+ABILITY_UNBURDEN: AbilityEnum
+ABILITY_HEATPROOF: AbilityEnum
+ABILITY_SIMPLE: AbilityEnum
+ABILITY_DRY_SKIN: AbilityEnum
+ABILITY_DOWNLOAD: AbilityEnum
+ABILITY_IRON_FIST: AbilityEnum
+ABILITY_POISON_HEAL: AbilityEnum
+ABILITY_ADAPTABILITY: AbilityEnum
+ABILITY_SKILL_LINK: AbilityEnum
+ABILITY_HYDRATION: AbilityEnum
+ABILITY_SOLAR_POWER: AbilityEnum
+ABILITY_QUICK_FEET: AbilityEnum
+ABILITY_NORMALIZE: AbilityEnum
+ABILITY_SNIPER: AbilityEnum
+ABILITY_MAGIC_GUARD: AbilityEnum
+ABILITY_NO_GUARD: AbilityEnum
+ABILITY_STALL: AbilityEnum
+ABILITY_TECHNICIAN: AbilityEnum
+ABILITY_LEAF_GUARD: AbilityEnum
+ABILITY_KLUTZ: AbilityEnum
+ABILITY_MOLD_BREAKER: AbilityEnum
+ABILITY_SUPER_LUCK: AbilityEnum
+ABILITY_AFTERMATH: AbilityEnum
+ABILITY_ANTICIPATION: AbilityEnum
+ABILITY_FOREWARN: AbilityEnum
+ABILITY_UNAWARE: AbilityEnum
+ABILITY_TINTED_LENS: AbilityEnum
+ABILITY_FILTER: AbilityEnum
+ABILITY_SLOW_START: AbilityEnum
+ABILITY_SCRAPPY: AbilityEnum
+ABILITY_STORM_DRAIN: AbilityEnum
+ABILITY_ICE_BODY: AbilityEnum
+ABILITY_SOLID_ROCK: AbilityEnum
+ABILITY_SNOW_WARNING: AbilityEnum
+ABILITY_HONEY_GATHER: AbilityEnum
+ABILITY_FRISK: AbilityEnum
+ABILITY_RECKLESS: AbilityEnum
+ABILITY_MULTITYPE: AbilityEnum
+ABILITY_FLOWER_GIFT: AbilityEnum
+ABILITY_BAD_DREAMS: AbilityEnum
+ABILITY_PICKPOCKET: AbilityEnum
+ABILITY_SHEER_FORCE: AbilityEnum
+ABILITY_CONTRARY: AbilityEnum
+ABILITY_UNNERVE: AbilityEnum
+ABILITY_DEFIANT: AbilityEnum
+ABILITY_DEFEATIST: AbilityEnum
+ABILITY_CURSED_BODY: AbilityEnum
+ABILITY_HEALER: AbilityEnum
+ABILITY_FRIEND_GUARD: AbilityEnum
+ABILITY_WEAK_ARMOR: AbilityEnum
+ABILITY_HEAVY_METAL: AbilityEnum
+ABILITY_LIGHT_METAL: AbilityEnum
+ABILITY_MULTISCALE: AbilityEnum
+ABILITY_TOXIC_BOOST: AbilityEnum
+ABILITY_FLARE_BOOST: AbilityEnum
+ABILITY_HARVEST: AbilityEnum
+ABILITY_TELEPATHY: AbilityEnum
+ABILITY_MOODY: AbilityEnum
+ABILITY_OVERCOAT: AbilityEnum
+ABILITY_POISON_TOUCH: AbilityEnum
+ABILITY_REGENERATOR: AbilityEnum
+ABILITY_BIG_PECKS: AbilityEnum
+ABILITY_SAND_RUSH: AbilityEnum
+ABILITY_WONDER_SKIN: AbilityEnum
+ABILITY_ANALYTIC: AbilityEnum
+ABILITY_ILLUSION: AbilityEnum
+ABILITY_IMPOSTER: AbilityEnum
+ABILITY_INFILTRATOR: AbilityEnum
+ABILITY_MUMMY: AbilityEnum
+ABILITY_MOXIE: AbilityEnum
+ABILITY_JUSTIFIED: AbilityEnum
+ABILITY_RATTLED: AbilityEnum
+ABILITY_MAGIC_BOUNCE: AbilityEnum
+ABILITY_SAP_SIPPER: AbilityEnum
+ABILITY_PRANKSTER: AbilityEnum
+ABILITY_SAND_FORCE: AbilityEnum
+ABILITY_IRON_BARBS: AbilityEnum
+ABILITY_ZEN_MODE: AbilityEnum
+ABILITY_VICTORY_STAR: AbilityEnum
+ABILITY_TURBOBLAZE: AbilityEnum
+ABILITY_TERAVOLT: AbilityEnum
+ABILITY_AROMA_VEIL: AbilityEnum
+ABILITY_FLOWER_VEIL: AbilityEnum
+ABILITY_CHEEK_POUCH: AbilityEnum
+ABILITY_PROTEAN: AbilityEnum
+ABILITY_FUR_COAT: AbilityEnum
+ABILITY_MAGICIAN: AbilityEnum
+ABILITY_BULLETPROOF: AbilityEnum
+ABILITY_COMPETITIVE: AbilityEnum
+ABILITY_STRONG_JAW: AbilityEnum
+ABILITY_REFRIGERATE: AbilityEnum
+ABILITY_SWEET_VEIL: AbilityEnum
+ABILITY_STANCE_CHANGE: AbilityEnum
+ABILITY_GALE_WINGS: AbilityEnum
+ABILITY_MEGA_LAUNCHER: AbilityEnum
+ABILITY_GRASS_PELT: AbilityEnum
+ABILITY_SYMBIOSIS: AbilityEnum
+ABILITY_TOUGH_CLAWS: AbilityEnum
+ABILITY_PIXILATE: AbilityEnum
+ABILITY_GOOEY: AbilityEnum
+ABILITY_AERILATE: AbilityEnum
+ABILITY_PARENTAL_BOND: AbilityEnum
+ABILITY_DARK_AURA: AbilityEnum
+ABILITY_FAIRY_AURA: AbilityEnum
+ABILITY_AURA_BREAK: AbilityEnum
+ABILITY_PRIMORDIAL_SEA: AbilityEnum
+ABILITY_DESOLATE_LAND: AbilityEnum
+ABILITY_DELTA_STREAM: AbilityEnum
+ABILITY_STAMINA: AbilityEnum
+ABILITY_WIMP_OUT: AbilityEnum
+ABILITY_EMERGENCY_EXIT: AbilityEnum
+ABILITY_WATER_COMPACTION: AbilityEnum
+ABILITY_MERCILESS: AbilityEnum
+ABILITY_SHIELDS_DOWN: AbilityEnum
+ABILITY_STAKEOUT: AbilityEnum
+ABILITY_WATER_BUBBLE: AbilityEnum
+ABILITY_STEELWORKER: AbilityEnum
+ABILITY_BERSERK: AbilityEnum
+ABILITY_SLUSH_RUSH: AbilityEnum
+ABILITY_LONG_REACH: AbilityEnum
+ABILITY_LIQUID_VOICE: AbilityEnum
+ABILITY_TRIAGE: AbilityEnum
+ABILITY_GALVANIZE: AbilityEnum
+ABILITY_SURGE_SURFER: AbilityEnum
+ABILITY_SCHOOLING: AbilityEnum
+ABILITY_DISGUISE: AbilityEnum
+ABILITY_BATTLE_BOND: AbilityEnum
+ABILITY_POWER_CONSTRUCT: AbilityEnum
+ABILITY_CORROSION: AbilityEnum
+ABILITY_COMATOSE: AbilityEnum
+ABILITY_QUEENLY_MAJESTY: AbilityEnum
+ABILITY_INNARDS_OUT: AbilityEnum
+ABILITY_DANCER: AbilityEnum
+ABILITY_BATTERY: AbilityEnum
+ABILITY_FLUFFY: AbilityEnum
+ABILITY_DAZZLING: AbilityEnum
+ABILITY_SOUL_HEART: AbilityEnum
+ABILITY_TANGLING_HAIR: AbilityEnum
+ABILITY_RECEIVER: AbilityEnum
+ABILITY_POWER_OF_ALCHEMY: AbilityEnum
+ABILITY_BEAST_BOOST: AbilityEnum
+ABILITY_RKS_SYSTEM: AbilityEnum
+ABILITY_ELECTRIC_SURGE: AbilityEnum
+ABILITY_PSYCHIC_SURGE: AbilityEnum
+ABILITY_MISTY_SURGE: AbilityEnum
+ABILITY_GRASSY_SURGE: AbilityEnum
+ABILITY_FULL_METAL_BODY: AbilityEnum
+ABILITY_SHADOW_SHIELD: AbilityEnum
+ABILITY_PRISM_ARMOR: AbilityEnum
+ABILITY_NEUROFORCE: AbilityEnum
+ABILITY_INTREPID_SWORD: AbilityEnum
+ABILITY_DAUNTLESS_SHIELD: AbilityEnum
+ABILITY_LIBERO: AbilityEnum
+ABILITY_BALL_FETCH: AbilityEnum
+ABILITY_COTTON_DOWN: AbilityEnum
+ABILITY_PROPELLER_TAIL: AbilityEnum
+ABILITY_MIRROR_ARMOR: AbilityEnum
+ABILITY_GULP_MISSILE: AbilityEnum
+ABILITY_STALWART: AbilityEnum
+ABILITY_STEAM_ENGINE: AbilityEnum
+ABILITY_PUNK_ROCK: AbilityEnum
+ABILITY_SAND_SPIT: AbilityEnum
+ABILITY_ICE_SCALES: AbilityEnum
+ABILITY_RIPEN: AbilityEnum
+ABILITY_ICE_FACE: AbilityEnum
+ABILITY_POWER_SPOT: AbilityEnum
+ABILITY_MIMICRY: AbilityEnum
+ABILITY_SCREEN_CLEANER: AbilityEnum
+ABILITY_STEELY_SPIRIT: AbilityEnum
+ABILITY_PERISH_BODY: AbilityEnum
+ABILITY_WANDERING_SPIRIT: AbilityEnum
+ABILITY_GORILLA_TACTICS: AbilityEnum
+ABILITY_NEUTRALIZING_GAS: AbilityEnum
+ABILITY_PASTEL_VEIL: AbilityEnum
+ABILITY_HUNGER_SWITCH: AbilityEnum
+ABILITY_QUICK_DRAW: AbilityEnum
+ABILITY_UNSEEN_FIST: AbilityEnum
+ABILITY_CURIOUS_MEDICINE: AbilityEnum
+ABILITY_TRANSISTOR: AbilityEnum
+ABILITY_DRAGONS_MAW: AbilityEnum
+ABILITY_CHILLING_NEIGH: AbilityEnum
+ABILITY_GRIM_NEIGH: AbilityEnum
+ABILITY_AS_ONE_ICE_RIDER: AbilityEnum
+ABILITY_AS_ONE_SHADOW_RIDER: AbilityEnum
+ABILITY_CHLOROPLAST: AbilityEnum
+ABILITY_WHITEOUT: AbilityEnum
+ABILITY_PYROMANCY: AbilityEnum
+ABILITY_KEEN_EDGE: AbilityEnum
+ABILITY_PRISM_SCALES: AbilityEnum
+ABILITY_POWER_FISTS: AbilityEnum
+ABILITY_SAND_SONG: AbilityEnum
+ABILITY_RAMPAGE: AbilityEnum
+ABILITY_VENGEANCE: AbilityEnum
+ABILITY_BLITZ_BOXER: AbilityEnum
+ABILITY_ANTARCTIC_BIRD: AbilityEnum
+ABILITY_IMMOLATE: AbilityEnum
+ABILITY_CRYSTALLIZE: AbilityEnum
+ABILITY_ELECTROCYTES: AbilityEnum
+ABILITY_AERODYNAMICS: AbilityEnum
+ABILITY_CHRISTMAS_SPIRIT: AbilityEnum
+ABILITY_EXPLOIT_WEAKNESS: AbilityEnum
+ABILITY_GROUND_SHOCK: AbilityEnum
+ABILITY_ANCIENT_IDOL: AbilityEnum
+ABILITY_MYSTIC_POWER: AbilityEnum
+ABILITY_PERFECTIONIST: AbilityEnum
+ABILITY_GROWING_TOOTH: AbilityEnum
+ABILITY_INFLATABLE: AbilityEnum
+ABILITY_AURORA_BOREALIS: AbilityEnum
+ABILITY_AVENGER: AbilityEnum
+ABILITY_LETS_ROLL: AbilityEnum
+ABILITY_AQUATIC: AbilityEnum
+ABILITY_LOUD_BANG: AbilityEnum
+ABILITY_LEAD_COAT: AbilityEnum
+ABILITY_AMPHIBIOUS: AbilityEnum
+ABILITY_GROUNDED: AbilityEnum
+ABILITY_EARTHBOUND: AbilityEnum
+ABILITY_FIGHT_SPIRIT: AbilityEnum
+ABILITY_FELINE_PROWESS: AbilityEnum
+ABILITY_COIL_UP: AbilityEnum
+ABILITY_FOSSILIZED: AbilityEnum
+ABILITY_MAGICAL_DUST: AbilityEnum
+ABILITY_DREAMCATCHER: AbilityEnum
+ABILITY_NOCTURNAL: AbilityEnum
+ABILITY_SELF_SUFFICIENT: AbilityEnum
+ABILITY_TECTONIZE: AbilityEnum
+ABILITY_ICE_AGE: AbilityEnum
+ABILITY_HALF_DRAKE: AbilityEnum
+ABILITY_LIQUIFIED: AbilityEnum
+ABILITY_DRAGONFLY: AbilityEnum
+ABILITY_DRAGONSLAYER: AbilityEnum
+ABILITY_MOUNTAINEER: AbilityEnum
+ABILITY_HYDRATE: AbilityEnum
+ABILITY_METALLIC: AbilityEnum
+ABILITY_PERMAFROST: AbilityEnum
+ABILITY_PRIMAL_ARMOR: AbilityEnum
+ABILITY_RAGING_BOXER: AbilityEnum
+ABILITY_AIR_BLOWER: AbilityEnum
+ABILITY_JUGGERNAUT: AbilityEnum
+ABILITY_SHORT_CIRCUIT: AbilityEnum
+ABILITY_MAJESTIC_BIRD: AbilityEnum
+ABILITY_PHANTOM: AbilityEnum
+ABILITY_INTOXICATE: AbilityEnum
+ABILITY_IMPENETRABLE: AbilityEnum
+ABILITY_HYPNOTIST: AbilityEnum
+ABILITY_OVERWHELM: AbilityEnum
+ABILITY_SCARE: AbilityEnum
+ABILITY_MAJESTIC_MOTH: AbilityEnum
+ABILITY_SOUL_EATER: AbilityEnum
+ABILITY_SOUL_LINKER: AbilityEnum
+ABILITY_SWEET_DREAMS: AbilityEnum
+ABILITY_BAD_LUCK: AbilityEnum
+ABILITY_HAUNTED_SPIRIT: AbilityEnum
+ABILITY_ELECTRIC_BURST: AbilityEnum
+ABILITY_RAW_WOOD: AbilityEnum
+ABILITY_SOLENOGLYPHS: AbilityEnum
+ABILITY_SPIDER_LAIR: AbilityEnum
+ABILITY_FATAL_PRECISION: AbilityEnum
+ABILITY_FORT_KNOX: AbilityEnum
+ABILITY_SEAWEED: AbilityEnum
+ABILITY_PSYCHIC_MIND: AbilityEnum
+ABILITY_POISON_ABSORB: AbilityEnum
+ABILITY_SCAVENGER: AbilityEnum
+ABILITY_TWISTED_DIMENSION: AbilityEnum
+ABILITY_MULTI_HEADED: AbilityEnum
+ABILITY_NORTH_WIND: AbilityEnum
+ABILITY_OVERCHARGE: AbilityEnum
+ABILITY_VIOLENT_RUSH: AbilityEnum
+ABILITY_FLAMING_SOUL: AbilityEnum
+ABILITY_SAGE_POWER: AbilityEnum
+ABILITY_BONE_ZONE: AbilityEnum
+ABILITY_WEATHER_CONTROL: AbilityEnum
+ABILITY_SPEED_FORCE: AbilityEnum
+ABILITY_SEA_GUARDIAN: AbilityEnum
+ABILITY_MOLTEN_DOWN: AbilityEnum
+ABILITY_HYPER_AGGRESSIVE: AbilityEnum
+ABILITY_FLOCK: AbilityEnum
+ABILITY_FIELD_EXPLORER: AbilityEnum
+ABILITY_STRIKER: AbilityEnum
+ABILITY_FROZEN_SOUL: AbilityEnum
+ABILITY_PREDATOR: AbilityEnum
+ABILITY_LOOTER: AbilityEnum
+ABILITY_LUNAR_ECLIPSE: AbilityEnum
+ABILITY_SOLAR_FLARE: AbilityEnum
+ABILITY_POWER_CORE: AbilityEnum
+ABILITY_SIGHTING_SYSTEM: AbilityEnum
+ABILITY_BAD_COMPANY: AbilityEnum
+ABILITY_OPPORTUNIST: AbilityEnum
+ABILITY_GIANT_WINGS: AbilityEnum
+ABILITY_MOMENTUM: AbilityEnum
+ABILITY_GRIP_PINCER: AbilityEnum
+ABILITY_BIG_LEAVES: AbilityEnum
+ABILITY_PRECISE_FIST: AbilityEnum
+ABILITY_DEADEYE: AbilityEnum
+ABILITY_ARTILLERY: AbilityEnum
+ABILITY_AMPLIFIER: AbilityEnum
+ABILITY_ICE_DEW: AbilityEnum
+ABILITY_SUN_WORSHIP: AbilityEnum
+ABILITY_POLLINATE: AbilityEnum
+ABILITY_VOLCANO_RAGE: AbilityEnum
+ABILITY_COLD_REBOUND: AbilityEnum
+ABILITY_LOW_BLOW: AbilityEnum
+ABILITY_NOSFERATU: AbilityEnum
+ABILITY_SPECTRAL_SHROUD: AbilityEnum
+ABILITY_DISCIPLINE: AbilityEnum
+ABILITY_THUNDERCALL: AbilityEnum
+ABILITY_MARINE_APEX: AbilityEnum
+ABILITY_MIGHTY_HORN: AbilityEnum
+ABILITY_HARDENED_SHEATH: AbilityEnum
+ABILITY_ARCTIC_FUR: AbilityEnum
+ABILITY_SPECTRALIZE: AbilityEnum
+ABILITY_LETHARGY: AbilityEnum
+ABILITY_IRON_BARRAGE: AbilityEnum
+ABILITY_STEEL_BARREL: AbilityEnum
+ABILITY_PYRO_SHELLS: AbilityEnum
+ABILITY_FUNGAL_INFECTION: AbilityEnum
+ABILITY_PARRY: AbilityEnum
+ABILITY_SCRAPYARD: AbilityEnum
+ABILITY_LOOSE_QUILLS: AbilityEnum
+ABILITY_TOXIC_DEBRIS: AbilityEnum
+ABILITY_ROUNDHOUSE: AbilityEnum
+ABILITY_MINERALIZE: AbilityEnum
+ABILITY_LOOSE_ROCKS: AbilityEnum
+ABILITY_SPINNING_TOP: AbilityEnum
+ABILITY_RETRIBUTION_BLOW: AbilityEnum
+ABILITY_FEARMONGER: AbilityEnum
+ABILITY_KINGS_WRATH: AbilityEnum
+ABILITY_QUEENS_MOURNING: AbilityEnum
+ABILITY_TOXIC_SPILL: AbilityEnum
+ABILITY_DESERT_CLOAK: AbilityEnum
+ABILITY_DRACONIZE: AbilityEnum
+ABILITY_PRETTY_PRINCESS: AbilityEnum
+ABILITY_SELF_REPAIR: AbilityEnum
+ABILITY_ATOMIC_BURST: AbilityEnum
+ABILITY_HELLBLAZE: AbilityEnum
+ABILITY_RIPTIDE: AbilityEnum
+ABILITY_FOREST_RAGE: AbilityEnum
+ABILITY_PRIMAL_MAW: AbilityEnum
+ABILITY_SWEEPING_EDGE: AbilityEnum
+ABILITY_GIFTED_MIND: AbilityEnum
+ABILITY_HYDRO_CIRCUIT: AbilityEnum
+ABILITY_EQUINOX: AbilityEnum
+ABILITY_ABSORBANT: AbilityEnum
+ABILITY_CLUELESS: AbilityEnum
+ABILITY_CHEATING_DEATH: AbilityEnum
+ABILITY_CHEAP_TACTICS: AbilityEnum
+ABILITY_COWARD: AbilityEnum
+ABILITY_VOLT_RUSH: AbilityEnum
+ABILITY_DUNE_TERROR: AbilityEnum
+ABILITY_INFERNAL_RAGE: AbilityEnum
+ABILITY_DUAL_WIELD: AbilityEnum
+ABILITY_ELEMENTAL_CHARGE: AbilityEnum
+ABILITY_AMBUSH: AbilityEnum
+ABILITY_ATLAS: AbilityEnum
+ABILITY_RADIANCE: AbilityEnum
+ABILITY_JAWS_OF_CARNAGE: AbilityEnum
+ABILITY_ANGELS_WRATH: AbilityEnum
+ABILITY_PRISMATIC_FUR: AbilityEnum
+ABILITY_SHOCKING_JAWS: AbilityEnum
+ABILITY_FAE_HUNTER: AbilityEnum
+ABILITY_GRAVITY_WELL: AbilityEnum
+ABILITY_EVAPORATE: AbilityEnum
+ABILITY_LUMBERJACK: AbilityEnum
+ABILITY_WELL_BAKED_BODY: AbilityEnum
+ABILITY_FURNACE: AbilityEnum
+ABILITY_ELECTROMORPHOSIS: AbilityEnum
+ABILITY_ROCKY_PAYLOAD: AbilityEnum
+ABILITY_EARTH_EATER: AbilityEnum
+ABILITY_LINGERING_AROMA: AbilityEnum
+ABILITY_FAIRY_TALE: AbilityEnum
+ABILITY_RAGING_MOTH: AbilityEnum
+ABILITY_ADRENALINE_RUSH: AbilityEnum
+ABILITY_ARCHMAGE: AbilityEnum
+ABILITY_CRYOMANCY: AbilityEnum
+ABILITY_PHANTOM_PAIN: AbilityEnum
+ABILITY_PURGATORY: AbilityEnum
+ABILITY_EMANATE: AbilityEnum
+ABILITY_KUNOICHI_BLADE: AbilityEnum
+ABILITY_MONKEY_BUSINESS: AbilityEnum
+ABILITY_COMBAT_SPECIALIST: AbilityEnum
+ABILITY_JUNGLES_GUARD: AbilityEnum
+ABILITY_HUNTERS_HORN: AbilityEnum
+ABILITY_PIXIE_POWER: AbilityEnum
+ABILITY_PLASMA_LAMP: AbilityEnum
+ABILITY_MAGMA_EATER: AbilityEnum
+ABILITY_SUPER_HOT_GOO: AbilityEnum
+ABILITY_NIKA: AbilityEnum
+ABILITY_ARCHER: AbilityEnum
+ABILITY_COLD_PLASMA: AbilityEnum
+ABILITY_SUPER_SLAMMER: AbilityEnum
+ABILITY_INVERSE_ROOM: AbilityEnum
+ABILITY_ACCELERATE: AbilityEnum
+ABILITY_FROST_BURN: AbilityEnum
+ABILITY_ITCHY_DEFENSE: AbilityEnum
+ABILITY_GENERATOR: AbilityEnum
+ABILITY_MOON_SPIRIT: AbilityEnum
+ABILITY_DUST_CLOUD: AbilityEnum
+ABILITY_BERSERKER_RAGE: AbilityEnum
+ABILITY_TRICKSTER: AbilityEnum
+ABILITY_SAND_GUARD: AbilityEnum
+ABILITY_NATURAL_RECOVERY: AbilityEnum
+ABILITY_WIND_RIDER: AbilityEnum
+ABILITY_SOOTHING_AROMA: AbilityEnum
+ABILITY_PRIM_AND_PROPER: AbilityEnum
+ABILITY_SUPER_STRAIN: AbilityEnum
+ABILITY_TIPPING_POINT: AbilityEnum
+ABILITY_ENLIGHTENED: AbilityEnum
+ABILITY_PEACEFUL_SLUMBER: AbilityEnum
+ABILITY_AFTERSHOCK: AbilityEnum
+ABILITY_FREEZING_POINT: AbilityEnum
+ABILITY_CRYO_PROFICIENCY: AbilityEnum
+ABILITY_ARCANE_FORCE: AbilityEnum
+ABILITY_DOOMBRINGER: AbilityEnum
+ABILITY_WISHMAKER: AbilityEnum
+ABILITY_YUKI_ONNA: AbilityEnum
+ABILITY_SUPPRESS: AbilityEnum
+ABILITY_REFRIGERATOR: AbilityEnum
+ABILITY_HEAVEN_ASUNDER: AbilityEnum
+ABILITY_PURIFYING_WATERS: AbilityEnum
+ABILITY_SEABORNE: AbilityEnum
+ABILITY_HIGH_TIDE: AbilityEnum
+ABILITY_CHANGE_OF_HEART: AbilityEnum
+ABILITY_MYSTIC_BLADES: AbilityEnum
+ABILITY_DETERMINATION: AbilityEnum
+ABILITY_FERTILIZE: AbilityEnum
+ABILITY_PURE_LOVE: AbilityEnum
+ABILITY_FIGHTER: AbilityEnum
+ABILITY_MYCELIUM_MIGHT: AbilityEnum
+ABILITY_TELEKINETIC: AbilityEnum
+ABILITY_COMBUSTION: AbilityEnum
+ABILITY_PONY_POWER: AbilityEnum
+ABILITY_POWDER_BURST: AbilityEnum
+ABILITY_RETRIEVER: AbilityEnum
+ABILITY_MONSTER_MASH: AbilityEnum
+ABILITY_TWO_STEP: AbilityEnum
+ABILITY_SPITEFUL: AbilityEnum
+ABILITY_FORTITUDE: AbilityEnum
+ABILITY_DEVOURER: AbilityEnum
+ABILITY_PHANTOM_THIEF: AbilityEnum
+ABILITY_EARLY_GRAVE: AbilityEnum
+ABILITY_GRAPPLER: AbilityEnum
+ABILITY_BASS_BOOSTED: AbilityEnum
+ABILITY_FLAMING_JAWS: AbilityEnum
+ABILITY_MONSTER_HUNTER: AbilityEnum
+ABILITY_CROWNED_SWORD: AbilityEnum
+ABILITY_CROWNED_SHIELD: AbilityEnum
+ABILITY_BERSERK_DNA: AbilityEnum
+ABILITY_CROWNED_KING: AbilityEnum
+ABILITY_SNAP_TRAP_WHEN_HIT: AbilityEnum
+ABILITY_PERMANENCE: AbilityEnum
+ABILITY_HUBRIS: AbilityEnum
+ABILITY_COSMIC_DAZE: AbilityEnum
+ABILITY_MINDS_EYE: AbilityEnum
+ABILITY_BLOOD_PRICE: AbilityEnum
+ABILITY_SPIKE_ARMOR: AbilityEnum
+ABILITY_VOODOO_POWER: AbilityEnum
+ABILITY_CHROME_COAT: AbilityEnum
+ABILITY_BANSHEE: AbilityEnum
+ABILITY_WEB_SPINNER: AbilityEnum
+ABILITY_SHOWDOWN_MODE: AbilityEnum
+ABILITY_SEED_SOWER: AbilityEnum
+ABILITY_AIRBORNE: AbilityEnum
+ABILITY_PARROTING: AbilityEnum
+ABILITY_SALT_CIRCLE: AbilityEnum
+ABILITY_PURIFYING_SALT: AbilityEnum
+ABILITY_PROTOSYNTHESIS: AbilityEnum
+ABILITY_QUARK_DRIVE: AbilityEnum
+ABILITY_WIND_POWER: AbilityEnum
+ABILITY_IMPULSE: AbilityEnum
+ABILITY_TERMINAL_VELOCITY: AbilityEnum
+ABILITY_GUARD_DOG: AbilityEnum
+ABILITY_ANGER_SHELL: AbilityEnum
+ABILITY_EGOIST: AbilityEnum
+ABILITY_SUBDUE: AbilityEnum
+ABILITY_READIED_ACTION: AbilityEnum
+ABILITY_DARK_GALE_WINGS: AbilityEnum
+ABILITY_GUILT_TRIP: AbilityEnum
+ABILITY_WATER_GALE_WINGS: AbilityEnum
+ABILITY_ZERO_TO_HERO: AbilityEnum
+ABILITY_COSTAR: AbilityEnum
+ABILITY_COMMANDER: AbilityEnum
+ABILITY_EJECT_PACK_ABILITY: AbilityEnum
+ABILITY_VENGEFUL_SPIRIT: AbilityEnum
+ABILITY_CUD_CHEW: AbilityEnum
+ABILITY_ARMOR_TAIL: AbilityEnum
+ABILITY_MIND_CRUSH: AbilityEnum
+ABILITY_SUPREME_OVERLORD: AbilityEnum
+ABILITY_ILL_WILL: AbilityEnum
+ABILITY_FIRE_SCALES: AbilityEnum
+ABILITY_WATCH_YOUR_STEP: AbilityEnum
+ABILITY_RAPID_RESPONSE: AbilityEnum
+ABILITY_DOUBLE_IRON_BARBS: AbilityEnum
+ABILITY_THERMAL_EXCHANGE: AbilityEnum
+ABILITY_GOOD_AS_GOLD: AbilityEnum
+ABILITY_SHARING_IS_CARING: AbilityEnum
+ABILITY_TABLETS_OF_RUIN: AbilityEnum
+ABILITY_SWORD_OF_RUIN: AbilityEnum
+ABILITY_VESSEL_OF_RUIN: AbilityEnum
+ABILITY_BEADS_OF_RUIN: AbilityEnum
+ABILITY_PERMAFROST_CLONE: AbilityEnum
+ABILITY_GALLANTRY: AbilityEnum
+ABILITY_ORICHALCUM_PULSE: AbilityEnum
+ABILITY_SUN_BASKING: AbilityEnum
+ABILITY_WINGED_KING: AbilityEnum
+ABILITY_HADRON_ENGINE: AbilityEnum
+ABILITY_IRON_SERPENT: AbilityEnum
+ABILITY_WEATHER_DOUBLE_BOOST: AbilityEnum
+ABILITY_SWEEPING_EDGE_PLUS: AbilityEnum
+ABILITY_CELESTIAL_BLESSING: AbilityEnum
+ABILITY_MINION_CONTROL: AbilityEnum
+ABILITY_MOLTEN_BLADES: AbilityEnum
+ABILITY_HAUNTING_FRENZY: AbilityEnum
+ABILITY_NOISE_CANCEL: AbilityEnum
+ABILITY_RADIO_JAM: AbilityEnum
+ABILITY_OLE: AbilityEnum
+ABILITY_MALICIOUS: AbilityEnum
+ABILITY_DEAD_POWER: AbilityEnum
+ABILITY_BRAWLING_WYVERN: AbilityEnum
+ABILITY_MYTHICAL_ARROWS: AbilityEnum
+ABILITY_LAWNMOWER: AbilityEnum
+ABILITY_FLOURISH: AbilityEnum
+ABILITY_DESERT_SPIRIT: AbilityEnum
+ABILITY_CONTEMPT: AbilityEnum
+ABILITY_AERIALIST: AbilityEnum
+ABILITY_TERA_SHELL: AbilityEnum
+ABILITY_TOXIC_CHAIN: AbilityEnum
+ABILITY_PARASITIC_SPORES: AbilityEnum
+ABILITY_POISON_PUPPETEER: AbilityEnum
+ABILITY_ENTRANCE: AbilityEnum
+ABILITY_REJECTION: AbilityEnum
+ABILITY_APPLE_ENLIGHTENMENT: AbilityEnum
+ABILITY_BALLOON_BOMBER: AbilityEnum
+ABILITY_FLAMING_MAW: AbilityEnum
+ABILITY_DEMOLITIONIST: AbilityEnum
+ABILITY_ROCKHARD_WILL: AbilityEnum
+ABILITY_FRAGRANT_DAZE: AbilityEnum
+ABILITY_LOW_VISIBILITY: AbilityEnum
+ABILITY_OLD_MARINER: AbilityEnum
+ABILITY_ECTOPLASM: AbilityEnum
+ABILITY_BEAUTIFUL_MUSIC: AbilityEnum
+ABILITY_SURPRISE: AbilityEnum
+ABILITY_SNOW_SONG: AbilityEnum
+ABILITY_GREATER_SPIRIT: AbilityEnum
+ABILITY_RESONANCE: AbilityEnum
+ABILITY_ETHEREAL_RUSH: AbilityEnum
+ABILITY_CUTE_ANTECEDENCE: AbilityEnum
+ABILITY_RECURRING_NIGHTMARE: AbilityEnum
+ABILITY_MENACING_SITUATION: AbilityEnum
+ABILITY_SHINY_LIGHTNING: AbilityEnum
+ABILITY_TERRIFY: AbilityEnum
+ABILITY_ICE_DOWNFALL: AbilityEnum
+ABILITY_LAST_STAND: AbilityEnum
+ABILITY_PYROCLASTIC_FLOW: AbilityEnum
+ABILITY_BLOOD_BATH: AbilityEnum
+ABILITY_BATTLE_AURA: AbilityEnum
+ABILITY_BLOODLUST: AbilityEnum
+ABILITY_PIERCING_SOLO: AbilityEnum
+ABILITY_RHYTHMIC: AbilityEnum
+ABILITY_CHUNKY_BASS_LINE: AbilityEnum
+ABILITY_DUAL_HAMMER: AbilityEnum
+ABILITY_DENTING_BLOWS: AbilityEnum
+ABILITY_ICE_COLD_HUNTER: AbilityEnum
+ABILITY_SOUL_CRUSHER: AbilityEnum
+ABILITY_ARC_FLASH: AbilityEnum
+ABILITY_UNICORN: AbilityEnum
+ABILITY_ON_THE_PROWL: AbilityEnum
+ABILITY_PRETENTIOUS: AbilityEnum
+ABILITY_VENOBLAZE_PINCERS: AbilityEnum
+ABILITY_ETERNAL_BLESSING: AbilityEnum
+ABILITY_SUGAR_RUSH: AbilityEnum
+ABILITY_PEACEFUL_REST: AbilityEnum
+ABILITY_WHITE_NOISE: AbilityEnum
+ABILITY_SMOKEY_MANEUVERS: AbilityEnum
+ABILITY_TAG: AbilityEnum
+ABILITY_POWER_METAL: AbilityEnum
+ABILITY_POWER_EDGE: AbilityEnum
+ABILITY_SUPERCONDUCTOR: AbilityEnum
+ABILITY_ULTRA_INSTINCT: AbilityEnum
+ABILITY_UNLOCKED_POTENTIAL: AbilityEnum
+ABILITY_HIGHER_RANK: AbilityEnum
+ABILITY_FUNERAL_PYRE: AbilityEnum
+ABILITY_FLAME_BUBBLE: AbilityEnum
+ABILITY_ELEMENTAL_VORTEX: AbilityEnum
+ABILITY_SNOWY_WRATH: AbilityEnum
+ABILITY_PATTERN_CHANGE: AbilityEnum
+ABILITY_NO_TURNING_BACK: AbilityEnum
+ABILITY_FLAMMABLE_COAT: AbilityEnum
+ABILITY_DRACO_MORALE: AbilityEnum
+ABILITY_BAD_OMEN: AbilityEnum
+ABILITY_MOSH_PIT: AbilityEnum
+ABILITY_BLOOD_STAIN: AbilityEnum
+ABILITY_BLOOD_STIGMA: AbilityEnum
+ABILITY_MAXIMUM_ACCELERATION: AbilityEnum
+ABILITY_SIDEWINDER: AbilityEnum
+ABILITY_PETRIFY: AbilityEnum
+ABILITY_FLUFFIEST: AbilityEnum
+ABILITY_WAY_OF_PRECISION: AbilityEnum
+ABILITY_WAY_OF_SWIFTNESS: AbilityEnum
+ABILITY_ATOMIC_PUNCH: AbilityEnum
+ABILITY_IRON_GIANT: AbilityEnum
+ABILITY_MASTER_HAND: AbilityEnum
+ABILITY_FINAL_BLOW: AbilityEnum
+ABILITY_HOSPITALITY: AbilityEnum
+ABILITY_BUTTER_UP: AbilityEnum
+ABILITY_VITALITY_STRIKE: AbilityEnum
+ABILITY_HUGE_WINGS: AbilityEnum
+ABILITY_SWORD_OF_DAMNATION: AbilityEnum
+ABILITY_RESTRAINING_ORDER: AbilityEnum
+ABILITY_ASSASSINS_TOOLS: AbilityEnum
+ABILITY_FROSTMAW: AbilityEnum
+ABILITY_PATCHWORK: AbilityEnum
+ABILITY_BLIND_RAGE: AbilityEnum
+ABILITY_SLIPSTREAM: AbilityEnum
+ABILITY_APEX_PREDATOR: AbilityEnum
+ABILITY_DRAGONS_RITUAL: AbilityEnum
+ABILITY_PINNACLE_BLADE: AbilityEnum
+ABILITY_ENERGIZED: AbilityEnum
+ABILITY_COLOR_SPECTRUM: AbilityEnum
+ABILITY_STEEL_BEETLE: AbilityEnum
+ABILITY_FROM_THE_SHADOWS: AbilityEnum
+ABILITY_RAGE_POINT: AbilityEnum
+ABILITY_HOT_COALS: AbilityEnum
+ABILITY_TERASTAL_TREASURE: AbilityEnum
+ABILITY_SHOCKING_MAW: AbilityEnum
+ABILITY_GLEAM_EYES: AbilityEnum
+ABILITY_ROUSED_FANGS: AbilityEnum
+ABILITY_DREAM_STATE: AbilityEnum
+ABILITY_DREAM_WHIMSY: AbilityEnum
+ABILITY_LUNAR_AFFINITY: AbilityEnum
+ABILITY_FLAME_SHIELD: AbilityEnum
+ABILITY_AQUATIC_DWELLER: AbilityEnum
+ABILITY_APPLE_PIE: AbilityEnum
+ABILITY_HOVER: AbilityEnum
+ABILITY_DEPRAVITY: AbilityEnum
+ABILITY_WILDFIRE: AbilityEnum
+ABILITY_JUMP_SCARE: AbilityEnum
+ABILITY_TAR_TOSS: AbilityEnum
+ABILITY_STUN_SHOCK: AbilityEnum
+ABILITY_RAGING_GODDESS: AbilityEnum
+ABILITY_WHIPLASH: AbilityEnum
+ABILITY_SUPERSWEET_SYRUP: AbilityEnum
+ABILITY_LUCKY_HALO: AbilityEnum
+ABILITY_TRASH_HEAP: AbilityEnum
+ABILITY_SLUDGY_MIX: AbilityEnum
+ABILITY_OVERWATCH: AbilityEnum
+ABILITY_WIND_RAGE: AbilityEnum
+ABILITY_VICTORY_BOMB: AbilityEnum
+ABILITY_RAZOR_SHARP: AbilityEnum
+ABILITY_TO_THE_BONE: AbilityEnum
+ABILITY_BLADE_DANCE: AbilityEnum
+ABILITY_TAEKKYEON: AbilityEnum
+ABILITY_APE_SHIFT: AbilityEnum
+ABILITY_KNOW_YOUR_PLACE: AbilityEnum
+ABILITY_DEEP_CUTS: AbilityEnum
+ABILITY_LIFE_STEAL: AbilityEnum
+ABILITY_RUDE_AWAKENING: AbilityEnum
+ABILITY_TERAFORM_ZERO: AbilityEnum
+ABILITY_SET_ABLAZE: AbilityEnum
+ABILITY_BREAKWATER: AbilityEnum
+ABILITY_MAGICAL_FISTS: AbilityEnum
+ABILITY_CUTTHROAT: AbilityEnum
+ABILITY_SAND_BENDER: AbilityEnum
+ABILITY_SAND_PIT: AbilityEnum
+ABILITY_DESOLATE_SUN: AbilityEnum
+ABILITY_DAYBREAK: AbilityEnum
+ABILITY_ENERGY_SIPHON: AbilityEnum
+ABILITY_RESERVOIR: AbilityEnum
+ABILITY_NEUROTOXIN: AbilityEnum
+ABILITY_ENERGIZED_HORNS: AbilityEnum
+ABILITY_SPIDER_LAIR_UPGRADE: AbilityEnum
+ABILITY_CRUST_COAT: AbilityEnum
+ABILITY_PUFFY: AbilityEnum
+ABILITY_BALLOON_BLITZ: AbilityEnum
+ABILITY_STRIKER_PIXILATE: AbilityEnum
+ABILITY_DOOM_BLAST: AbilityEnum
+ABILITY_BRUTEFORCE: AbilityEnum
+ABILITY_FARADAY_CAGE: AbilityEnum
+ABILITY_ACIDIC_SLIME: AbilityEnum
+ABILITY_ROSE_GARDEN: AbilityEnum
+ABILITY_QIGONG: AbilityEnum
+ABILITY_CONJOURER_OF_DECEIT: AbilityEnum
+ABILITY_DEEP_FREEZE: AbilityEnum
+ABILITY_SOUL_DEVOURER: AbilityEnum
+ABILITY_CHAMPIONS_ENTRANCE: AbilityEnum
+ABILITY_PRESTO: AbilityEnum
+ABILITY_SAMBA: AbilityEnum
+ABILITY_JUNSHI_SANDA: AbilityEnum
+ABILITY_GLADIATOR: AbilityEnum
+ABILITY_FORSAKEN_HEART: AbilityEnum
+ABILITY_RELENTLESS: AbilityEnum
+ABILITY_SOOTHSAYER: AbilityEnum
+ABILITY_CORRUPTED_MIND: AbilityEnum
+ABILITY_FLAME_COAT: AbilityEnum
+ABILITY_UNOWN_POWER: AbilityEnum
+ABILITY_SUPER_SCOPE: AbilityEnum
+ABILITY_VENOM_CROWN: AbilityEnum
+ABILITY_BLIGHT_SCALE: AbilityEnum
+ABILITY_GUNMAN: AbilityEnum
+ABILITY_HUNTERS_MARK: AbilityEnum
+ABILITY_HEMOLYSIS: AbilityEnum
+ABILITY_CARETAKER: AbilityEnum
+ABILITY_POSEIDONS_DOMINION: AbilityEnum
+ABILITY_DUAL_SHADOW: AbilityEnum
+ABILITY_LULLABY: AbilityEnum
+ABILITY_CRYO_ARCHITECT: AbilityEnum
+ABILITY_GLACIAL_RAGE: AbilityEnum
+ABILITY_IMMOVABLE_OBJECT: AbilityEnum
+ABILITY_FRENZIED_PHANTOM: AbilityEnum
+ABILITY_DNA_SCRAMBLE: AbilityEnum
+ABILITY_METALLIC_JAWS: AbilityEnum
+ABILITY_CALCULATIVE: AbilityEnum
+ABILITY_DEADLY_PRECISION: AbilityEnum
+ABILITY_EMBODY_ASPECT: AbilityEnum
+ABILITY_EMBODY_ASPECT_HEARTHFLAME: AbilityEnum
+ABILITY_EMBODY_ASPECT_CORNERSTONE: AbilityEnum
+ABILITY_EMBODY_ASPECT_WELLSPRING: AbilityEnum
+ABILITY_ROCKHARD_SHAFT: AbilityEnum
+ABILITY_DEVIATE: AbilityEnum
+ABILITY_SUNS_BOUNTY: AbilityEnum
+ABILITY_RITE_OF_SPRING: AbilityEnum
+ABILITY_HEADSTRONG: AbilityEnum
+ABILITY_FIREFIGHTER: AbilityEnum
+ABILITY_SEPIA_LENS: AbilityEnum
+ABILITY_SUPER_SNIPER: AbilityEnum
+ABILITY_WOODLAND_CURSE: AbilityEnum
+ABILITY_MALODOR: AbilityEnum
+ABILITY_BLUR: AbilityEnum
+ABILITY_ELUDE: AbilityEnum
+ABILITY_DRAKE_OF_RAGE: AbilityEnum
+ABILITY_REVERBATE: AbilityEnum
+ABILITY_MIXED_MARTIAL_ARTS: AbilityEnum
+ABILITY_STRATEGIC_PAUSE: AbilityEnum
+ABILITY_OVERRULE: AbilityEnum
+ABILITY_MENTAL_POLLUTION: AbilityEnum
+ABILITY_MADNESS_ENHANCEMENT: AbilityEnum
+ABILITY_TENTALOCK: AbilityEnum
+ABILITY_SERPENT_BIND: AbilityEnum
+ABILITY_SOUL_TAP: AbilityEnum
+ABILITY_SCARECROW: AbilityEnum
+ABILITY_OMINOUS_SHROUD: AbilityEnum
+ABILITY_CHILLING_PRESENCE: AbilityEnum
+ABILITY_FROSTBIND: AbilityEnum
+ABILITY_GLACIAL_GHOST: AbilityEnum
+ABILITY_TENDER_AFFECTION: AbilityEnum
+ABILITY_WONDER_SCALE: AbilityEnum
+ABILITY_OVERZEALOUS: AbilityEnum
+ABILITY_STAINLESS_STEEL: AbilityEnum
+ABILITY_TEMPORAL_RUPTURE: AbilityEnum
+ABILITY_GRASS_FLUTE: AbilityEnum
+ABILITY_HEMOTOXIN: AbilityEnum
+ABILITY_HARUKAZE: AbilityEnum
+ABILITY_TOXIC_SURGE: AbilityEnum
+ABILITY_ATLANTIC_RULER: AbilityEnum
+ABILITY_BIOFILM: AbilityEnum
+ABILITY_CHOKEHOLD: AbilityEnum
+ABILITY_GUARDIAN_COAT: AbilityEnum
+ABILITY_NEUTRALIZING_FOG: AbilityEnum
+ABILITY_POISON_QUILLS: AbilityEnum
+ABILITY_DRACONIC_MIGHT: AbilityEnum
+ABILITY_FESTIVITIES: AbilityEnum
+ABILITY_FEY_FLIGHT: AbilityEnum
+ABILITY_BEST_OFFENSE: AbilityEnum
+ABILITY_IMPALER: AbilityEnum
+ABILITY_MAGUS_BLADES: AbilityEnum
+ABILITY_LIGHTNING_BORN: AbilityEnum
+ABILITY_SUPERHEAVY: AbilityEnum
+ABILITY_WORLD_SERPENT: AbilityEnum
+ABILITY_LUCKY_WINGS: AbilityEnum
+ABILITY_KOMODO: AbilityEnum
+ABILITY_ENVENOM: AbilityEnum
+ABILITY_PURPLE_HAZE: AbilityEnum
+ABILITY_GNASHING_CANNON: AbilityEnum
+ABILITY_HYPER_CLEANSE: AbilityEnum
+ABILITY_MOLTEN_COAT: AbilityEnum
+ABILITY_ROYAL_DECREE: AbilityEnum
+ABILITY_BREEZY_NEIGH: AbilityEnum
+ABILITY_DREAMSCAPE: AbilityEnum
+ABILITY_HASTE_MAKES_WASTE: AbilityEnum
+ABILITY_HUNGRY_MAWS: AbilityEnum
+ABILITY_THERMAL_SLIDE: AbilityEnum
+ABILITY_THERMOMANCY: AbilityEnum
+ABILITY_CHUCKSTER: AbilityEnum
+ABILITY_HEAT_SINK: AbilityEnum
+ABILITY_RELIC_STONE: AbilityEnum
+ABILITY_SUPERCELL: AbilityEnum
+ABILITY_LIGHTNING_ASPECT: AbilityEnum
+ABILITY_BLISTERING_SUN: AbilityEnum
+ABILITY_MOLTEN_CORE: AbilityEnum
+ABILITY_FIRE_ASPECT: AbilityEnum
+ABILITY_AURORAS_GALE: AbilityEnum
+ABILITY_ICE_PLUMES: AbilityEnum
+ABILITY_WINTER_THRONE: AbilityEnum
+ABILITY_ENERGY_TAP: AbilityEnum
+ABILITY_SLUDGE_SPIT: AbilityEnum
+ABILITY_SWAMP_THING: AbilityEnum
+ABILITY_FROSTY_PRESCENCE: AbilityEnum
+ABILITY_CHILLING_PELLETS: AbilityEnum
+ABILITY_PAINT_SHOT: AbilityEnum
+ABILITY_STONECUTTER: AbilityEnum
+ABILITY_EDGELORD: AbilityEnum
+ABILITY_WARMONGER: AbilityEnum
+ABILITY_LOCUST_SWARM: AbilityEnum
+ABILITY_REVELATION: AbilityEnum
+ABILITY_CURSE_OF_FAMINE: AbilityEnum
+ABILITY_CRYSTALLINE_ARMOR: AbilityEnum
+ABILITY_SOUL_HARVEST: AbilityEnum
+ABILITY_THICK_BLUBBER: AbilityEnum
+ABILITY_CRAVING: AbilityEnum
+ABILITY_RAT_KING: AbilityEnum
+ABILITY_CRISPY_CREAM: AbilityEnum
+ABILITY_DEEP_FRIED: AbilityEnum
+ABILITY_FOOD_LOVERS: AbilityEnum
+ABILITY_LUNAR_WRATH: AbilityEnum
+ABILITY_SPYWARE: AbilityEnum
+ABILITY_VIRUS: AbilityEnum
+ABILITY_POWER_LEAK: AbilityEnum
+ABILITY_BACKUP_POWER: AbilityEnum
+ABILITY_SAND_FIEND: AbilityEnum
+ABILITY_MOUSTACHE: AbilityEnum
+ABILITY_DEPTH_EXPLORER: AbilityEnum
+ABILITY_DUNE_VEIL: AbilityEnum
+ABILITY_STRONG_FOUNDATION: AbilityEnum
+ABILITY_FOG_MACHINE: AbilityEnum
+ABILITY_DROP_BLOCKS: AbilityEnum
+ABILITY_LASER_DRILL: AbilityEnum
+ABILITY_LIGHT_SABER: AbilityEnum
+ABILITY_LOOSE_THORNS: AbilityEnum
+ABILITY_TURF_WAR: AbilityEnum
+ABILITY_GREEDY: AbilityEnum
+ABILITY_MUSICAL_NOTES: AbilityEnum
+ABILITY_STRIKEOUT: AbilityEnum
+ABILITY_HOME_RUN: AbilityEnum
+ABILITY_BRUISER: AbilityEnum
+ABILITY_NARCISSIST: AbilityEnum
+ABILITY_LETS_DANCE: AbilityEnum
+ABILITY_DRAGONFRUIT: AbilityEnum
+ABILITY_LEAD_CLAWS: AbilityEnum
+ABILITY_ROCKY_EXTERIOR: AbilityEnum
+ABILITY_FLAWLESS_PRECISION: AbilityEnum
+ABILITY_EMPRESS: AbilityEnum
+ABILITY_MASHED_POTATO: AbilityEnum
+ABILITY_TASTE_THE_RAINBOW: AbilityEnum
+ABILITY_RAINBOW_SCALES: AbilityEnum
+ABILITY_HYPNOTIC_TOUCH: AbilityEnum
+ABILITY_WINGS_OF_PESTILENCE: AbilityEnum
+ABILITY_HYDRA: AbilityEnum
+ABILITY_SUNDAE: AbilityEnum
+ABILITY_ICE_PICK: AbilityEnum
+ABILITY_HAMMER_FIST: AbilityEnum
+ABILITY_DRAKELP_HEAD: AbilityEnum
+ABILITY_POLARITY: AbilityEnum
+ABILITY_MACH_3: AbilityEnum
+ABILITY_RAGING_STORM: AbilityEnum
+ABILITY_SUMO_GUARD: AbilityEnum
+ABILITY_SUMO_WRESTLER: AbilityEnum
+ABILITY_COSMIC_WINGS: AbilityEnum
+ABILITY_COSMIC_DUST: AbilityEnum
+ABILITY_COOL_EXIT: AbilityEnum
+ABILITY_DEVIOUS_PRESENT: AbilityEnum
+ABILITY_CHRISTMAS_NIGHTMARE: AbilityEnum
+ABILITY_SAP_TRAP: AbilityEnum
+ABILITY_BARK_SKIN: AbilityEnum
+ABILITY_CHAINSAW: AbilityEnum
+ABILITY_GALEFORCE_WINGS: AbilityEnum
+ABILITY_ECHOLOCATION: AbilityEnum
+ABILITY_MASSIVE_PELT: AbilityEnum
+ABILITY_I_AM_STEVE: AbilityEnum
+ABILITY_TANGLED_TAILS: AbilityEnum
+ABILITY_FOAMY_WEB: AbilityEnum
+ABILITY_SHARP_TALONS: AbilityEnum
+ABILITY_ZEN_GARDEN: AbilityEnum
+ABILITY_TUMMYACHE: AbilityEnum
+ABILITY_HYPNOTIC_TRANCE: AbilityEnum
+ABILITY_BRAIN_OVERLOAD: AbilityEnum
+ABILITY_BRAIN_MASS: AbilityEnum
+ABILITY_CHESTNUT_SHIELD: AbilityEnum
+ABILITY_CHESTNUT_AXE: AbilityEnum
+ABILITY_GIANT_SHURIKEN: AbilityEnum
+ABILITY_WITCH_BROOM: AbilityEnum
+ABILITY_ANGELIC_WINGS: AbilityEnum
+ABILITY_WRESTLE_SHOWMAN: AbilityEnum
+ABILITY_LUCHA_LIBRE: AbilityEnum
+ABILITY_FIRE_RULER: AbilityEnum
+ABILITY_CHANDELIER: AbilityEnum
+ABILITY_FOGGY_EYE: AbilityEnum
+ABILITY_TOXIC_SHELL: AbilityEnum
+ABILITY_HAND_BARNACLES: AbilityEnum
+ABILITY_VOLTRON: AbilityEnum
+ABILITY_FIRES_WRATH: AbilityEnum
+ABILITY_EMPERORS_WRATH: AbilityEnum
+ABILITY_LEPIDOPTERAN: AbilityEnum
+ABILITY_BREAK_IT_DOWN: AbilityEnum
+ABILITY_TALON_TRAP: AbilityEnum
+ABILITY_BACKSTREET_BOY: AbilityEnum
+ABILITY_BACKFLIP: AbilityEnum
+ABILITY_CRUSHING_JAW: AbilityEnum
+ABILITY_ETERNAL_FLOWER: AbilityEnum
+ABILITY_NIHIL_BLASTER: AbilityEnum
+ABILITY_HOLLOW_ICE_ZONE: AbilityEnum
+ABILITY_CRYOSTASIS: AbilityEnum
+ABILITY_OVERCAST: AbilityEnum
+ABILITY_FLOWER_NECKLACE: AbilityEnum
+ABILITY_MEGA_DRILL: AbilityEnum
+ABILITY_MUCUS_MEMBRANE: AbilityEnum
+ABILITY_RAIN_SHROUD: AbilityEnum
+ABILITY_CURLIPEDE: AbilityEnum
+ABILITY_STORM_CLOUD: AbilityEnum
+ABILITY_WATERBORNE: AbilityEnum
+ABILITY_RESILIENCE: AbilityEnum
+ABILITY_GOING_BERSERK: AbilityEnum
+ABILITY_THUNDER_CLOUDS: AbilityEnum
+ABILITY_UNRELENTING: AbilityEnum
+ABILITY_ELEMENTAL_AEGIS: AbilityEnum
+ABILITY_AEGIS_WARD: AbilityEnum
+ABILITY_SHATTERED_ARMOR: AbilityEnum
+ABILITY_ACID_REFLUX: AbilityEnum
+ABILITY_GHOST_FRENZY: AbilityEnum
+ABILITY_SURVIVOR_BIAS: AbilityEnum
+ABILITY_BANDIT: AbilityEnum
+ABILITY_FORTRESS: AbilityEnum
+ABILITY_BIRD_OF_PREY: AbilityEnum
+ABILITY_FEATHERCOAT: AbilityEnum
+ABILITY_POWER_OUTAGE: AbilityEnum
+ABILITY_ELECTRO_BOOSTER: AbilityEnum
+ABILITY_CURRENT_CRASH: AbilityEnum
+ABILITY_DAREDEVIL: AbilityEnum
+ABILITY_FROST_DRAGON: AbilityEnum
+ABILITY_THERMAL_ENTROPY: AbilityEnum
+ABILITY_SINISTER_CLAWS: AbilityEnum
+ABILITY_PETAL_SHIELD: AbilityEnum
+ABILITY_MOB_BOSS: AbilityEnum
+ABILITY_GHOST_PEPPER: AbilityEnum
+ABILITY_DROIDEKA: AbilityEnum
+ABILITY_3_GT_1: AbilityEnum
+ABILITY_ABOMINABLE_MONSTER: AbilityEnum
+ABILITY_ICICLE_FIST: AbilityEnum
+ABILITY_WIND_CHIMES: AbilityEnum
+ABILITY_UNSTABLE_CORE: AbilityEnum
+ABILITY_AURA_ARMOR: AbilityEnum
+ABILITY_DEFLECT: AbilityEnum
+ABILITY_OVERWHELMING_MIND: AbilityEnum
+ABILITY_DUALITY: AbilityEnum
+ABILITY_REAPERS_EMBARCE: AbilityEnum
+ABILITY_FOUL_ENERGY: AbilityEnum
+ABILITY_JUNGLE_FEVER: AbilityEnum
+ABILITY_KING_OF_THE_JUNGLE: AbilityEnum
+ABILITY_WARRIORS_SPEAR: AbilityEnum
+ABILITY_SLEEK_SCALES: AbilityEnum
+ABILITY_ROCK_ARMOR: AbilityEnum
+ABILITY_SMOLDERING_WOOD: AbilityEnum
+ABILITY_SLIME_MOLD: AbilityEnum

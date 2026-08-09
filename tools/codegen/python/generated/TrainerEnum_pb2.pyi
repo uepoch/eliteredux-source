@@ -1,0 +1,1874 @@
+from google.protobuf.internal import enum_type_wrapper as _enum_type_wrapper
+from google.protobuf import descriptor as _descriptor
+from typing import ClassVar as _ClassVar
+
+DESCRIPTOR: _descriptor.FileDescriptor
+
+class TrainerEnum(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
+    __slots__ = ()
+    TRAINER_NONE: _ClassVar[TrainerEnum]
+    TRAINER_SAWYER_1: _ClassVar[TrainerEnum]
+    TRAINER_GRUNT_AQUA_HIDEOUT_1: _ClassVar[TrainerEnum]
+    TRAINER_GRUNT_AQUA_HIDEOUT_2: _ClassVar[TrainerEnum]
+    TRAINER_GRUNT_AQUA_HIDEOUT_3: _ClassVar[TrainerEnum]
+    TRAINER_GRUNT_AQUA_HIDEOUT_4: _ClassVar[TrainerEnum]
+    TRAINER_GRUNT_SEAFLOOR_CAVERN_1: _ClassVar[TrainerEnum]
+    TRAINER_GRUNT_SEAFLOOR_CAVERN_2: _ClassVar[TrainerEnum]
+    TRAINER_GRUNT_SEAFLOOR_CAVERN_3: _ClassVar[TrainerEnum]
+    TRAINER_GABRIELLE_1: _ClassVar[TrainerEnum]
+    TRAINER_GRUNT_PETALBURG_WOODS: _ClassVar[TrainerEnum]
+    TRAINER_MARCEL: _ClassVar[TrainerEnum]
+    TRAINER_ALBERTO: _ClassVar[TrainerEnum]
+    TRAINER_ED: _ClassVar[TrainerEnum]
+    TRAINER_GRUNT_SEAFLOOR_CAVERN_4: _ClassVar[TrainerEnum]
+    TRAINER_DECLAN: _ClassVar[TrainerEnum]
+    TRAINER_GRUNT_RUSTURF_TUNNEL: _ClassVar[TrainerEnum]
+    TRAINER_GRUNT_WEATHER_INST_1: _ClassVar[TrainerEnum]
+    TRAINER_GRUNT_WEATHER_INST_2: _ClassVar[TrainerEnum]
+    TRAINER_GRUNT_WEATHER_INST_3: _ClassVar[TrainerEnum]
+    TRAINER_GRUNT_MUSEUM_1: _ClassVar[TrainerEnum]
+    TRAINER_GRUNT_MUSEUM_2: _ClassVar[TrainerEnum]
+    TRAINER_GRUNT_SPACE_CENTER_1: _ClassVar[TrainerEnum]
+    TRAINER_GRUNT_MT_PYRE_1: _ClassVar[TrainerEnum]
+    TRAINER_GRUNT_MT_PYRE_2: _ClassVar[TrainerEnum]
+    TRAINER_GRUNT_MT_PYRE_3: _ClassVar[TrainerEnum]
+    TRAINER_GRUNT_WEATHER_INST_4: _ClassVar[TrainerEnum]
+    TRAINER_GRUNT_AQUA_HIDEOUT_5: _ClassVar[TrainerEnum]
+    TRAINER_GRUNT_AQUA_HIDEOUT_6: _ClassVar[TrainerEnum]
+    TRAINER_FREDRICK: _ClassVar[TrainerEnum]
+    TRAINER_MATT: _ClassVar[TrainerEnum]
+    TRAINER_ZANDER: _ClassVar[TrainerEnum]
+    TRAINER_SHELLY_WEATHER_INSTITUTE: _ClassVar[TrainerEnum]
+    TRAINER_SHELLY_SEAFLOOR_CAVERN: _ClassVar[TrainerEnum]
+    TRAINER_ARCHIE: _ClassVar[TrainerEnum]
+    TRAINER_LEAH: _ClassVar[TrainerEnum]
+    TRAINER_DAISY: _ClassVar[TrainerEnum]
+    TRAINER_ROSE_1: _ClassVar[TrainerEnum]
+    TRAINER_FELIX: _ClassVar[TrainerEnum]
+    TRAINER_VIOLET: _ClassVar[TrainerEnum]
+    TRAINER_ROSE_2: _ClassVar[TrainerEnum]
+    TRAINER_ROSE_3: _ClassVar[TrainerEnum]
+    TRAINER_ROSE_4: _ClassVar[TrainerEnum]
+    TRAINER_GRUNT_METEOR_FALLS: _ClassVar[TrainerEnum]
+    TRAINER_DUSTY_1: _ClassVar[TrainerEnum]
+    TRAINER_CHIP: _ClassVar[TrainerEnum]
+    TRAINER_FOSTER: _ClassVar[TrainerEnum]
+    TRAINER_DUSTY_2: _ClassVar[TrainerEnum]
+    TRAINER_DUSTY_3: _ClassVar[TrainerEnum]
+    TRAINER_DUSTY_4: _ClassVar[TrainerEnum]
+    TRAINER_COURTNEY_METEOR_FALLS: _ClassVar[TrainerEnum]
+    TRAINER_GABBY_AND_TY_1: _ClassVar[TrainerEnum]
+    TRAINER_GABBY_AND_TY_2: _ClassVar[TrainerEnum]
+    TRAINER_GABBY_AND_TY_3: _ClassVar[TrainerEnum]
+    TRAINER_GABBY_AND_TY_4: _ClassVar[TrainerEnum]
+    TRAINER_GABBY_AND_TY_5: _ClassVar[TrainerEnum]
+    TRAINER_GABBY_AND_TY_6: _ClassVar[TrainerEnum]
+    TRAINER_LOLA_1: _ClassVar[TrainerEnum]
+    TRAINER_AUSTINA: _ClassVar[TrainerEnum]
+    TRAINER_GWEN: _ClassVar[TrainerEnum]
+    TRAINER_LOLA_2: _ClassVar[TrainerEnum]
+    TRAINER_LOLA_3: _ClassVar[TrainerEnum]
+    TRAINER_LOLA_4: _ClassVar[TrainerEnum]
+    MAY_TREECKO_METEOR_FALLS: _ClassVar[TrainerEnum]
+    TRAINER_RICKY_1: _ClassVar[TrainerEnum]
+    TRAINER_SIMON: _ClassVar[TrainerEnum]
+    TRAINER_CHARLIE: _ClassVar[TrainerEnum]
+    TRAINER_RICKY_2: _ClassVar[TrainerEnum]
+    TRAINER_RICKY_3: _ClassVar[TrainerEnum]
+    TRAINER_RICKY_4: _ClassVar[TrainerEnum]
+    MAY_TORCHIC_METEOR_FALLS: _ClassVar[TrainerEnum]
+    TRAINER_RANDALL: _ClassVar[TrainerEnum]
+    TRAINER_PARKER: _ClassVar[TrainerEnum]
+    TRAINER_GEORGE: _ClassVar[TrainerEnum]
+    TRAINER_BERKE: _ClassVar[TrainerEnum]
+    TRAINER_BRAXTON: _ClassVar[TrainerEnum]
+    TRAINER_VINCENT: _ClassVar[TrainerEnum]
+    TRAINER_LEROY: _ClassVar[TrainerEnum]
+    TRAINER_WILTON_1: _ClassVar[TrainerEnum]
+    TRAINER_EDGAR: _ClassVar[TrainerEnum]
+    TRAINER_ALBERT: _ClassVar[TrainerEnum]
+    TRAINER_SAMUEL: _ClassVar[TrainerEnum]
+    TRAINER_VITO: _ClassVar[TrainerEnum]
+    TRAINER_OWEN: _ClassVar[TrainerEnum]
+    TRAINER_WILTON_2: _ClassVar[TrainerEnum]
+    TRAINER_WILTON_3: _ClassVar[TrainerEnum]
+    TRAINER_WILTON_4: _ClassVar[TrainerEnum]
+    MAY_MUDKIP_METEOR_FALLS: _ClassVar[TrainerEnum]
+    TRAINER_WARREN: _ClassVar[TrainerEnum]
+    TRAINER_MARY: _ClassVar[TrainerEnum]
+    TRAINER_ALEXIA: _ClassVar[TrainerEnum]
+    TRAINER_JODY: _ClassVar[TrainerEnum]
+    TRAINER_WENDY: _ClassVar[TrainerEnum]
+    TRAINER_KEIRA: _ClassVar[TrainerEnum]
+    TRAINER_BROOKE_1: _ClassVar[TrainerEnum]
+    TRAINER_JENNIFER: _ClassVar[TrainerEnum]
+    TRAINER_HOPE: _ClassVar[TrainerEnum]
+    TRAINER_SHANNON: _ClassVar[TrainerEnum]
+    TRAINER_MICHELLE: _ClassVar[TrainerEnum]
+    TRAINER_CAROLINE: _ClassVar[TrainerEnum]
+    TRAINER_JULIE: _ClassVar[TrainerEnum]
+    TRAINER_BROOKE_2: _ClassVar[TrainerEnum]
+    TRAINER_BROOKE_3: _ClassVar[TrainerEnum]
+    TRAINER_BROOKE_4: _ClassVar[TrainerEnum]
+    BRENDAN_TREECKO_METEOR_FALLS: _ClassVar[TrainerEnum]
+    TRAINER_PATRICIA: _ClassVar[TrainerEnum]
+    TRAINER_KINDRA: _ClassVar[TrainerEnum]
+    TRAINER_TAMMY: _ClassVar[TrainerEnum]
+    TRAINER_VALERIE_1: _ClassVar[TrainerEnum]
+    TRAINER_TASHA: _ClassVar[TrainerEnum]
+    TRAINER_VALERIE_2: _ClassVar[TrainerEnum]
+    TRAINER_VALERIE_3: _ClassVar[TrainerEnum]
+    TRAINER_VALERIE_4: _ClassVar[TrainerEnum]
+    BRENDAN_TORCHIC_METEOR_FALLS: _ClassVar[TrainerEnum]
+    TRAINER_CINDY_1: _ClassVar[TrainerEnum]
+    TRAINER_DAPHNE: _ClassVar[TrainerEnum]
+    TRAINER_GRUNT_SPACE_CENTER_2: _ClassVar[TrainerEnum]
+    TRAINER_CINDY_2: _ClassVar[TrainerEnum]
+    TRAINER_BRIANNA: _ClassVar[TrainerEnum]
+    TRAINER_NAOMI: _ClassVar[TrainerEnum]
+    TRAINER_CINDY_3: _ClassVar[TrainerEnum]
+    TRAINER_CINDY_4: _ClassVar[TrainerEnum]
+    BRENDAN_MUDKIP_METEOR_FALLS: _ClassVar[TrainerEnum]
+    TRAINER_CINDY_6: _ClassVar[TrainerEnum]
+    TRAINER_MELISSA: _ClassVar[TrainerEnum]
+    TRAINER_SHEILA: _ClassVar[TrainerEnum]
+    TRAINER_SHIRLEY: _ClassVar[TrainerEnum]
+    TRAINER_JESSICA_1: _ClassVar[TrainerEnum]
+    TRAINER_CONNIE: _ClassVar[TrainerEnum]
+    TRAINER_BRIDGET: _ClassVar[TrainerEnum]
+    TRAINER_OLIVIA: _ClassVar[TrainerEnum]
+    TRAINER_TIFFANY: _ClassVar[TrainerEnum]
+    TRAINER_JESSICA_2: _ClassVar[TrainerEnum]
+    TRAINER_JESSICA_3: _ClassVar[TrainerEnum]
+    TRAINER_JESSICA_4: _ClassVar[TrainerEnum]
+    TRAINER_ALANNAH: _ClassVar[TrainerEnum]
+    TRAINER_WINSTON_1: _ClassVar[TrainerEnum]
+    TRAINER_MOLLIE: _ClassVar[TrainerEnum]
+    TRAINER_GARRET: _ClassVar[TrainerEnum]
+    TRAINER_WINSTON_2: _ClassVar[TrainerEnum]
+    TRAINER_WINSTON_3: _ClassVar[TrainerEnum]
+    TRAINER_WINSTON_4: _ClassVar[TrainerEnum]
+    TRAINER_ELMER: _ClassVar[TrainerEnum]
+    TRAINER_STEVE_1: _ClassVar[TrainerEnum]
+    TRAINER_THALIA_1: _ClassVar[TrainerEnum]
+    TRAINER_MARK: _ClassVar[TrainerEnum]
+    TRAINER_GRUNT_MT_CHIMNEY_1: _ClassVar[TrainerEnum]
+    TRAINER_STEVE_2: _ClassVar[TrainerEnum]
+    TRAINER_STEVE_3: _ClassVar[TrainerEnum]
+    TRAINER_STEVE_4: _ClassVar[TrainerEnum]
+    TRAINER_ROMAN: _ClassVar[TrainerEnum]
+    TRAINER_LUIS: _ClassVar[TrainerEnum]
+    TRAINER_DOMINIK: _ClassVar[TrainerEnum]
+    TRAINER_DOUGLAS: _ClassVar[TrainerEnum]
+    TRAINER_DARRIN: _ClassVar[TrainerEnum]
+    TRAINER_TONY_1: _ClassVar[TrainerEnum]
+    TRAINER_JEROME: _ClassVar[TrainerEnum]
+    TRAINER_MATTHEW: _ClassVar[TrainerEnum]
+    TRAINER_DAVID: _ClassVar[TrainerEnum]
+    TRAINER_SPENCER: _ClassVar[TrainerEnum]
+    TRAINER_ROLAND: _ClassVar[TrainerEnum]
+    TRAINER_NOLEN: _ClassVar[TrainerEnum]
+    TRAINER_STAN: _ClassVar[TrainerEnum]
+    TRAINER_BARRY: _ClassVar[TrainerEnum]
+    TRAINER_DEAN: _ClassVar[TrainerEnum]
+    TRAINER_RODNEY: _ClassVar[TrainerEnum]
+    TRAINER_RICHARD: _ClassVar[TrainerEnum]
+    TRAINER_HERMAN: _ClassVar[TrainerEnum]
+    TRAINER_SANTIAGO: _ClassVar[TrainerEnum]
+    TRAINER_GILBERT: _ClassVar[TrainerEnum]
+    TRAINER_FRANKLIN: _ClassVar[TrainerEnum]
+    TRAINER_KEVIN: _ClassVar[TrainerEnum]
+    TRAINER_JACK: _ClassVar[TrainerEnum]
+    TRAINER_GRETA_SLATEPORT: _ClassVar[TrainerEnum]
+    TRAINER_CHAD: _ClassVar[TrainerEnum]
+    TRAINER_TONY_2: _ClassVar[TrainerEnum]
+    TRAINER_TONY_3: _ClassVar[TrainerEnum]
+    TRAINER_TONY_4: _ClassVar[TrainerEnum]
+    TRAINER_MARTIN: _ClassVar[TrainerEnum]
+    TRAINER_TAKAO: _ClassVar[TrainerEnum]
+    TRAINER_HITOSHI: _ClassVar[TrainerEnum]
+    TRAINER_KIYO: _ClassVar[TrainerEnum]
+    TRAINER_KOICHI: _ClassVar[TrainerEnum]
+    TRAINER_NOB_1: _ClassVar[TrainerEnum]
+    TRAINER_NOB_2: _ClassVar[TrainerEnum]
+    TRAINER_NOB_3: _ClassVar[TrainerEnum]
+    TRAINER_NOB_4: _ClassVar[TrainerEnum]
+    TRAINER_NOB_5: _ClassVar[TrainerEnum]
+    TRAINER_YUJI: _ClassVar[TrainerEnum]
+    TRAINER_DAISUKE: _ClassVar[TrainerEnum]
+    TRAINER_ATSUSHI: _ClassVar[TrainerEnum]
+    TRAINER_KIRK: _ClassVar[TrainerEnum]
+    TRAINER_GRUNT_AQUA_HIDEOUT_7: _ClassVar[TrainerEnum]
+    TRAINER_GRUNT_AQUA_HIDEOUT_8: _ClassVar[TrainerEnum]
+    TRAINER_SHAWN: _ClassVar[TrainerEnum]
+    TRAINER_FERNANDO_1: _ClassVar[TrainerEnum]
+    TRAINER_DALTON_1: _ClassVar[TrainerEnum]
+    TRAINER_DALTON_2: _ClassVar[TrainerEnum]
+    TRAINER_DALTON_3: _ClassVar[TrainerEnum]
+    TRAINER_DALTON_4: _ClassVar[TrainerEnum]
+    TRAINER_DRAKE_2: _ClassVar[TrainerEnum]
+    TRAINER_COLE: _ClassVar[TrainerEnum]
+    TRAINER_JEFF: _ClassVar[TrainerEnum]
+    TRAINER_AXLE: _ClassVar[TrainerEnum]
+    TRAINER_JACE: _ClassVar[TrainerEnum]
+    TRAINER_KEEGAN: _ClassVar[TrainerEnum]
+    TRAINER_BERNIE_1: _ClassVar[TrainerEnum]
+    TRAINER_BERNIE_2: _ClassVar[TrainerEnum]
+    TRAINER_BERNIE_3: _ClassVar[TrainerEnum]
+    TRAINER_BERNIE_4: _ClassVar[TrainerEnum]
+    TRAINER_BERNIE_5: _ClassVar[TrainerEnum]
+    TRAINER_DREW: _ClassVar[TrainerEnum]
+    TRAINER_BEAU: _ClassVar[TrainerEnum]
+    TRAINER_LARRY: _ClassVar[TrainerEnum]
+    TRAINER_SHANE: _ClassVar[TrainerEnum]
+    TRAINER_JUSTIN: _ClassVar[TrainerEnum]
+    TRAINER_ETHAN_1: _ClassVar[TrainerEnum]
+    TRAINER_AUTUMN: _ClassVar[TrainerEnum]
+    TRAINER_TRAVIS: _ClassVar[TrainerEnum]
+    TRAINER_ETHAN_2: _ClassVar[TrainerEnum]
+    TRAINER_ETHAN_3: _ClassVar[TrainerEnum]
+    TRAINER_ETHAN_4: _ClassVar[TrainerEnum]
+    TRAINER_ETHAN_5: _ClassVar[TrainerEnum]
+    TRAINER_BRENT: _ClassVar[TrainerEnum]
+    TRAINER_DONALD: _ClassVar[TrainerEnum]
+    TRAINER_TAYLOR: _ClassVar[TrainerEnum]
+    TRAINER_JEFFREY_1: _ClassVar[TrainerEnum]
+    TRAINER_DEREK: _ClassVar[TrainerEnum]
+    TRAINER_JEFFREY_2: _ClassVar[TrainerEnum]
+    TRAINER_JEFFREY_3: _ClassVar[TrainerEnum]
+    TRAINER_JEFFREY_4: _ClassVar[TrainerEnum]
+    TRAINER_JEFFREY_5: _ClassVar[TrainerEnum]
+    TRAINER_EDWARD: _ClassVar[TrainerEnum]
+    TRAINER_PRESTON: _ClassVar[TrainerEnum]
+    TRAINER_VIRGIL: _ClassVar[TrainerEnum]
+    TRAINER_BLAKE: _ClassVar[TrainerEnum]
+    TRAINER_WILLIAM: _ClassVar[TrainerEnum]
+    TRAINER_JOSHUA: _ClassVar[TrainerEnum]
+    TRAINER_CAMERON_1: _ClassVar[TrainerEnum]
+    TRAINER_CAMERON_2: _ClassVar[TrainerEnum]
+    TRAINER_CAMERON_3: _ClassVar[TrainerEnum]
+    TRAINER_CAMERON_4: _ClassVar[TrainerEnum]
+    TRAINER_CAMERON_5: _ClassVar[TrainerEnum]
+    TRAINER_JACLYN: _ClassVar[TrainerEnum]
+    TRAINER_HANNAH: _ClassVar[TrainerEnum]
+    TRAINER_SAMANTHA: _ClassVar[TrainerEnum]
+    TRAINER_MAURA: _ClassVar[TrainerEnum]
+    TRAINER_KAYLA: _ClassVar[TrainerEnum]
+    TRAINER_ALEXIS: _ClassVar[TrainerEnum]
+    TRAINER_JACKI_1: _ClassVar[TrainerEnum]
+    TRAINER_JACKI_2: _ClassVar[TrainerEnum]
+    TRAINER_JACKI_3: _ClassVar[TrainerEnum]
+    TRAINER_JACKI_4: _ClassVar[TrainerEnum]
+    TRAINER_JACKI_5: _ClassVar[TrainerEnum]
+    TRAINER_WALTER_1: _ClassVar[TrainerEnum]
+    TRAINER_MICAH: _ClassVar[TrainerEnum]
+    TRAINER_THOMAS: _ClassVar[TrainerEnum]
+    TRAINER_WALTER_2: _ClassVar[TrainerEnum]
+    TRAINER_WALTER_3: _ClassVar[TrainerEnum]
+    TRAINER_WALTER_4: _ClassVar[TrainerEnum]
+    TRAINER_WALTER_5: _ClassVar[TrainerEnum]
+    TRAINER_SIDNEY: _ClassVar[TrainerEnum]
+    TRAINER_PHOEBE: _ClassVar[TrainerEnum]
+    TRAINER_GLACIA: _ClassVar[TrainerEnum]
+    TRAINER_DRAKE: _ClassVar[TrainerEnum]
+    TRAINER_ROXANNE_1: _ClassVar[TrainerEnum]
+    TRAINER_BRAWLY_1: _ClassVar[TrainerEnum]
+    TRAINER_WATTSON_1: _ClassVar[TrainerEnum]
+    TRAINER_FLANNERY_1: _ClassVar[TrainerEnum]
+    TRAINER_NORMAN_1: _ClassVar[TrainerEnum]
+    TRAINER_WINONA_1: _ClassVar[TrainerEnum]
+    TRAINER_TATE_AND_LIZA_1: _ClassVar[TrainerEnum]
+    TRAINER_JUAN_1: _ClassVar[TrainerEnum]
+    TRAINER_JERRY_1: _ClassVar[TrainerEnum]
+    TRAINER_TED: _ClassVar[TrainerEnum]
+    TRAINER_PAUL: _ClassVar[TrainerEnum]
+    TRAINER_JERRY_2: _ClassVar[TrainerEnum]
+    TRAINER_JERRY_3: _ClassVar[TrainerEnum]
+    TRAINER_JERRY_4: _ClassVar[TrainerEnum]
+    TRAINER_SIDNEY_2: _ClassVar[TrainerEnum]
+    TRAINER_KAREN_1: _ClassVar[TrainerEnum]
+    TRAINER_GEORGIA: _ClassVar[TrainerEnum]
+    TRAINER_KAREN_2: _ClassVar[TrainerEnum]
+    TRAINER_KAREN_3: _ClassVar[TrainerEnum]
+    TRAINER_KAREN_4: _ClassVar[TrainerEnum]
+    TRAINER_STEVEN_MOSSDEEP: _ClassVar[TrainerEnum]
+    TRAINER_KATE_AND_JOY: _ClassVar[TrainerEnum]
+    TRAINER_ANNA_AND_MEG_1: _ClassVar[TrainerEnum]
+    TRAINER_ANNA_AND_MEG_2: _ClassVar[TrainerEnum]
+    TRAINER_ANNA_AND_MEG_3: _ClassVar[TrainerEnum]
+    TRAINER_ANNA_AND_MEG_4: _ClassVar[TrainerEnum]
+    TRAINER_WALLACE_DOUBLES: _ClassVar[TrainerEnum]
+    TRAINER_VICTOR: _ClassVar[TrainerEnum]
+    TRAINER_MIGUEL_1: _ClassVar[TrainerEnum]
+    TRAINER_COLTON: _ClassVar[TrainerEnum]
+    TRAINER_MIGUEL_2: _ClassVar[TrainerEnum]
+    TRAINER_MIGUEL_3: _ClassVar[TrainerEnum]
+    TRAINER_MIGUEL_4: _ClassVar[TrainerEnum]
+    TRAINER_GLACIA_2: _ClassVar[TrainerEnum]
+    TRAINER_VICTORIA: _ClassVar[TrainerEnum]
+    TRAINER_VANESSA: _ClassVar[TrainerEnum]
+    TRAINER_BETHANY: _ClassVar[TrainerEnum]
+    TRAINER_ISABEL_1: _ClassVar[TrainerEnum]
+    TRAINER_ISABEL_2: _ClassVar[TrainerEnum]
+    TRAINER_ISABEL_3: _ClassVar[TrainerEnum]
+    TRAINER_ISABEL_4: _ClassVar[TrainerEnum]
+    TRAINER_SIDNEY_4: _ClassVar[TrainerEnum]
+    TRAINER_TIMOTHY_1: _ClassVar[TrainerEnum]
+    TRAINER_TIMOTHY_2: _ClassVar[TrainerEnum]
+    TRAINER_TIMOTHY_3: _ClassVar[TrainerEnum]
+    TRAINER_TIMOTHY_4: _ClassVar[TrainerEnum]
+    TRAINER_TIMOTHY_5: _ClassVar[TrainerEnum]
+    TRAINER_VICKY: _ClassVar[TrainerEnum]
+    TRAINER_SHELBY_1: _ClassVar[TrainerEnum]
+    TRAINER_SHELBY_2: _ClassVar[TrainerEnum]
+    TRAINER_SHELBY_3: _ClassVar[TrainerEnum]
+    TRAINER_SHELBY_4: _ClassVar[TrainerEnum]
+    TRAINER_SHELBY_5: _ClassVar[TrainerEnum]
+    TRAINER_CALVIN_1: _ClassVar[TrainerEnum]
+    TRAINER_BILLY: _ClassVar[TrainerEnum]
+    TRAINER_JOSH: _ClassVar[TrainerEnum]
+    TRAINER_TOMMY: _ClassVar[TrainerEnum]
+    TRAINER_JOEY: _ClassVar[TrainerEnum]
+    TRAINER_BEN: _ClassVar[TrainerEnum]
+    TRAINER_QUINCY: _ClassVar[TrainerEnum]
+    TRAINER_KATELYNN: _ClassVar[TrainerEnum]
+    TRAINER_JAYLEN: _ClassVar[TrainerEnum]
+    TRAINER_DILLON: _ClassVar[TrainerEnum]
+    TRAINER_CALVIN_2: _ClassVar[TrainerEnum]
+    TRAINER_CALVIN_3: _ClassVar[TrainerEnum]
+    TRAINER_CALVIN_4: _ClassVar[TrainerEnum]
+    TRAINER_MATT_MT_PYRE: _ClassVar[TrainerEnum]
+    TRAINER_EDDIE: _ClassVar[TrainerEnum]
+    TRAINER_ALLEN: _ClassVar[TrainerEnum]
+    TRAINER_TIMMY: _ClassVar[TrainerEnum]
+    TRAINER_WALLACE: _ClassVar[TrainerEnum]
+    TRAINER_ANDREW: _ClassVar[TrainerEnum]
+    TRAINER_IVAN: _ClassVar[TrainerEnum]
+    TRAINER_CLAUDE: _ClassVar[TrainerEnum]
+    TRAINER_ELLIOT_1: _ClassVar[TrainerEnum]
+    TRAINER_NED: _ClassVar[TrainerEnum]
+    TRAINER_DALE: _ClassVar[TrainerEnum]
+    TRAINER_NOLAN: _ClassVar[TrainerEnum]
+    TRAINER_BARNY: _ClassVar[TrainerEnum]
+    TRAINER_WADE: _ClassVar[TrainerEnum]
+    TRAINER_CARTER: _ClassVar[TrainerEnum]
+    TRAINER_ELLIOT_2: _ClassVar[TrainerEnum]
+    TRAINER_ELLIOT_3: _ClassVar[TrainerEnum]
+    TRAINER_ELLIOT_4: _ClassVar[TrainerEnum]
+    TRAINER_SIDNEY_3: _ClassVar[TrainerEnum]
+    TRAINER_RONALD: _ClassVar[TrainerEnum]
+    TRAINER_JACOB: _ClassVar[TrainerEnum]
+    TRAINER_ANTHONY: _ClassVar[TrainerEnum]
+    TRAINER_BENJAMIN_1: _ClassVar[TrainerEnum]
+    TRAINER_BENJAMIN_2: _ClassVar[TrainerEnum]
+    TRAINER_BENJAMIN_3: _ClassVar[TrainerEnum]
+    TRAINER_BENJAMIN_4: _ClassVar[TrainerEnum]
+    TRAINER_GLACIA_4: _ClassVar[TrainerEnum]
+    TRAINER_ABIGAIL_1: _ClassVar[TrainerEnum]
+    TRAINER_JASMINE: _ClassVar[TrainerEnum]
+    TRAINER_ABIGAIL_2: _ClassVar[TrainerEnum]
+    TRAINER_ABIGAIL_3: _ClassVar[TrainerEnum]
+    TRAINER_ABIGAIL_4: _ClassVar[TrainerEnum]
+    TRAINER_GLACIA_3: _ClassVar[TrainerEnum]
+    TRAINER_DYLAN_1: _ClassVar[TrainerEnum]
+    TRAINER_DYLAN_2: _ClassVar[TrainerEnum]
+    TRAINER_DYLAN_3: _ClassVar[TrainerEnum]
+    TRAINER_DYLAN_4: _ClassVar[TrainerEnum]
+    TRAINER_DRAKE_3: _ClassVar[TrainerEnum]
+    TRAINER_MARIA_1: _ClassVar[TrainerEnum]
+    TRAINER_MARIA_2: _ClassVar[TrainerEnum]
+    TRAINER_MARIA_3: _ClassVar[TrainerEnum]
+    TRAINER_MARIA_4: _ClassVar[TrainerEnum]
+    TRAINER_DRAKE_4: _ClassVar[TrainerEnum]
+    TRAINER_CAMDEN: _ClassVar[TrainerEnum]
+    TRAINER_DEMETRIUS: _ClassVar[TrainerEnum]
+    TRAINER_ISAIAH_1: _ClassVar[TrainerEnum]
+    TRAINER_PABLO_1: _ClassVar[TrainerEnum]
+    TRAINER_CHASE: _ClassVar[TrainerEnum]
+    TRAINER_ISAIAH_2: _ClassVar[TrainerEnum]
+    TRAINER_ISAIAH_3: _ClassVar[TrainerEnum]
+    TRAINER_ISAIAH_4: _ClassVar[TrainerEnum]
+    TRAINER_ISAIAH_5: _ClassVar[TrainerEnum]
+    TRAINER_ISOBEL: _ClassVar[TrainerEnum]
+    TRAINER_DONNY: _ClassVar[TrainerEnum]
+    TRAINER_TALIA: _ClassVar[TrainerEnum]
+    TRAINER_KATELYN_1: _ClassVar[TrainerEnum]
+    TRAINER_ALLISON: _ClassVar[TrainerEnum]
+    TRAINER_KATELYN_2: _ClassVar[TrainerEnum]
+    TRAINER_KATELYN_3: _ClassVar[TrainerEnum]
+    TRAINER_KATELYN_4: _ClassVar[TrainerEnum]
+    TRAINER_KATELYN_5: _ClassVar[TrainerEnum]
+    TRAINER_NICOLAS_1: _ClassVar[TrainerEnum]
+    TRAINER_NICOLAS_2: _ClassVar[TrainerEnum]
+    TRAINER_NICOLAS_3: _ClassVar[TrainerEnum]
+    TRAINER_NICOLAS_4: _ClassVar[TrainerEnum]
+    TRAINER_NICOLAS_5: _ClassVar[TrainerEnum]
+    TRAINER_AARON: _ClassVar[TrainerEnum]
+    TRAINER_PERRY: _ClassVar[TrainerEnum]
+    TRAINER_HUGH: _ClassVar[TrainerEnum]
+    TRAINER_PHIL: _ClassVar[TrainerEnum]
+    TRAINER_JARED: _ClassVar[TrainerEnum]
+    TRAINER_HUMBERTO: _ClassVar[TrainerEnum]
+    TRAINER_PRESLEY: _ClassVar[TrainerEnum]
+    TRAINER_EDWARDO: _ClassVar[TrainerEnum]
+    TRAINER_COLIN: _ClassVar[TrainerEnum]
+    TRAINER_ROBERT_1: _ClassVar[TrainerEnum]
+    TRAINER_BENNY: _ClassVar[TrainerEnum]
+    TRAINER_CHESTER: _ClassVar[TrainerEnum]
+    TRAINER_ROBERT_2: _ClassVar[TrainerEnum]
+    TRAINER_ROBERT_3: _ClassVar[TrainerEnum]
+    TRAINER_ROBERT_4: _ClassVar[TrainerEnum]
+    TRAINER_ROBERT_5: _ClassVar[TrainerEnum]
+    TRAINER_ALEX: _ClassVar[TrainerEnum]
+    TRAINER_BECK: _ClassVar[TrainerEnum]
+    TRAINER_YASU: _ClassVar[TrainerEnum]
+    TRAINER_TAKASHI: _ClassVar[TrainerEnum]
+    TRAINER_DIANNE: _ClassVar[TrainerEnum]
+    TRAINER_JANI: _ClassVar[TrainerEnum]
+    TRAINER_LAO_1: _ClassVar[TrainerEnum]
+    TRAINER_LUNG: _ClassVar[TrainerEnum]
+    TRAINER_LAO_2: _ClassVar[TrainerEnum]
+    TRAINER_LAO_3: _ClassVar[TrainerEnum]
+    TRAINER_LAO_4: _ClassVar[TrainerEnum]
+    TRAINER_CYNTHIA_2: _ClassVar[TrainerEnum]
+    TRAINER_JOCELYN: _ClassVar[TrainerEnum]
+    TRAINER_LAURA: _ClassVar[TrainerEnum]
+    TRAINER_CYNDY_1: _ClassVar[TrainerEnum]
+    TRAINER_CORA: _ClassVar[TrainerEnum]
+    TRAINER_PAULA: _ClassVar[TrainerEnum]
+    TRAINER_CYNDY_2: _ClassVar[TrainerEnum]
+    TRAINER_CYNDY_3: _ClassVar[TrainerEnum]
+    TRAINER_CYNDY_4: _ClassVar[TrainerEnum]
+    TRAINER_CYNDY_5: _ClassVar[TrainerEnum]
+    TRAINER_MADELINE_1: _ClassVar[TrainerEnum]
+    TRAINER_CLARISSA: _ClassVar[TrainerEnum]
+    TRAINER_ANGELICA: _ClassVar[TrainerEnum]
+    TRAINER_MADELINE_2: _ClassVar[TrainerEnum]
+    TRAINER_MADELINE_3: _ClassVar[TrainerEnum]
+    TRAINER_MADELINE_4: _ClassVar[TrainerEnum]
+    TRAINER_LEAF_ALTERING_CAVE: _ClassVar[TrainerEnum]
+    TRAINER_BEVERLY: _ClassVar[TrainerEnum]
+    TRAINER_IMANI: _ClassVar[TrainerEnum]
+    TRAINER_KYLA: _ClassVar[TrainerEnum]
+    TRAINER_DENISE: _ClassVar[TrainerEnum]
+    TRAINER_BETH: _ClassVar[TrainerEnum]
+    TRAINER_TARA: _ClassVar[TrainerEnum]
+    TRAINER_MISSY: _ClassVar[TrainerEnum]
+    TRAINER_ALICE: _ClassVar[TrainerEnum]
+    TRAINER_JENNY_1: _ClassVar[TrainerEnum]
+    TRAINER_GRACE: _ClassVar[TrainerEnum]
+    TRAINER_TANYA: _ClassVar[TrainerEnum]
+    TRAINER_SHARON: _ClassVar[TrainerEnum]
+    TRAINER_NIKKI: _ClassVar[TrainerEnum]
+    TRAINER_BRENDA: _ClassVar[TrainerEnum]
+    TRAINER_KATIE: _ClassVar[TrainerEnum]
+    TRAINER_SUSIE: _ClassVar[TrainerEnum]
+    TRAINER_KARA: _ClassVar[TrainerEnum]
+    TRAINER_DANA: _ClassVar[TrainerEnum]
+    TRAINER_SIENNA: _ClassVar[TrainerEnum]
+    TRAINER_DEBRA: _ClassVar[TrainerEnum]
+    TRAINER_LINDA: _ClassVar[TrainerEnum]
+    TRAINER_KAYLEE: _ClassVar[TrainerEnum]
+    TRAINER_LAUREL: _ClassVar[TrainerEnum]
+    TRAINER_CARLEE: _ClassVar[TrainerEnum]
+    TRAINER_JENNY_2: _ClassVar[TrainerEnum]
+    TRAINER_JENNY_3: _ClassVar[TrainerEnum]
+    TRAINER_JENNY_4: _ClassVar[TrainerEnum]
+    TRAINER_JENNY_5: _ClassVar[TrainerEnum]
+    TRAINER_HEIDI: _ClassVar[TrainerEnum]
+    TRAINER_BECKY: _ClassVar[TrainerEnum]
+    TRAINER_CAROL: _ClassVar[TrainerEnum]
+    TRAINER_NANCY: _ClassVar[TrainerEnum]
+    TRAINER_MARTHA: _ClassVar[TrainerEnum]
+    TRAINER_DIANA_1: _ClassVar[TrainerEnum]
+    TRAINER_CEDRIC: _ClassVar[TrainerEnum]
+    TRAINER_IRENE: _ClassVar[TrainerEnum]
+    TRAINER_DIANA_2: _ClassVar[TrainerEnum]
+    TRAINER_DIANA_3: _ClassVar[TrainerEnum]
+    TRAINER_DIANA_4: _ClassVar[TrainerEnum]
+    TRAINER_DIANA_5: _ClassVar[TrainerEnum]
+    TRAINER_AMY_AND_LIV_1: _ClassVar[TrainerEnum]
+    TRAINER_AMY_AND_LIV_2: _ClassVar[TrainerEnum]
+    TRAINER_GINA_AND_MIA_1: _ClassVar[TrainerEnum]
+    TRAINER_MIU_AND_YUKI: _ClassVar[TrainerEnum]
+    TRAINER_AMY_AND_LIV_3: _ClassVar[TrainerEnum]
+    TRAINER_MAGIKARP_GUY: _ClassVar[TrainerEnum]
+    TRAINER_AMY_AND_LIV_4: _ClassVar[TrainerEnum]
+    TRAINER_PHOEBE_3: _ClassVar[TrainerEnum]
+    TRAINER_PHOEBE_4: _ClassVar[TrainerEnum]
+    TRAINER_HUEY: _ClassVar[TrainerEnum]
+    TRAINER_EDMOND: _ClassVar[TrainerEnum]
+    TRAINER_ERNEST_1: _ClassVar[TrainerEnum]
+    TRAINER_DWAYNE: _ClassVar[TrainerEnum]
+    TRAINER_PHILLIP: _ClassVar[TrainerEnum]
+    TRAINER_LEONARD: _ClassVar[TrainerEnum]
+    TRAINER_DUNCAN: _ClassVar[TrainerEnum]
+    TRAINER_ERNEST_2: _ClassVar[TrainerEnum]
+    TRAINER_ERNEST_3: _ClassVar[TrainerEnum]
+    TRAINER_ERNEST_4: _ClassVar[TrainerEnum]
+    TRAINER_ERNEST_5: _ClassVar[TrainerEnum]
+    TRAINER_ELI: _ClassVar[TrainerEnum]
+    TRAINER_ANNIKA: _ClassVar[TrainerEnum]
+    TRAINER_JAZMYN: _ClassVar[TrainerEnum]
+    TRAINER_JONAS: _ClassVar[TrainerEnum]
+    TRAINER_KAYLEY: _ClassVar[TrainerEnum]
+    TRAINER_AURON: _ClassVar[TrainerEnum]
+    TRAINER_KELVIN: _ClassVar[TrainerEnum]
+    TRAINER_MARLEY: _ClassVar[TrainerEnum]
+    TRAINER_REYNA: _ClassVar[TrainerEnum]
+    TRAINER_HUDSON: _ClassVar[TrainerEnum]
+    TRAINER_CONOR: _ClassVar[TrainerEnum]
+    TRAINER_EDWIN_1: _ClassVar[TrainerEnum]
+    TRAINER_HECTOR: _ClassVar[TrainerEnum]
+    TRAINER_TABITHA_MOSSDEEP: _ClassVar[TrainerEnum]
+    TRAINER_EDWIN_2: _ClassVar[TrainerEnum]
+    TRAINER_EDWIN_3: _ClassVar[TrainerEnum]
+    TRAINER_EDWIN_4: _ClassVar[TrainerEnum]
+    TRAINER_PHOEBE_2: _ClassVar[TrainerEnum]
+    TRAINER_WALLY_VR_1: _ClassVar[TrainerEnum]
+    TRAINER_BRENDAN_ROUTE_103_MUDKIP: _ClassVar[TrainerEnum]
+    TRAINER_BRENDAN_ROUTE_110_MUDKIP: _ClassVar[TrainerEnum]
+    TRAINER_BRENDAN_ROUTE_119_MUDKIP: _ClassVar[TrainerEnum]
+    TRAINER_BRENDAN_ROUTE_103_TREECKO: _ClassVar[TrainerEnum]
+    TRAINER_BRENDAN_ROUTE_110_TREECKO: _ClassVar[TrainerEnum]
+    TRAINER_BRENDAN_ROUTE_119_TREECKO: _ClassVar[TrainerEnum]
+    TRAINER_BRENDAN_ROUTE_103_TORCHIC: _ClassVar[TrainerEnum]
+    TRAINER_BRENDAN_ROUTE_110_TORCHIC: _ClassVar[TrainerEnum]
+    TRAINER_BRENDAN_ROUTE_119_TORCHIC: _ClassVar[TrainerEnum]
+    TRAINER_MAY_ROUTE_103_MUDKIP: _ClassVar[TrainerEnum]
+    TRAINER_MAY_ROUTE_110_MUDKIP: _ClassVar[TrainerEnum]
+    TRAINER_MAY_ROUTE_119_MUDKIP: _ClassVar[TrainerEnum]
+    TRAINER_MAY_ROUTE_103_TREECKO: _ClassVar[TrainerEnum]
+    TRAINER_MAY_ROUTE_110_TREECKO: _ClassVar[TrainerEnum]
+    TRAINER_MAY_ROUTE_119_TREECKO: _ClassVar[TrainerEnum]
+    TRAINER_MAY_ROUTE_103_TORCHIC: _ClassVar[TrainerEnum]
+    TRAINER_MAY_ROUTE_110_TORCHIC: _ClassVar[TrainerEnum]
+    TRAINER_MAY_ROUTE_119_TORCHIC: _ClassVar[TrainerEnum]
+    TRAINER_ISAAC_1: _ClassVar[TrainerEnum]
+    TRAINER_DAVIS: _ClassVar[TrainerEnum]
+    TRAINER_MITCHELL: _ClassVar[TrainerEnum]
+    TRAINER_ISAAC_2: _ClassVar[TrainerEnum]
+    TRAINER_ISAAC_3: _ClassVar[TrainerEnum]
+    TRAINER_ISAAC_4: _ClassVar[TrainerEnum]
+    TRAINER_WALLACE_LEGENDS: _ClassVar[TrainerEnum]
+    TRAINER_LYDIA_1: _ClassVar[TrainerEnum]
+    TRAINER_HALLE: _ClassVar[TrainerEnum]
+    TRAINER_GARRISON: _ClassVar[TrainerEnum]
+    TRAINER_LYDIA_2: _ClassVar[TrainerEnum]
+    TRAINER_LYDIA_3: _ClassVar[TrainerEnum]
+    TRAINER_LYDIA_4: _ClassVar[TrainerEnum]
+    TRAINER_WALLACE_DOUBLES_LEGENDS: _ClassVar[TrainerEnum]
+    TRAINER_JACKSON_1: _ClassVar[TrainerEnum]
+    TRAINER_LORENZO: _ClassVar[TrainerEnum]
+    TRAINER_SEBASTIAN: _ClassVar[TrainerEnum]
+    TRAINER_JACKSON_2: _ClassVar[TrainerEnum]
+    TRAINER_JACKSON_3: _ClassVar[TrainerEnum]
+    TRAINER_JACKSON_4: _ClassVar[TrainerEnum]
+    TRAINER_JACKSON_5: _ClassVar[TrainerEnum]
+    TRAINER_CATHERINE_1: _ClassVar[TrainerEnum]
+    TRAINER_JENNA: _ClassVar[TrainerEnum]
+    TRAINER_SOPHIA: _ClassVar[TrainerEnum]
+    TRAINER_CATHERINE_2: _ClassVar[TrainerEnum]
+    TRAINER_CATHERINE_3: _ClassVar[TrainerEnum]
+    TRAINER_CATHERINE_4: _ClassVar[TrainerEnum]
+    TRAINER_CATHERINE_5: _ClassVar[TrainerEnum]
+    TRAINER_JULIO: _ClassVar[TrainerEnum]
+    TRAINER_GRUNT_SEAFLOOR_CAVERN_5: _ClassVar[TrainerEnum]
+    TRAINER_LUCY_LAVARIDGE: _ClassVar[TrainerEnum]
+    TRAINER_GRUNT_MT_PYRE_4: _ClassVar[TrainerEnum]
+    TRAINER_GRUNT_JAGGED_PASS: _ClassVar[TrainerEnum]
+    TRAINER_MARC: _ClassVar[TrainerEnum]
+    TRAINER_BRENDEN: _ClassVar[TrainerEnum]
+    TRAINER_LILITH: _ClassVar[TrainerEnum]
+    TRAINER_CRISTIAN: _ClassVar[TrainerEnum]
+    TRAINER_SYLVIA: _ClassVar[TrainerEnum]
+    TRAINER_LEONARDO: _ClassVar[TrainerEnum]
+    TRAINER_ATHENA: _ClassVar[TrainerEnum]
+    TRAINER_HARRISON: _ClassVar[TrainerEnum]
+    TRAINER_GRUNT_MT_CHIMNEY_2: _ClassVar[TrainerEnum]
+    TRAINER_CLARENCE: _ClassVar[TrainerEnum]
+    TRAINER_BUFFEL: _ClassVar[TrainerEnum]
+    TRAINER_NATE: _ClassVar[TrainerEnum]
+    TRAINER_KATHLEEN: _ClassVar[TrainerEnum]
+    TRAINER_CLIFFORD: _ClassVar[TrainerEnum]
+    TRAINER_NICHOLAS: _ClassVar[TrainerEnum]
+    TRAINER_GRUNT_SPACE_CENTER_3: _ClassVar[TrainerEnum]
+    TRAINER_GRUNT_SPACE_CENTER_4: _ClassVar[TrainerEnum]
+    TRAINER_GRUNT_SPACE_CENTER_5: _ClassVar[TrainerEnum]
+    TRAINER_GRUNT_SPACE_CENTER_6: _ClassVar[TrainerEnum]
+    TRAINER_GRUNT_SPACE_CENTER_7: _ClassVar[TrainerEnum]
+    TRAINER_MACEY: _ClassVar[TrainerEnum]
+    TRAINER_BRENDAN_RUSTBORO_TREECKO: _ClassVar[TrainerEnum]
+    TRAINER_BRENDAN_RUSTBORO_MUDKIP: _ClassVar[TrainerEnum]
+    TRAINER_PAXTON: _ClassVar[TrainerEnum]
+    TRAINER_ISABELLA: _ClassVar[TrainerEnum]
+    TRAINER_GRUNT_WEATHER_INST_5: _ClassVar[TrainerEnum]
+    TRAINER_TABITHA_MT_CHIMNEY: _ClassVar[TrainerEnum]
+    TRAINER_JONATHAN: _ClassVar[TrainerEnum]
+    TRAINER_BRENDAN_RUSTBORO_TORCHIC: _ClassVar[TrainerEnum]
+    TRAINER_MAY_RUSTBORO_MUDKIP: _ClassVar[TrainerEnum]
+    TRAINER_MAXIE_MAGMA_HIDEOUT: _ClassVar[TrainerEnum]
+    TRAINER_MAXIE_MT_CHIMNEY: _ClassVar[TrainerEnum]
+    TRAINER_TIANA: _ClassVar[TrainerEnum]
+    TRAINER_HALEY_1: _ClassVar[TrainerEnum]
+    TRAINER_JANICE: _ClassVar[TrainerEnum]
+    TRAINER_VIVI: _ClassVar[TrainerEnum]
+    TRAINER_HALEY_2: _ClassVar[TrainerEnum]
+    TRAINER_HALEY_3: _ClassVar[TrainerEnum]
+    TRAINER_HALEY_4: _ClassVar[TrainerEnum]
+    TRAINER_COURTNEY_MAGMA_HIDEOUT: _ClassVar[TrainerEnum]
+    TRAINER_SALLY: _ClassVar[TrainerEnum]
+    TRAINER_ROBIN: _ClassVar[TrainerEnum]
+    TRAINER_ANDREA: _ClassVar[TrainerEnum]
+    TRAINER_CRISSY: _ClassVar[TrainerEnum]
+    TRAINER_RICK: _ClassVar[TrainerEnum]
+    TRAINER_LYLE: _ClassVar[TrainerEnum]
+    TRAINER_JOSE: _ClassVar[TrainerEnum]
+    TRAINER_DOUG: _ClassVar[TrainerEnum]
+    TRAINER_GREG: _ClassVar[TrainerEnum]
+    TRAINER_KENT: _ClassVar[TrainerEnum]
+    TRAINER_JAMES_1: _ClassVar[TrainerEnum]
+    TRAINER_JAMES_2: _ClassVar[TrainerEnum]
+    TRAINER_JAMES_3: _ClassVar[TrainerEnum]
+    TRAINER_JAMES_4: _ClassVar[TrainerEnum]
+    TRAINER_COURTNEY_MOSSDEEP: _ClassVar[TrainerEnum]
+    TRAINER_BRICE: _ClassVar[TrainerEnum]
+    TRAINER_TRENT_1: _ClassVar[TrainerEnum]
+    TRAINER_LENNY: _ClassVar[TrainerEnum]
+    TRAINER_LUCAS_1: _ClassVar[TrainerEnum]
+    TRAINER_ALAN: _ClassVar[TrainerEnum]
+    TRAINER_CLARK: _ClassVar[TrainerEnum]
+    TRAINER_ERIC: _ClassVar[TrainerEnum]
+    TRAINER_SPENSER_FORTREE: _ClassVar[TrainerEnum]
+    TRAINER_ARCHIE_SLATEPORT: _ClassVar[TrainerEnum]
+    TRAINER_MIKE_2: _ClassVar[TrainerEnum]
+    TRAINER_TRENT_2: _ClassVar[TrainerEnum]
+    TRAINER_TRENT_3: _ClassVar[TrainerEnum]
+    TRAINER_TRENT_4: _ClassVar[TrainerEnum]
+    TRAINER_CYNTHIA_1: _ClassVar[TrainerEnum]
+    TRAINER_DEZ_AND_LUKE: _ClassVar[TrainerEnum]
+    TRAINER_LEA_AND_JED: _ClassVar[TrainerEnum]
+    TRAINER_KIRA_AND_DAN_1: _ClassVar[TrainerEnum]
+    TRAINER_KIRA_AND_DAN_2: _ClassVar[TrainerEnum]
+    TRAINER_KIRA_AND_DAN_3: _ClassVar[TrainerEnum]
+    TRAINER_KIRA_AND_DAN_4: _ClassVar[TrainerEnum]
+    TRAINER_KIRA_AND_DAN_5: _ClassVar[TrainerEnum]
+    TRAINER_JOHANNA: _ClassVar[TrainerEnum]
+    TRAINER_GERALD: _ClassVar[TrainerEnum]
+    TRAINER_VIVIAN: _ClassVar[TrainerEnum]
+    TRAINER_DANIELLE: _ClassVar[TrainerEnum]
+    TRAINER_HIDEO: _ClassVar[TrainerEnum]
+    TRAINER_KEIGO: _ClassVar[TrainerEnum]
+    TRAINER_RILEY: _ClassVar[TrainerEnum]
+    TRAINER_FLINT: _ClassVar[TrainerEnum]
+    TRAINER_ASHLEY: _ClassVar[TrainerEnum]
+    TRAINER_WALLY_MAUVILLE: _ClassVar[TrainerEnum]
+    TRAINER_WALLY_VR_2: _ClassVar[TrainerEnum]
+    TRAINER_WALLY_VR_3: _ClassVar[TrainerEnum]
+    TRAINER_WALLY_VR_4: _ClassVar[TrainerEnum]
+    TRAINER_WALLY_VR_5: _ClassVar[TrainerEnum]
+    TRAINER_BRENDAN_LILYCOVE_MUDKIP: _ClassVar[TrainerEnum]
+    TRAINER_BRENDAN_LILYCOVE_TREECKO: _ClassVar[TrainerEnum]
+    TRAINER_BRENDAN_LILYCOVE_TORCHIC: _ClassVar[TrainerEnum]
+    TRAINER_MAY_LILYCOVE_MUDKIP: _ClassVar[TrainerEnum]
+    TRAINER_MAY_LILYCOVE_TREECKO: _ClassVar[TrainerEnum]
+    TRAINER_MAY_LILYCOVE_TORCHIC: _ClassVar[TrainerEnum]
+    TRAINER_JONAH: _ClassVar[TrainerEnum]
+    TRAINER_HENRY: _ClassVar[TrainerEnum]
+    TRAINER_ROGER: _ClassVar[TrainerEnum]
+    TRAINER_ALEXA: _ClassVar[TrainerEnum]
+    TRAINER_RUBEN: _ClassVar[TrainerEnum]
+    TRAINER_KOJI_1: _ClassVar[TrainerEnum]
+    TRAINER_WAYNE: _ClassVar[TrainerEnum]
+    TRAINER_AIDAN: _ClassVar[TrainerEnum]
+    TRAINER_REED: _ClassVar[TrainerEnum]
+    TRAINER_TISHA: _ClassVar[TrainerEnum]
+    TRAINER_TORI_AND_TIA: _ClassVar[TrainerEnum]
+    TRAINER_KIM_AND_IRIS: _ClassVar[TrainerEnum]
+    TRAINER_TYRA_AND_IVY: _ClassVar[TrainerEnum]
+    TRAINER_MEL_AND_PAUL: _ClassVar[TrainerEnum]
+    TRAINER_JOHN_AND_JAY_1: _ClassVar[TrainerEnum]
+    TRAINER_JOHN_AND_JAY_2: _ClassVar[TrainerEnum]
+    TRAINER_JOHN_AND_JAY_3: _ClassVar[TrainerEnum]
+    TRAINER_JOHN_AND_JAY_4: _ClassVar[TrainerEnum]
+    TRAINER_JOHN_AND_JAY_5: _ClassVar[TrainerEnum]
+    TRAINER_RELI_AND_IAN: _ClassVar[TrainerEnum]
+    TRAINER_LILA_AND_ROY_1: _ClassVar[TrainerEnum]
+    TRAINER_LILA_AND_ROY_2: _ClassVar[TrainerEnum]
+    TRAINER_LILA_AND_ROY_3: _ClassVar[TrainerEnum]
+    TRAINER_LILA_AND_ROY_4: _ClassVar[TrainerEnum]
+    TRAINER_LILA_AND_ROY_5: _ClassVar[TrainerEnum]
+    TRAINER_LISA_AND_RAY: _ClassVar[TrainerEnum]
+    TRAINER_CHRIS: _ClassVar[TrainerEnum]
+    TRAINER_DAWSON: _ClassVar[TrainerEnum]
+    TRAINER_SARAH: _ClassVar[TrainerEnum]
+    TRAINER_DARIAN: _ClassVar[TrainerEnum]
+    TRAINER_HAILEY: _ClassVar[TrainerEnum]
+    TRAINER_CHANDLER: _ClassVar[TrainerEnum]
+    TRAINER_KALEB: _ClassVar[TrainerEnum]
+    TRAINER_JOSEPH: _ClassVar[TrainerEnum]
+    TRAINER_ALYSSA: _ClassVar[TrainerEnum]
+    TRAINER_MARCOS: _ClassVar[TrainerEnum]
+    TRAINER_RHETT: _ClassVar[TrainerEnum]
+    TRAINER_TYRON: _ClassVar[TrainerEnum]
+    TRAINER_CELINA: _ClassVar[TrainerEnum]
+    TRAINER_BIANCA: _ClassVar[TrainerEnum]
+    TRAINER_HAYDEN: _ClassVar[TrainerEnum]
+    TRAINER_SOPHIE: _ClassVar[TrainerEnum]
+    TRAINER_COBY: _ClassVar[TrainerEnum]
+    TRAINER_LAWRENCE: _ClassVar[TrainerEnum]
+    TRAINER_WYATT: _ClassVar[TrainerEnum]
+    TRAINER_ANGELINA: _ClassVar[TrainerEnum]
+    TRAINER_KAI: _ClassVar[TrainerEnum]
+    TRAINER_CHARLOTTE: _ClassVar[TrainerEnum]
+    TRAINER_DEANDRE: _ClassVar[TrainerEnum]
+    TRAINER_GRUNT_MAGMA_HIDEOUT_1: _ClassVar[TrainerEnum]
+    TRAINER_GRUNT_MAGMA_HIDEOUT_2: _ClassVar[TrainerEnum]
+    TRAINER_GRUNT_MAGMA_HIDEOUT_3: _ClassVar[TrainerEnum]
+    TRAINER_GRUNT_MAGMA_HIDEOUT_4: _ClassVar[TrainerEnum]
+    TRAINER_GRUNT_MAGMA_HIDEOUT_5: _ClassVar[TrainerEnum]
+    TRAINER_GRUNT_MAGMA_HIDEOUT_6: _ClassVar[TrainerEnum]
+    TRAINER_GRUNT_MAGMA_HIDEOUT_7: _ClassVar[TrainerEnum]
+    TRAINER_GRUNT_MAGMA_HIDEOUT_8: _ClassVar[TrainerEnum]
+    TRAINER_GRUNT_MAGMA_HIDEOUT_9: _ClassVar[TrainerEnum]
+    TRAINER_GRUNT_MAGMA_HIDEOUT_10: _ClassVar[TrainerEnum]
+    TRAINER_GRUNT_MAGMA_HIDEOUT_11: _ClassVar[TrainerEnum]
+    TRAINER_GRUNT_MAGMA_HIDEOUT_12: _ClassVar[TrainerEnum]
+    TRAINER_GRUNT_MAGMA_HIDEOUT_13: _ClassVar[TrainerEnum]
+    TRAINER_GRUNT_MAGMA_HIDEOUT_14: _ClassVar[TrainerEnum]
+    TRAINER_GRUNT_MAGMA_HIDEOUT_15: _ClassVar[TrainerEnum]
+    TRAINER_GRUNT_MAGMA_HIDEOUT_16: _ClassVar[TrainerEnum]
+    TRAINER_TABITHA_MAGMA_HIDEOUT: _ClassVar[TrainerEnum]
+    TRAINER_DARCY: _ClassVar[TrainerEnum]
+    TRAINER_MAXIE_MOSSDEEP: _ClassVar[TrainerEnum]
+    TRAINER_PETE: _ClassVar[TrainerEnum]
+    TRAINER_ISABELLE: _ClassVar[TrainerEnum]
+    TRAINER_ANDRES_1: _ClassVar[TrainerEnum]
+    TRAINER_JOSUE: _ClassVar[TrainerEnum]
+    TRAINER_CAMRON: _ClassVar[TrainerEnum]
+    TRAINER_CORY_1: _ClassVar[TrainerEnum]
+    TRAINER_CAROLINA: _ClassVar[TrainerEnum]
+    TRAINER_ELIJAH: _ClassVar[TrainerEnum]
+    TRAINER_CELIA: _ClassVar[TrainerEnum]
+    TRAINER_BRYAN: _ClassVar[TrainerEnum]
+    TRAINER_BRANDEN: _ClassVar[TrainerEnum]
+    TRAINER_BRYANT: _ClassVar[TrainerEnum]
+    TRAINER_SHAYLA: _ClassVar[TrainerEnum]
+    TRAINER_KYRA: _ClassVar[TrainerEnum]
+    TRAINER_JAIDEN: _ClassVar[TrainerEnum]
+    TRAINER_ALIX: _ClassVar[TrainerEnum]
+    TRAINER_HELENE: _ClassVar[TrainerEnum]
+    TRAINER_MARLENE: _ClassVar[TrainerEnum]
+    TRAINER_DEVAN: _ClassVar[TrainerEnum]
+    TRAINER_JOHNSON: _ClassVar[TrainerEnum]
+    TRAINER_MELINA: _ClassVar[TrainerEnum]
+    TRAINER_BRANDI: _ClassVar[TrainerEnum]
+    TRAINER_AISHA: _ClassVar[TrainerEnum]
+    TRAINER_MAKAYLA: _ClassVar[TrainerEnum]
+    TRAINER_FABIAN: _ClassVar[TrainerEnum]
+    TRAINER_DAYTON: _ClassVar[TrainerEnum]
+    TRAINER_RACHEL: _ClassVar[TrainerEnum]
+    TRAINER_LEONEL: _ClassVar[TrainerEnum]
+    TRAINER_CALLIE: _ClassVar[TrainerEnum]
+    TRAINER_CALE: _ClassVar[TrainerEnum]
+    TRAINER_MYLES: _ClassVar[TrainerEnum]
+    TRAINER_PAT: _ClassVar[TrainerEnum]
+    TRAINER_CRISTIN_1: _ClassVar[TrainerEnum]
+    TRAINER_MAY_RUSTBORO_TREECKO: _ClassVar[TrainerEnum]
+    TRAINER_MAY_RUSTBORO_TORCHIC: _ClassVar[TrainerEnum]
+    TRAINER_ROXANNE_2: _ClassVar[TrainerEnum]
+    TRAINER_ROXANNE_3: _ClassVar[TrainerEnum]
+    TRAINER_ROXANNE_4: _ClassVar[TrainerEnum]
+    TRAINER_ROXANNE_5: _ClassVar[TrainerEnum]
+    TRAINER_BRAWLY_2: _ClassVar[TrainerEnum]
+    TRAINER_BRAWLY_3: _ClassVar[TrainerEnum]
+    TRAINER_BRAWLY_4: _ClassVar[TrainerEnum]
+    TRAINER_BRAWLY_5: _ClassVar[TrainerEnum]
+    TRAINER_WATTSON_2: _ClassVar[TrainerEnum]
+    TRAINER_WATTSON_3: _ClassVar[TrainerEnum]
+    TRAINER_WATTSON_4: _ClassVar[TrainerEnum]
+    TRAINER_WATTSON_5: _ClassVar[TrainerEnum]
+    TRAINER_FLANNERY_2: _ClassVar[TrainerEnum]
+    TRAINER_FLANNERY_3: _ClassVar[TrainerEnum]
+    TRAINER_FLANNERY_4: _ClassVar[TrainerEnum]
+    TRAINER_FLANNERY_5: _ClassVar[TrainerEnum]
+    TRAINER_NORMAN_2: _ClassVar[TrainerEnum]
+    TRAINER_NORMAN_3: _ClassVar[TrainerEnum]
+    TRAINER_NORMAN_4: _ClassVar[TrainerEnum]
+    TRAINER_NORMAN_5: _ClassVar[TrainerEnum]
+    TRAINER_WINONA_2: _ClassVar[TrainerEnum]
+    TRAINER_WINONA_3: _ClassVar[TrainerEnum]
+    TRAINER_WINONA_4: _ClassVar[TrainerEnum]
+    TRAINER_WINONA_5: _ClassVar[TrainerEnum]
+    TRAINER_TATE_AND_LIZA_2: _ClassVar[TrainerEnum]
+    TRAINER_TATE_AND_LIZA_3: _ClassVar[TrainerEnum]
+    TRAINER_TATE_AND_LIZA_4: _ClassVar[TrainerEnum]
+    TRAINER_TATE_AND_LIZA_5: _ClassVar[TrainerEnum]
+    TRAINER_JUAN_2: _ClassVar[TrainerEnum]
+    TRAINER_JUAN_3: _ClassVar[TrainerEnum]
+    TRAINER_JUAN_4: _ClassVar[TrainerEnum]
+    TRAINER_JUAN_5: _ClassVar[TrainerEnum]
+    TRAINER_ANGELO: _ClassVar[TrainerEnum]
+    TRAINER_DARIUS: _ClassVar[TrainerEnum]
+    TRAINER_STEVEN: _ClassVar[TrainerEnum]
+    TRAINER_ANABEL: _ClassVar[TrainerEnum]
+    TRAINER_TUCKER: _ClassVar[TrainerEnum]
+    TRAINER_SPENSER: _ClassVar[TrainerEnum]
+    TRAINER_GRETA: _ClassVar[TrainerEnum]
+    TRAINER_NOLAND: _ClassVar[TrainerEnum]
+    TRAINER_LUCY: _ClassVar[TrainerEnum]
+    TRAINER_BRANDON: _ClassVar[TrainerEnum]
+    TRAINER_ANDRES_2: _ClassVar[TrainerEnum]
+    TRAINER_ANDRES_3: _ClassVar[TrainerEnum]
+    TRAINER_ANDRES_4: _ClassVar[TrainerEnum]
+    TRAINER_ANDRES_5: _ClassVar[TrainerEnum]
+    TRAINER_CORY_2: _ClassVar[TrainerEnum]
+    TRAINER_CORY_3: _ClassVar[TrainerEnum]
+    TRAINER_CORY_4: _ClassVar[TrainerEnum]
+    TRAINER_CORY_5: _ClassVar[TrainerEnum]
+    TRAINER_PABLO_2: _ClassVar[TrainerEnum]
+    TRAINER_PABLO_3: _ClassVar[TrainerEnum]
+    TRAINER_PABLO_4: _ClassVar[TrainerEnum]
+    TRAINER_PABLO_5: _ClassVar[TrainerEnum]
+    TRAINER_KOJI_2: _ClassVar[TrainerEnum]
+    TRAINER_KOJI_3: _ClassVar[TrainerEnum]
+    TRAINER_KOJI_4: _ClassVar[TrainerEnum]
+    TRAINER_KOJI_5: _ClassVar[TrainerEnum]
+    TRAINER_CRISTIN_2: _ClassVar[TrainerEnum]
+    TRAINER_CRISTIN_3: _ClassVar[TrainerEnum]
+    TRAINER_CRISTIN_4: _ClassVar[TrainerEnum]
+    TRAINER_CRISTIN_5: _ClassVar[TrainerEnum]
+    TRAINER_FERNANDO_2: _ClassVar[TrainerEnum]
+    TRAINER_FERNANDO_3: _ClassVar[TrainerEnum]
+    TRAINER_FERNANDO_4: _ClassVar[TrainerEnum]
+    TRAINER_FERNANDO_5: _ClassVar[TrainerEnum]
+    TRAINER_SAWYER_2: _ClassVar[TrainerEnum]
+    TRAINER_SAWYER_3: _ClassVar[TrainerEnum]
+    TRAINER_SAWYER_4: _ClassVar[TrainerEnum]
+    TRAINER_SAWYER_5: _ClassVar[TrainerEnum]
+    TRAINER_GABRIELLE_2: _ClassVar[TrainerEnum]
+    TRAINER_GABRIELLE_3: _ClassVar[TrainerEnum]
+    TRAINER_GABRIELLE_4: _ClassVar[TrainerEnum]
+    TRAINER_GABRIELLE_5: _ClassVar[TrainerEnum]
+    TRAINER_THALIA_2: _ClassVar[TrainerEnum]
+    TRAINER_THALIA_3: _ClassVar[TrainerEnum]
+    TRAINER_THALIA_4: _ClassVar[TrainerEnum]
+    TRAINER_THALIA_5: _ClassVar[TrainerEnum]
+    TRAINER_MARIELA: _ClassVar[TrainerEnum]
+    TRAINER_ALVARO: _ClassVar[TrainerEnum]
+    TRAINER_EVERETT: _ClassVar[TrainerEnum]
+    TRAINER_RED: _ClassVar[TrainerEnum]
+    TRAINER_LEAF: _ClassVar[TrainerEnum]
+    TRAINER_BRENDAN_PLACEHOLDER: _ClassVar[TrainerEnum]
+    TRAINER_MAY_PLACEHOLDER: _ClassVar[TrainerEnum]
+    TRAINER_STEVEN_GRANITE_CAVE: _ClassVar[TrainerEnum]
+    TRAINER_MEGANIUMITE_VERDANTURF_MEADOW: _ClassVar[TrainerEnum]
+    TRAINER_FERALIGATRITEX_ROUTE105: _ClassVar[TrainerEnum]
+    TRAINER_TYPHLOSIONITE_ASHEN_WOODS: _ClassVar[TrainerEnum]
+    TRAINER_KROOKODILENITE_ROUTE111_RUINS_EXTERIOR: _ClassVar[TrainerEnum]
+    TRAINER_SHEDINJITE_ABANDONED_SHIP: _ClassVar[TrainerEnum]
+    TRAINER_CROBATITE_DEWFORD_MANOR: _ClassVar[TrainerEnum]
+    TRAINER_SINNOH_MEGAS_MAUVILLE_GAME_CORNER: _ClassVar[TrainerEnum]
+    TRAINER_NIDO_MEGAS_ROUTE116_RUSTURF: _ClassVar[TrainerEnum]
+    TRAINER_NEW_TEST: _ClassVar[TrainerEnum]
+    TRAINER_DRAGONITENITE_SAGE_1: _ClassVar[TrainerEnum]
+    TRAINER_DRAGONITENITE_SAGE_2: _ClassVar[TrainerEnum]
+    TRAINER_DRAGONITENITE_SAGE_3: _ClassVar[TrainerEnum]
+    TRAINER_HITMONSTONE_BLACKBELT_1: _ClassVar[TrainerEnum]
+    TRAINER_HITMONSTONE_BLACKBELT_2: _ClassVar[TrainerEnum]
+    TRAINER_HITMONSTONE_BLACKBELT_3: _ClassVar[TrainerEnum]
+    TRAINER_GRANBULLITE_ROUTE123: _ClassVar[TrainerEnum]
+    TRAINER_CALVIN_E4: _ClassVar[TrainerEnum]
+    TRAINER_BANEFUL_PETALBURG_WOODS: _ClassVar[TrainerEnum]
+    TRAINER_STEVEN_ROUTE118: _ClassVar[TrainerEnum]
+    TRAINER_CREW_MTPYRE: _ClassVar[TrainerEnum]
+    TRAINER_WALLACE_2: _ClassVar[TrainerEnum]
+    TRAINER_WALLACE_3: _ClassVar[TrainerEnum]
+    TRAINER_WALLACE_4: _ClassVar[TrainerEnum]
+    TRAINER_WALLACE_5: _ClassVar[TrainerEnum]
+    TRAINER_STEVEN_LEGENDS: _ClassVar[TrainerEnum]
+    TRAINER_STEVEN_DOUBLES: _ClassVar[TrainerEnum]
+    TRAINER_STEVEN_DOUBLES_LEGENDS: _ClassVar[TrainerEnum]
+    TRAINER_VINEGAR: _ClassVar[TrainerEnum]
+    TRAINER_SALSA: _ClassVar[TrainerEnum]
+    TRAINER_KATSUP: _ClassVar[TrainerEnum]
+    TRAINER_MONOCHAMP_NORMAL: _ClassVar[TrainerEnum]
+    TRAINER_MONOCHAMP_FIGHTING: _ClassVar[TrainerEnum]
+    TRAINER_MONOCHAMP_FLYING: _ClassVar[TrainerEnum]
+    TRAINER_MONOCHAMP_POISON: _ClassVar[TrainerEnum]
+    TRAINER_MONOCHAMP_GROUND: _ClassVar[TrainerEnum]
+    TRAINER_MONOCHAMP_ROCK: _ClassVar[TrainerEnum]
+    TRAINER_MONOCHAMP_BUG: _ClassVar[TrainerEnum]
+    TRAINER_MONOCHAMP_GHOST: _ClassVar[TrainerEnum]
+    TRAINER_MONOCHAMP_STEEL: _ClassVar[TrainerEnum]
+    TRAINER_MONOCHAMP_FIRE: _ClassVar[TrainerEnum]
+    TRAINER_MONOCHAMP_WATER: _ClassVar[TrainerEnum]
+    TRAINER_MONOCHAMP_GRASS: _ClassVar[TrainerEnum]
+    TRAINER_MONOCHAMP_ELECTRIC: _ClassVar[TrainerEnum]
+    TRAINER_MONOCHAMP_PSYCHIC: _ClassVar[TrainerEnum]
+    TRAINER_MONOCHAMP_ICE: _ClassVar[TrainerEnum]
+    TRAINER_MONOCHAMP_DRAGON: _ClassVar[TrainerEnum]
+    TRAINER_MONOCHAMP_DARK: _ClassVar[TrainerEnum]
+    TRAINER_MONOCHAMP_FAIRY: _ClassVar[TrainerEnum]
+    TRAINER_TRENT_5: _ClassVar[TrainerEnum]
+    TRAINER_ALFREDO: _ClassVar[TrainerEnum]
+    TRAINER_TERIYAKI: _ClassVar[TrainerEnum]
+    TRAINER_NEW_TRAINER: _ClassVar[TrainerEnum]
+    TRAINER_CINDY_5: _ClassVar[TrainerEnum]
+    TRAINER_MEGA_FIDOUGH: _ClassVar[TrainerEnum]
+    TRAINER_BLUNDER: _ClassVar[TrainerEnum]
+    TRAINER_LETT: _ClassVar[TrainerEnum]
+    TRAINER_ORWELL: _ClassVar[TrainerEnum]
+    TRAINER_AMANDA: _ClassVar[TrainerEnum]
+    TRAINER_RODRICK: _ClassVar[TrainerEnum]
+    TRAINER_GRUNT_SUNHOLLOW_1: _ClassVar[TrainerEnum]
+    TRAINER_GRUNT_SUNHOLLOW_2: _ClassVar[TrainerEnum]
+    TRAINER_GRUNT_SUNHOLLOW_3: _ClassVar[TrainerEnum]
+    TRAINER_COURTNEY_SUNHOLLOW: _ClassVar[TrainerEnum]
+    TRAINER_ACE_TRAINER_GOAT: _ClassVar[TrainerEnum]
+    TRAINER_ACE_TRAINER_NEO: _ClassVar[TrainerEnum]
+    TRAINER_ACE_TRAINER_ANABELLE: _ClassVar[TrainerEnum]
+    TRAINER_ACE_TRAINER_VIOLET: _ClassVar[TrainerEnum]
+    TRAINER_SKIER_JANET: _ClassVar[TrainerEnum]
+    TRAINER_SKIER_GLOVEL: _ClassVar[TrainerEnum]
+    TRAINER_ACE_TRAINER_PAGANI: _ClassVar[TrainerEnum]
+    TRAINER_ACE_TRAINER_ASHLEY: _ClassVar[TrainerEnum]
+    TRAINER_ACE_TRAINER_LEELA: _ClassVar[TrainerEnum]
+    TRAINER_ACE_TRAINER_DICK: _ClassVar[TrainerEnum]
+    TRAINER_SKIER_GUIN: _ClassVar[TrainerEnum]
+    TRAINER_ACE_TRAINER_MIKE: _ClassVar[TrainerEnum]
+    TRAINER_ARCHIE_MT_PYRE: _ClassVar[TrainerEnum]
+    TRAINER_OLDPLAYER: _ClassVar[TrainerEnum]
+TRAINER_NONE: TrainerEnum
+TRAINER_SAWYER_1: TrainerEnum
+TRAINER_GRUNT_AQUA_HIDEOUT_1: TrainerEnum
+TRAINER_GRUNT_AQUA_HIDEOUT_2: TrainerEnum
+TRAINER_GRUNT_AQUA_HIDEOUT_3: TrainerEnum
+TRAINER_GRUNT_AQUA_HIDEOUT_4: TrainerEnum
+TRAINER_GRUNT_SEAFLOOR_CAVERN_1: TrainerEnum
+TRAINER_GRUNT_SEAFLOOR_CAVERN_2: TrainerEnum
+TRAINER_GRUNT_SEAFLOOR_CAVERN_3: TrainerEnum
+TRAINER_GABRIELLE_1: TrainerEnum
+TRAINER_GRUNT_PETALBURG_WOODS: TrainerEnum
+TRAINER_MARCEL: TrainerEnum
+TRAINER_ALBERTO: TrainerEnum
+TRAINER_ED: TrainerEnum
+TRAINER_GRUNT_SEAFLOOR_CAVERN_4: TrainerEnum
+TRAINER_DECLAN: TrainerEnum
+TRAINER_GRUNT_RUSTURF_TUNNEL: TrainerEnum
+TRAINER_GRUNT_WEATHER_INST_1: TrainerEnum
+TRAINER_GRUNT_WEATHER_INST_2: TrainerEnum
+TRAINER_GRUNT_WEATHER_INST_3: TrainerEnum
+TRAINER_GRUNT_MUSEUM_1: TrainerEnum
+TRAINER_GRUNT_MUSEUM_2: TrainerEnum
+TRAINER_GRUNT_SPACE_CENTER_1: TrainerEnum
+TRAINER_GRUNT_MT_PYRE_1: TrainerEnum
+TRAINER_GRUNT_MT_PYRE_2: TrainerEnum
+TRAINER_GRUNT_MT_PYRE_3: TrainerEnum
+TRAINER_GRUNT_WEATHER_INST_4: TrainerEnum
+TRAINER_GRUNT_AQUA_HIDEOUT_5: TrainerEnum
+TRAINER_GRUNT_AQUA_HIDEOUT_6: TrainerEnum
+TRAINER_FREDRICK: TrainerEnum
+TRAINER_MATT: TrainerEnum
+TRAINER_ZANDER: TrainerEnum
+TRAINER_SHELLY_WEATHER_INSTITUTE: TrainerEnum
+TRAINER_SHELLY_SEAFLOOR_CAVERN: TrainerEnum
+TRAINER_ARCHIE: TrainerEnum
+TRAINER_LEAH: TrainerEnum
+TRAINER_DAISY: TrainerEnum
+TRAINER_ROSE_1: TrainerEnum
+TRAINER_FELIX: TrainerEnum
+TRAINER_VIOLET: TrainerEnum
+TRAINER_ROSE_2: TrainerEnum
+TRAINER_ROSE_3: TrainerEnum
+TRAINER_ROSE_4: TrainerEnum
+TRAINER_GRUNT_METEOR_FALLS: TrainerEnum
+TRAINER_DUSTY_1: TrainerEnum
+TRAINER_CHIP: TrainerEnum
+TRAINER_FOSTER: TrainerEnum
+TRAINER_DUSTY_2: TrainerEnum
+TRAINER_DUSTY_3: TrainerEnum
+TRAINER_DUSTY_4: TrainerEnum
+TRAINER_COURTNEY_METEOR_FALLS: TrainerEnum
+TRAINER_GABBY_AND_TY_1: TrainerEnum
+TRAINER_GABBY_AND_TY_2: TrainerEnum
+TRAINER_GABBY_AND_TY_3: TrainerEnum
+TRAINER_GABBY_AND_TY_4: TrainerEnum
+TRAINER_GABBY_AND_TY_5: TrainerEnum
+TRAINER_GABBY_AND_TY_6: TrainerEnum
+TRAINER_LOLA_1: TrainerEnum
+TRAINER_AUSTINA: TrainerEnum
+TRAINER_GWEN: TrainerEnum
+TRAINER_LOLA_2: TrainerEnum
+TRAINER_LOLA_3: TrainerEnum
+TRAINER_LOLA_4: TrainerEnum
+MAY_TREECKO_METEOR_FALLS: TrainerEnum
+TRAINER_RICKY_1: TrainerEnum
+TRAINER_SIMON: TrainerEnum
+TRAINER_CHARLIE: TrainerEnum
+TRAINER_RICKY_2: TrainerEnum
+TRAINER_RICKY_3: TrainerEnum
+TRAINER_RICKY_4: TrainerEnum
+MAY_TORCHIC_METEOR_FALLS: TrainerEnum
+TRAINER_RANDALL: TrainerEnum
+TRAINER_PARKER: TrainerEnum
+TRAINER_GEORGE: TrainerEnum
+TRAINER_BERKE: TrainerEnum
+TRAINER_BRAXTON: TrainerEnum
+TRAINER_VINCENT: TrainerEnum
+TRAINER_LEROY: TrainerEnum
+TRAINER_WILTON_1: TrainerEnum
+TRAINER_EDGAR: TrainerEnum
+TRAINER_ALBERT: TrainerEnum
+TRAINER_SAMUEL: TrainerEnum
+TRAINER_VITO: TrainerEnum
+TRAINER_OWEN: TrainerEnum
+TRAINER_WILTON_2: TrainerEnum
+TRAINER_WILTON_3: TrainerEnum
+TRAINER_WILTON_4: TrainerEnum
+MAY_MUDKIP_METEOR_FALLS: TrainerEnum
+TRAINER_WARREN: TrainerEnum
+TRAINER_MARY: TrainerEnum
+TRAINER_ALEXIA: TrainerEnum
+TRAINER_JODY: TrainerEnum
+TRAINER_WENDY: TrainerEnum
+TRAINER_KEIRA: TrainerEnum
+TRAINER_BROOKE_1: TrainerEnum
+TRAINER_JENNIFER: TrainerEnum
+TRAINER_HOPE: TrainerEnum
+TRAINER_SHANNON: TrainerEnum
+TRAINER_MICHELLE: TrainerEnum
+TRAINER_CAROLINE: TrainerEnum
+TRAINER_JULIE: TrainerEnum
+TRAINER_BROOKE_2: TrainerEnum
+TRAINER_BROOKE_3: TrainerEnum
+TRAINER_BROOKE_4: TrainerEnum
+BRENDAN_TREECKO_METEOR_FALLS: TrainerEnum
+TRAINER_PATRICIA: TrainerEnum
+TRAINER_KINDRA: TrainerEnum
+TRAINER_TAMMY: TrainerEnum
+TRAINER_VALERIE_1: TrainerEnum
+TRAINER_TASHA: TrainerEnum
+TRAINER_VALERIE_2: TrainerEnum
+TRAINER_VALERIE_3: TrainerEnum
+TRAINER_VALERIE_4: TrainerEnum
+BRENDAN_TORCHIC_METEOR_FALLS: TrainerEnum
+TRAINER_CINDY_1: TrainerEnum
+TRAINER_DAPHNE: TrainerEnum
+TRAINER_GRUNT_SPACE_CENTER_2: TrainerEnum
+TRAINER_CINDY_2: TrainerEnum
+TRAINER_BRIANNA: TrainerEnum
+TRAINER_NAOMI: TrainerEnum
+TRAINER_CINDY_3: TrainerEnum
+TRAINER_CINDY_4: TrainerEnum
+BRENDAN_MUDKIP_METEOR_FALLS: TrainerEnum
+TRAINER_CINDY_6: TrainerEnum
+TRAINER_MELISSA: TrainerEnum
+TRAINER_SHEILA: TrainerEnum
+TRAINER_SHIRLEY: TrainerEnum
+TRAINER_JESSICA_1: TrainerEnum
+TRAINER_CONNIE: TrainerEnum
+TRAINER_BRIDGET: TrainerEnum
+TRAINER_OLIVIA: TrainerEnum
+TRAINER_TIFFANY: TrainerEnum
+TRAINER_JESSICA_2: TrainerEnum
+TRAINER_JESSICA_3: TrainerEnum
+TRAINER_JESSICA_4: TrainerEnum
+TRAINER_ALANNAH: TrainerEnum
+TRAINER_WINSTON_1: TrainerEnum
+TRAINER_MOLLIE: TrainerEnum
+TRAINER_GARRET: TrainerEnum
+TRAINER_WINSTON_2: TrainerEnum
+TRAINER_WINSTON_3: TrainerEnum
+TRAINER_WINSTON_4: TrainerEnum
+TRAINER_ELMER: TrainerEnum
+TRAINER_STEVE_1: TrainerEnum
+TRAINER_THALIA_1: TrainerEnum
+TRAINER_MARK: TrainerEnum
+TRAINER_GRUNT_MT_CHIMNEY_1: TrainerEnum
+TRAINER_STEVE_2: TrainerEnum
+TRAINER_STEVE_3: TrainerEnum
+TRAINER_STEVE_4: TrainerEnum
+TRAINER_ROMAN: TrainerEnum
+TRAINER_LUIS: TrainerEnum
+TRAINER_DOMINIK: TrainerEnum
+TRAINER_DOUGLAS: TrainerEnum
+TRAINER_DARRIN: TrainerEnum
+TRAINER_TONY_1: TrainerEnum
+TRAINER_JEROME: TrainerEnum
+TRAINER_MATTHEW: TrainerEnum
+TRAINER_DAVID: TrainerEnum
+TRAINER_SPENCER: TrainerEnum
+TRAINER_ROLAND: TrainerEnum
+TRAINER_NOLEN: TrainerEnum
+TRAINER_STAN: TrainerEnum
+TRAINER_BARRY: TrainerEnum
+TRAINER_DEAN: TrainerEnum
+TRAINER_RODNEY: TrainerEnum
+TRAINER_RICHARD: TrainerEnum
+TRAINER_HERMAN: TrainerEnum
+TRAINER_SANTIAGO: TrainerEnum
+TRAINER_GILBERT: TrainerEnum
+TRAINER_FRANKLIN: TrainerEnum
+TRAINER_KEVIN: TrainerEnum
+TRAINER_JACK: TrainerEnum
+TRAINER_GRETA_SLATEPORT: TrainerEnum
+TRAINER_CHAD: TrainerEnum
+TRAINER_TONY_2: TrainerEnum
+TRAINER_TONY_3: TrainerEnum
+TRAINER_TONY_4: TrainerEnum
+TRAINER_MARTIN: TrainerEnum
+TRAINER_TAKAO: TrainerEnum
+TRAINER_HITOSHI: TrainerEnum
+TRAINER_KIYO: TrainerEnum
+TRAINER_KOICHI: TrainerEnum
+TRAINER_NOB_1: TrainerEnum
+TRAINER_NOB_2: TrainerEnum
+TRAINER_NOB_3: TrainerEnum
+TRAINER_NOB_4: TrainerEnum
+TRAINER_NOB_5: TrainerEnum
+TRAINER_YUJI: TrainerEnum
+TRAINER_DAISUKE: TrainerEnum
+TRAINER_ATSUSHI: TrainerEnum
+TRAINER_KIRK: TrainerEnum
+TRAINER_GRUNT_AQUA_HIDEOUT_7: TrainerEnum
+TRAINER_GRUNT_AQUA_HIDEOUT_8: TrainerEnum
+TRAINER_SHAWN: TrainerEnum
+TRAINER_FERNANDO_1: TrainerEnum
+TRAINER_DALTON_1: TrainerEnum
+TRAINER_DALTON_2: TrainerEnum
+TRAINER_DALTON_3: TrainerEnum
+TRAINER_DALTON_4: TrainerEnum
+TRAINER_DRAKE_2: TrainerEnum
+TRAINER_COLE: TrainerEnum
+TRAINER_JEFF: TrainerEnum
+TRAINER_AXLE: TrainerEnum
+TRAINER_JACE: TrainerEnum
+TRAINER_KEEGAN: TrainerEnum
+TRAINER_BERNIE_1: TrainerEnum
+TRAINER_BERNIE_2: TrainerEnum
+TRAINER_BERNIE_3: TrainerEnum
+TRAINER_BERNIE_4: TrainerEnum
+TRAINER_BERNIE_5: TrainerEnum
+TRAINER_DREW: TrainerEnum
+TRAINER_BEAU: TrainerEnum
+TRAINER_LARRY: TrainerEnum
+TRAINER_SHANE: TrainerEnum
+TRAINER_JUSTIN: TrainerEnum
+TRAINER_ETHAN_1: TrainerEnum
+TRAINER_AUTUMN: TrainerEnum
+TRAINER_TRAVIS: TrainerEnum
+TRAINER_ETHAN_2: TrainerEnum
+TRAINER_ETHAN_3: TrainerEnum
+TRAINER_ETHAN_4: TrainerEnum
+TRAINER_ETHAN_5: TrainerEnum
+TRAINER_BRENT: TrainerEnum
+TRAINER_DONALD: TrainerEnum
+TRAINER_TAYLOR: TrainerEnum
+TRAINER_JEFFREY_1: TrainerEnum
+TRAINER_DEREK: TrainerEnum
+TRAINER_JEFFREY_2: TrainerEnum
+TRAINER_JEFFREY_3: TrainerEnum
+TRAINER_JEFFREY_4: TrainerEnum
+TRAINER_JEFFREY_5: TrainerEnum
+TRAINER_EDWARD: TrainerEnum
+TRAINER_PRESTON: TrainerEnum
+TRAINER_VIRGIL: TrainerEnum
+TRAINER_BLAKE: TrainerEnum
+TRAINER_WILLIAM: TrainerEnum
+TRAINER_JOSHUA: TrainerEnum
+TRAINER_CAMERON_1: TrainerEnum
+TRAINER_CAMERON_2: TrainerEnum
+TRAINER_CAMERON_3: TrainerEnum
+TRAINER_CAMERON_4: TrainerEnum
+TRAINER_CAMERON_5: TrainerEnum
+TRAINER_JACLYN: TrainerEnum
+TRAINER_HANNAH: TrainerEnum
+TRAINER_SAMANTHA: TrainerEnum
+TRAINER_MAURA: TrainerEnum
+TRAINER_KAYLA: TrainerEnum
+TRAINER_ALEXIS: TrainerEnum
+TRAINER_JACKI_1: TrainerEnum
+TRAINER_JACKI_2: TrainerEnum
+TRAINER_JACKI_3: TrainerEnum
+TRAINER_JACKI_4: TrainerEnum
+TRAINER_JACKI_5: TrainerEnum
+TRAINER_WALTER_1: TrainerEnum
+TRAINER_MICAH: TrainerEnum
+TRAINER_THOMAS: TrainerEnum
+TRAINER_WALTER_2: TrainerEnum
+TRAINER_WALTER_3: TrainerEnum
+TRAINER_WALTER_4: TrainerEnum
+TRAINER_WALTER_5: TrainerEnum
+TRAINER_SIDNEY: TrainerEnum
+TRAINER_PHOEBE: TrainerEnum
+TRAINER_GLACIA: TrainerEnum
+TRAINER_DRAKE: TrainerEnum
+TRAINER_ROXANNE_1: TrainerEnum
+TRAINER_BRAWLY_1: TrainerEnum
+TRAINER_WATTSON_1: TrainerEnum
+TRAINER_FLANNERY_1: TrainerEnum
+TRAINER_NORMAN_1: TrainerEnum
+TRAINER_WINONA_1: TrainerEnum
+TRAINER_TATE_AND_LIZA_1: TrainerEnum
+TRAINER_JUAN_1: TrainerEnum
+TRAINER_JERRY_1: TrainerEnum
+TRAINER_TED: TrainerEnum
+TRAINER_PAUL: TrainerEnum
+TRAINER_JERRY_2: TrainerEnum
+TRAINER_JERRY_3: TrainerEnum
+TRAINER_JERRY_4: TrainerEnum
+TRAINER_SIDNEY_2: TrainerEnum
+TRAINER_KAREN_1: TrainerEnum
+TRAINER_GEORGIA: TrainerEnum
+TRAINER_KAREN_2: TrainerEnum
+TRAINER_KAREN_3: TrainerEnum
+TRAINER_KAREN_4: TrainerEnum
+TRAINER_STEVEN_MOSSDEEP: TrainerEnum
+TRAINER_KATE_AND_JOY: TrainerEnum
+TRAINER_ANNA_AND_MEG_1: TrainerEnum
+TRAINER_ANNA_AND_MEG_2: TrainerEnum
+TRAINER_ANNA_AND_MEG_3: TrainerEnum
+TRAINER_ANNA_AND_MEG_4: TrainerEnum
+TRAINER_WALLACE_DOUBLES: TrainerEnum
+TRAINER_VICTOR: TrainerEnum
+TRAINER_MIGUEL_1: TrainerEnum
+TRAINER_COLTON: TrainerEnum
+TRAINER_MIGUEL_2: TrainerEnum
+TRAINER_MIGUEL_3: TrainerEnum
+TRAINER_MIGUEL_4: TrainerEnum
+TRAINER_GLACIA_2: TrainerEnum
+TRAINER_VICTORIA: TrainerEnum
+TRAINER_VANESSA: TrainerEnum
+TRAINER_BETHANY: TrainerEnum
+TRAINER_ISABEL_1: TrainerEnum
+TRAINER_ISABEL_2: TrainerEnum
+TRAINER_ISABEL_3: TrainerEnum
+TRAINER_ISABEL_4: TrainerEnum
+TRAINER_SIDNEY_4: TrainerEnum
+TRAINER_TIMOTHY_1: TrainerEnum
+TRAINER_TIMOTHY_2: TrainerEnum
+TRAINER_TIMOTHY_3: TrainerEnum
+TRAINER_TIMOTHY_4: TrainerEnum
+TRAINER_TIMOTHY_5: TrainerEnum
+TRAINER_VICKY: TrainerEnum
+TRAINER_SHELBY_1: TrainerEnum
+TRAINER_SHELBY_2: TrainerEnum
+TRAINER_SHELBY_3: TrainerEnum
+TRAINER_SHELBY_4: TrainerEnum
+TRAINER_SHELBY_5: TrainerEnum
+TRAINER_CALVIN_1: TrainerEnum
+TRAINER_BILLY: TrainerEnum
+TRAINER_JOSH: TrainerEnum
+TRAINER_TOMMY: TrainerEnum
+TRAINER_JOEY: TrainerEnum
+TRAINER_BEN: TrainerEnum
+TRAINER_QUINCY: TrainerEnum
+TRAINER_KATELYNN: TrainerEnum
+TRAINER_JAYLEN: TrainerEnum
+TRAINER_DILLON: TrainerEnum
+TRAINER_CALVIN_2: TrainerEnum
+TRAINER_CALVIN_3: TrainerEnum
+TRAINER_CALVIN_4: TrainerEnum
+TRAINER_MATT_MT_PYRE: TrainerEnum
+TRAINER_EDDIE: TrainerEnum
+TRAINER_ALLEN: TrainerEnum
+TRAINER_TIMMY: TrainerEnum
+TRAINER_WALLACE: TrainerEnum
+TRAINER_ANDREW: TrainerEnum
+TRAINER_IVAN: TrainerEnum
+TRAINER_CLAUDE: TrainerEnum
+TRAINER_ELLIOT_1: TrainerEnum
+TRAINER_NED: TrainerEnum
+TRAINER_DALE: TrainerEnum
+TRAINER_NOLAN: TrainerEnum
+TRAINER_BARNY: TrainerEnum
+TRAINER_WADE: TrainerEnum
+TRAINER_CARTER: TrainerEnum
+TRAINER_ELLIOT_2: TrainerEnum
+TRAINER_ELLIOT_3: TrainerEnum
+TRAINER_ELLIOT_4: TrainerEnum
+TRAINER_SIDNEY_3: TrainerEnum
+TRAINER_RONALD: TrainerEnum
+TRAINER_JACOB: TrainerEnum
+TRAINER_ANTHONY: TrainerEnum
+TRAINER_BENJAMIN_1: TrainerEnum
+TRAINER_BENJAMIN_2: TrainerEnum
+TRAINER_BENJAMIN_3: TrainerEnum
+TRAINER_BENJAMIN_4: TrainerEnum
+TRAINER_GLACIA_4: TrainerEnum
+TRAINER_ABIGAIL_1: TrainerEnum
+TRAINER_JASMINE: TrainerEnum
+TRAINER_ABIGAIL_2: TrainerEnum
+TRAINER_ABIGAIL_3: TrainerEnum
+TRAINER_ABIGAIL_4: TrainerEnum
+TRAINER_GLACIA_3: TrainerEnum
+TRAINER_DYLAN_1: TrainerEnum
+TRAINER_DYLAN_2: TrainerEnum
+TRAINER_DYLAN_3: TrainerEnum
+TRAINER_DYLAN_4: TrainerEnum
+TRAINER_DRAKE_3: TrainerEnum
+TRAINER_MARIA_1: TrainerEnum
+TRAINER_MARIA_2: TrainerEnum
+TRAINER_MARIA_3: TrainerEnum
+TRAINER_MARIA_4: TrainerEnum
+TRAINER_DRAKE_4: TrainerEnum
+TRAINER_CAMDEN: TrainerEnum
+TRAINER_DEMETRIUS: TrainerEnum
+TRAINER_ISAIAH_1: TrainerEnum
+TRAINER_PABLO_1: TrainerEnum
+TRAINER_CHASE: TrainerEnum
+TRAINER_ISAIAH_2: TrainerEnum
+TRAINER_ISAIAH_3: TrainerEnum
+TRAINER_ISAIAH_4: TrainerEnum
+TRAINER_ISAIAH_5: TrainerEnum
+TRAINER_ISOBEL: TrainerEnum
+TRAINER_DONNY: TrainerEnum
+TRAINER_TALIA: TrainerEnum
+TRAINER_KATELYN_1: TrainerEnum
+TRAINER_ALLISON: TrainerEnum
+TRAINER_KATELYN_2: TrainerEnum
+TRAINER_KATELYN_3: TrainerEnum
+TRAINER_KATELYN_4: TrainerEnum
+TRAINER_KATELYN_5: TrainerEnum
+TRAINER_NICOLAS_1: TrainerEnum
+TRAINER_NICOLAS_2: TrainerEnum
+TRAINER_NICOLAS_3: TrainerEnum
+TRAINER_NICOLAS_4: TrainerEnum
+TRAINER_NICOLAS_5: TrainerEnum
+TRAINER_AARON: TrainerEnum
+TRAINER_PERRY: TrainerEnum
+TRAINER_HUGH: TrainerEnum
+TRAINER_PHIL: TrainerEnum
+TRAINER_JARED: TrainerEnum
+TRAINER_HUMBERTO: TrainerEnum
+TRAINER_PRESLEY: TrainerEnum
+TRAINER_EDWARDO: TrainerEnum
+TRAINER_COLIN: TrainerEnum
+TRAINER_ROBERT_1: TrainerEnum
+TRAINER_BENNY: TrainerEnum
+TRAINER_CHESTER: TrainerEnum
+TRAINER_ROBERT_2: TrainerEnum
+TRAINER_ROBERT_3: TrainerEnum
+TRAINER_ROBERT_4: TrainerEnum
+TRAINER_ROBERT_5: TrainerEnum
+TRAINER_ALEX: TrainerEnum
+TRAINER_BECK: TrainerEnum
+TRAINER_YASU: TrainerEnum
+TRAINER_TAKASHI: TrainerEnum
+TRAINER_DIANNE: TrainerEnum
+TRAINER_JANI: TrainerEnum
+TRAINER_LAO_1: TrainerEnum
+TRAINER_LUNG: TrainerEnum
+TRAINER_LAO_2: TrainerEnum
+TRAINER_LAO_3: TrainerEnum
+TRAINER_LAO_4: TrainerEnum
+TRAINER_CYNTHIA_2: TrainerEnum
+TRAINER_JOCELYN: TrainerEnum
+TRAINER_LAURA: TrainerEnum
+TRAINER_CYNDY_1: TrainerEnum
+TRAINER_CORA: TrainerEnum
+TRAINER_PAULA: TrainerEnum
+TRAINER_CYNDY_2: TrainerEnum
+TRAINER_CYNDY_3: TrainerEnum
+TRAINER_CYNDY_4: TrainerEnum
+TRAINER_CYNDY_5: TrainerEnum
+TRAINER_MADELINE_1: TrainerEnum
+TRAINER_CLARISSA: TrainerEnum
+TRAINER_ANGELICA: TrainerEnum
+TRAINER_MADELINE_2: TrainerEnum
+TRAINER_MADELINE_3: TrainerEnum
+TRAINER_MADELINE_4: TrainerEnum
+TRAINER_LEAF_ALTERING_CAVE: TrainerEnum
+TRAINER_BEVERLY: TrainerEnum
+TRAINER_IMANI: TrainerEnum
+TRAINER_KYLA: TrainerEnum
+TRAINER_DENISE: TrainerEnum
+TRAINER_BETH: TrainerEnum
+TRAINER_TARA: TrainerEnum
+TRAINER_MISSY: TrainerEnum
+TRAINER_ALICE: TrainerEnum
+TRAINER_JENNY_1: TrainerEnum
+TRAINER_GRACE: TrainerEnum
+TRAINER_TANYA: TrainerEnum
+TRAINER_SHARON: TrainerEnum
+TRAINER_NIKKI: TrainerEnum
+TRAINER_BRENDA: TrainerEnum
+TRAINER_KATIE: TrainerEnum
+TRAINER_SUSIE: TrainerEnum
+TRAINER_KARA: TrainerEnum
+TRAINER_DANA: TrainerEnum
+TRAINER_SIENNA: TrainerEnum
+TRAINER_DEBRA: TrainerEnum
+TRAINER_LINDA: TrainerEnum
+TRAINER_KAYLEE: TrainerEnum
+TRAINER_LAUREL: TrainerEnum
+TRAINER_CARLEE: TrainerEnum
+TRAINER_JENNY_2: TrainerEnum
+TRAINER_JENNY_3: TrainerEnum
+TRAINER_JENNY_4: TrainerEnum
+TRAINER_JENNY_5: TrainerEnum
+TRAINER_HEIDI: TrainerEnum
+TRAINER_BECKY: TrainerEnum
+TRAINER_CAROL: TrainerEnum
+TRAINER_NANCY: TrainerEnum
+TRAINER_MARTHA: TrainerEnum
+TRAINER_DIANA_1: TrainerEnum
+TRAINER_CEDRIC: TrainerEnum
+TRAINER_IRENE: TrainerEnum
+TRAINER_DIANA_2: TrainerEnum
+TRAINER_DIANA_3: TrainerEnum
+TRAINER_DIANA_4: TrainerEnum
+TRAINER_DIANA_5: TrainerEnum
+TRAINER_AMY_AND_LIV_1: TrainerEnum
+TRAINER_AMY_AND_LIV_2: TrainerEnum
+TRAINER_GINA_AND_MIA_1: TrainerEnum
+TRAINER_MIU_AND_YUKI: TrainerEnum
+TRAINER_AMY_AND_LIV_3: TrainerEnum
+TRAINER_MAGIKARP_GUY: TrainerEnum
+TRAINER_AMY_AND_LIV_4: TrainerEnum
+TRAINER_PHOEBE_3: TrainerEnum
+TRAINER_PHOEBE_4: TrainerEnum
+TRAINER_HUEY: TrainerEnum
+TRAINER_EDMOND: TrainerEnum
+TRAINER_ERNEST_1: TrainerEnum
+TRAINER_DWAYNE: TrainerEnum
+TRAINER_PHILLIP: TrainerEnum
+TRAINER_LEONARD: TrainerEnum
+TRAINER_DUNCAN: TrainerEnum
+TRAINER_ERNEST_2: TrainerEnum
+TRAINER_ERNEST_3: TrainerEnum
+TRAINER_ERNEST_4: TrainerEnum
+TRAINER_ERNEST_5: TrainerEnum
+TRAINER_ELI: TrainerEnum
+TRAINER_ANNIKA: TrainerEnum
+TRAINER_JAZMYN: TrainerEnum
+TRAINER_JONAS: TrainerEnum
+TRAINER_KAYLEY: TrainerEnum
+TRAINER_AURON: TrainerEnum
+TRAINER_KELVIN: TrainerEnum
+TRAINER_MARLEY: TrainerEnum
+TRAINER_REYNA: TrainerEnum
+TRAINER_HUDSON: TrainerEnum
+TRAINER_CONOR: TrainerEnum
+TRAINER_EDWIN_1: TrainerEnum
+TRAINER_HECTOR: TrainerEnum
+TRAINER_TABITHA_MOSSDEEP: TrainerEnum
+TRAINER_EDWIN_2: TrainerEnum
+TRAINER_EDWIN_3: TrainerEnum
+TRAINER_EDWIN_4: TrainerEnum
+TRAINER_PHOEBE_2: TrainerEnum
+TRAINER_WALLY_VR_1: TrainerEnum
+TRAINER_BRENDAN_ROUTE_103_MUDKIP: TrainerEnum
+TRAINER_BRENDAN_ROUTE_110_MUDKIP: TrainerEnum
+TRAINER_BRENDAN_ROUTE_119_MUDKIP: TrainerEnum
+TRAINER_BRENDAN_ROUTE_103_TREECKO: TrainerEnum
+TRAINER_BRENDAN_ROUTE_110_TREECKO: TrainerEnum
+TRAINER_BRENDAN_ROUTE_119_TREECKO: TrainerEnum
+TRAINER_BRENDAN_ROUTE_103_TORCHIC: TrainerEnum
+TRAINER_BRENDAN_ROUTE_110_TORCHIC: TrainerEnum
+TRAINER_BRENDAN_ROUTE_119_TORCHIC: TrainerEnum
+TRAINER_MAY_ROUTE_103_MUDKIP: TrainerEnum
+TRAINER_MAY_ROUTE_110_MUDKIP: TrainerEnum
+TRAINER_MAY_ROUTE_119_MUDKIP: TrainerEnum
+TRAINER_MAY_ROUTE_103_TREECKO: TrainerEnum
+TRAINER_MAY_ROUTE_110_TREECKO: TrainerEnum
+TRAINER_MAY_ROUTE_119_TREECKO: TrainerEnum
+TRAINER_MAY_ROUTE_103_TORCHIC: TrainerEnum
+TRAINER_MAY_ROUTE_110_TORCHIC: TrainerEnum
+TRAINER_MAY_ROUTE_119_TORCHIC: TrainerEnum
+TRAINER_ISAAC_1: TrainerEnum
+TRAINER_DAVIS: TrainerEnum
+TRAINER_MITCHELL: TrainerEnum
+TRAINER_ISAAC_2: TrainerEnum
+TRAINER_ISAAC_3: TrainerEnum
+TRAINER_ISAAC_4: TrainerEnum
+TRAINER_WALLACE_LEGENDS: TrainerEnum
+TRAINER_LYDIA_1: TrainerEnum
+TRAINER_HALLE: TrainerEnum
+TRAINER_GARRISON: TrainerEnum
+TRAINER_LYDIA_2: TrainerEnum
+TRAINER_LYDIA_3: TrainerEnum
+TRAINER_LYDIA_4: TrainerEnum
+TRAINER_WALLACE_DOUBLES_LEGENDS: TrainerEnum
+TRAINER_JACKSON_1: TrainerEnum
+TRAINER_LORENZO: TrainerEnum
+TRAINER_SEBASTIAN: TrainerEnum
+TRAINER_JACKSON_2: TrainerEnum
+TRAINER_JACKSON_3: TrainerEnum
+TRAINER_JACKSON_4: TrainerEnum
+TRAINER_JACKSON_5: TrainerEnum
+TRAINER_CATHERINE_1: TrainerEnum
+TRAINER_JENNA: TrainerEnum
+TRAINER_SOPHIA: TrainerEnum
+TRAINER_CATHERINE_2: TrainerEnum
+TRAINER_CATHERINE_3: TrainerEnum
+TRAINER_CATHERINE_4: TrainerEnum
+TRAINER_CATHERINE_5: TrainerEnum
+TRAINER_JULIO: TrainerEnum
+TRAINER_GRUNT_SEAFLOOR_CAVERN_5: TrainerEnum
+TRAINER_LUCY_LAVARIDGE: TrainerEnum
+TRAINER_GRUNT_MT_PYRE_4: TrainerEnum
+TRAINER_GRUNT_JAGGED_PASS: TrainerEnum
+TRAINER_MARC: TrainerEnum
+TRAINER_BRENDEN: TrainerEnum
+TRAINER_LILITH: TrainerEnum
+TRAINER_CRISTIAN: TrainerEnum
+TRAINER_SYLVIA: TrainerEnum
+TRAINER_LEONARDO: TrainerEnum
+TRAINER_ATHENA: TrainerEnum
+TRAINER_HARRISON: TrainerEnum
+TRAINER_GRUNT_MT_CHIMNEY_2: TrainerEnum
+TRAINER_CLARENCE: TrainerEnum
+TRAINER_BUFFEL: TrainerEnum
+TRAINER_NATE: TrainerEnum
+TRAINER_KATHLEEN: TrainerEnum
+TRAINER_CLIFFORD: TrainerEnum
+TRAINER_NICHOLAS: TrainerEnum
+TRAINER_GRUNT_SPACE_CENTER_3: TrainerEnum
+TRAINER_GRUNT_SPACE_CENTER_4: TrainerEnum
+TRAINER_GRUNT_SPACE_CENTER_5: TrainerEnum
+TRAINER_GRUNT_SPACE_CENTER_6: TrainerEnum
+TRAINER_GRUNT_SPACE_CENTER_7: TrainerEnum
+TRAINER_MACEY: TrainerEnum
+TRAINER_BRENDAN_RUSTBORO_TREECKO: TrainerEnum
+TRAINER_BRENDAN_RUSTBORO_MUDKIP: TrainerEnum
+TRAINER_PAXTON: TrainerEnum
+TRAINER_ISABELLA: TrainerEnum
+TRAINER_GRUNT_WEATHER_INST_5: TrainerEnum
+TRAINER_TABITHA_MT_CHIMNEY: TrainerEnum
+TRAINER_JONATHAN: TrainerEnum
+TRAINER_BRENDAN_RUSTBORO_TORCHIC: TrainerEnum
+TRAINER_MAY_RUSTBORO_MUDKIP: TrainerEnum
+TRAINER_MAXIE_MAGMA_HIDEOUT: TrainerEnum
+TRAINER_MAXIE_MT_CHIMNEY: TrainerEnum
+TRAINER_TIANA: TrainerEnum
+TRAINER_HALEY_1: TrainerEnum
+TRAINER_JANICE: TrainerEnum
+TRAINER_VIVI: TrainerEnum
+TRAINER_HALEY_2: TrainerEnum
+TRAINER_HALEY_3: TrainerEnum
+TRAINER_HALEY_4: TrainerEnum
+TRAINER_COURTNEY_MAGMA_HIDEOUT: TrainerEnum
+TRAINER_SALLY: TrainerEnum
+TRAINER_ROBIN: TrainerEnum
+TRAINER_ANDREA: TrainerEnum
+TRAINER_CRISSY: TrainerEnum
+TRAINER_RICK: TrainerEnum
+TRAINER_LYLE: TrainerEnum
+TRAINER_JOSE: TrainerEnum
+TRAINER_DOUG: TrainerEnum
+TRAINER_GREG: TrainerEnum
+TRAINER_KENT: TrainerEnum
+TRAINER_JAMES_1: TrainerEnum
+TRAINER_JAMES_2: TrainerEnum
+TRAINER_JAMES_3: TrainerEnum
+TRAINER_JAMES_4: TrainerEnum
+TRAINER_COURTNEY_MOSSDEEP: TrainerEnum
+TRAINER_BRICE: TrainerEnum
+TRAINER_TRENT_1: TrainerEnum
+TRAINER_LENNY: TrainerEnum
+TRAINER_LUCAS_1: TrainerEnum
+TRAINER_ALAN: TrainerEnum
+TRAINER_CLARK: TrainerEnum
+TRAINER_ERIC: TrainerEnum
+TRAINER_SPENSER_FORTREE: TrainerEnum
+TRAINER_ARCHIE_SLATEPORT: TrainerEnum
+TRAINER_MIKE_2: TrainerEnum
+TRAINER_TRENT_2: TrainerEnum
+TRAINER_TRENT_3: TrainerEnum
+TRAINER_TRENT_4: TrainerEnum
+TRAINER_CYNTHIA_1: TrainerEnum
+TRAINER_DEZ_AND_LUKE: TrainerEnum
+TRAINER_LEA_AND_JED: TrainerEnum
+TRAINER_KIRA_AND_DAN_1: TrainerEnum
+TRAINER_KIRA_AND_DAN_2: TrainerEnum
+TRAINER_KIRA_AND_DAN_3: TrainerEnum
+TRAINER_KIRA_AND_DAN_4: TrainerEnum
+TRAINER_KIRA_AND_DAN_5: TrainerEnum
+TRAINER_JOHANNA: TrainerEnum
+TRAINER_GERALD: TrainerEnum
+TRAINER_VIVIAN: TrainerEnum
+TRAINER_DANIELLE: TrainerEnum
+TRAINER_HIDEO: TrainerEnum
+TRAINER_KEIGO: TrainerEnum
+TRAINER_RILEY: TrainerEnum
+TRAINER_FLINT: TrainerEnum
+TRAINER_ASHLEY: TrainerEnum
+TRAINER_WALLY_MAUVILLE: TrainerEnum
+TRAINER_WALLY_VR_2: TrainerEnum
+TRAINER_WALLY_VR_3: TrainerEnum
+TRAINER_WALLY_VR_4: TrainerEnum
+TRAINER_WALLY_VR_5: TrainerEnum
+TRAINER_BRENDAN_LILYCOVE_MUDKIP: TrainerEnum
+TRAINER_BRENDAN_LILYCOVE_TREECKO: TrainerEnum
+TRAINER_BRENDAN_LILYCOVE_TORCHIC: TrainerEnum
+TRAINER_MAY_LILYCOVE_MUDKIP: TrainerEnum
+TRAINER_MAY_LILYCOVE_TREECKO: TrainerEnum
+TRAINER_MAY_LILYCOVE_TORCHIC: TrainerEnum
+TRAINER_JONAH: TrainerEnum
+TRAINER_HENRY: TrainerEnum
+TRAINER_ROGER: TrainerEnum
+TRAINER_ALEXA: TrainerEnum
+TRAINER_RUBEN: TrainerEnum
+TRAINER_KOJI_1: TrainerEnum
+TRAINER_WAYNE: TrainerEnum
+TRAINER_AIDAN: TrainerEnum
+TRAINER_REED: TrainerEnum
+TRAINER_TISHA: TrainerEnum
+TRAINER_TORI_AND_TIA: TrainerEnum
+TRAINER_KIM_AND_IRIS: TrainerEnum
+TRAINER_TYRA_AND_IVY: TrainerEnum
+TRAINER_MEL_AND_PAUL: TrainerEnum
+TRAINER_JOHN_AND_JAY_1: TrainerEnum
+TRAINER_JOHN_AND_JAY_2: TrainerEnum
+TRAINER_JOHN_AND_JAY_3: TrainerEnum
+TRAINER_JOHN_AND_JAY_4: TrainerEnum
+TRAINER_JOHN_AND_JAY_5: TrainerEnum
+TRAINER_RELI_AND_IAN: TrainerEnum
+TRAINER_LILA_AND_ROY_1: TrainerEnum
+TRAINER_LILA_AND_ROY_2: TrainerEnum
+TRAINER_LILA_AND_ROY_3: TrainerEnum
+TRAINER_LILA_AND_ROY_4: TrainerEnum
+TRAINER_LILA_AND_ROY_5: TrainerEnum
+TRAINER_LISA_AND_RAY: TrainerEnum
+TRAINER_CHRIS: TrainerEnum
+TRAINER_DAWSON: TrainerEnum
+TRAINER_SARAH: TrainerEnum
+TRAINER_DARIAN: TrainerEnum
+TRAINER_HAILEY: TrainerEnum
+TRAINER_CHANDLER: TrainerEnum
+TRAINER_KALEB: TrainerEnum
+TRAINER_JOSEPH: TrainerEnum
+TRAINER_ALYSSA: TrainerEnum
+TRAINER_MARCOS: TrainerEnum
+TRAINER_RHETT: TrainerEnum
+TRAINER_TYRON: TrainerEnum
+TRAINER_CELINA: TrainerEnum
+TRAINER_BIANCA: TrainerEnum
+TRAINER_HAYDEN: TrainerEnum
+TRAINER_SOPHIE: TrainerEnum
+TRAINER_COBY: TrainerEnum
+TRAINER_LAWRENCE: TrainerEnum
+TRAINER_WYATT: TrainerEnum
+TRAINER_ANGELINA: TrainerEnum
+TRAINER_KAI: TrainerEnum
+TRAINER_CHARLOTTE: TrainerEnum
+TRAINER_DEANDRE: TrainerEnum
+TRAINER_GRUNT_MAGMA_HIDEOUT_1: TrainerEnum
+TRAINER_GRUNT_MAGMA_HIDEOUT_2: TrainerEnum
+TRAINER_GRUNT_MAGMA_HIDEOUT_3: TrainerEnum
+TRAINER_GRUNT_MAGMA_HIDEOUT_4: TrainerEnum
+TRAINER_GRUNT_MAGMA_HIDEOUT_5: TrainerEnum
+TRAINER_GRUNT_MAGMA_HIDEOUT_6: TrainerEnum
+TRAINER_GRUNT_MAGMA_HIDEOUT_7: TrainerEnum
+TRAINER_GRUNT_MAGMA_HIDEOUT_8: TrainerEnum
+TRAINER_GRUNT_MAGMA_HIDEOUT_9: TrainerEnum
+TRAINER_GRUNT_MAGMA_HIDEOUT_10: TrainerEnum
+TRAINER_GRUNT_MAGMA_HIDEOUT_11: TrainerEnum
+TRAINER_GRUNT_MAGMA_HIDEOUT_12: TrainerEnum
+TRAINER_GRUNT_MAGMA_HIDEOUT_13: TrainerEnum
+TRAINER_GRUNT_MAGMA_HIDEOUT_14: TrainerEnum
+TRAINER_GRUNT_MAGMA_HIDEOUT_15: TrainerEnum
+TRAINER_GRUNT_MAGMA_HIDEOUT_16: TrainerEnum
+TRAINER_TABITHA_MAGMA_HIDEOUT: TrainerEnum
+TRAINER_DARCY: TrainerEnum
+TRAINER_MAXIE_MOSSDEEP: TrainerEnum
+TRAINER_PETE: TrainerEnum
+TRAINER_ISABELLE: TrainerEnum
+TRAINER_ANDRES_1: TrainerEnum
+TRAINER_JOSUE: TrainerEnum
+TRAINER_CAMRON: TrainerEnum
+TRAINER_CORY_1: TrainerEnum
+TRAINER_CAROLINA: TrainerEnum
+TRAINER_ELIJAH: TrainerEnum
+TRAINER_CELIA: TrainerEnum
+TRAINER_BRYAN: TrainerEnum
+TRAINER_BRANDEN: TrainerEnum
+TRAINER_BRYANT: TrainerEnum
+TRAINER_SHAYLA: TrainerEnum
+TRAINER_KYRA: TrainerEnum
+TRAINER_JAIDEN: TrainerEnum
+TRAINER_ALIX: TrainerEnum
+TRAINER_HELENE: TrainerEnum
+TRAINER_MARLENE: TrainerEnum
+TRAINER_DEVAN: TrainerEnum
+TRAINER_JOHNSON: TrainerEnum
+TRAINER_MELINA: TrainerEnum
+TRAINER_BRANDI: TrainerEnum
+TRAINER_AISHA: TrainerEnum
+TRAINER_MAKAYLA: TrainerEnum
+TRAINER_FABIAN: TrainerEnum
+TRAINER_DAYTON: TrainerEnum
+TRAINER_RACHEL: TrainerEnum
+TRAINER_LEONEL: TrainerEnum
+TRAINER_CALLIE: TrainerEnum
+TRAINER_CALE: TrainerEnum
+TRAINER_MYLES: TrainerEnum
+TRAINER_PAT: TrainerEnum
+TRAINER_CRISTIN_1: TrainerEnum
+TRAINER_MAY_RUSTBORO_TREECKO: TrainerEnum
+TRAINER_MAY_RUSTBORO_TORCHIC: TrainerEnum
+TRAINER_ROXANNE_2: TrainerEnum
+TRAINER_ROXANNE_3: TrainerEnum
+TRAINER_ROXANNE_4: TrainerEnum
+TRAINER_ROXANNE_5: TrainerEnum
+TRAINER_BRAWLY_2: TrainerEnum
+TRAINER_BRAWLY_3: TrainerEnum
+TRAINER_BRAWLY_4: TrainerEnum
+TRAINER_BRAWLY_5: TrainerEnum
+TRAINER_WATTSON_2: TrainerEnum
+TRAINER_WATTSON_3: TrainerEnum
+TRAINER_WATTSON_4: TrainerEnum
+TRAINER_WATTSON_5: TrainerEnum
+TRAINER_FLANNERY_2: TrainerEnum
+TRAINER_FLANNERY_3: TrainerEnum
+TRAINER_FLANNERY_4: TrainerEnum
+TRAINER_FLANNERY_5: TrainerEnum
+TRAINER_NORMAN_2: TrainerEnum
+TRAINER_NORMAN_3: TrainerEnum
+TRAINER_NORMAN_4: TrainerEnum
+TRAINER_NORMAN_5: TrainerEnum
+TRAINER_WINONA_2: TrainerEnum
+TRAINER_WINONA_3: TrainerEnum
+TRAINER_WINONA_4: TrainerEnum
+TRAINER_WINONA_5: TrainerEnum
+TRAINER_TATE_AND_LIZA_2: TrainerEnum
+TRAINER_TATE_AND_LIZA_3: TrainerEnum
+TRAINER_TATE_AND_LIZA_4: TrainerEnum
+TRAINER_TATE_AND_LIZA_5: TrainerEnum
+TRAINER_JUAN_2: TrainerEnum
+TRAINER_JUAN_3: TrainerEnum
+TRAINER_JUAN_4: TrainerEnum
+TRAINER_JUAN_5: TrainerEnum
+TRAINER_ANGELO: TrainerEnum
+TRAINER_DARIUS: TrainerEnum
+TRAINER_STEVEN: TrainerEnum
+TRAINER_ANABEL: TrainerEnum
+TRAINER_TUCKER: TrainerEnum
+TRAINER_SPENSER: TrainerEnum
+TRAINER_GRETA: TrainerEnum
+TRAINER_NOLAND: TrainerEnum
+TRAINER_LUCY: TrainerEnum
+TRAINER_BRANDON: TrainerEnum
+TRAINER_ANDRES_2: TrainerEnum
+TRAINER_ANDRES_3: TrainerEnum
+TRAINER_ANDRES_4: TrainerEnum
+TRAINER_ANDRES_5: TrainerEnum
+TRAINER_CORY_2: TrainerEnum
+TRAINER_CORY_3: TrainerEnum
+TRAINER_CORY_4: TrainerEnum
+TRAINER_CORY_5: TrainerEnum
+TRAINER_PABLO_2: TrainerEnum
+TRAINER_PABLO_3: TrainerEnum
+TRAINER_PABLO_4: TrainerEnum
+TRAINER_PABLO_5: TrainerEnum
+TRAINER_KOJI_2: TrainerEnum
+TRAINER_KOJI_3: TrainerEnum
+TRAINER_KOJI_4: TrainerEnum
+TRAINER_KOJI_5: TrainerEnum
+TRAINER_CRISTIN_2: TrainerEnum
+TRAINER_CRISTIN_3: TrainerEnum
+TRAINER_CRISTIN_4: TrainerEnum
+TRAINER_CRISTIN_5: TrainerEnum
+TRAINER_FERNANDO_2: TrainerEnum
+TRAINER_FERNANDO_3: TrainerEnum
+TRAINER_FERNANDO_4: TrainerEnum
+TRAINER_FERNANDO_5: TrainerEnum
+TRAINER_SAWYER_2: TrainerEnum
+TRAINER_SAWYER_3: TrainerEnum
+TRAINER_SAWYER_4: TrainerEnum
+TRAINER_SAWYER_5: TrainerEnum
+TRAINER_GABRIELLE_2: TrainerEnum
+TRAINER_GABRIELLE_3: TrainerEnum
+TRAINER_GABRIELLE_4: TrainerEnum
+TRAINER_GABRIELLE_5: TrainerEnum
+TRAINER_THALIA_2: TrainerEnum
+TRAINER_THALIA_3: TrainerEnum
+TRAINER_THALIA_4: TrainerEnum
+TRAINER_THALIA_5: TrainerEnum
+TRAINER_MARIELA: TrainerEnum
+TRAINER_ALVARO: TrainerEnum
+TRAINER_EVERETT: TrainerEnum
+TRAINER_RED: TrainerEnum
+TRAINER_LEAF: TrainerEnum
+TRAINER_BRENDAN_PLACEHOLDER: TrainerEnum
+TRAINER_MAY_PLACEHOLDER: TrainerEnum
+TRAINER_STEVEN_GRANITE_CAVE: TrainerEnum
+TRAINER_MEGANIUMITE_VERDANTURF_MEADOW: TrainerEnum
+TRAINER_FERALIGATRITEX_ROUTE105: TrainerEnum
+TRAINER_TYPHLOSIONITE_ASHEN_WOODS: TrainerEnum
+TRAINER_KROOKODILENITE_ROUTE111_RUINS_EXTERIOR: TrainerEnum
+TRAINER_SHEDINJITE_ABANDONED_SHIP: TrainerEnum
+TRAINER_CROBATITE_DEWFORD_MANOR: TrainerEnum
+TRAINER_SINNOH_MEGAS_MAUVILLE_GAME_CORNER: TrainerEnum
+TRAINER_NIDO_MEGAS_ROUTE116_RUSTURF: TrainerEnum
+TRAINER_NEW_TEST: TrainerEnum
+TRAINER_DRAGONITENITE_SAGE_1: TrainerEnum
+TRAINER_DRAGONITENITE_SAGE_2: TrainerEnum
+TRAINER_DRAGONITENITE_SAGE_3: TrainerEnum
+TRAINER_HITMONSTONE_BLACKBELT_1: TrainerEnum
+TRAINER_HITMONSTONE_BLACKBELT_2: TrainerEnum
+TRAINER_HITMONSTONE_BLACKBELT_3: TrainerEnum
+TRAINER_GRANBULLITE_ROUTE123: TrainerEnum
+TRAINER_CALVIN_E4: TrainerEnum
+TRAINER_BANEFUL_PETALBURG_WOODS: TrainerEnum
+TRAINER_STEVEN_ROUTE118: TrainerEnum
+TRAINER_CREW_MTPYRE: TrainerEnum
+TRAINER_WALLACE_2: TrainerEnum
+TRAINER_WALLACE_3: TrainerEnum
+TRAINER_WALLACE_4: TrainerEnum
+TRAINER_WALLACE_5: TrainerEnum
+TRAINER_STEVEN_LEGENDS: TrainerEnum
+TRAINER_STEVEN_DOUBLES: TrainerEnum
+TRAINER_STEVEN_DOUBLES_LEGENDS: TrainerEnum
+TRAINER_VINEGAR: TrainerEnum
+TRAINER_SALSA: TrainerEnum
+TRAINER_KATSUP: TrainerEnum
+TRAINER_MONOCHAMP_NORMAL: TrainerEnum
+TRAINER_MONOCHAMP_FIGHTING: TrainerEnum
+TRAINER_MONOCHAMP_FLYING: TrainerEnum
+TRAINER_MONOCHAMP_POISON: TrainerEnum
+TRAINER_MONOCHAMP_GROUND: TrainerEnum
+TRAINER_MONOCHAMP_ROCK: TrainerEnum
+TRAINER_MONOCHAMP_BUG: TrainerEnum
+TRAINER_MONOCHAMP_GHOST: TrainerEnum
+TRAINER_MONOCHAMP_STEEL: TrainerEnum
+TRAINER_MONOCHAMP_FIRE: TrainerEnum
+TRAINER_MONOCHAMP_WATER: TrainerEnum
+TRAINER_MONOCHAMP_GRASS: TrainerEnum
+TRAINER_MONOCHAMP_ELECTRIC: TrainerEnum
+TRAINER_MONOCHAMP_PSYCHIC: TrainerEnum
+TRAINER_MONOCHAMP_ICE: TrainerEnum
+TRAINER_MONOCHAMP_DRAGON: TrainerEnum
+TRAINER_MONOCHAMP_DARK: TrainerEnum
+TRAINER_MONOCHAMP_FAIRY: TrainerEnum
+TRAINER_TRENT_5: TrainerEnum
+TRAINER_ALFREDO: TrainerEnum
+TRAINER_TERIYAKI: TrainerEnum
+TRAINER_NEW_TRAINER: TrainerEnum
+TRAINER_CINDY_5: TrainerEnum
+TRAINER_MEGA_FIDOUGH: TrainerEnum
+TRAINER_BLUNDER: TrainerEnum
+TRAINER_LETT: TrainerEnum
+TRAINER_ORWELL: TrainerEnum
+TRAINER_AMANDA: TrainerEnum
+TRAINER_RODRICK: TrainerEnum
+TRAINER_GRUNT_SUNHOLLOW_1: TrainerEnum
+TRAINER_GRUNT_SUNHOLLOW_2: TrainerEnum
+TRAINER_GRUNT_SUNHOLLOW_3: TrainerEnum
+TRAINER_COURTNEY_SUNHOLLOW: TrainerEnum
+TRAINER_ACE_TRAINER_GOAT: TrainerEnum
+TRAINER_ACE_TRAINER_NEO: TrainerEnum
+TRAINER_ACE_TRAINER_ANABELLE: TrainerEnum
+TRAINER_ACE_TRAINER_VIOLET: TrainerEnum
+TRAINER_SKIER_JANET: TrainerEnum
+TRAINER_SKIER_GLOVEL: TrainerEnum
+TRAINER_ACE_TRAINER_PAGANI: TrainerEnum
+TRAINER_ACE_TRAINER_ASHLEY: TrainerEnum
+TRAINER_ACE_TRAINER_LEELA: TrainerEnum
+TRAINER_ACE_TRAINER_DICK: TrainerEnum
+TRAINER_SKIER_GUIN: TrainerEnum
+TRAINER_ACE_TRAINER_MIKE: TrainerEnum
+TRAINER_ARCHIE_MT_PYRE: TrainerEnum
+TRAINER_OLDPLAYER: TrainerEnum

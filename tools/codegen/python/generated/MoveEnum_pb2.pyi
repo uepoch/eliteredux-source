@@ -1,0 +1,2072 @@
+from google.protobuf.internal import enum_type_wrapper as _enum_type_wrapper
+from google.protobuf import descriptor as _descriptor
+from typing import ClassVar as _ClassVar
+
+DESCRIPTOR: _descriptor.FileDescriptor
+
+class MoveEnum(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
+    __slots__ = ()
+    MOVE_NONE: _ClassVar[MoveEnum]
+    MOVE_POUND: _ClassVar[MoveEnum]
+    MOVE_KARATE_CHOP: _ClassVar[MoveEnum]
+    MOVE_DOUBLE_SLAP: _ClassVar[MoveEnum]
+    MOVE_COMET_PUNCH: _ClassVar[MoveEnum]
+    MOVE_MEGA_PUNCH: _ClassVar[MoveEnum]
+    MOVE_PAY_DAY: _ClassVar[MoveEnum]
+    MOVE_FIRE_PUNCH: _ClassVar[MoveEnum]
+    MOVE_ICE_PUNCH: _ClassVar[MoveEnum]
+    MOVE_THUNDER_PUNCH: _ClassVar[MoveEnum]
+    MOVE_SCRATCH: _ClassVar[MoveEnum]
+    MOVE_VISE_GRIP: _ClassVar[MoveEnum]
+    MOVE_GUILLOTINE: _ClassVar[MoveEnum]
+    MOVE_RAZOR_WIND: _ClassVar[MoveEnum]
+    MOVE_SWORDS_DANCE: _ClassVar[MoveEnum]
+    MOVE_CUT: _ClassVar[MoveEnum]
+    MOVE_GUST: _ClassVar[MoveEnum]
+    MOVE_WING_ATTACK: _ClassVar[MoveEnum]
+    MOVE_WHIRLWIND: _ClassVar[MoveEnum]
+    MOVE_FLY: _ClassVar[MoveEnum]
+    MOVE_BIND: _ClassVar[MoveEnum]
+    MOVE_SLAM: _ClassVar[MoveEnum]
+    MOVE_VINE_WHIP: _ClassVar[MoveEnum]
+    MOVE_STOMP: _ClassVar[MoveEnum]
+    MOVE_DOUBLE_KICK: _ClassVar[MoveEnum]
+    MOVE_MEGA_KICK: _ClassVar[MoveEnum]
+    MOVE_JUMP_KICK: _ClassVar[MoveEnum]
+    MOVE_ROLLING_KICK: _ClassVar[MoveEnum]
+    MOVE_SAND_ATTACK: _ClassVar[MoveEnum]
+    MOVE_HEADBUTT: _ClassVar[MoveEnum]
+    MOVE_HORN_ATTACK: _ClassVar[MoveEnum]
+    MOVE_FURY_ATTACK: _ClassVar[MoveEnum]
+    MOVE_HORN_DRILL: _ClassVar[MoveEnum]
+    MOVE_TACKLE: _ClassVar[MoveEnum]
+    MOVE_BODY_SLAM: _ClassVar[MoveEnum]
+    MOVE_WRAP: _ClassVar[MoveEnum]
+    MOVE_TAKE_DOWN: _ClassVar[MoveEnum]
+    MOVE_THRASH: _ClassVar[MoveEnum]
+    MOVE_DOUBLE_EDGE: _ClassVar[MoveEnum]
+    MOVE_TAIL_WHIP: _ClassVar[MoveEnum]
+    MOVE_POISON_STING: _ClassVar[MoveEnum]
+    MOVE_TWINEEDLE: _ClassVar[MoveEnum]
+    MOVE_PIN_MISSILE: _ClassVar[MoveEnum]
+    MOVE_LEER: _ClassVar[MoveEnum]
+    MOVE_BITE: _ClassVar[MoveEnum]
+    MOVE_GROWL: _ClassVar[MoveEnum]
+    MOVE_ROAR: _ClassVar[MoveEnum]
+    MOVE_SING: _ClassVar[MoveEnum]
+    MOVE_SUPERSONIC: _ClassVar[MoveEnum]
+    MOVE_SONIC_BOOM: _ClassVar[MoveEnum]
+    MOVE_DISABLE: _ClassVar[MoveEnum]
+    MOVE_ACID: _ClassVar[MoveEnum]
+    MOVE_EMBER: _ClassVar[MoveEnum]
+    MOVE_FLAMETHROWER: _ClassVar[MoveEnum]
+    MOVE_MIST: _ClassVar[MoveEnum]
+    MOVE_WATER_GUN: _ClassVar[MoveEnum]
+    MOVE_HYDRO_PUMP: _ClassVar[MoveEnum]
+    MOVE_SURF: _ClassVar[MoveEnum]
+    MOVE_ICE_BEAM: _ClassVar[MoveEnum]
+    MOVE_BLIZZARD: _ClassVar[MoveEnum]
+    MOVE_PSYBEAM: _ClassVar[MoveEnum]
+    MOVE_BUBBLE_BEAM: _ClassVar[MoveEnum]
+    MOVE_AURORA_BEAM: _ClassVar[MoveEnum]
+    MOVE_HYPER_BEAM: _ClassVar[MoveEnum]
+    MOVE_PECK: _ClassVar[MoveEnum]
+    MOVE_DRILL_PECK: _ClassVar[MoveEnum]
+    MOVE_SUBMISSION: _ClassVar[MoveEnum]
+    MOVE_LOW_KICK: _ClassVar[MoveEnum]
+    MOVE_COUNTER: _ClassVar[MoveEnum]
+    MOVE_SEISMIC_TOSS: _ClassVar[MoveEnum]
+    MOVE_STRENGTH: _ClassVar[MoveEnum]
+    MOVE_ABSORB: _ClassVar[MoveEnum]
+    MOVE_MEGA_DRAIN: _ClassVar[MoveEnum]
+    MOVE_LEECH_SEED: _ClassVar[MoveEnum]
+    MOVE_GROWTH: _ClassVar[MoveEnum]
+    MOVE_RAZOR_LEAF: _ClassVar[MoveEnum]
+    MOVE_SOLAR_BEAM: _ClassVar[MoveEnum]
+    MOVE_POISON_POWDER: _ClassVar[MoveEnum]
+    MOVE_STUN_SPORE: _ClassVar[MoveEnum]
+    MOVE_SLEEP_POWDER: _ClassVar[MoveEnum]
+    MOVE_PETAL_DANCE: _ClassVar[MoveEnum]
+    MOVE_STRING_SHOT: _ClassVar[MoveEnum]
+    MOVE_DRAGON_RAGE: _ClassVar[MoveEnum]
+    MOVE_FIRE_SPIN: _ClassVar[MoveEnum]
+    MOVE_THUNDER_SHOCK: _ClassVar[MoveEnum]
+    MOVE_THUNDERBOLT: _ClassVar[MoveEnum]
+    MOVE_THUNDER_WAVE: _ClassVar[MoveEnum]
+    MOVE_THUNDER: _ClassVar[MoveEnum]
+    MOVE_ROCK_THROW: _ClassVar[MoveEnum]
+    MOVE_EARTHQUAKE: _ClassVar[MoveEnum]
+    MOVE_FISSURE: _ClassVar[MoveEnum]
+    MOVE_DIG: _ClassVar[MoveEnum]
+    MOVE_TOXIC: _ClassVar[MoveEnum]
+    MOVE_CONFUSION: _ClassVar[MoveEnum]
+    MOVE_PSYCHIC: _ClassVar[MoveEnum]
+    MOVE_HYPNOSIS: _ClassVar[MoveEnum]
+    MOVE_MEDITATE: _ClassVar[MoveEnum]
+    MOVE_AGILITY: _ClassVar[MoveEnum]
+    MOVE_QUICK_ATTACK: _ClassVar[MoveEnum]
+    MOVE_RAGE: _ClassVar[MoveEnum]
+    MOVE_TELEPORT: _ClassVar[MoveEnum]
+    MOVE_NIGHT_SHADE: _ClassVar[MoveEnum]
+    MOVE_MIMIC: _ClassVar[MoveEnum]
+    MOVE_SCREECH: _ClassVar[MoveEnum]
+    MOVE_DOUBLE_TEAM: _ClassVar[MoveEnum]
+    MOVE_RECOVER: _ClassVar[MoveEnum]
+    MOVE_HARDEN: _ClassVar[MoveEnum]
+    MOVE_MINIMIZE: _ClassVar[MoveEnum]
+    MOVE_SMOKESCREEN: _ClassVar[MoveEnum]
+    MOVE_CONFUSE_RAY: _ClassVar[MoveEnum]
+    MOVE_WITHDRAW: _ClassVar[MoveEnum]
+    MOVE_DEFENSE_CURL: _ClassVar[MoveEnum]
+    MOVE_BARRIER: _ClassVar[MoveEnum]
+    MOVE_LIGHT_SCREEN: _ClassVar[MoveEnum]
+    MOVE_HAZE: _ClassVar[MoveEnum]
+    MOVE_REFLECT: _ClassVar[MoveEnum]
+    MOVE_FOCUS_ENERGY: _ClassVar[MoveEnum]
+    MOVE_BIDE: _ClassVar[MoveEnum]
+    MOVE_METRONOME: _ClassVar[MoveEnum]
+    MOVE_MIRROR_MOVE: _ClassVar[MoveEnum]
+    MOVE_SELF_DESTRUCT: _ClassVar[MoveEnum]
+    MOVE_EGG_BOMB: _ClassVar[MoveEnum]
+    MOVE_LICK: _ClassVar[MoveEnum]
+    MOVE_SMOG: _ClassVar[MoveEnum]
+    MOVE_SLUDGE: _ClassVar[MoveEnum]
+    MOVE_BONE_CLUB: _ClassVar[MoveEnum]
+    MOVE_FIRE_BLAST: _ClassVar[MoveEnum]
+    MOVE_WATERFALL: _ClassVar[MoveEnum]
+    MOVE_CLAMP: _ClassVar[MoveEnum]
+    MOVE_SWIFT: _ClassVar[MoveEnum]
+    MOVE_SKULL_BASH: _ClassVar[MoveEnum]
+    MOVE_SPIKE_CANNON: _ClassVar[MoveEnum]
+    MOVE_CONSTRICT: _ClassVar[MoveEnum]
+    MOVE_AMNESIA: _ClassVar[MoveEnum]
+    MOVE_KINESIS: _ClassVar[MoveEnum]
+    MOVE_SOFT_BOILED: _ClassVar[MoveEnum]
+    MOVE_HIGH_JUMP_KICK: _ClassVar[MoveEnum]
+    MOVE_GLARE: _ClassVar[MoveEnum]
+    MOVE_DREAM_EATER: _ClassVar[MoveEnum]
+    MOVE_POISON_GAS: _ClassVar[MoveEnum]
+    MOVE_BARRAGE: _ClassVar[MoveEnum]
+    MOVE_LEECH_LIFE: _ClassVar[MoveEnum]
+    MOVE_LOVELY_KISS: _ClassVar[MoveEnum]
+    MOVE_SKY_ATTACK: _ClassVar[MoveEnum]
+    MOVE_TRANSFORM: _ClassVar[MoveEnum]
+    MOVE_BUBBLE: _ClassVar[MoveEnum]
+    MOVE_DIZZY_PUNCH: _ClassVar[MoveEnum]
+    MOVE_SPORE: _ClassVar[MoveEnum]
+    MOVE_FLASH: _ClassVar[MoveEnum]
+    MOVE_PSYWAVE: _ClassVar[MoveEnum]
+    MOVE_SPLASH: _ClassVar[MoveEnum]
+    MOVE_ACID_ARMOR: _ClassVar[MoveEnum]
+    MOVE_CRABHAMMER: _ClassVar[MoveEnum]
+    MOVE_EXPLOSION: _ClassVar[MoveEnum]
+    MOVE_FURY_SWIPES: _ClassVar[MoveEnum]
+    MOVE_BONEMERANG: _ClassVar[MoveEnum]
+    MOVE_REST: _ClassVar[MoveEnum]
+    MOVE_ROCK_SLIDE: _ClassVar[MoveEnum]
+    MOVE_HYPER_FANG: _ClassVar[MoveEnum]
+    MOVE_SHARPEN: _ClassVar[MoveEnum]
+    MOVE_CONVERSION: _ClassVar[MoveEnum]
+    MOVE_TRI_ATTACK: _ClassVar[MoveEnum]
+    MOVE_SUPER_FANG: _ClassVar[MoveEnum]
+    MOVE_SLASH: _ClassVar[MoveEnum]
+    MOVE_SUBSTITUTE: _ClassVar[MoveEnum]
+    MOVE_STRUGGLE: _ClassVar[MoveEnum]
+    MOVE_SKETCH: _ClassVar[MoveEnum]
+    MOVE_TRIPLE_KICK: _ClassVar[MoveEnum]
+    MOVE_THIEF: _ClassVar[MoveEnum]
+    MOVE_SPIDER_WEB: _ClassVar[MoveEnum]
+    MOVE_MIND_READER: _ClassVar[MoveEnum]
+    MOVE_NIGHTMARE: _ClassVar[MoveEnum]
+    MOVE_FLAME_WHEEL: _ClassVar[MoveEnum]
+    MOVE_SNORE: _ClassVar[MoveEnum]
+    MOVE_CURSE: _ClassVar[MoveEnum]
+    MOVE_FLAIL: _ClassVar[MoveEnum]
+    MOVE_CONVERSION_2: _ClassVar[MoveEnum]
+    MOVE_AEROBLAST: _ClassVar[MoveEnum]
+    MOVE_COTTON_SPORE: _ClassVar[MoveEnum]
+    MOVE_REVERSAL: _ClassVar[MoveEnum]
+    MOVE_SPITE: _ClassVar[MoveEnum]
+    MOVE_POWDER_SNOW: _ClassVar[MoveEnum]
+    MOVE_PROTECT: _ClassVar[MoveEnum]
+    MOVE_MACH_PUNCH: _ClassVar[MoveEnum]
+    MOVE_SCARY_FACE: _ClassVar[MoveEnum]
+    MOVE_FEINT_ATTACK: _ClassVar[MoveEnum]
+    MOVE_SWEET_KISS: _ClassVar[MoveEnum]
+    MOVE_BELLY_DRUM: _ClassVar[MoveEnum]
+    MOVE_SLUDGE_BOMB: _ClassVar[MoveEnum]
+    MOVE_MUD_SLAP: _ClassVar[MoveEnum]
+    MOVE_OCTAZOOKA: _ClassVar[MoveEnum]
+    MOVE_SPIKES: _ClassVar[MoveEnum]
+    MOVE_ZAP_CANNON: _ClassVar[MoveEnum]
+    MOVE_FORESIGHT: _ClassVar[MoveEnum]
+    MOVE_DESTINY_BOND: _ClassVar[MoveEnum]
+    MOVE_PERISH_SONG: _ClassVar[MoveEnum]
+    MOVE_ICY_WIND: _ClassVar[MoveEnum]
+    MOVE_DETECT: _ClassVar[MoveEnum]
+    MOVE_BONE_RUSH: _ClassVar[MoveEnum]
+    MOVE_LOCK_ON: _ClassVar[MoveEnum]
+    MOVE_OUTRAGE: _ClassVar[MoveEnum]
+    MOVE_SANDSTORM: _ClassVar[MoveEnum]
+    MOVE_GIGA_DRAIN: _ClassVar[MoveEnum]
+    MOVE_ENDURE: _ClassVar[MoveEnum]
+    MOVE_CHARM: _ClassVar[MoveEnum]
+    MOVE_ROLLOUT: _ClassVar[MoveEnum]
+    MOVE_FALSE_SWIPE: _ClassVar[MoveEnum]
+    MOVE_SWAGGER: _ClassVar[MoveEnum]
+    MOVE_MILK_DRINK: _ClassVar[MoveEnum]
+    MOVE_SPARK: _ClassVar[MoveEnum]
+    MOVE_FURY_CUTTER: _ClassVar[MoveEnum]
+    MOVE_STEEL_WING: _ClassVar[MoveEnum]
+    MOVE_MEAN_LOOK: _ClassVar[MoveEnum]
+    MOVE_ATTRACT: _ClassVar[MoveEnum]
+    MOVE_SLEEP_TALK: _ClassVar[MoveEnum]
+    MOVE_HEAL_BELL: _ClassVar[MoveEnum]
+    MOVE_RETURN: _ClassVar[MoveEnum]
+    MOVE_PRESENT: _ClassVar[MoveEnum]
+    MOVE_FRUSTRATION: _ClassVar[MoveEnum]
+    MOVE_SAFEGUARD: _ClassVar[MoveEnum]
+    MOVE_PAIN_SPLIT: _ClassVar[MoveEnum]
+    MOVE_SACRED_FIRE: _ClassVar[MoveEnum]
+    MOVE_MAGNITUDE: _ClassVar[MoveEnum]
+    MOVE_DYNAMIC_PUNCH: _ClassVar[MoveEnum]
+    MOVE_MEGAHORN: _ClassVar[MoveEnum]
+    MOVE_DRAGON_BREATH: _ClassVar[MoveEnum]
+    MOVE_BATON_PASS: _ClassVar[MoveEnum]
+    MOVE_ENCORE: _ClassVar[MoveEnum]
+    MOVE_PURSUIT: _ClassVar[MoveEnum]
+    MOVE_RAPID_SPIN: _ClassVar[MoveEnum]
+    MOVE_SWEET_SCENT: _ClassVar[MoveEnum]
+    MOVE_IRON_TAIL: _ClassVar[MoveEnum]
+    MOVE_METAL_CLAW: _ClassVar[MoveEnum]
+    MOVE_VITAL_THROW: _ClassVar[MoveEnum]
+    MOVE_MORNING_SUN: _ClassVar[MoveEnum]
+    MOVE_SYNTHESIS: _ClassVar[MoveEnum]
+    MOVE_MOONLIGHT: _ClassVar[MoveEnum]
+    MOVE_HIDDEN_POWER: _ClassVar[MoveEnum]
+    MOVE_CROSS_CHOP: _ClassVar[MoveEnum]
+    MOVE_TWISTER: _ClassVar[MoveEnum]
+    MOVE_RAIN_DANCE: _ClassVar[MoveEnum]
+    MOVE_SUNNY_DAY: _ClassVar[MoveEnum]
+    MOVE_CRUNCH: _ClassVar[MoveEnum]
+    MOVE_MIRROR_COAT: _ClassVar[MoveEnum]
+    MOVE_PSYCH_UP: _ClassVar[MoveEnum]
+    MOVE_EXTREME_SPEED: _ClassVar[MoveEnum]
+    MOVE_ANCIENT_POWER: _ClassVar[MoveEnum]
+    MOVE_SHADOW_BALL: _ClassVar[MoveEnum]
+    MOVE_FUTURE_SIGHT: _ClassVar[MoveEnum]
+    MOVE_ROCK_SMASH: _ClassVar[MoveEnum]
+    MOVE_WHIRLPOOL: _ClassVar[MoveEnum]
+    MOVE_BEAT_UP: _ClassVar[MoveEnum]
+    MOVE_FAKE_OUT: _ClassVar[MoveEnum]
+    MOVE_UPROAR: _ClassVar[MoveEnum]
+    MOVE_STOCKPILE: _ClassVar[MoveEnum]
+    MOVE_SPIT_UP: _ClassVar[MoveEnum]
+    MOVE_SWALLOW: _ClassVar[MoveEnum]
+    MOVE_HEAT_WAVE: _ClassVar[MoveEnum]
+    MOVE_HAIL: _ClassVar[MoveEnum]
+    MOVE_TORMENT: _ClassVar[MoveEnum]
+    MOVE_FLATTER: _ClassVar[MoveEnum]
+    MOVE_WILL_O_WISP: _ClassVar[MoveEnum]
+    MOVE_MEMENTO: _ClassVar[MoveEnum]
+    MOVE_FACADE: _ClassVar[MoveEnum]
+    MOVE_FOCUS_PUNCH: _ClassVar[MoveEnum]
+    MOVE_SMELLING_SALTS: _ClassVar[MoveEnum]
+    MOVE_FOLLOW_ME: _ClassVar[MoveEnum]
+    MOVE_NATURE_POWER: _ClassVar[MoveEnum]
+    MOVE_CHARGE: _ClassVar[MoveEnum]
+    MOVE_TAUNT: _ClassVar[MoveEnum]
+    MOVE_HELPING_HAND: _ClassVar[MoveEnum]
+    MOVE_TRICK: _ClassVar[MoveEnum]
+    MOVE_ROLE_PLAY: _ClassVar[MoveEnum]
+    MOVE_WISH: _ClassVar[MoveEnum]
+    MOVE_ASSIST: _ClassVar[MoveEnum]
+    MOVE_INGRAIN: _ClassVar[MoveEnum]
+    MOVE_SUPERPOWER: _ClassVar[MoveEnum]
+    MOVE_MAGIC_COAT: _ClassVar[MoveEnum]
+    MOVE_RECYCLE: _ClassVar[MoveEnum]
+    MOVE_REVENGE: _ClassVar[MoveEnum]
+    MOVE_BRICK_BREAK: _ClassVar[MoveEnum]
+    MOVE_YAWN: _ClassVar[MoveEnum]
+    MOVE_KNOCK_OFF: _ClassVar[MoveEnum]
+    MOVE_ENDEAVOR: _ClassVar[MoveEnum]
+    MOVE_ERUPTION: _ClassVar[MoveEnum]
+    MOVE_SKILL_SWAP: _ClassVar[MoveEnum]
+    MOVE_IMPRISON: _ClassVar[MoveEnum]
+    MOVE_REFRESH: _ClassVar[MoveEnum]
+    MOVE_GRUDGE: _ClassVar[MoveEnum]
+    MOVE_SNATCH: _ClassVar[MoveEnum]
+    MOVE_SECRET_POWER: _ClassVar[MoveEnum]
+    MOVE_DIVE: _ClassVar[MoveEnum]
+    MOVE_ARM_THRUST: _ClassVar[MoveEnum]
+    MOVE_CAMOUFLAGE: _ClassVar[MoveEnum]
+    MOVE_TAIL_GLOW: _ClassVar[MoveEnum]
+    MOVE_LUSTER_PURGE: _ClassVar[MoveEnum]
+    MOVE_MIST_BALL: _ClassVar[MoveEnum]
+    MOVE_FEATHER_DANCE: _ClassVar[MoveEnum]
+    MOVE_TEETER_DANCE: _ClassVar[MoveEnum]
+    MOVE_BLAZE_KICK: _ClassVar[MoveEnum]
+    MOVE_MUD_SPORT: _ClassVar[MoveEnum]
+    MOVE_ICE_BALL: _ClassVar[MoveEnum]
+    MOVE_NEEDLE_ARM: _ClassVar[MoveEnum]
+    MOVE_SLACK_OFF: _ClassVar[MoveEnum]
+    MOVE_HYPER_VOICE: _ClassVar[MoveEnum]
+    MOVE_POISON_FANG: _ClassVar[MoveEnum]
+    MOVE_CRUSH_CLAW: _ClassVar[MoveEnum]
+    MOVE_BLAST_BURN: _ClassVar[MoveEnum]
+    MOVE_HYDRO_CANNON: _ClassVar[MoveEnum]
+    MOVE_METEOR_MASH: _ClassVar[MoveEnum]
+    MOVE_ASTONISH: _ClassVar[MoveEnum]
+    MOVE_WEATHER_BALL: _ClassVar[MoveEnum]
+    MOVE_AROMATHERAPY: _ClassVar[MoveEnum]
+    MOVE_FAKE_TEARS: _ClassVar[MoveEnum]
+    MOVE_AIR_CUTTER: _ClassVar[MoveEnum]
+    MOVE_OVERHEAT: _ClassVar[MoveEnum]
+    MOVE_ODOR_SLEUTH: _ClassVar[MoveEnum]
+    MOVE_ROCK_TOMB: _ClassVar[MoveEnum]
+    MOVE_SILVER_WIND: _ClassVar[MoveEnum]
+    MOVE_METAL_SOUND: _ClassVar[MoveEnum]
+    MOVE_GRASS_WHISTLE: _ClassVar[MoveEnum]
+    MOVE_TICKLE: _ClassVar[MoveEnum]
+    MOVE_COSMIC_POWER: _ClassVar[MoveEnum]
+    MOVE_WATER_SPOUT: _ClassVar[MoveEnum]
+    MOVE_SIGNAL_BEAM: _ClassVar[MoveEnum]
+    MOVE_SHADOW_PUNCH: _ClassVar[MoveEnum]
+    MOVE_EXTRASENSORY: _ClassVar[MoveEnum]
+    MOVE_SKY_UPPERCUT: _ClassVar[MoveEnum]
+    MOVE_SAND_TOMB: _ClassVar[MoveEnum]
+    MOVE_SHEER_COLD: _ClassVar[MoveEnum]
+    MOVE_MUDDY_WATER: _ClassVar[MoveEnum]
+    MOVE_BULLET_SEED: _ClassVar[MoveEnum]
+    MOVE_AERIAL_ACE: _ClassVar[MoveEnum]
+    MOVE_ICICLE_SPEAR: _ClassVar[MoveEnum]
+    MOVE_IRON_DEFENSE: _ClassVar[MoveEnum]
+    MOVE_BLOCK: _ClassVar[MoveEnum]
+    MOVE_HOWL: _ClassVar[MoveEnum]
+    MOVE_DRAGON_CLAW: _ClassVar[MoveEnum]
+    MOVE_FRENZY_PLANT: _ClassVar[MoveEnum]
+    MOVE_BULK_UP: _ClassVar[MoveEnum]
+    MOVE_BOUNCE: _ClassVar[MoveEnum]
+    MOVE_MUD_SHOT: _ClassVar[MoveEnum]
+    MOVE_POISON_TAIL: _ClassVar[MoveEnum]
+    MOVE_COVET: _ClassVar[MoveEnum]
+    MOVE_VOLT_TACKLE: _ClassVar[MoveEnum]
+    MOVE_MAGICAL_LEAF: _ClassVar[MoveEnum]
+    MOVE_WATER_SPORT: _ClassVar[MoveEnum]
+    MOVE_CALM_MIND: _ClassVar[MoveEnum]
+    MOVE_LEAF_BLADE: _ClassVar[MoveEnum]
+    MOVE_DRAGON_DANCE: _ClassVar[MoveEnum]
+    MOVE_ROCK_BLAST: _ClassVar[MoveEnum]
+    MOVE_SHOCK_WAVE: _ClassVar[MoveEnum]
+    MOVE_WATER_PULSE: _ClassVar[MoveEnum]
+    MOVE_DOOM_DESIRE: _ClassVar[MoveEnum]
+    MOVE_PSYCHO_BOOST: _ClassVar[MoveEnum]
+    MOVE_ROOST: _ClassVar[MoveEnum]
+    MOVE_GRAVITY: _ClassVar[MoveEnum]
+    MOVE_MIRACLE_EYE: _ClassVar[MoveEnum]
+    MOVE_WAKE_UP_SLAP: _ClassVar[MoveEnum]
+    MOVE_HAMMER_ARM: _ClassVar[MoveEnum]
+    MOVE_GYRO_BALL: _ClassVar[MoveEnum]
+    MOVE_HEALING_WISH: _ClassVar[MoveEnum]
+    MOVE_BRINE: _ClassVar[MoveEnum]
+    MOVE_NATURAL_GIFT: _ClassVar[MoveEnum]
+    MOVE_FEINT: _ClassVar[MoveEnum]
+    MOVE_PLUCK: _ClassVar[MoveEnum]
+    MOVE_TAILWIND: _ClassVar[MoveEnum]
+    MOVE_ACUPRESSURE: _ClassVar[MoveEnum]
+    MOVE_METAL_BURST: _ClassVar[MoveEnum]
+    MOVE_U_TURN: _ClassVar[MoveEnum]
+    MOVE_CLOSE_COMBAT: _ClassVar[MoveEnum]
+    MOVE_PAYBACK: _ClassVar[MoveEnum]
+    MOVE_ASSURANCE: _ClassVar[MoveEnum]
+    MOVE_EMBARGO: _ClassVar[MoveEnum]
+    MOVE_FLING: _ClassVar[MoveEnum]
+    MOVE_PSYCHO_SHIFT: _ClassVar[MoveEnum]
+    MOVE_TRUMP_CARD: _ClassVar[MoveEnum]
+    MOVE_HEAL_BLOCK: _ClassVar[MoveEnum]
+    MOVE_WRING_OUT: _ClassVar[MoveEnum]
+    MOVE_POWER_TRICK: _ClassVar[MoveEnum]
+    MOVE_GASTRO_ACID: _ClassVar[MoveEnum]
+    MOVE_LUCKY_CHANT: _ClassVar[MoveEnum]
+    MOVE_ME_FIRST: _ClassVar[MoveEnum]
+    MOVE_COPYCAT: _ClassVar[MoveEnum]
+    MOVE_POWER_SWAP: _ClassVar[MoveEnum]
+    MOVE_GUARD_SWAP: _ClassVar[MoveEnum]
+    MOVE_PUNISHMENT: _ClassVar[MoveEnum]
+    MOVE_LAST_RESORT: _ClassVar[MoveEnum]
+    MOVE_WORRY_SEED: _ClassVar[MoveEnum]
+    MOVE_SUCKER_PUNCH: _ClassVar[MoveEnum]
+    MOVE_TOXIC_SPIKES: _ClassVar[MoveEnum]
+    MOVE_HEART_SWAP: _ClassVar[MoveEnum]
+    MOVE_AQUA_RING: _ClassVar[MoveEnum]
+    MOVE_MAGNET_RISE: _ClassVar[MoveEnum]
+    MOVE_FLARE_BLITZ: _ClassVar[MoveEnum]
+    MOVE_FORCE_PALM: _ClassVar[MoveEnum]
+    MOVE_AURA_SPHERE: _ClassVar[MoveEnum]
+    MOVE_ROCK_POLISH: _ClassVar[MoveEnum]
+    MOVE_POISON_JAB: _ClassVar[MoveEnum]
+    MOVE_DARK_PULSE: _ClassVar[MoveEnum]
+    MOVE_NIGHT_SLASH: _ClassVar[MoveEnum]
+    MOVE_AQUA_TAIL: _ClassVar[MoveEnum]
+    MOVE_SEED_BOMB: _ClassVar[MoveEnum]
+    MOVE_AIR_SLASH: _ClassVar[MoveEnum]
+    MOVE_X_SCISSOR: _ClassVar[MoveEnum]
+    MOVE_BUG_BUZZ: _ClassVar[MoveEnum]
+    MOVE_DRAGON_PULSE: _ClassVar[MoveEnum]
+    MOVE_DRAGON_RUSH: _ClassVar[MoveEnum]
+    MOVE_POWER_GEM: _ClassVar[MoveEnum]
+    MOVE_DRAIN_PUNCH: _ClassVar[MoveEnum]
+    MOVE_VACUUM_WAVE: _ClassVar[MoveEnum]
+    MOVE_FOCUS_BLAST: _ClassVar[MoveEnum]
+    MOVE_ENERGY_BALL: _ClassVar[MoveEnum]
+    MOVE_BRAVE_BIRD: _ClassVar[MoveEnum]
+    MOVE_EARTH_POWER: _ClassVar[MoveEnum]
+    MOVE_SWITCHEROO: _ClassVar[MoveEnum]
+    MOVE_GIGA_IMPACT: _ClassVar[MoveEnum]
+    MOVE_NASTY_PLOT: _ClassVar[MoveEnum]
+    MOVE_BULLET_PUNCH: _ClassVar[MoveEnum]
+    MOVE_AVALANCHE: _ClassVar[MoveEnum]
+    MOVE_ICE_SHARD: _ClassVar[MoveEnum]
+    MOVE_SHADOW_CLAW: _ClassVar[MoveEnum]
+    MOVE_THUNDER_FANG: _ClassVar[MoveEnum]
+    MOVE_ICE_FANG: _ClassVar[MoveEnum]
+    MOVE_FIRE_FANG: _ClassVar[MoveEnum]
+    MOVE_SHADOW_SNEAK: _ClassVar[MoveEnum]
+    MOVE_MUD_BOMB: _ClassVar[MoveEnum]
+    MOVE_PSYCHO_CUT: _ClassVar[MoveEnum]
+    MOVE_ZEN_HEADBUTT: _ClassVar[MoveEnum]
+    MOVE_MIRROR_SHOT: _ClassVar[MoveEnum]
+    MOVE_FLASH_CANNON: _ClassVar[MoveEnum]
+    MOVE_ROCK_CLIMB: _ClassVar[MoveEnum]
+    MOVE_DEFOG: _ClassVar[MoveEnum]
+    MOVE_TRICK_ROOM: _ClassVar[MoveEnum]
+    MOVE_DRACO_METEOR: _ClassVar[MoveEnum]
+    MOVE_DISCHARGE: _ClassVar[MoveEnum]
+    MOVE_LAVA_PLUME: _ClassVar[MoveEnum]
+    MOVE_LEAF_STORM: _ClassVar[MoveEnum]
+    MOVE_POWER_WHIP: _ClassVar[MoveEnum]
+    MOVE_ROCK_WRECKER: _ClassVar[MoveEnum]
+    MOVE_CROSS_POISON: _ClassVar[MoveEnum]
+    MOVE_GUNK_SHOT: _ClassVar[MoveEnum]
+    MOVE_IRON_HEAD: _ClassVar[MoveEnum]
+    MOVE_MAGNET_BOMB: _ClassVar[MoveEnum]
+    MOVE_STONE_EDGE: _ClassVar[MoveEnum]
+    MOVE_CAPTIVATE: _ClassVar[MoveEnum]
+    MOVE_STEALTH_ROCK: _ClassVar[MoveEnum]
+    MOVE_GRASS_KNOT: _ClassVar[MoveEnum]
+    MOVE_CHATTER: _ClassVar[MoveEnum]
+    MOVE_JUDGMENT: _ClassVar[MoveEnum]
+    MOVE_BUG_BITE: _ClassVar[MoveEnum]
+    MOVE_CHARGE_BEAM: _ClassVar[MoveEnum]
+    MOVE_WOOD_HAMMER: _ClassVar[MoveEnum]
+    MOVE_AQUA_JET: _ClassVar[MoveEnum]
+    MOVE_ATTACK_ORDER: _ClassVar[MoveEnum]
+    MOVE_DEFEND_ORDER: _ClassVar[MoveEnum]
+    MOVE_HEAL_ORDER: _ClassVar[MoveEnum]
+    MOVE_HEAD_SMASH: _ClassVar[MoveEnum]
+    MOVE_DOUBLE_HIT: _ClassVar[MoveEnum]
+    MOVE_ROAR_OF_TIME: _ClassVar[MoveEnum]
+    MOVE_SPACIAL_REND: _ClassVar[MoveEnum]
+    MOVE_LUNAR_DANCE: _ClassVar[MoveEnum]
+    MOVE_CRUSH_GRIP: _ClassVar[MoveEnum]
+    MOVE_MAGMA_STORM: _ClassVar[MoveEnum]
+    MOVE_DARK_VOID: _ClassVar[MoveEnum]
+    MOVE_SEED_FLARE: _ClassVar[MoveEnum]
+    MOVE_OMINOUS_WIND: _ClassVar[MoveEnum]
+    MOVE_SHADOW_FORCE: _ClassVar[MoveEnum]
+    MOVE_HONE_CLAWS: _ClassVar[MoveEnum]
+    MOVE_WIDE_GUARD: _ClassVar[MoveEnum]
+    MOVE_GUARD_SPLIT: _ClassVar[MoveEnum]
+    MOVE_POWER_SPLIT: _ClassVar[MoveEnum]
+    MOVE_WONDER_ROOM: _ClassVar[MoveEnum]
+    MOVE_PSYSHOCK: _ClassVar[MoveEnum]
+    MOVE_VENOSHOCK: _ClassVar[MoveEnum]
+    MOVE_AUTOTOMIZE: _ClassVar[MoveEnum]
+    MOVE_RAGE_POWDER: _ClassVar[MoveEnum]
+    MOVE_TELEKINESIS: _ClassVar[MoveEnum]
+    MOVE_MAGIC_ROOM: _ClassVar[MoveEnum]
+    MOVE_SMACK_DOWN: _ClassVar[MoveEnum]
+    MOVE_STORM_THROW: _ClassVar[MoveEnum]
+    MOVE_FLAME_BURST: _ClassVar[MoveEnum]
+    MOVE_SLUDGE_WAVE: _ClassVar[MoveEnum]
+    MOVE_QUIVER_DANCE: _ClassVar[MoveEnum]
+    MOVE_HEAVY_SLAM: _ClassVar[MoveEnum]
+    MOVE_SYNCHRONOISE: _ClassVar[MoveEnum]
+    MOVE_ELECTRO_BALL: _ClassVar[MoveEnum]
+    MOVE_SOAK: _ClassVar[MoveEnum]
+    MOVE_FLAME_CHARGE: _ClassVar[MoveEnum]
+    MOVE_COIL: _ClassVar[MoveEnum]
+    MOVE_LOW_SWEEP: _ClassVar[MoveEnum]
+    MOVE_ACID_SPRAY: _ClassVar[MoveEnum]
+    MOVE_FOUL_PLAY: _ClassVar[MoveEnum]
+    MOVE_SIMPLE_BEAM: _ClassVar[MoveEnum]
+    MOVE_ENTRAINMENT: _ClassVar[MoveEnum]
+    MOVE_AFTER_YOU: _ClassVar[MoveEnum]
+    MOVE_ROUND: _ClassVar[MoveEnum]
+    MOVE_ECHOED_VOICE: _ClassVar[MoveEnum]
+    MOVE_CHIP_AWAY: _ClassVar[MoveEnum]
+    MOVE_CLEAR_SMOG: _ClassVar[MoveEnum]
+    MOVE_STORED_POWER: _ClassVar[MoveEnum]
+    MOVE_QUICK_GUARD: _ClassVar[MoveEnum]
+    MOVE_ALLY_SWITCH: _ClassVar[MoveEnum]
+    MOVE_SCALD: _ClassVar[MoveEnum]
+    MOVE_SHELL_SMASH: _ClassVar[MoveEnum]
+    MOVE_HEAL_PULSE: _ClassVar[MoveEnum]
+    MOVE_HEX: _ClassVar[MoveEnum]
+    MOVE_SKY_DROP: _ClassVar[MoveEnum]
+    MOVE_SHIFT_GEAR: _ClassVar[MoveEnum]
+    MOVE_CIRCLE_THROW: _ClassVar[MoveEnum]
+    MOVE_INCINERATE: _ClassVar[MoveEnum]
+    MOVE_QUASH: _ClassVar[MoveEnum]
+    MOVE_ACROBATICS: _ClassVar[MoveEnum]
+    MOVE_REFLECT_TYPE: _ClassVar[MoveEnum]
+    MOVE_RETALIATE: _ClassVar[MoveEnum]
+    MOVE_FINAL_GAMBIT: _ClassVar[MoveEnum]
+    MOVE_BESTOW: _ClassVar[MoveEnum]
+    MOVE_INFERNO: _ClassVar[MoveEnum]
+    MOVE_WATER_PLEDGE: _ClassVar[MoveEnum]
+    MOVE_FIRE_PLEDGE: _ClassVar[MoveEnum]
+    MOVE_GRASS_PLEDGE: _ClassVar[MoveEnum]
+    MOVE_VOLT_SWITCH: _ClassVar[MoveEnum]
+    MOVE_STRUGGLE_BUG: _ClassVar[MoveEnum]
+    MOVE_BULLDOZE: _ClassVar[MoveEnum]
+    MOVE_FROST_BREATH: _ClassVar[MoveEnum]
+    MOVE_DRAGON_TAIL: _ClassVar[MoveEnum]
+    MOVE_WORK_UP: _ClassVar[MoveEnum]
+    MOVE_ELECTROWEB: _ClassVar[MoveEnum]
+    MOVE_WILD_CHARGE: _ClassVar[MoveEnum]
+    MOVE_DRILL_RUN: _ClassVar[MoveEnum]
+    MOVE_DUAL_CHOP: _ClassVar[MoveEnum]
+    MOVE_HEART_STAMP: _ClassVar[MoveEnum]
+    MOVE_HORN_LEECH: _ClassVar[MoveEnum]
+    MOVE_SACRED_SWORD: _ClassVar[MoveEnum]
+    MOVE_RAZOR_SHELL: _ClassVar[MoveEnum]
+    MOVE_HEAT_CRASH: _ClassVar[MoveEnum]
+    MOVE_LEAF_TORNADO: _ClassVar[MoveEnum]
+    MOVE_STEAMROLLER: _ClassVar[MoveEnum]
+    MOVE_COTTON_GUARD: _ClassVar[MoveEnum]
+    MOVE_NIGHT_DAZE: _ClassVar[MoveEnum]
+    MOVE_PSYSTRIKE: _ClassVar[MoveEnum]
+    MOVE_TAIL_SLAP: _ClassVar[MoveEnum]
+    MOVE_HURRICANE: _ClassVar[MoveEnum]
+    MOVE_HEAD_CHARGE: _ClassVar[MoveEnum]
+    MOVE_GEAR_GRIND: _ClassVar[MoveEnum]
+    MOVE_SEARING_SHOT: _ClassVar[MoveEnum]
+    MOVE_TECHNO_BLAST: _ClassVar[MoveEnum]
+    MOVE_RELIC_SONG: _ClassVar[MoveEnum]
+    MOVE_SECRET_SWORD: _ClassVar[MoveEnum]
+    MOVE_GLACIATE: _ClassVar[MoveEnum]
+    MOVE_BOLT_STRIKE: _ClassVar[MoveEnum]
+    MOVE_BLUE_FLARE: _ClassVar[MoveEnum]
+    MOVE_FIERY_DANCE: _ClassVar[MoveEnum]
+    MOVE_FREEZE_SHOCK: _ClassVar[MoveEnum]
+    MOVE_ICE_BURN: _ClassVar[MoveEnum]
+    MOVE_SNARL: _ClassVar[MoveEnum]
+    MOVE_ICICLE_CRASH: _ClassVar[MoveEnum]
+    MOVE_V_CREATE: _ClassVar[MoveEnum]
+    MOVE_FUSION_FLARE: _ClassVar[MoveEnum]
+    MOVE_FUSION_BOLT: _ClassVar[MoveEnum]
+    MOVE_FLYING_PRESS: _ClassVar[MoveEnum]
+    MOVE_MAT_BLOCK: _ClassVar[MoveEnum]
+    MOVE_BELCH: _ClassVar[MoveEnum]
+    MOVE_ROTOTILLER: _ClassVar[MoveEnum]
+    MOVE_STICKY_WEB: _ClassVar[MoveEnum]
+    MOVE_FELL_STINGER: _ClassVar[MoveEnum]
+    MOVE_PHANTOM_FORCE: _ClassVar[MoveEnum]
+    MOVE_TRICK_OR_TREAT: _ClassVar[MoveEnum]
+    MOVE_NOBLE_ROAR: _ClassVar[MoveEnum]
+    MOVE_ION_DELUGE: _ClassVar[MoveEnum]
+    MOVE_PARABOLIC_CHARGE: _ClassVar[MoveEnum]
+    MOVE_FORESTS_CURSE: _ClassVar[MoveEnum]
+    MOVE_PETAL_BLIZZARD: _ClassVar[MoveEnum]
+    MOVE_FREEZE_DRY: _ClassVar[MoveEnum]
+    MOVE_DISARMING_VOICE: _ClassVar[MoveEnum]
+    MOVE_PARTING_SHOT: _ClassVar[MoveEnum]
+    MOVE_TOPSY_TURVY: _ClassVar[MoveEnum]
+    MOVE_DRAINING_KISS: _ClassVar[MoveEnum]
+    MOVE_CRAFTY_SHIELD: _ClassVar[MoveEnum]
+    MOVE_FLOWER_SHIELD: _ClassVar[MoveEnum]
+    MOVE_GRASSY_TERRAIN: _ClassVar[MoveEnum]
+    MOVE_MISTY_TERRAIN: _ClassVar[MoveEnum]
+    MOVE_ELECTRIFY: _ClassVar[MoveEnum]
+    MOVE_PLAY_ROUGH: _ClassVar[MoveEnum]
+    MOVE_FAIRY_WIND: _ClassVar[MoveEnum]
+    MOVE_MOONBLAST: _ClassVar[MoveEnum]
+    MOVE_BOOMBURST: _ClassVar[MoveEnum]
+    MOVE_FAIRY_LOCK: _ClassVar[MoveEnum]
+    MOVE_KINGS_SHIELD: _ClassVar[MoveEnum]
+    MOVE_PLAY_NICE: _ClassVar[MoveEnum]
+    MOVE_CONFIDE: _ClassVar[MoveEnum]
+    MOVE_DIAMOND_STORM: _ClassVar[MoveEnum]
+    MOVE_STEAM_ERUPTION: _ClassVar[MoveEnum]
+    MOVE_HYPERSPACE_HOLE: _ClassVar[MoveEnum]
+    MOVE_WATER_SHURIKEN: _ClassVar[MoveEnum]
+    MOVE_MYSTICAL_FIRE: _ClassVar[MoveEnum]
+    MOVE_SPIKY_SHIELD: _ClassVar[MoveEnum]
+    MOVE_AROMATIC_MIST: _ClassVar[MoveEnum]
+    MOVE_EERIE_IMPULSE: _ClassVar[MoveEnum]
+    MOVE_VENOM_DRENCH: _ClassVar[MoveEnum]
+    MOVE_POWDER: _ClassVar[MoveEnum]
+    MOVE_GEOMANCY: _ClassVar[MoveEnum]
+    MOVE_MAGNETIC_FLUX: _ClassVar[MoveEnum]
+    MOVE_HAPPY_HOUR: _ClassVar[MoveEnum]
+    MOVE_ELECTRIC_TERRAIN: _ClassVar[MoveEnum]
+    MOVE_DAZZLING_GLEAM: _ClassVar[MoveEnum]
+    MOVE_CELEBRATE: _ClassVar[MoveEnum]
+    MOVE_HOLD_HANDS: _ClassVar[MoveEnum]
+    MOVE_BABY_DOLL_EYES: _ClassVar[MoveEnum]
+    MOVE_NUZZLE: _ClassVar[MoveEnum]
+    MOVE_HOLD_BACK: _ClassVar[MoveEnum]
+    MOVE_INFESTATION: _ClassVar[MoveEnum]
+    MOVE_POWER_UP_PUNCH: _ClassVar[MoveEnum]
+    MOVE_OBLIVION_WING: _ClassVar[MoveEnum]
+    MOVE_THOUSAND_ARROWS: _ClassVar[MoveEnum]
+    MOVE_THOUSAND_WAVES: _ClassVar[MoveEnum]
+    MOVE_LANDS_WRATH: _ClassVar[MoveEnum]
+    MOVE_LIGHT_OF_RUIN: _ClassVar[MoveEnum]
+    MOVE_ORIGIN_PULSE: _ClassVar[MoveEnum]
+    MOVE_PRECIPICE_BLADES: _ClassVar[MoveEnum]
+    MOVE_DRAGON_ASCENT: _ClassVar[MoveEnum]
+    MOVE_HYPERSPACE_FURY: _ClassVar[MoveEnum]
+    MOVE_SHORE_UP: _ClassVar[MoveEnum]
+    MOVE_FIRST_IMPRESSION: _ClassVar[MoveEnum]
+    MOVE_BANEFUL_BUNKER: _ClassVar[MoveEnum]
+    MOVE_SPIRIT_SHACKLE: _ClassVar[MoveEnum]
+    MOVE_DARKEST_LARIAT: _ClassVar[MoveEnum]
+    MOVE_SPARKLING_ARIA: _ClassVar[MoveEnum]
+    MOVE_ICE_HAMMER: _ClassVar[MoveEnum]
+    MOVE_FLORAL_HEALING: _ClassVar[MoveEnum]
+    MOVE_HIGH_HORSEPOWER: _ClassVar[MoveEnum]
+    MOVE_STRENGTH_SAP: _ClassVar[MoveEnum]
+    MOVE_SOLAR_BLADE: _ClassVar[MoveEnum]
+    MOVE_LEAFAGE: _ClassVar[MoveEnum]
+    MOVE_SPOTLIGHT: _ClassVar[MoveEnum]
+    MOVE_TOXIC_THREAD: _ClassVar[MoveEnum]
+    MOVE_LASER_FOCUS: _ClassVar[MoveEnum]
+    MOVE_GEAR_UP: _ClassVar[MoveEnum]
+    MOVE_THROAT_CHOP: _ClassVar[MoveEnum]
+    MOVE_POLLEN_PUFF: _ClassVar[MoveEnum]
+    MOVE_ANCHOR_SHOT: _ClassVar[MoveEnum]
+    MOVE_PSYCHIC_TERRAIN: _ClassVar[MoveEnum]
+    MOVE_LUNGE: _ClassVar[MoveEnum]
+    MOVE_FIRE_LASH: _ClassVar[MoveEnum]
+    MOVE_POWER_TRIP: _ClassVar[MoveEnum]
+    MOVE_BURN_UP: _ClassVar[MoveEnum]
+    MOVE_SPEED_SWAP: _ClassVar[MoveEnum]
+    MOVE_SMART_STRIKE: _ClassVar[MoveEnum]
+    MOVE_PURIFY: _ClassVar[MoveEnum]
+    MOVE_REVELATION_DANCE: _ClassVar[MoveEnum]
+    MOVE_CORE_ENFORCER: _ClassVar[MoveEnum]
+    MOVE_TROP_KICK: _ClassVar[MoveEnum]
+    MOVE_INSTRUCT: _ClassVar[MoveEnum]
+    MOVE_BEAK_BLAST: _ClassVar[MoveEnum]
+    MOVE_CLANGING_SCALES: _ClassVar[MoveEnum]
+    MOVE_DRAGON_HAMMER: _ClassVar[MoveEnum]
+    MOVE_BRUTAL_SWING: _ClassVar[MoveEnum]
+    MOVE_AURORA_VEIL: _ClassVar[MoveEnum]
+    MOVE_SHELL_TRAP: _ClassVar[MoveEnum]
+    MOVE_FLEUR_CANNON: _ClassVar[MoveEnum]
+    MOVE_PSYCHIC_FANGS: _ClassVar[MoveEnum]
+    MOVE_STOMPING_TANTRUM: _ClassVar[MoveEnum]
+    MOVE_SHADOW_BONE: _ClassVar[MoveEnum]
+    MOVE_ACCELEROCK: _ClassVar[MoveEnum]
+    MOVE_LIQUIDATION: _ClassVar[MoveEnum]
+    MOVE_PRISMATIC_LASER: _ClassVar[MoveEnum]
+    MOVE_SPECTRAL_THIEF: _ClassVar[MoveEnum]
+    MOVE_SUNSTEEL_STRIKE: _ClassVar[MoveEnum]
+    MOVE_MOONGEIST_BEAM: _ClassVar[MoveEnum]
+    MOVE_TEARFUL_LOOK: _ClassVar[MoveEnum]
+    MOVE_ZING_ZAP: _ClassVar[MoveEnum]
+    MOVE_NATURES_MADNESS: _ClassVar[MoveEnum]
+    MOVE_MULTI_ATTACK: _ClassVar[MoveEnum]
+    MOVE_MIND_BLOWN: _ClassVar[MoveEnum]
+    MOVE_PLASMA_FISTS: _ClassVar[MoveEnum]
+    MOVE_PHOTON_GEYSER: _ClassVar[MoveEnum]
+    MOVE_ZIPPY_ZAP: _ClassVar[MoveEnum]
+    MOVE_SPLISHY_SPLASH: _ClassVar[MoveEnum]
+    MOVE_FLOATY_FALL: _ClassVar[MoveEnum]
+    MOVE_PIKA_PAPOW: _ClassVar[MoveEnum]
+    MOVE_BOUNCY_BUBBLE: _ClassVar[MoveEnum]
+    MOVE_BUZZY_BUZZ: _ClassVar[MoveEnum]
+    MOVE_SIZZLY_SLIDE: _ClassVar[MoveEnum]
+    MOVE_GLITZY_GLOW: _ClassVar[MoveEnum]
+    MOVE_BADDY_BAD: _ClassVar[MoveEnum]
+    MOVE_SAPPY_SEED: _ClassVar[MoveEnum]
+    MOVE_FREEZY_FROST: _ClassVar[MoveEnum]
+    MOVE_SPARKLY_SWIRL: _ClassVar[MoveEnum]
+    MOVE_VEEVEE_VOLLEY: _ClassVar[MoveEnum]
+    MOVE_DOUBLE_IRON_BASH: _ClassVar[MoveEnum]
+    MOVE_DYNAMAX_CANNON: _ClassVar[MoveEnum]
+    MOVE_SNIPE_SHOT: _ClassVar[MoveEnum]
+    MOVE_JAW_LOCK: _ClassVar[MoveEnum]
+    MOVE_STUFF_CHEEKS: _ClassVar[MoveEnum]
+    MOVE_NO_RETREAT: _ClassVar[MoveEnum]
+    MOVE_TAR_SHOT: _ClassVar[MoveEnum]
+    MOVE_MAGIC_POWDER: _ClassVar[MoveEnum]
+    MOVE_DRAGON_DARTS: _ClassVar[MoveEnum]
+    MOVE_TEATIME: _ClassVar[MoveEnum]
+    MOVE_OCTOLOCK: _ClassVar[MoveEnum]
+    MOVE_BOLT_BEAK: _ClassVar[MoveEnum]
+    MOVE_FISHIOUS_REND: _ClassVar[MoveEnum]
+    MOVE_COURT_CHANGE: _ClassVar[MoveEnum]
+    MOVE_CLANGOROUS_SOUL: _ClassVar[MoveEnum]
+    MOVE_BODY_PRESS: _ClassVar[MoveEnum]
+    MOVE_DECORATE: _ClassVar[MoveEnum]
+    MOVE_DRUM_BEATING: _ClassVar[MoveEnum]
+    MOVE_SNAP_TRAP: _ClassVar[MoveEnum]
+    MOVE_PYRO_BALL: _ClassVar[MoveEnum]
+    MOVE_BEHEMOTH_BLADE: _ClassVar[MoveEnum]
+    MOVE_BEHEMOTH_BASH: _ClassVar[MoveEnum]
+    MOVE_AURA_WHEEL: _ClassVar[MoveEnum]
+    MOVE_BREAKING_SWIPE: _ClassVar[MoveEnum]
+    MOVE_BRANCH_POKE: _ClassVar[MoveEnum]
+    MOVE_OVERDRIVE: _ClassVar[MoveEnum]
+    MOVE_APPLE_ACID: _ClassVar[MoveEnum]
+    MOVE_GRAV_APPLE: _ClassVar[MoveEnum]
+    MOVE_SPIRIT_BREAK: _ClassVar[MoveEnum]
+    MOVE_STRANGE_STEAM: _ClassVar[MoveEnum]
+    MOVE_LIFE_DEW: _ClassVar[MoveEnum]
+    MOVE_OBSTRUCT: _ClassVar[MoveEnum]
+    MOVE_FALSE_SURRENDER: _ClassVar[MoveEnum]
+    MOVE_METEOR_ASSAULT: _ClassVar[MoveEnum]
+    MOVE_ETERNABEAM: _ClassVar[MoveEnum]
+    MOVE_STEEL_BEAM: _ClassVar[MoveEnum]
+    MOVE_EXPANDING_FORCE: _ClassVar[MoveEnum]
+    MOVE_STEEL_ROLLER: _ClassVar[MoveEnum]
+    MOVE_SCALE_SHOT: _ClassVar[MoveEnum]
+    MOVE_METEOR_BEAM: _ClassVar[MoveEnum]
+    MOVE_SHELL_SIDE_ARM: _ClassVar[MoveEnum]
+    MOVE_MISTY_EXPLOSION: _ClassVar[MoveEnum]
+    MOVE_GRASSY_GLIDE: _ClassVar[MoveEnum]
+    MOVE_RISING_VOLTAGE: _ClassVar[MoveEnum]
+    MOVE_TERRAIN_PULSE: _ClassVar[MoveEnum]
+    MOVE_SKITTER_SMACK: _ClassVar[MoveEnum]
+    MOVE_BURNING_JEALOUSY: _ClassVar[MoveEnum]
+    MOVE_LASH_OUT: _ClassVar[MoveEnum]
+    MOVE_POLTERGEIST: _ClassVar[MoveEnum]
+    MOVE_CORROSIVE_GAS: _ClassVar[MoveEnum]
+    MOVE_COACHING: _ClassVar[MoveEnum]
+    MOVE_FLIP_TURN: _ClassVar[MoveEnum]
+    MOVE_TRIPLE_AXEL: _ClassVar[MoveEnum]
+    MOVE_DUAL_WINGBEAT: _ClassVar[MoveEnum]
+    MOVE_SCORCHING_SANDS: _ClassVar[MoveEnum]
+    MOVE_JUNGLE_HEALING: _ClassVar[MoveEnum]
+    MOVE_WICKED_BLOW: _ClassVar[MoveEnum]
+    MOVE_SURGING_STRIKES: _ClassVar[MoveEnum]
+    MOVE_THUNDER_CAGE: _ClassVar[MoveEnum]
+    MOVE_DRAGON_ENERGY: _ClassVar[MoveEnum]
+    MOVE_FREEZING_GLARE: _ClassVar[MoveEnum]
+    MOVE_FIERY_WRATH: _ClassVar[MoveEnum]
+    MOVE_THUNDEROUS_KICK: _ClassVar[MoveEnum]
+    MOVE_GLACIAL_LANCE: _ClassVar[MoveEnum]
+    MOVE_ASTRAL_BARRAGE: _ClassVar[MoveEnum]
+    MOVE_EERIE_SPELL: _ClassVar[MoveEnum]
+    MOVE_DEATHROLL: _ClassVar[MoveEnum]
+    MOVE_EXCALIBUR: _ClassVar[MoveEnum]
+    MOVE_AQUA_FANG: _ClassVar[MoveEnum]
+    MOVE_WAVE_CRASH: _ClassVar[MoveEnum]
+    MOVE_SMITE: _ClassVar[MoveEnum]
+    MOVE_OUTBURST: _ClassVar[MoveEnum]
+    MOVE_SEISMIC_FIST: _ClassVar[MoveEnum]
+    MOVE_IRON_FANGS: _ClassVar[MoveEnum]
+    MOVE_SHADOW_FANGS: _ClassVar[MoveEnum]
+    MOVE_LOVELY_BITE: _ClassVar[MoveEnum]
+    MOVE_JAGGED_FANGS: _ClassVar[MoveEnum]
+    MOVE_SCORCHED_EARTH: _ClassVar[MoveEnum]
+    MOVE_RAGING_FURY: _ClassVar[MoveEnum]
+    MOVE_PLASMA_PULSE: _ClassVar[MoveEnum]
+    MOVE_PRIMAL_BEAM: _ClassVar[MoveEnum]
+    MOVE_DRACONIC_FANGS: _ClassVar[MoveEnum]
+    MOVE_PIXIE_BEAM: _ClassVar[MoveEnum]
+    MOVE_PIXIE_SLASH: _ClassVar[MoveEnum]
+    MOVE_SEISMIC_BLADE: _ClassVar[MoveEnum]
+    MOVE_MOUNTAIN_CHUNK: _ClassVar[MoveEnum]
+    MOVE_ARCHER_SHOT: _ClassVar[MoveEnum]
+    MOVE_FROST_BRAND: _ClassVar[MoveEnum]
+    MOVE_FROST_BOLT: _ClassVar[MoveEnum]
+    MOVE_GLACIER_CRASH: _ClassVar[MoveEnum]
+    MOVE_SUPERSONIC_SHOT: _ClassVar[MoveEnum]
+    MOVE_ZEPHYR_RUSH: _ClassVar[MoveEnum]
+    MOVE_SHOCKING_JAB: _ClassVar[MoveEnum]
+    MOVE_SHOCKING_EDGE: _ClassVar[MoveEnum]
+    MOVE_LIGHTNING_STRIKE: _ClassVar[MoveEnum]
+    MOVE_VOLT_BOLT: _ClassVar[MoveEnum]
+    MOVE_KINETIC_BARRAGE: _ClassVar[MoveEnum]
+    MOVE_FERTILE_FANGS: _ClassVar[MoveEnum]
+    MOVE_SCATTER_BLAST: _ClassVar[MoveEnum]
+    MOVE_JAGGED_PUNCH: _ClassVar[MoveEnum]
+    MOVE_CUTSIE_SLAP: _ClassVar[MoveEnum]
+    MOVE_FAIRY_SPHERES: _ClassVar[MoveEnum]
+    MOVE_BRAMBLE_BLAST: _ClassVar[MoveEnum]
+    MOVE_ASTEROID_DOWNFALL: _ClassVar[MoveEnum]
+    MOVE_AQUA_BASH: _ClassVar[MoveEnum]
+    MOVE_TECTONIC_FANGS: _ClassVar[MoveEnum]
+    MOVE_CUPID_SHOT: _ClassVar[MoveEnum]
+    MOVE_CLAY_DART: _ClassVar[MoveEnum]
+    MOVE_DIAMOND_ARROW: _ClassVar[MoveEnum]
+    MOVE_DIAMOND_BLADE: _ClassVar[MoveEnum]
+    MOVE_VENOM_BOLT: _ClassVar[MoveEnum]
+    MOVE_FUMIGATION_BOMB: _ClassVar[MoveEnum]
+    MOVE_BLACK_MAGIC: _ClassVar[MoveEnum]
+    MOVE_FLAME_TONGUE: _ClassVar[MoveEnum]
+    MOVE_BLAZING_ARROW: _ClassVar[MoveEnum]
+    MOVE_ROCKET_PUNCH: _ClassVar[MoveEnum]
+    MOVE_WEB_SHOT: _ClassVar[MoveEnum]
+    MOVE_AURA_FORCE: _ClassVar[MoveEnum]
+    MOVE_DRAKE_MISSILE: _ClassVar[MoveEnum]
+    MOVE_LOTUS_SHOWER: _ClassVar[MoveEnum]
+    MOVE_JAGGED_HORNS: _ClassVar[MoveEnum]
+    MOVE_BLOOD_SHOT: _ClassVar[MoveEnum]
+    MOVE_FLASH_FREEZE: _ClassVar[MoveEnum]
+    MOVE_PHANTOM_GLOVES: _ClassVar[MoveEnum]
+    MOVE_HOMING_FLETCH: _ClassVar[MoveEnum]
+    MOVE_BITTER_MALICE: _ClassVar[MoveEnum]
+    MOVE_INFERNAL_PARADE: _ClassVar[MoveEnum]
+    MOVE_DEVIOUS_SHOT: _ClassVar[MoveEnum]
+    MOVE_STARBURST: _ClassVar[MoveEnum]
+    MOVE_CHEAP_SHOT: _ClassVar[MoveEnum]
+    MOVE_TORRENT_FIST: _ClassVar[MoveEnum]
+    MOVE_STAR_CRASH: _ClassVar[MoveEnum]
+    MOVE_STONE_AXE: _ClassVar[MoveEnum]
+    MOVE_ENERGY_WAVE: _ClassVar[MoveEnum]
+    MOVE_FLUTTERING_LEAF: _ClassVar[MoveEnum]
+    MOVE_HEADLONG_RUSH: _ClassVar[MoveEnum]
+    MOVE_REVIVAL_BLESSING: _ClassVar[MoveEnum]
+    MOVE_WHIRLING_STRIKES: _ClassVar[MoveEnum]
+    MOVE_MIND_BREAK: _ClassVar[MoveEnum]
+    MOVE_WYRM_WIND: _ClassVar[MoveEnum]
+    MOVE_SHED_TAIL: _ClassVar[MoveEnum]
+    MOVE_BERRY_SMASH: _ClassVar[MoveEnum]
+    MOVE_HYDRO_STEAM: _ClassVar[MoveEnum]
+    MOVE_SUPERHOT_FLAME: _ClassVar[MoveEnum]
+    MOVE_TRIPLE_ARROWS: _ClassVar[MoveEnum]
+    MOVE_DOUBLE_LARIAT: _ClassVar[MoveEnum]
+    MOVE_LEECH_BLADE: _ClassVar[MoveEnum]
+    MOVE_YGGDRASIL_FORCE: _ClassVar[MoveEnum]
+    MOVE_DRAIN_BRAIN: _ClassVar[MoveEnum]
+    MOVE_PSYCHOKINETIC_SLAM: _ClassVar[MoveEnum]
+    MOVE_ESPER_WING: _ClassVar[MoveEnum]
+    MOVE_MORTAL_SPIN: _ClassVar[MoveEnum]
+    MOVE_GEM_MISSILE: _ClassVar[MoveEnum]
+    MOVE_RIDER_KICK: _ClassVar[MoveEnum]
+    MOVE_AQUA_CUTTER: _ClassVar[MoveEnum]
+    MOVE_INVERSE_ROOM: _ClassVar[MoveEnum]
+    MOVE_BLAZING_BONE: _ClassVar[MoveEnum]
+    MOVE_KARMA: _ClassVar[MoveEnum]
+    MOVE_CHILLING_WATER: _ClassVar[MoveEnum]
+    MOVE_GHASTLY_ECHO: _ClassVar[MoveEnum]
+    MOVE_CHILLY_RECEPTION: _ClassVar[MoveEnum]
+    MOVE_ICE_SPINNER: _ClassVar[MoveEnum]
+    MOVE_TIDY_UP: _ClassVar[MoveEnum]
+    MOVE_POPULATION_BOMB: _ClassVar[MoveEnum]
+    MOVE_RAGING_SOULS: _ClassVar[MoveEnum]
+    MOVE_TWIN_BEAM: _ClassVar[MoveEnum]
+    MOVE_REQUIEM: _ClassVar[MoveEnum]
+    MOVE_ARMOR_CANNON: _ClassVar[MoveEnum]
+    MOVE_BITTER_BLADE: _ClassVar[MoveEnum]
+    MOVE_SOIL_DRAIN: _ClassVar[MoveEnum]
+    MOVE_GIGATON_HAMMER: _ClassVar[MoveEnum]
+    MOVE_TRIPLE_DIVE: _ClassVar[MoveEnum]
+    MOVE_JET_PUNCH: _ClassVar[MoveEnum]
+    MOVE_RAGE_FIST: _ClassVar[MoveEnum]
+    MOVE_WICKED_TORQUE: _ClassVar[MoveEnum]
+    MOVE_BLAZING_TORQUE: _ClassVar[MoveEnum]
+    MOVE_NOXIOUS_TORQUE: _ClassVar[MoveEnum]
+    MOVE_MAGICAL_TORQUE: _ClassVar[MoveEnum]
+    MOVE_COMBAT_TORQUE: _ClassVar[MoveEnum]
+    MOVE_KOWTOW_CLEAVE: _ClassVar[MoveEnum]
+    MOVE_FLOWER_TRICK: _ClassVar[MoveEnum]
+    MOVE_AQUA_STEP: _ClassVar[MoveEnum]
+    MOVE_TORCH_SONG: _ClassVar[MoveEnum]
+    MOVE_GLAIVE_RUSH: _ClassVar[MoveEnum]
+    MOVE_SILK_TRAP: _ClassVar[MoveEnum]
+    MOVE_LAST_RESPECTS: _ClassVar[MoveEnum]
+    MOVE_LUMINA_CRASH: _ClassVar[MoveEnum]
+    MOVE_ORDER_UP: _ClassVar[MoveEnum]
+    MOVE_SPICY_EXTRACT: _ClassVar[MoveEnum]
+    MOVE_SPIN_OUT: _ClassVar[MoveEnum]
+    MOVE_SALT_CURE: _ClassVar[MoveEnum]
+    MOVE_DOODLE: _ClassVar[MoveEnum]
+    MOVE_FILLET_AWAY: _ClassVar[MoveEnum]
+    MOVE_RAGING_BULL: _ClassVar[MoveEnum]
+    MOVE_MAKE_IT_RAIN: _ClassVar[MoveEnum]
+    MOVE_PSYBLADE: _ClassVar[MoveEnum]
+    MOVE_RUINATION: _ClassVar[MoveEnum]
+    MOVE_COLLISION_COURSE: _ClassVar[MoveEnum]
+    MOVE_ELECTRO_DRIFT: _ClassVar[MoveEnum]
+    MOVE_POUNCE: _ClassVar[MoveEnum]
+    MOVE_TRAILBLAZE: _ClassVar[MoveEnum]
+    MOVE_HYPER_DRILL: _ClassVar[MoveEnum]
+    MOVE_DOUBLE_SHOCK: _ClassVar[MoveEnum]
+    MOVE_COMEUPPANCE: _ClassVar[MoveEnum]
+    MOVE_BLOOD_MOON: _ClassVar[MoveEnum]
+    MOVE_AXE_KICK: _ClassVar[MoveEnum]
+    MOVE_BARB_BARRAGE: _ClassVar[MoveEnum]
+    MOVE_SMASHIN_REALITIES: _ClassVar[MoveEnum]
+    MOVE_CREEPING_THORNS: _ClassVar[MoveEnum]
+    MOVE_MATCHA_GOTCHA: _ClassVar[MoveEnum]
+    MOVE_SYRUP_BOMB: _ClassVar[MoveEnum]
+    MOVE_IVY_CUDGEL: _ClassVar[MoveEnum]
+    MOVE_ELECTRO_SHOT: _ClassVar[MoveEnum]
+    MOVE_FICKLE_BEAM: _ClassVar[MoveEnum]
+    MOVE_BURNING_BULWARK: _ClassVar[MoveEnum]
+    MOVE_THUNDERCLAP: _ClassVar[MoveEnum]
+    MOVE_TACHYON_CUTTER: _ClassVar[MoveEnum]
+    MOVE_HARD_PRESS: _ClassVar[MoveEnum]
+    MOVE_DRAGON_CHEER: _ClassVar[MoveEnum]
+    MOVE_ALLURING_VOICE: _ClassVar[MoveEnum]
+    MOVE_MIGHTY_CLEAVE: _ClassVar[MoveEnum]
+    MOVE_TEMPER_FLARE: _ClassVar[MoveEnum]
+    MOVE_SUPERCELL_SLAM: _ClassVar[MoveEnum]
+    MOVE_PSYCHIC_NOISE: _ClassVar[MoveEnum]
+    MOVE_UPPER_HAND: _ClassVar[MoveEnum]
+    MOVE_MALIGNANT_CHAIN: _ClassVar[MoveEnum]
+    MOVE_LUNAR_BLESSING: _ClassVar[MoveEnum]
+    MOVE_CHLOROBLAST: _ClassVar[MoveEnum]
+    MOVE_PSYSHIELD_BASH: _ClassVar[MoveEnum]
+    MOVE_CEASELESS_EDGE: _ClassVar[MoveEnum]
+    MOVE_VICTORY_DANCE: _ClassVar[MoveEnum]
+    MOVE_BLEAKWIND_STORM: _ClassVar[MoveEnum]
+    MOVE_WILDBOLT_STORM: _ClassVar[MoveEnum]
+    MOVE_SANDSEAR_STORM: _ClassVar[MoveEnum]
+    MOVE_SPRINGTIDE_STORM: _ClassVar[MoveEnum]
+    MOVE_DIRE_CLAW: _ClassVar[MoveEnum]
+    MOVE_SHELTER: _ClassVar[MoveEnum]
+    MOVE_WILD_SWING: _ClassVar[MoveEnum]
+    MOVE_FEMUR_BREAKER: _ClassVar[MoveEnum]
+    MOVE_SQUEAKY_HAMMER: _ClassVar[MoveEnum]
+    MOVE_PRIMITIVE_STRIKE: _ClassVar[MoveEnum]
+    MOVE_SMASHING_PUMPKINS: _ClassVar[MoveEnum]
+    MOVE_AIRBORNE_SLAM: _ClassVar[MoveEnum]
+    MOVE_SPINE_BREAKER: _ClassVar[MoveEnum]
+    MOVE_CRACKLE_SLAM: _ClassVar[MoveEnum]
+    MOVE_SQUALL_HAMMER: _ClassVar[MoveEnum]
+    MOVE_MEGATON_HAMMER: _ClassVar[MoveEnum]
+    MOVE_BATTERING_RAM: _ClassVar[MoveEnum]
+    MOVE_PITFALL: _ClassVar[MoveEnum]
+    MOVE_VIRAL_STRIKE: _ClassVar[MoveEnum]
+    MOVE_SHADOW_HAMMER: _ClassVar[MoveEnum]
+    MOVE_BONK: _ClassVar[MoveEnum]
+    MOVE_MOLTEN_STRIKE: _ClassVar[MoveEnum]
+    MOVE_MIRAGE_SLAM: _ClassVar[MoveEnum]
+    MOVE_EARTHSPLITTER: _ClassVar[MoveEnum]
+    MOVE_BEETLE_BASH: _ClassVar[MoveEnum]
+    MOVE_PEBBLE_SHOWER: _ClassVar[MoveEnum]
+    MOVE_RAPID_RIVER: _ClassVar[MoveEnum]
+    MOVE_TOXIC_NEEDLES: _ClassVar[MoveEnum]
+    MOVE_SMOLDER_BASH: _ClassVar[MoveEnum]
+    MOVE_BEATDOWN: _ClassVar[MoveEnum]
+    MOVE_EERIE_FOG: _ClassVar[MoveEnum]
+    MOVE_MYSTIC_DANCE: _ClassVar[MoveEnum]
+    MOVE_RELENTLESS_CLOBBER: _ClassVar[MoveEnum]
+    MOVE_POP_MAYHEM: _ClassVar[MoveEnum]
+    MOVE_KILOBITE: _ClassVar[MoveEnum]
+    MOVE_TANGLING_HUSK: _ClassVar[MoveEnum]
+    MOVE_RIP_AND_TEAR: _ClassVar[MoveEnum]
+    MOVE_BRAVADO: _ClassVar[MoveEnum]
+    MOVE_TERROR_CHARGE: _ClassVar[MoveEnum]
+    MOVE_TERROR_LOCKS: _ClassVar[MoveEnum]
+    MOVE_DREAM_INVERSION: _ClassVar[MoveEnum]
+    MOVE_TERA_STARSTORM: _ClassVar[MoveEnum]
+    MOVE_SPARKLING_BARRAGE: _ClassVar[MoveEnum]
+    MOVE_SPECTRAL_SERENADE: _ClassVar[MoveEnum]
+    MOVE_MERCULIGHT: _ClassVar[MoveEnum]
+    MOVE_BIG_BLAST: _ClassVar[MoveEnum]
+    MOVE_SPECTRAL_FLAME: _ClassVar[MoveEnum]
+    MOVE_TREPIDATION: _ClassVar[MoveEnum]
+    MOVE_ASTRAL_HAND: _ClassVar[MoveEnum]
+    MOVE_FETCH: _ClassVar[MoveEnum]
+    MOVE_TRANSMUTE: _ClassVar[MoveEnum]
+    MOVE_CLEAR_SKIES: _ClassVar[MoveEnum]
+    MOVE_READY_OR_NOT: _ClassVar[MoveEnum]
+    MOVE_GIANT_GALE: _ClassVar[MoveEnum]
+    MOVE_VEXING_VOID: _ClassVar[MoveEnum]
+    MOVE_ECLIPSE: _ClassVar[MoveEnum]
+    MOVE_TAKE_FLIGHT: _ClassVar[MoveEnum]
+    MOVE_CALTROPS: _ClassVar[MoveEnum]
+    MOVE_TAKE_HEART: _ClassVar[MoveEnum]
+    MOVE_SAFE_PASSAGE: _ClassVar[MoveEnum]
+    MOVE_ESPER_WALTZ: _ClassVar[MoveEnum]
+    MOVE_ZAP_JIVE: _ClassVar[MoveEnum]
+    MOVE_HEX_TROT: _ClassVar[MoveEnum]
+    MOVE_MOUNTAIN_GALE: _ClassVar[MoveEnum]
+    MOVE_BAD_EGG: _ClassVar[MoveEnum]
+    MOVE_MYSTICAL_POWER: _ClassVar[MoveEnum]
+    MOVE_DRAGON_JAB: _ClassVar[MoveEnum]
+    MOVE_ICICLE_IMPALE: _ClassVar[MoveEnum]
+    MOVE_TOXIC_PLUNGE: _ClassVar[MoveEnum]
+    MOVE_SHOWTIME: _ClassVar[MoveEnum]
+    MOVE_BANISHED_POWER: _ClassVar[MoveEnum]
+    MOVE_TRIPLE_TREMOR: _ClassVar[MoveEnum]
+    MOVE_FIRE_GLAIVE: _ClassVar[MoveEnum]
+    MOVE_DEPLETION_BEAM: _ClassVar[MoveEnum]
+    MOVE_ONE_INCH_PUNCH: _ClassVar[MoveEnum]
+    MOVE_BERSERKER_HORN: _ClassVar[MoveEnum]
+    MOVE_ONI_FIST: _ClassVar[MoveEnum]
+    MOVE_INSECT_IMPACT: _ClassVar[MoveEnum]
+    MOVE_LIGHTNING_BULLET: _ClassVar[MoveEnum]
+    MOVE_METALLIC_MELODY: _ClassVar[MoveEnum]
+    MOVE_BLUE_MOON: _ClassVar[MoveEnum]
+    MOVE_FIVE_STAR_FURY: _ClassVar[MoveEnum]
+    MOVE_TSUNAMI_HAMMER: _ClassVar[MoveEnum]
+    MOVE_SEPTIC_SWITCH: _ClassVar[MoveEnum]
+    MOVE_WATERLOG: _ClassVar[MoveEnum]
+    MOVE_INCITE: _ClassVar[MoveEnum]
+    MOVE_TOXIC_TERRAIN: _ClassVar[MoveEnum]
+    MOVE_JETSTREAM_BURST: _ClassVar[MoveEnum]
+    MOVE_SKY_QUAKE: _ClassVar[MoveEnum]
+    MOVE_SUNSTRIKE: _ClassVar[MoveEnum]
+    MOVE_TEMPEST_STORM: _ClassVar[MoveEnum]
+    MOVE_PRISM_BLAST: _ClassVar[MoveEnum]
+    MOVE_SEISMIC_SLAM: _ClassVar[MoveEnum]
+    MOVE_CHILLER: _ClassVar[MoveEnum]
+    MOVE_SPREAD_BOMB: _ClassVar[MoveEnum]
+    MOVE_BALL_TOSS: _ClassVar[MoveEnum]
+    MOVE_PARTY_FAVORS: _ClassVar[MoveEnum]
+    MOVE_SHOT_PUT: _ClassVar[MoveEnum]
+    MOVE_BLOCK_DROPPER: _ClassVar[MoveEnum]
+    MOVE_SABER_SLASHES: _ClassVar[MoveEnum]
+    MOVE_DRAGON_DASH: _ClassVar[MoveEnum]
+    MOVE_POCKET_SAND: _ClassVar[MoveEnum]
+    MOVE_CONCOCTION: _ClassVar[MoveEnum]
+    MOVE_UNSCREW: _ClassVar[MoveEnum]
+    MOVE_GODSPEED: _ClassVar[MoveEnum]
+    MOVE_PSYCHO_WAVE: _ClassVar[MoveEnum]
+    MOVE_ATOMIC_FIRE: _ClassVar[MoveEnum]
+    MOVE_RAIN_FLUSH: _ClassVar[MoveEnum]
+    MOVE_ICE_WALL: _ClassVar[MoveEnum]
+    MOVE_OBSCURED_SHOT: _ClassVar[MoveEnum]
+    MOVE_BLITZ_ARROW: _ClassVar[MoveEnum]
+    MOVE_RUMBLE_KICK: _ClassVar[MoveEnum]
+MOVE_NONE: MoveEnum
+MOVE_POUND: MoveEnum
+MOVE_KARATE_CHOP: MoveEnum
+MOVE_DOUBLE_SLAP: MoveEnum
+MOVE_COMET_PUNCH: MoveEnum
+MOVE_MEGA_PUNCH: MoveEnum
+MOVE_PAY_DAY: MoveEnum
+MOVE_FIRE_PUNCH: MoveEnum
+MOVE_ICE_PUNCH: MoveEnum
+MOVE_THUNDER_PUNCH: MoveEnum
+MOVE_SCRATCH: MoveEnum
+MOVE_VISE_GRIP: MoveEnum
+MOVE_GUILLOTINE: MoveEnum
+MOVE_RAZOR_WIND: MoveEnum
+MOVE_SWORDS_DANCE: MoveEnum
+MOVE_CUT: MoveEnum
+MOVE_GUST: MoveEnum
+MOVE_WING_ATTACK: MoveEnum
+MOVE_WHIRLWIND: MoveEnum
+MOVE_FLY: MoveEnum
+MOVE_BIND: MoveEnum
+MOVE_SLAM: MoveEnum
+MOVE_VINE_WHIP: MoveEnum
+MOVE_STOMP: MoveEnum
+MOVE_DOUBLE_KICK: MoveEnum
+MOVE_MEGA_KICK: MoveEnum
+MOVE_JUMP_KICK: MoveEnum
+MOVE_ROLLING_KICK: MoveEnum
+MOVE_SAND_ATTACK: MoveEnum
+MOVE_HEADBUTT: MoveEnum
+MOVE_HORN_ATTACK: MoveEnum
+MOVE_FURY_ATTACK: MoveEnum
+MOVE_HORN_DRILL: MoveEnum
+MOVE_TACKLE: MoveEnum
+MOVE_BODY_SLAM: MoveEnum
+MOVE_WRAP: MoveEnum
+MOVE_TAKE_DOWN: MoveEnum
+MOVE_THRASH: MoveEnum
+MOVE_DOUBLE_EDGE: MoveEnum
+MOVE_TAIL_WHIP: MoveEnum
+MOVE_POISON_STING: MoveEnum
+MOVE_TWINEEDLE: MoveEnum
+MOVE_PIN_MISSILE: MoveEnum
+MOVE_LEER: MoveEnum
+MOVE_BITE: MoveEnum
+MOVE_GROWL: MoveEnum
+MOVE_ROAR: MoveEnum
+MOVE_SING: MoveEnum
+MOVE_SUPERSONIC: MoveEnum
+MOVE_SONIC_BOOM: MoveEnum
+MOVE_DISABLE: MoveEnum
+MOVE_ACID: MoveEnum
+MOVE_EMBER: MoveEnum
+MOVE_FLAMETHROWER: MoveEnum
+MOVE_MIST: MoveEnum
+MOVE_WATER_GUN: MoveEnum
+MOVE_HYDRO_PUMP: MoveEnum
+MOVE_SURF: MoveEnum
+MOVE_ICE_BEAM: MoveEnum
+MOVE_BLIZZARD: MoveEnum
+MOVE_PSYBEAM: MoveEnum
+MOVE_BUBBLE_BEAM: MoveEnum
+MOVE_AURORA_BEAM: MoveEnum
+MOVE_HYPER_BEAM: MoveEnum
+MOVE_PECK: MoveEnum
+MOVE_DRILL_PECK: MoveEnum
+MOVE_SUBMISSION: MoveEnum
+MOVE_LOW_KICK: MoveEnum
+MOVE_COUNTER: MoveEnum
+MOVE_SEISMIC_TOSS: MoveEnum
+MOVE_STRENGTH: MoveEnum
+MOVE_ABSORB: MoveEnum
+MOVE_MEGA_DRAIN: MoveEnum
+MOVE_LEECH_SEED: MoveEnum
+MOVE_GROWTH: MoveEnum
+MOVE_RAZOR_LEAF: MoveEnum
+MOVE_SOLAR_BEAM: MoveEnum
+MOVE_POISON_POWDER: MoveEnum
+MOVE_STUN_SPORE: MoveEnum
+MOVE_SLEEP_POWDER: MoveEnum
+MOVE_PETAL_DANCE: MoveEnum
+MOVE_STRING_SHOT: MoveEnum
+MOVE_DRAGON_RAGE: MoveEnum
+MOVE_FIRE_SPIN: MoveEnum
+MOVE_THUNDER_SHOCK: MoveEnum
+MOVE_THUNDERBOLT: MoveEnum
+MOVE_THUNDER_WAVE: MoveEnum
+MOVE_THUNDER: MoveEnum
+MOVE_ROCK_THROW: MoveEnum
+MOVE_EARTHQUAKE: MoveEnum
+MOVE_FISSURE: MoveEnum
+MOVE_DIG: MoveEnum
+MOVE_TOXIC: MoveEnum
+MOVE_CONFUSION: MoveEnum
+MOVE_PSYCHIC: MoveEnum
+MOVE_HYPNOSIS: MoveEnum
+MOVE_MEDITATE: MoveEnum
+MOVE_AGILITY: MoveEnum
+MOVE_QUICK_ATTACK: MoveEnum
+MOVE_RAGE: MoveEnum
+MOVE_TELEPORT: MoveEnum
+MOVE_NIGHT_SHADE: MoveEnum
+MOVE_MIMIC: MoveEnum
+MOVE_SCREECH: MoveEnum
+MOVE_DOUBLE_TEAM: MoveEnum
+MOVE_RECOVER: MoveEnum
+MOVE_HARDEN: MoveEnum
+MOVE_MINIMIZE: MoveEnum
+MOVE_SMOKESCREEN: MoveEnum
+MOVE_CONFUSE_RAY: MoveEnum
+MOVE_WITHDRAW: MoveEnum
+MOVE_DEFENSE_CURL: MoveEnum
+MOVE_BARRIER: MoveEnum
+MOVE_LIGHT_SCREEN: MoveEnum
+MOVE_HAZE: MoveEnum
+MOVE_REFLECT: MoveEnum
+MOVE_FOCUS_ENERGY: MoveEnum
+MOVE_BIDE: MoveEnum
+MOVE_METRONOME: MoveEnum
+MOVE_MIRROR_MOVE: MoveEnum
+MOVE_SELF_DESTRUCT: MoveEnum
+MOVE_EGG_BOMB: MoveEnum
+MOVE_LICK: MoveEnum
+MOVE_SMOG: MoveEnum
+MOVE_SLUDGE: MoveEnum
+MOVE_BONE_CLUB: MoveEnum
+MOVE_FIRE_BLAST: MoveEnum
+MOVE_WATERFALL: MoveEnum
+MOVE_CLAMP: MoveEnum
+MOVE_SWIFT: MoveEnum
+MOVE_SKULL_BASH: MoveEnum
+MOVE_SPIKE_CANNON: MoveEnum
+MOVE_CONSTRICT: MoveEnum
+MOVE_AMNESIA: MoveEnum
+MOVE_KINESIS: MoveEnum
+MOVE_SOFT_BOILED: MoveEnum
+MOVE_HIGH_JUMP_KICK: MoveEnum
+MOVE_GLARE: MoveEnum
+MOVE_DREAM_EATER: MoveEnum
+MOVE_POISON_GAS: MoveEnum
+MOVE_BARRAGE: MoveEnum
+MOVE_LEECH_LIFE: MoveEnum
+MOVE_LOVELY_KISS: MoveEnum
+MOVE_SKY_ATTACK: MoveEnum
+MOVE_TRANSFORM: MoveEnum
+MOVE_BUBBLE: MoveEnum
+MOVE_DIZZY_PUNCH: MoveEnum
+MOVE_SPORE: MoveEnum
+MOVE_FLASH: MoveEnum
+MOVE_PSYWAVE: MoveEnum
+MOVE_SPLASH: MoveEnum
+MOVE_ACID_ARMOR: MoveEnum
+MOVE_CRABHAMMER: MoveEnum
+MOVE_EXPLOSION: MoveEnum
+MOVE_FURY_SWIPES: MoveEnum
+MOVE_BONEMERANG: MoveEnum
+MOVE_REST: MoveEnum
+MOVE_ROCK_SLIDE: MoveEnum
+MOVE_HYPER_FANG: MoveEnum
+MOVE_SHARPEN: MoveEnum
+MOVE_CONVERSION: MoveEnum
+MOVE_TRI_ATTACK: MoveEnum
+MOVE_SUPER_FANG: MoveEnum
+MOVE_SLASH: MoveEnum
+MOVE_SUBSTITUTE: MoveEnum
+MOVE_STRUGGLE: MoveEnum
+MOVE_SKETCH: MoveEnum
+MOVE_TRIPLE_KICK: MoveEnum
+MOVE_THIEF: MoveEnum
+MOVE_SPIDER_WEB: MoveEnum
+MOVE_MIND_READER: MoveEnum
+MOVE_NIGHTMARE: MoveEnum
+MOVE_FLAME_WHEEL: MoveEnum
+MOVE_SNORE: MoveEnum
+MOVE_CURSE: MoveEnum
+MOVE_FLAIL: MoveEnum
+MOVE_CONVERSION_2: MoveEnum
+MOVE_AEROBLAST: MoveEnum
+MOVE_COTTON_SPORE: MoveEnum
+MOVE_REVERSAL: MoveEnum
+MOVE_SPITE: MoveEnum
+MOVE_POWDER_SNOW: MoveEnum
+MOVE_PROTECT: MoveEnum
+MOVE_MACH_PUNCH: MoveEnum
+MOVE_SCARY_FACE: MoveEnum
+MOVE_FEINT_ATTACK: MoveEnum
+MOVE_SWEET_KISS: MoveEnum
+MOVE_BELLY_DRUM: MoveEnum
+MOVE_SLUDGE_BOMB: MoveEnum
+MOVE_MUD_SLAP: MoveEnum
+MOVE_OCTAZOOKA: MoveEnum
+MOVE_SPIKES: MoveEnum
+MOVE_ZAP_CANNON: MoveEnum
+MOVE_FORESIGHT: MoveEnum
+MOVE_DESTINY_BOND: MoveEnum
+MOVE_PERISH_SONG: MoveEnum
+MOVE_ICY_WIND: MoveEnum
+MOVE_DETECT: MoveEnum
+MOVE_BONE_RUSH: MoveEnum
+MOVE_LOCK_ON: MoveEnum
+MOVE_OUTRAGE: MoveEnum
+MOVE_SANDSTORM: MoveEnum
+MOVE_GIGA_DRAIN: MoveEnum
+MOVE_ENDURE: MoveEnum
+MOVE_CHARM: MoveEnum
+MOVE_ROLLOUT: MoveEnum
+MOVE_FALSE_SWIPE: MoveEnum
+MOVE_SWAGGER: MoveEnum
+MOVE_MILK_DRINK: MoveEnum
+MOVE_SPARK: MoveEnum
+MOVE_FURY_CUTTER: MoveEnum
+MOVE_STEEL_WING: MoveEnum
+MOVE_MEAN_LOOK: MoveEnum
+MOVE_ATTRACT: MoveEnum
+MOVE_SLEEP_TALK: MoveEnum
+MOVE_HEAL_BELL: MoveEnum
+MOVE_RETURN: MoveEnum
+MOVE_PRESENT: MoveEnum
+MOVE_FRUSTRATION: MoveEnum
+MOVE_SAFEGUARD: MoveEnum
+MOVE_PAIN_SPLIT: MoveEnum
+MOVE_SACRED_FIRE: MoveEnum
+MOVE_MAGNITUDE: MoveEnum
+MOVE_DYNAMIC_PUNCH: MoveEnum
+MOVE_MEGAHORN: MoveEnum
+MOVE_DRAGON_BREATH: MoveEnum
+MOVE_BATON_PASS: MoveEnum
+MOVE_ENCORE: MoveEnum
+MOVE_PURSUIT: MoveEnum
+MOVE_RAPID_SPIN: MoveEnum
+MOVE_SWEET_SCENT: MoveEnum
+MOVE_IRON_TAIL: MoveEnum
+MOVE_METAL_CLAW: MoveEnum
+MOVE_VITAL_THROW: MoveEnum
+MOVE_MORNING_SUN: MoveEnum
+MOVE_SYNTHESIS: MoveEnum
+MOVE_MOONLIGHT: MoveEnum
+MOVE_HIDDEN_POWER: MoveEnum
+MOVE_CROSS_CHOP: MoveEnum
+MOVE_TWISTER: MoveEnum
+MOVE_RAIN_DANCE: MoveEnum
+MOVE_SUNNY_DAY: MoveEnum
+MOVE_CRUNCH: MoveEnum
+MOVE_MIRROR_COAT: MoveEnum
+MOVE_PSYCH_UP: MoveEnum
+MOVE_EXTREME_SPEED: MoveEnum
+MOVE_ANCIENT_POWER: MoveEnum
+MOVE_SHADOW_BALL: MoveEnum
+MOVE_FUTURE_SIGHT: MoveEnum
+MOVE_ROCK_SMASH: MoveEnum
+MOVE_WHIRLPOOL: MoveEnum
+MOVE_BEAT_UP: MoveEnum
+MOVE_FAKE_OUT: MoveEnum
+MOVE_UPROAR: MoveEnum
+MOVE_STOCKPILE: MoveEnum
+MOVE_SPIT_UP: MoveEnum
+MOVE_SWALLOW: MoveEnum
+MOVE_HEAT_WAVE: MoveEnum
+MOVE_HAIL: MoveEnum
+MOVE_TORMENT: MoveEnum
+MOVE_FLATTER: MoveEnum
+MOVE_WILL_O_WISP: MoveEnum
+MOVE_MEMENTO: MoveEnum
+MOVE_FACADE: MoveEnum
+MOVE_FOCUS_PUNCH: MoveEnum
+MOVE_SMELLING_SALTS: MoveEnum
+MOVE_FOLLOW_ME: MoveEnum
+MOVE_NATURE_POWER: MoveEnum
+MOVE_CHARGE: MoveEnum
+MOVE_TAUNT: MoveEnum
+MOVE_HELPING_HAND: MoveEnum
+MOVE_TRICK: MoveEnum
+MOVE_ROLE_PLAY: MoveEnum
+MOVE_WISH: MoveEnum
+MOVE_ASSIST: MoveEnum
+MOVE_INGRAIN: MoveEnum
+MOVE_SUPERPOWER: MoveEnum
+MOVE_MAGIC_COAT: MoveEnum
+MOVE_RECYCLE: MoveEnum
+MOVE_REVENGE: MoveEnum
+MOVE_BRICK_BREAK: MoveEnum
+MOVE_YAWN: MoveEnum
+MOVE_KNOCK_OFF: MoveEnum
+MOVE_ENDEAVOR: MoveEnum
+MOVE_ERUPTION: MoveEnum
+MOVE_SKILL_SWAP: MoveEnum
+MOVE_IMPRISON: MoveEnum
+MOVE_REFRESH: MoveEnum
+MOVE_GRUDGE: MoveEnum
+MOVE_SNATCH: MoveEnum
+MOVE_SECRET_POWER: MoveEnum
+MOVE_DIVE: MoveEnum
+MOVE_ARM_THRUST: MoveEnum
+MOVE_CAMOUFLAGE: MoveEnum
+MOVE_TAIL_GLOW: MoveEnum
+MOVE_LUSTER_PURGE: MoveEnum
+MOVE_MIST_BALL: MoveEnum
+MOVE_FEATHER_DANCE: MoveEnum
+MOVE_TEETER_DANCE: MoveEnum
+MOVE_BLAZE_KICK: MoveEnum
+MOVE_MUD_SPORT: MoveEnum
+MOVE_ICE_BALL: MoveEnum
+MOVE_NEEDLE_ARM: MoveEnum
+MOVE_SLACK_OFF: MoveEnum
+MOVE_HYPER_VOICE: MoveEnum
+MOVE_POISON_FANG: MoveEnum
+MOVE_CRUSH_CLAW: MoveEnum
+MOVE_BLAST_BURN: MoveEnum
+MOVE_HYDRO_CANNON: MoveEnum
+MOVE_METEOR_MASH: MoveEnum
+MOVE_ASTONISH: MoveEnum
+MOVE_WEATHER_BALL: MoveEnum
+MOVE_AROMATHERAPY: MoveEnum
+MOVE_FAKE_TEARS: MoveEnum
+MOVE_AIR_CUTTER: MoveEnum
+MOVE_OVERHEAT: MoveEnum
+MOVE_ODOR_SLEUTH: MoveEnum
+MOVE_ROCK_TOMB: MoveEnum
+MOVE_SILVER_WIND: MoveEnum
+MOVE_METAL_SOUND: MoveEnum
+MOVE_GRASS_WHISTLE: MoveEnum
+MOVE_TICKLE: MoveEnum
+MOVE_COSMIC_POWER: MoveEnum
+MOVE_WATER_SPOUT: MoveEnum
+MOVE_SIGNAL_BEAM: MoveEnum
+MOVE_SHADOW_PUNCH: MoveEnum
+MOVE_EXTRASENSORY: MoveEnum
+MOVE_SKY_UPPERCUT: MoveEnum
+MOVE_SAND_TOMB: MoveEnum
+MOVE_SHEER_COLD: MoveEnum
+MOVE_MUDDY_WATER: MoveEnum
+MOVE_BULLET_SEED: MoveEnum
+MOVE_AERIAL_ACE: MoveEnum
+MOVE_ICICLE_SPEAR: MoveEnum
+MOVE_IRON_DEFENSE: MoveEnum
+MOVE_BLOCK: MoveEnum
+MOVE_HOWL: MoveEnum
+MOVE_DRAGON_CLAW: MoveEnum
+MOVE_FRENZY_PLANT: MoveEnum
+MOVE_BULK_UP: MoveEnum
+MOVE_BOUNCE: MoveEnum
+MOVE_MUD_SHOT: MoveEnum
+MOVE_POISON_TAIL: MoveEnum
+MOVE_COVET: MoveEnum
+MOVE_VOLT_TACKLE: MoveEnum
+MOVE_MAGICAL_LEAF: MoveEnum
+MOVE_WATER_SPORT: MoveEnum
+MOVE_CALM_MIND: MoveEnum
+MOVE_LEAF_BLADE: MoveEnum
+MOVE_DRAGON_DANCE: MoveEnum
+MOVE_ROCK_BLAST: MoveEnum
+MOVE_SHOCK_WAVE: MoveEnum
+MOVE_WATER_PULSE: MoveEnum
+MOVE_DOOM_DESIRE: MoveEnum
+MOVE_PSYCHO_BOOST: MoveEnum
+MOVE_ROOST: MoveEnum
+MOVE_GRAVITY: MoveEnum
+MOVE_MIRACLE_EYE: MoveEnum
+MOVE_WAKE_UP_SLAP: MoveEnum
+MOVE_HAMMER_ARM: MoveEnum
+MOVE_GYRO_BALL: MoveEnum
+MOVE_HEALING_WISH: MoveEnum
+MOVE_BRINE: MoveEnum
+MOVE_NATURAL_GIFT: MoveEnum
+MOVE_FEINT: MoveEnum
+MOVE_PLUCK: MoveEnum
+MOVE_TAILWIND: MoveEnum
+MOVE_ACUPRESSURE: MoveEnum
+MOVE_METAL_BURST: MoveEnum
+MOVE_U_TURN: MoveEnum
+MOVE_CLOSE_COMBAT: MoveEnum
+MOVE_PAYBACK: MoveEnum
+MOVE_ASSURANCE: MoveEnum
+MOVE_EMBARGO: MoveEnum
+MOVE_FLING: MoveEnum
+MOVE_PSYCHO_SHIFT: MoveEnum
+MOVE_TRUMP_CARD: MoveEnum
+MOVE_HEAL_BLOCK: MoveEnum
+MOVE_WRING_OUT: MoveEnum
+MOVE_POWER_TRICK: MoveEnum
+MOVE_GASTRO_ACID: MoveEnum
+MOVE_LUCKY_CHANT: MoveEnum
+MOVE_ME_FIRST: MoveEnum
+MOVE_COPYCAT: MoveEnum
+MOVE_POWER_SWAP: MoveEnum
+MOVE_GUARD_SWAP: MoveEnum
+MOVE_PUNISHMENT: MoveEnum
+MOVE_LAST_RESORT: MoveEnum
+MOVE_WORRY_SEED: MoveEnum
+MOVE_SUCKER_PUNCH: MoveEnum
+MOVE_TOXIC_SPIKES: MoveEnum
+MOVE_HEART_SWAP: MoveEnum
+MOVE_AQUA_RING: MoveEnum
+MOVE_MAGNET_RISE: MoveEnum
+MOVE_FLARE_BLITZ: MoveEnum
+MOVE_FORCE_PALM: MoveEnum
+MOVE_AURA_SPHERE: MoveEnum
+MOVE_ROCK_POLISH: MoveEnum
+MOVE_POISON_JAB: MoveEnum
+MOVE_DARK_PULSE: MoveEnum
+MOVE_NIGHT_SLASH: MoveEnum
+MOVE_AQUA_TAIL: MoveEnum
+MOVE_SEED_BOMB: MoveEnum
+MOVE_AIR_SLASH: MoveEnum
+MOVE_X_SCISSOR: MoveEnum
+MOVE_BUG_BUZZ: MoveEnum
+MOVE_DRAGON_PULSE: MoveEnum
+MOVE_DRAGON_RUSH: MoveEnum
+MOVE_POWER_GEM: MoveEnum
+MOVE_DRAIN_PUNCH: MoveEnum
+MOVE_VACUUM_WAVE: MoveEnum
+MOVE_FOCUS_BLAST: MoveEnum
+MOVE_ENERGY_BALL: MoveEnum
+MOVE_BRAVE_BIRD: MoveEnum
+MOVE_EARTH_POWER: MoveEnum
+MOVE_SWITCHEROO: MoveEnum
+MOVE_GIGA_IMPACT: MoveEnum
+MOVE_NASTY_PLOT: MoveEnum
+MOVE_BULLET_PUNCH: MoveEnum
+MOVE_AVALANCHE: MoveEnum
+MOVE_ICE_SHARD: MoveEnum
+MOVE_SHADOW_CLAW: MoveEnum
+MOVE_THUNDER_FANG: MoveEnum
+MOVE_ICE_FANG: MoveEnum
+MOVE_FIRE_FANG: MoveEnum
+MOVE_SHADOW_SNEAK: MoveEnum
+MOVE_MUD_BOMB: MoveEnum
+MOVE_PSYCHO_CUT: MoveEnum
+MOVE_ZEN_HEADBUTT: MoveEnum
+MOVE_MIRROR_SHOT: MoveEnum
+MOVE_FLASH_CANNON: MoveEnum
+MOVE_ROCK_CLIMB: MoveEnum
+MOVE_DEFOG: MoveEnum
+MOVE_TRICK_ROOM: MoveEnum
+MOVE_DRACO_METEOR: MoveEnum
+MOVE_DISCHARGE: MoveEnum
+MOVE_LAVA_PLUME: MoveEnum
+MOVE_LEAF_STORM: MoveEnum
+MOVE_POWER_WHIP: MoveEnum
+MOVE_ROCK_WRECKER: MoveEnum
+MOVE_CROSS_POISON: MoveEnum
+MOVE_GUNK_SHOT: MoveEnum
+MOVE_IRON_HEAD: MoveEnum
+MOVE_MAGNET_BOMB: MoveEnum
+MOVE_STONE_EDGE: MoveEnum
+MOVE_CAPTIVATE: MoveEnum
+MOVE_STEALTH_ROCK: MoveEnum
+MOVE_GRASS_KNOT: MoveEnum
+MOVE_CHATTER: MoveEnum
+MOVE_JUDGMENT: MoveEnum
+MOVE_BUG_BITE: MoveEnum
+MOVE_CHARGE_BEAM: MoveEnum
+MOVE_WOOD_HAMMER: MoveEnum
+MOVE_AQUA_JET: MoveEnum
+MOVE_ATTACK_ORDER: MoveEnum
+MOVE_DEFEND_ORDER: MoveEnum
+MOVE_HEAL_ORDER: MoveEnum
+MOVE_HEAD_SMASH: MoveEnum
+MOVE_DOUBLE_HIT: MoveEnum
+MOVE_ROAR_OF_TIME: MoveEnum
+MOVE_SPACIAL_REND: MoveEnum
+MOVE_LUNAR_DANCE: MoveEnum
+MOVE_CRUSH_GRIP: MoveEnum
+MOVE_MAGMA_STORM: MoveEnum
+MOVE_DARK_VOID: MoveEnum
+MOVE_SEED_FLARE: MoveEnum
+MOVE_OMINOUS_WIND: MoveEnum
+MOVE_SHADOW_FORCE: MoveEnum
+MOVE_HONE_CLAWS: MoveEnum
+MOVE_WIDE_GUARD: MoveEnum
+MOVE_GUARD_SPLIT: MoveEnum
+MOVE_POWER_SPLIT: MoveEnum
+MOVE_WONDER_ROOM: MoveEnum
+MOVE_PSYSHOCK: MoveEnum
+MOVE_VENOSHOCK: MoveEnum
+MOVE_AUTOTOMIZE: MoveEnum
+MOVE_RAGE_POWDER: MoveEnum
+MOVE_TELEKINESIS: MoveEnum
+MOVE_MAGIC_ROOM: MoveEnum
+MOVE_SMACK_DOWN: MoveEnum
+MOVE_STORM_THROW: MoveEnum
+MOVE_FLAME_BURST: MoveEnum
+MOVE_SLUDGE_WAVE: MoveEnum
+MOVE_QUIVER_DANCE: MoveEnum
+MOVE_HEAVY_SLAM: MoveEnum
+MOVE_SYNCHRONOISE: MoveEnum
+MOVE_ELECTRO_BALL: MoveEnum
+MOVE_SOAK: MoveEnum
+MOVE_FLAME_CHARGE: MoveEnum
+MOVE_COIL: MoveEnum
+MOVE_LOW_SWEEP: MoveEnum
+MOVE_ACID_SPRAY: MoveEnum
+MOVE_FOUL_PLAY: MoveEnum
+MOVE_SIMPLE_BEAM: MoveEnum
+MOVE_ENTRAINMENT: MoveEnum
+MOVE_AFTER_YOU: MoveEnum
+MOVE_ROUND: MoveEnum
+MOVE_ECHOED_VOICE: MoveEnum
+MOVE_CHIP_AWAY: MoveEnum
+MOVE_CLEAR_SMOG: MoveEnum
+MOVE_STORED_POWER: MoveEnum
+MOVE_QUICK_GUARD: MoveEnum
+MOVE_ALLY_SWITCH: MoveEnum
+MOVE_SCALD: MoveEnum
+MOVE_SHELL_SMASH: MoveEnum
+MOVE_HEAL_PULSE: MoveEnum
+MOVE_HEX: MoveEnum
+MOVE_SKY_DROP: MoveEnum
+MOVE_SHIFT_GEAR: MoveEnum
+MOVE_CIRCLE_THROW: MoveEnum
+MOVE_INCINERATE: MoveEnum
+MOVE_QUASH: MoveEnum
+MOVE_ACROBATICS: MoveEnum
+MOVE_REFLECT_TYPE: MoveEnum
+MOVE_RETALIATE: MoveEnum
+MOVE_FINAL_GAMBIT: MoveEnum
+MOVE_BESTOW: MoveEnum
+MOVE_INFERNO: MoveEnum
+MOVE_WATER_PLEDGE: MoveEnum
+MOVE_FIRE_PLEDGE: MoveEnum
+MOVE_GRASS_PLEDGE: MoveEnum
+MOVE_VOLT_SWITCH: MoveEnum
+MOVE_STRUGGLE_BUG: MoveEnum
+MOVE_BULLDOZE: MoveEnum
+MOVE_FROST_BREATH: MoveEnum
+MOVE_DRAGON_TAIL: MoveEnum
+MOVE_WORK_UP: MoveEnum
+MOVE_ELECTROWEB: MoveEnum
+MOVE_WILD_CHARGE: MoveEnum
+MOVE_DRILL_RUN: MoveEnum
+MOVE_DUAL_CHOP: MoveEnum
+MOVE_HEART_STAMP: MoveEnum
+MOVE_HORN_LEECH: MoveEnum
+MOVE_SACRED_SWORD: MoveEnum
+MOVE_RAZOR_SHELL: MoveEnum
+MOVE_HEAT_CRASH: MoveEnum
+MOVE_LEAF_TORNADO: MoveEnum
+MOVE_STEAMROLLER: MoveEnum
+MOVE_COTTON_GUARD: MoveEnum
+MOVE_NIGHT_DAZE: MoveEnum
+MOVE_PSYSTRIKE: MoveEnum
+MOVE_TAIL_SLAP: MoveEnum
+MOVE_HURRICANE: MoveEnum
+MOVE_HEAD_CHARGE: MoveEnum
+MOVE_GEAR_GRIND: MoveEnum
+MOVE_SEARING_SHOT: MoveEnum
+MOVE_TECHNO_BLAST: MoveEnum
+MOVE_RELIC_SONG: MoveEnum
+MOVE_SECRET_SWORD: MoveEnum
+MOVE_GLACIATE: MoveEnum
+MOVE_BOLT_STRIKE: MoveEnum
+MOVE_BLUE_FLARE: MoveEnum
+MOVE_FIERY_DANCE: MoveEnum
+MOVE_FREEZE_SHOCK: MoveEnum
+MOVE_ICE_BURN: MoveEnum
+MOVE_SNARL: MoveEnum
+MOVE_ICICLE_CRASH: MoveEnum
+MOVE_V_CREATE: MoveEnum
+MOVE_FUSION_FLARE: MoveEnum
+MOVE_FUSION_BOLT: MoveEnum
+MOVE_FLYING_PRESS: MoveEnum
+MOVE_MAT_BLOCK: MoveEnum
+MOVE_BELCH: MoveEnum
+MOVE_ROTOTILLER: MoveEnum
+MOVE_STICKY_WEB: MoveEnum
+MOVE_FELL_STINGER: MoveEnum
+MOVE_PHANTOM_FORCE: MoveEnum
+MOVE_TRICK_OR_TREAT: MoveEnum
+MOVE_NOBLE_ROAR: MoveEnum
+MOVE_ION_DELUGE: MoveEnum
+MOVE_PARABOLIC_CHARGE: MoveEnum
+MOVE_FORESTS_CURSE: MoveEnum
+MOVE_PETAL_BLIZZARD: MoveEnum
+MOVE_FREEZE_DRY: MoveEnum
+MOVE_DISARMING_VOICE: MoveEnum
+MOVE_PARTING_SHOT: MoveEnum
+MOVE_TOPSY_TURVY: MoveEnum
+MOVE_DRAINING_KISS: MoveEnum
+MOVE_CRAFTY_SHIELD: MoveEnum
+MOVE_FLOWER_SHIELD: MoveEnum
+MOVE_GRASSY_TERRAIN: MoveEnum
+MOVE_MISTY_TERRAIN: MoveEnum
+MOVE_ELECTRIFY: MoveEnum
+MOVE_PLAY_ROUGH: MoveEnum
+MOVE_FAIRY_WIND: MoveEnum
+MOVE_MOONBLAST: MoveEnum
+MOVE_BOOMBURST: MoveEnum
+MOVE_FAIRY_LOCK: MoveEnum
+MOVE_KINGS_SHIELD: MoveEnum
+MOVE_PLAY_NICE: MoveEnum
+MOVE_CONFIDE: MoveEnum
+MOVE_DIAMOND_STORM: MoveEnum
+MOVE_STEAM_ERUPTION: MoveEnum
+MOVE_HYPERSPACE_HOLE: MoveEnum
+MOVE_WATER_SHURIKEN: MoveEnum
+MOVE_MYSTICAL_FIRE: MoveEnum
+MOVE_SPIKY_SHIELD: MoveEnum
+MOVE_AROMATIC_MIST: MoveEnum
+MOVE_EERIE_IMPULSE: MoveEnum
+MOVE_VENOM_DRENCH: MoveEnum
+MOVE_POWDER: MoveEnum
+MOVE_GEOMANCY: MoveEnum
+MOVE_MAGNETIC_FLUX: MoveEnum
+MOVE_HAPPY_HOUR: MoveEnum
+MOVE_ELECTRIC_TERRAIN: MoveEnum
+MOVE_DAZZLING_GLEAM: MoveEnum
+MOVE_CELEBRATE: MoveEnum
+MOVE_HOLD_HANDS: MoveEnum
+MOVE_BABY_DOLL_EYES: MoveEnum
+MOVE_NUZZLE: MoveEnum
+MOVE_HOLD_BACK: MoveEnum
+MOVE_INFESTATION: MoveEnum
+MOVE_POWER_UP_PUNCH: MoveEnum
+MOVE_OBLIVION_WING: MoveEnum
+MOVE_THOUSAND_ARROWS: MoveEnum
+MOVE_THOUSAND_WAVES: MoveEnum
+MOVE_LANDS_WRATH: MoveEnum
+MOVE_LIGHT_OF_RUIN: MoveEnum
+MOVE_ORIGIN_PULSE: MoveEnum
+MOVE_PRECIPICE_BLADES: MoveEnum
+MOVE_DRAGON_ASCENT: MoveEnum
+MOVE_HYPERSPACE_FURY: MoveEnum
+MOVE_SHORE_UP: MoveEnum
+MOVE_FIRST_IMPRESSION: MoveEnum
+MOVE_BANEFUL_BUNKER: MoveEnum
+MOVE_SPIRIT_SHACKLE: MoveEnum
+MOVE_DARKEST_LARIAT: MoveEnum
+MOVE_SPARKLING_ARIA: MoveEnum
+MOVE_ICE_HAMMER: MoveEnum
+MOVE_FLORAL_HEALING: MoveEnum
+MOVE_HIGH_HORSEPOWER: MoveEnum
+MOVE_STRENGTH_SAP: MoveEnum
+MOVE_SOLAR_BLADE: MoveEnum
+MOVE_LEAFAGE: MoveEnum
+MOVE_SPOTLIGHT: MoveEnum
+MOVE_TOXIC_THREAD: MoveEnum
+MOVE_LASER_FOCUS: MoveEnum
+MOVE_GEAR_UP: MoveEnum
+MOVE_THROAT_CHOP: MoveEnum
+MOVE_POLLEN_PUFF: MoveEnum
+MOVE_ANCHOR_SHOT: MoveEnum
+MOVE_PSYCHIC_TERRAIN: MoveEnum
+MOVE_LUNGE: MoveEnum
+MOVE_FIRE_LASH: MoveEnum
+MOVE_POWER_TRIP: MoveEnum
+MOVE_BURN_UP: MoveEnum
+MOVE_SPEED_SWAP: MoveEnum
+MOVE_SMART_STRIKE: MoveEnum
+MOVE_PURIFY: MoveEnum
+MOVE_REVELATION_DANCE: MoveEnum
+MOVE_CORE_ENFORCER: MoveEnum
+MOVE_TROP_KICK: MoveEnum
+MOVE_INSTRUCT: MoveEnum
+MOVE_BEAK_BLAST: MoveEnum
+MOVE_CLANGING_SCALES: MoveEnum
+MOVE_DRAGON_HAMMER: MoveEnum
+MOVE_BRUTAL_SWING: MoveEnum
+MOVE_AURORA_VEIL: MoveEnum
+MOVE_SHELL_TRAP: MoveEnum
+MOVE_FLEUR_CANNON: MoveEnum
+MOVE_PSYCHIC_FANGS: MoveEnum
+MOVE_STOMPING_TANTRUM: MoveEnum
+MOVE_SHADOW_BONE: MoveEnum
+MOVE_ACCELEROCK: MoveEnum
+MOVE_LIQUIDATION: MoveEnum
+MOVE_PRISMATIC_LASER: MoveEnum
+MOVE_SPECTRAL_THIEF: MoveEnum
+MOVE_SUNSTEEL_STRIKE: MoveEnum
+MOVE_MOONGEIST_BEAM: MoveEnum
+MOVE_TEARFUL_LOOK: MoveEnum
+MOVE_ZING_ZAP: MoveEnum
+MOVE_NATURES_MADNESS: MoveEnum
+MOVE_MULTI_ATTACK: MoveEnum
+MOVE_MIND_BLOWN: MoveEnum
+MOVE_PLASMA_FISTS: MoveEnum
+MOVE_PHOTON_GEYSER: MoveEnum
+MOVE_ZIPPY_ZAP: MoveEnum
+MOVE_SPLISHY_SPLASH: MoveEnum
+MOVE_FLOATY_FALL: MoveEnum
+MOVE_PIKA_PAPOW: MoveEnum
+MOVE_BOUNCY_BUBBLE: MoveEnum
+MOVE_BUZZY_BUZZ: MoveEnum
+MOVE_SIZZLY_SLIDE: MoveEnum
+MOVE_GLITZY_GLOW: MoveEnum
+MOVE_BADDY_BAD: MoveEnum
+MOVE_SAPPY_SEED: MoveEnum
+MOVE_FREEZY_FROST: MoveEnum
+MOVE_SPARKLY_SWIRL: MoveEnum
+MOVE_VEEVEE_VOLLEY: MoveEnum
+MOVE_DOUBLE_IRON_BASH: MoveEnum
+MOVE_DYNAMAX_CANNON: MoveEnum
+MOVE_SNIPE_SHOT: MoveEnum
+MOVE_JAW_LOCK: MoveEnum
+MOVE_STUFF_CHEEKS: MoveEnum
+MOVE_NO_RETREAT: MoveEnum
+MOVE_TAR_SHOT: MoveEnum
+MOVE_MAGIC_POWDER: MoveEnum
+MOVE_DRAGON_DARTS: MoveEnum
+MOVE_TEATIME: MoveEnum
+MOVE_OCTOLOCK: MoveEnum
+MOVE_BOLT_BEAK: MoveEnum
+MOVE_FISHIOUS_REND: MoveEnum
+MOVE_COURT_CHANGE: MoveEnum
+MOVE_CLANGOROUS_SOUL: MoveEnum
+MOVE_BODY_PRESS: MoveEnum
+MOVE_DECORATE: MoveEnum
+MOVE_DRUM_BEATING: MoveEnum
+MOVE_SNAP_TRAP: MoveEnum
+MOVE_PYRO_BALL: MoveEnum
+MOVE_BEHEMOTH_BLADE: MoveEnum
+MOVE_BEHEMOTH_BASH: MoveEnum
+MOVE_AURA_WHEEL: MoveEnum
+MOVE_BREAKING_SWIPE: MoveEnum
+MOVE_BRANCH_POKE: MoveEnum
+MOVE_OVERDRIVE: MoveEnum
+MOVE_APPLE_ACID: MoveEnum
+MOVE_GRAV_APPLE: MoveEnum
+MOVE_SPIRIT_BREAK: MoveEnum
+MOVE_STRANGE_STEAM: MoveEnum
+MOVE_LIFE_DEW: MoveEnum
+MOVE_OBSTRUCT: MoveEnum
+MOVE_FALSE_SURRENDER: MoveEnum
+MOVE_METEOR_ASSAULT: MoveEnum
+MOVE_ETERNABEAM: MoveEnum
+MOVE_STEEL_BEAM: MoveEnum
+MOVE_EXPANDING_FORCE: MoveEnum
+MOVE_STEEL_ROLLER: MoveEnum
+MOVE_SCALE_SHOT: MoveEnum
+MOVE_METEOR_BEAM: MoveEnum
+MOVE_SHELL_SIDE_ARM: MoveEnum
+MOVE_MISTY_EXPLOSION: MoveEnum
+MOVE_GRASSY_GLIDE: MoveEnum
+MOVE_RISING_VOLTAGE: MoveEnum
+MOVE_TERRAIN_PULSE: MoveEnum
+MOVE_SKITTER_SMACK: MoveEnum
+MOVE_BURNING_JEALOUSY: MoveEnum
+MOVE_LASH_OUT: MoveEnum
+MOVE_POLTERGEIST: MoveEnum
+MOVE_CORROSIVE_GAS: MoveEnum
+MOVE_COACHING: MoveEnum
+MOVE_FLIP_TURN: MoveEnum
+MOVE_TRIPLE_AXEL: MoveEnum
+MOVE_DUAL_WINGBEAT: MoveEnum
+MOVE_SCORCHING_SANDS: MoveEnum
+MOVE_JUNGLE_HEALING: MoveEnum
+MOVE_WICKED_BLOW: MoveEnum
+MOVE_SURGING_STRIKES: MoveEnum
+MOVE_THUNDER_CAGE: MoveEnum
+MOVE_DRAGON_ENERGY: MoveEnum
+MOVE_FREEZING_GLARE: MoveEnum
+MOVE_FIERY_WRATH: MoveEnum
+MOVE_THUNDEROUS_KICK: MoveEnum
+MOVE_GLACIAL_LANCE: MoveEnum
+MOVE_ASTRAL_BARRAGE: MoveEnum
+MOVE_EERIE_SPELL: MoveEnum
+MOVE_DEATHROLL: MoveEnum
+MOVE_EXCALIBUR: MoveEnum
+MOVE_AQUA_FANG: MoveEnum
+MOVE_WAVE_CRASH: MoveEnum
+MOVE_SMITE: MoveEnum
+MOVE_OUTBURST: MoveEnum
+MOVE_SEISMIC_FIST: MoveEnum
+MOVE_IRON_FANGS: MoveEnum
+MOVE_SHADOW_FANGS: MoveEnum
+MOVE_LOVELY_BITE: MoveEnum
+MOVE_JAGGED_FANGS: MoveEnum
+MOVE_SCORCHED_EARTH: MoveEnum
+MOVE_RAGING_FURY: MoveEnum
+MOVE_PLASMA_PULSE: MoveEnum
+MOVE_PRIMAL_BEAM: MoveEnum
+MOVE_DRACONIC_FANGS: MoveEnum
+MOVE_PIXIE_BEAM: MoveEnum
+MOVE_PIXIE_SLASH: MoveEnum
+MOVE_SEISMIC_BLADE: MoveEnum
+MOVE_MOUNTAIN_CHUNK: MoveEnum
+MOVE_ARCHER_SHOT: MoveEnum
+MOVE_FROST_BRAND: MoveEnum
+MOVE_FROST_BOLT: MoveEnum
+MOVE_GLACIER_CRASH: MoveEnum
+MOVE_SUPERSONIC_SHOT: MoveEnum
+MOVE_ZEPHYR_RUSH: MoveEnum
+MOVE_SHOCKING_JAB: MoveEnum
+MOVE_SHOCKING_EDGE: MoveEnum
+MOVE_LIGHTNING_STRIKE: MoveEnum
+MOVE_VOLT_BOLT: MoveEnum
+MOVE_KINETIC_BARRAGE: MoveEnum
+MOVE_FERTILE_FANGS: MoveEnum
+MOVE_SCATTER_BLAST: MoveEnum
+MOVE_JAGGED_PUNCH: MoveEnum
+MOVE_CUTSIE_SLAP: MoveEnum
+MOVE_FAIRY_SPHERES: MoveEnum
+MOVE_BRAMBLE_BLAST: MoveEnum
+MOVE_ASTEROID_DOWNFALL: MoveEnum
+MOVE_AQUA_BASH: MoveEnum
+MOVE_TECTONIC_FANGS: MoveEnum
+MOVE_CUPID_SHOT: MoveEnum
+MOVE_CLAY_DART: MoveEnum
+MOVE_DIAMOND_ARROW: MoveEnum
+MOVE_DIAMOND_BLADE: MoveEnum
+MOVE_VENOM_BOLT: MoveEnum
+MOVE_FUMIGATION_BOMB: MoveEnum
+MOVE_BLACK_MAGIC: MoveEnum
+MOVE_FLAME_TONGUE: MoveEnum
+MOVE_BLAZING_ARROW: MoveEnum
+MOVE_ROCKET_PUNCH: MoveEnum
+MOVE_WEB_SHOT: MoveEnum
+MOVE_AURA_FORCE: MoveEnum
+MOVE_DRAKE_MISSILE: MoveEnum
+MOVE_LOTUS_SHOWER: MoveEnum
+MOVE_JAGGED_HORNS: MoveEnum
+MOVE_BLOOD_SHOT: MoveEnum
+MOVE_FLASH_FREEZE: MoveEnum
+MOVE_PHANTOM_GLOVES: MoveEnum
+MOVE_HOMING_FLETCH: MoveEnum
+MOVE_BITTER_MALICE: MoveEnum
+MOVE_INFERNAL_PARADE: MoveEnum
+MOVE_DEVIOUS_SHOT: MoveEnum
+MOVE_STARBURST: MoveEnum
+MOVE_CHEAP_SHOT: MoveEnum
+MOVE_TORRENT_FIST: MoveEnum
+MOVE_STAR_CRASH: MoveEnum
+MOVE_STONE_AXE: MoveEnum
+MOVE_ENERGY_WAVE: MoveEnum
+MOVE_FLUTTERING_LEAF: MoveEnum
+MOVE_HEADLONG_RUSH: MoveEnum
+MOVE_REVIVAL_BLESSING: MoveEnum
+MOVE_WHIRLING_STRIKES: MoveEnum
+MOVE_MIND_BREAK: MoveEnum
+MOVE_WYRM_WIND: MoveEnum
+MOVE_SHED_TAIL: MoveEnum
+MOVE_BERRY_SMASH: MoveEnum
+MOVE_HYDRO_STEAM: MoveEnum
+MOVE_SUPERHOT_FLAME: MoveEnum
+MOVE_TRIPLE_ARROWS: MoveEnum
+MOVE_DOUBLE_LARIAT: MoveEnum
+MOVE_LEECH_BLADE: MoveEnum
+MOVE_YGGDRASIL_FORCE: MoveEnum
+MOVE_DRAIN_BRAIN: MoveEnum
+MOVE_PSYCHOKINETIC_SLAM: MoveEnum
+MOVE_ESPER_WING: MoveEnum
+MOVE_MORTAL_SPIN: MoveEnum
+MOVE_GEM_MISSILE: MoveEnum
+MOVE_RIDER_KICK: MoveEnum
+MOVE_AQUA_CUTTER: MoveEnum
+MOVE_INVERSE_ROOM: MoveEnum
+MOVE_BLAZING_BONE: MoveEnum
+MOVE_KARMA: MoveEnum
+MOVE_CHILLING_WATER: MoveEnum
+MOVE_GHASTLY_ECHO: MoveEnum
+MOVE_CHILLY_RECEPTION: MoveEnum
+MOVE_ICE_SPINNER: MoveEnum
+MOVE_TIDY_UP: MoveEnum
+MOVE_POPULATION_BOMB: MoveEnum
+MOVE_RAGING_SOULS: MoveEnum
+MOVE_TWIN_BEAM: MoveEnum
+MOVE_REQUIEM: MoveEnum
+MOVE_ARMOR_CANNON: MoveEnum
+MOVE_BITTER_BLADE: MoveEnum
+MOVE_SOIL_DRAIN: MoveEnum
+MOVE_GIGATON_HAMMER: MoveEnum
+MOVE_TRIPLE_DIVE: MoveEnum
+MOVE_JET_PUNCH: MoveEnum
+MOVE_RAGE_FIST: MoveEnum
+MOVE_WICKED_TORQUE: MoveEnum
+MOVE_BLAZING_TORQUE: MoveEnum
+MOVE_NOXIOUS_TORQUE: MoveEnum
+MOVE_MAGICAL_TORQUE: MoveEnum
+MOVE_COMBAT_TORQUE: MoveEnum
+MOVE_KOWTOW_CLEAVE: MoveEnum
+MOVE_FLOWER_TRICK: MoveEnum
+MOVE_AQUA_STEP: MoveEnum
+MOVE_TORCH_SONG: MoveEnum
+MOVE_GLAIVE_RUSH: MoveEnum
+MOVE_SILK_TRAP: MoveEnum
+MOVE_LAST_RESPECTS: MoveEnum
+MOVE_LUMINA_CRASH: MoveEnum
+MOVE_ORDER_UP: MoveEnum
+MOVE_SPICY_EXTRACT: MoveEnum
+MOVE_SPIN_OUT: MoveEnum
+MOVE_SALT_CURE: MoveEnum
+MOVE_DOODLE: MoveEnum
+MOVE_FILLET_AWAY: MoveEnum
+MOVE_RAGING_BULL: MoveEnum
+MOVE_MAKE_IT_RAIN: MoveEnum
+MOVE_PSYBLADE: MoveEnum
+MOVE_RUINATION: MoveEnum
+MOVE_COLLISION_COURSE: MoveEnum
+MOVE_ELECTRO_DRIFT: MoveEnum
+MOVE_POUNCE: MoveEnum
+MOVE_TRAILBLAZE: MoveEnum
+MOVE_HYPER_DRILL: MoveEnum
+MOVE_DOUBLE_SHOCK: MoveEnum
+MOVE_COMEUPPANCE: MoveEnum
+MOVE_BLOOD_MOON: MoveEnum
+MOVE_AXE_KICK: MoveEnum
+MOVE_BARB_BARRAGE: MoveEnum
+MOVE_SMASHIN_REALITIES: MoveEnum
+MOVE_CREEPING_THORNS: MoveEnum
+MOVE_MATCHA_GOTCHA: MoveEnum
+MOVE_SYRUP_BOMB: MoveEnum
+MOVE_IVY_CUDGEL: MoveEnum
+MOVE_ELECTRO_SHOT: MoveEnum
+MOVE_FICKLE_BEAM: MoveEnum
+MOVE_BURNING_BULWARK: MoveEnum
+MOVE_THUNDERCLAP: MoveEnum
+MOVE_TACHYON_CUTTER: MoveEnum
+MOVE_HARD_PRESS: MoveEnum
+MOVE_DRAGON_CHEER: MoveEnum
+MOVE_ALLURING_VOICE: MoveEnum
+MOVE_MIGHTY_CLEAVE: MoveEnum
+MOVE_TEMPER_FLARE: MoveEnum
+MOVE_SUPERCELL_SLAM: MoveEnum
+MOVE_PSYCHIC_NOISE: MoveEnum
+MOVE_UPPER_HAND: MoveEnum
+MOVE_MALIGNANT_CHAIN: MoveEnum
+MOVE_LUNAR_BLESSING: MoveEnum
+MOVE_CHLOROBLAST: MoveEnum
+MOVE_PSYSHIELD_BASH: MoveEnum
+MOVE_CEASELESS_EDGE: MoveEnum
+MOVE_VICTORY_DANCE: MoveEnum
+MOVE_BLEAKWIND_STORM: MoveEnum
+MOVE_WILDBOLT_STORM: MoveEnum
+MOVE_SANDSEAR_STORM: MoveEnum
+MOVE_SPRINGTIDE_STORM: MoveEnum
+MOVE_DIRE_CLAW: MoveEnum
+MOVE_SHELTER: MoveEnum
+MOVE_WILD_SWING: MoveEnum
+MOVE_FEMUR_BREAKER: MoveEnum
+MOVE_SQUEAKY_HAMMER: MoveEnum
+MOVE_PRIMITIVE_STRIKE: MoveEnum
+MOVE_SMASHING_PUMPKINS: MoveEnum
+MOVE_AIRBORNE_SLAM: MoveEnum
+MOVE_SPINE_BREAKER: MoveEnum
+MOVE_CRACKLE_SLAM: MoveEnum
+MOVE_SQUALL_HAMMER: MoveEnum
+MOVE_MEGATON_HAMMER: MoveEnum
+MOVE_BATTERING_RAM: MoveEnum
+MOVE_PITFALL: MoveEnum
+MOVE_VIRAL_STRIKE: MoveEnum
+MOVE_SHADOW_HAMMER: MoveEnum
+MOVE_BONK: MoveEnum
+MOVE_MOLTEN_STRIKE: MoveEnum
+MOVE_MIRAGE_SLAM: MoveEnum
+MOVE_EARTHSPLITTER: MoveEnum
+MOVE_BEETLE_BASH: MoveEnum
+MOVE_PEBBLE_SHOWER: MoveEnum
+MOVE_RAPID_RIVER: MoveEnum
+MOVE_TOXIC_NEEDLES: MoveEnum
+MOVE_SMOLDER_BASH: MoveEnum
+MOVE_BEATDOWN: MoveEnum
+MOVE_EERIE_FOG: MoveEnum
+MOVE_MYSTIC_DANCE: MoveEnum
+MOVE_RELENTLESS_CLOBBER: MoveEnum
+MOVE_POP_MAYHEM: MoveEnum
+MOVE_KILOBITE: MoveEnum
+MOVE_TANGLING_HUSK: MoveEnum
+MOVE_RIP_AND_TEAR: MoveEnum
+MOVE_BRAVADO: MoveEnum
+MOVE_TERROR_CHARGE: MoveEnum
+MOVE_TERROR_LOCKS: MoveEnum
+MOVE_DREAM_INVERSION: MoveEnum
+MOVE_TERA_STARSTORM: MoveEnum
+MOVE_SPARKLING_BARRAGE: MoveEnum
+MOVE_SPECTRAL_SERENADE: MoveEnum
+MOVE_MERCULIGHT: MoveEnum
+MOVE_BIG_BLAST: MoveEnum
+MOVE_SPECTRAL_FLAME: MoveEnum
+MOVE_TREPIDATION: MoveEnum
+MOVE_ASTRAL_HAND: MoveEnum
+MOVE_FETCH: MoveEnum
+MOVE_TRANSMUTE: MoveEnum
+MOVE_CLEAR_SKIES: MoveEnum
+MOVE_READY_OR_NOT: MoveEnum
+MOVE_GIANT_GALE: MoveEnum
+MOVE_VEXING_VOID: MoveEnum
+MOVE_ECLIPSE: MoveEnum
+MOVE_TAKE_FLIGHT: MoveEnum
+MOVE_CALTROPS: MoveEnum
+MOVE_TAKE_HEART: MoveEnum
+MOVE_SAFE_PASSAGE: MoveEnum
+MOVE_ESPER_WALTZ: MoveEnum
+MOVE_ZAP_JIVE: MoveEnum
+MOVE_HEX_TROT: MoveEnum
+MOVE_MOUNTAIN_GALE: MoveEnum
+MOVE_BAD_EGG: MoveEnum
+MOVE_MYSTICAL_POWER: MoveEnum
+MOVE_DRAGON_JAB: MoveEnum
+MOVE_ICICLE_IMPALE: MoveEnum
+MOVE_TOXIC_PLUNGE: MoveEnum
+MOVE_SHOWTIME: MoveEnum
+MOVE_BANISHED_POWER: MoveEnum
+MOVE_TRIPLE_TREMOR: MoveEnum
+MOVE_FIRE_GLAIVE: MoveEnum
+MOVE_DEPLETION_BEAM: MoveEnum
+MOVE_ONE_INCH_PUNCH: MoveEnum
+MOVE_BERSERKER_HORN: MoveEnum
+MOVE_ONI_FIST: MoveEnum
+MOVE_INSECT_IMPACT: MoveEnum
+MOVE_LIGHTNING_BULLET: MoveEnum
+MOVE_METALLIC_MELODY: MoveEnum
+MOVE_BLUE_MOON: MoveEnum
+MOVE_FIVE_STAR_FURY: MoveEnum
+MOVE_TSUNAMI_HAMMER: MoveEnum
+MOVE_SEPTIC_SWITCH: MoveEnum
+MOVE_WATERLOG: MoveEnum
+MOVE_INCITE: MoveEnum
+MOVE_TOXIC_TERRAIN: MoveEnum
+MOVE_JETSTREAM_BURST: MoveEnum
+MOVE_SKY_QUAKE: MoveEnum
+MOVE_SUNSTRIKE: MoveEnum
+MOVE_TEMPEST_STORM: MoveEnum
+MOVE_PRISM_BLAST: MoveEnum
+MOVE_SEISMIC_SLAM: MoveEnum
+MOVE_CHILLER: MoveEnum
+MOVE_SPREAD_BOMB: MoveEnum
+MOVE_BALL_TOSS: MoveEnum
+MOVE_PARTY_FAVORS: MoveEnum
+MOVE_SHOT_PUT: MoveEnum
+MOVE_BLOCK_DROPPER: MoveEnum
+MOVE_SABER_SLASHES: MoveEnum
+MOVE_DRAGON_DASH: MoveEnum
+MOVE_POCKET_SAND: MoveEnum
+MOVE_CONCOCTION: MoveEnum
+MOVE_UNSCREW: MoveEnum
+MOVE_GODSPEED: MoveEnum
+MOVE_PSYCHO_WAVE: MoveEnum
+MOVE_ATOMIC_FIRE: MoveEnum
+MOVE_RAIN_FLUSH: MoveEnum
+MOVE_ICE_WALL: MoveEnum
+MOVE_OBSCURED_SHOT: MoveEnum
+MOVE_BLITZ_ARROW: MoveEnum
+MOVE_RUMBLE_KICK: MoveEnum

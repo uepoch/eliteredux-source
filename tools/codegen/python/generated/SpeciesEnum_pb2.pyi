@@ -1,0 +1,3836 @@
+from google.protobuf.internal import enum_type_wrapper as _enum_type_wrapper
+from google.protobuf import descriptor as _descriptor
+from typing import ClassVar as _ClassVar
+
+DESCRIPTOR: _descriptor.FileDescriptor
+
+class SpeciesEnum(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
+    __slots__ = ()
+    SPECIES_NONE: _ClassVar[SpeciesEnum]
+    SPECIES_BULBASAUR: _ClassVar[SpeciesEnum]
+    SPECIES_IVYSAUR: _ClassVar[SpeciesEnum]
+    SPECIES_VENUSAUR: _ClassVar[SpeciesEnum]
+    SPECIES_CHARMANDER: _ClassVar[SpeciesEnum]
+    SPECIES_CHARMELEON: _ClassVar[SpeciesEnum]
+    SPECIES_CHARIZARD: _ClassVar[SpeciesEnum]
+    SPECIES_SQUIRTLE: _ClassVar[SpeciesEnum]
+    SPECIES_WARTORTLE: _ClassVar[SpeciesEnum]
+    SPECIES_BLASTOISE: _ClassVar[SpeciesEnum]
+    SPECIES_CATERPIE: _ClassVar[SpeciesEnum]
+    SPECIES_METAPOD: _ClassVar[SpeciesEnum]
+    SPECIES_BUTTERFREE: _ClassVar[SpeciesEnum]
+    SPECIES_WEEDLE: _ClassVar[SpeciesEnum]
+    SPECIES_KAKUNA: _ClassVar[SpeciesEnum]
+    SPECIES_BEEDRILL: _ClassVar[SpeciesEnum]
+    SPECIES_PIDGEY: _ClassVar[SpeciesEnum]
+    SPECIES_PIDGEOTTO: _ClassVar[SpeciesEnum]
+    SPECIES_PIDGEOT: _ClassVar[SpeciesEnum]
+    SPECIES_RATTATA: _ClassVar[SpeciesEnum]
+    SPECIES_RATICATE: _ClassVar[SpeciesEnum]
+    SPECIES_SPEAROW: _ClassVar[SpeciesEnum]
+    SPECIES_FEAROW: _ClassVar[SpeciesEnum]
+    SPECIES_EKANS: _ClassVar[SpeciesEnum]
+    SPECIES_ARBOK: _ClassVar[SpeciesEnum]
+    SPECIES_PIKACHU: _ClassVar[SpeciesEnum]
+    SPECIES_RAICHU: _ClassVar[SpeciesEnum]
+    SPECIES_SANDSHREW: _ClassVar[SpeciesEnum]
+    SPECIES_SANDSLASH: _ClassVar[SpeciesEnum]
+    SPECIES_NIDORAN_F: _ClassVar[SpeciesEnum]
+    SPECIES_NIDORINA: _ClassVar[SpeciesEnum]
+    SPECIES_NIDOQUEEN: _ClassVar[SpeciesEnum]
+    SPECIES_NIDORAN_M: _ClassVar[SpeciesEnum]
+    SPECIES_NIDORINO: _ClassVar[SpeciesEnum]
+    SPECIES_NIDOKING: _ClassVar[SpeciesEnum]
+    SPECIES_CLEFAIRY: _ClassVar[SpeciesEnum]
+    SPECIES_CLEFABLE: _ClassVar[SpeciesEnum]
+    SPECIES_VULPIX: _ClassVar[SpeciesEnum]
+    SPECIES_NINETALES: _ClassVar[SpeciesEnum]
+    SPECIES_JIGGLYPUFF: _ClassVar[SpeciesEnum]
+    SPECIES_WIGGLYTUFF: _ClassVar[SpeciesEnum]
+    SPECIES_ZUBAT: _ClassVar[SpeciesEnum]
+    SPECIES_GOLBAT: _ClassVar[SpeciesEnum]
+    SPECIES_ODDISH: _ClassVar[SpeciesEnum]
+    SPECIES_GLOOM: _ClassVar[SpeciesEnum]
+    SPECIES_VILEPLUME: _ClassVar[SpeciesEnum]
+    SPECIES_PARAS: _ClassVar[SpeciesEnum]
+    SPECIES_PARASECT: _ClassVar[SpeciesEnum]
+    SPECIES_VENONAT: _ClassVar[SpeciesEnum]
+    SPECIES_VENOMOTH: _ClassVar[SpeciesEnum]
+    SPECIES_DIGLETT: _ClassVar[SpeciesEnum]
+    SPECIES_DUGTRIO: _ClassVar[SpeciesEnum]
+    SPECIES_MEOWTH: _ClassVar[SpeciesEnum]
+    SPECIES_PERSIAN: _ClassVar[SpeciesEnum]
+    SPECIES_PSYDUCK: _ClassVar[SpeciesEnum]
+    SPECIES_GOLDUCK: _ClassVar[SpeciesEnum]
+    SPECIES_MANKEY: _ClassVar[SpeciesEnum]
+    SPECIES_PRIMEAPE: _ClassVar[SpeciesEnum]
+    SPECIES_GROWLITHE: _ClassVar[SpeciesEnum]
+    SPECIES_ARCANINE: _ClassVar[SpeciesEnum]
+    SPECIES_POLIWAG: _ClassVar[SpeciesEnum]
+    SPECIES_POLIWHIRL: _ClassVar[SpeciesEnum]
+    SPECIES_POLIWRATH: _ClassVar[SpeciesEnum]
+    SPECIES_ABRA: _ClassVar[SpeciesEnum]
+    SPECIES_KADABRA: _ClassVar[SpeciesEnum]
+    SPECIES_ALAKAZAM: _ClassVar[SpeciesEnum]
+    SPECIES_MACHOP: _ClassVar[SpeciesEnum]
+    SPECIES_MACHOKE: _ClassVar[SpeciesEnum]
+    SPECIES_MACHAMP: _ClassVar[SpeciesEnum]
+    SPECIES_BELLSPROUT: _ClassVar[SpeciesEnum]
+    SPECIES_WEEPINBELL: _ClassVar[SpeciesEnum]
+    SPECIES_VICTREEBEL: _ClassVar[SpeciesEnum]
+    SPECIES_TENTACOOL: _ClassVar[SpeciesEnum]
+    SPECIES_TENTACRUEL: _ClassVar[SpeciesEnum]
+    SPECIES_GEODUDE: _ClassVar[SpeciesEnum]
+    SPECIES_GRAVELER: _ClassVar[SpeciesEnum]
+    SPECIES_GOLEM: _ClassVar[SpeciesEnum]
+    SPECIES_PONYTA: _ClassVar[SpeciesEnum]
+    SPECIES_RAPIDASH: _ClassVar[SpeciesEnum]
+    SPECIES_SLOWPOKE: _ClassVar[SpeciesEnum]
+    SPECIES_SLOWBRO: _ClassVar[SpeciesEnum]
+    SPECIES_MAGNEMITE: _ClassVar[SpeciesEnum]
+    SPECIES_MAGNETON: _ClassVar[SpeciesEnum]
+    SPECIES_FARFETCHD: _ClassVar[SpeciesEnum]
+    SPECIES_DODUO: _ClassVar[SpeciesEnum]
+    SPECIES_DODRIO: _ClassVar[SpeciesEnum]
+    SPECIES_SEEL: _ClassVar[SpeciesEnum]
+    SPECIES_DEWGONG: _ClassVar[SpeciesEnum]
+    SPECIES_GRIMER: _ClassVar[SpeciesEnum]
+    SPECIES_MUK: _ClassVar[SpeciesEnum]
+    SPECIES_SHELLDER: _ClassVar[SpeciesEnum]
+    SPECIES_CLOYSTER: _ClassVar[SpeciesEnum]
+    SPECIES_GASTLY: _ClassVar[SpeciesEnum]
+    SPECIES_HAUNTER: _ClassVar[SpeciesEnum]
+    SPECIES_GENGAR: _ClassVar[SpeciesEnum]
+    SPECIES_ONIX: _ClassVar[SpeciesEnum]
+    SPECIES_DROWZEE: _ClassVar[SpeciesEnum]
+    SPECIES_HYPNO: _ClassVar[SpeciesEnum]
+    SPECIES_KRABBY: _ClassVar[SpeciesEnum]
+    SPECIES_KINGLER: _ClassVar[SpeciesEnum]
+    SPECIES_VOLTORB: _ClassVar[SpeciesEnum]
+    SPECIES_ELECTRODE: _ClassVar[SpeciesEnum]
+    SPECIES_EXEGGCUTE: _ClassVar[SpeciesEnum]
+    SPECIES_EXEGGUTOR: _ClassVar[SpeciesEnum]
+    SPECIES_CUBONE: _ClassVar[SpeciesEnum]
+    SPECIES_MAROWAK: _ClassVar[SpeciesEnum]
+    SPECIES_HITMONLEE: _ClassVar[SpeciesEnum]
+    SPECIES_HITMONCHAN: _ClassVar[SpeciesEnum]
+    SPECIES_LICKITUNG: _ClassVar[SpeciesEnum]
+    SPECIES_KOFFING: _ClassVar[SpeciesEnum]
+    SPECIES_WEEZING: _ClassVar[SpeciesEnum]
+    SPECIES_RHYHORN: _ClassVar[SpeciesEnum]
+    SPECIES_RHYDON: _ClassVar[SpeciesEnum]
+    SPECIES_CHANSEY: _ClassVar[SpeciesEnum]
+    SPECIES_TANGELA: _ClassVar[SpeciesEnum]
+    SPECIES_KANGASKHAN: _ClassVar[SpeciesEnum]
+    SPECIES_HORSEA: _ClassVar[SpeciesEnum]
+    SPECIES_SEADRA: _ClassVar[SpeciesEnum]
+    SPECIES_GOLDEEN: _ClassVar[SpeciesEnum]
+    SPECIES_SEAKING: _ClassVar[SpeciesEnum]
+    SPECIES_STARYU: _ClassVar[SpeciesEnum]
+    SPECIES_STARMIE: _ClassVar[SpeciesEnum]
+    SPECIES_MR_MIME: _ClassVar[SpeciesEnum]
+    SPECIES_SCYTHER: _ClassVar[SpeciesEnum]
+    SPECIES_JYNX: _ClassVar[SpeciesEnum]
+    SPECIES_ELECTABUZZ: _ClassVar[SpeciesEnum]
+    SPECIES_MAGMAR: _ClassVar[SpeciesEnum]
+    SPECIES_PINSIR: _ClassVar[SpeciesEnum]
+    SPECIES_TAUROS: _ClassVar[SpeciesEnum]
+    SPECIES_MAGIKARP: _ClassVar[SpeciesEnum]
+    SPECIES_GYARADOS: _ClassVar[SpeciesEnum]
+    SPECIES_LAPRAS: _ClassVar[SpeciesEnum]
+    SPECIES_DITTO: _ClassVar[SpeciesEnum]
+    SPECIES_EEVEE: _ClassVar[SpeciesEnum]
+    SPECIES_VAPOREON: _ClassVar[SpeciesEnum]
+    SPECIES_JOLTEON: _ClassVar[SpeciesEnum]
+    SPECIES_FLAREON: _ClassVar[SpeciesEnum]
+    SPECIES_PORYGON: _ClassVar[SpeciesEnum]
+    SPECIES_OMANYTE: _ClassVar[SpeciesEnum]
+    SPECIES_OMASTAR: _ClassVar[SpeciesEnum]
+    SPECIES_KABUTO: _ClassVar[SpeciesEnum]
+    SPECIES_KABUTOPS: _ClassVar[SpeciesEnum]
+    SPECIES_AERODACTYL: _ClassVar[SpeciesEnum]
+    SPECIES_SNORLAX: _ClassVar[SpeciesEnum]
+    SPECIES_ARTICUNO: _ClassVar[SpeciesEnum]
+    SPECIES_ZAPDOS: _ClassVar[SpeciesEnum]
+    SPECIES_MOLTRES: _ClassVar[SpeciesEnum]
+    SPECIES_DRATINI: _ClassVar[SpeciesEnum]
+    SPECIES_DRAGONAIR: _ClassVar[SpeciesEnum]
+    SPECIES_DRAGONITE: _ClassVar[SpeciesEnum]
+    SPECIES_MEWTWO: _ClassVar[SpeciesEnum]
+    SPECIES_MEW: _ClassVar[SpeciesEnum]
+    SPECIES_CHIKORITA: _ClassVar[SpeciesEnum]
+    SPECIES_BAYLEEF: _ClassVar[SpeciesEnum]
+    SPECIES_MEGANIUM: _ClassVar[SpeciesEnum]
+    SPECIES_CYNDAQUIL: _ClassVar[SpeciesEnum]
+    SPECIES_QUILAVA: _ClassVar[SpeciesEnum]
+    SPECIES_TYPHLOSION: _ClassVar[SpeciesEnum]
+    SPECIES_TOTODILE: _ClassVar[SpeciesEnum]
+    SPECIES_CROCONAW: _ClassVar[SpeciesEnum]
+    SPECIES_FERALIGATR: _ClassVar[SpeciesEnum]
+    SPECIES_SENTRET: _ClassVar[SpeciesEnum]
+    SPECIES_FURRET: _ClassVar[SpeciesEnum]
+    SPECIES_HOOTHOOT: _ClassVar[SpeciesEnum]
+    SPECIES_NOCTOWL: _ClassVar[SpeciesEnum]
+    SPECIES_LEDYBA: _ClassVar[SpeciesEnum]
+    SPECIES_LEDIAN: _ClassVar[SpeciesEnum]
+    SPECIES_SPINARAK: _ClassVar[SpeciesEnum]
+    SPECIES_ARIADOS: _ClassVar[SpeciesEnum]
+    SPECIES_CROBAT: _ClassVar[SpeciesEnum]
+    SPECIES_CHINCHOU: _ClassVar[SpeciesEnum]
+    SPECIES_LANTURN: _ClassVar[SpeciesEnum]
+    SPECIES_PICHU: _ClassVar[SpeciesEnum]
+    SPECIES_CLEFFA: _ClassVar[SpeciesEnum]
+    SPECIES_IGGLYBUFF: _ClassVar[SpeciesEnum]
+    SPECIES_TOGEPI: _ClassVar[SpeciesEnum]
+    SPECIES_TOGETIC: _ClassVar[SpeciesEnum]
+    SPECIES_NATU: _ClassVar[SpeciesEnum]
+    SPECIES_XATU: _ClassVar[SpeciesEnum]
+    SPECIES_MAREEP: _ClassVar[SpeciesEnum]
+    SPECIES_FLAAFFY: _ClassVar[SpeciesEnum]
+    SPECIES_AMPHAROS: _ClassVar[SpeciesEnum]
+    SPECIES_BELLOSSOM: _ClassVar[SpeciesEnum]
+    SPECIES_MARILL: _ClassVar[SpeciesEnum]
+    SPECIES_AZUMARILL: _ClassVar[SpeciesEnum]
+    SPECIES_SUDOWOODO: _ClassVar[SpeciesEnum]
+    SPECIES_POLITOED: _ClassVar[SpeciesEnum]
+    SPECIES_HOPPIP: _ClassVar[SpeciesEnum]
+    SPECIES_SKIPLOOM: _ClassVar[SpeciesEnum]
+    SPECIES_JUMPLUFF: _ClassVar[SpeciesEnum]
+    SPECIES_AIPOM: _ClassVar[SpeciesEnum]
+    SPECIES_SUNKERN: _ClassVar[SpeciesEnum]
+    SPECIES_SUNFLORA: _ClassVar[SpeciesEnum]
+    SPECIES_YANMA: _ClassVar[SpeciesEnum]
+    SPECIES_WOOPER: _ClassVar[SpeciesEnum]
+    SPECIES_QUAGSIRE: _ClassVar[SpeciesEnum]
+    SPECIES_ESPEON: _ClassVar[SpeciesEnum]
+    SPECIES_UMBREON: _ClassVar[SpeciesEnum]
+    SPECIES_MURKROW: _ClassVar[SpeciesEnum]
+    SPECIES_SLOWKING: _ClassVar[SpeciesEnum]
+    SPECIES_MISDREAVUS: _ClassVar[SpeciesEnum]
+    SPECIES_UNOWN: _ClassVar[SpeciesEnum]
+    SPECIES_WOBBUFFET: _ClassVar[SpeciesEnum]
+    SPECIES_GIRAFARIG: _ClassVar[SpeciesEnum]
+    SPECIES_PINECO: _ClassVar[SpeciesEnum]
+    SPECIES_FORRETRESS: _ClassVar[SpeciesEnum]
+    SPECIES_DUNSPARCE: _ClassVar[SpeciesEnum]
+    SPECIES_GLIGAR: _ClassVar[SpeciesEnum]
+    SPECIES_STEELIX: _ClassVar[SpeciesEnum]
+    SPECIES_SNUBBULL: _ClassVar[SpeciesEnum]
+    SPECIES_GRANBULL: _ClassVar[SpeciesEnum]
+    SPECIES_QWILFISH: _ClassVar[SpeciesEnum]
+    SPECIES_SCIZOR: _ClassVar[SpeciesEnum]
+    SPECIES_SHUCKLE: _ClassVar[SpeciesEnum]
+    SPECIES_HERACROSS: _ClassVar[SpeciesEnum]
+    SPECIES_SNEASEL: _ClassVar[SpeciesEnum]
+    SPECIES_TEDDIURSA: _ClassVar[SpeciesEnum]
+    SPECIES_URSARING: _ClassVar[SpeciesEnum]
+    SPECIES_SLUGMA: _ClassVar[SpeciesEnum]
+    SPECIES_MAGCARGO: _ClassVar[SpeciesEnum]
+    SPECIES_SWINUB: _ClassVar[SpeciesEnum]
+    SPECIES_PILOSWINE: _ClassVar[SpeciesEnum]
+    SPECIES_CORSOLA: _ClassVar[SpeciesEnum]
+    SPECIES_REMORAID: _ClassVar[SpeciesEnum]
+    SPECIES_OCTILLERY: _ClassVar[SpeciesEnum]
+    SPECIES_DELIBIRD: _ClassVar[SpeciesEnum]
+    SPECIES_MANTINE: _ClassVar[SpeciesEnum]
+    SPECIES_SKARMORY: _ClassVar[SpeciesEnum]
+    SPECIES_HOUNDOUR: _ClassVar[SpeciesEnum]
+    SPECIES_HOUNDOOM: _ClassVar[SpeciesEnum]
+    SPECIES_KINGDRA: _ClassVar[SpeciesEnum]
+    SPECIES_PHANPY: _ClassVar[SpeciesEnum]
+    SPECIES_DONPHAN: _ClassVar[SpeciesEnum]
+    SPECIES_PORYGON2: _ClassVar[SpeciesEnum]
+    SPECIES_STANTLER: _ClassVar[SpeciesEnum]
+    SPECIES_SMEARGLE: _ClassVar[SpeciesEnum]
+    SPECIES_TYROGUE: _ClassVar[SpeciesEnum]
+    SPECIES_HITMONTOP: _ClassVar[SpeciesEnum]
+    SPECIES_SMOOCHUM: _ClassVar[SpeciesEnum]
+    SPECIES_ELEKID: _ClassVar[SpeciesEnum]
+    SPECIES_MAGBY: _ClassVar[SpeciesEnum]
+    SPECIES_MILTANK: _ClassVar[SpeciesEnum]
+    SPECIES_BLISSEY: _ClassVar[SpeciesEnum]
+    SPECIES_RAIKOU: _ClassVar[SpeciesEnum]
+    SPECIES_ENTEI: _ClassVar[SpeciesEnum]
+    SPECIES_SUICUNE: _ClassVar[SpeciesEnum]
+    SPECIES_LARVITAR: _ClassVar[SpeciesEnum]
+    SPECIES_PUPITAR: _ClassVar[SpeciesEnum]
+    SPECIES_TYRANITAR: _ClassVar[SpeciesEnum]
+    SPECIES_LUGIA: _ClassVar[SpeciesEnum]
+    SPECIES_HO_OH: _ClassVar[SpeciesEnum]
+    SPECIES_CELEBI: _ClassVar[SpeciesEnum]
+    SPECIES_TREECKO: _ClassVar[SpeciesEnum]
+    SPECIES_GROVYLE: _ClassVar[SpeciesEnum]
+    SPECIES_SCEPTILE: _ClassVar[SpeciesEnum]
+    SPECIES_TORCHIC: _ClassVar[SpeciesEnum]
+    SPECIES_COMBUSKEN: _ClassVar[SpeciesEnum]
+    SPECIES_BLAZIKEN: _ClassVar[SpeciesEnum]
+    SPECIES_MUDKIP: _ClassVar[SpeciesEnum]
+    SPECIES_MARSHTOMP: _ClassVar[SpeciesEnum]
+    SPECIES_SWAMPERT: _ClassVar[SpeciesEnum]
+    SPECIES_POOCHYENA: _ClassVar[SpeciesEnum]
+    SPECIES_MIGHTYENA: _ClassVar[SpeciesEnum]
+    SPECIES_ZIGZAGOON: _ClassVar[SpeciesEnum]
+    SPECIES_LINOONE: _ClassVar[SpeciesEnum]
+    SPECIES_WURMPLE: _ClassVar[SpeciesEnum]
+    SPECIES_SILCOON: _ClassVar[SpeciesEnum]
+    SPECIES_BEAUTIFLY: _ClassVar[SpeciesEnum]
+    SPECIES_CASCOON: _ClassVar[SpeciesEnum]
+    SPECIES_DUSTOX: _ClassVar[SpeciesEnum]
+    SPECIES_LOTAD: _ClassVar[SpeciesEnum]
+    SPECIES_LOMBRE: _ClassVar[SpeciesEnum]
+    SPECIES_LUDICOLO: _ClassVar[SpeciesEnum]
+    SPECIES_SEEDOT: _ClassVar[SpeciesEnum]
+    SPECIES_NUZLEAF: _ClassVar[SpeciesEnum]
+    SPECIES_SHIFTRY: _ClassVar[SpeciesEnum]
+    SPECIES_TAILLOW: _ClassVar[SpeciesEnum]
+    SPECIES_SWELLOW: _ClassVar[SpeciesEnum]
+    SPECIES_WINGULL: _ClassVar[SpeciesEnum]
+    SPECIES_PELIPPER: _ClassVar[SpeciesEnum]
+    SPECIES_RALTS: _ClassVar[SpeciesEnum]
+    SPECIES_KIRLIA: _ClassVar[SpeciesEnum]
+    SPECIES_GARDEVOIR: _ClassVar[SpeciesEnum]
+    SPECIES_SURSKIT: _ClassVar[SpeciesEnum]
+    SPECIES_MASQUERAIN: _ClassVar[SpeciesEnum]
+    SPECIES_SHROOMISH: _ClassVar[SpeciesEnum]
+    SPECIES_BRELOOM: _ClassVar[SpeciesEnum]
+    SPECIES_SLAKOTH: _ClassVar[SpeciesEnum]
+    SPECIES_VIGOROTH: _ClassVar[SpeciesEnum]
+    SPECIES_SLAKING: _ClassVar[SpeciesEnum]
+    SPECIES_NINCADA: _ClassVar[SpeciesEnum]
+    SPECIES_NINJASK: _ClassVar[SpeciesEnum]
+    SPECIES_SHEDINJA: _ClassVar[SpeciesEnum]
+    SPECIES_WHISMUR: _ClassVar[SpeciesEnum]
+    SPECIES_LOUDRED: _ClassVar[SpeciesEnum]
+    SPECIES_EXPLOUD: _ClassVar[SpeciesEnum]
+    SPECIES_MAKUHITA: _ClassVar[SpeciesEnum]
+    SPECIES_HARIYAMA: _ClassVar[SpeciesEnum]
+    SPECIES_AZURILL: _ClassVar[SpeciesEnum]
+    SPECIES_NOSEPASS: _ClassVar[SpeciesEnum]
+    SPECIES_SKITTY: _ClassVar[SpeciesEnum]
+    SPECIES_DELCATTY: _ClassVar[SpeciesEnum]
+    SPECIES_SABLEYE: _ClassVar[SpeciesEnum]
+    SPECIES_MAWILE: _ClassVar[SpeciesEnum]
+    SPECIES_ARON: _ClassVar[SpeciesEnum]
+    SPECIES_LAIRON: _ClassVar[SpeciesEnum]
+    SPECIES_AGGRON: _ClassVar[SpeciesEnum]
+    SPECIES_MEDITITE: _ClassVar[SpeciesEnum]
+    SPECIES_MEDICHAM: _ClassVar[SpeciesEnum]
+    SPECIES_ELECTRIKE: _ClassVar[SpeciesEnum]
+    SPECIES_MANECTRIC: _ClassVar[SpeciesEnum]
+    SPECIES_PLUSLE: _ClassVar[SpeciesEnum]
+    SPECIES_MINUN: _ClassVar[SpeciesEnum]
+    SPECIES_VOLBEAT: _ClassVar[SpeciesEnum]
+    SPECIES_ILLUMISE: _ClassVar[SpeciesEnum]
+    SPECIES_ROSELIA: _ClassVar[SpeciesEnum]
+    SPECIES_GULPIN: _ClassVar[SpeciesEnum]
+    SPECIES_SWALOT: _ClassVar[SpeciesEnum]
+    SPECIES_CARVANHA: _ClassVar[SpeciesEnum]
+    SPECIES_SHARPEDO: _ClassVar[SpeciesEnum]
+    SPECIES_WAILMER: _ClassVar[SpeciesEnum]
+    SPECIES_WAILORD: _ClassVar[SpeciesEnum]
+    SPECIES_NUMEL: _ClassVar[SpeciesEnum]
+    SPECIES_CAMERUPT: _ClassVar[SpeciesEnum]
+    SPECIES_TORKOAL: _ClassVar[SpeciesEnum]
+    SPECIES_SPOINK: _ClassVar[SpeciesEnum]
+    SPECIES_GRUMPIG: _ClassVar[SpeciesEnum]
+    SPECIES_SPINDA: _ClassVar[SpeciesEnum]
+    SPECIES_TRAPINCH: _ClassVar[SpeciesEnum]
+    SPECIES_VIBRAVA: _ClassVar[SpeciesEnum]
+    SPECIES_FLYGON: _ClassVar[SpeciesEnum]
+    SPECIES_CACNEA: _ClassVar[SpeciesEnum]
+    SPECIES_CACTURNE: _ClassVar[SpeciesEnum]
+    SPECIES_SWABLU: _ClassVar[SpeciesEnum]
+    SPECIES_ALTARIA: _ClassVar[SpeciesEnum]
+    SPECIES_ZANGOOSE: _ClassVar[SpeciesEnum]
+    SPECIES_SEVIPER: _ClassVar[SpeciesEnum]
+    SPECIES_LUNATONE: _ClassVar[SpeciesEnum]
+    SPECIES_SOLROCK: _ClassVar[SpeciesEnum]
+    SPECIES_BARBOACH: _ClassVar[SpeciesEnum]
+    SPECIES_WHISCASH: _ClassVar[SpeciesEnum]
+    SPECIES_CORPHISH: _ClassVar[SpeciesEnum]
+    SPECIES_CRAWDAUNT: _ClassVar[SpeciesEnum]
+    SPECIES_BALTOY: _ClassVar[SpeciesEnum]
+    SPECIES_CLAYDOL: _ClassVar[SpeciesEnum]
+    SPECIES_LILEEP: _ClassVar[SpeciesEnum]
+    SPECIES_CRADILY: _ClassVar[SpeciesEnum]
+    SPECIES_ANORITH: _ClassVar[SpeciesEnum]
+    SPECIES_ARMALDO: _ClassVar[SpeciesEnum]
+    SPECIES_FEEBAS: _ClassVar[SpeciesEnum]
+    SPECIES_MILOTIC: _ClassVar[SpeciesEnum]
+    SPECIES_CASTFORM: _ClassVar[SpeciesEnum]
+    SPECIES_KECLEON: _ClassVar[SpeciesEnum]
+    SPECIES_SHUPPET: _ClassVar[SpeciesEnum]
+    SPECIES_BANETTE: _ClassVar[SpeciesEnum]
+    SPECIES_DUSKULL: _ClassVar[SpeciesEnum]
+    SPECIES_DUSCLOPS: _ClassVar[SpeciesEnum]
+    SPECIES_TROPIUS: _ClassVar[SpeciesEnum]
+    SPECIES_CHIMECHO: _ClassVar[SpeciesEnum]
+    SPECIES_ABSOL: _ClassVar[SpeciesEnum]
+    SPECIES_WYNAUT: _ClassVar[SpeciesEnum]
+    SPECIES_SNORUNT: _ClassVar[SpeciesEnum]
+    SPECIES_GLALIE: _ClassVar[SpeciesEnum]
+    SPECIES_SPHEAL: _ClassVar[SpeciesEnum]
+    SPECIES_SEALEO: _ClassVar[SpeciesEnum]
+    SPECIES_WALREIN: _ClassVar[SpeciesEnum]
+    SPECIES_CLAMPERL: _ClassVar[SpeciesEnum]
+    SPECIES_HUNTAIL: _ClassVar[SpeciesEnum]
+    SPECIES_GOREBYSS: _ClassVar[SpeciesEnum]
+    SPECIES_RELICANTH: _ClassVar[SpeciesEnum]
+    SPECIES_LUVDISC: _ClassVar[SpeciesEnum]
+    SPECIES_BAGON: _ClassVar[SpeciesEnum]
+    SPECIES_SHELGON: _ClassVar[SpeciesEnum]
+    SPECIES_SALAMENCE: _ClassVar[SpeciesEnum]
+    SPECIES_BELDUM: _ClassVar[SpeciesEnum]
+    SPECIES_METANG: _ClassVar[SpeciesEnum]
+    SPECIES_METAGROSS: _ClassVar[SpeciesEnum]
+    SPECIES_REGIROCK: _ClassVar[SpeciesEnum]
+    SPECIES_REGICE: _ClassVar[SpeciesEnum]
+    SPECIES_REGISTEEL: _ClassVar[SpeciesEnum]
+    SPECIES_LATIAS: _ClassVar[SpeciesEnum]
+    SPECIES_LATIOS: _ClassVar[SpeciesEnum]
+    SPECIES_KYOGRE: _ClassVar[SpeciesEnum]
+    SPECIES_GROUDON: _ClassVar[SpeciesEnum]
+    SPECIES_RAYQUAZA: _ClassVar[SpeciesEnum]
+    SPECIES_JIRACHI: _ClassVar[SpeciesEnum]
+    SPECIES_DEOXYS: _ClassVar[SpeciesEnum]
+    SPECIES_TURTWIG: _ClassVar[SpeciesEnum]
+    SPECIES_GROTLE: _ClassVar[SpeciesEnum]
+    SPECIES_TORTERRA: _ClassVar[SpeciesEnum]
+    SPECIES_CHIMCHAR: _ClassVar[SpeciesEnum]
+    SPECIES_MONFERNO: _ClassVar[SpeciesEnum]
+    SPECIES_INFERNAPE: _ClassVar[SpeciesEnum]
+    SPECIES_PIPLUP: _ClassVar[SpeciesEnum]
+    SPECIES_PRINPLUP: _ClassVar[SpeciesEnum]
+    SPECIES_EMPOLEON: _ClassVar[SpeciesEnum]
+    SPECIES_STARLY: _ClassVar[SpeciesEnum]
+    SPECIES_STARAVIA: _ClassVar[SpeciesEnum]
+    SPECIES_STARAPTOR: _ClassVar[SpeciesEnum]
+    SPECIES_BIDOOF: _ClassVar[SpeciesEnum]
+    SPECIES_BIBAREL: _ClassVar[SpeciesEnum]
+    SPECIES_KRICKETOT: _ClassVar[SpeciesEnum]
+    SPECIES_KRICKETUNE: _ClassVar[SpeciesEnum]
+    SPECIES_SHINX: _ClassVar[SpeciesEnum]
+    SPECIES_LUXIO: _ClassVar[SpeciesEnum]
+    SPECIES_LUXRAY: _ClassVar[SpeciesEnum]
+    SPECIES_BUDEW: _ClassVar[SpeciesEnum]
+    SPECIES_ROSERADE: _ClassVar[SpeciesEnum]
+    SPECIES_CRANIDOS: _ClassVar[SpeciesEnum]
+    SPECIES_RAMPARDOS: _ClassVar[SpeciesEnum]
+    SPECIES_SHIELDON: _ClassVar[SpeciesEnum]
+    SPECIES_BASTIODON: _ClassVar[SpeciesEnum]
+    SPECIES_BURMY: _ClassVar[SpeciesEnum]
+    SPECIES_WORMADAM: _ClassVar[SpeciesEnum]
+    SPECIES_MOTHIM: _ClassVar[SpeciesEnum]
+    SPECIES_COMBEE: _ClassVar[SpeciesEnum]
+    SPECIES_VESPIQUEN: _ClassVar[SpeciesEnum]
+    SPECIES_PACHIRISU: _ClassVar[SpeciesEnum]
+    SPECIES_BUIZEL: _ClassVar[SpeciesEnum]
+    SPECIES_FLOATZEL: _ClassVar[SpeciesEnum]
+    SPECIES_CHERUBI: _ClassVar[SpeciesEnum]
+    SPECIES_CHERRIM: _ClassVar[SpeciesEnum]
+    SPECIES_SHELLOS: _ClassVar[SpeciesEnum]
+    SPECIES_GASTRODON: _ClassVar[SpeciesEnum]
+    SPECIES_AMBIPOM: _ClassVar[SpeciesEnum]
+    SPECIES_DRIFLOON: _ClassVar[SpeciesEnum]
+    SPECIES_DRIFBLIM: _ClassVar[SpeciesEnum]
+    SPECIES_BUNEARY: _ClassVar[SpeciesEnum]
+    SPECIES_LOPUNNY: _ClassVar[SpeciesEnum]
+    SPECIES_MISMAGIUS: _ClassVar[SpeciesEnum]
+    SPECIES_HONCHKROW: _ClassVar[SpeciesEnum]
+    SPECIES_GLAMEOW: _ClassVar[SpeciesEnum]
+    SPECIES_PURUGLY: _ClassVar[SpeciesEnum]
+    SPECIES_CHINGLING: _ClassVar[SpeciesEnum]
+    SPECIES_STUNKY: _ClassVar[SpeciesEnum]
+    SPECIES_SKUNTANK: _ClassVar[SpeciesEnum]
+    SPECIES_BRONZOR: _ClassVar[SpeciesEnum]
+    SPECIES_BRONZONG: _ClassVar[SpeciesEnum]
+    SPECIES_BONSLY: _ClassVar[SpeciesEnum]
+    SPECIES_MIME_JR: _ClassVar[SpeciesEnum]
+    SPECIES_HAPPINY: _ClassVar[SpeciesEnum]
+    SPECIES_CHATOT: _ClassVar[SpeciesEnum]
+    SPECIES_SPIRITOMB: _ClassVar[SpeciesEnum]
+    SPECIES_GIBLE: _ClassVar[SpeciesEnum]
+    SPECIES_GABITE: _ClassVar[SpeciesEnum]
+    SPECIES_GARCHOMP: _ClassVar[SpeciesEnum]
+    SPECIES_MUNCHLAX: _ClassVar[SpeciesEnum]
+    SPECIES_RIOLU: _ClassVar[SpeciesEnum]
+    SPECIES_LUCARIO: _ClassVar[SpeciesEnum]
+    SPECIES_HIPPOPOTAS: _ClassVar[SpeciesEnum]
+    SPECIES_HIPPOWDON: _ClassVar[SpeciesEnum]
+    SPECIES_SKORUPI: _ClassVar[SpeciesEnum]
+    SPECIES_DRAPION: _ClassVar[SpeciesEnum]
+    SPECIES_CROAGUNK: _ClassVar[SpeciesEnum]
+    SPECIES_TOXICROAK: _ClassVar[SpeciesEnum]
+    SPECIES_CARNIVINE: _ClassVar[SpeciesEnum]
+    SPECIES_FINNEON: _ClassVar[SpeciesEnum]
+    SPECIES_LUMINEON: _ClassVar[SpeciesEnum]
+    SPECIES_MANTYKE: _ClassVar[SpeciesEnum]
+    SPECIES_SNOVER: _ClassVar[SpeciesEnum]
+    SPECIES_ABOMASNOW: _ClassVar[SpeciesEnum]
+    SPECIES_WEAVILE: _ClassVar[SpeciesEnum]
+    SPECIES_MAGNEZONE: _ClassVar[SpeciesEnum]
+    SPECIES_LICKILICKY: _ClassVar[SpeciesEnum]
+    SPECIES_RHYPERIOR: _ClassVar[SpeciesEnum]
+    SPECIES_TANGROWTH: _ClassVar[SpeciesEnum]
+    SPECIES_ELECTIVIRE: _ClassVar[SpeciesEnum]
+    SPECIES_MAGMORTAR: _ClassVar[SpeciesEnum]
+    SPECIES_TOGEKISS: _ClassVar[SpeciesEnum]
+    SPECIES_YANMEGA: _ClassVar[SpeciesEnum]
+    SPECIES_LEAFEON: _ClassVar[SpeciesEnum]
+    SPECIES_GLACEON: _ClassVar[SpeciesEnum]
+    SPECIES_GLISCOR: _ClassVar[SpeciesEnum]
+    SPECIES_MAMOSWINE: _ClassVar[SpeciesEnum]
+    SPECIES_PORYGON_Z: _ClassVar[SpeciesEnum]
+    SPECIES_GALLADE: _ClassVar[SpeciesEnum]
+    SPECIES_PROBOPASS: _ClassVar[SpeciesEnum]
+    SPECIES_DUSKNOIR: _ClassVar[SpeciesEnum]
+    SPECIES_FROSLASS: _ClassVar[SpeciesEnum]
+    SPECIES_ROTOM: _ClassVar[SpeciesEnum]
+    SPECIES_UXIE: _ClassVar[SpeciesEnum]
+    SPECIES_MESPRIT: _ClassVar[SpeciesEnum]
+    SPECIES_AZELF: _ClassVar[SpeciesEnum]
+    SPECIES_DIALGA: _ClassVar[SpeciesEnum]
+    SPECIES_PALKIA: _ClassVar[SpeciesEnum]
+    SPECIES_HEATRAN: _ClassVar[SpeciesEnum]
+    SPECIES_REGIGIGAS: _ClassVar[SpeciesEnum]
+    SPECIES_GIRATINA: _ClassVar[SpeciesEnum]
+    SPECIES_CRESSELIA: _ClassVar[SpeciesEnum]
+    SPECIES_PHIONE: _ClassVar[SpeciesEnum]
+    SPECIES_MANAPHY: _ClassVar[SpeciesEnum]
+    SPECIES_DARKRAI: _ClassVar[SpeciesEnum]
+    SPECIES_SHAYMIN: _ClassVar[SpeciesEnum]
+    SPECIES_ARCEUS: _ClassVar[SpeciesEnum]
+    SPECIES_VICTINI: _ClassVar[SpeciesEnum]
+    SPECIES_SNIVY: _ClassVar[SpeciesEnum]
+    SPECIES_SERVINE: _ClassVar[SpeciesEnum]
+    SPECIES_SERPERIOR: _ClassVar[SpeciesEnum]
+    SPECIES_TEPIG: _ClassVar[SpeciesEnum]
+    SPECIES_PIGNITE: _ClassVar[SpeciesEnum]
+    SPECIES_EMBOAR: _ClassVar[SpeciesEnum]
+    SPECIES_OSHAWOTT: _ClassVar[SpeciesEnum]
+    SPECIES_DEWOTT: _ClassVar[SpeciesEnum]
+    SPECIES_SAMUROTT: _ClassVar[SpeciesEnum]
+    SPECIES_PATRAT: _ClassVar[SpeciesEnum]
+    SPECIES_WATCHOG: _ClassVar[SpeciesEnum]
+    SPECIES_LILLIPUP: _ClassVar[SpeciesEnum]
+    SPECIES_HERDIER: _ClassVar[SpeciesEnum]
+    SPECIES_STOUTLAND: _ClassVar[SpeciesEnum]
+    SPECIES_PURRLOIN: _ClassVar[SpeciesEnum]
+    SPECIES_LIEPARD: _ClassVar[SpeciesEnum]
+    SPECIES_PANSAGE: _ClassVar[SpeciesEnum]
+    SPECIES_SIMISAGE: _ClassVar[SpeciesEnum]
+    SPECIES_PANSEAR: _ClassVar[SpeciesEnum]
+    SPECIES_SIMISEAR: _ClassVar[SpeciesEnum]
+    SPECIES_PANPOUR: _ClassVar[SpeciesEnum]
+    SPECIES_SIMIPOUR: _ClassVar[SpeciesEnum]
+    SPECIES_MUNNA: _ClassVar[SpeciesEnum]
+    SPECIES_MUSHARNA: _ClassVar[SpeciesEnum]
+    SPECIES_PIDOVE: _ClassVar[SpeciesEnum]
+    SPECIES_TRANQUILL: _ClassVar[SpeciesEnum]
+    SPECIES_UNFEZANT: _ClassVar[SpeciesEnum]
+    SPECIES_BLITZLE: _ClassVar[SpeciesEnum]
+    SPECIES_ZEBSTRIKA: _ClassVar[SpeciesEnum]
+    SPECIES_ROGGENROLA: _ClassVar[SpeciesEnum]
+    SPECIES_BOLDORE: _ClassVar[SpeciesEnum]
+    SPECIES_GIGALITH: _ClassVar[SpeciesEnum]
+    SPECIES_WOOBAT: _ClassVar[SpeciesEnum]
+    SPECIES_SWOOBAT: _ClassVar[SpeciesEnum]
+    SPECIES_DRILBUR: _ClassVar[SpeciesEnum]
+    SPECIES_EXCADRILL: _ClassVar[SpeciesEnum]
+    SPECIES_AUDINO: _ClassVar[SpeciesEnum]
+    SPECIES_TIMBURR: _ClassVar[SpeciesEnum]
+    SPECIES_GURDURR: _ClassVar[SpeciesEnum]
+    SPECIES_CONKELDURR: _ClassVar[SpeciesEnum]
+    SPECIES_TYMPOLE: _ClassVar[SpeciesEnum]
+    SPECIES_PALPITOAD: _ClassVar[SpeciesEnum]
+    SPECIES_SEISMITOAD: _ClassVar[SpeciesEnum]
+    SPECIES_THROH: _ClassVar[SpeciesEnum]
+    SPECIES_SAWK: _ClassVar[SpeciesEnum]
+    SPECIES_SEWADDLE: _ClassVar[SpeciesEnum]
+    SPECIES_SWADLOON: _ClassVar[SpeciesEnum]
+    SPECIES_LEAVANNY: _ClassVar[SpeciesEnum]
+    SPECIES_VENIPEDE: _ClassVar[SpeciesEnum]
+    SPECIES_WHIRLIPEDE: _ClassVar[SpeciesEnum]
+    SPECIES_SCOLIPEDE: _ClassVar[SpeciesEnum]
+    SPECIES_COTTONEE: _ClassVar[SpeciesEnum]
+    SPECIES_WHIMSICOTT: _ClassVar[SpeciesEnum]
+    SPECIES_PETILIL: _ClassVar[SpeciesEnum]
+    SPECIES_LILLIGANT: _ClassVar[SpeciesEnum]
+    SPECIES_BASCULIN: _ClassVar[SpeciesEnum]
+    SPECIES_SANDILE: _ClassVar[SpeciesEnum]
+    SPECIES_KROKOROK: _ClassVar[SpeciesEnum]
+    SPECIES_KROOKODILE: _ClassVar[SpeciesEnum]
+    SPECIES_DARUMAKA: _ClassVar[SpeciesEnum]
+    SPECIES_DARMANITAN: _ClassVar[SpeciesEnum]
+    SPECIES_MARACTUS: _ClassVar[SpeciesEnum]
+    SPECIES_DWEBBLE: _ClassVar[SpeciesEnum]
+    SPECIES_CRUSTLE: _ClassVar[SpeciesEnum]
+    SPECIES_SCRAGGY: _ClassVar[SpeciesEnum]
+    SPECIES_SCRAFTY: _ClassVar[SpeciesEnum]
+    SPECIES_SIGILYPH: _ClassVar[SpeciesEnum]
+    SPECIES_YAMASK: _ClassVar[SpeciesEnum]
+    SPECIES_COFAGRIGUS: _ClassVar[SpeciesEnum]
+    SPECIES_TIRTOUGA: _ClassVar[SpeciesEnum]
+    SPECIES_CARRACOSTA: _ClassVar[SpeciesEnum]
+    SPECIES_ARCHEN: _ClassVar[SpeciesEnum]
+    SPECIES_ARCHEOPS: _ClassVar[SpeciesEnum]
+    SPECIES_TRUBBISH: _ClassVar[SpeciesEnum]
+    SPECIES_GARBODOR: _ClassVar[SpeciesEnum]
+    SPECIES_ZORUA: _ClassVar[SpeciesEnum]
+    SPECIES_ZOROARK: _ClassVar[SpeciesEnum]
+    SPECIES_MINCCINO: _ClassVar[SpeciesEnum]
+    SPECIES_CINCCINO: _ClassVar[SpeciesEnum]
+    SPECIES_GOTHITA: _ClassVar[SpeciesEnum]
+    SPECIES_GOTHORITA: _ClassVar[SpeciesEnum]
+    SPECIES_GOTHITELLE: _ClassVar[SpeciesEnum]
+    SPECIES_SOLOSIS: _ClassVar[SpeciesEnum]
+    SPECIES_DUOSION: _ClassVar[SpeciesEnum]
+    SPECIES_REUNICLUS: _ClassVar[SpeciesEnum]
+    SPECIES_DUCKLETT: _ClassVar[SpeciesEnum]
+    SPECIES_SWANNA: _ClassVar[SpeciesEnum]
+    SPECIES_VANILLITE: _ClassVar[SpeciesEnum]
+    SPECIES_VANILLISH: _ClassVar[SpeciesEnum]
+    SPECIES_VANILLUXE: _ClassVar[SpeciesEnum]
+    SPECIES_DEERLING: _ClassVar[SpeciesEnum]
+    SPECIES_SAWSBUCK: _ClassVar[SpeciesEnum]
+    SPECIES_EMOLGA: _ClassVar[SpeciesEnum]
+    SPECIES_KARRABLAST: _ClassVar[SpeciesEnum]
+    SPECIES_ESCAVALIER: _ClassVar[SpeciesEnum]
+    SPECIES_FOONGUS: _ClassVar[SpeciesEnum]
+    SPECIES_AMOONGUSS: _ClassVar[SpeciesEnum]
+    SPECIES_FRILLISH: _ClassVar[SpeciesEnum]
+    SPECIES_JELLICENT: _ClassVar[SpeciesEnum]
+    SPECIES_ALOMOMOLA: _ClassVar[SpeciesEnum]
+    SPECIES_JOLTIK: _ClassVar[SpeciesEnum]
+    SPECIES_GALVANTULA: _ClassVar[SpeciesEnum]
+    SPECIES_FERROSEED: _ClassVar[SpeciesEnum]
+    SPECIES_FERROTHORN: _ClassVar[SpeciesEnum]
+    SPECIES_KLINK: _ClassVar[SpeciesEnum]
+    SPECIES_KLANG: _ClassVar[SpeciesEnum]
+    SPECIES_KLINKLANG: _ClassVar[SpeciesEnum]
+    SPECIES_TYNAMO: _ClassVar[SpeciesEnum]
+    SPECIES_EELEKTRIK: _ClassVar[SpeciesEnum]
+    SPECIES_EELEKTROSS: _ClassVar[SpeciesEnum]
+    SPECIES_ELGYEM: _ClassVar[SpeciesEnum]
+    SPECIES_BEHEEYEM: _ClassVar[SpeciesEnum]
+    SPECIES_LITWICK: _ClassVar[SpeciesEnum]
+    SPECIES_LAMPENT: _ClassVar[SpeciesEnum]
+    SPECIES_CHANDELURE: _ClassVar[SpeciesEnum]
+    SPECIES_AXEW: _ClassVar[SpeciesEnum]
+    SPECIES_FRAXURE: _ClassVar[SpeciesEnum]
+    SPECIES_HAXORUS: _ClassVar[SpeciesEnum]
+    SPECIES_CUBCHOO: _ClassVar[SpeciesEnum]
+    SPECIES_BEARTIC: _ClassVar[SpeciesEnum]
+    SPECIES_CRYOGONAL: _ClassVar[SpeciesEnum]
+    SPECIES_SHELMET: _ClassVar[SpeciesEnum]
+    SPECIES_ACCELGOR: _ClassVar[SpeciesEnum]
+    SPECIES_STUNFISK: _ClassVar[SpeciesEnum]
+    SPECIES_MIENFOO: _ClassVar[SpeciesEnum]
+    SPECIES_MIENSHAO: _ClassVar[SpeciesEnum]
+    SPECIES_DRUDDIGON: _ClassVar[SpeciesEnum]
+    SPECIES_GOLETT: _ClassVar[SpeciesEnum]
+    SPECIES_GOLURK: _ClassVar[SpeciesEnum]
+    SPECIES_PAWNIARD: _ClassVar[SpeciesEnum]
+    SPECIES_BISHARP: _ClassVar[SpeciesEnum]
+    SPECIES_BOUFFALANT: _ClassVar[SpeciesEnum]
+    SPECIES_RUFFLET: _ClassVar[SpeciesEnum]
+    SPECIES_BRAVIARY: _ClassVar[SpeciesEnum]
+    SPECIES_VULLABY: _ClassVar[SpeciesEnum]
+    SPECIES_MANDIBUZZ: _ClassVar[SpeciesEnum]
+    SPECIES_HEATMOR: _ClassVar[SpeciesEnum]
+    SPECIES_DURANT: _ClassVar[SpeciesEnum]
+    SPECIES_DEINO: _ClassVar[SpeciesEnum]
+    SPECIES_ZWEILOUS: _ClassVar[SpeciesEnum]
+    SPECIES_HYDREIGON: _ClassVar[SpeciesEnum]
+    SPECIES_LARVESTA: _ClassVar[SpeciesEnum]
+    SPECIES_VOLCARONA: _ClassVar[SpeciesEnum]
+    SPECIES_COBALION: _ClassVar[SpeciesEnum]
+    SPECIES_TERRAKION: _ClassVar[SpeciesEnum]
+    SPECIES_VIRIZION: _ClassVar[SpeciesEnum]
+    SPECIES_TORNADUS: _ClassVar[SpeciesEnum]
+    SPECIES_THUNDURUS: _ClassVar[SpeciesEnum]
+    SPECIES_RESHIRAM: _ClassVar[SpeciesEnum]
+    SPECIES_ZEKROM: _ClassVar[SpeciesEnum]
+    SPECIES_LANDORUS: _ClassVar[SpeciesEnum]
+    SPECIES_KYUREM: _ClassVar[SpeciesEnum]
+    SPECIES_KELDEO: _ClassVar[SpeciesEnum]
+    SPECIES_MELOETTA: _ClassVar[SpeciesEnum]
+    SPECIES_GENESECT: _ClassVar[SpeciesEnum]
+    SPECIES_CHESPIN: _ClassVar[SpeciesEnum]
+    SPECIES_QUILLADIN: _ClassVar[SpeciesEnum]
+    SPECIES_CHESNAUGHT: _ClassVar[SpeciesEnum]
+    SPECIES_FENNEKIN: _ClassVar[SpeciesEnum]
+    SPECIES_BRAIXEN: _ClassVar[SpeciesEnum]
+    SPECIES_DELPHOX: _ClassVar[SpeciesEnum]
+    SPECIES_FROAKIE: _ClassVar[SpeciesEnum]
+    SPECIES_FROGADIER: _ClassVar[SpeciesEnum]
+    SPECIES_GRENINJA: _ClassVar[SpeciesEnum]
+    SPECIES_BUNNELBY: _ClassVar[SpeciesEnum]
+    SPECIES_DIGGERSBY: _ClassVar[SpeciesEnum]
+    SPECIES_FLETCHLING: _ClassVar[SpeciesEnum]
+    SPECIES_FLETCHINDER: _ClassVar[SpeciesEnum]
+    SPECIES_TALONFLAME: _ClassVar[SpeciesEnum]
+    SPECIES_SCATTERBUG: _ClassVar[SpeciesEnum]
+    SPECIES_SPEWPA: _ClassVar[SpeciesEnum]
+    SPECIES_VIVILLON: _ClassVar[SpeciesEnum]
+    SPECIES_LITLEO: _ClassVar[SpeciesEnum]
+    SPECIES_PYROAR: _ClassVar[SpeciesEnum]
+    SPECIES_FLABEBE: _ClassVar[SpeciesEnum]
+    SPECIES_FLOETTE: _ClassVar[SpeciesEnum]
+    SPECIES_FLORGES: _ClassVar[SpeciesEnum]
+    SPECIES_SKIDDO: _ClassVar[SpeciesEnum]
+    SPECIES_GOGOAT: _ClassVar[SpeciesEnum]
+    SPECIES_PANCHAM: _ClassVar[SpeciesEnum]
+    SPECIES_PANGORO: _ClassVar[SpeciesEnum]
+    SPECIES_FURFROU: _ClassVar[SpeciesEnum]
+    SPECIES_ESPURR: _ClassVar[SpeciesEnum]
+    SPECIES_MEOWSTIC: _ClassVar[SpeciesEnum]
+    SPECIES_HONEDGE: _ClassVar[SpeciesEnum]
+    SPECIES_DOUBLADE: _ClassVar[SpeciesEnum]
+    SPECIES_AEGISLASH: _ClassVar[SpeciesEnum]
+    SPECIES_SPRITZEE: _ClassVar[SpeciesEnum]
+    SPECIES_AROMATISSE: _ClassVar[SpeciesEnum]
+    SPECIES_SWIRLIX: _ClassVar[SpeciesEnum]
+    SPECIES_SLURPUFF: _ClassVar[SpeciesEnum]
+    SPECIES_INKAY: _ClassVar[SpeciesEnum]
+    SPECIES_MALAMAR: _ClassVar[SpeciesEnum]
+    SPECIES_BINACLE: _ClassVar[SpeciesEnum]
+    SPECIES_BARBARACLE: _ClassVar[SpeciesEnum]
+    SPECIES_SKRELP: _ClassVar[SpeciesEnum]
+    SPECIES_DRAGALGE: _ClassVar[SpeciesEnum]
+    SPECIES_CLAUNCHER: _ClassVar[SpeciesEnum]
+    SPECIES_CLAWITZER: _ClassVar[SpeciesEnum]
+    SPECIES_HELIOPTILE: _ClassVar[SpeciesEnum]
+    SPECIES_HELIOLISK: _ClassVar[SpeciesEnum]
+    SPECIES_TYRUNT: _ClassVar[SpeciesEnum]
+    SPECIES_TYRANTRUM: _ClassVar[SpeciesEnum]
+    SPECIES_AMAURA: _ClassVar[SpeciesEnum]
+    SPECIES_AURORUS: _ClassVar[SpeciesEnum]
+    SPECIES_SYLVEON: _ClassVar[SpeciesEnum]
+    SPECIES_HAWLUCHA: _ClassVar[SpeciesEnum]
+    SPECIES_DEDENNE: _ClassVar[SpeciesEnum]
+    SPECIES_CARBINK: _ClassVar[SpeciesEnum]
+    SPECIES_GOOMY: _ClassVar[SpeciesEnum]
+    SPECIES_SLIGGOO: _ClassVar[SpeciesEnum]
+    SPECIES_GOODRA: _ClassVar[SpeciesEnum]
+    SPECIES_KLEFKI: _ClassVar[SpeciesEnum]
+    SPECIES_PHANTUMP: _ClassVar[SpeciesEnum]
+    SPECIES_TREVENANT: _ClassVar[SpeciesEnum]
+    SPECIES_PUMPKABOO: _ClassVar[SpeciesEnum]
+    SPECIES_GOURGEIST: _ClassVar[SpeciesEnum]
+    SPECIES_BERGMITE: _ClassVar[SpeciesEnum]
+    SPECIES_AVALUGG: _ClassVar[SpeciesEnum]
+    SPECIES_NOIBAT: _ClassVar[SpeciesEnum]
+    SPECIES_NOIVERN: _ClassVar[SpeciesEnum]
+    SPECIES_XERNEAS: _ClassVar[SpeciesEnum]
+    SPECIES_YVELTAL: _ClassVar[SpeciesEnum]
+    SPECIES_ZYGARDE: _ClassVar[SpeciesEnum]
+    SPECIES_DIANCIE: _ClassVar[SpeciesEnum]
+    SPECIES_HOOPA: _ClassVar[SpeciesEnum]
+    SPECIES_VOLCANION: _ClassVar[SpeciesEnum]
+    SPECIES_ROWLET: _ClassVar[SpeciesEnum]
+    SPECIES_DARTRIX: _ClassVar[SpeciesEnum]
+    SPECIES_DECIDUEYE: _ClassVar[SpeciesEnum]
+    SPECIES_LITTEN: _ClassVar[SpeciesEnum]
+    SPECIES_TORRACAT: _ClassVar[SpeciesEnum]
+    SPECIES_INCINEROAR: _ClassVar[SpeciesEnum]
+    SPECIES_POPPLIO: _ClassVar[SpeciesEnum]
+    SPECIES_BRIONNE: _ClassVar[SpeciesEnum]
+    SPECIES_PRIMARINA: _ClassVar[SpeciesEnum]
+    SPECIES_PIKIPEK: _ClassVar[SpeciesEnum]
+    SPECIES_TRUMBEAK: _ClassVar[SpeciesEnum]
+    SPECIES_TOUCANNON: _ClassVar[SpeciesEnum]
+    SPECIES_YUNGOOS: _ClassVar[SpeciesEnum]
+    SPECIES_GUMSHOOS: _ClassVar[SpeciesEnum]
+    SPECIES_GRUBBIN: _ClassVar[SpeciesEnum]
+    SPECIES_CHARJABUG: _ClassVar[SpeciesEnum]
+    SPECIES_VIKAVOLT: _ClassVar[SpeciesEnum]
+    SPECIES_CRABRAWLER: _ClassVar[SpeciesEnum]
+    SPECIES_CRABOMINABLE: _ClassVar[SpeciesEnum]
+    SPECIES_ORICORIO: _ClassVar[SpeciesEnum]
+    SPECIES_CUTIEFLY: _ClassVar[SpeciesEnum]
+    SPECIES_RIBOMBEE: _ClassVar[SpeciesEnum]
+    SPECIES_ROCKRUFF: _ClassVar[SpeciesEnum]
+    SPECIES_LYCANROC: _ClassVar[SpeciesEnum]
+    SPECIES_WISHIWASHI: _ClassVar[SpeciesEnum]
+    SPECIES_MAREANIE: _ClassVar[SpeciesEnum]
+    SPECIES_TOXAPEX: _ClassVar[SpeciesEnum]
+    SPECIES_MUDBRAY: _ClassVar[SpeciesEnum]
+    SPECIES_MUDSDALE: _ClassVar[SpeciesEnum]
+    SPECIES_DEWPIDER: _ClassVar[SpeciesEnum]
+    SPECIES_ARAQUANID: _ClassVar[SpeciesEnum]
+    SPECIES_FOMANTIS: _ClassVar[SpeciesEnum]
+    SPECIES_LURANTIS: _ClassVar[SpeciesEnum]
+    SPECIES_MORELULL: _ClassVar[SpeciesEnum]
+    SPECIES_SHIINOTIC: _ClassVar[SpeciesEnum]
+    SPECIES_SALANDIT: _ClassVar[SpeciesEnum]
+    SPECIES_SALAZZLE: _ClassVar[SpeciesEnum]
+    SPECIES_STUFFUL: _ClassVar[SpeciesEnum]
+    SPECIES_BEWEAR: _ClassVar[SpeciesEnum]
+    SPECIES_BOUNSWEET: _ClassVar[SpeciesEnum]
+    SPECIES_STEENEE: _ClassVar[SpeciesEnum]
+    SPECIES_TSAREENA: _ClassVar[SpeciesEnum]
+    SPECIES_COMFEY: _ClassVar[SpeciesEnum]
+    SPECIES_ORANGURU: _ClassVar[SpeciesEnum]
+    SPECIES_PASSIMIAN: _ClassVar[SpeciesEnum]
+    SPECIES_WIMPOD: _ClassVar[SpeciesEnum]
+    SPECIES_GOLISOPOD: _ClassVar[SpeciesEnum]
+    SPECIES_SANDYGAST: _ClassVar[SpeciesEnum]
+    SPECIES_PALOSSAND: _ClassVar[SpeciesEnum]
+    SPECIES_PYUKUMUKU: _ClassVar[SpeciesEnum]
+    SPECIES_TYPE_NULL: _ClassVar[SpeciesEnum]
+    SPECIES_SILVALLY: _ClassVar[SpeciesEnum]
+    SPECIES_MINIOR: _ClassVar[SpeciesEnum]
+    SPECIES_KOMALA: _ClassVar[SpeciesEnum]
+    SPECIES_TURTONATOR: _ClassVar[SpeciesEnum]
+    SPECIES_TOGEDEMARU: _ClassVar[SpeciesEnum]
+    SPECIES_MIMIKYU: _ClassVar[SpeciesEnum]
+    SPECIES_BRUXISH: _ClassVar[SpeciesEnum]
+    SPECIES_DRAMPA: _ClassVar[SpeciesEnum]
+    SPECIES_DHELMISE: _ClassVar[SpeciesEnum]
+    SPECIES_JANGMO_O: _ClassVar[SpeciesEnum]
+    SPECIES_HAKAMO_O: _ClassVar[SpeciesEnum]
+    SPECIES_KOMMO_O: _ClassVar[SpeciesEnum]
+    SPECIES_TAPU_KOKO: _ClassVar[SpeciesEnum]
+    SPECIES_TAPU_LELE: _ClassVar[SpeciesEnum]
+    SPECIES_TAPU_BULU: _ClassVar[SpeciesEnum]
+    SPECIES_TAPU_FINI: _ClassVar[SpeciesEnum]
+    SPECIES_COSMOG: _ClassVar[SpeciesEnum]
+    SPECIES_COSMOEM: _ClassVar[SpeciesEnum]
+    SPECIES_SOLGALEO: _ClassVar[SpeciesEnum]
+    SPECIES_LUNALA: _ClassVar[SpeciesEnum]
+    SPECIES_NIHILEGO: _ClassVar[SpeciesEnum]
+    SPECIES_BUZZWOLE: _ClassVar[SpeciesEnum]
+    SPECIES_PHEROMOSA: _ClassVar[SpeciesEnum]
+    SPECIES_XURKITREE: _ClassVar[SpeciesEnum]
+    SPECIES_CELESTEELA: _ClassVar[SpeciesEnum]
+    SPECIES_KARTANA: _ClassVar[SpeciesEnum]
+    SPECIES_GUZZLORD: _ClassVar[SpeciesEnum]
+    SPECIES_NECROZMA: _ClassVar[SpeciesEnum]
+    SPECIES_MAGEARNA: _ClassVar[SpeciesEnum]
+    SPECIES_MARSHADOW: _ClassVar[SpeciesEnum]
+    SPECIES_POIPOLE: _ClassVar[SpeciesEnum]
+    SPECIES_NAGANADEL: _ClassVar[SpeciesEnum]
+    SPECIES_STAKATAKA: _ClassVar[SpeciesEnum]
+    SPECIES_BLACEPHALON: _ClassVar[SpeciesEnum]
+    SPECIES_ZERAORA: _ClassVar[SpeciesEnum]
+    SPECIES_MELTAN: _ClassVar[SpeciesEnum]
+    SPECIES_MELMETAL: _ClassVar[SpeciesEnum]
+    SPECIES_GROOKEY: _ClassVar[SpeciesEnum]
+    SPECIES_THWACKEY: _ClassVar[SpeciesEnum]
+    SPECIES_RILLABOOM: _ClassVar[SpeciesEnum]
+    SPECIES_SCORBUNNY: _ClassVar[SpeciesEnum]
+    SPECIES_RABOOT: _ClassVar[SpeciesEnum]
+    SPECIES_CINDERACE: _ClassVar[SpeciesEnum]
+    SPECIES_SOBBLE: _ClassVar[SpeciesEnum]
+    SPECIES_DRIZZILE: _ClassVar[SpeciesEnum]
+    SPECIES_INTELEON: _ClassVar[SpeciesEnum]
+    SPECIES_SKWOVET: _ClassVar[SpeciesEnum]
+    SPECIES_GREEDENT: _ClassVar[SpeciesEnum]
+    SPECIES_ROOKIDEE: _ClassVar[SpeciesEnum]
+    SPECIES_CORVISQUIRE: _ClassVar[SpeciesEnum]
+    SPECIES_CORVIKNIGHT: _ClassVar[SpeciesEnum]
+    SPECIES_BLIPBUG: _ClassVar[SpeciesEnum]
+    SPECIES_DOTTLER: _ClassVar[SpeciesEnum]
+    SPECIES_ORBEETLE: _ClassVar[SpeciesEnum]
+    SPECIES_NICKIT: _ClassVar[SpeciesEnum]
+    SPECIES_THIEVUL: _ClassVar[SpeciesEnum]
+    SPECIES_GOSSIFLEUR: _ClassVar[SpeciesEnum]
+    SPECIES_ELDEGOSS: _ClassVar[SpeciesEnum]
+    SPECIES_WOOLOO: _ClassVar[SpeciesEnum]
+    SPECIES_DUBWOOL: _ClassVar[SpeciesEnum]
+    SPECIES_CHEWTLE: _ClassVar[SpeciesEnum]
+    SPECIES_DREDNAW: _ClassVar[SpeciesEnum]
+    SPECIES_YAMPER: _ClassVar[SpeciesEnum]
+    SPECIES_BOLTUND: _ClassVar[SpeciesEnum]
+    SPECIES_ROLYCOLY: _ClassVar[SpeciesEnum]
+    SPECIES_CARKOL: _ClassVar[SpeciesEnum]
+    SPECIES_COALOSSAL: _ClassVar[SpeciesEnum]
+    SPECIES_APPLIN: _ClassVar[SpeciesEnum]
+    SPECIES_FLAPPLE: _ClassVar[SpeciesEnum]
+    SPECIES_APPLETUN: _ClassVar[SpeciesEnum]
+    SPECIES_SILICOBRA: _ClassVar[SpeciesEnum]
+    SPECIES_SANDACONDA: _ClassVar[SpeciesEnum]
+    SPECIES_CRAMORANT: _ClassVar[SpeciesEnum]
+    SPECIES_ARROKUDA: _ClassVar[SpeciesEnum]
+    SPECIES_BARRASKEWDA: _ClassVar[SpeciesEnum]
+    SPECIES_TOXEL: _ClassVar[SpeciesEnum]
+    SPECIES_TOXTRICITY: _ClassVar[SpeciesEnum]
+    SPECIES_SIZZLIPEDE: _ClassVar[SpeciesEnum]
+    SPECIES_CENTISKORCH: _ClassVar[SpeciesEnum]
+    SPECIES_CLOBBOPUS: _ClassVar[SpeciesEnum]
+    SPECIES_GRAPPLOCT: _ClassVar[SpeciesEnum]
+    SPECIES_SINISTEA: _ClassVar[SpeciesEnum]
+    SPECIES_POLTEAGEIST: _ClassVar[SpeciesEnum]
+    SPECIES_HATENNA: _ClassVar[SpeciesEnum]
+    SPECIES_HATTREM: _ClassVar[SpeciesEnum]
+    SPECIES_HATTERENE: _ClassVar[SpeciesEnum]
+    SPECIES_IMPIDIMP: _ClassVar[SpeciesEnum]
+    SPECIES_MORGREM: _ClassVar[SpeciesEnum]
+    SPECIES_GRIMMSNARL: _ClassVar[SpeciesEnum]
+    SPECIES_OBSTAGOON: _ClassVar[SpeciesEnum]
+    SPECIES_PERRSERKER: _ClassVar[SpeciesEnum]
+    SPECIES_CURSOLA: _ClassVar[SpeciesEnum]
+    SPECIES_SIRFETCHD: _ClassVar[SpeciesEnum]
+    SPECIES_MR_RIME: _ClassVar[SpeciesEnum]
+    SPECIES_RUNERIGUS: _ClassVar[SpeciesEnum]
+    SPECIES_MILCERY: _ClassVar[SpeciesEnum]
+    SPECIES_ALCREMIE: _ClassVar[SpeciesEnum]
+    SPECIES_FALINKS: _ClassVar[SpeciesEnum]
+    SPECIES_PINCURCHIN: _ClassVar[SpeciesEnum]
+    SPECIES_SNOM: _ClassVar[SpeciesEnum]
+    SPECIES_FROSMOTH: _ClassVar[SpeciesEnum]
+    SPECIES_STONJOURNER: _ClassVar[SpeciesEnum]
+    SPECIES_EISCUE: _ClassVar[SpeciesEnum]
+    SPECIES_INDEEDEE: _ClassVar[SpeciesEnum]
+    SPECIES_MORPEKO: _ClassVar[SpeciesEnum]
+    SPECIES_CUFANT: _ClassVar[SpeciesEnum]
+    SPECIES_COPPERAJAH: _ClassVar[SpeciesEnum]
+    SPECIES_DRACOZOLT: _ClassVar[SpeciesEnum]
+    SPECIES_ARCTOZOLT: _ClassVar[SpeciesEnum]
+    SPECIES_DRACOVISH: _ClassVar[SpeciesEnum]
+    SPECIES_ARCTOVISH: _ClassVar[SpeciesEnum]
+    SPECIES_DURALUDON: _ClassVar[SpeciesEnum]
+    SPECIES_DREEPY: _ClassVar[SpeciesEnum]
+    SPECIES_DRAKLOAK: _ClassVar[SpeciesEnum]
+    SPECIES_DRAGAPULT: _ClassVar[SpeciesEnum]
+    SPECIES_ZACIAN: _ClassVar[SpeciesEnum]
+    SPECIES_ZAMAZENTA: _ClassVar[SpeciesEnum]
+    SPECIES_ETERNATUS: _ClassVar[SpeciesEnum]
+    SPECIES_KUBFU: _ClassVar[SpeciesEnum]
+    SPECIES_URSHIFU: _ClassVar[SpeciesEnum]
+    SPECIES_ZARUDE: _ClassVar[SpeciesEnum]
+    SPECIES_REGIELEKI: _ClassVar[SpeciesEnum]
+    SPECIES_REGIDRAGO: _ClassVar[SpeciesEnum]
+    SPECIES_GLASTRIER: _ClassVar[SpeciesEnum]
+    SPECIES_SPECTRIER: _ClassVar[SpeciesEnum]
+    SPECIES_CALYREX: _ClassVar[SpeciesEnum]
+    SPECIES_WYRDEER: _ClassVar[SpeciesEnum]
+    SPECIES_KLEAVOR: _ClassVar[SpeciesEnum]
+    SPECIES_URSALUNA: _ClassVar[SpeciesEnum]
+    SPECIES_BASCULEGION: _ClassVar[SpeciesEnum]
+    SPECIES_SNEASLER: _ClassVar[SpeciesEnum]
+    SPECIES_OVERQWIL: _ClassVar[SpeciesEnum]
+    SPECIES_ENAMORUS: _ClassVar[SpeciesEnum]
+    SPECIES_SPRIGATITO: _ClassVar[SpeciesEnum]
+    SPECIES_FLORAGATO: _ClassVar[SpeciesEnum]
+    SPECIES_MEOWSCARADA: _ClassVar[SpeciesEnum]
+    SPECIES_FUECOCO: _ClassVar[SpeciesEnum]
+    SPECIES_CROCALOR: _ClassVar[SpeciesEnum]
+    SPECIES_SKELEDIRGE: _ClassVar[SpeciesEnum]
+    SPECIES_QUAXLY: _ClassVar[SpeciesEnum]
+    SPECIES_QUAXWELL: _ClassVar[SpeciesEnum]
+    SPECIES_QUAQUAVAL: _ClassVar[SpeciesEnum]
+    SPECIES_LECHONK: _ClassVar[SpeciesEnum]
+    SPECIES_OINKOLOGNE: _ClassVar[SpeciesEnum]
+    SPECIES_TAROUNTULA: _ClassVar[SpeciesEnum]
+    SPECIES_SPIDOPS: _ClassVar[SpeciesEnum]
+    SPECIES_NYMBLE: _ClassVar[SpeciesEnum]
+    SPECIES_LOKIX: _ClassVar[SpeciesEnum]
+    SPECIES_PAWMI: _ClassVar[SpeciesEnum]
+    SPECIES_PAWMO: _ClassVar[SpeciesEnum]
+    SPECIES_PAWMOT: _ClassVar[SpeciesEnum]
+    SPECIES_TANDEMAUS: _ClassVar[SpeciesEnum]
+    SPECIES_MAUSHOLD: _ClassVar[SpeciesEnum]
+    SPECIES_FIDOUGH: _ClassVar[SpeciesEnum]
+    SPECIES_DACHSBUN: _ClassVar[SpeciesEnum]
+    SPECIES_SMOLIV: _ClassVar[SpeciesEnum]
+    SPECIES_DOLLIV: _ClassVar[SpeciesEnum]
+    SPECIES_ARBOLIVA: _ClassVar[SpeciesEnum]
+    SPECIES_SQUAWKABILLY: _ClassVar[SpeciesEnum]
+    SPECIES_NACLI: _ClassVar[SpeciesEnum]
+    SPECIES_NACLSTACK: _ClassVar[SpeciesEnum]
+    SPECIES_GARGANACL: _ClassVar[SpeciesEnum]
+    SPECIES_CHARCADET: _ClassVar[SpeciesEnum]
+    SPECIES_ARMAROUGE: _ClassVar[SpeciesEnum]
+    SPECIES_CERULEDGE: _ClassVar[SpeciesEnum]
+    SPECIES_TADBULB: _ClassVar[SpeciesEnum]
+    SPECIES_BELLIBOLT: _ClassVar[SpeciesEnum]
+    SPECIES_WATTREL: _ClassVar[SpeciesEnum]
+    SPECIES_KILOWATTREL: _ClassVar[SpeciesEnum]
+    SPECIES_MASCHIFF: _ClassVar[SpeciesEnum]
+    SPECIES_MABOSSTIFF: _ClassVar[SpeciesEnum]
+    SPECIES_SHROODLE: _ClassVar[SpeciesEnum]
+    SPECIES_GRAFAIAI: _ClassVar[SpeciesEnum]
+    SPECIES_BRAMBLIN: _ClassVar[SpeciesEnum]
+    SPECIES_BRAMBLEGHAST: _ClassVar[SpeciesEnum]
+    SPECIES_TOEDSCOOL: _ClassVar[SpeciesEnum]
+    SPECIES_TOEDSCRUEL: _ClassVar[SpeciesEnum]
+    SPECIES_KLAWF: _ClassVar[SpeciesEnum]
+    SPECIES_CAPSAKID: _ClassVar[SpeciesEnum]
+    SPECIES_SCOVILLAIN: _ClassVar[SpeciesEnum]
+    SPECIES_RELLOR: _ClassVar[SpeciesEnum]
+    SPECIES_RABSCA: _ClassVar[SpeciesEnum]
+    SPECIES_FLITTLE: _ClassVar[SpeciesEnum]
+    SPECIES_ESPATHRA: _ClassVar[SpeciesEnum]
+    SPECIES_TINKATINK: _ClassVar[SpeciesEnum]
+    SPECIES_TINKATUFF: _ClassVar[SpeciesEnum]
+    SPECIES_TINKATON: _ClassVar[SpeciesEnum]
+    SPECIES_WIGLETT: _ClassVar[SpeciesEnum]
+    SPECIES_WUGTRIO: _ClassVar[SpeciesEnum]
+    SPECIES_BOMBIRDIER: _ClassVar[SpeciesEnum]
+    SPECIES_FINIZEN: _ClassVar[SpeciesEnum]
+    SPECIES_PALAFIN: _ClassVar[SpeciesEnum]
+    SPECIES_VAROOM: _ClassVar[SpeciesEnum]
+    SPECIES_REVAVROOM: _ClassVar[SpeciesEnum]
+    SPECIES_CYCLIZAR: _ClassVar[SpeciesEnum]
+    SPECIES_ORTHWORM: _ClassVar[SpeciesEnum]
+    SPECIES_GLIMMET: _ClassVar[SpeciesEnum]
+    SPECIES_GLIMMORA: _ClassVar[SpeciesEnum]
+    SPECIES_GREAVARD: _ClassVar[SpeciesEnum]
+    SPECIES_HOUNDSTONE: _ClassVar[SpeciesEnum]
+    SPECIES_FLAMIGO: _ClassVar[SpeciesEnum]
+    SPECIES_CETODDLE: _ClassVar[SpeciesEnum]
+    SPECIES_CETITAN: _ClassVar[SpeciesEnum]
+    SPECIES_VELUZA: _ClassVar[SpeciesEnum]
+    SPECIES_DONDOZO: _ClassVar[SpeciesEnum]
+    SPECIES_TATSUGIRI: _ClassVar[SpeciesEnum]
+    SPECIES_ANNIHILAPE: _ClassVar[SpeciesEnum]
+    SPECIES_CLODSIRE: _ClassVar[SpeciesEnum]
+    SPECIES_FARIGIRAF: _ClassVar[SpeciesEnum]
+    SPECIES_DUDUNSPARCE: _ClassVar[SpeciesEnum]
+    SPECIES_KINGAMBIT: _ClassVar[SpeciesEnum]
+    SPECIES_GREAT_TUSK: _ClassVar[SpeciesEnum]
+    SPECIES_SCREAM_TAIL: _ClassVar[SpeciesEnum]
+    SPECIES_BRUTE_BONNET: _ClassVar[SpeciesEnum]
+    SPECIES_FLUTTER_MANE: _ClassVar[SpeciesEnum]
+    SPECIES_SLITHER_WING: _ClassVar[SpeciesEnum]
+    SPECIES_SANDY_SHOCKS: _ClassVar[SpeciesEnum]
+    SPECIES_IRON_TREADS: _ClassVar[SpeciesEnum]
+    SPECIES_IRON_BUNDLE: _ClassVar[SpeciesEnum]
+    SPECIES_IRON_HANDS: _ClassVar[SpeciesEnum]
+    SPECIES_IRON_JUGULIS: _ClassVar[SpeciesEnum]
+    SPECIES_IRON_MOTH: _ClassVar[SpeciesEnum]
+    SPECIES_IRON_THORNS: _ClassVar[SpeciesEnum]
+    SPECIES_FRIGIBAX: _ClassVar[SpeciesEnum]
+    SPECIES_ARCTIBAX: _ClassVar[SpeciesEnum]
+    SPECIES_BAXCALIBUR: _ClassVar[SpeciesEnum]
+    SPECIES_GIMMIGHOUL: _ClassVar[SpeciesEnum]
+    SPECIES_GHOLDENGO: _ClassVar[SpeciesEnum]
+    SPECIES_WO_CHIEN: _ClassVar[SpeciesEnum]
+    SPECIES_CHIEN_PAO: _ClassVar[SpeciesEnum]
+    SPECIES_TING_LU: _ClassVar[SpeciesEnum]
+    SPECIES_CHI_YU: _ClassVar[SpeciesEnum]
+    SPECIES_ROARING_MOON: _ClassVar[SpeciesEnum]
+    SPECIES_IRON_VALIANT: _ClassVar[SpeciesEnum]
+    SPECIES_KORAIDON: _ClassVar[SpeciesEnum]
+    SPECIES_MIRAIDON: _ClassVar[SpeciesEnum]
+    SPECIES_WALKING_WAKE: _ClassVar[SpeciesEnum]
+    SPECIES_IRON_LEAVES: _ClassVar[SpeciesEnum]
+    SPECIES_DIPPLIN: _ClassVar[SpeciesEnum]
+    SPECIES_POLTCHAGEIST: _ClassVar[SpeciesEnum]
+    SPECIES_SINISTCHA: _ClassVar[SpeciesEnum]
+    SPECIES_OKIDOGI: _ClassVar[SpeciesEnum]
+    SPECIES_MUNKIDORI: _ClassVar[SpeciesEnum]
+    SPECIES_FEZANDIPITI: _ClassVar[SpeciesEnum]
+    SPECIES_OGERPON: _ClassVar[SpeciesEnum]
+    SPECIES_ARCHALUDON: _ClassVar[SpeciesEnum]
+    SPECIES_HYDRAPPLE: _ClassVar[SpeciesEnum]
+    SPECIES_GOUGING_FIRE: _ClassVar[SpeciesEnum]
+    SPECIES_RAGING_BOLT: _ClassVar[SpeciesEnum]
+    SPECIES_IRON_BOULDER: _ClassVar[SpeciesEnum]
+    SPECIES_IRON_CROWN: _ClassVar[SpeciesEnum]
+    SPECIES_TERAPAGOS: _ClassVar[SpeciesEnum]
+    SPECIES_PECHARUNT: _ClassVar[SpeciesEnum]
+    SPECIES_PHANTOWL: _ClassVar[SpeciesEnum]
+    SPECIES_DUELUMBER: _ClassVar[SpeciesEnum]
+    SPECIES_ESCARGINITE: _ClassVar[SpeciesEnum]
+    SPECIES_ARACHTRES: _ClassVar[SpeciesEnum]
+    SPECIES_FLAIRGRANCE: _ClassVar[SpeciesEnum]
+    SPECIES_POLARTIC: _ClassVar[SpeciesEnum]
+    SPECIES_ARASHINNE: _ClassVar[SpeciesEnum]
+    SPECIES_DREADNAUT: _ClassVar[SpeciesEnum]
+    SPECIES_BOARLOCK: _ClassVar[SpeciesEnum]
+    SPECIES_HELIOSUNNY: _ClassVar[SpeciesEnum]
+    SPECIES_SOPRANICE: _ClassVar[SpeciesEnum]
+    SPECIES_BEEFENDER: _ClassVar[SpeciesEnum]
+    SPECIES_SALAZARUS: _ClassVar[SpeciesEnum]
+    SPECIES_GOOSCHASE: _ClassVar[SpeciesEnum]
+    SPECIES_LEPASTRY: _ClassVar[SpeciesEnum]
+    SPECIES_GYARADEATH: _ClassVar[SpeciesEnum]
+    SPECIES_TORTEMPLE: _ClassVar[SpeciesEnum]
+    SPECIES_BRONTONANA: _ClassVar[SpeciesEnum]
+    SPECIES_DREDWOOD: _ClassVar[SpeciesEnum]
+    SPECIES_CORM: _ClassVar[SpeciesEnum]
+    SPECIES_CORMOTH: _ClassVar[SpeciesEnum]
+    SPECIES_POPCORM: _ClassVar[SpeciesEnum]
+    SPECIES_BLIZZARD_MAW: _ClassVar[SpeciesEnum]
+    SPECIES_LUMBERING_SLOTH: _ClassVar[SpeciesEnum]
+    SPECIES_IRON_CARAPACE: _ClassVar[SpeciesEnum]
+    SPECIES_MAGMENOUS: _ClassVar[SpeciesEnum]
+    SPECIES_KAIOSEA: _ClassVar[SpeciesEnum]
+    SPECIES_SLYDUCK: _ClassVar[SpeciesEnum]
+    SPECIES_SHYDUCK: _ClassVar[SpeciesEnum]
+    SPECIES_MARBEEP: _ClassVar[SpeciesEnum]
+    SPECIES_FLUFFBEE: _ClassVar[SpeciesEnum]
+    SPECIES_AMPHYBUZZ: _ClassVar[SpeciesEnum]
+    SPECIES_BARIONG: _ClassVar[SpeciesEnum]
+    SPECIES_CRABRUISER_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_PHANFERNAL: _ClassVar[SpeciesEnum]
+    SPECIES_SKULBERUS: _ClassVar[SpeciesEnum]
+    SPECIES_VELOZEL: _ClassVar[SpeciesEnum]
+    SPECIES_BEWARDEN_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_BUBBLEO: _ClassVar[SpeciesEnum]
+    SPECIES_HYDROAR: _ClassVar[SpeciesEnum]
+    SPECIES_GRANITUN: _ClassVar[SpeciesEnum]
+    SPECIES_FUJIFLAP: _ClassVar[SpeciesEnum]
+    SPECIES_BURMY_ETERNA: _ClassVar[SpeciesEnum]
+    SPECIES_SAGARACAS: _ClassVar[SpeciesEnum]
+    SPECIES_LUMINOSITEON: _ClassVar[SpeciesEnum]
+    SPECIES_CRAWDAUNTLES: _ClassVar[SpeciesEnum]
+    SPECIES_SCRAFSTER: _ClassVar[SpeciesEnum]
+    SPECIES_IRON_VOCA: _ClassVar[SpeciesEnum]
+    SPECIES_MORPEKYLL: _ClassVar[SpeciesEnum]
+    SPECIES_FROSTULA: _ClassVar[SpeciesEnum]
+    SPECIES_TOXAPEX_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_DUDUDUNSPARCE: _ClassVar[SpeciesEnum]
+    SPECIES_DUDUDUNSPARCE_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_OGERPON_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_OGERPON_HEARTHFLAME_MASK_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_OGERPON_CORNERSTONE_MASK_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_OGERPON_WELLSPRING_MASK_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_SEERKAT: _ClassVar[SpeciesEnum]
+    SPECIES_TENTAGREWL: _ClassVar[SpeciesEnum]
+    SPECIES_CACJACK: _ClassVar[SpeciesEnum]
+    SPECIES_TYRANJOULA: _ClassVar[SpeciesEnum]
+    SPECIES_JAGGED_CHUNGULIS: _ClassVar[SpeciesEnum]
+    SPECIES_DEDELIBIRD: _ClassVar[SpeciesEnum]
+    SPECIES_KRAMPIRD: _ClassVar[SpeciesEnum]
+    SPECIES_IRON_PALETTE: _ClassVar[SpeciesEnum]
+    SPECIES_CARBONIX: _ClassVar[SpeciesEnum]
+    SPECIES_WISPYWASPY: _ClassVar[SpeciesEnum]
+    SPECIES_IRON_SCYTHE: _ClassVar[SpeciesEnum]
+    SPECIES_WOOLY_WORM: _ClassVar[SpeciesEnum]
+    SPECIES_HERACREUS: _ClassVar[SpeciesEnum]
+    SPECIES_GROTOM: _ClassVar[SpeciesEnum]
+    SPECIES_ORCHESTOT: _ClassVar[SpeciesEnum]
+    SPECIES_QUEENGAMBIT: _ClassVar[SpeciesEnum]
+    SPECIES_PENTADUG: _ClassVar[SpeciesEnum]
+    SPECIES_ABYSSAND: _ClassVar[SpeciesEnum]
+    SPECIES_PENTAWUG: _ClassVar[SpeciesEnum]
+    SPECIES_RATIKING: _ClassVar[SpeciesEnum]
+    SPECIES_RATFIOSO: _ClassVar[SpeciesEnum]
+    SPECIES_GUARDOZEL: _ClassVar[SpeciesEnum]
+    SPECIES_BENICCINO: _ClassVar[SpeciesEnum]
+    SPECIES_BEWARDEN: _ClassVar[SpeciesEnum]
+    SPECIES_TORRENTULA: _ClassVar[SpeciesEnum]
+    SPECIES_SPINDAZE: _ClassVar[SpeciesEnum]
+    SPECIES_BLOCLI: _ClassVar[SpeciesEnum]
+    SPECIES_BLOXTACK: _ClassVar[SpeciesEnum]
+    SPECIES_GARGABLOX: _ClassVar[SpeciesEnum]
+    SPECIES_HIPPOPOTATO: _ClassVar[SpeciesEnum]
+    SPECIES_HIPPOTATON: _ClassVar[SpeciesEnum]
+    SPECIES_HARVESTING_TYRANT: _ClassVar[SpeciesEnum]
+    SPECIES_IRON_SPIRALS: _ClassVar[SpeciesEnum]
+    SPECIES_IRON_SABER: _ClassVar[SpeciesEnum]
+    SPECIES_HYPNOCROAK: _ClassVar[SpeciesEnum]
+    SPECIES_PLUNDERTOW: _ClassVar[SpeciesEnum]
+    SPECIES_VENUSAUR_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_CHARIZARD_MEGA_X: _ClassVar[SpeciesEnum]
+    SPECIES_CHARIZARD_MEGA_Y: _ClassVar[SpeciesEnum]
+    SPECIES_BLASTOISE_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_BEEDRILL_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_PIDGEOT_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_ALAKAZAM_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_SLOWBRO_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_GENGAR_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_KANGASKHAN_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_PINSIR_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_GYARADOS_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_AERODACTYL_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_MEWTWO_MEGA_X: _ClassVar[SpeciesEnum]
+    SPECIES_MEWTWO_MEGA_Y: _ClassVar[SpeciesEnum]
+    SPECIES_AMPHAROS_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_STEELIX_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_SCIZOR_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_HERACROSS_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_HOUNDOOM_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_TYRANITAR_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_SCEPTILE_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_BLAZIKEN_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_SWAMPERT_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_GARDEVOIR_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_SABLEYE_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_MAWILE_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_AGGRON_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_MEDICHAM_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_MANECTRIC_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_SHARPEDO_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_CAMERUPT_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_ALTARIA_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_BANETTE_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_ABSOL_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_GLALIE_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_SALAMENCE_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_METAGROSS_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_LATIAS_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_LATIOS_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_LOPUNNY_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_GARCHOMP_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_LUCARIO_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_ABOMASNOW_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_GALLADE_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_AUDINO_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_DIANCIE_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_RAYQUAZA_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_KYOGRE_PRIMAL: _ClassVar[SpeciesEnum]
+    SPECIES_GROUDON_PRIMAL: _ClassVar[SpeciesEnum]
+    SPECIES_RATTATA_ALOLAN: _ClassVar[SpeciesEnum]
+    SPECIES_RATICATE_ALOLAN: _ClassVar[SpeciesEnum]
+    SPECIES_RAICHU_ALOLAN: _ClassVar[SpeciesEnum]
+    SPECIES_SANDSHREW_ALOLAN: _ClassVar[SpeciesEnum]
+    SPECIES_SANDSLASH_ALOLAN: _ClassVar[SpeciesEnum]
+    SPECIES_VULPIX_ALOLAN: _ClassVar[SpeciesEnum]
+    SPECIES_NINETALES_ALOLAN: _ClassVar[SpeciesEnum]
+    SPECIES_DIGLETT_ALOLAN: _ClassVar[SpeciesEnum]
+    SPECIES_DUGTRIO_ALOLAN: _ClassVar[SpeciesEnum]
+    SPECIES_MEOWTH_ALOLAN: _ClassVar[SpeciesEnum]
+    SPECIES_PERSIAN_ALOLAN: _ClassVar[SpeciesEnum]
+    SPECIES_GEODUDE_ALOLAN: _ClassVar[SpeciesEnum]
+    SPECIES_GRAVELER_ALOLAN: _ClassVar[SpeciesEnum]
+    SPECIES_GOLEM_ALOLAN: _ClassVar[SpeciesEnum]
+    SPECIES_GRIMER_ALOLAN: _ClassVar[SpeciesEnum]
+    SPECIES_MUK_ALOLAN: _ClassVar[SpeciesEnum]
+    SPECIES_EXEGGUTOR_ALOLAN: _ClassVar[SpeciesEnum]
+    SPECIES_MAROWAK_ALOLAN: _ClassVar[SpeciesEnum]
+    SPECIES_MEOWTH_GALARIAN: _ClassVar[SpeciesEnum]
+    SPECIES_PONYTA_GALARIAN: _ClassVar[SpeciesEnum]
+    SPECIES_RAPIDASH_GALARIAN: _ClassVar[SpeciesEnum]
+    SPECIES_SLOWPOKE_GALARIAN: _ClassVar[SpeciesEnum]
+    SPECIES_SLOWBRO_GALARIAN: _ClassVar[SpeciesEnum]
+    SPECIES_FARFETCHD_GALARIAN: _ClassVar[SpeciesEnum]
+    SPECIES_WEEZING_GALARIAN: _ClassVar[SpeciesEnum]
+    SPECIES_MR_MIME_GALARIAN: _ClassVar[SpeciesEnum]
+    SPECIES_ARTICUNO_GALARIAN: _ClassVar[SpeciesEnum]
+    SPECIES_ZAPDOS_GALARIAN: _ClassVar[SpeciesEnum]
+    SPECIES_MOLTRES_GALARIAN: _ClassVar[SpeciesEnum]
+    SPECIES_SLOWKING_GALARIAN: _ClassVar[SpeciesEnum]
+    SPECIES_CORSOLA_GALARIAN: _ClassVar[SpeciesEnum]
+    SPECIES_ZIGZAGOON_GALARIAN: _ClassVar[SpeciesEnum]
+    SPECIES_LINOONE_GALARIAN: _ClassVar[SpeciesEnum]
+    SPECIES_DARUMAKA_GALARIAN: _ClassVar[SpeciesEnum]
+    SPECIES_DARMANITAN_GALARIAN: _ClassVar[SpeciesEnum]
+    SPECIES_YAMASK_GALARIAN: _ClassVar[SpeciesEnum]
+    SPECIES_STUNFISK_GALARIAN: _ClassVar[SpeciesEnum]
+    SPECIES_PIKACHU_COSPLAY: _ClassVar[SpeciesEnum]
+    SPECIES_PIKACHU_ROCK_STAR: _ClassVar[SpeciesEnum]
+    SPECIES_PIKACHU_BELLE: _ClassVar[SpeciesEnum]
+    SPECIES_PIKACHU_POP_STAR: _ClassVar[SpeciesEnum]
+    SPECIES_PIKACHU_PH_D: _ClassVar[SpeciesEnum]
+    SPECIES_PIKACHU_LIBRE: _ClassVar[SpeciesEnum]
+    SPECIES_PIKACHU_ORIGINAL_CAP: _ClassVar[SpeciesEnum]
+    SPECIES_PIKACHU_HOENN_CAP: _ClassVar[SpeciesEnum]
+    SPECIES_PIKACHU_SINNOH_CAP: _ClassVar[SpeciesEnum]
+    SPECIES_PIKACHU_UNOVA_CAP: _ClassVar[SpeciesEnum]
+    SPECIES_PIKACHU_KALOS_CAP: _ClassVar[SpeciesEnum]
+    SPECIES_PIKACHU_ALOLA_CAP: _ClassVar[SpeciesEnum]
+    SPECIES_PIKACHU_PARTNER_CAP: _ClassVar[SpeciesEnum]
+    SPECIES_PIKACHU_WORLD_CAP: _ClassVar[SpeciesEnum]
+    SPECIES_PICHU_SPIKY_EARED: _ClassVar[SpeciesEnum]
+    SPECIES_UNOWN_B: _ClassVar[SpeciesEnum]
+    SPECIES_UNOWN_C: _ClassVar[SpeciesEnum]
+    SPECIES_UNOWN_D: _ClassVar[SpeciesEnum]
+    SPECIES_UNOWN_E: _ClassVar[SpeciesEnum]
+    SPECIES_UNOWN_F: _ClassVar[SpeciesEnum]
+    SPECIES_UNOWN_G: _ClassVar[SpeciesEnum]
+    SPECIES_UNOWN_H: _ClassVar[SpeciesEnum]
+    SPECIES_UNOWN_I: _ClassVar[SpeciesEnum]
+    SPECIES_UNOWN_J: _ClassVar[SpeciesEnum]
+    SPECIES_UNOWN_K: _ClassVar[SpeciesEnum]
+    SPECIES_UNOWN_L: _ClassVar[SpeciesEnum]
+    SPECIES_UNOWN_M: _ClassVar[SpeciesEnum]
+    SPECIES_UNOWN_N: _ClassVar[SpeciesEnum]
+    SPECIES_UNOWN_O: _ClassVar[SpeciesEnum]
+    SPECIES_UNOWN_P: _ClassVar[SpeciesEnum]
+    SPECIES_UNOWN_Q: _ClassVar[SpeciesEnum]
+    SPECIES_UNOWN_R: _ClassVar[SpeciesEnum]
+    SPECIES_UNOWN_S: _ClassVar[SpeciesEnum]
+    SPECIES_UNOWN_T: _ClassVar[SpeciesEnum]
+    SPECIES_UNOWN_U: _ClassVar[SpeciesEnum]
+    SPECIES_UNOWN_V: _ClassVar[SpeciesEnum]
+    SPECIES_UNOWN_W: _ClassVar[SpeciesEnum]
+    SPECIES_UNOWN_X: _ClassVar[SpeciesEnum]
+    SPECIES_UNOWN_Y: _ClassVar[SpeciesEnum]
+    SPECIES_UNOWN_Z: _ClassVar[SpeciesEnum]
+    SPECIES_UNOWN_EMARK: _ClassVar[SpeciesEnum]
+    SPECIES_UNOWN_QMARK: _ClassVar[SpeciesEnum]
+    SPECIES_CASTFORM_SUNNY: _ClassVar[SpeciesEnum]
+    SPECIES_CASTFORM_RAINY: _ClassVar[SpeciesEnum]
+    SPECIES_CASTFORM_SNOWY: _ClassVar[SpeciesEnum]
+    SPECIES_DEOXYS_ATTACK: _ClassVar[SpeciesEnum]
+    SPECIES_DEOXYS_DEFENSE: _ClassVar[SpeciesEnum]
+    SPECIES_DEOXYS_SPEED: _ClassVar[SpeciesEnum]
+    SPECIES_BURMY_SANDY_CLOAK: _ClassVar[SpeciesEnum]
+    SPECIES_BURMY_TRASH_CLOAK: _ClassVar[SpeciesEnum]
+    SPECIES_WORMADAM_SANDY_CLOAK: _ClassVar[SpeciesEnum]
+    SPECIES_WORMADAM_TRASH_CLOAK: _ClassVar[SpeciesEnum]
+    SPECIES_CHERRIM_SUNSHINE: _ClassVar[SpeciesEnum]
+    SPECIES_SHELLOS_EAST_SEA: _ClassVar[SpeciesEnum]
+    SPECIES_GASTRODON_EAST_SEA: _ClassVar[SpeciesEnum]
+    SPECIES_ROTOM_HEAT: _ClassVar[SpeciesEnum]
+    SPECIES_ROTOM_WASH: _ClassVar[SpeciesEnum]
+    SPECIES_ROTOM_FROST: _ClassVar[SpeciesEnum]
+    SPECIES_ROTOM_FAN: _ClassVar[SpeciesEnum]
+    SPECIES_ROTOM_MOW: _ClassVar[SpeciesEnum]
+    SPECIES_GIRATINA_ORIGIN: _ClassVar[SpeciesEnum]
+    SPECIES_SHAYMIN_SKY: _ClassVar[SpeciesEnum]
+    SPECIES_ARCEUS_FIGHTING: _ClassVar[SpeciesEnum]
+    SPECIES_ARCEUS_FLYING: _ClassVar[SpeciesEnum]
+    SPECIES_ARCEUS_POISON: _ClassVar[SpeciesEnum]
+    SPECIES_ARCEUS_GROUND: _ClassVar[SpeciesEnum]
+    SPECIES_ARCEUS_ROCK: _ClassVar[SpeciesEnum]
+    SPECIES_ARCEUS_BUG: _ClassVar[SpeciesEnum]
+    SPECIES_ARCEUS_GHOST: _ClassVar[SpeciesEnum]
+    SPECIES_ARCEUS_STEEL: _ClassVar[SpeciesEnum]
+    SPECIES_ARCEUS_FIRE: _ClassVar[SpeciesEnum]
+    SPECIES_ARCEUS_WATER: _ClassVar[SpeciesEnum]
+    SPECIES_ARCEUS_GRASS: _ClassVar[SpeciesEnum]
+    SPECIES_ARCEUS_ELECTRIC: _ClassVar[SpeciesEnum]
+    SPECIES_ARCEUS_PSYCHIC: _ClassVar[SpeciesEnum]
+    SPECIES_ARCEUS_ICE: _ClassVar[SpeciesEnum]
+    SPECIES_ARCEUS_DRAGON: _ClassVar[SpeciesEnum]
+    SPECIES_ARCEUS_DARK: _ClassVar[SpeciesEnum]
+    SPECIES_ARCEUS_FAIRY: _ClassVar[SpeciesEnum]
+    SPECIES_BASCULIN_BLUE_STRIPED: _ClassVar[SpeciesEnum]
+    SPECIES_DARMANITAN_ZEN_MODE: _ClassVar[SpeciesEnum]
+    SPECIES_DARMANITAN_ZEN_MODE_GALARIAN: _ClassVar[SpeciesEnum]
+    SPECIES_DEERLING_SUMMER: _ClassVar[SpeciesEnum]
+    SPECIES_DEERLING_AUTUMN: _ClassVar[SpeciesEnum]
+    SPECIES_DEERLING_WINTER: _ClassVar[SpeciesEnum]
+    SPECIES_SAWSBUCK_SUMMER: _ClassVar[SpeciesEnum]
+    SPECIES_SAWSBUCK_AUTUMN: _ClassVar[SpeciesEnum]
+    SPECIES_SAWSBUCK_WINTER: _ClassVar[SpeciesEnum]
+    SPECIES_TORNADUS_THERIAN: _ClassVar[SpeciesEnum]
+    SPECIES_THUNDURUS_THERIAN: _ClassVar[SpeciesEnum]
+    SPECIES_LANDORUS_THERIAN: _ClassVar[SpeciesEnum]
+    SPECIES_KYUREM_WHITE: _ClassVar[SpeciesEnum]
+    SPECIES_KYUREM_BLACK: _ClassVar[SpeciesEnum]
+    SPECIES_KELDEO_RESOLUTE: _ClassVar[SpeciesEnum]
+    SPECIES_MELOETTA_PIROUETTE: _ClassVar[SpeciesEnum]
+    SPECIES_GENESECT_DOUSE_DRIVE: _ClassVar[SpeciesEnum]
+    SPECIES_GENESECT_SHOCK_DRIVE: _ClassVar[SpeciesEnum]
+    SPECIES_GENESECT_BURN_DRIVE: _ClassVar[SpeciesEnum]
+    SPECIES_GENESECT_CHILL_DRIVE: _ClassVar[SpeciesEnum]
+    SPECIES_GRENINJA_BATTLE_BOND: _ClassVar[SpeciesEnum]
+    SPECIES_GRENINJA_ASH: _ClassVar[SpeciesEnum]
+    SPECIES_VIVILLON_POLAR: _ClassVar[SpeciesEnum]
+    SPECIES_VIVILLON_TUNDRA: _ClassVar[SpeciesEnum]
+    SPECIES_VIVILLON_CONTINENTAL: _ClassVar[SpeciesEnum]
+    SPECIES_VIVILLON_GARDEN: _ClassVar[SpeciesEnum]
+    SPECIES_VIVILLON_ELEGANT: _ClassVar[SpeciesEnum]
+    SPECIES_VIVILLON_MEADOW: _ClassVar[SpeciesEnum]
+    SPECIES_VIVILLON_MODERN: _ClassVar[SpeciesEnum]
+    SPECIES_VIVILLON_MARINE: _ClassVar[SpeciesEnum]
+    SPECIES_VIVILLON_ARCHIPELAGO: _ClassVar[SpeciesEnum]
+    SPECIES_VIVILLON_HIGH_PLAINS: _ClassVar[SpeciesEnum]
+    SPECIES_VIVILLON_SANDSTORM: _ClassVar[SpeciesEnum]
+    SPECIES_VIVILLON_RIVER: _ClassVar[SpeciesEnum]
+    SPECIES_VIVILLON_MONSOON: _ClassVar[SpeciesEnum]
+    SPECIES_VIVILLON_SAVANNA: _ClassVar[SpeciesEnum]
+    SPECIES_VIVILLON_SUN: _ClassVar[SpeciesEnum]
+    SPECIES_VIVILLON_OCEAN: _ClassVar[SpeciesEnum]
+    SPECIES_VIVILLON_JUNGLE: _ClassVar[SpeciesEnum]
+    SPECIES_VIVILLON_FANCY: _ClassVar[SpeciesEnum]
+    SPECIES_VIVILLON_POKE_BALL: _ClassVar[SpeciesEnum]
+    SPECIES_FLABEBE_YELLOW_FLOWER: _ClassVar[SpeciesEnum]
+    SPECIES_FLABEBE_ORANGE_FLOWER: _ClassVar[SpeciesEnum]
+    SPECIES_FLABEBE_BLUE_FLOWER: _ClassVar[SpeciesEnum]
+    SPECIES_FLABEBE_WHITE_FLOWER: _ClassVar[SpeciesEnum]
+    SPECIES_FLOETTE_YELLOW_FLOWER: _ClassVar[SpeciesEnum]
+    SPECIES_FLOETTE_ORANGE_FLOWER: _ClassVar[SpeciesEnum]
+    SPECIES_FLOETTE_BLUE_FLOWER: _ClassVar[SpeciesEnum]
+    SPECIES_FLOETTE_WHITE_FLOWER: _ClassVar[SpeciesEnum]
+    SPECIES_FLOETTE_ETERNAL_FLOWER: _ClassVar[SpeciesEnum]
+    SPECIES_FLORGES_YELLOW_FLOWER: _ClassVar[SpeciesEnum]
+    SPECIES_FLORGES_ORANGE_FLOWER: _ClassVar[SpeciesEnum]
+    SPECIES_FLORGES_BLUE_FLOWER: _ClassVar[SpeciesEnum]
+    SPECIES_FLORGES_WHITE_FLOWER: _ClassVar[SpeciesEnum]
+    SPECIES_FURFROU_HEART_TRIM: _ClassVar[SpeciesEnum]
+    SPECIES_FURFROU_STAR_TRIM: _ClassVar[SpeciesEnum]
+    SPECIES_FURFROU_DIAMOND_TRIM: _ClassVar[SpeciesEnum]
+    SPECIES_FURFROU_DEBUTANTE_TRIM: _ClassVar[SpeciesEnum]
+    SPECIES_FURFROU_MATRON_TRIM: _ClassVar[SpeciesEnum]
+    SPECIES_FURFROU_DANDY_TRIM: _ClassVar[SpeciesEnum]
+    SPECIES_FURFROU_LA_REINE_TRIM: _ClassVar[SpeciesEnum]
+    SPECIES_FURFROU_KABUKI_TRIM: _ClassVar[SpeciesEnum]
+    SPECIES_FURFROU_PHARAOH_TRIM: _ClassVar[SpeciesEnum]
+    SPECIES_MEOWSTIC_FEMALE: _ClassVar[SpeciesEnum]
+    SPECIES_AEGISLASH_BLADE: _ClassVar[SpeciesEnum]
+    SPECIES_PUMPKABOO_SMALL: _ClassVar[SpeciesEnum]
+    SPECIES_PUMPKABOO_LARGE: _ClassVar[SpeciesEnum]
+    SPECIES_PUMPKABOO_SUPER: _ClassVar[SpeciesEnum]
+    SPECIES_GOURGEIST_SMALL: _ClassVar[SpeciesEnum]
+    SPECIES_GOURGEIST_LARGE: _ClassVar[SpeciesEnum]
+    SPECIES_GOURGEIST_SUPER: _ClassVar[SpeciesEnum]
+    SPECIES_XERNEAS_ACTIVE: _ClassVar[SpeciesEnum]
+    SPECIES_ZYGARDE_10: _ClassVar[SpeciesEnum]
+    SPECIES_ZYGARDE_10_POWER_CONSTRUCT: _ClassVar[SpeciesEnum]
+    SPECIES_ZYGARDE_50_POWER_CONSTRUCT: _ClassVar[SpeciesEnum]
+    SPECIES_ZYGARDE_COMPLETE: _ClassVar[SpeciesEnum]
+    SPECIES_HOOPA_UNBOUND: _ClassVar[SpeciesEnum]
+    SPECIES_ORICORIO_POM_POM: _ClassVar[SpeciesEnum]
+    SPECIES_ORICORIO_PAU: _ClassVar[SpeciesEnum]
+    SPECIES_ORICORIO_SENSU: _ClassVar[SpeciesEnum]
+    SPECIES_ROCKRUFF_OWN_TEMPO: _ClassVar[SpeciesEnum]
+    SPECIES_LYCANROC_MIDNIGHT: _ClassVar[SpeciesEnum]
+    SPECIES_LYCANROC_DUSK: _ClassVar[SpeciesEnum]
+    SPECIES_WISHIWASHI_SCHOOL: _ClassVar[SpeciesEnum]
+    SPECIES_SILVALLY_FIGHTING: _ClassVar[SpeciesEnum]
+    SPECIES_SILVALLY_FLYING: _ClassVar[SpeciesEnum]
+    SPECIES_SILVALLY_POISON: _ClassVar[SpeciesEnum]
+    SPECIES_SILVALLY_GROUND: _ClassVar[SpeciesEnum]
+    SPECIES_SILVALLY_ROCK: _ClassVar[SpeciesEnum]
+    SPECIES_SILVALLY_BUG: _ClassVar[SpeciesEnum]
+    SPECIES_SILVALLY_GHOST: _ClassVar[SpeciesEnum]
+    SPECIES_SILVALLY_STEEL: _ClassVar[SpeciesEnum]
+    SPECIES_SILVALLY_FIRE: _ClassVar[SpeciesEnum]
+    SPECIES_SILVALLY_WATER: _ClassVar[SpeciesEnum]
+    SPECIES_SILVALLY_GRASS: _ClassVar[SpeciesEnum]
+    SPECIES_SILVALLY_ELECTRIC: _ClassVar[SpeciesEnum]
+    SPECIES_SILVALLY_PSYCHIC: _ClassVar[SpeciesEnum]
+    SPECIES_SILVALLY_ICE: _ClassVar[SpeciesEnum]
+    SPECIES_SILVALLY_DRAGON: _ClassVar[SpeciesEnum]
+    SPECIES_SILVALLY_DARK: _ClassVar[SpeciesEnum]
+    SPECIES_SILVALLY_FAIRY: _ClassVar[SpeciesEnum]
+    SPECIES_MINIOR_METEOR_ORANGE: _ClassVar[SpeciesEnum]
+    SPECIES_MINIOR_METEOR_YELLOW: _ClassVar[SpeciesEnum]
+    SPECIES_MINIOR_METEOR_GREEN: _ClassVar[SpeciesEnum]
+    SPECIES_MINIOR_METEOR_BLUE: _ClassVar[SpeciesEnum]
+    SPECIES_MINIOR_METEOR_INDIGO: _ClassVar[SpeciesEnum]
+    SPECIES_MINIOR_METEOR_VIOLET: _ClassVar[SpeciesEnum]
+    SPECIES_MINIOR_CORE_RED: _ClassVar[SpeciesEnum]
+    SPECIES_MINIOR_CORE_ORANGE: _ClassVar[SpeciesEnum]
+    SPECIES_MINIOR_CORE_YELLOW: _ClassVar[SpeciesEnum]
+    SPECIES_MINIOR_CORE_GREEN: _ClassVar[SpeciesEnum]
+    SPECIES_MINIOR_CORE_BLUE: _ClassVar[SpeciesEnum]
+    SPECIES_MINIOR_CORE_INDIGO: _ClassVar[SpeciesEnum]
+    SPECIES_MINIOR_CORE_VIOLET: _ClassVar[SpeciesEnum]
+    SPECIES_MIMIKYU_BUSTED: _ClassVar[SpeciesEnum]
+    SPECIES_NECROZMA_DUSK_MANE: _ClassVar[SpeciesEnum]
+    SPECIES_NECROZMA_DAWN_WINGS: _ClassVar[SpeciesEnum]
+    SPECIES_NECROZMA_ULTRA: _ClassVar[SpeciesEnum]
+    SPECIES_MAGEARNA_ORIGINAL_COLOR: _ClassVar[SpeciesEnum]
+    SPECIES_CRAMORANT_GULPING: _ClassVar[SpeciesEnum]
+    SPECIES_CRAMORANT_GORGING: _ClassVar[SpeciesEnum]
+    SPECIES_TOXTRICITY_LOW_KEY: _ClassVar[SpeciesEnum]
+    SPECIES_SINISTEA_ANTIQUE: _ClassVar[SpeciesEnum]
+    SPECIES_POLTEAGEIST_ANTIQUE: _ClassVar[SpeciesEnum]
+    SPECIES_ALCREMIE_RUBY_CREAM: _ClassVar[SpeciesEnum]
+    SPECIES_ALCREMIE_MATCHA_CREAM: _ClassVar[SpeciesEnum]
+    SPECIES_ALCREMIE_MINT_CREAM: _ClassVar[SpeciesEnum]
+    SPECIES_ALCREMIE_LEMON_CREAM: _ClassVar[SpeciesEnum]
+    SPECIES_ALCREMIE_SALTED_CREAM: _ClassVar[SpeciesEnum]
+    SPECIES_ALCREMIE_RUBY_SWIRL: _ClassVar[SpeciesEnum]
+    SPECIES_ALCREMIE_CARAMEL_SWIRL: _ClassVar[SpeciesEnum]
+    SPECIES_ALCREMIE_RAINBOW_SWIRL: _ClassVar[SpeciesEnum]
+    SPECIES_EISCUE_NOICE_FACE: _ClassVar[SpeciesEnum]
+    SPECIES_INDEEDEE_FEMALE: _ClassVar[SpeciesEnum]
+    SPECIES_MORPEKO_HANGRY: _ClassVar[SpeciesEnum]
+    SPECIES_ZACIAN_CROWNED_SWORD: _ClassVar[SpeciesEnum]
+    SPECIES_ZAMAZENTA_CROWNED_SHIELD: _ClassVar[SpeciesEnum]
+    SPECIES_ETERNATUS_ETERNAMAX: _ClassVar[SpeciesEnum]
+    SPECIES_URSHIFU_RAPID_STRIKE_STYLE: _ClassVar[SpeciesEnum]
+    SPECIES_ZARUDE_DADA: _ClassVar[SpeciesEnum]
+    SPECIES_CALYREX_ICE_RIDER: _ClassVar[SpeciesEnum]
+    SPECIES_CALYREX_SHADOW_RIDER: _ClassVar[SpeciesEnum]
+    SPECIES_QWILFISH_HISUIAN: _ClassVar[SpeciesEnum]
+    SPECIES_GROWLITHE_HISUIAN: _ClassVar[SpeciesEnum]
+    SPECIES_ARCANINE_HISUIAN: _ClassVar[SpeciesEnum]
+    SPECIES_VOLTORB_HISUIAN: _ClassVar[SpeciesEnum]
+    SPECIES_ELECTRODE_HISUIAN: _ClassVar[SpeciesEnum]
+    SPECIES_TYPHLOSION_HISUIAN: _ClassVar[SpeciesEnum]
+    SPECIES_SNEASEL_HISUIAN: _ClassVar[SpeciesEnum]
+    SPECIES_SAMUROTT_HISUIAN: _ClassVar[SpeciesEnum]
+    SPECIES_LILLIGANT_HISUIAN: _ClassVar[SpeciesEnum]
+    SPECIES_BRAVIARY_HISUIAN: _ClassVar[SpeciesEnum]
+    SPECIES_SLIGGOO_HISUIAN: _ClassVar[SpeciesEnum]
+    SPECIES_GOODRA_HISUIAN: _ClassVar[SpeciesEnum]
+    SPECIES_AVALUGG_HISUIAN: _ClassVar[SpeciesEnum]
+    SPECIES_DECIDUEYE_HISUIAN: _ClassVar[SpeciesEnum]
+    SPECIES_ZORUA_HISUIAN: _ClassVar[SpeciesEnum]
+    SPECIES_ZOROARK_HISUIAN: _ClassVar[SpeciesEnum]
+    SPECIES_TAUROS_PALDEAN_AQUA_BREED: _ClassVar[SpeciesEnum]
+    SPECIES_TAUROS_PALDEAN_BLAZE_BREED: _ClassVar[SpeciesEnum]
+    SPECIES_TAUROS_PALDEAN_COMBAT_BREED: _ClassVar[SpeciesEnum]
+    SPECIES_URSALUNA_BLOODMOON: _ClassVar[SpeciesEnum]
+    SPECIES_PALAFIN_HERO: _ClassVar[SpeciesEnum]
+    SPECIES_DUDUNSPARCE_THREE_SEGMENT: _ClassVar[SpeciesEnum]
+    SPECIES_MAUSHOLD_FOUR: _ClassVar[SpeciesEnum]
+    SPECIES_TATSUGIRI_CURLY: _ClassVar[SpeciesEnum]
+    SPECIES_TATSUGIRI_STRETCHY: _ClassVar[SpeciesEnum]
+    SPECIES_TATSUGIRI_DROOPY: _ClassVar[SpeciesEnum]
+    SPECIES_SQUAWKABILLY_GREEN_PLUMAGE: _ClassVar[SpeciesEnum]
+    SPECIES_SQUAWKABILLY_BLUE_PLUMAGE: _ClassVar[SpeciesEnum]
+    SPECIES_SQUAWKABILLY_YELLOW_PLUMAGE: _ClassVar[SpeciesEnum]
+    SPECIES_SQUAWKABILLY_WHITE_PLUMAGE: _ClassVar[SpeciesEnum]
+    SPECIES_OGERPON_WELLSPRING_MASK: _ClassVar[SpeciesEnum]
+    SPECIES_OGERPON_HEARTHFLAME_MASK: _ClassVar[SpeciesEnum]
+    SPECIES_OGERPON_CORNERSTONE_MASK: _ClassVar[SpeciesEnum]
+    SPECIES_DIALGA_ORIGIN: _ClassVar[SpeciesEnum]
+    SPECIES_PALKIA_ORIGIN: _ClassVar[SpeciesEnum]
+    SPECIES_ENAMORUS_THERIAN: _ClassVar[SpeciesEnum]
+    SPECIES_CASTFORM_SANDY: _ClassVar[SpeciesEnum]
+    SPECIES_POLARTIC_BLUEMOON: _ClassVar[SpeciesEnum]
+    SPECIES_LUMBERING_SLOTH_ENGULFED: _ClassVar[SpeciesEnum]
+    SPECIES_GIMMIGHOUL_ROAMING: _ClassVar[SpeciesEnum]
+    SPECIES_BASCULEGION_F: _ClassVar[SpeciesEnum]
+    SPECIES_TERAPAGOS_STELLAR: _ClassVar[SpeciesEnum]
+    SPECIES_HYDROAR_F: _ClassVar[SpeciesEnum]
+    SPECIES_PIKACHU_PARTNER: _ClassVar[SpeciesEnum]
+    SPECIES_EEVEE_PARTNER: _ClassVar[SpeciesEnum]
+    SPECIES_MEOWTH_PARTNER: _ClassVar[SpeciesEnum]
+    SPECIES_MIMIKYU_RAYQUAZA_BUSTED: _ClassVar[SpeciesEnum]
+    SPECIES_SLAKING_MEGA_APE_SHIFT: _ClassVar[SpeciesEnum]
+    SPECIES_RAICHU_MEGA_Y: _ClassVar[SpeciesEnum]
+    SPECIES_CASTFORM_FOGGY: _ClassVar[SpeciesEnum]
+    SPECIES_FIDOUGH_PARTNER: _ClassVar[SpeciesEnum]
+    SPECIES_CHESNAUGHT_BATTLE_BOND: _ClassVar[SpeciesEnum]
+    SPECIES_CHESNAUGHT_CLEMONT: _ClassVar[SpeciesEnum]
+    SPECIES_DELPHOX_BATTLE_BOND: _ClassVar[SpeciesEnum]
+    SPECIES_DELPHOX_SERENA: _ClassVar[SpeciesEnum]
+    SPECIES_MORPEKYLL_HANGRY: _ClassVar[SpeciesEnum]
+    SPECIES_UNOWN_REVELATION: _ClassVar[SpeciesEnum]
+    SPECIES_LYCANROC_ECLIPSE: _ClassVar[SpeciesEnum]
+    SPECIES_LYCANROC_TWILIGHT: _ClassVar[SpeciesEnum]
+    SPECIES_SCRAFTY_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_FALINKS_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_PYROAR_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_CHESNAUGHT_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_DELPHOX_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_GRENINJA_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_EELEKTROSS_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_MALAMAR_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_VICTREEBEL_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_DRAGALGE_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_HAWLUCHA_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_CLEFABLE_MEGA_Y: _ClassVar[SpeciesEnum]
+    SPECIES_DRAGONITE_MEGA_Y: _ClassVar[SpeciesEnum]
+    SPECIES_EXCADRILL_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_SCOLIPEDE_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_CHANDELURE_MEGA_Y: _ClassVar[SpeciesEnum]
+    SPECIES_FLOETTE_ETERNAL_FLOWER_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_ZYGARDE_COMPLETE_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_BARBARACLE_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_DRAMPA_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_STARMIE_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_SKARMORY_MEGA_Y: _ClassVar[SpeciesEnum]
+    SPECIES_FROSLASS_MEGA_Y: _ClassVar[SpeciesEnum]
+    SPECIES_RAICHU_MEGA_X: _ClassVar[SpeciesEnum]
+    SPECIES_ABSOL_MEGA_Z: _ClassVar[SpeciesEnum]
+    SPECIES_STARAPTOR_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_GARCHOMP_MEGA_Z: _ClassVar[SpeciesEnum]
+    SPECIES_HEATRAN_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_DARKRAI_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_GOLURK_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_MEOWSTIC_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_CRABOMINABLE_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_GOLISOPOD_MEGA_Y: _ClassVar[SpeciesEnum]
+    SPECIES_MAGEARNA_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_ZERAORA_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_SCOVILLAIN_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_TATSUGIRI_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_BAXCALIBUR_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_CHIMECHO_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_GLIMMORA_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_MILOTIC_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_BUTTERFREE_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_MACHAMP_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_KINGLER_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_LAPRAS_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_FLYGON_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_KINGDRA_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_DEWGONG_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_HITMONCHAN_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_HITMONLEE_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_HITMONTOP_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_CROBAT_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_SKARMORY_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_BRUXISH_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_TORTERRA_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_INFERNAPE_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_EMPOLEON_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_SHUCKLE_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_RELICANTH_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_TOUCANNON_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_DRAGONITE_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_BRELOOM_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_SLAKING_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_FERALIGATR_MEGA_X: _ClassVar[SpeciesEnum]
+    SPECIES_FERALIGATR_MEGA_Y: _ClassVar[SpeciesEnum]
+    SPECIES_GRANBULL_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_JELLICENT_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_QUAGSIRE_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_GYARADOS_MEGA_Y: _ClassVar[SpeciesEnum]
+    SPECIES_HAXORUS_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_MEGANIUM_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_LUXRAY_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_NIDOKING_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_NIDOQUEEN_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_SANDSLASH_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_TYPHLOSION_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_KROOKODILE_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_MAGNEZONE_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_SHEDINJA_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_SWALOT_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_LANTURN_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_LAPRAS_MEGA_X: _ClassVar[SpeciesEnum]
+    SPECIES_SLOWKING_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_RIBOMBEE_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_ALAKAZAM_MEGA_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_BEEDRILL_MEGA_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_MACHAMP_MEGA_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_SKARMORY_MEGA_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_ARCANINE_MEGA_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_GARCHOMP_MEGA_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_MAWILE_MEGA_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_SABLEYE_MEGA_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_HOUNDOOM_MEGA_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_FROSLASS_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_WIGGLYTUFF_MEGA_X: _ClassVar[SpeciesEnum]
+    SPECIES_CASCOON_PRIMAL: _ClassVar[SpeciesEnum]
+    SPECIES_WIGGLYTUFF_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_LUCARIO_MEGA_Z: _ClassVar[SpeciesEnum]
+    SPECIES_GYARADEATH_MEGA_X: _ClassVar[SpeciesEnum]
+    SPECIES_GYARADEATH_MEGA_Y: _ClassVar[SpeciesEnum]
+    SPECIES_ARBOK_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_KINGAMBIT_REDUX_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_GOLISOPOD_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_RAPIDASH_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_RAPIDASH_MEGA_GALARIAN: _ClassVar[SpeciesEnum]
+    SPECIES_ORICORIO_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_AEGISLASH_REDUX_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_AEGISLASH_BLADE_REDUX_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_REUNICLUS_REDUX_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_HYDREIGON_REDUX_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_CORMOTH_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_POPCORM_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_TORTERRA_REDUX_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_INFERNAPE_REDUX_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_EMPOLEON_REDUX_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_TSAREENA_REDUX_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_TOXTRICITY_REDUX_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_TOXTRICITY_REDUX_FUZZ_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_FLYGON_REDUX_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_CLEFABLE_REDUX_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_GLALIE_REDUX_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_FROSLASS_REDUX_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_AMPHYBUZZ_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_URSHIFU_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_URSHIFU_RAPID_STRIKE_STYLE_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_MELMETAL_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_VENUSAUR_MEGA_X: _ClassVar[SpeciesEnum]
+    SPECIES_BLASTOISE_MEGA_X: _ClassVar[SpeciesEnum]
+    SPECIES_GENGAR_MEGA_X: _ClassVar[SpeciesEnum]
+    SPECIES_CHARIZARD_MEGA_Z: _ClassVar[SpeciesEnum]
+    SPECIES_SNORLAX_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_RILLABOOM_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_CINDERACE_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_INTELEON_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_CORVIKNIGHT_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_DREDNAW_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_COALOSSAL_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_SANDACONDA_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_COPPERAJAH_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_HATTERENE_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_GARBODOR_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_ORBEETLE_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_GRIMMSNARL_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_CENTISKORCH_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_ALCREMIE_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_TOXTRICITY_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_PIKACHU_PARTNER_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_EEVEE_PARTNER_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_MEOWTH_PARTNER_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_DURALUDON_PARTNER_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_FIDOUGH_PARTNER_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_WEAVILE_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_SERPERIOR_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_EMBOAR_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_SAMUROTT_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_DECIDUEYE_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_DECIDUEYE_HISUIAN_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_INCINEROAR_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_MEOWSCARADA_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_PRIMARINA_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_QUAQUAVAL_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_SAMUROTT_HISUIAN_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_SKELEDIRGE_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_TYPHLOSION_HISUIAN_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_MIENSHAO_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_ARCANINE_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_GOODRA_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_SLOWBRO_MEGA_GALARIAN: _ClassVar[SpeciesEnum]
+    SPECIES_SLOWKING_MEGA_GALARIAN: _ClassVar[SpeciesEnum]
+    SPECIES_ROSERADE_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_CLODSIRE_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_GOTHITELLE_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_ARCANINE_HISUIAN_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_REUNICLUS_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_KIPMODO: _ClassVar[SpeciesEnum]
+    SPECIES_MARSHMODO: _ClassVar[SpeciesEnum]
+    SPECIES_SWAMPAGE: _ClassVar[SpeciesEnum]
+    SPECIES_SWAMPAGE_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_CHANDELURE_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_ZAPDOS_EX_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_ARTICUNO_EX_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_MOLTRES_EX_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_ZAPDOS_EX: _ClassVar[SpeciesEnum]
+    SPECIES_ARTICUNO_EX: _ClassVar[SpeciesEnum]
+    SPECIES_MOLTRES_EX: _ClassVar[SpeciesEnum]
+    SPECIES_MINCCINO_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_CINCCINO_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_FROSTUCCINO: _ClassVar[SpeciesEnum]
+    SPECIES_SINISTEA_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_POLTEAGEIST_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_CETODDLE_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_CETITAN_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_TALONFLAME_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_CARBONIX_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_GROTOM_GLASS: _ClassVar[SpeciesEnum]
+    SPECIES_GROTOM_ROLL: _ClassVar[SpeciesEnum]
+    SPECIES_GROTOM_DRUM: _ClassVar[SpeciesEnum]
+    SPECIES_GROTOM_KICK: _ClassVar[SpeciesEnum]
+    SPECIES_GROTOM_FILL: _ClassVar[SpeciesEnum]
+    SPECIES_HERACREUS_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_WISPYWASPY_HIVEMIND: _ClassVar[SpeciesEnum]
+    SPECIES_DRAGAPULT_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_SANDSLASH_ALOLAN_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_KLEAVOR_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_SCYTHER_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_HYDREIGON_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_VANILLUXE_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_PENTADUG_ALOLAN: _ClassVar[SpeciesEnum]
+    SPECIES_RATTATA_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_RATICATE_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_VANILLITE_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_VANILLISH_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_VANILLUXE_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_VANILLUXE_REDUX_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_LITWICK_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_LAMPENT_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_CHANDELURE_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_CHANDELURE_REDUX_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_DRILBUR_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_EXCADRILL_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_REXCADRILL: _ClassVar[SpeciesEnum]
+    SPECIES_SWINUB_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_PILOSWINE_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_MAMOSWINE_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_MAMOSWINE_REDUX_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_SELENUMBRA: _ClassVar[SpeciesEnum]
+    SPECIES_LARVESTA_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_VOLCARONA_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_KLEFKI_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_BELLSPROUT_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_WEEPINBELL_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_VICTREEBEL_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_SAWK_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_THROH_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_SNEASLER_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_CLEFABLE_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_TSAREENA_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_GOODRA_HISUIAN_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_HARIYAMA_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_SWABLU_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_ALTARIA_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_ALTARIA_REDUX_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_ERATICATE: _ClassVar[SpeciesEnum]
+    SPECIES_EXEGGCUTE_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_EXEGGUTOR_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_LUXZERO_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_KECLEONG: _ClassVar[SpeciesEnum]
+    SPECIES_INFERNAPE_REDUX_B: _ClassVar[SpeciesEnum]
+    SPECIES_NOIBAT_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_NOIVERN_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_LUXZERO: _ClassVar[SpeciesEnum]
+    SPECIES_CLAWITZER_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_HONEDGE_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_DOUBLADE_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_AEGISLASH_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_AEGISLASH_BLADE_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_ABRA_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_KADABRA_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_ALAKAZAM_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_WEEDLE_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_KAKUNA_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_BEEDRILL_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_STUFFUL_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_BEWEAR_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_PANPOUR_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_SIMIPOUR_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_PANSAGE_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_SIMISAGE_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_PANSEAR_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_SIMISEAR_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_SLUGMA_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_MAGCARGO_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_BUIZEL_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_FLOATZEL_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_AZELF_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_MESPRIT_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_UXIE_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_MACHOP_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_MACHOKE_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_MACHAMP_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_SOLOSIS_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_DUOSION_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_REUNICLUS_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_SKARMORY_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_GROWLITHE_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_ARCANINE_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_WHISMUR_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_LOUDRED_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_EXPLOUD_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_GIBLE_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_GABITE_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_GARCHOMP_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_DEINO_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_ZWEILOUS_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_HYDREIGON_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_PAWNIARD_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_BISHARP_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_MAWILE_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_SABLEYE_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_HOUNDOUR_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_HOUNDOOM_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_DODUO_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_DODRIO_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_KINGAMBIT_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_LARVITAR_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_PUPITAR_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_TYRANITAR_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_TYRANITAR_MEGA_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_URSALUNA_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_IRON_EXO: _ClassVar[SpeciesEnum]
+    SPECIES_SCIZOR_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_WOOPER_PALDEAN: _ClassVar[SpeciesEnum]
+    SPECIES_BASCULIN_WHITESTRIPED: _ClassVar[SpeciesEnum]
+    SPECIES_ESCARGINITE_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_DRAGONITE_DELIVERY: _ClassVar[SpeciesEnum]
+    SPECIES_CHIEN_PAO_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_DRACOVISH_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_LEDIAN_PARADOX: _ClassVar[SpeciesEnum]
+    SPECIES_SNORLAX_PRIMAL: _ClassVar[SpeciesEnum]
+    SPECIES_VICTINI_PRIMAL: _ClassVar[SpeciesEnum]
+    SPECIES_WIGGLYTUFF_PRIMAL: _ClassVar[SpeciesEnum]
+    SPECIES_FLYGON_REDUX_B: _ClassVar[SpeciesEnum]
+    SPECIES_FLYGON_REDUX_B_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_RIBOMBEE_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_RIBOMBEE_REDUX_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_WEAVILE_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_WEAVILE_REDUX_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_ABOMASNOW_SANTA: _ClassVar[SpeciesEnum]
+    SPECIES_BEWEAR_ANGRY: _ClassVar[SpeciesEnum]
+    SPECIES_MIMIKYU_RAYQUAZA: _ClassVar[SpeciesEnum]
+    SPECIES_ESPEON_GALAXY: _ClassVar[SpeciesEnum]
+    SPECIES_DARKRAI_NIGHTMARE: _ClassVar[SpeciesEnum]
+    SPECIES_SOLROCK_SYSTEM: _ClassVar[SpeciesEnum]
+    SPECIES_SPECTRIER_CLOUD: _ClassVar[SpeciesEnum]
+    SPECIES_CALYREX_CLOUD_RIDER: _ClassVar[SpeciesEnum]
+    SPECIES_MAWILE_REDUX_B: _ClassVar[SpeciesEnum]
+    SPECIES_MAWILE_REDUX_B_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_WIGGLYTUFF_APEX: _ClassVar[SpeciesEnum]
+    SPECIES_YVELTAL_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_KARTANA_FALLEN: _ClassVar[SpeciesEnum]
+    SPECIES_TINKATON_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_TURTWIG_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_GROTLE_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_TORTERRA_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_CHIMCHAR_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_MONFERNO_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_INFERNAPE_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_PIPLUP_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_PRINPLUP_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_EMPOLEON_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_BOUNSWEET_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_STEENEE_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_TSAREENA_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_TOXEL_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_TOXTRICITY_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_TOXTRICITY_REDUX_FUZZ: _ClassVar[SpeciesEnum]
+    SPECIES_TRAPINCH_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_VIBRAVA_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_FLYGON_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_CRABRAWLER_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_CRABOMINABLE_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_CLEFFA_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_CLEFAIRY_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_CLEFABLE_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_GLIGAR_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_GLISCOR_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_PSYDUCK_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_SEEL_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_DEWGONG_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_SNORUNT_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_GLALIE_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_FROSLASS_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_DARUMAKA_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_DARMANITAN_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_DARMANITAN_REDUX_AURA: _ClassVar[SpeciesEnum]
+    SPECIES_DARMANITAN_REDUX_BOND: _ClassVar[SpeciesEnum]
+    SPECIES_HAPPINY_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_CHANSEY_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_BLISSEY_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_SPIRITOMB_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_DARMANITAN_REDUX_BLUNDER: _ClassVar[SpeciesEnum]
+    SPECIES_DEWPIDER_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_ARAQUANID_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_MIMIKYU_APEX: _ClassVar[SpeciesEnum]
+    SPECIES_MIMIKYU_APEX_BUSTED: _ClassVar[SpeciesEnum]
+    SPECIES_TINKATINK_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_TINKATUFF_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_TINKATON_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_TINKATON_REDUX_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_SCYTHER_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_SCYTHER_REDUX_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_SCIZOR_REDUX_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_KLEAVOR_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_KLEAVOR_REDUX_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_KRABBY_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_KINGLER_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_KINGLER_REDUX_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_SHINX_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_LUXIO_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_LUXRAY_REDUX_B: _ClassVar[SpeciesEnum]
+    SPECIES_LUXRAY_REDUX_B_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_ARON_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_LAIRON_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_AGGRON_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_AGGRON_REDUX_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_MAKUHITA_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_HARIYAMA_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_KILOZUNA: _ClassVar[SpeciesEnum]
+    SPECIES_KILOZUNA_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_FOGGING: _ClassVar[SpeciesEnum]
+    SPECIES_BREEZING: _ClassVar[SpeciesEnum]
+    SPECIES_STORMING: _ClassVar[SpeciesEnum]
+    SPECIES_RALTS_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_KIRLIA_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_GARDEVOIR_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_GALLADE_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_GARDEVOIR_REDUX_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_GALLADE_REDUX_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_MERRYKARP: _ClassVar[SpeciesEnum]
+    SPECIES_GYAREVALRY: _ClassVar[SpeciesEnum]
+    SPECIES_MUNCHLAX_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_SNORLAX_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_SNORLAX_REDUX_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_SPEAROW_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_FEAROW_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_FEAROW_REDUX_EVO: _ClassVar[SpeciesEnum]
+    SPECIES_SLATE: _ClassVar[SpeciesEnum]
+    SPECIES_EGG: _ClassVar[SpeciesEnum]
+SPECIES_NONE: SpeciesEnum
+SPECIES_BULBASAUR: SpeciesEnum
+SPECIES_IVYSAUR: SpeciesEnum
+SPECIES_VENUSAUR: SpeciesEnum
+SPECIES_CHARMANDER: SpeciesEnum
+SPECIES_CHARMELEON: SpeciesEnum
+SPECIES_CHARIZARD: SpeciesEnum
+SPECIES_SQUIRTLE: SpeciesEnum
+SPECIES_WARTORTLE: SpeciesEnum
+SPECIES_BLASTOISE: SpeciesEnum
+SPECIES_CATERPIE: SpeciesEnum
+SPECIES_METAPOD: SpeciesEnum
+SPECIES_BUTTERFREE: SpeciesEnum
+SPECIES_WEEDLE: SpeciesEnum
+SPECIES_KAKUNA: SpeciesEnum
+SPECIES_BEEDRILL: SpeciesEnum
+SPECIES_PIDGEY: SpeciesEnum
+SPECIES_PIDGEOTTO: SpeciesEnum
+SPECIES_PIDGEOT: SpeciesEnum
+SPECIES_RATTATA: SpeciesEnum
+SPECIES_RATICATE: SpeciesEnum
+SPECIES_SPEAROW: SpeciesEnum
+SPECIES_FEAROW: SpeciesEnum
+SPECIES_EKANS: SpeciesEnum
+SPECIES_ARBOK: SpeciesEnum
+SPECIES_PIKACHU: SpeciesEnum
+SPECIES_RAICHU: SpeciesEnum
+SPECIES_SANDSHREW: SpeciesEnum
+SPECIES_SANDSLASH: SpeciesEnum
+SPECIES_NIDORAN_F: SpeciesEnum
+SPECIES_NIDORINA: SpeciesEnum
+SPECIES_NIDOQUEEN: SpeciesEnum
+SPECIES_NIDORAN_M: SpeciesEnum
+SPECIES_NIDORINO: SpeciesEnum
+SPECIES_NIDOKING: SpeciesEnum
+SPECIES_CLEFAIRY: SpeciesEnum
+SPECIES_CLEFABLE: SpeciesEnum
+SPECIES_VULPIX: SpeciesEnum
+SPECIES_NINETALES: SpeciesEnum
+SPECIES_JIGGLYPUFF: SpeciesEnum
+SPECIES_WIGGLYTUFF: SpeciesEnum
+SPECIES_ZUBAT: SpeciesEnum
+SPECIES_GOLBAT: SpeciesEnum
+SPECIES_ODDISH: SpeciesEnum
+SPECIES_GLOOM: SpeciesEnum
+SPECIES_VILEPLUME: SpeciesEnum
+SPECIES_PARAS: SpeciesEnum
+SPECIES_PARASECT: SpeciesEnum
+SPECIES_VENONAT: SpeciesEnum
+SPECIES_VENOMOTH: SpeciesEnum
+SPECIES_DIGLETT: SpeciesEnum
+SPECIES_DUGTRIO: SpeciesEnum
+SPECIES_MEOWTH: SpeciesEnum
+SPECIES_PERSIAN: SpeciesEnum
+SPECIES_PSYDUCK: SpeciesEnum
+SPECIES_GOLDUCK: SpeciesEnum
+SPECIES_MANKEY: SpeciesEnum
+SPECIES_PRIMEAPE: SpeciesEnum
+SPECIES_GROWLITHE: SpeciesEnum
+SPECIES_ARCANINE: SpeciesEnum
+SPECIES_POLIWAG: SpeciesEnum
+SPECIES_POLIWHIRL: SpeciesEnum
+SPECIES_POLIWRATH: SpeciesEnum
+SPECIES_ABRA: SpeciesEnum
+SPECIES_KADABRA: SpeciesEnum
+SPECIES_ALAKAZAM: SpeciesEnum
+SPECIES_MACHOP: SpeciesEnum
+SPECIES_MACHOKE: SpeciesEnum
+SPECIES_MACHAMP: SpeciesEnum
+SPECIES_BELLSPROUT: SpeciesEnum
+SPECIES_WEEPINBELL: SpeciesEnum
+SPECIES_VICTREEBEL: SpeciesEnum
+SPECIES_TENTACOOL: SpeciesEnum
+SPECIES_TENTACRUEL: SpeciesEnum
+SPECIES_GEODUDE: SpeciesEnum
+SPECIES_GRAVELER: SpeciesEnum
+SPECIES_GOLEM: SpeciesEnum
+SPECIES_PONYTA: SpeciesEnum
+SPECIES_RAPIDASH: SpeciesEnum
+SPECIES_SLOWPOKE: SpeciesEnum
+SPECIES_SLOWBRO: SpeciesEnum
+SPECIES_MAGNEMITE: SpeciesEnum
+SPECIES_MAGNETON: SpeciesEnum
+SPECIES_FARFETCHD: SpeciesEnum
+SPECIES_DODUO: SpeciesEnum
+SPECIES_DODRIO: SpeciesEnum
+SPECIES_SEEL: SpeciesEnum
+SPECIES_DEWGONG: SpeciesEnum
+SPECIES_GRIMER: SpeciesEnum
+SPECIES_MUK: SpeciesEnum
+SPECIES_SHELLDER: SpeciesEnum
+SPECIES_CLOYSTER: SpeciesEnum
+SPECIES_GASTLY: SpeciesEnum
+SPECIES_HAUNTER: SpeciesEnum
+SPECIES_GENGAR: SpeciesEnum
+SPECIES_ONIX: SpeciesEnum
+SPECIES_DROWZEE: SpeciesEnum
+SPECIES_HYPNO: SpeciesEnum
+SPECIES_KRABBY: SpeciesEnum
+SPECIES_KINGLER: SpeciesEnum
+SPECIES_VOLTORB: SpeciesEnum
+SPECIES_ELECTRODE: SpeciesEnum
+SPECIES_EXEGGCUTE: SpeciesEnum
+SPECIES_EXEGGUTOR: SpeciesEnum
+SPECIES_CUBONE: SpeciesEnum
+SPECIES_MAROWAK: SpeciesEnum
+SPECIES_HITMONLEE: SpeciesEnum
+SPECIES_HITMONCHAN: SpeciesEnum
+SPECIES_LICKITUNG: SpeciesEnum
+SPECIES_KOFFING: SpeciesEnum
+SPECIES_WEEZING: SpeciesEnum
+SPECIES_RHYHORN: SpeciesEnum
+SPECIES_RHYDON: SpeciesEnum
+SPECIES_CHANSEY: SpeciesEnum
+SPECIES_TANGELA: SpeciesEnum
+SPECIES_KANGASKHAN: SpeciesEnum
+SPECIES_HORSEA: SpeciesEnum
+SPECIES_SEADRA: SpeciesEnum
+SPECIES_GOLDEEN: SpeciesEnum
+SPECIES_SEAKING: SpeciesEnum
+SPECIES_STARYU: SpeciesEnum
+SPECIES_STARMIE: SpeciesEnum
+SPECIES_MR_MIME: SpeciesEnum
+SPECIES_SCYTHER: SpeciesEnum
+SPECIES_JYNX: SpeciesEnum
+SPECIES_ELECTABUZZ: SpeciesEnum
+SPECIES_MAGMAR: SpeciesEnum
+SPECIES_PINSIR: SpeciesEnum
+SPECIES_TAUROS: SpeciesEnum
+SPECIES_MAGIKARP: SpeciesEnum
+SPECIES_GYARADOS: SpeciesEnum
+SPECIES_LAPRAS: SpeciesEnum
+SPECIES_DITTO: SpeciesEnum
+SPECIES_EEVEE: SpeciesEnum
+SPECIES_VAPOREON: SpeciesEnum
+SPECIES_JOLTEON: SpeciesEnum
+SPECIES_FLAREON: SpeciesEnum
+SPECIES_PORYGON: SpeciesEnum
+SPECIES_OMANYTE: SpeciesEnum
+SPECIES_OMASTAR: SpeciesEnum
+SPECIES_KABUTO: SpeciesEnum
+SPECIES_KABUTOPS: SpeciesEnum
+SPECIES_AERODACTYL: SpeciesEnum
+SPECIES_SNORLAX: SpeciesEnum
+SPECIES_ARTICUNO: SpeciesEnum
+SPECIES_ZAPDOS: SpeciesEnum
+SPECIES_MOLTRES: SpeciesEnum
+SPECIES_DRATINI: SpeciesEnum
+SPECIES_DRAGONAIR: SpeciesEnum
+SPECIES_DRAGONITE: SpeciesEnum
+SPECIES_MEWTWO: SpeciesEnum
+SPECIES_MEW: SpeciesEnum
+SPECIES_CHIKORITA: SpeciesEnum
+SPECIES_BAYLEEF: SpeciesEnum
+SPECIES_MEGANIUM: SpeciesEnum
+SPECIES_CYNDAQUIL: SpeciesEnum
+SPECIES_QUILAVA: SpeciesEnum
+SPECIES_TYPHLOSION: SpeciesEnum
+SPECIES_TOTODILE: SpeciesEnum
+SPECIES_CROCONAW: SpeciesEnum
+SPECIES_FERALIGATR: SpeciesEnum
+SPECIES_SENTRET: SpeciesEnum
+SPECIES_FURRET: SpeciesEnum
+SPECIES_HOOTHOOT: SpeciesEnum
+SPECIES_NOCTOWL: SpeciesEnum
+SPECIES_LEDYBA: SpeciesEnum
+SPECIES_LEDIAN: SpeciesEnum
+SPECIES_SPINARAK: SpeciesEnum
+SPECIES_ARIADOS: SpeciesEnum
+SPECIES_CROBAT: SpeciesEnum
+SPECIES_CHINCHOU: SpeciesEnum
+SPECIES_LANTURN: SpeciesEnum
+SPECIES_PICHU: SpeciesEnum
+SPECIES_CLEFFA: SpeciesEnum
+SPECIES_IGGLYBUFF: SpeciesEnum
+SPECIES_TOGEPI: SpeciesEnum
+SPECIES_TOGETIC: SpeciesEnum
+SPECIES_NATU: SpeciesEnum
+SPECIES_XATU: SpeciesEnum
+SPECIES_MAREEP: SpeciesEnum
+SPECIES_FLAAFFY: SpeciesEnum
+SPECIES_AMPHAROS: SpeciesEnum
+SPECIES_BELLOSSOM: SpeciesEnum
+SPECIES_MARILL: SpeciesEnum
+SPECIES_AZUMARILL: SpeciesEnum
+SPECIES_SUDOWOODO: SpeciesEnum
+SPECIES_POLITOED: SpeciesEnum
+SPECIES_HOPPIP: SpeciesEnum
+SPECIES_SKIPLOOM: SpeciesEnum
+SPECIES_JUMPLUFF: SpeciesEnum
+SPECIES_AIPOM: SpeciesEnum
+SPECIES_SUNKERN: SpeciesEnum
+SPECIES_SUNFLORA: SpeciesEnum
+SPECIES_YANMA: SpeciesEnum
+SPECIES_WOOPER: SpeciesEnum
+SPECIES_QUAGSIRE: SpeciesEnum
+SPECIES_ESPEON: SpeciesEnum
+SPECIES_UMBREON: SpeciesEnum
+SPECIES_MURKROW: SpeciesEnum
+SPECIES_SLOWKING: SpeciesEnum
+SPECIES_MISDREAVUS: SpeciesEnum
+SPECIES_UNOWN: SpeciesEnum
+SPECIES_WOBBUFFET: SpeciesEnum
+SPECIES_GIRAFARIG: SpeciesEnum
+SPECIES_PINECO: SpeciesEnum
+SPECIES_FORRETRESS: SpeciesEnum
+SPECIES_DUNSPARCE: SpeciesEnum
+SPECIES_GLIGAR: SpeciesEnum
+SPECIES_STEELIX: SpeciesEnum
+SPECIES_SNUBBULL: SpeciesEnum
+SPECIES_GRANBULL: SpeciesEnum
+SPECIES_QWILFISH: SpeciesEnum
+SPECIES_SCIZOR: SpeciesEnum
+SPECIES_SHUCKLE: SpeciesEnum
+SPECIES_HERACROSS: SpeciesEnum
+SPECIES_SNEASEL: SpeciesEnum
+SPECIES_TEDDIURSA: SpeciesEnum
+SPECIES_URSARING: SpeciesEnum
+SPECIES_SLUGMA: SpeciesEnum
+SPECIES_MAGCARGO: SpeciesEnum
+SPECIES_SWINUB: SpeciesEnum
+SPECIES_PILOSWINE: SpeciesEnum
+SPECIES_CORSOLA: SpeciesEnum
+SPECIES_REMORAID: SpeciesEnum
+SPECIES_OCTILLERY: SpeciesEnum
+SPECIES_DELIBIRD: SpeciesEnum
+SPECIES_MANTINE: SpeciesEnum
+SPECIES_SKARMORY: SpeciesEnum
+SPECIES_HOUNDOUR: SpeciesEnum
+SPECIES_HOUNDOOM: SpeciesEnum
+SPECIES_KINGDRA: SpeciesEnum
+SPECIES_PHANPY: SpeciesEnum
+SPECIES_DONPHAN: SpeciesEnum
+SPECIES_PORYGON2: SpeciesEnum
+SPECIES_STANTLER: SpeciesEnum
+SPECIES_SMEARGLE: SpeciesEnum
+SPECIES_TYROGUE: SpeciesEnum
+SPECIES_HITMONTOP: SpeciesEnum
+SPECIES_SMOOCHUM: SpeciesEnum
+SPECIES_ELEKID: SpeciesEnum
+SPECIES_MAGBY: SpeciesEnum
+SPECIES_MILTANK: SpeciesEnum
+SPECIES_BLISSEY: SpeciesEnum
+SPECIES_RAIKOU: SpeciesEnum
+SPECIES_ENTEI: SpeciesEnum
+SPECIES_SUICUNE: SpeciesEnum
+SPECIES_LARVITAR: SpeciesEnum
+SPECIES_PUPITAR: SpeciesEnum
+SPECIES_TYRANITAR: SpeciesEnum
+SPECIES_LUGIA: SpeciesEnum
+SPECIES_HO_OH: SpeciesEnum
+SPECIES_CELEBI: SpeciesEnum
+SPECIES_TREECKO: SpeciesEnum
+SPECIES_GROVYLE: SpeciesEnum
+SPECIES_SCEPTILE: SpeciesEnum
+SPECIES_TORCHIC: SpeciesEnum
+SPECIES_COMBUSKEN: SpeciesEnum
+SPECIES_BLAZIKEN: SpeciesEnum
+SPECIES_MUDKIP: SpeciesEnum
+SPECIES_MARSHTOMP: SpeciesEnum
+SPECIES_SWAMPERT: SpeciesEnum
+SPECIES_POOCHYENA: SpeciesEnum
+SPECIES_MIGHTYENA: SpeciesEnum
+SPECIES_ZIGZAGOON: SpeciesEnum
+SPECIES_LINOONE: SpeciesEnum
+SPECIES_WURMPLE: SpeciesEnum
+SPECIES_SILCOON: SpeciesEnum
+SPECIES_BEAUTIFLY: SpeciesEnum
+SPECIES_CASCOON: SpeciesEnum
+SPECIES_DUSTOX: SpeciesEnum
+SPECIES_LOTAD: SpeciesEnum
+SPECIES_LOMBRE: SpeciesEnum
+SPECIES_LUDICOLO: SpeciesEnum
+SPECIES_SEEDOT: SpeciesEnum
+SPECIES_NUZLEAF: SpeciesEnum
+SPECIES_SHIFTRY: SpeciesEnum
+SPECIES_TAILLOW: SpeciesEnum
+SPECIES_SWELLOW: SpeciesEnum
+SPECIES_WINGULL: SpeciesEnum
+SPECIES_PELIPPER: SpeciesEnum
+SPECIES_RALTS: SpeciesEnum
+SPECIES_KIRLIA: SpeciesEnum
+SPECIES_GARDEVOIR: SpeciesEnum
+SPECIES_SURSKIT: SpeciesEnum
+SPECIES_MASQUERAIN: SpeciesEnum
+SPECIES_SHROOMISH: SpeciesEnum
+SPECIES_BRELOOM: SpeciesEnum
+SPECIES_SLAKOTH: SpeciesEnum
+SPECIES_VIGOROTH: SpeciesEnum
+SPECIES_SLAKING: SpeciesEnum
+SPECIES_NINCADA: SpeciesEnum
+SPECIES_NINJASK: SpeciesEnum
+SPECIES_SHEDINJA: SpeciesEnum
+SPECIES_WHISMUR: SpeciesEnum
+SPECIES_LOUDRED: SpeciesEnum
+SPECIES_EXPLOUD: SpeciesEnum
+SPECIES_MAKUHITA: SpeciesEnum
+SPECIES_HARIYAMA: SpeciesEnum
+SPECIES_AZURILL: SpeciesEnum
+SPECIES_NOSEPASS: SpeciesEnum
+SPECIES_SKITTY: SpeciesEnum
+SPECIES_DELCATTY: SpeciesEnum
+SPECIES_SABLEYE: SpeciesEnum
+SPECIES_MAWILE: SpeciesEnum
+SPECIES_ARON: SpeciesEnum
+SPECIES_LAIRON: SpeciesEnum
+SPECIES_AGGRON: SpeciesEnum
+SPECIES_MEDITITE: SpeciesEnum
+SPECIES_MEDICHAM: SpeciesEnum
+SPECIES_ELECTRIKE: SpeciesEnum
+SPECIES_MANECTRIC: SpeciesEnum
+SPECIES_PLUSLE: SpeciesEnum
+SPECIES_MINUN: SpeciesEnum
+SPECIES_VOLBEAT: SpeciesEnum
+SPECIES_ILLUMISE: SpeciesEnum
+SPECIES_ROSELIA: SpeciesEnum
+SPECIES_GULPIN: SpeciesEnum
+SPECIES_SWALOT: SpeciesEnum
+SPECIES_CARVANHA: SpeciesEnum
+SPECIES_SHARPEDO: SpeciesEnum
+SPECIES_WAILMER: SpeciesEnum
+SPECIES_WAILORD: SpeciesEnum
+SPECIES_NUMEL: SpeciesEnum
+SPECIES_CAMERUPT: SpeciesEnum
+SPECIES_TORKOAL: SpeciesEnum
+SPECIES_SPOINK: SpeciesEnum
+SPECIES_GRUMPIG: SpeciesEnum
+SPECIES_SPINDA: SpeciesEnum
+SPECIES_TRAPINCH: SpeciesEnum
+SPECIES_VIBRAVA: SpeciesEnum
+SPECIES_FLYGON: SpeciesEnum
+SPECIES_CACNEA: SpeciesEnum
+SPECIES_CACTURNE: SpeciesEnum
+SPECIES_SWABLU: SpeciesEnum
+SPECIES_ALTARIA: SpeciesEnum
+SPECIES_ZANGOOSE: SpeciesEnum
+SPECIES_SEVIPER: SpeciesEnum
+SPECIES_LUNATONE: SpeciesEnum
+SPECIES_SOLROCK: SpeciesEnum
+SPECIES_BARBOACH: SpeciesEnum
+SPECIES_WHISCASH: SpeciesEnum
+SPECIES_CORPHISH: SpeciesEnum
+SPECIES_CRAWDAUNT: SpeciesEnum
+SPECIES_BALTOY: SpeciesEnum
+SPECIES_CLAYDOL: SpeciesEnum
+SPECIES_LILEEP: SpeciesEnum
+SPECIES_CRADILY: SpeciesEnum
+SPECIES_ANORITH: SpeciesEnum
+SPECIES_ARMALDO: SpeciesEnum
+SPECIES_FEEBAS: SpeciesEnum
+SPECIES_MILOTIC: SpeciesEnum
+SPECIES_CASTFORM: SpeciesEnum
+SPECIES_KECLEON: SpeciesEnum
+SPECIES_SHUPPET: SpeciesEnum
+SPECIES_BANETTE: SpeciesEnum
+SPECIES_DUSKULL: SpeciesEnum
+SPECIES_DUSCLOPS: SpeciesEnum
+SPECIES_TROPIUS: SpeciesEnum
+SPECIES_CHIMECHO: SpeciesEnum
+SPECIES_ABSOL: SpeciesEnum
+SPECIES_WYNAUT: SpeciesEnum
+SPECIES_SNORUNT: SpeciesEnum
+SPECIES_GLALIE: SpeciesEnum
+SPECIES_SPHEAL: SpeciesEnum
+SPECIES_SEALEO: SpeciesEnum
+SPECIES_WALREIN: SpeciesEnum
+SPECIES_CLAMPERL: SpeciesEnum
+SPECIES_HUNTAIL: SpeciesEnum
+SPECIES_GOREBYSS: SpeciesEnum
+SPECIES_RELICANTH: SpeciesEnum
+SPECIES_LUVDISC: SpeciesEnum
+SPECIES_BAGON: SpeciesEnum
+SPECIES_SHELGON: SpeciesEnum
+SPECIES_SALAMENCE: SpeciesEnum
+SPECIES_BELDUM: SpeciesEnum
+SPECIES_METANG: SpeciesEnum
+SPECIES_METAGROSS: SpeciesEnum
+SPECIES_REGIROCK: SpeciesEnum
+SPECIES_REGICE: SpeciesEnum
+SPECIES_REGISTEEL: SpeciesEnum
+SPECIES_LATIAS: SpeciesEnum
+SPECIES_LATIOS: SpeciesEnum
+SPECIES_KYOGRE: SpeciesEnum
+SPECIES_GROUDON: SpeciesEnum
+SPECIES_RAYQUAZA: SpeciesEnum
+SPECIES_JIRACHI: SpeciesEnum
+SPECIES_DEOXYS: SpeciesEnum
+SPECIES_TURTWIG: SpeciesEnum
+SPECIES_GROTLE: SpeciesEnum
+SPECIES_TORTERRA: SpeciesEnum
+SPECIES_CHIMCHAR: SpeciesEnum
+SPECIES_MONFERNO: SpeciesEnum
+SPECIES_INFERNAPE: SpeciesEnum
+SPECIES_PIPLUP: SpeciesEnum
+SPECIES_PRINPLUP: SpeciesEnum
+SPECIES_EMPOLEON: SpeciesEnum
+SPECIES_STARLY: SpeciesEnum
+SPECIES_STARAVIA: SpeciesEnum
+SPECIES_STARAPTOR: SpeciesEnum
+SPECIES_BIDOOF: SpeciesEnum
+SPECIES_BIBAREL: SpeciesEnum
+SPECIES_KRICKETOT: SpeciesEnum
+SPECIES_KRICKETUNE: SpeciesEnum
+SPECIES_SHINX: SpeciesEnum
+SPECIES_LUXIO: SpeciesEnum
+SPECIES_LUXRAY: SpeciesEnum
+SPECIES_BUDEW: SpeciesEnum
+SPECIES_ROSERADE: SpeciesEnum
+SPECIES_CRANIDOS: SpeciesEnum
+SPECIES_RAMPARDOS: SpeciesEnum
+SPECIES_SHIELDON: SpeciesEnum
+SPECIES_BASTIODON: SpeciesEnum
+SPECIES_BURMY: SpeciesEnum
+SPECIES_WORMADAM: SpeciesEnum
+SPECIES_MOTHIM: SpeciesEnum
+SPECIES_COMBEE: SpeciesEnum
+SPECIES_VESPIQUEN: SpeciesEnum
+SPECIES_PACHIRISU: SpeciesEnum
+SPECIES_BUIZEL: SpeciesEnum
+SPECIES_FLOATZEL: SpeciesEnum
+SPECIES_CHERUBI: SpeciesEnum
+SPECIES_CHERRIM: SpeciesEnum
+SPECIES_SHELLOS: SpeciesEnum
+SPECIES_GASTRODON: SpeciesEnum
+SPECIES_AMBIPOM: SpeciesEnum
+SPECIES_DRIFLOON: SpeciesEnum
+SPECIES_DRIFBLIM: SpeciesEnum
+SPECIES_BUNEARY: SpeciesEnum
+SPECIES_LOPUNNY: SpeciesEnum
+SPECIES_MISMAGIUS: SpeciesEnum
+SPECIES_HONCHKROW: SpeciesEnum
+SPECIES_GLAMEOW: SpeciesEnum
+SPECIES_PURUGLY: SpeciesEnum
+SPECIES_CHINGLING: SpeciesEnum
+SPECIES_STUNKY: SpeciesEnum
+SPECIES_SKUNTANK: SpeciesEnum
+SPECIES_BRONZOR: SpeciesEnum
+SPECIES_BRONZONG: SpeciesEnum
+SPECIES_BONSLY: SpeciesEnum
+SPECIES_MIME_JR: SpeciesEnum
+SPECIES_HAPPINY: SpeciesEnum
+SPECIES_CHATOT: SpeciesEnum
+SPECIES_SPIRITOMB: SpeciesEnum
+SPECIES_GIBLE: SpeciesEnum
+SPECIES_GABITE: SpeciesEnum
+SPECIES_GARCHOMP: SpeciesEnum
+SPECIES_MUNCHLAX: SpeciesEnum
+SPECIES_RIOLU: SpeciesEnum
+SPECIES_LUCARIO: SpeciesEnum
+SPECIES_HIPPOPOTAS: SpeciesEnum
+SPECIES_HIPPOWDON: SpeciesEnum
+SPECIES_SKORUPI: SpeciesEnum
+SPECIES_DRAPION: SpeciesEnum
+SPECIES_CROAGUNK: SpeciesEnum
+SPECIES_TOXICROAK: SpeciesEnum
+SPECIES_CARNIVINE: SpeciesEnum
+SPECIES_FINNEON: SpeciesEnum
+SPECIES_LUMINEON: SpeciesEnum
+SPECIES_MANTYKE: SpeciesEnum
+SPECIES_SNOVER: SpeciesEnum
+SPECIES_ABOMASNOW: SpeciesEnum
+SPECIES_WEAVILE: SpeciesEnum
+SPECIES_MAGNEZONE: SpeciesEnum
+SPECIES_LICKILICKY: SpeciesEnum
+SPECIES_RHYPERIOR: SpeciesEnum
+SPECIES_TANGROWTH: SpeciesEnum
+SPECIES_ELECTIVIRE: SpeciesEnum
+SPECIES_MAGMORTAR: SpeciesEnum
+SPECIES_TOGEKISS: SpeciesEnum
+SPECIES_YANMEGA: SpeciesEnum
+SPECIES_LEAFEON: SpeciesEnum
+SPECIES_GLACEON: SpeciesEnum
+SPECIES_GLISCOR: SpeciesEnum
+SPECIES_MAMOSWINE: SpeciesEnum
+SPECIES_PORYGON_Z: SpeciesEnum
+SPECIES_GALLADE: SpeciesEnum
+SPECIES_PROBOPASS: SpeciesEnum
+SPECIES_DUSKNOIR: SpeciesEnum
+SPECIES_FROSLASS: SpeciesEnum
+SPECIES_ROTOM: SpeciesEnum
+SPECIES_UXIE: SpeciesEnum
+SPECIES_MESPRIT: SpeciesEnum
+SPECIES_AZELF: SpeciesEnum
+SPECIES_DIALGA: SpeciesEnum
+SPECIES_PALKIA: SpeciesEnum
+SPECIES_HEATRAN: SpeciesEnum
+SPECIES_REGIGIGAS: SpeciesEnum
+SPECIES_GIRATINA: SpeciesEnum
+SPECIES_CRESSELIA: SpeciesEnum
+SPECIES_PHIONE: SpeciesEnum
+SPECIES_MANAPHY: SpeciesEnum
+SPECIES_DARKRAI: SpeciesEnum
+SPECIES_SHAYMIN: SpeciesEnum
+SPECIES_ARCEUS: SpeciesEnum
+SPECIES_VICTINI: SpeciesEnum
+SPECIES_SNIVY: SpeciesEnum
+SPECIES_SERVINE: SpeciesEnum
+SPECIES_SERPERIOR: SpeciesEnum
+SPECIES_TEPIG: SpeciesEnum
+SPECIES_PIGNITE: SpeciesEnum
+SPECIES_EMBOAR: SpeciesEnum
+SPECIES_OSHAWOTT: SpeciesEnum
+SPECIES_DEWOTT: SpeciesEnum
+SPECIES_SAMUROTT: SpeciesEnum
+SPECIES_PATRAT: SpeciesEnum
+SPECIES_WATCHOG: SpeciesEnum
+SPECIES_LILLIPUP: SpeciesEnum
+SPECIES_HERDIER: SpeciesEnum
+SPECIES_STOUTLAND: SpeciesEnum
+SPECIES_PURRLOIN: SpeciesEnum
+SPECIES_LIEPARD: SpeciesEnum
+SPECIES_PANSAGE: SpeciesEnum
+SPECIES_SIMISAGE: SpeciesEnum
+SPECIES_PANSEAR: SpeciesEnum
+SPECIES_SIMISEAR: SpeciesEnum
+SPECIES_PANPOUR: SpeciesEnum
+SPECIES_SIMIPOUR: SpeciesEnum
+SPECIES_MUNNA: SpeciesEnum
+SPECIES_MUSHARNA: SpeciesEnum
+SPECIES_PIDOVE: SpeciesEnum
+SPECIES_TRANQUILL: SpeciesEnum
+SPECIES_UNFEZANT: SpeciesEnum
+SPECIES_BLITZLE: SpeciesEnum
+SPECIES_ZEBSTRIKA: SpeciesEnum
+SPECIES_ROGGENROLA: SpeciesEnum
+SPECIES_BOLDORE: SpeciesEnum
+SPECIES_GIGALITH: SpeciesEnum
+SPECIES_WOOBAT: SpeciesEnum
+SPECIES_SWOOBAT: SpeciesEnum
+SPECIES_DRILBUR: SpeciesEnum
+SPECIES_EXCADRILL: SpeciesEnum
+SPECIES_AUDINO: SpeciesEnum
+SPECIES_TIMBURR: SpeciesEnum
+SPECIES_GURDURR: SpeciesEnum
+SPECIES_CONKELDURR: SpeciesEnum
+SPECIES_TYMPOLE: SpeciesEnum
+SPECIES_PALPITOAD: SpeciesEnum
+SPECIES_SEISMITOAD: SpeciesEnum
+SPECIES_THROH: SpeciesEnum
+SPECIES_SAWK: SpeciesEnum
+SPECIES_SEWADDLE: SpeciesEnum
+SPECIES_SWADLOON: SpeciesEnum
+SPECIES_LEAVANNY: SpeciesEnum
+SPECIES_VENIPEDE: SpeciesEnum
+SPECIES_WHIRLIPEDE: SpeciesEnum
+SPECIES_SCOLIPEDE: SpeciesEnum
+SPECIES_COTTONEE: SpeciesEnum
+SPECIES_WHIMSICOTT: SpeciesEnum
+SPECIES_PETILIL: SpeciesEnum
+SPECIES_LILLIGANT: SpeciesEnum
+SPECIES_BASCULIN: SpeciesEnum
+SPECIES_SANDILE: SpeciesEnum
+SPECIES_KROKOROK: SpeciesEnum
+SPECIES_KROOKODILE: SpeciesEnum
+SPECIES_DARUMAKA: SpeciesEnum
+SPECIES_DARMANITAN: SpeciesEnum
+SPECIES_MARACTUS: SpeciesEnum
+SPECIES_DWEBBLE: SpeciesEnum
+SPECIES_CRUSTLE: SpeciesEnum
+SPECIES_SCRAGGY: SpeciesEnum
+SPECIES_SCRAFTY: SpeciesEnum
+SPECIES_SIGILYPH: SpeciesEnum
+SPECIES_YAMASK: SpeciesEnum
+SPECIES_COFAGRIGUS: SpeciesEnum
+SPECIES_TIRTOUGA: SpeciesEnum
+SPECIES_CARRACOSTA: SpeciesEnum
+SPECIES_ARCHEN: SpeciesEnum
+SPECIES_ARCHEOPS: SpeciesEnum
+SPECIES_TRUBBISH: SpeciesEnum
+SPECIES_GARBODOR: SpeciesEnum
+SPECIES_ZORUA: SpeciesEnum
+SPECIES_ZOROARK: SpeciesEnum
+SPECIES_MINCCINO: SpeciesEnum
+SPECIES_CINCCINO: SpeciesEnum
+SPECIES_GOTHITA: SpeciesEnum
+SPECIES_GOTHORITA: SpeciesEnum
+SPECIES_GOTHITELLE: SpeciesEnum
+SPECIES_SOLOSIS: SpeciesEnum
+SPECIES_DUOSION: SpeciesEnum
+SPECIES_REUNICLUS: SpeciesEnum
+SPECIES_DUCKLETT: SpeciesEnum
+SPECIES_SWANNA: SpeciesEnum
+SPECIES_VANILLITE: SpeciesEnum
+SPECIES_VANILLISH: SpeciesEnum
+SPECIES_VANILLUXE: SpeciesEnum
+SPECIES_DEERLING: SpeciesEnum
+SPECIES_SAWSBUCK: SpeciesEnum
+SPECIES_EMOLGA: SpeciesEnum
+SPECIES_KARRABLAST: SpeciesEnum
+SPECIES_ESCAVALIER: SpeciesEnum
+SPECIES_FOONGUS: SpeciesEnum
+SPECIES_AMOONGUSS: SpeciesEnum
+SPECIES_FRILLISH: SpeciesEnum
+SPECIES_JELLICENT: SpeciesEnum
+SPECIES_ALOMOMOLA: SpeciesEnum
+SPECIES_JOLTIK: SpeciesEnum
+SPECIES_GALVANTULA: SpeciesEnum
+SPECIES_FERROSEED: SpeciesEnum
+SPECIES_FERROTHORN: SpeciesEnum
+SPECIES_KLINK: SpeciesEnum
+SPECIES_KLANG: SpeciesEnum
+SPECIES_KLINKLANG: SpeciesEnum
+SPECIES_TYNAMO: SpeciesEnum
+SPECIES_EELEKTRIK: SpeciesEnum
+SPECIES_EELEKTROSS: SpeciesEnum
+SPECIES_ELGYEM: SpeciesEnum
+SPECIES_BEHEEYEM: SpeciesEnum
+SPECIES_LITWICK: SpeciesEnum
+SPECIES_LAMPENT: SpeciesEnum
+SPECIES_CHANDELURE: SpeciesEnum
+SPECIES_AXEW: SpeciesEnum
+SPECIES_FRAXURE: SpeciesEnum
+SPECIES_HAXORUS: SpeciesEnum
+SPECIES_CUBCHOO: SpeciesEnum
+SPECIES_BEARTIC: SpeciesEnum
+SPECIES_CRYOGONAL: SpeciesEnum
+SPECIES_SHELMET: SpeciesEnum
+SPECIES_ACCELGOR: SpeciesEnum
+SPECIES_STUNFISK: SpeciesEnum
+SPECIES_MIENFOO: SpeciesEnum
+SPECIES_MIENSHAO: SpeciesEnum
+SPECIES_DRUDDIGON: SpeciesEnum
+SPECIES_GOLETT: SpeciesEnum
+SPECIES_GOLURK: SpeciesEnum
+SPECIES_PAWNIARD: SpeciesEnum
+SPECIES_BISHARP: SpeciesEnum
+SPECIES_BOUFFALANT: SpeciesEnum
+SPECIES_RUFFLET: SpeciesEnum
+SPECIES_BRAVIARY: SpeciesEnum
+SPECIES_VULLABY: SpeciesEnum
+SPECIES_MANDIBUZZ: SpeciesEnum
+SPECIES_HEATMOR: SpeciesEnum
+SPECIES_DURANT: SpeciesEnum
+SPECIES_DEINO: SpeciesEnum
+SPECIES_ZWEILOUS: SpeciesEnum
+SPECIES_HYDREIGON: SpeciesEnum
+SPECIES_LARVESTA: SpeciesEnum
+SPECIES_VOLCARONA: SpeciesEnum
+SPECIES_COBALION: SpeciesEnum
+SPECIES_TERRAKION: SpeciesEnum
+SPECIES_VIRIZION: SpeciesEnum
+SPECIES_TORNADUS: SpeciesEnum
+SPECIES_THUNDURUS: SpeciesEnum
+SPECIES_RESHIRAM: SpeciesEnum
+SPECIES_ZEKROM: SpeciesEnum
+SPECIES_LANDORUS: SpeciesEnum
+SPECIES_KYUREM: SpeciesEnum
+SPECIES_KELDEO: SpeciesEnum
+SPECIES_MELOETTA: SpeciesEnum
+SPECIES_GENESECT: SpeciesEnum
+SPECIES_CHESPIN: SpeciesEnum
+SPECIES_QUILLADIN: SpeciesEnum
+SPECIES_CHESNAUGHT: SpeciesEnum
+SPECIES_FENNEKIN: SpeciesEnum
+SPECIES_BRAIXEN: SpeciesEnum
+SPECIES_DELPHOX: SpeciesEnum
+SPECIES_FROAKIE: SpeciesEnum
+SPECIES_FROGADIER: SpeciesEnum
+SPECIES_GRENINJA: SpeciesEnum
+SPECIES_BUNNELBY: SpeciesEnum
+SPECIES_DIGGERSBY: SpeciesEnum
+SPECIES_FLETCHLING: SpeciesEnum
+SPECIES_FLETCHINDER: SpeciesEnum
+SPECIES_TALONFLAME: SpeciesEnum
+SPECIES_SCATTERBUG: SpeciesEnum
+SPECIES_SPEWPA: SpeciesEnum
+SPECIES_VIVILLON: SpeciesEnum
+SPECIES_LITLEO: SpeciesEnum
+SPECIES_PYROAR: SpeciesEnum
+SPECIES_FLABEBE: SpeciesEnum
+SPECIES_FLOETTE: SpeciesEnum
+SPECIES_FLORGES: SpeciesEnum
+SPECIES_SKIDDO: SpeciesEnum
+SPECIES_GOGOAT: SpeciesEnum
+SPECIES_PANCHAM: SpeciesEnum
+SPECIES_PANGORO: SpeciesEnum
+SPECIES_FURFROU: SpeciesEnum
+SPECIES_ESPURR: SpeciesEnum
+SPECIES_MEOWSTIC: SpeciesEnum
+SPECIES_HONEDGE: SpeciesEnum
+SPECIES_DOUBLADE: SpeciesEnum
+SPECIES_AEGISLASH: SpeciesEnum
+SPECIES_SPRITZEE: SpeciesEnum
+SPECIES_AROMATISSE: SpeciesEnum
+SPECIES_SWIRLIX: SpeciesEnum
+SPECIES_SLURPUFF: SpeciesEnum
+SPECIES_INKAY: SpeciesEnum
+SPECIES_MALAMAR: SpeciesEnum
+SPECIES_BINACLE: SpeciesEnum
+SPECIES_BARBARACLE: SpeciesEnum
+SPECIES_SKRELP: SpeciesEnum
+SPECIES_DRAGALGE: SpeciesEnum
+SPECIES_CLAUNCHER: SpeciesEnum
+SPECIES_CLAWITZER: SpeciesEnum
+SPECIES_HELIOPTILE: SpeciesEnum
+SPECIES_HELIOLISK: SpeciesEnum
+SPECIES_TYRUNT: SpeciesEnum
+SPECIES_TYRANTRUM: SpeciesEnum
+SPECIES_AMAURA: SpeciesEnum
+SPECIES_AURORUS: SpeciesEnum
+SPECIES_SYLVEON: SpeciesEnum
+SPECIES_HAWLUCHA: SpeciesEnum
+SPECIES_DEDENNE: SpeciesEnum
+SPECIES_CARBINK: SpeciesEnum
+SPECIES_GOOMY: SpeciesEnum
+SPECIES_SLIGGOO: SpeciesEnum
+SPECIES_GOODRA: SpeciesEnum
+SPECIES_KLEFKI: SpeciesEnum
+SPECIES_PHANTUMP: SpeciesEnum
+SPECIES_TREVENANT: SpeciesEnum
+SPECIES_PUMPKABOO: SpeciesEnum
+SPECIES_GOURGEIST: SpeciesEnum
+SPECIES_BERGMITE: SpeciesEnum
+SPECIES_AVALUGG: SpeciesEnum
+SPECIES_NOIBAT: SpeciesEnum
+SPECIES_NOIVERN: SpeciesEnum
+SPECIES_XERNEAS: SpeciesEnum
+SPECIES_YVELTAL: SpeciesEnum
+SPECIES_ZYGARDE: SpeciesEnum
+SPECIES_DIANCIE: SpeciesEnum
+SPECIES_HOOPA: SpeciesEnum
+SPECIES_VOLCANION: SpeciesEnum
+SPECIES_ROWLET: SpeciesEnum
+SPECIES_DARTRIX: SpeciesEnum
+SPECIES_DECIDUEYE: SpeciesEnum
+SPECIES_LITTEN: SpeciesEnum
+SPECIES_TORRACAT: SpeciesEnum
+SPECIES_INCINEROAR: SpeciesEnum
+SPECIES_POPPLIO: SpeciesEnum
+SPECIES_BRIONNE: SpeciesEnum
+SPECIES_PRIMARINA: SpeciesEnum
+SPECIES_PIKIPEK: SpeciesEnum
+SPECIES_TRUMBEAK: SpeciesEnum
+SPECIES_TOUCANNON: SpeciesEnum
+SPECIES_YUNGOOS: SpeciesEnum
+SPECIES_GUMSHOOS: SpeciesEnum
+SPECIES_GRUBBIN: SpeciesEnum
+SPECIES_CHARJABUG: SpeciesEnum
+SPECIES_VIKAVOLT: SpeciesEnum
+SPECIES_CRABRAWLER: SpeciesEnum
+SPECIES_CRABOMINABLE: SpeciesEnum
+SPECIES_ORICORIO: SpeciesEnum
+SPECIES_CUTIEFLY: SpeciesEnum
+SPECIES_RIBOMBEE: SpeciesEnum
+SPECIES_ROCKRUFF: SpeciesEnum
+SPECIES_LYCANROC: SpeciesEnum
+SPECIES_WISHIWASHI: SpeciesEnum
+SPECIES_MAREANIE: SpeciesEnum
+SPECIES_TOXAPEX: SpeciesEnum
+SPECIES_MUDBRAY: SpeciesEnum
+SPECIES_MUDSDALE: SpeciesEnum
+SPECIES_DEWPIDER: SpeciesEnum
+SPECIES_ARAQUANID: SpeciesEnum
+SPECIES_FOMANTIS: SpeciesEnum
+SPECIES_LURANTIS: SpeciesEnum
+SPECIES_MORELULL: SpeciesEnum
+SPECIES_SHIINOTIC: SpeciesEnum
+SPECIES_SALANDIT: SpeciesEnum
+SPECIES_SALAZZLE: SpeciesEnum
+SPECIES_STUFFUL: SpeciesEnum
+SPECIES_BEWEAR: SpeciesEnum
+SPECIES_BOUNSWEET: SpeciesEnum
+SPECIES_STEENEE: SpeciesEnum
+SPECIES_TSAREENA: SpeciesEnum
+SPECIES_COMFEY: SpeciesEnum
+SPECIES_ORANGURU: SpeciesEnum
+SPECIES_PASSIMIAN: SpeciesEnum
+SPECIES_WIMPOD: SpeciesEnum
+SPECIES_GOLISOPOD: SpeciesEnum
+SPECIES_SANDYGAST: SpeciesEnum
+SPECIES_PALOSSAND: SpeciesEnum
+SPECIES_PYUKUMUKU: SpeciesEnum
+SPECIES_TYPE_NULL: SpeciesEnum
+SPECIES_SILVALLY: SpeciesEnum
+SPECIES_MINIOR: SpeciesEnum
+SPECIES_KOMALA: SpeciesEnum
+SPECIES_TURTONATOR: SpeciesEnum
+SPECIES_TOGEDEMARU: SpeciesEnum
+SPECIES_MIMIKYU: SpeciesEnum
+SPECIES_BRUXISH: SpeciesEnum
+SPECIES_DRAMPA: SpeciesEnum
+SPECIES_DHELMISE: SpeciesEnum
+SPECIES_JANGMO_O: SpeciesEnum
+SPECIES_HAKAMO_O: SpeciesEnum
+SPECIES_KOMMO_O: SpeciesEnum
+SPECIES_TAPU_KOKO: SpeciesEnum
+SPECIES_TAPU_LELE: SpeciesEnum
+SPECIES_TAPU_BULU: SpeciesEnum
+SPECIES_TAPU_FINI: SpeciesEnum
+SPECIES_COSMOG: SpeciesEnum
+SPECIES_COSMOEM: SpeciesEnum
+SPECIES_SOLGALEO: SpeciesEnum
+SPECIES_LUNALA: SpeciesEnum
+SPECIES_NIHILEGO: SpeciesEnum
+SPECIES_BUZZWOLE: SpeciesEnum
+SPECIES_PHEROMOSA: SpeciesEnum
+SPECIES_XURKITREE: SpeciesEnum
+SPECIES_CELESTEELA: SpeciesEnum
+SPECIES_KARTANA: SpeciesEnum
+SPECIES_GUZZLORD: SpeciesEnum
+SPECIES_NECROZMA: SpeciesEnum
+SPECIES_MAGEARNA: SpeciesEnum
+SPECIES_MARSHADOW: SpeciesEnum
+SPECIES_POIPOLE: SpeciesEnum
+SPECIES_NAGANADEL: SpeciesEnum
+SPECIES_STAKATAKA: SpeciesEnum
+SPECIES_BLACEPHALON: SpeciesEnum
+SPECIES_ZERAORA: SpeciesEnum
+SPECIES_MELTAN: SpeciesEnum
+SPECIES_MELMETAL: SpeciesEnum
+SPECIES_GROOKEY: SpeciesEnum
+SPECIES_THWACKEY: SpeciesEnum
+SPECIES_RILLABOOM: SpeciesEnum
+SPECIES_SCORBUNNY: SpeciesEnum
+SPECIES_RABOOT: SpeciesEnum
+SPECIES_CINDERACE: SpeciesEnum
+SPECIES_SOBBLE: SpeciesEnum
+SPECIES_DRIZZILE: SpeciesEnum
+SPECIES_INTELEON: SpeciesEnum
+SPECIES_SKWOVET: SpeciesEnum
+SPECIES_GREEDENT: SpeciesEnum
+SPECIES_ROOKIDEE: SpeciesEnum
+SPECIES_CORVISQUIRE: SpeciesEnum
+SPECIES_CORVIKNIGHT: SpeciesEnum
+SPECIES_BLIPBUG: SpeciesEnum
+SPECIES_DOTTLER: SpeciesEnum
+SPECIES_ORBEETLE: SpeciesEnum
+SPECIES_NICKIT: SpeciesEnum
+SPECIES_THIEVUL: SpeciesEnum
+SPECIES_GOSSIFLEUR: SpeciesEnum
+SPECIES_ELDEGOSS: SpeciesEnum
+SPECIES_WOOLOO: SpeciesEnum
+SPECIES_DUBWOOL: SpeciesEnum
+SPECIES_CHEWTLE: SpeciesEnum
+SPECIES_DREDNAW: SpeciesEnum
+SPECIES_YAMPER: SpeciesEnum
+SPECIES_BOLTUND: SpeciesEnum
+SPECIES_ROLYCOLY: SpeciesEnum
+SPECIES_CARKOL: SpeciesEnum
+SPECIES_COALOSSAL: SpeciesEnum
+SPECIES_APPLIN: SpeciesEnum
+SPECIES_FLAPPLE: SpeciesEnum
+SPECIES_APPLETUN: SpeciesEnum
+SPECIES_SILICOBRA: SpeciesEnum
+SPECIES_SANDACONDA: SpeciesEnum
+SPECIES_CRAMORANT: SpeciesEnum
+SPECIES_ARROKUDA: SpeciesEnum
+SPECIES_BARRASKEWDA: SpeciesEnum
+SPECIES_TOXEL: SpeciesEnum
+SPECIES_TOXTRICITY: SpeciesEnum
+SPECIES_SIZZLIPEDE: SpeciesEnum
+SPECIES_CENTISKORCH: SpeciesEnum
+SPECIES_CLOBBOPUS: SpeciesEnum
+SPECIES_GRAPPLOCT: SpeciesEnum
+SPECIES_SINISTEA: SpeciesEnum
+SPECIES_POLTEAGEIST: SpeciesEnum
+SPECIES_HATENNA: SpeciesEnum
+SPECIES_HATTREM: SpeciesEnum
+SPECIES_HATTERENE: SpeciesEnum
+SPECIES_IMPIDIMP: SpeciesEnum
+SPECIES_MORGREM: SpeciesEnum
+SPECIES_GRIMMSNARL: SpeciesEnum
+SPECIES_OBSTAGOON: SpeciesEnum
+SPECIES_PERRSERKER: SpeciesEnum
+SPECIES_CURSOLA: SpeciesEnum
+SPECIES_SIRFETCHD: SpeciesEnum
+SPECIES_MR_RIME: SpeciesEnum
+SPECIES_RUNERIGUS: SpeciesEnum
+SPECIES_MILCERY: SpeciesEnum
+SPECIES_ALCREMIE: SpeciesEnum
+SPECIES_FALINKS: SpeciesEnum
+SPECIES_PINCURCHIN: SpeciesEnum
+SPECIES_SNOM: SpeciesEnum
+SPECIES_FROSMOTH: SpeciesEnum
+SPECIES_STONJOURNER: SpeciesEnum
+SPECIES_EISCUE: SpeciesEnum
+SPECIES_INDEEDEE: SpeciesEnum
+SPECIES_MORPEKO: SpeciesEnum
+SPECIES_CUFANT: SpeciesEnum
+SPECIES_COPPERAJAH: SpeciesEnum
+SPECIES_DRACOZOLT: SpeciesEnum
+SPECIES_ARCTOZOLT: SpeciesEnum
+SPECIES_DRACOVISH: SpeciesEnum
+SPECIES_ARCTOVISH: SpeciesEnum
+SPECIES_DURALUDON: SpeciesEnum
+SPECIES_DREEPY: SpeciesEnum
+SPECIES_DRAKLOAK: SpeciesEnum
+SPECIES_DRAGAPULT: SpeciesEnum
+SPECIES_ZACIAN: SpeciesEnum
+SPECIES_ZAMAZENTA: SpeciesEnum
+SPECIES_ETERNATUS: SpeciesEnum
+SPECIES_KUBFU: SpeciesEnum
+SPECIES_URSHIFU: SpeciesEnum
+SPECIES_ZARUDE: SpeciesEnum
+SPECIES_REGIELEKI: SpeciesEnum
+SPECIES_REGIDRAGO: SpeciesEnum
+SPECIES_GLASTRIER: SpeciesEnum
+SPECIES_SPECTRIER: SpeciesEnum
+SPECIES_CALYREX: SpeciesEnum
+SPECIES_WYRDEER: SpeciesEnum
+SPECIES_KLEAVOR: SpeciesEnum
+SPECIES_URSALUNA: SpeciesEnum
+SPECIES_BASCULEGION: SpeciesEnum
+SPECIES_SNEASLER: SpeciesEnum
+SPECIES_OVERQWIL: SpeciesEnum
+SPECIES_ENAMORUS: SpeciesEnum
+SPECIES_SPRIGATITO: SpeciesEnum
+SPECIES_FLORAGATO: SpeciesEnum
+SPECIES_MEOWSCARADA: SpeciesEnum
+SPECIES_FUECOCO: SpeciesEnum
+SPECIES_CROCALOR: SpeciesEnum
+SPECIES_SKELEDIRGE: SpeciesEnum
+SPECIES_QUAXLY: SpeciesEnum
+SPECIES_QUAXWELL: SpeciesEnum
+SPECIES_QUAQUAVAL: SpeciesEnum
+SPECIES_LECHONK: SpeciesEnum
+SPECIES_OINKOLOGNE: SpeciesEnum
+SPECIES_TAROUNTULA: SpeciesEnum
+SPECIES_SPIDOPS: SpeciesEnum
+SPECIES_NYMBLE: SpeciesEnum
+SPECIES_LOKIX: SpeciesEnum
+SPECIES_PAWMI: SpeciesEnum
+SPECIES_PAWMO: SpeciesEnum
+SPECIES_PAWMOT: SpeciesEnum
+SPECIES_TANDEMAUS: SpeciesEnum
+SPECIES_MAUSHOLD: SpeciesEnum
+SPECIES_FIDOUGH: SpeciesEnum
+SPECIES_DACHSBUN: SpeciesEnum
+SPECIES_SMOLIV: SpeciesEnum
+SPECIES_DOLLIV: SpeciesEnum
+SPECIES_ARBOLIVA: SpeciesEnum
+SPECIES_SQUAWKABILLY: SpeciesEnum
+SPECIES_NACLI: SpeciesEnum
+SPECIES_NACLSTACK: SpeciesEnum
+SPECIES_GARGANACL: SpeciesEnum
+SPECIES_CHARCADET: SpeciesEnum
+SPECIES_ARMAROUGE: SpeciesEnum
+SPECIES_CERULEDGE: SpeciesEnum
+SPECIES_TADBULB: SpeciesEnum
+SPECIES_BELLIBOLT: SpeciesEnum
+SPECIES_WATTREL: SpeciesEnum
+SPECIES_KILOWATTREL: SpeciesEnum
+SPECIES_MASCHIFF: SpeciesEnum
+SPECIES_MABOSSTIFF: SpeciesEnum
+SPECIES_SHROODLE: SpeciesEnum
+SPECIES_GRAFAIAI: SpeciesEnum
+SPECIES_BRAMBLIN: SpeciesEnum
+SPECIES_BRAMBLEGHAST: SpeciesEnum
+SPECIES_TOEDSCOOL: SpeciesEnum
+SPECIES_TOEDSCRUEL: SpeciesEnum
+SPECIES_KLAWF: SpeciesEnum
+SPECIES_CAPSAKID: SpeciesEnum
+SPECIES_SCOVILLAIN: SpeciesEnum
+SPECIES_RELLOR: SpeciesEnum
+SPECIES_RABSCA: SpeciesEnum
+SPECIES_FLITTLE: SpeciesEnum
+SPECIES_ESPATHRA: SpeciesEnum
+SPECIES_TINKATINK: SpeciesEnum
+SPECIES_TINKATUFF: SpeciesEnum
+SPECIES_TINKATON: SpeciesEnum
+SPECIES_WIGLETT: SpeciesEnum
+SPECIES_WUGTRIO: SpeciesEnum
+SPECIES_BOMBIRDIER: SpeciesEnum
+SPECIES_FINIZEN: SpeciesEnum
+SPECIES_PALAFIN: SpeciesEnum
+SPECIES_VAROOM: SpeciesEnum
+SPECIES_REVAVROOM: SpeciesEnum
+SPECIES_CYCLIZAR: SpeciesEnum
+SPECIES_ORTHWORM: SpeciesEnum
+SPECIES_GLIMMET: SpeciesEnum
+SPECIES_GLIMMORA: SpeciesEnum
+SPECIES_GREAVARD: SpeciesEnum
+SPECIES_HOUNDSTONE: SpeciesEnum
+SPECIES_FLAMIGO: SpeciesEnum
+SPECIES_CETODDLE: SpeciesEnum
+SPECIES_CETITAN: SpeciesEnum
+SPECIES_VELUZA: SpeciesEnum
+SPECIES_DONDOZO: SpeciesEnum
+SPECIES_TATSUGIRI: SpeciesEnum
+SPECIES_ANNIHILAPE: SpeciesEnum
+SPECIES_CLODSIRE: SpeciesEnum
+SPECIES_FARIGIRAF: SpeciesEnum
+SPECIES_DUDUNSPARCE: SpeciesEnum
+SPECIES_KINGAMBIT: SpeciesEnum
+SPECIES_GREAT_TUSK: SpeciesEnum
+SPECIES_SCREAM_TAIL: SpeciesEnum
+SPECIES_BRUTE_BONNET: SpeciesEnum
+SPECIES_FLUTTER_MANE: SpeciesEnum
+SPECIES_SLITHER_WING: SpeciesEnum
+SPECIES_SANDY_SHOCKS: SpeciesEnum
+SPECIES_IRON_TREADS: SpeciesEnum
+SPECIES_IRON_BUNDLE: SpeciesEnum
+SPECIES_IRON_HANDS: SpeciesEnum
+SPECIES_IRON_JUGULIS: SpeciesEnum
+SPECIES_IRON_MOTH: SpeciesEnum
+SPECIES_IRON_THORNS: SpeciesEnum
+SPECIES_FRIGIBAX: SpeciesEnum
+SPECIES_ARCTIBAX: SpeciesEnum
+SPECIES_BAXCALIBUR: SpeciesEnum
+SPECIES_GIMMIGHOUL: SpeciesEnum
+SPECIES_GHOLDENGO: SpeciesEnum
+SPECIES_WO_CHIEN: SpeciesEnum
+SPECIES_CHIEN_PAO: SpeciesEnum
+SPECIES_TING_LU: SpeciesEnum
+SPECIES_CHI_YU: SpeciesEnum
+SPECIES_ROARING_MOON: SpeciesEnum
+SPECIES_IRON_VALIANT: SpeciesEnum
+SPECIES_KORAIDON: SpeciesEnum
+SPECIES_MIRAIDON: SpeciesEnum
+SPECIES_WALKING_WAKE: SpeciesEnum
+SPECIES_IRON_LEAVES: SpeciesEnum
+SPECIES_DIPPLIN: SpeciesEnum
+SPECIES_POLTCHAGEIST: SpeciesEnum
+SPECIES_SINISTCHA: SpeciesEnum
+SPECIES_OKIDOGI: SpeciesEnum
+SPECIES_MUNKIDORI: SpeciesEnum
+SPECIES_FEZANDIPITI: SpeciesEnum
+SPECIES_OGERPON: SpeciesEnum
+SPECIES_ARCHALUDON: SpeciesEnum
+SPECIES_HYDRAPPLE: SpeciesEnum
+SPECIES_GOUGING_FIRE: SpeciesEnum
+SPECIES_RAGING_BOLT: SpeciesEnum
+SPECIES_IRON_BOULDER: SpeciesEnum
+SPECIES_IRON_CROWN: SpeciesEnum
+SPECIES_TERAPAGOS: SpeciesEnum
+SPECIES_PECHARUNT: SpeciesEnum
+SPECIES_PHANTOWL: SpeciesEnum
+SPECIES_DUELUMBER: SpeciesEnum
+SPECIES_ESCARGINITE: SpeciesEnum
+SPECIES_ARACHTRES: SpeciesEnum
+SPECIES_FLAIRGRANCE: SpeciesEnum
+SPECIES_POLARTIC: SpeciesEnum
+SPECIES_ARASHINNE: SpeciesEnum
+SPECIES_DREADNAUT: SpeciesEnum
+SPECIES_BOARLOCK: SpeciesEnum
+SPECIES_HELIOSUNNY: SpeciesEnum
+SPECIES_SOPRANICE: SpeciesEnum
+SPECIES_BEEFENDER: SpeciesEnum
+SPECIES_SALAZARUS: SpeciesEnum
+SPECIES_GOOSCHASE: SpeciesEnum
+SPECIES_LEPASTRY: SpeciesEnum
+SPECIES_GYARADEATH: SpeciesEnum
+SPECIES_TORTEMPLE: SpeciesEnum
+SPECIES_BRONTONANA: SpeciesEnum
+SPECIES_DREDWOOD: SpeciesEnum
+SPECIES_CORM: SpeciesEnum
+SPECIES_CORMOTH: SpeciesEnum
+SPECIES_POPCORM: SpeciesEnum
+SPECIES_BLIZZARD_MAW: SpeciesEnum
+SPECIES_LUMBERING_SLOTH: SpeciesEnum
+SPECIES_IRON_CARAPACE: SpeciesEnum
+SPECIES_MAGMENOUS: SpeciesEnum
+SPECIES_KAIOSEA: SpeciesEnum
+SPECIES_SLYDUCK: SpeciesEnum
+SPECIES_SHYDUCK: SpeciesEnum
+SPECIES_MARBEEP: SpeciesEnum
+SPECIES_FLUFFBEE: SpeciesEnum
+SPECIES_AMPHYBUZZ: SpeciesEnum
+SPECIES_BARIONG: SpeciesEnum
+SPECIES_CRABRUISER_REDUX: SpeciesEnum
+SPECIES_PHANFERNAL: SpeciesEnum
+SPECIES_SKULBERUS: SpeciesEnum
+SPECIES_VELOZEL: SpeciesEnum
+SPECIES_BEWARDEN_REDUX: SpeciesEnum
+SPECIES_BUBBLEO: SpeciesEnum
+SPECIES_HYDROAR: SpeciesEnum
+SPECIES_GRANITUN: SpeciesEnum
+SPECIES_FUJIFLAP: SpeciesEnum
+SPECIES_BURMY_ETERNA: SpeciesEnum
+SPECIES_SAGARACAS: SpeciesEnum
+SPECIES_LUMINOSITEON: SpeciesEnum
+SPECIES_CRAWDAUNTLES: SpeciesEnum
+SPECIES_SCRAFSTER: SpeciesEnum
+SPECIES_IRON_VOCA: SpeciesEnum
+SPECIES_MORPEKYLL: SpeciesEnum
+SPECIES_FROSTULA: SpeciesEnum
+SPECIES_TOXAPEX_MEGA: SpeciesEnum
+SPECIES_DUDUDUNSPARCE: SpeciesEnum
+SPECIES_DUDUDUNSPARCE_MEGA: SpeciesEnum
+SPECIES_OGERPON_MEGA: SpeciesEnum
+SPECIES_OGERPON_HEARTHFLAME_MASK_MEGA: SpeciesEnum
+SPECIES_OGERPON_CORNERSTONE_MASK_MEGA: SpeciesEnum
+SPECIES_OGERPON_WELLSPRING_MASK_MEGA: SpeciesEnum
+SPECIES_SEERKAT: SpeciesEnum
+SPECIES_TENTAGREWL: SpeciesEnum
+SPECIES_CACJACK: SpeciesEnum
+SPECIES_TYRANJOULA: SpeciesEnum
+SPECIES_JAGGED_CHUNGULIS: SpeciesEnum
+SPECIES_DEDELIBIRD: SpeciesEnum
+SPECIES_KRAMPIRD: SpeciesEnum
+SPECIES_IRON_PALETTE: SpeciesEnum
+SPECIES_CARBONIX: SpeciesEnum
+SPECIES_WISPYWASPY: SpeciesEnum
+SPECIES_IRON_SCYTHE: SpeciesEnum
+SPECIES_WOOLY_WORM: SpeciesEnum
+SPECIES_HERACREUS: SpeciesEnum
+SPECIES_GROTOM: SpeciesEnum
+SPECIES_ORCHESTOT: SpeciesEnum
+SPECIES_QUEENGAMBIT: SpeciesEnum
+SPECIES_PENTADUG: SpeciesEnum
+SPECIES_ABYSSAND: SpeciesEnum
+SPECIES_PENTAWUG: SpeciesEnum
+SPECIES_RATIKING: SpeciesEnum
+SPECIES_RATFIOSO: SpeciesEnum
+SPECIES_GUARDOZEL: SpeciesEnum
+SPECIES_BENICCINO: SpeciesEnum
+SPECIES_BEWARDEN: SpeciesEnum
+SPECIES_TORRENTULA: SpeciesEnum
+SPECIES_SPINDAZE: SpeciesEnum
+SPECIES_BLOCLI: SpeciesEnum
+SPECIES_BLOXTACK: SpeciesEnum
+SPECIES_GARGABLOX: SpeciesEnum
+SPECIES_HIPPOPOTATO: SpeciesEnum
+SPECIES_HIPPOTATON: SpeciesEnum
+SPECIES_HARVESTING_TYRANT: SpeciesEnum
+SPECIES_IRON_SPIRALS: SpeciesEnum
+SPECIES_IRON_SABER: SpeciesEnum
+SPECIES_HYPNOCROAK: SpeciesEnum
+SPECIES_PLUNDERTOW: SpeciesEnum
+SPECIES_VENUSAUR_MEGA: SpeciesEnum
+SPECIES_CHARIZARD_MEGA_X: SpeciesEnum
+SPECIES_CHARIZARD_MEGA_Y: SpeciesEnum
+SPECIES_BLASTOISE_MEGA: SpeciesEnum
+SPECIES_BEEDRILL_MEGA: SpeciesEnum
+SPECIES_PIDGEOT_MEGA: SpeciesEnum
+SPECIES_ALAKAZAM_MEGA: SpeciesEnum
+SPECIES_SLOWBRO_MEGA: SpeciesEnum
+SPECIES_GENGAR_MEGA: SpeciesEnum
+SPECIES_KANGASKHAN_MEGA: SpeciesEnum
+SPECIES_PINSIR_MEGA: SpeciesEnum
+SPECIES_GYARADOS_MEGA: SpeciesEnum
+SPECIES_AERODACTYL_MEGA: SpeciesEnum
+SPECIES_MEWTWO_MEGA_X: SpeciesEnum
+SPECIES_MEWTWO_MEGA_Y: SpeciesEnum
+SPECIES_AMPHAROS_MEGA: SpeciesEnum
+SPECIES_STEELIX_MEGA: SpeciesEnum
+SPECIES_SCIZOR_MEGA: SpeciesEnum
+SPECIES_HERACROSS_MEGA: SpeciesEnum
+SPECIES_HOUNDOOM_MEGA: SpeciesEnum
+SPECIES_TYRANITAR_MEGA: SpeciesEnum
+SPECIES_SCEPTILE_MEGA: SpeciesEnum
+SPECIES_BLAZIKEN_MEGA: SpeciesEnum
+SPECIES_SWAMPERT_MEGA: SpeciesEnum
+SPECIES_GARDEVOIR_MEGA: SpeciesEnum
+SPECIES_SABLEYE_MEGA: SpeciesEnum
+SPECIES_MAWILE_MEGA: SpeciesEnum
+SPECIES_AGGRON_MEGA: SpeciesEnum
+SPECIES_MEDICHAM_MEGA: SpeciesEnum
+SPECIES_MANECTRIC_MEGA: SpeciesEnum
+SPECIES_SHARPEDO_MEGA: SpeciesEnum
+SPECIES_CAMERUPT_MEGA: SpeciesEnum
+SPECIES_ALTARIA_MEGA: SpeciesEnum
+SPECIES_BANETTE_MEGA: SpeciesEnum
+SPECIES_ABSOL_MEGA: SpeciesEnum
+SPECIES_GLALIE_MEGA: SpeciesEnum
+SPECIES_SALAMENCE_MEGA: SpeciesEnum
+SPECIES_METAGROSS_MEGA: SpeciesEnum
+SPECIES_LATIAS_MEGA: SpeciesEnum
+SPECIES_LATIOS_MEGA: SpeciesEnum
+SPECIES_LOPUNNY_MEGA: SpeciesEnum
+SPECIES_GARCHOMP_MEGA: SpeciesEnum
+SPECIES_LUCARIO_MEGA: SpeciesEnum
+SPECIES_ABOMASNOW_MEGA: SpeciesEnum
+SPECIES_GALLADE_MEGA: SpeciesEnum
+SPECIES_AUDINO_MEGA: SpeciesEnum
+SPECIES_DIANCIE_MEGA: SpeciesEnum
+SPECIES_RAYQUAZA_MEGA: SpeciesEnum
+SPECIES_KYOGRE_PRIMAL: SpeciesEnum
+SPECIES_GROUDON_PRIMAL: SpeciesEnum
+SPECIES_RATTATA_ALOLAN: SpeciesEnum
+SPECIES_RATICATE_ALOLAN: SpeciesEnum
+SPECIES_RAICHU_ALOLAN: SpeciesEnum
+SPECIES_SANDSHREW_ALOLAN: SpeciesEnum
+SPECIES_SANDSLASH_ALOLAN: SpeciesEnum
+SPECIES_VULPIX_ALOLAN: SpeciesEnum
+SPECIES_NINETALES_ALOLAN: SpeciesEnum
+SPECIES_DIGLETT_ALOLAN: SpeciesEnum
+SPECIES_DUGTRIO_ALOLAN: SpeciesEnum
+SPECIES_MEOWTH_ALOLAN: SpeciesEnum
+SPECIES_PERSIAN_ALOLAN: SpeciesEnum
+SPECIES_GEODUDE_ALOLAN: SpeciesEnum
+SPECIES_GRAVELER_ALOLAN: SpeciesEnum
+SPECIES_GOLEM_ALOLAN: SpeciesEnum
+SPECIES_GRIMER_ALOLAN: SpeciesEnum
+SPECIES_MUK_ALOLAN: SpeciesEnum
+SPECIES_EXEGGUTOR_ALOLAN: SpeciesEnum
+SPECIES_MAROWAK_ALOLAN: SpeciesEnum
+SPECIES_MEOWTH_GALARIAN: SpeciesEnum
+SPECIES_PONYTA_GALARIAN: SpeciesEnum
+SPECIES_RAPIDASH_GALARIAN: SpeciesEnum
+SPECIES_SLOWPOKE_GALARIAN: SpeciesEnum
+SPECIES_SLOWBRO_GALARIAN: SpeciesEnum
+SPECIES_FARFETCHD_GALARIAN: SpeciesEnum
+SPECIES_WEEZING_GALARIAN: SpeciesEnum
+SPECIES_MR_MIME_GALARIAN: SpeciesEnum
+SPECIES_ARTICUNO_GALARIAN: SpeciesEnum
+SPECIES_ZAPDOS_GALARIAN: SpeciesEnum
+SPECIES_MOLTRES_GALARIAN: SpeciesEnum
+SPECIES_SLOWKING_GALARIAN: SpeciesEnum
+SPECIES_CORSOLA_GALARIAN: SpeciesEnum
+SPECIES_ZIGZAGOON_GALARIAN: SpeciesEnum
+SPECIES_LINOONE_GALARIAN: SpeciesEnum
+SPECIES_DARUMAKA_GALARIAN: SpeciesEnum
+SPECIES_DARMANITAN_GALARIAN: SpeciesEnum
+SPECIES_YAMASK_GALARIAN: SpeciesEnum
+SPECIES_STUNFISK_GALARIAN: SpeciesEnum
+SPECIES_PIKACHU_COSPLAY: SpeciesEnum
+SPECIES_PIKACHU_ROCK_STAR: SpeciesEnum
+SPECIES_PIKACHU_BELLE: SpeciesEnum
+SPECIES_PIKACHU_POP_STAR: SpeciesEnum
+SPECIES_PIKACHU_PH_D: SpeciesEnum
+SPECIES_PIKACHU_LIBRE: SpeciesEnum
+SPECIES_PIKACHU_ORIGINAL_CAP: SpeciesEnum
+SPECIES_PIKACHU_HOENN_CAP: SpeciesEnum
+SPECIES_PIKACHU_SINNOH_CAP: SpeciesEnum
+SPECIES_PIKACHU_UNOVA_CAP: SpeciesEnum
+SPECIES_PIKACHU_KALOS_CAP: SpeciesEnum
+SPECIES_PIKACHU_ALOLA_CAP: SpeciesEnum
+SPECIES_PIKACHU_PARTNER_CAP: SpeciesEnum
+SPECIES_PIKACHU_WORLD_CAP: SpeciesEnum
+SPECIES_PICHU_SPIKY_EARED: SpeciesEnum
+SPECIES_UNOWN_B: SpeciesEnum
+SPECIES_UNOWN_C: SpeciesEnum
+SPECIES_UNOWN_D: SpeciesEnum
+SPECIES_UNOWN_E: SpeciesEnum
+SPECIES_UNOWN_F: SpeciesEnum
+SPECIES_UNOWN_G: SpeciesEnum
+SPECIES_UNOWN_H: SpeciesEnum
+SPECIES_UNOWN_I: SpeciesEnum
+SPECIES_UNOWN_J: SpeciesEnum
+SPECIES_UNOWN_K: SpeciesEnum
+SPECIES_UNOWN_L: SpeciesEnum
+SPECIES_UNOWN_M: SpeciesEnum
+SPECIES_UNOWN_N: SpeciesEnum
+SPECIES_UNOWN_O: SpeciesEnum
+SPECIES_UNOWN_P: SpeciesEnum
+SPECIES_UNOWN_Q: SpeciesEnum
+SPECIES_UNOWN_R: SpeciesEnum
+SPECIES_UNOWN_S: SpeciesEnum
+SPECIES_UNOWN_T: SpeciesEnum
+SPECIES_UNOWN_U: SpeciesEnum
+SPECIES_UNOWN_V: SpeciesEnum
+SPECIES_UNOWN_W: SpeciesEnum
+SPECIES_UNOWN_X: SpeciesEnum
+SPECIES_UNOWN_Y: SpeciesEnum
+SPECIES_UNOWN_Z: SpeciesEnum
+SPECIES_UNOWN_EMARK: SpeciesEnum
+SPECIES_UNOWN_QMARK: SpeciesEnum
+SPECIES_CASTFORM_SUNNY: SpeciesEnum
+SPECIES_CASTFORM_RAINY: SpeciesEnum
+SPECIES_CASTFORM_SNOWY: SpeciesEnum
+SPECIES_DEOXYS_ATTACK: SpeciesEnum
+SPECIES_DEOXYS_DEFENSE: SpeciesEnum
+SPECIES_DEOXYS_SPEED: SpeciesEnum
+SPECIES_BURMY_SANDY_CLOAK: SpeciesEnum
+SPECIES_BURMY_TRASH_CLOAK: SpeciesEnum
+SPECIES_WORMADAM_SANDY_CLOAK: SpeciesEnum
+SPECIES_WORMADAM_TRASH_CLOAK: SpeciesEnum
+SPECIES_CHERRIM_SUNSHINE: SpeciesEnum
+SPECIES_SHELLOS_EAST_SEA: SpeciesEnum
+SPECIES_GASTRODON_EAST_SEA: SpeciesEnum
+SPECIES_ROTOM_HEAT: SpeciesEnum
+SPECIES_ROTOM_WASH: SpeciesEnum
+SPECIES_ROTOM_FROST: SpeciesEnum
+SPECIES_ROTOM_FAN: SpeciesEnum
+SPECIES_ROTOM_MOW: SpeciesEnum
+SPECIES_GIRATINA_ORIGIN: SpeciesEnum
+SPECIES_SHAYMIN_SKY: SpeciesEnum
+SPECIES_ARCEUS_FIGHTING: SpeciesEnum
+SPECIES_ARCEUS_FLYING: SpeciesEnum
+SPECIES_ARCEUS_POISON: SpeciesEnum
+SPECIES_ARCEUS_GROUND: SpeciesEnum
+SPECIES_ARCEUS_ROCK: SpeciesEnum
+SPECIES_ARCEUS_BUG: SpeciesEnum
+SPECIES_ARCEUS_GHOST: SpeciesEnum
+SPECIES_ARCEUS_STEEL: SpeciesEnum
+SPECIES_ARCEUS_FIRE: SpeciesEnum
+SPECIES_ARCEUS_WATER: SpeciesEnum
+SPECIES_ARCEUS_GRASS: SpeciesEnum
+SPECIES_ARCEUS_ELECTRIC: SpeciesEnum
+SPECIES_ARCEUS_PSYCHIC: SpeciesEnum
+SPECIES_ARCEUS_ICE: SpeciesEnum
+SPECIES_ARCEUS_DRAGON: SpeciesEnum
+SPECIES_ARCEUS_DARK: SpeciesEnum
+SPECIES_ARCEUS_FAIRY: SpeciesEnum
+SPECIES_BASCULIN_BLUE_STRIPED: SpeciesEnum
+SPECIES_DARMANITAN_ZEN_MODE: SpeciesEnum
+SPECIES_DARMANITAN_ZEN_MODE_GALARIAN: SpeciesEnum
+SPECIES_DEERLING_SUMMER: SpeciesEnum
+SPECIES_DEERLING_AUTUMN: SpeciesEnum
+SPECIES_DEERLING_WINTER: SpeciesEnum
+SPECIES_SAWSBUCK_SUMMER: SpeciesEnum
+SPECIES_SAWSBUCK_AUTUMN: SpeciesEnum
+SPECIES_SAWSBUCK_WINTER: SpeciesEnum
+SPECIES_TORNADUS_THERIAN: SpeciesEnum
+SPECIES_THUNDURUS_THERIAN: SpeciesEnum
+SPECIES_LANDORUS_THERIAN: SpeciesEnum
+SPECIES_KYUREM_WHITE: SpeciesEnum
+SPECIES_KYUREM_BLACK: SpeciesEnum
+SPECIES_KELDEO_RESOLUTE: SpeciesEnum
+SPECIES_MELOETTA_PIROUETTE: SpeciesEnum
+SPECIES_GENESECT_DOUSE_DRIVE: SpeciesEnum
+SPECIES_GENESECT_SHOCK_DRIVE: SpeciesEnum
+SPECIES_GENESECT_BURN_DRIVE: SpeciesEnum
+SPECIES_GENESECT_CHILL_DRIVE: SpeciesEnum
+SPECIES_GRENINJA_BATTLE_BOND: SpeciesEnum
+SPECIES_GRENINJA_ASH: SpeciesEnum
+SPECIES_VIVILLON_POLAR: SpeciesEnum
+SPECIES_VIVILLON_TUNDRA: SpeciesEnum
+SPECIES_VIVILLON_CONTINENTAL: SpeciesEnum
+SPECIES_VIVILLON_GARDEN: SpeciesEnum
+SPECIES_VIVILLON_ELEGANT: SpeciesEnum
+SPECIES_VIVILLON_MEADOW: SpeciesEnum
+SPECIES_VIVILLON_MODERN: SpeciesEnum
+SPECIES_VIVILLON_MARINE: SpeciesEnum
+SPECIES_VIVILLON_ARCHIPELAGO: SpeciesEnum
+SPECIES_VIVILLON_HIGH_PLAINS: SpeciesEnum
+SPECIES_VIVILLON_SANDSTORM: SpeciesEnum
+SPECIES_VIVILLON_RIVER: SpeciesEnum
+SPECIES_VIVILLON_MONSOON: SpeciesEnum
+SPECIES_VIVILLON_SAVANNA: SpeciesEnum
+SPECIES_VIVILLON_SUN: SpeciesEnum
+SPECIES_VIVILLON_OCEAN: SpeciesEnum
+SPECIES_VIVILLON_JUNGLE: SpeciesEnum
+SPECIES_VIVILLON_FANCY: SpeciesEnum
+SPECIES_VIVILLON_POKE_BALL: SpeciesEnum
+SPECIES_FLABEBE_YELLOW_FLOWER: SpeciesEnum
+SPECIES_FLABEBE_ORANGE_FLOWER: SpeciesEnum
+SPECIES_FLABEBE_BLUE_FLOWER: SpeciesEnum
+SPECIES_FLABEBE_WHITE_FLOWER: SpeciesEnum
+SPECIES_FLOETTE_YELLOW_FLOWER: SpeciesEnum
+SPECIES_FLOETTE_ORANGE_FLOWER: SpeciesEnum
+SPECIES_FLOETTE_BLUE_FLOWER: SpeciesEnum
+SPECIES_FLOETTE_WHITE_FLOWER: SpeciesEnum
+SPECIES_FLOETTE_ETERNAL_FLOWER: SpeciesEnum
+SPECIES_FLORGES_YELLOW_FLOWER: SpeciesEnum
+SPECIES_FLORGES_ORANGE_FLOWER: SpeciesEnum
+SPECIES_FLORGES_BLUE_FLOWER: SpeciesEnum
+SPECIES_FLORGES_WHITE_FLOWER: SpeciesEnum
+SPECIES_FURFROU_HEART_TRIM: SpeciesEnum
+SPECIES_FURFROU_STAR_TRIM: SpeciesEnum
+SPECIES_FURFROU_DIAMOND_TRIM: SpeciesEnum
+SPECIES_FURFROU_DEBUTANTE_TRIM: SpeciesEnum
+SPECIES_FURFROU_MATRON_TRIM: SpeciesEnum
+SPECIES_FURFROU_DANDY_TRIM: SpeciesEnum
+SPECIES_FURFROU_LA_REINE_TRIM: SpeciesEnum
+SPECIES_FURFROU_KABUKI_TRIM: SpeciesEnum
+SPECIES_FURFROU_PHARAOH_TRIM: SpeciesEnum
+SPECIES_MEOWSTIC_FEMALE: SpeciesEnum
+SPECIES_AEGISLASH_BLADE: SpeciesEnum
+SPECIES_PUMPKABOO_SMALL: SpeciesEnum
+SPECIES_PUMPKABOO_LARGE: SpeciesEnum
+SPECIES_PUMPKABOO_SUPER: SpeciesEnum
+SPECIES_GOURGEIST_SMALL: SpeciesEnum
+SPECIES_GOURGEIST_LARGE: SpeciesEnum
+SPECIES_GOURGEIST_SUPER: SpeciesEnum
+SPECIES_XERNEAS_ACTIVE: SpeciesEnum
+SPECIES_ZYGARDE_10: SpeciesEnum
+SPECIES_ZYGARDE_10_POWER_CONSTRUCT: SpeciesEnum
+SPECIES_ZYGARDE_50_POWER_CONSTRUCT: SpeciesEnum
+SPECIES_ZYGARDE_COMPLETE: SpeciesEnum
+SPECIES_HOOPA_UNBOUND: SpeciesEnum
+SPECIES_ORICORIO_POM_POM: SpeciesEnum
+SPECIES_ORICORIO_PAU: SpeciesEnum
+SPECIES_ORICORIO_SENSU: SpeciesEnum
+SPECIES_ROCKRUFF_OWN_TEMPO: SpeciesEnum
+SPECIES_LYCANROC_MIDNIGHT: SpeciesEnum
+SPECIES_LYCANROC_DUSK: SpeciesEnum
+SPECIES_WISHIWASHI_SCHOOL: SpeciesEnum
+SPECIES_SILVALLY_FIGHTING: SpeciesEnum
+SPECIES_SILVALLY_FLYING: SpeciesEnum
+SPECIES_SILVALLY_POISON: SpeciesEnum
+SPECIES_SILVALLY_GROUND: SpeciesEnum
+SPECIES_SILVALLY_ROCK: SpeciesEnum
+SPECIES_SILVALLY_BUG: SpeciesEnum
+SPECIES_SILVALLY_GHOST: SpeciesEnum
+SPECIES_SILVALLY_STEEL: SpeciesEnum
+SPECIES_SILVALLY_FIRE: SpeciesEnum
+SPECIES_SILVALLY_WATER: SpeciesEnum
+SPECIES_SILVALLY_GRASS: SpeciesEnum
+SPECIES_SILVALLY_ELECTRIC: SpeciesEnum
+SPECIES_SILVALLY_PSYCHIC: SpeciesEnum
+SPECIES_SILVALLY_ICE: SpeciesEnum
+SPECIES_SILVALLY_DRAGON: SpeciesEnum
+SPECIES_SILVALLY_DARK: SpeciesEnum
+SPECIES_SILVALLY_FAIRY: SpeciesEnum
+SPECIES_MINIOR_METEOR_ORANGE: SpeciesEnum
+SPECIES_MINIOR_METEOR_YELLOW: SpeciesEnum
+SPECIES_MINIOR_METEOR_GREEN: SpeciesEnum
+SPECIES_MINIOR_METEOR_BLUE: SpeciesEnum
+SPECIES_MINIOR_METEOR_INDIGO: SpeciesEnum
+SPECIES_MINIOR_METEOR_VIOLET: SpeciesEnum
+SPECIES_MINIOR_CORE_RED: SpeciesEnum
+SPECIES_MINIOR_CORE_ORANGE: SpeciesEnum
+SPECIES_MINIOR_CORE_YELLOW: SpeciesEnum
+SPECIES_MINIOR_CORE_GREEN: SpeciesEnum
+SPECIES_MINIOR_CORE_BLUE: SpeciesEnum
+SPECIES_MINIOR_CORE_INDIGO: SpeciesEnum
+SPECIES_MINIOR_CORE_VIOLET: SpeciesEnum
+SPECIES_MIMIKYU_BUSTED: SpeciesEnum
+SPECIES_NECROZMA_DUSK_MANE: SpeciesEnum
+SPECIES_NECROZMA_DAWN_WINGS: SpeciesEnum
+SPECIES_NECROZMA_ULTRA: SpeciesEnum
+SPECIES_MAGEARNA_ORIGINAL_COLOR: SpeciesEnum
+SPECIES_CRAMORANT_GULPING: SpeciesEnum
+SPECIES_CRAMORANT_GORGING: SpeciesEnum
+SPECIES_TOXTRICITY_LOW_KEY: SpeciesEnum
+SPECIES_SINISTEA_ANTIQUE: SpeciesEnum
+SPECIES_POLTEAGEIST_ANTIQUE: SpeciesEnum
+SPECIES_ALCREMIE_RUBY_CREAM: SpeciesEnum
+SPECIES_ALCREMIE_MATCHA_CREAM: SpeciesEnum
+SPECIES_ALCREMIE_MINT_CREAM: SpeciesEnum
+SPECIES_ALCREMIE_LEMON_CREAM: SpeciesEnum
+SPECIES_ALCREMIE_SALTED_CREAM: SpeciesEnum
+SPECIES_ALCREMIE_RUBY_SWIRL: SpeciesEnum
+SPECIES_ALCREMIE_CARAMEL_SWIRL: SpeciesEnum
+SPECIES_ALCREMIE_RAINBOW_SWIRL: SpeciesEnum
+SPECIES_EISCUE_NOICE_FACE: SpeciesEnum
+SPECIES_INDEEDEE_FEMALE: SpeciesEnum
+SPECIES_MORPEKO_HANGRY: SpeciesEnum
+SPECIES_ZACIAN_CROWNED_SWORD: SpeciesEnum
+SPECIES_ZAMAZENTA_CROWNED_SHIELD: SpeciesEnum
+SPECIES_ETERNATUS_ETERNAMAX: SpeciesEnum
+SPECIES_URSHIFU_RAPID_STRIKE_STYLE: SpeciesEnum
+SPECIES_ZARUDE_DADA: SpeciesEnum
+SPECIES_CALYREX_ICE_RIDER: SpeciesEnum
+SPECIES_CALYREX_SHADOW_RIDER: SpeciesEnum
+SPECIES_QWILFISH_HISUIAN: SpeciesEnum
+SPECIES_GROWLITHE_HISUIAN: SpeciesEnum
+SPECIES_ARCANINE_HISUIAN: SpeciesEnum
+SPECIES_VOLTORB_HISUIAN: SpeciesEnum
+SPECIES_ELECTRODE_HISUIAN: SpeciesEnum
+SPECIES_TYPHLOSION_HISUIAN: SpeciesEnum
+SPECIES_SNEASEL_HISUIAN: SpeciesEnum
+SPECIES_SAMUROTT_HISUIAN: SpeciesEnum
+SPECIES_LILLIGANT_HISUIAN: SpeciesEnum
+SPECIES_BRAVIARY_HISUIAN: SpeciesEnum
+SPECIES_SLIGGOO_HISUIAN: SpeciesEnum
+SPECIES_GOODRA_HISUIAN: SpeciesEnum
+SPECIES_AVALUGG_HISUIAN: SpeciesEnum
+SPECIES_DECIDUEYE_HISUIAN: SpeciesEnum
+SPECIES_ZORUA_HISUIAN: SpeciesEnum
+SPECIES_ZOROARK_HISUIAN: SpeciesEnum
+SPECIES_TAUROS_PALDEAN_AQUA_BREED: SpeciesEnum
+SPECIES_TAUROS_PALDEAN_BLAZE_BREED: SpeciesEnum
+SPECIES_TAUROS_PALDEAN_COMBAT_BREED: SpeciesEnum
+SPECIES_URSALUNA_BLOODMOON: SpeciesEnum
+SPECIES_PALAFIN_HERO: SpeciesEnum
+SPECIES_DUDUNSPARCE_THREE_SEGMENT: SpeciesEnum
+SPECIES_MAUSHOLD_FOUR: SpeciesEnum
+SPECIES_TATSUGIRI_CURLY: SpeciesEnum
+SPECIES_TATSUGIRI_STRETCHY: SpeciesEnum
+SPECIES_TATSUGIRI_DROOPY: SpeciesEnum
+SPECIES_SQUAWKABILLY_GREEN_PLUMAGE: SpeciesEnum
+SPECIES_SQUAWKABILLY_BLUE_PLUMAGE: SpeciesEnum
+SPECIES_SQUAWKABILLY_YELLOW_PLUMAGE: SpeciesEnum
+SPECIES_SQUAWKABILLY_WHITE_PLUMAGE: SpeciesEnum
+SPECIES_OGERPON_WELLSPRING_MASK: SpeciesEnum
+SPECIES_OGERPON_HEARTHFLAME_MASK: SpeciesEnum
+SPECIES_OGERPON_CORNERSTONE_MASK: SpeciesEnum
+SPECIES_DIALGA_ORIGIN: SpeciesEnum
+SPECIES_PALKIA_ORIGIN: SpeciesEnum
+SPECIES_ENAMORUS_THERIAN: SpeciesEnum
+SPECIES_CASTFORM_SANDY: SpeciesEnum
+SPECIES_POLARTIC_BLUEMOON: SpeciesEnum
+SPECIES_LUMBERING_SLOTH_ENGULFED: SpeciesEnum
+SPECIES_GIMMIGHOUL_ROAMING: SpeciesEnum
+SPECIES_BASCULEGION_F: SpeciesEnum
+SPECIES_TERAPAGOS_STELLAR: SpeciesEnum
+SPECIES_HYDROAR_F: SpeciesEnum
+SPECIES_PIKACHU_PARTNER: SpeciesEnum
+SPECIES_EEVEE_PARTNER: SpeciesEnum
+SPECIES_MEOWTH_PARTNER: SpeciesEnum
+SPECIES_MIMIKYU_RAYQUAZA_BUSTED: SpeciesEnum
+SPECIES_SLAKING_MEGA_APE_SHIFT: SpeciesEnum
+SPECIES_RAICHU_MEGA_Y: SpeciesEnum
+SPECIES_CASTFORM_FOGGY: SpeciesEnum
+SPECIES_FIDOUGH_PARTNER: SpeciesEnum
+SPECIES_CHESNAUGHT_BATTLE_BOND: SpeciesEnum
+SPECIES_CHESNAUGHT_CLEMONT: SpeciesEnum
+SPECIES_DELPHOX_BATTLE_BOND: SpeciesEnum
+SPECIES_DELPHOX_SERENA: SpeciesEnum
+SPECIES_MORPEKYLL_HANGRY: SpeciesEnum
+SPECIES_UNOWN_REVELATION: SpeciesEnum
+SPECIES_LYCANROC_ECLIPSE: SpeciesEnum
+SPECIES_LYCANROC_TWILIGHT: SpeciesEnum
+SPECIES_SCRAFTY_MEGA: SpeciesEnum
+SPECIES_FALINKS_MEGA: SpeciesEnum
+SPECIES_PYROAR_MEGA: SpeciesEnum
+SPECIES_CHESNAUGHT_MEGA: SpeciesEnum
+SPECIES_DELPHOX_MEGA: SpeciesEnum
+SPECIES_GRENINJA_MEGA: SpeciesEnum
+SPECIES_EELEKTROSS_MEGA: SpeciesEnum
+SPECIES_MALAMAR_MEGA: SpeciesEnum
+SPECIES_VICTREEBEL_MEGA: SpeciesEnum
+SPECIES_DRAGALGE_MEGA: SpeciesEnum
+SPECIES_HAWLUCHA_MEGA: SpeciesEnum
+SPECIES_CLEFABLE_MEGA_Y: SpeciesEnum
+SPECIES_DRAGONITE_MEGA_Y: SpeciesEnum
+SPECIES_EXCADRILL_MEGA: SpeciesEnum
+SPECIES_SCOLIPEDE_MEGA: SpeciesEnum
+SPECIES_CHANDELURE_MEGA_Y: SpeciesEnum
+SPECIES_FLOETTE_ETERNAL_FLOWER_MEGA: SpeciesEnum
+SPECIES_ZYGARDE_COMPLETE_MEGA: SpeciesEnum
+SPECIES_BARBARACLE_MEGA: SpeciesEnum
+SPECIES_DRAMPA_MEGA: SpeciesEnum
+SPECIES_STARMIE_MEGA: SpeciesEnum
+SPECIES_SKARMORY_MEGA_Y: SpeciesEnum
+SPECIES_FROSLASS_MEGA_Y: SpeciesEnum
+SPECIES_RAICHU_MEGA_X: SpeciesEnum
+SPECIES_ABSOL_MEGA_Z: SpeciesEnum
+SPECIES_STARAPTOR_MEGA: SpeciesEnum
+SPECIES_GARCHOMP_MEGA_Z: SpeciesEnum
+SPECIES_HEATRAN_MEGA: SpeciesEnum
+SPECIES_DARKRAI_MEGA: SpeciesEnum
+SPECIES_GOLURK_MEGA: SpeciesEnum
+SPECIES_MEOWSTIC_MEGA: SpeciesEnum
+SPECIES_CRABOMINABLE_MEGA: SpeciesEnum
+SPECIES_GOLISOPOD_MEGA_Y: SpeciesEnum
+SPECIES_MAGEARNA_MEGA: SpeciesEnum
+SPECIES_ZERAORA_MEGA: SpeciesEnum
+SPECIES_SCOVILLAIN_MEGA: SpeciesEnum
+SPECIES_TATSUGIRI_MEGA: SpeciesEnum
+SPECIES_BAXCALIBUR_MEGA: SpeciesEnum
+SPECIES_CHIMECHO_MEGA: SpeciesEnum
+SPECIES_GLIMMORA_MEGA: SpeciesEnum
+SPECIES_MILOTIC_MEGA: SpeciesEnum
+SPECIES_BUTTERFREE_MEGA: SpeciesEnum
+SPECIES_MACHAMP_MEGA: SpeciesEnum
+SPECIES_KINGLER_MEGA: SpeciesEnum
+SPECIES_LAPRAS_MEGA: SpeciesEnum
+SPECIES_FLYGON_MEGA: SpeciesEnum
+SPECIES_KINGDRA_MEGA: SpeciesEnum
+SPECIES_DEWGONG_MEGA: SpeciesEnum
+SPECIES_HITMONCHAN_MEGA: SpeciesEnum
+SPECIES_HITMONLEE_MEGA: SpeciesEnum
+SPECIES_HITMONTOP_MEGA: SpeciesEnum
+SPECIES_CROBAT_MEGA: SpeciesEnum
+SPECIES_SKARMORY_MEGA: SpeciesEnum
+SPECIES_BRUXISH_MEGA: SpeciesEnum
+SPECIES_TORTERRA_MEGA: SpeciesEnum
+SPECIES_INFERNAPE_MEGA: SpeciesEnum
+SPECIES_EMPOLEON_MEGA: SpeciesEnum
+SPECIES_SHUCKLE_MEGA: SpeciesEnum
+SPECIES_RELICANTH_MEGA: SpeciesEnum
+SPECIES_TOUCANNON_MEGA: SpeciesEnum
+SPECIES_DRAGONITE_MEGA: SpeciesEnum
+SPECIES_BRELOOM_MEGA: SpeciesEnum
+SPECIES_SLAKING_MEGA: SpeciesEnum
+SPECIES_FERALIGATR_MEGA_X: SpeciesEnum
+SPECIES_FERALIGATR_MEGA_Y: SpeciesEnum
+SPECIES_GRANBULL_MEGA: SpeciesEnum
+SPECIES_JELLICENT_MEGA: SpeciesEnum
+SPECIES_QUAGSIRE_MEGA: SpeciesEnum
+SPECIES_GYARADOS_MEGA_Y: SpeciesEnum
+SPECIES_HAXORUS_MEGA: SpeciesEnum
+SPECIES_MEGANIUM_MEGA: SpeciesEnum
+SPECIES_LUXRAY_MEGA: SpeciesEnum
+SPECIES_NIDOKING_MEGA: SpeciesEnum
+SPECIES_NIDOQUEEN_MEGA: SpeciesEnum
+SPECIES_SANDSLASH_MEGA: SpeciesEnum
+SPECIES_TYPHLOSION_MEGA: SpeciesEnum
+SPECIES_KROOKODILE_MEGA: SpeciesEnum
+SPECIES_MAGNEZONE_MEGA: SpeciesEnum
+SPECIES_SHEDINJA_MEGA: SpeciesEnum
+SPECIES_SWALOT_MEGA: SpeciesEnum
+SPECIES_LANTURN_MEGA: SpeciesEnum
+SPECIES_LAPRAS_MEGA_X: SpeciesEnum
+SPECIES_SLOWKING_MEGA: SpeciesEnum
+SPECIES_RIBOMBEE_MEGA: SpeciesEnum
+SPECIES_ALAKAZAM_MEGA_REDUX: SpeciesEnum
+SPECIES_BEEDRILL_MEGA_REDUX: SpeciesEnum
+SPECIES_MACHAMP_MEGA_REDUX: SpeciesEnum
+SPECIES_SKARMORY_MEGA_REDUX: SpeciesEnum
+SPECIES_ARCANINE_MEGA_REDUX: SpeciesEnum
+SPECIES_GARCHOMP_MEGA_REDUX: SpeciesEnum
+SPECIES_MAWILE_MEGA_REDUX: SpeciesEnum
+SPECIES_SABLEYE_MEGA_REDUX: SpeciesEnum
+SPECIES_HOUNDOOM_MEGA_REDUX: SpeciesEnum
+SPECIES_FROSLASS_MEGA: SpeciesEnum
+SPECIES_WIGGLYTUFF_MEGA_X: SpeciesEnum
+SPECIES_CASCOON_PRIMAL: SpeciesEnum
+SPECIES_WIGGLYTUFF_MEGA: SpeciesEnum
+SPECIES_LUCARIO_MEGA_Z: SpeciesEnum
+SPECIES_GYARADEATH_MEGA_X: SpeciesEnum
+SPECIES_GYARADEATH_MEGA_Y: SpeciesEnum
+SPECIES_ARBOK_MEGA: SpeciesEnum
+SPECIES_KINGAMBIT_REDUX_MEGA: SpeciesEnum
+SPECIES_GOLISOPOD_MEGA: SpeciesEnum
+SPECIES_RAPIDASH_MEGA: SpeciesEnum
+SPECIES_RAPIDASH_MEGA_GALARIAN: SpeciesEnum
+SPECIES_ORICORIO_MEGA: SpeciesEnum
+SPECIES_AEGISLASH_REDUX_MEGA: SpeciesEnum
+SPECIES_AEGISLASH_BLADE_REDUX_MEGA: SpeciesEnum
+SPECIES_REUNICLUS_REDUX_MEGA: SpeciesEnum
+SPECIES_HYDREIGON_REDUX_MEGA: SpeciesEnum
+SPECIES_CORMOTH_MEGA: SpeciesEnum
+SPECIES_POPCORM_MEGA: SpeciesEnum
+SPECIES_TORTERRA_REDUX_MEGA: SpeciesEnum
+SPECIES_INFERNAPE_REDUX_MEGA: SpeciesEnum
+SPECIES_EMPOLEON_REDUX_MEGA: SpeciesEnum
+SPECIES_TSAREENA_REDUX_MEGA: SpeciesEnum
+SPECIES_TOXTRICITY_REDUX_MEGA: SpeciesEnum
+SPECIES_TOXTRICITY_REDUX_FUZZ_MEGA: SpeciesEnum
+SPECIES_FLYGON_REDUX_MEGA: SpeciesEnum
+SPECIES_CLEFABLE_REDUX_MEGA: SpeciesEnum
+SPECIES_GLALIE_REDUX_MEGA: SpeciesEnum
+SPECIES_FROSLASS_REDUX_MEGA: SpeciesEnum
+SPECIES_AMPHYBUZZ_MEGA: SpeciesEnum
+SPECIES_URSHIFU_MEGA: SpeciesEnum
+SPECIES_URSHIFU_RAPID_STRIKE_STYLE_MEGA: SpeciesEnum
+SPECIES_MELMETAL_MEGA: SpeciesEnum
+SPECIES_VENUSAUR_MEGA_X: SpeciesEnum
+SPECIES_BLASTOISE_MEGA_X: SpeciesEnum
+SPECIES_GENGAR_MEGA_X: SpeciesEnum
+SPECIES_CHARIZARD_MEGA_Z: SpeciesEnum
+SPECIES_SNORLAX_MEGA: SpeciesEnum
+SPECIES_RILLABOOM_MEGA: SpeciesEnum
+SPECIES_CINDERACE_MEGA: SpeciesEnum
+SPECIES_INTELEON_MEGA: SpeciesEnum
+SPECIES_CORVIKNIGHT_MEGA: SpeciesEnum
+SPECIES_DREDNAW_MEGA: SpeciesEnum
+SPECIES_COALOSSAL_MEGA: SpeciesEnum
+SPECIES_SANDACONDA_MEGA: SpeciesEnum
+SPECIES_COPPERAJAH_MEGA: SpeciesEnum
+SPECIES_HATTERENE_MEGA: SpeciesEnum
+SPECIES_GARBODOR_MEGA: SpeciesEnum
+SPECIES_ORBEETLE_MEGA: SpeciesEnum
+SPECIES_GRIMMSNARL_MEGA: SpeciesEnum
+SPECIES_CENTISKORCH_MEGA: SpeciesEnum
+SPECIES_ALCREMIE_MEGA: SpeciesEnum
+SPECIES_TOXTRICITY_MEGA: SpeciesEnum
+SPECIES_PIKACHU_PARTNER_MEGA: SpeciesEnum
+SPECIES_EEVEE_PARTNER_MEGA: SpeciesEnum
+SPECIES_MEOWTH_PARTNER_MEGA: SpeciesEnum
+SPECIES_DURALUDON_PARTNER_MEGA: SpeciesEnum
+SPECIES_FIDOUGH_PARTNER_MEGA: SpeciesEnum
+SPECIES_WEAVILE_MEGA: SpeciesEnum
+SPECIES_SERPERIOR_MEGA: SpeciesEnum
+SPECIES_EMBOAR_MEGA: SpeciesEnum
+SPECIES_SAMUROTT_MEGA: SpeciesEnum
+SPECIES_DECIDUEYE_MEGA: SpeciesEnum
+SPECIES_DECIDUEYE_HISUIAN_MEGA: SpeciesEnum
+SPECIES_INCINEROAR_MEGA: SpeciesEnum
+SPECIES_MEOWSCARADA_MEGA: SpeciesEnum
+SPECIES_PRIMARINA_MEGA: SpeciesEnum
+SPECIES_QUAQUAVAL_MEGA: SpeciesEnum
+SPECIES_SAMUROTT_HISUIAN_MEGA: SpeciesEnum
+SPECIES_SKELEDIRGE_MEGA: SpeciesEnum
+SPECIES_TYPHLOSION_HISUIAN_MEGA: SpeciesEnum
+SPECIES_MIENSHAO_MEGA: SpeciesEnum
+SPECIES_ARCANINE_MEGA: SpeciesEnum
+SPECIES_GOODRA_MEGA: SpeciesEnum
+SPECIES_SLOWBRO_MEGA_GALARIAN: SpeciesEnum
+SPECIES_SLOWKING_MEGA_GALARIAN: SpeciesEnum
+SPECIES_ROSERADE_MEGA: SpeciesEnum
+SPECIES_CLODSIRE_MEGA: SpeciesEnum
+SPECIES_GOTHITELLE_MEGA: SpeciesEnum
+SPECIES_ARCANINE_HISUIAN_MEGA: SpeciesEnum
+SPECIES_REUNICLUS_MEGA: SpeciesEnum
+SPECIES_KIPMODO: SpeciesEnum
+SPECIES_MARSHMODO: SpeciesEnum
+SPECIES_SWAMPAGE: SpeciesEnum
+SPECIES_SWAMPAGE_MEGA: SpeciesEnum
+SPECIES_CHANDELURE_MEGA: SpeciesEnum
+SPECIES_ZAPDOS_EX_MEGA: SpeciesEnum
+SPECIES_ARTICUNO_EX_MEGA: SpeciesEnum
+SPECIES_MOLTRES_EX_MEGA: SpeciesEnum
+SPECIES_ZAPDOS_EX: SpeciesEnum
+SPECIES_ARTICUNO_EX: SpeciesEnum
+SPECIES_MOLTRES_EX: SpeciesEnum
+SPECIES_MINCCINO_REDUX: SpeciesEnum
+SPECIES_CINCCINO_REDUX: SpeciesEnum
+SPECIES_FROSTUCCINO: SpeciesEnum
+SPECIES_SINISTEA_REDUX: SpeciesEnum
+SPECIES_POLTEAGEIST_REDUX: SpeciesEnum
+SPECIES_CETODDLE_REDUX: SpeciesEnum
+SPECIES_CETITAN_REDUX: SpeciesEnum
+SPECIES_TALONFLAME_MEGA: SpeciesEnum
+SPECIES_CARBONIX_MEGA: SpeciesEnum
+SPECIES_GROTOM_GLASS: SpeciesEnum
+SPECIES_GROTOM_ROLL: SpeciesEnum
+SPECIES_GROTOM_DRUM: SpeciesEnum
+SPECIES_GROTOM_KICK: SpeciesEnum
+SPECIES_GROTOM_FILL: SpeciesEnum
+SPECIES_HERACREUS_MEGA: SpeciesEnum
+SPECIES_WISPYWASPY_HIVEMIND: SpeciesEnum
+SPECIES_DRAGAPULT_MEGA: SpeciesEnum
+SPECIES_SANDSLASH_ALOLAN_MEGA: SpeciesEnum
+SPECIES_KLEAVOR_MEGA: SpeciesEnum
+SPECIES_SCYTHER_MEGA: SpeciesEnum
+SPECIES_HYDREIGON_MEGA: SpeciesEnum
+SPECIES_VANILLUXE_MEGA: SpeciesEnum
+SPECIES_PENTADUG_ALOLAN: SpeciesEnum
+SPECIES_RATTATA_REDUX: SpeciesEnum
+SPECIES_RATICATE_REDUX: SpeciesEnum
+SPECIES_VANILLITE_REDUX: SpeciesEnum
+SPECIES_VANILLISH_REDUX: SpeciesEnum
+SPECIES_VANILLUXE_REDUX: SpeciesEnum
+SPECIES_VANILLUXE_REDUX_MEGA: SpeciesEnum
+SPECIES_LITWICK_REDUX: SpeciesEnum
+SPECIES_LAMPENT_REDUX: SpeciesEnum
+SPECIES_CHANDELURE_REDUX: SpeciesEnum
+SPECIES_CHANDELURE_REDUX_MEGA: SpeciesEnum
+SPECIES_DRILBUR_REDUX: SpeciesEnum
+SPECIES_EXCADRILL_REDUX: SpeciesEnum
+SPECIES_REXCADRILL: SpeciesEnum
+SPECIES_SWINUB_REDUX: SpeciesEnum
+SPECIES_PILOSWINE_REDUX: SpeciesEnum
+SPECIES_MAMOSWINE_REDUX: SpeciesEnum
+SPECIES_MAMOSWINE_REDUX_MEGA: SpeciesEnum
+SPECIES_SELENUMBRA: SpeciesEnum
+SPECIES_LARVESTA_REDUX: SpeciesEnum
+SPECIES_VOLCARONA_REDUX: SpeciesEnum
+SPECIES_KLEFKI_REDUX: SpeciesEnum
+SPECIES_BELLSPROUT_REDUX: SpeciesEnum
+SPECIES_WEEPINBELL_REDUX: SpeciesEnum
+SPECIES_VICTREEBEL_REDUX: SpeciesEnum
+SPECIES_SAWK_REDUX: SpeciesEnum
+SPECIES_THROH_REDUX: SpeciesEnum
+SPECIES_SNEASLER_MEGA: SpeciesEnum
+SPECIES_CLEFABLE_MEGA: SpeciesEnum
+SPECIES_TSAREENA_MEGA: SpeciesEnum
+SPECIES_GOODRA_HISUIAN_MEGA: SpeciesEnum
+SPECIES_HARIYAMA_MEGA: SpeciesEnum
+SPECIES_SWABLU_REDUX: SpeciesEnum
+SPECIES_ALTARIA_REDUX: SpeciesEnum
+SPECIES_ALTARIA_REDUX_MEGA: SpeciesEnum
+SPECIES_ERATICATE: SpeciesEnum
+SPECIES_EXEGGCUTE_REDUX: SpeciesEnum
+SPECIES_EXEGGUTOR_REDUX: SpeciesEnum
+SPECIES_LUXZERO_MEGA: SpeciesEnum
+SPECIES_KECLEONG: SpeciesEnum
+SPECIES_INFERNAPE_REDUX_B: SpeciesEnum
+SPECIES_NOIBAT_REDUX: SpeciesEnum
+SPECIES_NOIVERN_REDUX: SpeciesEnum
+SPECIES_LUXZERO: SpeciesEnum
+SPECIES_CLAWITZER_REDUX: SpeciesEnum
+SPECIES_HONEDGE_REDUX: SpeciesEnum
+SPECIES_DOUBLADE_REDUX: SpeciesEnum
+SPECIES_AEGISLASH_REDUX: SpeciesEnum
+SPECIES_AEGISLASH_BLADE_REDUX: SpeciesEnum
+SPECIES_ABRA_REDUX: SpeciesEnum
+SPECIES_KADABRA_REDUX: SpeciesEnum
+SPECIES_ALAKAZAM_REDUX: SpeciesEnum
+SPECIES_WEEDLE_REDUX: SpeciesEnum
+SPECIES_KAKUNA_REDUX: SpeciesEnum
+SPECIES_BEEDRILL_REDUX: SpeciesEnum
+SPECIES_STUFFUL_REDUX: SpeciesEnum
+SPECIES_BEWEAR_REDUX: SpeciesEnum
+SPECIES_PANPOUR_REDUX: SpeciesEnum
+SPECIES_SIMIPOUR_REDUX: SpeciesEnum
+SPECIES_PANSAGE_REDUX: SpeciesEnum
+SPECIES_SIMISAGE_REDUX: SpeciesEnum
+SPECIES_PANSEAR_REDUX: SpeciesEnum
+SPECIES_SIMISEAR_REDUX: SpeciesEnum
+SPECIES_SLUGMA_REDUX: SpeciesEnum
+SPECIES_MAGCARGO_REDUX: SpeciesEnum
+SPECIES_BUIZEL_REDUX: SpeciesEnum
+SPECIES_FLOATZEL_REDUX: SpeciesEnum
+SPECIES_AZELF_REDUX: SpeciesEnum
+SPECIES_MESPRIT_REDUX: SpeciesEnum
+SPECIES_UXIE_REDUX: SpeciesEnum
+SPECIES_MACHOP_REDUX: SpeciesEnum
+SPECIES_MACHOKE_REDUX: SpeciesEnum
+SPECIES_MACHAMP_REDUX: SpeciesEnum
+SPECIES_SOLOSIS_REDUX: SpeciesEnum
+SPECIES_DUOSION_REDUX: SpeciesEnum
+SPECIES_REUNICLUS_REDUX: SpeciesEnum
+SPECIES_SKARMORY_REDUX: SpeciesEnum
+SPECIES_GROWLITHE_REDUX: SpeciesEnum
+SPECIES_ARCANINE_REDUX: SpeciesEnum
+SPECIES_WHISMUR_REDUX: SpeciesEnum
+SPECIES_LOUDRED_REDUX: SpeciesEnum
+SPECIES_EXPLOUD_REDUX: SpeciesEnum
+SPECIES_GIBLE_REDUX: SpeciesEnum
+SPECIES_GABITE_REDUX: SpeciesEnum
+SPECIES_GARCHOMP_REDUX: SpeciesEnum
+SPECIES_DEINO_REDUX: SpeciesEnum
+SPECIES_ZWEILOUS_REDUX: SpeciesEnum
+SPECIES_HYDREIGON_REDUX: SpeciesEnum
+SPECIES_PAWNIARD_REDUX: SpeciesEnum
+SPECIES_BISHARP_REDUX: SpeciesEnum
+SPECIES_MAWILE_REDUX: SpeciesEnum
+SPECIES_SABLEYE_REDUX: SpeciesEnum
+SPECIES_HOUNDOUR_REDUX: SpeciesEnum
+SPECIES_HOUNDOOM_REDUX: SpeciesEnum
+SPECIES_DODUO_REDUX: SpeciesEnum
+SPECIES_DODRIO_REDUX: SpeciesEnum
+SPECIES_KINGAMBIT_REDUX: SpeciesEnum
+SPECIES_LARVITAR_REDUX: SpeciesEnum
+SPECIES_PUPITAR_REDUX: SpeciesEnum
+SPECIES_TYRANITAR_REDUX: SpeciesEnum
+SPECIES_TYRANITAR_MEGA_REDUX: SpeciesEnum
+SPECIES_URSALUNA_MEGA: SpeciesEnum
+SPECIES_IRON_EXO: SpeciesEnum
+SPECIES_SCIZOR_REDUX: SpeciesEnum
+SPECIES_WOOPER_PALDEAN: SpeciesEnum
+SPECIES_BASCULIN_WHITESTRIPED: SpeciesEnum
+SPECIES_ESCARGINITE_REDUX: SpeciesEnum
+SPECIES_DRAGONITE_DELIVERY: SpeciesEnum
+SPECIES_CHIEN_PAO_MEGA: SpeciesEnum
+SPECIES_DRACOVISH_MEGA: SpeciesEnum
+SPECIES_LEDIAN_PARADOX: SpeciesEnum
+SPECIES_SNORLAX_PRIMAL: SpeciesEnum
+SPECIES_VICTINI_PRIMAL: SpeciesEnum
+SPECIES_WIGGLYTUFF_PRIMAL: SpeciesEnum
+SPECIES_FLYGON_REDUX_B: SpeciesEnum
+SPECIES_FLYGON_REDUX_B_MEGA: SpeciesEnum
+SPECIES_RIBOMBEE_REDUX: SpeciesEnum
+SPECIES_RIBOMBEE_REDUX_MEGA: SpeciesEnum
+SPECIES_WEAVILE_REDUX: SpeciesEnum
+SPECIES_WEAVILE_REDUX_MEGA: SpeciesEnum
+SPECIES_ABOMASNOW_SANTA: SpeciesEnum
+SPECIES_BEWEAR_ANGRY: SpeciesEnum
+SPECIES_MIMIKYU_RAYQUAZA: SpeciesEnum
+SPECIES_ESPEON_GALAXY: SpeciesEnum
+SPECIES_DARKRAI_NIGHTMARE: SpeciesEnum
+SPECIES_SOLROCK_SYSTEM: SpeciesEnum
+SPECIES_SPECTRIER_CLOUD: SpeciesEnum
+SPECIES_CALYREX_CLOUD_RIDER: SpeciesEnum
+SPECIES_MAWILE_REDUX_B: SpeciesEnum
+SPECIES_MAWILE_REDUX_B_MEGA: SpeciesEnum
+SPECIES_WIGGLYTUFF_APEX: SpeciesEnum
+SPECIES_YVELTAL_MEGA: SpeciesEnum
+SPECIES_KARTANA_FALLEN: SpeciesEnum
+SPECIES_TINKATON_MEGA: SpeciesEnum
+SPECIES_TURTWIG_REDUX: SpeciesEnum
+SPECIES_GROTLE_REDUX: SpeciesEnum
+SPECIES_TORTERRA_REDUX: SpeciesEnum
+SPECIES_CHIMCHAR_REDUX: SpeciesEnum
+SPECIES_MONFERNO_REDUX: SpeciesEnum
+SPECIES_INFERNAPE_REDUX: SpeciesEnum
+SPECIES_PIPLUP_REDUX: SpeciesEnum
+SPECIES_PRINPLUP_REDUX: SpeciesEnum
+SPECIES_EMPOLEON_REDUX: SpeciesEnum
+SPECIES_BOUNSWEET_REDUX: SpeciesEnum
+SPECIES_STEENEE_REDUX: SpeciesEnum
+SPECIES_TSAREENA_REDUX: SpeciesEnum
+SPECIES_TOXEL_REDUX: SpeciesEnum
+SPECIES_TOXTRICITY_REDUX: SpeciesEnum
+SPECIES_TOXTRICITY_REDUX_FUZZ: SpeciesEnum
+SPECIES_TRAPINCH_REDUX: SpeciesEnum
+SPECIES_VIBRAVA_REDUX: SpeciesEnum
+SPECIES_FLYGON_REDUX: SpeciesEnum
+SPECIES_CRABRAWLER_REDUX: SpeciesEnum
+SPECIES_CRABOMINABLE_REDUX: SpeciesEnum
+SPECIES_CLEFFA_REDUX: SpeciesEnum
+SPECIES_CLEFAIRY_REDUX: SpeciesEnum
+SPECIES_CLEFABLE_REDUX: SpeciesEnum
+SPECIES_GLIGAR_REDUX: SpeciesEnum
+SPECIES_GLISCOR_REDUX: SpeciesEnum
+SPECIES_PSYDUCK_REDUX: SpeciesEnum
+SPECIES_SEEL_REDUX: SpeciesEnum
+SPECIES_DEWGONG_REDUX: SpeciesEnum
+SPECIES_SNORUNT_REDUX: SpeciesEnum
+SPECIES_GLALIE_REDUX: SpeciesEnum
+SPECIES_FROSLASS_REDUX: SpeciesEnum
+SPECIES_DARUMAKA_REDUX: SpeciesEnum
+SPECIES_DARMANITAN_REDUX: SpeciesEnum
+SPECIES_DARMANITAN_REDUX_AURA: SpeciesEnum
+SPECIES_DARMANITAN_REDUX_BOND: SpeciesEnum
+SPECIES_HAPPINY_REDUX: SpeciesEnum
+SPECIES_CHANSEY_REDUX: SpeciesEnum
+SPECIES_BLISSEY_REDUX: SpeciesEnum
+SPECIES_SPIRITOMB_REDUX: SpeciesEnum
+SPECIES_DARMANITAN_REDUX_BLUNDER: SpeciesEnum
+SPECIES_DEWPIDER_REDUX: SpeciesEnum
+SPECIES_ARAQUANID_REDUX: SpeciesEnum
+SPECIES_MIMIKYU_APEX: SpeciesEnum
+SPECIES_MIMIKYU_APEX_BUSTED: SpeciesEnum
+SPECIES_TINKATINK_REDUX: SpeciesEnum
+SPECIES_TINKATUFF_REDUX: SpeciesEnum
+SPECIES_TINKATON_REDUX: SpeciesEnum
+SPECIES_TINKATON_REDUX_MEGA: SpeciesEnum
+SPECIES_SCYTHER_REDUX: SpeciesEnum
+SPECIES_SCYTHER_REDUX_MEGA: SpeciesEnum
+SPECIES_SCIZOR_REDUX_MEGA: SpeciesEnum
+SPECIES_KLEAVOR_REDUX: SpeciesEnum
+SPECIES_KLEAVOR_REDUX_MEGA: SpeciesEnum
+SPECIES_KRABBY_REDUX: SpeciesEnum
+SPECIES_KINGLER_REDUX: SpeciesEnum
+SPECIES_KINGLER_REDUX_MEGA: SpeciesEnum
+SPECIES_SHINX_REDUX: SpeciesEnum
+SPECIES_LUXIO_REDUX: SpeciesEnum
+SPECIES_LUXRAY_REDUX_B: SpeciesEnum
+SPECIES_LUXRAY_REDUX_B_MEGA: SpeciesEnum
+SPECIES_ARON_REDUX: SpeciesEnum
+SPECIES_LAIRON_REDUX: SpeciesEnum
+SPECIES_AGGRON_REDUX: SpeciesEnum
+SPECIES_AGGRON_REDUX_MEGA: SpeciesEnum
+SPECIES_MAKUHITA_REDUX: SpeciesEnum
+SPECIES_HARIYAMA_REDUX: SpeciesEnum
+SPECIES_KILOZUNA: SpeciesEnum
+SPECIES_KILOZUNA_MEGA: SpeciesEnum
+SPECIES_FOGGING: SpeciesEnum
+SPECIES_BREEZING: SpeciesEnum
+SPECIES_STORMING: SpeciesEnum
+SPECIES_RALTS_REDUX: SpeciesEnum
+SPECIES_KIRLIA_REDUX: SpeciesEnum
+SPECIES_GARDEVOIR_REDUX: SpeciesEnum
+SPECIES_GALLADE_REDUX: SpeciesEnum
+SPECIES_GARDEVOIR_REDUX_MEGA: SpeciesEnum
+SPECIES_GALLADE_REDUX_MEGA: SpeciesEnum
+SPECIES_MERRYKARP: SpeciesEnum
+SPECIES_GYAREVALRY: SpeciesEnum
+SPECIES_MUNCHLAX_REDUX: SpeciesEnum
+SPECIES_SNORLAX_REDUX: SpeciesEnum
+SPECIES_SNORLAX_REDUX_MEGA: SpeciesEnum
+SPECIES_SPEAROW_REDUX: SpeciesEnum
+SPECIES_FEAROW_REDUX: SpeciesEnum
+SPECIES_FEAROW_REDUX_EVO: SpeciesEnum
+SPECIES_SLATE: SpeciesEnum
+SPECIES_EGG: SpeciesEnum

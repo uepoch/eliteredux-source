@@ -1,0 +1,209 @@
+import MoveBehavior_pb2 as _MoveBehavior_pb2
+from google.protobuf.internal import enum_type_wrapper as _enum_type_wrapper
+from google.protobuf import descriptor as _descriptor
+from typing import ClassVar as _ClassVar
+
+DESCRIPTOR: _descriptor.FileDescriptor
+
+class MoveEffect(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
+    __slots__ = ()
+    MOVE_EFFECT_NONE: _ClassVar[MoveEffect]
+    MOVE_EFFECT_SLEEP: _ClassVar[MoveEffect]
+    MOVE_EFFECT_POISON: _ClassVar[MoveEffect]
+    MOVE_EFFECT_BURN: _ClassVar[MoveEffect]
+    MOVE_EFFECT_FREEZE: _ClassVar[MoveEffect]
+    MOVE_EFFECT_PARALYSIS: _ClassVar[MoveEffect]
+    MOVE_EFFECT_TOXIC: _ClassVar[MoveEffect]
+    MOVE_EFFECT_FROSTBITE: _ClassVar[MoveEffect]
+    MOVE_EFFECT_BLEED: _ClassVar[MoveEffect]
+    MOVE_EFFECT_CONFUSION: _ClassVar[MoveEffect]
+    MOVE_EFFECT_FLINCH: _ClassVar[MoveEffect]
+    MOVE_EFFECT_TRI_ATTACK: _ClassVar[MoveEffect]
+    MOVE_EFFECT_UPROAR: _ClassVar[MoveEffect]
+    MOVE_EFFECT_PAYDAY: _ClassVar[MoveEffect]
+    MOVE_EFFECT_CHARGING: _ClassVar[MoveEffect]
+    MOVE_EFFECT_WRAP: _ClassVar[MoveEffect]
+    MOVE_EFFECT_INCINERATE: _ClassVar[MoveEffect]
+    MOVE_EFFECT_ATK_PLUS_1: _ClassVar[MoveEffect]
+    MOVE_EFFECT_DEF_PLUS_1: _ClassVar[MoveEffect]
+    MOVE_EFFECT_SPD_PLUS_1: _ClassVar[MoveEffect]
+    MOVE_EFFECT_SP_ATK_PLUS_1: _ClassVar[MoveEffect]
+    MOVE_EFFECT_SP_DEF_PLUS_1: _ClassVar[MoveEffect]
+    MOVE_EFFECT_ACC_PLUS_1: _ClassVar[MoveEffect]
+    MOVE_EFFECT_EVS_PLUS_1: _ClassVar[MoveEffect]
+    MOVE_EFFECT_ATK_MINUS_1: _ClassVar[MoveEffect]
+    MOVE_EFFECT_DEF_MINUS_1: _ClassVar[MoveEffect]
+    MOVE_EFFECT_SPD_MINUS_1: _ClassVar[MoveEffect]
+    MOVE_EFFECT_SP_ATK_MINUS_1: _ClassVar[MoveEffect]
+    MOVE_EFFECT_SP_DEF_MINUS_1: _ClassVar[MoveEffect]
+    MOVE_EFFECT_ACC_MINUS_1: _ClassVar[MoveEffect]
+    MOVE_EFFECT_EVS_MINUS_1: _ClassVar[MoveEffect]
+    MOVE_EFFECT_RECHARGE: _ClassVar[MoveEffect]
+    MOVE_EFFECT_RAGE: _ClassVar[MoveEffect]
+    MOVE_EFFECT_STEAL_ITEM: _ClassVar[MoveEffect]
+    MOVE_EFFECT_PREVENT_ESCAPE: _ClassVar[MoveEffect]
+    MOVE_EFFECT_NIGHTMARE: _ClassVar[MoveEffect]
+    MOVE_EFFECT_ALL_STATS_UP: _ClassVar[MoveEffect]
+    MOVE_EFFECT_RAPIDSPIN: _ClassVar[MoveEffect]
+    MOVE_EFFECT_REMOVE_STATUS: _ClassVar[MoveEffect]
+    MOVE_EFFECT_ATK_DEF_DOWN: _ClassVar[MoveEffect]
+    MOVE_EFFECT_RECOIL_HP_25: _ClassVar[MoveEffect]
+    MOVE_EFFECT_ATK_PLUS_2: _ClassVar[MoveEffect]
+    MOVE_EFFECT_DEF_PLUS_2: _ClassVar[MoveEffect]
+    MOVE_EFFECT_SPD_PLUS_2: _ClassVar[MoveEffect]
+    MOVE_EFFECT_SP_ATK_PLUS_2: _ClassVar[MoveEffect]
+    MOVE_EFFECT_SP_DEF_PLUS_2: _ClassVar[MoveEffect]
+    MOVE_EFFECT_ACC_PLUS_2: _ClassVar[MoveEffect]
+    MOVE_EFFECT_EVS_PLUS_2: _ClassVar[MoveEffect]
+    MOVE_EFFECT_ATK_MINUS_2: _ClassVar[MoveEffect]
+    MOVE_EFFECT_DEF_MINUS_2: _ClassVar[MoveEffect]
+    MOVE_EFFECT_SPD_MINUS_2: _ClassVar[MoveEffect]
+    MOVE_EFFECT_SP_ATK_MINUS_2: _ClassVar[MoveEffect]
+    MOVE_EFFECT_SP_DEF_MINUS_2: _ClassVar[MoveEffect]
+    MOVE_EFFECT_ACC_MINUS_2: _ClassVar[MoveEffect]
+    MOVE_EFFECT_EVS_MINUS_2: _ClassVar[MoveEffect]
+    MOVE_EFFECT_THRASH: _ClassVar[MoveEffect]
+    MOVE_EFFECT_KNOCK_OFF: _ClassVar[MoveEffect]
+    MOVE_EFFECT_DEF_SPDEF_DOWN: _ClassVar[MoveEffect]
+    MOVE_EFFECT_BURN_UP: _ClassVar[MoveEffect]
+    MOVE_EFFECT_CLEAR_SMOG: _ClassVar[MoveEffect]
+    MOVE_EFFECT_BUG_BITE: _ClassVar[MoveEffect]
+    MOVE_EFFECT_SP_ATK_TWO_DOWN: _ClassVar[MoveEffect]
+    MOVE_EFFECT_SMACK_DOWN: _ClassVar[MoveEffect]
+    MOVE_EFFECT_FLAME_BURST: _ClassVar[MoveEffect]
+    MOVE_EFFECT_FEINT: _ClassVar[MoveEffect]
+    MOVE_EFFECT_SPECTRAL_THIEF: _ClassVar[MoveEffect]
+    MOVE_EFFECT_V_CREATE: _ClassVar[MoveEffect]
+    MOVE_EFFECT_HAPPY_HOUR: _ClassVar[MoveEffect]
+    MOVE_EFFECT_CORE_ENFORCER: _ClassVar[MoveEffect]
+    MOVE_EFFECT_THROAT_CHOP: _ClassVar[MoveEffect]
+    MOVE_EFFECT_RELIC_SONG: _ClassVar[MoveEffect]
+    MOVE_EFFECT_TRAP_BOTH: _ClassVar[MoveEffect]
+    MOVE_EFFECT_SPD_PLUS_1_DEF_MINUS_1: _ClassVar[MoveEffect]
+    MOVE_EFFECT_ATTRACT: _ClassVar[MoveEffect]
+    MOVE_EFFECT_CURSE: _ClassVar[MoveEffect]
+    MOVE_EFFECT_DISABLE: _ClassVar[MoveEffect]
+    MOVE_EFFECT_GLAIVE_RUSH: _ClassVar[MoveEffect]
+    MOVE_EFFECT_SALT_CURE: _ClassVar[MoveEffect]
+    MOVE_EFFECT_ORDER_UP: _ClassVar[MoveEffect]
+    MOVE_EFFECT_WATER_PLEDGE: _ClassVar[MoveEffect]
+    MOVE_EFFECT_FIRE_PLEDGE: _ClassVar[MoveEffect]
+    MOVE_EFFECT_GRASS_PLEDGE: _ClassVar[MoveEffect]
+    MOVE_EFFECT_RAINBOW: _ClassVar[MoveEffect]
+    MOVE_EFFECT_FIRE_SEA: _ClassVar[MoveEffect]
+    MOVE_EFFECT_SWAMP: _ClassVar[MoveEffect]
+    MOVE_EFFECT_SYRUP: _ClassVar[MoveEffect]
+    MOVE_EFFECT_DIRE_CLAW: _ClassVar[MoveEffect]
+    MOVE_EFFECT_SMOKESCREEN: _ClassVar[MoveEffect]
+    MOVE_EFFECT_FEAR: _ClassVar[MoveEffect]
+    MOVE_EFFECT_YAWN: _ClassVar[MoveEffect]
+    MOVE_EFFECT_PSYCHIC_NOISE: _ClassVar[MoveEffect]
+    MOVE_EFFECT_HIGHEST_STAT_EXCEPT_SPEED_PLUS_1: _ClassVar[MoveEffect]
+    MOVE_EFFECT_MAKE_IT_RAIN: _ClassVar[MoveEffect]
+    MOVE_EFFECT_WYRM_WIND: _ClassVar[MoveEffect]
+    MOVE_EFFECT_SCALE_SHOT: _ClassVar[MoveEffect]
+    MOVE_EFFECT_DOUBLESLAP: _ClassVar[MoveEffect]
+    MOVE_EFFECT_CRIT_PLUS_1: _ClassVar[MoveEffect]
+    MOVE_EFFECT_NATURAL_GIFT: _ClassVar[MoveEffect]
+    MOVE_EFFECT_ENRAGE: _ClassVar[MoveEffect]
+    MOVE_EFFECT_DRENCH: _ClassVar[MoveEffect]
+MOVE_EFFECT_NONE: MoveEffect
+MOVE_EFFECT_SLEEP: MoveEffect
+MOVE_EFFECT_POISON: MoveEffect
+MOVE_EFFECT_BURN: MoveEffect
+MOVE_EFFECT_FREEZE: MoveEffect
+MOVE_EFFECT_PARALYSIS: MoveEffect
+MOVE_EFFECT_TOXIC: MoveEffect
+MOVE_EFFECT_FROSTBITE: MoveEffect
+MOVE_EFFECT_BLEED: MoveEffect
+MOVE_EFFECT_CONFUSION: MoveEffect
+MOVE_EFFECT_FLINCH: MoveEffect
+MOVE_EFFECT_TRI_ATTACK: MoveEffect
+MOVE_EFFECT_UPROAR: MoveEffect
+MOVE_EFFECT_PAYDAY: MoveEffect
+MOVE_EFFECT_CHARGING: MoveEffect
+MOVE_EFFECT_WRAP: MoveEffect
+MOVE_EFFECT_INCINERATE: MoveEffect
+MOVE_EFFECT_ATK_PLUS_1: MoveEffect
+MOVE_EFFECT_DEF_PLUS_1: MoveEffect
+MOVE_EFFECT_SPD_PLUS_1: MoveEffect
+MOVE_EFFECT_SP_ATK_PLUS_1: MoveEffect
+MOVE_EFFECT_SP_DEF_PLUS_1: MoveEffect
+MOVE_EFFECT_ACC_PLUS_1: MoveEffect
+MOVE_EFFECT_EVS_PLUS_1: MoveEffect
+MOVE_EFFECT_ATK_MINUS_1: MoveEffect
+MOVE_EFFECT_DEF_MINUS_1: MoveEffect
+MOVE_EFFECT_SPD_MINUS_1: MoveEffect
+MOVE_EFFECT_SP_ATK_MINUS_1: MoveEffect
+MOVE_EFFECT_SP_DEF_MINUS_1: MoveEffect
+MOVE_EFFECT_ACC_MINUS_1: MoveEffect
+MOVE_EFFECT_EVS_MINUS_1: MoveEffect
+MOVE_EFFECT_RECHARGE: MoveEffect
+MOVE_EFFECT_RAGE: MoveEffect
+MOVE_EFFECT_STEAL_ITEM: MoveEffect
+MOVE_EFFECT_PREVENT_ESCAPE: MoveEffect
+MOVE_EFFECT_NIGHTMARE: MoveEffect
+MOVE_EFFECT_ALL_STATS_UP: MoveEffect
+MOVE_EFFECT_RAPIDSPIN: MoveEffect
+MOVE_EFFECT_REMOVE_STATUS: MoveEffect
+MOVE_EFFECT_ATK_DEF_DOWN: MoveEffect
+MOVE_EFFECT_RECOIL_HP_25: MoveEffect
+MOVE_EFFECT_ATK_PLUS_2: MoveEffect
+MOVE_EFFECT_DEF_PLUS_2: MoveEffect
+MOVE_EFFECT_SPD_PLUS_2: MoveEffect
+MOVE_EFFECT_SP_ATK_PLUS_2: MoveEffect
+MOVE_EFFECT_SP_DEF_PLUS_2: MoveEffect
+MOVE_EFFECT_ACC_PLUS_2: MoveEffect
+MOVE_EFFECT_EVS_PLUS_2: MoveEffect
+MOVE_EFFECT_ATK_MINUS_2: MoveEffect
+MOVE_EFFECT_DEF_MINUS_2: MoveEffect
+MOVE_EFFECT_SPD_MINUS_2: MoveEffect
+MOVE_EFFECT_SP_ATK_MINUS_2: MoveEffect
+MOVE_EFFECT_SP_DEF_MINUS_2: MoveEffect
+MOVE_EFFECT_ACC_MINUS_2: MoveEffect
+MOVE_EFFECT_EVS_MINUS_2: MoveEffect
+MOVE_EFFECT_THRASH: MoveEffect
+MOVE_EFFECT_KNOCK_OFF: MoveEffect
+MOVE_EFFECT_DEF_SPDEF_DOWN: MoveEffect
+MOVE_EFFECT_BURN_UP: MoveEffect
+MOVE_EFFECT_CLEAR_SMOG: MoveEffect
+MOVE_EFFECT_BUG_BITE: MoveEffect
+MOVE_EFFECT_SP_ATK_TWO_DOWN: MoveEffect
+MOVE_EFFECT_SMACK_DOWN: MoveEffect
+MOVE_EFFECT_FLAME_BURST: MoveEffect
+MOVE_EFFECT_FEINT: MoveEffect
+MOVE_EFFECT_SPECTRAL_THIEF: MoveEffect
+MOVE_EFFECT_V_CREATE: MoveEffect
+MOVE_EFFECT_HAPPY_HOUR: MoveEffect
+MOVE_EFFECT_CORE_ENFORCER: MoveEffect
+MOVE_EFFECT_THROAT_CHOP: MoveEffect
+MOVE_EFFECT_RELIC_SONG: MoveEffect
+MOVE_EFFECT_TRAP_BOTH: MoveEffect
+MOVE_EFFECT_SPD_PLUS_1_DEF_MINUS_1: MoveEffect
+MOVE_EFFECT_ATTRACT: MoveEffect
+MOVE_EFFECT_CURSE: MoveEffect
+MOVE_EFFECT_DISABLE: MoveEffect
+MOVE_EFFECT_GLAIVE_RUSH: MoveEffect
+MOVE_EFFECT_SALT_CURE: MoveEffect
+MOVE_EFFECT_ORDER_UP: MoveEffect
+MOVE_EFFECT_WATER_PLEDGE: MoveEffect
+MOVE_EFFECT_FIRE_PLEDGE: MoveEffect
+MOVE_EFFECT_GRASS_PLEDGE: MoveEffect
+MOVE_EFFECT_RAINBOW: MoveEffect
+MOVE_EFFECT_FIRE_SEA: MoveEffect
+MOVE_EFFECT_SWAMP: MoveEffect
+MOVE_EFFECT_SYRUP: MoveEffect
+MOVE_EFFECT_DIRE_CLAW: MoveEffect
+MOVE_EFFECT_SMOKESCREEN: MoveEffect
+MOVE_EFFECT_FEAR: MoveEffect
+MOVE_EFFECT_YAWN: MoveEffect
+MOVE_EFFECT_PSYCHIC_NOISE: MoveEffect
+MOVE_EFFECT_HIGHEST_STAT_EXCEPT_SPEED_PLUS_1: MoveEffect
+MOVE_EFFECT_MAKE_IT_RAIN: MoveEffect
+MOVE_EFFECT_WYRM_WIND: MoveEffect
+MOVE_EFFECT_SCALE_SHOT: MoveEffect
+MOVE_EFFECT_DOUBLESLAP: MoveEffect
+MOVE_EFFECT_CRIT_PLUS_1: MoveEffect
+MOVE_EFFECT_NATURAL_GIFT: MoveEffect
+MOVE_EFFECT_ENRAGE: MoveEffect
+MOVE_EFFECT_DRENCH: MoveEffect
