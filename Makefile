@@ -147,7 +147,7 @@ PORYSCRIPT_CONFIGS := $(PORYSCRIPT_DIR)/command_config.json $(PORYSCRIPT_DIR)/fo
 
 PERL := perl
 
-DOCKER_TARGETS := docker-bps docker-codegen docker-protos docker-check-protos docker-test-codegen docker-shell
+DOCKER_TARGETS := docker-rom docker-bps docker-codegen docker-protos docker-check-protos docker-test-codegen docker-shell
 
 TOOLDIRS := $(filter-out tools/agbcc tools/binutils tools/poryscript,$(wildcard tools/*))
 TOOLBASE = $(TOOLDIRS:tools/%=%)
@@ -231,23 +231,26 @@ AUTO_GEN_TARGETS :=
 
 all: rom
 
+docker-rom:
+	@./docker/build-bps.sh --rom
+
 docker-bps:
-	@./docker/build-bps.sh bps
+	@./docker/build-bps.sh --bps
 
 docker-codegen:
-	@./docker/build-bps.sh codegen
+	@./docker/build-bps.sh --codegen
 
 docker-protos:
-	@./docker/build-bps.sh protos
+	@./docker/build-bps.sh --protos
 
 docker-check-protos:
-	@./docker/build-bps.sh check-protos
+	@./docker/build-bps.sh --check-protos
 
 docker-test-codegen:
-	@./docker/build-bps.sh test-codegen
+	@./docker/build-bps.sh --test-codegen
 
 docker-shell:
-	@./docker/build-bps.sh shell
+	@./docker/build-bps.sh --shell
 
 tools: $(TOOLDIRS)
 

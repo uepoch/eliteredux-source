@@ -11,10 +11,20 @@ fi
 
 cd "${workspace}"
 
+build_rom() {
+    # A bind-mounted checkout may contain helpers compiled against the host's
+    # libc. Rebuild them so every executable used below matches this image.
+    make clean-tools
+    make -j"${jobs}" tools
+    make -j"${jobs}" PORYSCRIPT_DIR=/opt/poryscript
+}
+
 case "${1:-bps}" in
+    rom)
+        build_rom
+        ;;
     bps)
-        make -j"${jobs}" tools
-        make -j"${jobs}" PORYSCRIPT_DIR=/opt/poryscript
+        build_rom
         flips --create /opt/pokeemerald.gba pokeemerald_modern.gba "${BPS_OUTPUT:-EliteRedux.bps}"
         ;;
     codegen)
@@ -33,7 +43,7 @@ case "${1:-bps}" in
         exec /bin/bash
         ;;
     *)
-        echo "usage: eliteredux-build {bps|codegen|protos|check-protos|test-codegen|shell}" >&2
+        echo "usage: eliteredux-build {rom|bps|codegen|protos|check-protos|test-codegen|shell}" >&2
         exit 2
         ;;
 esac

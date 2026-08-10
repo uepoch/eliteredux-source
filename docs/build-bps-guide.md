@@ -6,18 +6,27 @@ A `.bps` file is a **binary patch** — it contains only the *differences* betwe
 
 ## Docker build (recommended)
 
-With Docker running, build the image and create the patch with:
+With Docker running, build only the full Elite Redux ROM with:
+
+```sh
+make docker-rom
+# equivalent: ./docker/build-bps.sh --rom
+```
+
+The ROM is written to `pokeemerald_modern.gba`. Build both the ROM and its BPS
+patch with:
 
 ```sh
 make docker-bps
+# equivalent: ./docker/build-bps.sh --bps
 ```
 
 The wrapper builds a compact Debian image containing the ARM toolchain, host
 compiler, Poryscript, Python protobuf runtime, protoc 29.2, and a verified
 vanilla Emerald ROM. A CLI-only FLIPS binary is compiled from its pinned
 official source without GTK. The wrapper bind-mounts the repository at `/workspace`, so the
-result is written to `EliteRedux.bps` in the repository and is owned by the
-current host user.
+results are written to the repository and owned by the current host user.
+Running the script without a flag defaults to `--bps`.
 
 The same image can regenerate or validate codegen output:
 
