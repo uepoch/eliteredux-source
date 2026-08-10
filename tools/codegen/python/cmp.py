@@ -18,6 +18,7 @@ sys.path.insert(0, os.path.dirname(__file__))
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "generated"))
 
 REPO = Path(os.environ.get("ER_REPO", Path(__file__).resolve().parents[3]))
+REFERENCE_REPO = Path(os.environ.get("ER_REFERENCE_REPO", REPO))
 ASTYLE_OPTS = ["astyle", "--mode=c", "--indent=spaces=4", "--style=attach",
                "--lineend=linux", "--max-code-length=200", "--suffix=none", "-q", "-Q"]
 
@@ -70,8 +71,8 @@ def main():
     if use_astyle:
         # Copy ref, normalize both
         ref_dir = Path(tempfile.mkdtemp(prefix="pycodegen_ref_"))
-        shutil.copytree(REPO / "include/generated", ref_dir / "include/generated")
-        shutil.copytree(REPO / "asm/generated", ref_dir / "asm/generated")
+        shutil.copytree(REFERENCE_REPO / "include/generated", ref_dir / "include/generated")
+        shutil.copytree(REFERENCE_REPO / "asm/generated", ref_dir / "asm/generated")
         astyle_normalize(ref_dir)
         astyle_normalize(gen_dir)
         ref_base = ref_dir
@@ -88,7 +89,7 @@ def main():
         if use_astyle:
             ref_file = ref_base / spec.output_path
         else:
-            ref_file = REPO / spec.output_path
+            ref_file = REFERENCE_REPO / spec.output_path
 
         if not gen_file.exists():
             print(f"  ERROR  {gen_type:30s} (not generated)")

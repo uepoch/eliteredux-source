@@ -41,11 +41,9 @@ def _emit_enum(w: CWriter, values, enum_name: str, count_define: str | None = No
 
 
 def gen_abilities(data, w: CWriter):
-    values = data.ability_enums
-    _emit_enum(w, values, "AbilityEnum", "ABILITIES_COUNT")
-    w.blank()
-    w.macro("FOR_EACH_ABILITY", [f"FOR_EACH_ABILITY_FUNCTION({value.name})" for value in values])
-    w.blank()
+    numbers = {value.name: value.number for value in data.ability_enums}
+    values = [EnumValue(ability.id, numbers[ability.id]) for ability in data.abilities]
+    _emit_foreach_enum(w, values, "AbilityEnum", "ABILITIES_COUNT", "FOR_EACH_ABILITY")
 
 
 def gen_moves(data, w: CWriter):
@@ -127,11 +125,42 @@ def gen_trainerfields(data, w: CWriter):
 
 
 def gen_movebehaviors(data, w: CWriter):
-    enums = data.move_behavior_enums
-    count = max(v.number for v in enums) + 1
+    enums = [EnumValue(name, index) for index, (name, _) in enumerate(data.move_behaviors)]
+    count = len(enums)
     w.define("NUM_BATTLE_MOVE_EFFECTS", count)
     w.blank()
     _emit_enum(w, enums, "MoveBehaviorEnum")
+    w.blank()
+
+
+def gen_battleskills(data, w: CWriter):
+    values = data.battle_skill_enums
+    _emit_foreach_enum(w, values, "BattleSkillEnum", "BATTLE_SKILL_COUNT", "FOR_EACH_BATTLE_SKILL")
+
+
+def _emit_foreach_enum(w, values, enum_name, count_name, foreach_name):
+    count = max(value.number for value in values) + 1
+    w.blank()
+    w.line("#ifdef __assembly__")
+    w.blank()
+    for value in values:
+        w.define(value.name, value.number)
+    w.define(count_name, count)
+    w.blank()
+    w.line("#else")
+    w.blank()
+    w.line(f"typedef enum {enum_name} {{")
+    for value in values:
+        w.line(f"{value.name} = {value.number},", 1)
+    w.line(f"{count_name} = {count}", 1)
+    w.line(f"}} {enum_name};")
+    w.blank()
+    w.line("#endif")
+    w.blank()
+    w.line(f"#define {foreach_name} \\")
+    for index, value in enumerate(values):
+        continuation = " \\" if index + 1 < len(values) else ""
+        w.line(f"{foreach_name}_FUNCTION({value.name}){continuation}", 1)
     w.blank()
 
 

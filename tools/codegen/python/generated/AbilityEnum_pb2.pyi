@@ -1040,6 +1040,16 @@ class AbilityEnum(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
     ABILITY_ROCK_ARMOR: _ClassVar[AbilityEnum]
     ABILITY_SMOLDERING_WOOD: _ClassVar[AbilityEnum]
     ABILITY_SLIME_MOLD: _ClassVar[AbilityEnum]
+    ABILITY_BUTTERFLY_WINGS: _ClassVar[AbilityEnum]
+    ABILITY_SAND_TITAN: _ClassVar[AbilityEnum]
+    ABILITY_FAMILIA_BOND: _ClassVar[AbilityEnum]
+    ABILITY_MEGA_SOL: _ClassVar[AbilityEnum]
+    ABILITY_PETROLEUM_JELLY: _ClassVar[AbilityEnum]
+    ABILITY_SPICY_SPRAY: _ClassVar[AbilityEnum]
+    ABILITY_CRIMSON_CROWN: _ClassVar[AbilityEnum]
+    ABILITY_MANA_COAT: _ClassVar[AbilityEnum]
+    ABILITY_HEMORRHAGE: _ClassVar[AbilityEnum]
+    ABILITY_OVERCLOCK: _ClassVar[AbilityEnum]
 ABILITY_NONE: AbilityEnum
 ABILITY_STENCH: AbilityEnum
 ABILITY_DRIZZLE: AbilityEnum
@@ -2074,3 +2084,13 @@ ABILITY_SLEEK_SCALES: AbilityEnum
 ABILITY_ROCK_ARMOR: AbilityEnum
 ABILITY_SMOLDERING_WOOD: AbilityEnum
 ABILITY_SLIME_MOLD: AbilityEnum
+ABILITY_BUTTERFLY_WINGS: AbilityEnum
+ABILITY_SAND_TITAN: AbilityEnum
+ABILITY_FAMILIA_BOND: AbilityEnum
+ABILITY_MEGA_SOL: AbilityEnum
+ABILITY_PETROLEUM_JELLY: AbilityEnum
+ABILITY_SPICY_SPRAY: AbilityEnum
+ABILITY_CRIMSON_CROWN: AbilityEnum
+ABILITY_MANA_COAT: AbilityEnum
+ABILITY_HEMORRHAGE: AbilityEnum
+ABILITY_OVERCLOCK: AbilityEnum

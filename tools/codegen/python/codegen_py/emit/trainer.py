@@ -5,6 +5,7 @@ import Types_pb2
 
 from ..writer import CBraceList, CDollarString, CWriter, IND, java_hash_code
 from ..protobuf import enum_values
+from ..load import resolve_learnset
 
 
 NATURE_NEGATIVE_STAT = {
@@ -19,37 +20,40 @@ NATURE_NEGATIVE_STAT = {
     "NATURE_QUIRKY": "NEUTRAL",
 }
 
-_TRAINERMON_DESC_HASH = 367746789
+_TRAINERMON_DESC_HASH = 1632682988
 
 
 def gen_trainerparties(data, w: CWriter):
-    trainer_mon = TrainerList_pb2.TrainerParty.DESCRIPTOR.nested_types_by_name["TrainerMon"]
     enums = {
         'species': {v.name: v.number for v in data.species_enums},
         'item': {v.name: v.number for v in data.item_enums},
         'ability': {v.name: v.number for v in data.ability_enums},
         'move': {v.name: v.number for v in data.move_enums},
-        'nature': {v.name: v.number for v in enum_values(trainer_mon.enum_types_by_name["Nature"])},
+        'nature': {v.name: v.number for v in enum_values(TrainerList_pb2.DESCRIPTOR.enum_types_by_name["Nature"])},
         'type': {v.name: v.number for v in enum_values(Types_pb2.DESCRIPTOR.enum_types_by_name["Type"])},
     }
 
     all_parties = []
     seen = set()
+    party_context = {}
     for t in data.trainers:
-        for party in [t.ace, t.elite, t.hell]:
+        for difficulty, party in [("ACE", t.ace), ("ELITE", t.elite), ("HELL", t.hell)]:
             key = tuple(_mon_key(m) for m in party.mons)
             if key not in seen:
                 seen.add(key)
                 all_parties.append(party.mons)
+                party_context[key] = (t.id, difficulty)
 
     errors: list[str] = []
 
     for party_mons in all_parties:
         party_hash = _party_hash(party_mons, enums)
+        trainer_id, difficulty = party_context[tuple(_mon_key(m) for m in party_mons)]
+        context = f"{trainer_id} {difficulty}"
         w.line(f"static const struct TrainerMonItemCustomMoves __sParty_{party_hash}[] = {{")
 
         for mon in party_mons:
-            _validate_mon(data, mon, party_hash, errors)
+            _validate_mon(data, mon, difficulty == "HELL", context, errors)
             w.line(f"{IND}{{")
             w.field("species", mon.species, indent=2)
             w.field("heldItem", mon.item, indent=2)
@@ -59,7 +63,7 @@ def gen_trainerparties(data, w: CWriter):
                 ability_idx = sp.abilities.index(mon.ability)
                 w.field("ability", ability_idx, indent=2, comment=mon.ability)
             elif sp:
-                errors.append(f"Mon {mon.species} does not have ability {mon.ability}, partyHash: {party_hash}")
+                errors.append(f"Mon {mon.species} does not have ability {mon.ability}, party: {context}")
 
             w.field("nature", mon.nature, indent=2)
             w.field("evs", CBraceList((mon.hp_ev, mon.atk_ev, mon.def_ev, mon.spatk_ev, mon.spdef_ev, mon.spe_ev)), indent=2)
@@ -165,6 +169,44 @@ def _mon_hash(mon, enums: dict) -> int:
     return h
 
 
-def _validate_mon(data, mon, party_hash, errors):
+def _validate_mon(data, mon, is_hell, context, errors):
     if mon.nonstandard:
         return
+    prefix = lambda message: f"{message} for mon {mon.species}, party {context}"
+
+    species = data.species_map[mon.species]
+    learnset = resolve_learnset(species, data.species_map)
+    allowed = set(learnset.tutors)
+    allowed.update(move.id for move in data.moves if move.tutor == "TUTOR_UNIVERSAL_STATUS")
+    if learnset.universal_tutors != "NO_ATTACKS":
+        allowed.update(move.id for move in data.moves if move.tutor == "TUTOR_UNIVERSAL_ATTACK")
+    if not species.genderless:
+        allowed.update(move.id for move in data.moves if move.tutor == "TUTOR_UNIVERSAL_STATUS_GENDERED")
+    allowed.update(move for level in learnset.level_up for move in level.moves)
+    invalid_moves = [move for move in mon.moves if move not in allowed]
+    if not is_hell and invalid_moves:
+        errors.append(prefix(f"Invalid moves: [{', '.join(invalid_moves)}]"))
+
+    ev_total = sum(ev // 4 for ev in (
+        mon.hp_ev, mon.atk_ev, mon.def_ev, mon.spatk_ev, mon.spdef_ev, mon.spe_ev,
+    ))
+    if not (ev_total >= 127 if is_hell else ev_total == 127):
+        errors.append(prefix(f"Invalid EV total {ev_total * 4}"))
+    if mon.item == "ITEM_NONE":
+        errors.append(prefix("Missing item"))
+
+    negative = NATURE_NEGATIVE_STAT[mon.nature]
+    if negative == "NEUTRAL":
+        errors.append(prefix("Neutral nature"))
+    else:
+        ev = {
+            "ATK": mon.atk_ev,
+            "DEF": mon.def_ev,
+            "SPATK": mon.spatk_ev,
+            "SPDEF": mon.spdef_ev,
+            "SPE": mon.spe_ev,
+        }[negative]
+        if ev >= 4:
+            errors.append(prefix("Positive EV for negative nature"))
+    if mon.iron_pill and negative != "SPE":
+        errors.append(prefix("Iron pill should use negative speed nature"))

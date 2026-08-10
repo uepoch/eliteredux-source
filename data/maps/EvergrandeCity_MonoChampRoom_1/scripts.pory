@@ -393,7 +393,6 @@ script EverGrandeCity_MonoChampRoom_1_EventScript_MonoChamp_Bug{
         setvar(VAR_BATTLE_FIELD_EFFECT_TYPE, BATTLE_FIELD_EFFECT_MONOCHAMP)
         setvar(VAR_BATTLE_FIELD_ID, TYPE_BUG)
         msgbox(format("Let's get started"))
-        registerbattleevent(BATTLE_EVENT_PERMA_STICKY_WEB)
         trainerbattle_no_intro(TRAINER_MONOCHAMP_BUG, format("I lost"))
         if(var(VAR_TEMP_2) == TRUE){
             msgbox(format("Whoa... your Bug-type prowess is amazing! Take this with you!"))

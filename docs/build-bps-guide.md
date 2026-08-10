@@ -21,12 +21,15 @@ make docker-bps
 # equivalent: ./docker/build-bps.sh --bps
 ```
 
-The wrapper builds a compact Debian image containing the ARM toolchain, host
+The wrapper builds a compact Debian Trixie image containing the ARM toolchain, host
 compiler, Poryscript, Python protobuf runtime, protoc 29.2, and a verified
 vanilla Emerald ROM. A CLI-only FLIPS binary is compiled from its pinned
 official source without GTK. The wrapper bind-mounts the repository at `/workspace`, so the
 results are written to the repository and owned by the current host user.
 Running the script without a flag defaults to `--bps`.
+
+Trixie is intentional: current upstream source uses C23 fixed-underlying enum
+syntax, which is unsupported by Debian Bookworm's ARM GCC 12 package.
 
 The same image can regenerate or validate codegen output:
 

@@ -14,7 +14,8 @@ sys.path[:0] = [str(PYTHON_DIR), str(PYTHON_DIR / "generated")]
 from google.protobuf import descriptor_pool, message_factory, text_format
 
 import MoveList_pb2
-from codegen_py.protobuf import check_schema_manifest
+from codegen_py.protobuf import check_schema_manifest, parse_textproto
+from codegen_py.emit.upstream import _escape_source_newlines
 
 
 class ProtobufTests(unittest.TestCase):
@@ -30,7 +31,7 @@ class ProtobufTests(unittest.TestCase):
             match = re.search(r"^# proto-message:\s*(\S+)", text, re.MULTILINE)
             self.assertIsNotNone(match, path)
             descriptor = pool.FindMessageTypeByName(match.group(1))
-            text_format.Parse(text, message_factory.GetMessageClass(descriptor)())
+            parse_textproto(path, message_factory.GetMessageClass(descriptor))
 
     def test_schema_manifest_is_current(self):
         check_schema_manifest(ROOT / "proto")
@@ -69,6 +70,9 @@ class ProtobufTests(unittest.TestCase):
         for text in invalid:
             with self.subTest(text=text), self.assertRaises(text_format.ParseError):
                 text_format.Parse(text, MoveList_pb2.MoveList())
+
+    def test_generated_strings_keep_newlines_inside_c_literals(self):
+        self.assertEqual(r"first\nsecond\nthird", _escape_source_newlines("first\nsecond\r\nthird"))
 
 
 if __name__ == "__main__":

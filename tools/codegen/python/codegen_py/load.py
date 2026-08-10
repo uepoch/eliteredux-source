@@ -9,10 +9,14 @@ from functools import cached_property
 
 import AbilityEnum_pb2
 import AbilityList_pb2
+import BattleFrontierList_pb2
+import BattleSkillEnum_pb2
+import BattleSkillList_pb2
 import HelpArticles_pb2
 import ItemEnum_pb2
 import ItemList_pb2
 import MoveBehavior_pb2
+import MoveBehaviorConfigList_pb2
 import MoveEffect_pb2
 import MoveEnum_pb2
 import MoveList_pb2
@@ -291,6 +295,7 @@ class Species(FromProto[SpeciesList_pb2.Species]):
     battle_form_keep_on_switch: bool
     form_shift_of: str
     form_shift_gender: str
+    adoption_center_badge: int | None
 
     @classmethod
     def from_proto(cls, proto: SpeciesList_pb2.Species) -> Species:
@@ -330,6 +335,7 @@ class Species(FromProto[SpeciesList_pb2.Species]):
             battle_form_keep_on_switch=proto.battle_form.keep_on_switch if proto.HasField("battle_form") else False,
             form_shift_of=enum_name(proto, "form_shift_of"),
             form_shift_gender=enum_name(proto, "form_shift_gender"),
+            adoption_center_badge=proto.adoption_center_badge if proto.HasField("adoption_center_badge") else None,
         )
 
 
@@ -387,6 +393,7 @@ class Move(FromProto[MoveList_pb2.Move]):
     no_parental_bond: bool
     two_turn: bool
     schema_flags: list[str]
+    custom_behavior: MoveBehaviorConfigList_pb2.MoveBehaviorConfig | None
 
     @classmethod
     def from_proto(cls, proto: MoveList_pb2.Move) -> Move:
@@ -415,6 +422,7 @@ class Move(FromProto[MoveList_pb2.Move]):
             no_parental_bond=proto.no_parental_bond,
             two_turn=proto.two_turn,
             schema_flags=cls._schema_flags(proto),
+            custom_behavior=proto.custom_behavior if proto.WhichOneof("move_effect") == "custom_behavior" else None,
         )
 
     @staticmethod
@@ -630,6 +638,10 @@ class GameData:
     def move_effect_enums(self) -> list[EnumValue]:
         return enum_values(MoveEffect_pb2.DESCRIPTOR.enum_types_by_name["MoveEffect"], exclude={"UNRECOGNIZED"})
 
+    @cached_property
+    def battle_skill_enums(self) -> list[EnumValue]:
+        return enum_values(BattleSkillEnum_pb2.DESCRIPTOR.enum_types_by_name["BattleSkillEnum"], exclude={"UNRECOGNIZED"})
+
     # ── Textproto data ──────────────────────────────────────────────
 
     @cached_property
@@ -669,6 +681,58 @@ class GameData:
     def moves(self) -> list[Move]:
         data = parse_textproto(self.proto_dir / "MoveList.textproto", MoveList_pb2.MoveList)
         return [Move.from_proto(move) for move in data.moves]
+
+    @cached_property
+    def move_behavior_configs(self):
+        data = parse_textproto(
+            self.proto_dir / "MoveBehaviorConfigList.textproto",
+            MoveBehaviorConfigList_pb2.MoveBehaviorConfigList,
+        )
+        return list(data.config)
+
+    @cached_property
+    def custom_behaviors(self):
+        result = []
+        seen = set()
+        for move in self.moves:
+            if move.custom_behavior is None:
+                continue
+            key = move.custom_behavior.SerializeToString(deterministic=True)
+            if key in seen:
+                continue
+            seen.add(key)
+            result.append((f"EFFECT_{move.id.removeprefix('MOVE_')}", move.custom_behavior))
+        return result
+
+    @cached_property
+    def move_behaviors(self):
+        configs = {enum_name(config, "id"): config for config in self.move_behavior_configs}
+        configs.update(dict(self.custom_behaviors))
+        order = [value.name for value in sorted(self.move_behavior_enums, key=lambda value: value.number)]
+        order += [name for name, _ in self.custom_behaviors]
+        ordering = {name: index for index, name in enumerate(order)}
+        return sorted(configs.items(), key=lambda item: ordering[item[0]])
+
+    def behavior_for_move(self, move: Move) -> str:
+        if move.custom_behavior is None:
+            return move.effect
+        key = move.custom_behavior.SerializeToString(deterministic=True)
+        return next(name for name, config in self.custom_behaviors if config.SerializeToString(deterministic=True) == key)
+
+    @cached_property
+    def battle_frontier(self):
+        return parse_textproto(
+            self.proto_dir / "BattleFrontierList.textproto",
+            BattleFrontierList_pb2.BattleFrontierList,
+        )
+
+    @cached_property
+    def battle_skills(self):
+        data = parse_textproto(
+            self.proto_dir / "BattleSkillList.textproto",
+            BattleSkillList_pb2.BattleSkillList,
+        )
+        return list(data.skill)
 
     @cached_property
     def trainers(self) -> list[Trainer]:

@@ -5,6 +5,7 @@ import ItemEnum_pb2 as _ItemEnum_pb2
 import SpeciesList_pb2 as _SpeciesList_pb2
 import Types_pb2 as _Types_pb2
 import TrainerEnum_pb2 as _TrainerEnum_pb2
+import BattleSkillEnum_pb2 as _BattleSkillEnum_pb2
 from google.protobuf.internal import containers as _containers
 from google.protobuf.internal import enum_type_wrapper as _enum_type_wrapper
 from google.protobuf import descriptor as _descriptor
@@ -206,6 +207,34 @@ class TrainerClass(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
     TRAINER_CLASS_JOHTO_CHAMP: _ClassVar[TrainerClass]
     TRAINER_CLASS_MONOTYPE_CHAMPION: _ClassVar[TrainerClass]
     TRAINER_CLASS_SKIER: _ClassVar[TrainerClass]
+
+class Nature(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
+    __slots__ = ()
+    NATURE_HARDY: _ClassVar[Nature]
+    NATURE_LONELY: _ClassVar[Nature]
+    NATURE_BRAVE: _ClassVar[Nature]
+    NATURE_ADAMANT: _ClassVar[Nature]
+    NATURE_NAUGHTY: _ClassVar[Nature]
+    NATURE_BOLD: _ClassVar[Nature]
+    NATURE_DOCILE: _ClassVar[Nature]
+    NATURE_RELAXED: _ClassVar[Nature]
+    NATURE_IMPISH: _ClassVar[Nature]
+    NATURE_LAX: _ClassVar[Nature]
+    NATURE_TIMID: _ClassVar[Nature]
+    NATURE_HASTY: _ClassVar[Nature]
+    NATURE_SERIOUS: _ClassVar[Nature]
+    NATURE_JOLLY: _ClassVar[Nature]
+    NATURE_NAIVE: _ClassVar[Nature]
+    NATURE_MODEST: _ClassVar[Nature]
+    NATURE_MILD: _ClassVar[Nature]
+    NATURE_QUIET: _ClassVar[Nature]
+    NATURE_BASHFUL: _ClassVar[Nature]
+    NATURE_RASH: _ClassVar[Nature]
+    NATURE_CALM: _ClassVar[Nature]
+    NATURE_GENTLE: _ClassVar[Nature]
+    NATURE_SASSY: _ClassVar[Nature]
+    NATURE_CAREFUL: _ClassVar[Nature]
+    NATURE_QUIRKY: _ClassVar[Nature]
 TRAINER_PIC_HIKER: TrainerPic
 TRAINER_PIC_AQUA_GRUNT_M: TrainerPic
 TRAINER_PIC_POKEMON_BREEDER_F: TrainerPic
@@ -391,6 +420,31 @@ TRAINER_CLASS_BUFFEL: TrainerClass
 TRAINER_CLASS_JOHTO_CHAMP: TrainerClass
 TRAINER_CLASS_MONOTYPE_CHAMPION: TrainerClass
 TRAINER_CLASS_SKIER: TrainerClass
+NATURE_HARDY: Nature
+NATURE_LONELY: Nature
+NATURE_BRAVE: Nature
+NATURE_ADAMANT: Nature
+NATURE_NAUGHTY: Nature
+NATURE_BOLD: Nature
+NATURE_DOCILE: Nature
+NATURE_RELAXED: Nature
+NATURE_IMPISH: Nature
+NATURE_LAX: Nature
+NATURE_TIMID: Nature
+NATURE_HASTY: Nature
+NATURE_SERIOUS: Nature
+NATURE_JOLLY: Nature
+NATURE_NAIVE: Nature
+NATURE_MODEST: Nature
+NATURE_MILD: Nature
+NATURE_QUIET: Nature
+NATURE_BASHFUL: Nature
+NATURE_RASH: Nature
+NATURE_CALM: Nature
+NATURE_GENTLE: Nature
+NATURE_SASSY: Nature
+NATURE_CAREFUL: Nature
+NATURE_QUIRKY: Nature
 
 class TrainerList(_message.Message):
     __slots__ = ("trainer",)
@@ -399,61 +453,9 @@ class TrainerList(_message.Message):
     def __init__(self, trainer: _Optional[_Iterable[_Union[Trainer, _Mapping]]] = ...) -> None: ...
 
 class TrainerParty(_message.Message):
-    __slots__ = ("mon",)
+    __slots__ = ("mon", "skill")
     class TrainerMon(_message.Message):
         __slots__ = ("nonstandard", "species", "item", "nature", "ability", "hp_ev", "atk_ev", "def_ev", "spatk_ev", "spdef_ev", "spe_ev", "iron_pill", "move", "hidden_power_type")
-        class Nature(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
-            __slots__ = ()
-            NATURE_HARDY: _ClassVar[TrainerParty.TrainerMon.Nature]
-            NATURE_LONELY: _ClassVar[TrainerParty.TrainerMon.Nature]
-            NATURE_BRAVE: _ClassVar[TrainerParty.TrainerMon.Nature]
-            NATURE_ADAMANT: _ClassVar[TrainerParty.TrainerMon.Nature]
-            NATURE_NAUGHTY: _ClassVar[TrainerParty.TrainerMon.Nature]
-            NATURE_BOLD: _ClassVar[TrainerParty.TrainerMon.Nature]
-            NATURE_DOCILE: _ClassVar[TrainerParty.TrainerMon.Nature]
-            NATURE_RELAXED: _ClassVar[TrainerParty.TrainerMon.Nature]
-            NATURE_IMPISH: _ClassVar[TrainerParty.TrainerMon.Nature]
-            NATURE_LAX: _ClassVar[TrainerParty.TrainerMon.Nature]
-            NATURE_TIMID: _ClassVar[TrainerParty.TrainerMon.Nature]
-            NATURE_HASTY: _ClassVar[TrainerParty.TrainerMon.Nature]
-            NATURE_SERIOUS: _ClassVar[TrainerParty.TrainerMon.Nature]
-            NATURE_JOLLY: _ClassVar[TrainerParty.TrainerMon.Nature]
-            NATURE_NAIVE: _ClassVar[TrainerParty.TrainerMon.Nature]
-            NATURE_MODEST: _ClassVar[TrainerParty.TrainerMon.Nature]
-            NATURE_MILD: _ClassVar[TrainerParty.TrainerMon.Nature]
-            NATURE_QUIET: _ClassVar[TrainerParty.TrainerMon.Nature]
-            NATURE_BASHFUL: _ClassVar[TrainerParty.TrainerMon.Nature]
-            NATURE_RASH: _ClassVar[TrainerParty.TrainerMon.Nature]
-            NATURE_CALM: _ClassVar[TrainerParty.TrainerMon.Nature]
-            NATURE_GENTLE: _ClassVar[TrainerParty.TrainerMon.Nature]
-            NATURE_SASSY: _ClassVar[TrainerParty.TrainerMon.Nature]
-            NATURE_CAREFUL: _ClassVar[TrainerParty.TrainerMon.Nature]
-            NATURE_QUIRKY: _ClassVar[TrainerParty.TrainerMon.Nature]
-        NATURE_HARDY: TrainerParty.TrainerMon.Nature
-        NATURE_LONELY: TrainerParty.TrainerMon.Nature
-        NATURE_BRAVE: TrainerParty.TrainerMon.Nature
-        NATURE_ADAMANT: TrainerParty.TrainerMon.Nature
-        NATURE_NAUGHTY: TrainerParty.TrainerMon.Nature
-        NATURE_BOLD: TrainerParty.TrainerMon.Nature
-        NATURE_DOCILE: TrainerParty.TrainerMon.Nature
-        NATURE_RELAXED: TrainerParty.TrainerMon.Nature
-        NATURE_IMPISH: TrainerParty.TrainerMon.Nature
-        NATURE_LAX: TrainerParty.TrainerMon.Nature
-        NATURE_TIMID: TrainerParty.TrainerMon.Nature
-        NATURE_HASTY: TrainerParty.TrainerMon.Nature
-        NATURE_SERIOUS: TrainerParty.TrainerMon.Nature
-        NATURE_JOLLY: TrainerParty.TrainerMon.Nature
-        NATURE_NAIVE: TrainerParty.TrainerMon.Nature
-        NATURE_MODEST: TrainerParty.TrainerMon.Nature
-        NATURE_MILD: TrainerParty.TrainerMon.Nature
-        NATURE_QUIET: TrainerParty.TrainerMon.Nature
-        NATURE_BASHFUL: TrainerParty.TrainerMon.Nature
-        NATURE_RASH: TrainerParty.TrainerMon.Nature
-        NATURE_CALM: TrainerParty.TrainerMon.Nature
-        NATURE_GENTLE: TrainerParty.TrainerMon.Nature
-        NATURE_SASSY: TrainerParty.TrainerMon.Nature
-        NATURE_CAREFUL: TrainerParty.TrainerMon.Nature
-        NATURE_QUIRKY: TrainerParty.TrainerMon.Nature
         NONSTANDARD_FIELD_NUMBER: _ClassVar[int]
         SPECIES_FIELD_NUMBER: _ClassVar[int]
         ITEM_FIELD_NUMBER: _ClassVar[int]
@@ -471,7 +473,7 @@ class TrainerParty(_message.Message):
         nonstandard: str
         species: _SpeciesEnum_pb2.SpeciesEnum
         item: _ItemEnum_pb2.ItemEnum
-        nature: TrainerParty.TrainerMon.Nature
+        nature: Nature
         ability: _AbilityEnum_pb2.AbilityEnum
         hp_ev: int
         atk_ev: int
@@ -482,10 +484,12 @@ class TrainerParty(_message.Message):
         iron_pill: bool
         move: _containers.RepeatedScalarFieldContainer[_MoveEnum_pb2.MoveEnum]
         hidden_power_type: _Types_pb2.Type
-        def __init__(self, nonstandard: _Optional[str] = ..., species: _Optional[_Union[_SpeciesEnum_pb2.SpeciesEnum, str]] = ..., item: _Optional[_Union[_ItemEnum_pb2.ItemEnum, str]] = ..., nature: _Optional[_Union[TrainerParty.TrainerMon.Nature, str]] = ..., ability: _Optional[_Union[_AbilityEnum_pb2.AbilityEnum, str]] = ..., hp_ev: _Optional[int] = ..., atk_ev: _Optional[int] = ..., def_ev: _Optional[int] = ..., spatk_ev: _Optional[int] = ..., spdef_ev: _Optional[int] = ..., spe_ev: _Optional[int] = ..., iron_pill: bool = ..., move: _Optional[_Iterable[_Union[_MoveEnum_pb2.MoveEnum, str]]] = ..., hidden_power_type: _Optional[_Union[_Types_pb2.Type, str]] = ...) -> None: ...
+        def __init__(self, nonstandard: _Optional[str] = ..., species: _Optional[_Union[_SpeciesEnum_pb2.SpeciesEnum, str]] = ..., item: _Optional[_Union[_ItemEnum_pb2.ItemEnum, str]] = ..., nature: _Optional[_Union[Nature, str]] = ..., ability: _Optional[_Union[_AbilityEnum_pb2.AbilityEnum, str]] = ..., hp_ev: _Optional[int] = ..., atk_ev: _Optional[int] = ..., def_ev: _Optional[int] = ..., spatk_ev: _Optional[int] = ..., spdef_ev: _Optional[int] = ..., spe_ev: _Optional[int] = ..., iron_pill: bool = ..., move: _Optional[_Iterable[_Union[_MoveEnum_pb2.MoveEnum, str]]] = ..., hidden_power_type: _Optional[_Union[_Types_pb2.Type, str]] = ...) -> None: ...
     MON_FIELD_NUMBER: _ClassVar[int]
+    SKILL_FIELD_NUMBER: _ClassVar[int]
     mon: _containers.RepeatedCompositeFieldContainer[TrainerParty.TrainerMon]
-    def __init__(self, mon: _Optional[_Iterable[_Union[TrainerParty.TrainerMon, _Mapping]]] = ...) -> None: ...
+    skill: _containers.RepeatedScalarFieldContainer[_BattleSkillEnum_pb2.BattleSkillEnum]
+    def __init__(self, mon: _Optional[_Iterable[_Union[TrainerParty.TrainerMon, _Mapping]]] = ..., skill: _Optional[_Iterable[_Union[_BattleSkillEnum_pb2.BattleSkillEnum, str]]] = ...) -> None: ...
 
 class Trainer(_message.Message):
     __slots__ = ("id", "name", "has_trainer_flag", "forced_double", "risky", "prefer_status", "prefer_stall", "no_switching", "gender", "pic", "music", "ace", "elite", "hell")

@@ -1483,7 +1483,6 @@ class SpeciesEnum(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
     SPECIES_SLAKING_MEGA_APE_SHIFT: _ClassVar[SpeciesEnum]
     SPECIES_RAICHU_MEGA_Y: _ClassVar[SpeciesEnum]
     SPECIES_CASTFORM_FOGGY: _ClassVar[SpeciesEnum]
-    SPECIES_FIDOUGH_PARTNER: _ClassVar[SpeciesEnum]
     SPECIES_CHESNAUGHT_BATTLE_BOND: _ClassVar[SpeciesEnum]
     SPECIES_CHESNAUGHT_CLEMONT: _ClassVar[SpeciesEnum]
     SPECIES_DELPHOX_BATTLE_BOND: _ClassVar[SpeciesEnum]
@@ -1592,7 +1591,7 @@ class SpeciesEnum(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
     SPECIES_LUCARIO_MEGA_Z: _ClassVar[SpeciesEnum]
     SPECIES_GYARADEATH_MEGA_X: _ClassVar[SpeciesEnum]
     SPECIES_GYARADEATH_MEGA_Y: _ClassVar[SpeciesEnum]
-    SPECIES_ARBOK_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_ASUDEM: _ClassVar[SpeciesEnum]
     SPECIES_KINGAMBIT_REDUX_MEGA: _ClassVar[SpeciesEnum]
     SPECIES_GOLISOPOD_MEGA: _ClassVar[SpeciesEnum]
     SPECIES_RAPIDASH_MEGA: _ClassVar[SpeciesEnum]
@@ -1642,7 +1641,6 @@ class SpeciesEnum(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
     SPECIES_EEVEE_PARTNER_MEGA: _ClassVar[SpeciesEnum]
     SPECIES_MEOWTH_PARTNER_MEGA: _ClassVar[SpeciesEnum]
     SPECIES_DURALUDON_PARTNER_MEGA: _ClassVar[SpeciesEnum]
-    SPECIES_FIDOUGH_PARTNER_MEGA: _ClassVar[SpeciesEnum]
     SPECIES_WEAVILE_MEGA: _ClassVar[SpeciesEnum]
     SPECIES_SERPERIOR_MEGA: _ClassVar[SpeciesEnum]
     SPECIES_EMBOAR_MEGA: _ClassVar[SpeciesEnum]
@@ -1891,8 +1889,8 @@ class SpeciesEnum(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
     SPECIES_KINGLER_REDUX_MEGA: _ClassVar[SpeciesEnum]
     SPECIES_SHINX_REDUX: _ClassVar[SpeciesEnum]
     SPECIES_LUXIO_REDUX: _ClassVar[SpeciesEnum]
-    SPECIES_LUXRAY_REDUX_B: _ClassVar[SpeciesEnum]
-    SPECIES_LUXRAY_REDUX_B_MEGA: _ClassVar[SpeciesEnum]
+    SPECIES_LUXRAY_REDUX: _ClassVar[SpeciesEnum]
+    SPECIES_LUXRAY_REDUX_MEGA: _ClassVar[SpeciesEnum]
     SPECIES_ARON_REDUX: _ClassVar[SpeciesEnum]
     SPECIES_LAIRON_REDUX: _ClassVar[SpeciesEnum]
     SPECIES_AGGRON_REDUX: _ClassVar[SpeciesEnum]
@@ -3397,7 +3395,6 @@ SPECIES_MIMIKYU_RAYQUAZA_BUSTED: SpeciesEnum
 SPECIES_SLAKING_MEGA_APE_SHIFT: SpeciesEnum
 SPECIES_RAICHU_MEGA_Y: SpeciesEnum
 SPECIES_CASTFORM_FOGGY: SpeciesEnum
-SPECIES_FIDOUGH_PARTNER: SpeciesEnum
 SPECIES_CHESNAUGHT_BATTLE_BOND: SpeciesEnum
 SPECIES_CHESNAUGHT_CLEMONT: SpeciesEnum
 SPECIES_DELPHOX_BATTLE_BOND: SpeciesEnum
@@ -3506,7 +3503,7 @@ SPECIES_WIGGLYTUFF_MEGA: SpeciesEnum
 SPECIES_LUCARIO_MEGA_Z: SpeciesEnum
 SPECIES_GYARADEATH_MEGA_X: SpeciesEnum
 SPECIES_GYARADEATH_MEGA_Y: SpeciesEnum
-SPECIES_ARBOK_MEGA: SpeciesEnum
+SPECIES_ASUDEM: SpeciesEnum
 SPECIES_KINGAMBIT_REDUX_MEGA: SpeciesEnum
 SPECIES_GOLISOPOD_MEGA: SpeciesEnum
 SPECIES_RAPIDASH_MEGA: SpeciesEnum
@@ -3556,7 +3553,6 @@ SPECIES_PIKACHU_PARTNER_MEGA: SpeciesEnum
 SPECIES_EEVEE_PARTNER_MEGA: SpeciesEnum
 SPECIES_MEOWTH_PARTNER_MEGA: SpeciesEnum
 SPECIES_DURALUDON_PARTNER_MEGA: SpeciesEnum
-SPECIES_FIDOUGH_PARTNER_MEGA: SpeciesEnum
 SPECIES_WEAVILE_MEGA: SpeciesEnum
 SPECIES_SERPERIOR_MEGA: SpeciesEnum
 SPECIES_EMBOAR_MEGA: SpeciesEnum
@@ -3805,8 +3801,8 @@ SPECIES_KINGLER_REDUX: SpeciesEnum
 SPECIES_KINGLER_REDUX_MEGA: SpeciesEnum
 SPECIES_SHINX_REDUX: SpeciesEnum
 SPECIES_LUXIO_REDUX: SpeciesEnum
-SPECIES_LUXRAY_REDUX_B: SpeciesEnum
-SPECIES_LUXRAY_REDUX_B_MEGA: SpeciesEnum
+SPECIES_LUXRAY_REDUX: SpeciesEnum
+SPECIES_LUXRAY_REDUX_MEGA: SpeciesEnum
 SPECIES_ARON_REDUX: SpeciesEnum
 SPECIES_LAIRON_REDUX: SpeciesEnum
 SPECIES_AGGRON_REDUX: SpeciesEnum

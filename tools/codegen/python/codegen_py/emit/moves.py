@@ -88,7 +88,7 @@ def gen_battlemoves(data, w: CWriter):
     with w.array("const struct BattleMove gBattleMoves[MOVES_COUNT]"):
         for mv in data.moves:
             with w.initializer(mv.id):
-                w.field("effect", mv.effect)
+                w.field("effect", data.behavior_for_move(mv))
                 w.field("split", f"SPLIT_{mv.split}")
 
                 if mv.split_modifier and mv.split_modifier != "USE_BASE_SPLIT":
@@ -132,6 +132,7 @@ def gen_battlemoves(data, w: CWriter):
                     mv.split != "STATUS"
                     and not (mv.effect_chance > 0 and flinch_effect)
                     and mv.effect not in behavior_options.get("no_kings_rock", ())
+                    and not (mv.custom_behavior and mv.custom_behavior.causes_flinch)
                 )
                 if kings_rock:
                     bit_flags.append("FLAG_KINGS_ROCK_AFFECTED")

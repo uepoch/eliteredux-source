@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import re
 from abc import ABC, abstractmethod
 from dataclasses import dataclass
 from pathlib import Path
@@ -52,8 +53,14 @@ def check_schema_manifest(proto_dir: Path) -> None:
 
 def parse_textproto(path: Path, message_type: type[T]) -> T:
     message = message_type()
+    text = path.read_text(encoding="utf-8")
+    if message.DESCRIPTOR.full_name == "er.TrainerList":
+        # Some upstream trainer sets use the common competitive abbreviations
+        # for the schema's spatk_ev and spdef_ev fields.
+        text = re.sub(r"(?m)^(\s*)spa_ev(\s*:)", r"\1spatk_ev\2", text)
+        text = re.sub(r"(?m)^(\s*)spd_ev(\s*:)", r"\1spdef_ev\2", text)
     try:
-        text_format.Parse(path.read_text(encoding="utf-8"), message)
+        text_format.Parse(text, message)
     except text_format.ParseError as error:
         raise ValueError(f"{path}: {error}") from error
     return message

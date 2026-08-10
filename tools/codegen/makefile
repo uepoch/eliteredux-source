@@ -1,4 +1,5 @@
 PYTHON ?= python3
+export PYTHONDONTWRITEBYTECODE := 1
 PROTOC ?= ./protoc
 PROTO_DIR := ../../proto
 PYTHON_DIR := python

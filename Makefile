@@ -143,7 +143,6 @@ MAPJSON := tools/mapjson/mapjson$(EXE)
 JSONPROC := tools/jsonproc/jsonproc$(EXE)
 PORYSCRIPT_DIR ?= tools/poryscript
 SCRIPT := $(PORYSCRIPT_DIR)/poryscript$(EXE)
-PORYSCRIPT_CONFIGS := $(PORYSCRIPT_DIR)/command_config.json $(PORYSCRIPT_DIR)/font_config.json
 
 PERL := perl
 
@@ -328,7 +327,7 @@ include songs.mk
 $(CRY_SUBDIR)/uncomp_%.bin: $(CRY_SUBDIR)/uncomp_%.aif ; $(AIF) $< $@
 $(CRY_SUBDIR)/%.bin: $(CRY_SUBDIR)/%.aif ; $(AIF) $< $@ --compress
 sound/%.bin: sound/%.aif ; $(AIF) $< $@
-data/%.inc: data/%.pory $(SCRIPT) $(PORYSCRIPT_CONFIGS); $(SCRIPT) -i $< -o $@ -fc $(PORYSCRIPT_DIR)/font_config.json -cc $(PORYSCRIPT_DIR)/command_config.json
+data/%.inc: data/%.pory | $(SCRIPT); $(SCRIPT) -i $< -o $@ -fc $(PORYSCRIPT_DIR)/font_config.json -cc $(PORYSCRIPT_DIR)/command_config.json
 
 
 ifeq ($(MODERN),0)

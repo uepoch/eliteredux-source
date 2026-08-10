@@ -3,6 +3,8 @@ import MoveBehavior_pb2 as _MoveBehavior_pb2
 import Types_pb2 as _Types_pb2
 import MoveEffect_pb2 as _MoveEffect_pb2
 from google.protobuf import descriptor_pb2 as _descriptor_pb2
+import MoveBehaviorConfigList_pb2 as _MoveBehaviorConfigList_pb2
+import ScriptConditions_pb2 as _ScriptConditions_pb2
 from google.protobuf.internal import containers as _containers
 from google.protobuf.internal import enum_type_wrapper as _enum_type_wrapper
 from google.protobuf import descriptor as _descriptor
@@ -30,20 +32,6 @@ class MoveSplit(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
     PHYSICAL: _ClassVar[MoveSplit]
     SPECIAL: _ClassVar[MoveSplit]
     STATUS: _ClassVar[MoveSplit]
-
-class Status(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
-    __slots__ = ()
-    STATUS1_NONE: _ClassVar[Status]
-    STATUS1_SLEEP: _ClassVar[Status]
-    STATUS1_POISON: _ClassVar[Status]
-    STATUS1_BURN: _ClassVar[Status]
-    STATUS1_FREEZE: _ClassVar[Status]
-    STATUS1_PARALYSIS: _ClassVar[Status]
-    STATUS1_TOXIC_POISON: _ClassVar[Status]
-    STATUS1_POISON_ANY: _ClassVar[Status]
-    STATUS1_FROSTBITE: _ClassVar[Status]
-    STATUS1_BLEED: _ClassVar[Status]
-    STATUS1_ANY: _ClassVar[Status]
 
 class MiscMoveEffect(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
     __slots__ = ()
@@ -107,17 +95,6 @@ ALL_BATTLERS: MoveTarget
 PHYSICAL: MoveSplit
 SPECIAL: MoveSplit
 STATUS: MoveSplit
-STATUS1_NONE: Status
-STATUS1_SLEEP: Status
-STATUS1_POISON: Status
-STATUS1_BURN: Status
-STATUS1_FREEZE: Status
-STATUS1_PARALYSIS: Status
-STATUS1_TOXIC_POISON: Status
-STATUS1_POISON_ANY: Status
-STATUS1_FROSTBITE: Status
-STATUS1_BLEED: Status
-STATUS1_ANY: Status
 MISC_EFFECT_NONE: MiscMoveEffect
 MISC_EFFECT_SUPEREFFECTIVE_BOOST: MiscMoveEffect
 MISC_EFFECT_FAINTED_MON_BOOST: MiscMoveEffect
@@ -191,12 +168,12 @@ class Argument(_message.Message):
     effect: MoveEffectArgument
     int: int
     other: str
-    status: Status
+    status: _ScriptConditions_pb2.Status
     misc: MiscMoveEffect
-    def __init__(self, type: _Optional[_Union[_Types_pb2.Type, str]] = ..., effect: _Optional[_Union[MoveEffectArgument, _Mapping]] = ..., int: _Optional[int] = ..., other: _Optional[str] = ..., status: _Optional[_Union[Status, str]] = ..., misc: _Optional[_Union[MiscMoveEffect, str]] = ...) -> None: ...
+    def __init__(self, type: _Optional[_Union[_Types_pb2.Type, str]] = ..., effect: _Optional[_Union[MoveEffectArgument, _Mapping]] = ..., int: _Optional[int] = ..., other: _Optional[str] = ..., status: _Optional[_Union[_ScriptConditions_pb2.Status, str]] = ..., misc: _Optional[_Union[MiscMoveEffect, str]] = ...) -> None: ...
 
 class Move(_message.Message):
-    __slots__ = ("id", "tutor", "uses_animation", "name", "short_name", "description", "short_description", "effect", "split", "split_modifier", "type", "type2", "target", "hit_count", "power", "accuracy", "pp", "effect_chance", "priority", "argument", "contact", "crit", "ignores_protect", "ignores_stat_stages", "double_damage_vs_mega", "every_other_turn", "is_protection", "ignores_ability", "two_turn", "snatch_affected", "magic_coat_affected", "mirror_move_affected", "no_kings_rock", "no_sheer_force", "hits_underground", "hits_underwater", "powder_affected", "hits_air", "ignores_levitation", "thaw_user", "ignores_substitute", "reckless", "iron_fist", "strong_jaw", "mega_launcher", "striker", "sound", "ballistic", "dance", "keen_edge", "bone", "weather", "field", "arrow", "horn", "air", "hammer", "throwing", "lunar", "drill", "no_parental_bond", "metronome_banned", "copycat_banned", "sleep_talk_banned", "mimic_banned")
+    __slots__ = ("id", "tutor", "uses_animation", "name", "short_name", "description", "short_description", "effect", "custom_behavior", "split", "split_modifier", "type", "type2", "target", "hit_count", "power", "accuracy", "pp", "effect_chance", "priority", "argument", "contact", "crit", "ignores_protect", "ignores_stat_stages", "double_damage_vs_mega", "every_other_turn", "is_protection", "ignores_ability", "two_turn", "snatch_affected", "magic_coat_affected", "mirror_move_affected", "no_kings_rock", "no_sheer_force", "hits_underground", "hits_underwater", "powder_affected", "hits_air", "ignores_levitation", "thaw_user", "ignores_substitute", "reckless", "iron_fist", "strong_jaw", "mega_launcher", "striker", "sound", "ballistic", "dance", "keen_edge", "bone", "weather", "field", "arrow", "horn", "air", "hammer", "throwing", "lunar", "drill", "no_parental_bond", "metronome_banned", "copycat_banned", "sleep_talk_banned", "mimic_banned")
     ID_FIELD_NUMBER: _ClassVar[int]
     TUTOR_FIELD_NUMBER: _ClassVar[int]
     USES_ANIMATION_FIELD_NUMBER: _ClassVar[int]
@@ -205,6 +182,7 @@ class Move(_message.Message):
     DESCRIPTION_FIELD_NUMBER: _ClassVar[int]
     SHORT_DESCRIPTION_FIELD_NUMBER: _ClassVar[int]
     EFFECT_FIELD_NUMBER: _ClassVar[int]
+    CUSTOM_BEHAVIOR_FIELD_NUMBER: _ClassVar[int]
     SPLIT_FIELD_NUMBER: _ClassVar[int]
     SPLIT_MODIFIER_FIELD_NUMBER: _ClassVar[int]
     TYPE_FIELD_NUMBER: _ClassVar[int]
@@ -270,6 +248,7 @@ class Move(_message.Message):
     description: str
     short_description: str
     effect: _MoveBehavior_pb2.MoveBehavior
+    custom_behavior: _MoveBehaviorConfigList_pb2.MoveBehaviorConfig
     split: MoveSplit
     split_modifier: SplitFlag
     type: _Types_pb2.Type
@@ -327,4 +306,4 @@ class Move(_message.Message):
     copycat_banned: bool
     sleep_talk_banned: bool
     mimic_banned: bool
-    def __init__(self, id: _Optional[_Union[_MoveEnum_pb2.MoveEnum, str]] = ..., tutor: _Optional[_Union[TutorType, str]] = ..., uses_animation: _Optional[_Union[_MoveEnum_pb2.MoveEnum, str]] = ..., name: _Optional[str] = ..., short_name: _Optional[str] = ..., description: _Optional[str] = ..., short_description: _Optional[str] = ..., effect: _Optional[_Union[_MoveBehavior_pb2.MoveBehavior, str]] = ..., split: _Optional[_Union[MoveSplit, str]] = ..., split_modifier: _Optional[_Union[SplitFlag, str]] = ..., type: _Optional[_Union[_Types_pb2.Type, str]] = ..., type2: _Optional[_Union[_Types_pb2.Type, str]] = ..., target: _Optional[_Union[MoveTarget, str]] = ..., hit_count: _Optional[int] = ..., power: _Optional[int] = ..., accuracy: _Optional[int] = ..., pp: _Optional[int] = ..., effect_chance: _Optional[int] = ..., priority: _Optional[int] = ..., argument: _Optional[_Union[Argument, _Mapping]] = ..., contact: bool = ..., crit: _Optional[_Union[Crit, str]] = ..., ignores_protect: bool = ..., ignores_stat_stages: bool = ..., double_damage_vs_mega: bool = ..., every_other_turn: bool = ..., is_protection: bool = ..., ignores_ability: bool = ..., two_turn: bool = ..., snatch_affected: bool = ..., magic_coat_affected: bool = ..., mirror_move_affected: bool = ..., no_kings_rock: bool = ..., no_sheer_force: bool = ..., hits_underground: bool = ..., hits_underwater: bool = ..., powder_affected: bool = ..., hits_air: _Optional[_Union[HitsAir, str]] = ..., ignores_levitation: bool = ..., thaw_user: bool = ..., ignores_substitute: bool = ..., reckless: bool = ..., iron_fist: bool = ..., strong_jaw: bool = ..., mega_launcher: bool = ..., striker: bool = ..., sound: bool = ..., ballistic: bool = ..., dance: bool = ..., keen_edge: bool = ..., bone: bool = ..., weather: bool = ..., field: bool = ..., arrow: bool = ..., horn: bool = ..., air: bool = ..., hammer: bool = ..., throwing: bool = ..., lunar: bool = ..., drill: bool = ..., no_parental_bond: bool = ..., metronome_banned: bool = ..., copycat_banned: bool = ..., sleep_talk_banned: bool = ..., mimic_banned: bool = ...) -> None: ...
+    def __init__(self, id: _Optional[_Union[_MoveEnum_pb2.MoveEnum, str]] = ..., tutor: _Optional[_Union[TutorType, str]] = ..., uses_animation: _Optional[_Union[_MoveEnum_pb2.MoveEnum, str]] = ..., name: _Optional[str] = ..., short_name: _Optional[str] = ..., description: _Optional[str] = ..., short_description: _Optional[str] = ..., effect: _Optional[_Union[_MoveBehavior_pb2.MoveBehavior, str]] = ..., custom_behavior: _Optional[_Union[_MoveBehaviorConfigList_pb2.MoveBehaviorConfig, _Mapping]] = ..., split: _Optional[_Union[MoveSplit, str]] = ..., split_modifier: _Optional[_Union[SplitFlag, str]] = ..., type: _Optional[_Union[_Types_pb2.Type, str]] = ..., type2: _Optional[_Union[_Types_pb2.Type, str]] = ..., target: _Optional[_Union[MoveTarget, str]] = ..., hit_count: _Optional[int] = ..., power: _Optional[int] = ..., accuracy: _Optional[int] = ..., pp: _Optional[int] = ..., effect_chance: _Optional[int] = ..., priority: _Optional[int] = ..., argument: _Optional[_Union[Argument, _Mapping]] = ..., contact: bool = ..., crit: _Optional[_Union[Crit, str]] = ..., ignores_protect: bool = ..., ignores_stat_stages: bool = ..., double_damage_vs_mega: bool = ..., every_other_turn: bool = ..., is_protection: bool = ..., ignores_ability: bool = ..., two_turn: bool = ..., snatch_affected: bool = ..., magic_coat_affected: bool = ..., mirror_move_affected: bool = ..., no_kings_rock: bool = ..., no_sheer_force: bool = ..., hits_underground: bool = ..., hits_underwater: bool = ..., powder_affected: bool = ..., hits_air: _Optional[_Union[HitsAir, str]] = ..., ignores_levitation: bool = ..., thaw_user: bool = ..., ignores_substitute: bool = ..., reckless: bool = ..., iron_fist: bool = ..., strong_jaw: bool = ..., mega_launcher: bool = ..., striker: bool = ..., sound: bool = ..., ballistic: bool = ..., dance: bool = ..., keen_edge: bool = ..., bone: bool = ..., weather: bool = ..., field: bool = ..., arrow: bool = ..., horn: bool = ..., air: bool = ..., hammer: bool = ..., throwing: bool = ..., lunar: bool = ..., drill: bool = ..., no_parental_bond: bool = ..., metronome_banned: bool = ..., copycat_banned: bool = ..., sleep_talk_banned: bool = ..., mimic_banned: bool = ...) -> None: ...

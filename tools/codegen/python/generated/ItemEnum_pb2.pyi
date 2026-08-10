@@ -741,7 +741,6 @@ class ItemEnum(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
     ITEM_EEVITE: _ClassVar[ItemEnum]
     ITEM_DURALUDITE: _ClassVar[ItemEnum]
     ITEM_ULTRANECROZIUM_P: _ClassVar[ItemEnum]
-    ITEM_FIDOUGHITE: _ClassVar[ItemEnum]
     ITEM_WIGGLYTUFFITE_X: _ClassVar[ItemEnum]
     ITEM_SERPERIORITE: _ClassVar[ItemEnum]
     ITEM_EMBOARITE: _ClassVar[ItemEnum]
@@ -1671,7 +1670,6 @@ ITEM_MEOWTHITE: ItemEnum
 ITEM_EEVITE: ItemEnum
 ITEM_DURALUDITE: ItemEnum
 ITEM_ULTRANECROZIUM_P: ItemEnum
-ITEM_FIDOUGHITE: ItemEnum
 ITEM_WIGGLYTUFFITE_X: ItemEnum
 ITEM_SERPERIORITE: ItemEnum
 ITEM_EMBOARITE: ItemEnum

@@ -68,7 +68,6 @@ class MoveEffect(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
     MOVE_EFFECT_BURN_UP: _ClassVar[MoveEffect]
     MOVE_EFFECT_CLEAR_SMOG: _ClassVar[MoveEffect]
     MOVE_EFFECT_BUG_BITE: _ClassVar[MoveEffect]
-    MOVE_EFFECT_SP_ATK_TWO_DOWN: _ClassVar[MoveEffect]
     MOVE_EFFECT_SMACK_DOWN: _ClassVar[MoveEffect]
     MOVE_EFFECT_FLAME_BURST: _ClassVar[MoveEffect]
     MOVE_EFFECT_FEINT: _ClassVar[MoveEffect]
@@ -107,6 +106,11 @@ class MoveEffect(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
     MOVE_EFFECT_NATURAL_GIFT: _ClassVar[MoveEffect]
     MOVE_EFFECT_ENRAGE: _ClassVar[MoveEffect]
     MOVE_EFFECT_DRENCH: _ClassVar[MoveEffect]
+    MOVE_EFFECT_STEALTH_ROCK: _ClassVar[MoveEffect]
+    MOVE_EFFECT_CREEPING_THORNS: _ClassVar[MoveEffect]
+    MOVE_EFFECT_SPIKES: _ClassVar[MoveEffect]
+    MOVE_EFFECT_LEECH_SEED: _ClassVar[MoveEffect]
+    MOVE_EFFECT_STICKY_WEB: _ClassVar[MoveEffect]
 MOVE_EFFECT_NONE: MoveEffect
 MOVE_EFFECT_SLEEP: MoveEffect
 MOVE_EFFECT_POISON: MoveEffect
@@ -168,7 +172,6 @@ MOVE_EFFECT_DEF_SPDEF_DOWN: MoveEffect
 MOVE_EFFECT_BURN_UP: MoveEffect
 MOVE_EFFECT_CLEAR_SMOG: MoveEffect
 MOVE_EFFECT_BUG_BITE: MoveEffect
-MOVE_EFFECT_SP_ATK_TWO_DOWN: MoveEffect
 MOVE_EFFECT_SMACK_DOWN: MoveEffect
 MOVE_EFFECT_FLAME_BURST: MoveEffect
 MOVE_EFFECT_FEINT: MoveEffect
@@ -207,3 +210,8 @@ MOVE_EFFECT_CRIT_PLUS_1: MoveEffect
 MOVE_EFFECT_NATURAL_GIFT: MoveEffect
 MOVE_EFFECT_ENRAGE: MoveEffect
 MOVE_EFFECT_DRENCH: MoveEffect
+MOVE_EFFECT_STEALTH_ROCK: MoveEffect
+MOVE_EFFECT_CREEPING_THORNS: MoveEffect
+MOVE_EFFECT_SPIKES: MoveEffect
+MOVE_EFFECT_LEECH_SEED: MoveEffect
+MOVE_EFFECT_STICKY_WEB: MoveEffect

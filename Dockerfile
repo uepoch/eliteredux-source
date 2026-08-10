@@ -1,6 +1,7 @@
 # syntax=docker/dockerfile:1.7
 
 ARG DEBIAN_IMAGE=debian:bookworm-slim
+ARG BUILD_IMAGE=debian:trixie-slim
 
 FROM ${DEBIAN_IMAGE} AS tool-downloads
 
@@ -63,7 +64,7 @@ RUN git init /src/flips \
 
 FROM ghcr.io/astral-sh/uv:0.8.8 AS uv
 
-FROM ${DEBIAN_IMAGE} AS build
+FROM ${BUILD_IMAGE} AS build
 
 ARG TARGETARCH
 ARG PROTOBUF_VERSION=5.29.2

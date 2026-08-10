@@ -12,7 +12,6 @@ class MoveBehavior(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
     EFFECT_POISON_HIT: _ClassVar[MoveBehavior]
     EFFECT_ABSORB: _ClassVar[MoveBehavior]
     EFFECT_BURN_HIT: _ClassVar[MoveBehavior]
-    EFFECT_FREEZE_HIT: _ClassVar[MoveBehavior]
     EFFECT_PARALYZE_HIT: _ClassVar[MoveBehavior]
     EFFECT_EXPLOSION: _ClassVar[MoveBehavior]
     EFFECT_DREAM_EATER: _ClassVar[MoveBehavior]
@@ -126,18 +125,13 @@ class MoveBehavior(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
     EFFECT_ENDURE: _ClassVar[MoveBehavior]
     EFFECT_ROLLOUT: _ClassVar[MoveBehavior]
     EFFECT_SWAGGER: _ClassVar[MoveBehavior]
-    EFFECT_FURY_CUTTER: _ClassVar[MoveBehavior]
     EFFECT_ATTRACT: _ClassVar[MoveBehavior]
-    EFFECT_RETURN: _ClassVar[MoveBehavior]
-    EFFECT_PRESENT: _ClassVar[MoveBehavior]
-    EFFECT_FRUSTRATION: _ClassVar[MoveBehavior]
     EFFECT_SAFEGUARD: _ClassVar[MoveBehavior]
     EFFECT_UNUSED_125: _ClassVar[MoveBehavior]
     EFFECT_MAGNITUDE: _ClassVar[MoveBehavior]
     EFFECT_BATON_PASS: _ClassVar[MoveBehavior]
     EFFECT_PURSUIT: _ClassVar[MoveBehavior]
     EFFECT_RAPID_SPIN: _ClassVar[MoveBehavior]
-    EFFECT_SONICBOOM: _ClassVar[MoveBehavior]
     EFFECT_CAPTIVATE: _ClassVar[MoveBehavior]
     EFFECT_MORNING_SUN: _ClassVar[MoveBehavior]
     EFFECT_SYNTHESIS: _ClassVar[MoveBehavior]
@@ -225,7 +219,6 @@ class MoveBehavior(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
     EFFECT_FLING: _ClassVar[MoveBehavior]
     EFFECT_NATURAL_GIFT: _ClassVar[MoveBehavior]
     EFFECT_WAKE_UP_SLAP: _ClassVar[MoveBehavior]
-    EFFECT_WRING_OUT: _ClassVar[MoveBehavior]
     EFFECT_HEX: _ClassVar[MoveBehavior]
     EFFECT_ASSURANCE: _ClassVar[MoveBehavior]
     EFFECT_TRUMP_CARD: _ClassVar[MoveBehavior]
@@ -288,13 +281,11 @@ class MoveBehavior(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
     EFFECT_QUIVER_DANCE: _ClassVar[MoveBehavior]
     EFFECT_COIL: _ClassVar[MoveBehavior]
     EFFECT_ELECTRIFY: _ClassVar[MoveBehavior]
-    EFFECT_SCALD: _ClassVar[MoveBehavior]
     EFFECT_REFLECT_TYPE: _ClassVar[MoveBehavior]
     EFFECT_SOAK: _ClassVar[MoveBehavior]
     EFFECT_GROWTH: _ClassVar[MoveBehavior]
     EFFECT_CLOSE_COMBAT: _ClassVar[MoveBehavior]
     EFFECT_LAST_RESORT: _ClassVar[MoveBehavior]
-    EFFECT_RECOIL_33_STATUS: _ClassVar[MoveBehavior]
     EFFECT_FLINCH_STATUS: _ClassVar[MoveBehavior]
     EFFECT_RECOIL_50: _ClassVar[MoveBehavior]
     EFFECT_SHELL_SMASH: _ClassVar[MoveBehavior]
@@ -363,10 +354,8 @@ class MoveBehavior(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
     EFFECT_LASH_OUT: _ClassVar[MoveBehavior]
     EFFECT_GRASSY_GLIDE: _ClassVar[MoveBehavior]
     EFFECT_REMOVE_TERRAIN: _ClassVar[MoveBehavior]
-    EFFECT_DYNAMAX_DOUBLE_DMG: _ClassVar[MoveBehavior]
     EFFECT_DECORATE: _ClassVar[MoveBehavior]
     EFFECT_SNIPE_SHOT: _ClassVar[MoveBehavior]
-    EFFECT_TRIPLE_HIT: _ClassVar[MoveBehavior]
     EFFECT_RECOIL_HP_25: _ClassVar[MoveBehavior]
     EFFECT_STUFF_CHEEKS: _ClassVar[MoveBehavior]
     EFFECT_GRAV_APPLE: _ClassVar[MoveBehavior]
@@ -390,9 +379,7 @@ class MoveBehavior(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
     EFFECT_CLANGOROUS_SOUL: _ClassVar[MoveBehavior]
     EFFECT_BOLT_BEAK: _ClassVar[MoveBehavior]
     EFFECT_RISING_VOLTAGE: _ClassVar[MoveBehavior]
-    EFFECT_SCALE_SHOT: _ClassVar[MoveBehavior]
     EFFECT_BEAK_BLAST: _ClassVar[MoveBehavior]
-    EFFECT_EXCALIBUR: _ClassVar[MoveBehavior]
     EFFECT_FROSTBITE_HIT: _ClassVar[MoveBehavior]
     EFFECT_EXPANDING_FORCE: _ClassVar[MoveBehavior]
     EFFECT_STEEL_BEAM: _ClassVar[MoveBehavior]
@@ -402,7 +389,6 @@ class MoveBehavior(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
     EFFECT_FLINCH_RECOIL_33: _ClassVar[MoveBehavior]
     EFFECT_FLINCH_RECOIL_50: _ClassVar[MoveBehavior]
     EFFECT_IGNORE_TYPE_IMMUNITY: _ClassVar[MoveBehavior]
-    EFFECT_SE_AGAINST_TYPE_HIT: _ClassVar[MoveBehavior]
     EFFECT_DOUBLE_DMG_IF_STATUS1: _ClassVar[MoveBehavior]
     EFFECT_STEALTH_ROCK_HIT: _ClassVar[MoveBehavior]
     EFFECT_LEECH_SEED_HIT: _ClassVar[MoveBehavior]
@@ -411,15 +397,11 @@ class MoveBehavior(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
     EFFECT_SLEEP_HIT: _ClassVar[MoveBehavior]
     EFFECT_BLEED: _ClassVar[MoveBehavior]
     EFFECT_FROSTBITE: _ClassVar[MoveBehavior]
-    EFFECT_FREEZE: _ClassVar[MoveBehavior]
     EFFECT_INFERNAL_PARADE: _ClassVar[MoveBehavior]
-    EFFECT_WYRM_WIND: _ClassVar[MoveBehavior]
     EFFECT_MISTY_TERRAIN_BOOST: _ClassVar[MoveBehavior]
     EFFECT_BERRY_SMASH: _ClassVar[MoveBehavior]
     EFFECT_INVERSE_ROOM: _ClassVar[MoveBehavior]
     EFFECT_DRAIN_BRAIN: _ClassVar[MoveBehavior]
-    EFFECT_TRIPLE_ARROWS: _ClassVar[MoveBehavior]
-    EFFECT_RECOIL_25_STATUS: _ClassVar[MoveBehavior]
     EFFECT_WEATHER_BOOST: _ClassVar[MoveBehavior]
     EFFECT_MORTAL_SPIN: _ClassVar[MoveBehavior]
     EFFECT_KARMA: _ClassVar[MoveBehavior]
@@ -437,9 +419,6 @@ class MoveBehavior(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
     EFFECT_GHASTLY_ECHO: _ClassVar[MoveBehavior]
     EFFECT_REVIVAL_BLESSING: _ClassVar[MoveBehavior]
     EFFECT_TIDY_UP: _ClassVar[MoveBehavior]
-    EFFECT_ACID: _ClassVar[MoveBehavior]
-    EFFECT_SLUDGE: _ClassVar[MoveBehavior]
-    EFFECT_POISON_GAS: _ClassVar[MoveBehavior]
     EFFECT_PARALYZE_IGNORE_TYPE: _ClassVar[MoveBehavior]
     EFFECT_SUPER_FANG_HAZE: _ClassVar[MoveBehavior]
     EFFECT_SPICY_EXTRACT: _ClassVar[MoveBehavior]
@@ -461,7 +440,6 @@ class MoveBehavior(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
     EFFECT_SNAP_JAW: _ClassVar[MoveBehavior]
     EFFECT_RIP_AND_TEAR: _ClassVar[MoveBehavior]
     EFFECT_SKY_DROP: _ClassVar[MoveBehavior]
-    EFFECT_TERROR_CHARGE: _ClassVar[MoveBehavior]
     EFFECT_TAILWIND_HIT: _ClassVar[MoveBehavior]
     EFFECT_SANDSTORM_HIT: _ClassVar[MoveBehavior]
     EFFECT_RAIN_HIT: _ClassVar[MoveBehavior]
@@ -471,11 +449,9 @@ class MoveBehavior(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
     EFFECT_CLEAR_SKIES: _ClassVar[MoveBehavior]
     EFFECT_SHOWTIME: _ClassVar[MoveBehavior]
     EFFECT_TREPIDATION: _ClassVar[MoveBehavior]
-    EFFECT_CHIP_AWAY: _ClassVar[MoveBehavior]
     EFFECT_MEDITATE: _ClassVar[MoveBehavior]
     EFFECT_BARRIER: _ClassVar[MoveBehavior]
     EFFECT_KINESIS: _ClassVar[MoveBehavior]
-    EFFECT_CORROSIVE_GAS: _ClassVar[MoveBehavior]
     EFFECT_CALTROPS: _ClassVar[MoveBehavior]
     EFFECT_SWEET_KISS: _ClassVar[MoveBehavior]
     EFFECT_QUICK_GUARD: _ClassVar[MoveBehavior]
@@ -484,13 +460,18 @@ class MoveBehavior(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
     EFFECT_GRASSY_TERRAIN_HIT: _ClassVar[MoveBehavior]
     EFFECT_TOXIC_TERRAIN: _ClassVar[MoveBehavior]
     EFFECT_SEPTIC_SWITCH: _ClassVar[MoveBehavior]
-    EFFECT_WHIRLPOOL: _ClassVar[MoveBehavior]
+    EFFECT_PARTY_FAVORS: _ClassVar[MoveBehavior]
+    EFFECT_WATERLOG: _ClassVar[MoveBehavior]
+    EFFECT_SPECTRAL_FLAME: _ClassVar[MoveBehavior]
+    EFFECT_CONCOCTION: _ClassVar[MoveBehavior]
+    EFFECT_FETCH: _ClassVar[MoveBehavior]
+    EFFECT_TEATIME: _ClassVar[MoveBehavior]
+    EFFECT_DRENCH_HIT: _ClassVar[MoveBehavior]
 EFFECT_HIT: MoveBehavior
 EFFECT_SLEEP: MoveBehavior
 EFFECT_POISON_HIT: MoveBehavior
 EFFECT_ABSORB: MoveBehavior
 EFFECT_BURN_HIT: MoveBehavior
-EFFECT_FREEZE_HIT: MoveBehavior
 EFFECT_PARALYZE_HIT: MoveBehavior
 EFFECT_EXPLOSION: MoveBehavior
 EFFECT_DREAM_EATER: MoveBehavior
@@ -604,18 +585,13 @@ EFFECT_SANDSTORM: MoveBehavior
 EFFECT_ENDURE: MoveBehavior
 EFFECT_ROLLOUT: MoveBehavior
 EFFECT_SWAGGER: MoveBehavior
-EFFECT_FURY_CUTTER: MoveBehavior
 EFFECT_ATTRACT: MoveBehavior
-EFFECT_RETURN: MoveBehavior
-EFFECT_PRESENT: MoveBehavior
-EFFECT_FRUSTRATION: MoveBehavior
 EFFECT_SAFEGUARD: MoveBehavior
 EFFECT_UNUSED_125: MoveBehavior
 EFFECT_MAGNITUDE: MoveBehavior
 EFFECT_BATON_PASS: MoveBehavior
 EFFECT_PURSUIT: MoveBehavior
 EFFECT_RAPID_SPIN: MoveBehavior
-EFFECT_SONICBOOM: MoveBehavior
 EFFECT_CAPTIVATE: MoveBehavior
 EFFECT_MORNING_SUN: MoveBehavior
 EFFECT_SYNTHESIS: MoveBehavior
@@ -703,7 +679,6 @@ EFFECT_PLEDGE: MoveBehavior
 EFFECT_FLING: MoveBehavior
 EFFECT_NATURAL_GIFT: MoveBehavior
 EFFECT_WAKE_UP_SLAP: MoveBehavior
-EFFECT_WRING_OUT: MoveBehavior
 EFFECT_HEX: MoveBehavior
 EFFECT_ASSURANCE: MoveBehavior
 EFFECT_TRUMP_CARD: MoveBehavior
@@ -766,13 +741,11 @@ EFFECT_SPEED_UP_HIT: MoveBehavior
 EFFECT_QUIVER_DANCE: MoveBehavior
 EFFECT_COIL: MoveBehavior
 EFFECT_ELECTRIFY: MoveBehavior
-EFFECT_SCALD: MoveBehavior
 EFFECT_REFLECT_TYPE: MoveBehavior
 EFFECT_SOAK: MoveBehavior
 EFFECT_GROWTH: MoveBehavior
 EFFECT_CLOSE_COMBAT: MoveBehavior
 EFFECT_LAST_RESORT: MoveBehavior
-EFFECT_RECOIL_33_STATUS: MoveBehavior
 EFFECT_FLINCH_STATUS: MoveBehavior
 EFFECT_RECOIL_50: MoveBehavior
 EFFECT_SHELL_SMASH: MoveBehavior
@@ -841,10 +814,8 @@ EFFECT_COACHING: MoveBehavior
 EFFECT_LASH_OUT: MoveBehavior
 EFFECT_GRASSY_GLIDE: MoveBehavior
 EFFECT_REMOVE_TERRAIN: MoveBehavior
-EFFECT_DYNAMAX_DOUBLE_DMG: MoveBehavior
 EFFECT_DECORATE: MoveBehavior
 EFFECT_SNIPE_SHOT: MoveBehavior
-EFFECT_TRIPLE_HIT: MoveBehavior
 EFFECT_RECOIL_HP_25: MoveBehavior
 EFFECT_STUFF_CHEEKS: MoveBehavior
 EFFECT_GRAV_APPLE: MoveBehavior
@@ -868,9 +839,7 @@ EFFECT_OCTOLOCK: MoveBehavior
 EFFECT_CLANGOROUS_SOUL: MoveBehavior
 EFFECT_BOLT_BEAK: MoveBehavior
 EFFECT_RISING_VOLTAGE: MoveBehavior
-EFFECT_SCALE_SHOT: MoveBehavior
 EFFECT_BEAK_BLAST: MoveBehavior
-EFFECT_EXCALIBUR: MoveBehavior
 EFFECT_FROSTBITE_HIT: MoveBehavior
 EFFECT_EXPANDING_FORCE: MoveBehavior
 EFFECT_STEEL_BEAM: MoveBehavior
@@ -880,7 +849,6 @@ EFFECT_CURSE_HIT: MoveBehavior
 EFFECT_FLINCH_RECOIL_33: MoveBehavior
 EFFECT_FLINCH_RECOIL_50: MoveBehavior
 EFFECT_IGNORE_TYPE_IMMUNITY: MoveBehavior
-EFFECT_SE_AGAINST_TYPE_HIT: MoveBehavior
 EFFECT_DOUBLE_DMG_IF_STATUS1: MoveBehavior
 EFFECT_STEALTH_ROCK_HIT: MoveBehavior
 EFFECT_LEECH_SEED_HIT: MoveBehavior
@@ -889,15 +857,11 @@ EFFECT_BLEED_HIT: MoveBehavior
 EFFECT_SLEEP_HIT: MoveBehavior
 EFFECT_BLEED: MoveBehavior
 EFFECT_FROSTBITE: MoveBehavior
-EFFECT_FREEZE: MoveBehavior
 EFFECT_INFERNAL_PARADE: MoveBehavior
-EFFECT_WYRM_WIND: MoveBehavior
 EFFECT_MISTY_TERRAIN_BOOST: MoveBehavior
 EFFECT_BERRY_SMASH: MoveBehavior
 EFFECT_INVERSE_ROOM: MoveBehavior
 EFFECT_DRAIN_BRAIN: MoveBehavior
-EFFECT_TRIPLE_ARROWS: MoveBehavior
-EFFECT_RECOIL_25_STATUS: MoveBehavior
 EFFECT_WEATHER_BOOST: MoveBehavior
 EFFECT_MORTAL_SPIN: MoveBehavior
 EFFECT_KARMA: MoveBehavior
@@ -915,9 +879,6 @@ EFFECT_SHED_TAIL: MoveBehavior
 EFFECT_GHASTLY_ECHO: MoveBehavior
 EFFECT_REVIVAL_BLESSING: MoveBehavior
 EFFECT_TIDY_UP: MoveBehavior
-EFFECT_ACID: MoveBehavior
-EFFECT_SLUDGE: MoveBehavior
-EFFECT_POISON_GAS: MoveBehavior
 EFFECT_PARALYZE_IGNORE_TYPE: MoveBehavior
 EFFECT_SUPER_FANG_HAZE: MoveBehavior
 EFFECT_SPICY_EXTRACT: MoveBehavior
@@ -939,7 +900,6 @@ EFFECT_MYSTIC_DANCE: MoveBehavior
 EFFECT_SNAP_JAW: MoveBehavior
 EFFECT_RIP_AND_TEAR: MoveBehavior
 EFFECT_SKY_DROP: MoveBehavior
-EFFECT_TERROR_CHARGE: MoveBehavior
 EFFECT_TAILWIND_HIT: MoveBehavior
 EFFECT_SANDSTORM_HIT: MoveBehavior
 EFFECT_RAIN_HIT: MoveBehavior
@@ -949,11 +909,9 @@ EFFECT_TAKE_HEART: MoveBehavior
 EFFECT_CLEAR_SKIES: MoveBehavior
 EFFECT_SHOWTIME: MoveBehavior
 EFFECT_TREPIDATION: MoveBehavior
-EFFECT_CHIP_AWAY: MoveBehavior
 EFFECT_MEDITATE: MoveBehavior
 EFFECT_BARRIER: MoveBehavior
 EFFECT_KINESIS: MoveBehavior
-EFFECT_CORROSIVE_GAS: MoveBehavior
 EFFECT_CALTROPS: MoveBehavior
 EFFECT_SWEET_KISS: MoveBehavior
 EFFECT_QUICK_GUARD: MoveBehavior
@@ -962,7 +920,13 @@ EFFECT_SHELL_TRAP: MoveBehavior
 EFFECT_GRASSY_TERRAIN_HIT: MoveBehavior
 EFFECT_TOXIC_TERRAIN: MoveBehavior
 EFFECT_SEPTIC_SWITCH: MoveBehavior
-EFFECT_WHIRLPOOL: MoveBehavior
+EFFECT_PARTY_FAVORS: MoveBehavior
+EFFECT_WATERLOG: MoveBehavior
+EFFECT_SPECTRAL_FLAME: MoveBehavior
+EFFECT_CONCOCTION: MoveBehavior
+EFFECT_FETCH: MoveBehavior
+EFFECT_TEATIME: MoveBehavior
+EFFECT_DRENCH_HIT: MoveBehavior
 NO_SHEER_FORCE_FIELD_NUMBER: _ClassVar[int]
 no_sheer_force: _descriptor.FieldDescriptor
 FLINCH_EFFECT_FIELD_NUMBER: _ClassVar[int]
