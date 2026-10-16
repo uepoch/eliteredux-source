@@ -13,8 +13,6 @@ extern "C" {
 #include "battle_script_commands.h"
 #include "battle_util.h"
 #include "battle.h"
-#include "battle_anim.h"
-#include "pokemon.h"
 }
 
 #include "type_utils.hh"
@@ -40,22 +38,6 @@ static int RunEntryAnnounceScript(BattleSkillEnum skill, const u8* script) {
     BattleScriptPushCursorAndCallback(script);
     return TRUE;
 }
-
-// Raises one of the battler's stats with the skill popup and announce text, then the usual stat-rose message.
-// The stat changer and battler go through gBattleScripting.statChanger and gStackBattler1, which are saved per
-// script frame, so several of these can be pushed in one pass without clobbering each other.
-static int RunStatUpScript(BattleSkillEnum skill, u8 battler, u8 statId, s8 amount) {
-    CHECK(gBattleMons[battler].statStages[statId] < MAX_STAT_STAGE)
-    SetStatChanger(statId, amount);
-    gStackBattler1 = battler;
-    return RunEntryAnnounceScript(skill, BattleScript_ExtraSkillStatUp);
-}
-
-static bool8 IsSkillOwnerSide(u8 battler) { return GET_BATTLER_SIDE(battler) == B_SIDE_OPPONENT; }
-
-// canProcessSwitches only turns on once the battle-start entry effects are done, so this is true just for the leads
-static bool8 IsBattleStartEntry() { return !gBattleStruct->canProcessSwitches; }
-
 #define BATTLE_START_SIMPLE(script) .onBattleStart = +[](ON_BATTLE_START) -> int { return RunEntryAnnounceScript(skill, script); }
 
 template <BattleSkillEnum Id>
@@ -108,25 +90,6 @@ constexpr BattleSkill BattleSkillTemplate<SKILL_TEMPLATE_EXTRA_ABILITY, Ability1
         PREPARE_ABILITY_BUFFER(gBattleTextBuff3, Ability3);
 
         return RunEntryAnnounceScript(skill, BattleScript_AnnounceBattleSkillEnd3);
-    },
-};
-
-// Raises a stat of each of the trainer's Pokémon when it enters. LeadOnly limits it to the battle-start leads.
-template <u8 Stat, s8 Amount, bool LeadOnly = false>
-constexpr BattleSkill StatUpOnEntry = {
-    .onEntry = +[](ON_ENTRY) -> int {
-        CHECK(IsSkillOwnerSide(battler))
-        CHECK(!LeadOnly || IsBattleStartEntry())
-        return RunStatUpScript(skill, battler, Stat, Amount);
-    },
-};
-
-// Raises a stat of each of the trainer's Pokémon on the field at the end of every turn
-template <u8 Stat, s8 Amount>
-constexpr BattleSkill StatUpOnEndTurn = {
-    .onEndTurn = +[](ON_END_TURN) -> int {
-        CHECK(IsSkillOwnerSide(battler))
-        return RunStatUpScript(skill, battler, Stat, Amount);
     },
 };
 
@@ -297,15 +260,6 @@ constexpr BattleSkill Impl<SKILL_PERMANENT_FIRE_SEA> = {
         return RunEntryAnnounceScript(skill, BattleScript_ExtraSkillPermaFireSea);
     },
 };
-
-template <>
-constexpr BattleSkill Impl<SKILL_ON_ENTRY_DEF_UP_4> = StatUpOnEntry<STAT_DEF, 4, true>;
-
-template <>
-constexpr BattleSkill Impl<SKILL_ON_END_TURN_DEF_UP_1> = StatUpOnEndTurn<STAT_DEF, 1>;
-
-template <>
-constexpr BattleSkill Impl<SKILL_ON_ENTRY_SPDEF_UP_1> = StatUpOnEntry<STAT_SPDEF, 1>;
 
 #include "generated/data/text/battle_skill_text.hh"
 
