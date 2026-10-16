@@ -13,12 +13,15 @@ extern "C" {
 #include "battle_script_commands.h"
 #include "battle_util.h"
 #include "battle.h"
+#include "battle_anim.h"
+#include "pokemon.h"
 }
 
 #include "type_utils.hh"
 
 #define ON_BATTLE_START opt BattleSkillEnum skill
 #define ON_ENTRY opt BattleSkillEnum skill, opt u8 battler
+#define ON_END_TURN opt BattleSkillEnum skill, opt u8 battler
 #define ON_ATTACKER opt BattleSkillEnum skill, opt u8 battler, opt u8 target, opt MoveEnum move, opt Type moveType
 #define ON_DEFENSIVE_MULTIPLIER opt u8 battler, opt u16 *resistance, opt u16 *modifier
 
@@ -37,6 +40,22 @@ static int RunEntryAnnounceScript(BattleSkillEnum skill, const u8* script) {
     BattleScriptPushCursorAndCallback(script);
     return TRUE;
 }
+
+// Raises one of the battler's stats with the skill popup and announce text, then the usual stat-rose message.
+// The stat changer and battler go through gBattleScripting.statChanger and gStackBattler1, which are saved per
+// script frame, so several of these can be pushed in one pass without clobbering each other.
+static int RunStatUpScript(BattleSkillEnum skill, u8 battler, u8 statId, s8 amount) {
+    CHECK(gBattleMons[battler].statStages[statId] < MAX_STAT_STAGE)
+    SetStatChanger(statId, amount);
+    gStackBattler1 = battler;
+    return RunEntryAnnounceScript(skill, BattleScript_ExtraSkillStatUp);
+}
+
+static bool8 IsSkillOwnerSide(u8 battler) { return GET_BATTLER_SIDE(battler) == B_SIDE_OPPONENT; }
+
+// canProcessSwitches only turns on once the battle-start entry effects are done, so this is true just for the leads
+static bool8 IsBattleStartEntry() { return !gBattleStruct->canProcessSwitches; }
+
 #define BATTLE_START_SIMPLE(script) .onBattleStart = +[](ON_BATTLE_START) -> int { return RunEntryAnnounceScript(skill, script); }
 
 template <BattleSkillEnum Id>
@@ -257,6 +276,31 @@ constexpr BattleSkill Impl<SKILL_PERMANENT_FIRE_SEA> = {
         gSideTimers[B_SIDE_PLAYER].fireSeaTimer = 255;
 
         return RunEntryAnnounceScript(skill, BattleScript_ExtraSkillPermaFireSea);
+    },
+};
+
+template <>
+constexpr BattleSkill Impl<SKILL_ON_ENTRY_DEF_UP_4> = {
+    .onEntry = +[](ON_ENTRY) -> int {
+        CHECK(IsSkillOwnerSide(battler))
+        CHECK(IsBattleStartEntry())
+        return RunStatUpScript(skill, battler, STAT_DEF, 4);
+    },
+};
+
+template <>
+constexpr BattleSkill Impl<SKILL_ON_END_TURN_DEF_UP_1> = {
+    .onEndTurn = +[](ON_END_TURN) -> int {
+        CHECK(IsSkillOwnerSide(battler))
+        return RunStatUpScript(skill, battler, STAT_DEF, 1);
+    },
+};
+
+template <>
+constexpr BattleSkill Impl<SKILL_ON_ENTRY_SPDEF_UP_1> = {
+    .onEntry = +[](ON_ENTRY) -> int {
+        CHECK(IsSkillOwnerSide(battler))
+        return RunStatUpScript(skill, battler, STAT_SPDEF, 1);
     },
 };
 

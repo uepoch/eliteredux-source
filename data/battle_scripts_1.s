@@ -12459,6 +12459,24 @@ BattleScript_AnnounceBattleSkillEnd3::
 	call BattleScript_AnnounceBattleSkill
 	end3
 
+@ C side sets the stat changer and gStackBattler1 = battler (see RunStatUpScript in battle_skills.cc).
+@ The battler is copied into the attacker only after the announce call, since returning from a call
+@ restores the stack battlers saved when this script was pushed.
+BattleScript_ExtraSkillStatUp::
+	call BattleScript_AnnounceBattleSkill
+	saveattackertostack3
+	copybyte gBattlerAttacker, gStackBattler1
+	statbuffchange MOVE_EFFECT_AFFECTS_USER | STAT_BUFF_ALLOW_PTR, BattleScript_ExtraSkillStatUpEnd
+	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_INCREASE, BattleScript_ExtraSkillStatUpEnd
+	setgraphicalstatchangevalues
+	playanimation BS_ATTACKER, B_ANIM_STATS_CHANGE, sB_ANIM_ARG1
+	waitanimation
+	printfromtable gStatUpStringIds
+	waitmessage B_WAIT_TIME_LONG
+BattleScript_ExtraSkillStatUpEnd:
+	readattackerfromstack3
+	end3
+
 BattleScript_ExtraSkillEviolite::
 	call BattleScript_AnnounceBattleSkill
 	playSE SE_M_DETECT
