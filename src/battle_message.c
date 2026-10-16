@@ -3423,6 +3423,9 @@ void BufferStringBattle(u16 stringID) {
                 case TABLE_SPECIAL_BATTLE_SKILL_ANNOUNCE:
                     stringPtr = gBattleSkills[gBattleScripting.abilityPopupOverwrite].announceString;
                     break;
+                case TABLE_SPECIAL_BATTLE_RULE_ANNOUNCE:
+                    stringPtr = GetBattleRuleAnnounce(gBattleScripting.activeRule);
+                    break;
             }
             break;
         default:  // load a string from the table

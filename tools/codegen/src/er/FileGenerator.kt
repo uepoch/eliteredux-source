@@ -6,6 +6,7 @@ import er.defines.*
 import er.gfx.*
 import er.item.*
 import er.move.*
+import er.skill.BattleRuleGenerator
 import er.skill.BattleSkillGenerator
 import er.text.ArticlesGenerator
 import er.trainer.TrainerPartyGenerator
@@ -90,6 +91,7 @@ object FileGenerator {
         "battleskills" to BattleSkillEnumGenerator,
         "battleskilltemplates" to BattleSkillTemplateEnumGenerator,
         "battleskilltext" to BattleSkillGenerator,
+        "battlerules" to BattleRuleGenerator,
     )
 
     @JvmStatic

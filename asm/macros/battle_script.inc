@@ -2470,6 +2470,13 @@
 	.byte \source
 	.endm
 
+	@ Runs the next step of the hell-mode rule in gBattleScripting.activeRule (see battle_rules.cc):
+	@ calls its sub-script and comes back here, or jumps to \ptr when every step is done.
+	.macro battlerulestep ptr:req
+	various BS_ATTACKER, VARIOUS_BATTLE_RULE_STEP
+	.4byte \ptr
+	.endm
+
 	.macro twoturnmoveacceleratecheck ptr=BattleScript_MoveEnd
 	jumpifability BS_ATTACKER, ABILITY_ACCELERATE, twoturnmoveacceleratecheck_\@
 	jumpifnoholdeffect BS_ATTACKER, HOLD_EFFECT_POWER_HERB, \ptr

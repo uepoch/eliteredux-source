@@ -106,6 +106,7 @@ struct VolatileStruct {
     u8 battlerPreventingEscape;
     u8 battlerWithSureHit;
     u8 isFirstTurn;
+    u8 ruleTurnsOnField;  // Hell-mode rules: end of turns spent on the field, counted by TryRunEndTurnRules
     u8 rechargeTimer;
     u8 autotomizeCount;
     u8 slowStartTimer;
@@ -392,6 +393,8 @@ struct BattleHistory {
 
 struct SavedStackData {
     u16 abilityOverride;
+    u16 activeRule;
+    u8 ruleStep;
     u8 multistringChooser;
     u8 statChanger;
     u8 stackBattler1:2;
@@ -594,6 +597,7 @@ struct ExtraAttackActionStruct {
     u8 movePos:3;
     u8 prankster:1;
     u8 falseSwipe:1;
+    u16 rule;  // Hell-mode rule that queued it (shows the rule popup instead of an ability one)
 };
 
 struct BattleStruct {
@@ -794,6 +798,7 @@ struct BattleScripting {
     MoveEffectEnum moveEffect;
     u16 multihitMoveEffect;
     u16 abilityPopupOverwrite;  // Also trainer skills
+    u16 activeRule;             // Hell-mode rule run by BattleScript_BattleRule (index into gBattleRules)
     u8 multihitString[6];
     bool8 expOnCatch;
     u8 twoTurnsMoveStringId;
@@ -829,6 +834,7 @@ struct BattleScripting {
     u8 acceleratedTwoTurn;
     u8 usingExtraMove;
     u8 abilityLoopCounter;
+    u8 ruleStep;  // Next step of the running hell-mode rule
 };
 
 // rom_80A5C6C

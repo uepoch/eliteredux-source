@@ -346,6 +346,9 @@ void HandleAction_UseMove(void) {
         if (gProcessingExtraAttacks && !IsBattlerAlive(gBattlerTarget) &&
             !(gQueuedExtraAttackData[0].ability && gBattleMoves[gCurrentMove].effect == EFFECT_EXPLOSION)) {
             gCurrentActionFuncId = B_ACTION_TRY_FINISH;
+        } else if (gProcessingExtraAttacks && gQueuedExtraAttackData[0].rule) {
+            gBattleScripting.activeRule = gQueuedExtraAttackData[0].rule;
+            gBattlescriptCurrInstr = BattleScript_AttackerUsedRuleMove;
         } else if (gProcessingExtraAttacks && gQueuedExtraAttackData[0].ability) {
             gBattleScripting.abilityPopupOverwrite = gQueuedExtraAttackData[0].ability;
             gBattlescriptCurrInstr = BattleScript_AttackerUsedAnExtraMove;
@@ -1308,6 +1311,8 @@ void BattleScriptPush(const u8* bsPtr) {
 void BattleScriptSaveCurrentStackData() {
     struct SavedStackData savedStackData = {
         .abilityOverride = gBattleScripting.abilityPopupOverwrite,
+        .activeRule = gBattleScripting.activeRule,
+        .ruleStep = gBattleScripting.ruleStep,
         .multistringChooser = gBattleCommunication[MULTISTRING_CHOOSER],
         .stackBattler1 = gStackBattler1,
         .stackBattler2 = gStackBattler2,
@@ -1333,6 +1338,8 @@ void BattleScriptPop(void) {
 void ReadActiveScriptInitialStackState() {
     struct SavedStackData* data = &gBattleResources->battleScriptsStack->savedStackData[gBattleResources->battleScriptsStack->size];
     gBattleScripting.abilityPopupOverwrite = data->abilityOverride;
+    gBattleScripting.activeRule = data->activeRule;
+    gBattleScripting.ruleStep = data->ruleStep;
     gBattleCommunication[MULTISTRING_CHOOSER] = data->multistringChooser;
     gStackBattler1 = data->stackBattler1;
     gStackBattler2 = data->stackBattler2;
@@ -1344,6 +1351,11 @@ void ReadActiveScriptInitialStackState() {
 void SetActiveStatChanger(int stat, s8 change) {
     SetStatChanger(stat, change);
     gBattleResources->battleScriptsStack->savedStackData[gBattleResources->battleScriptsStack->size].statChanger = gBattleScripting.statChanger.value;
+}
+
+void SetActiveRuleStep(u8 step) {
+    gBattleScripting.ruleStep = step;
+    gBattleResources->battleScriptsStack->savedStackData[gBattleResources->battleScriptsStack->size].ruleStep = step;
 }
 
 void SetActiveMultistringChooser(u8 messageId) {
@@ -9146,6 +9158,7 @@ int HandleSwitchInAbility(int abilityNumber, int battler) {
         if (IsBattlerAlive(battler) && !gVolatileStructs[battler].usedSkillEntry) {
             gVolatileStructs[battler].usedSkillEntry = TRUE;
             ON_SKILL(skill->onEntry, if (skill->onEntry(skillId, battler)) effect++)
+            if (TryRunEntryRules(battler)) effect++;
         }
 
         {
@@ -9262,6 +9275,7 @@ int HandleEndTurnAbility(int abilityNumber, int battler) {
         int effect = FALSE;
         // Hell-mode battle skills
         ON_SKILL(skill->onEndTurn, if (skill->onEndTurn(skillId, battler)) effect = TRUE)
+        if (TryRunEndTurnRules(battler)) effect = TRUE;
         return effect;
     }
 

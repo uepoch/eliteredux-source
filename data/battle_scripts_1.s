@@ -12477,6 +12477,52 @@ BattleScript_ExtraSkillStatUpEnd:
 	readattackerfromstack3
 	end3
 
+@ Hell-mode rules (src/battle_rules.cc). C pushes this with gBattleScripting.activeRule, ruleStep 0,
+@ gStackBattler1 = the subject and cMULTISTRING_CHOOSER = whether to print the announce line, all saved
+@ in this script's frame. battlerulestep then calls one sub-script per effect step.
+BattleScript_BattleRule::
+	extraskillpopup 2
+	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, FALSE, BattleScript_BattleRuleEffects
+	setbyte cMULTISTRING_CHOOSER, TABLE_SPECIAL_BATTLE_RULE_ANNOUNCE
+	printstring STRINGID_TABLESPECIAL
+	waitmessage B_WAIT_TIME_LONG
+BattleScript_BattleRuleEffects:
+	saveattackertostack3
+	battlerulestep BattleScript_BattleRuleEnd
+BattleScript_BattleRuleEnd:
+	readattackerfromstack3
+	end3
+
+@ Sub-scripts: C sets gBattlerAttacker to the target (and the stat changer / gBattleMoveDamage)
+BattleScript_BattleRuleStatUp::
+	statbuffchange MOVE_EFFECT_AFFECTS_USER | STAT_BUFF_ALLOW_PTR, BattleScript_BattleRuleStatChangeEnd
+	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_INCREASE, BattleScript_BattleRuleStatChangeEnd
+	setgraphicalstatchangevalues
+	playanimation BS_ATTACKER, B_ANIM_STATS_CHANGE, sB_ANIM_ARG1
+	waitanimation
+	printfromtable gStatUpStringIds
+	waitmessage B_WAIT_TIME_LONG
+BattleScript_BattleRuleStatChangeEnd:
+	return
+
+BattleScript_BattleRuleStatDown::
+	statbuffchange MOVE_EFFECT_AFFECTS_USER | STAT_BUFF_ALLOW_PTR, BattleScript_BattleRuleStatChangeEnd
+	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_DECREASE, BattleScript_BattleRuleStatChangeEnd
+	setgraphicalstatchangevalues
+	playanimation BS_ATTACKER, B_ANIM_STATS_CHANGE, sB_ANIM_ARG1
+	waitanimation
+	printfromtable gStatDownStringIds
+	waitmessage B_WAIT_TIME_LONG
+	return
+
+BattleScript_BattleRuleHeal::
+	goto BattleScript_AbilityHpHeal_NoPopup
+
+@ Extra attack queued by a rule (gQueuedExtraAttackData[0].rule)
+BattleScript_AttackerUsedRuleMove::
+	extraskillpopup 2
+	gotoactualmove BS_ATTACKER
+
 BattleScript_ExtraSkillEviolite::
 	call BattleScript_AnnounceBattleSkill
 	playSE SE_M_DETECT

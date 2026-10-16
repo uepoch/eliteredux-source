@@ -109,6 +109,11 @@ object GeneratorUtils {
     BATTLE_SKILL_PROTO.templateList
   }
 
+  // Every distinct hell-mode rule used by a trainer. A rule's index in gBattleRules is its position + 1 (0 = none).
+  val BATTLE_RULES by lazy { TRAINERS_LIST.flatMap { it.hell.ruleList }.distinct() }
+
+  val BATTLE_RULE_INDEX by lazy { BATTLE_RULES.withIndex().associate { it.value to it.index + 1 } }
+
   val SPECIES_LIST by lazy { FULL_SPECIES_LIST.filter { it.randomizerBanned != SPECIES_HIDDEN } }
 
   val NO_EGG_LIST by lazy { SPECIES_LIST.filter { it.id != SpeciesEnum.SPECIES_EGG } }

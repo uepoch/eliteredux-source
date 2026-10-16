@@ -417,6 +417,7 @@ void ReadActiveScriptInitialStackState();
 void SetActiveMultistringChooser(u8 messageId);
 void SetActiveAbilityPopupOverride(u16 messageId);
 void SetActiveStackBattler(u8 battler, u8 number);
+void SetActiveRuleStep(u8 step);
 void SetActiveStatChanger(int stat, s8 change);
 AbilityEnum GetInnateInSlot(int level, SpeciesEnum species, u8 position, u32 personality, u8 isPlayer);
 void ClearMiscTurnFlags();

@@ -46,6 +46,7 @@ void UnregisterBattlesEvents() {
     gCurrBattleEvent = 0;
     // Hell skills are only re-registered for hell trainer battles, so clear them or they carry over to the next battle
     ZERO(gActiveSkills)
+    ClearBattleRules();
 }
 
 /**
@@ -558,6 +559,7 @@ void RegisterTrainerBattleEvents(u16 trainerId) {
     u8 i;
 
     ZERO(gActiveSkills)
+    RegisterTrainerBattleRules(trainerId);
 
     for (i = 0; i < HELL_MODE_MAX_SKILLS; i++) {
         BattleSkillEnum skill = gTrainers[trainerId].hellSkills[i];

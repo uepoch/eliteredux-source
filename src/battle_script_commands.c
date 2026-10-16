@@ -7626,6 +7626,8 @@ static void Cmd_various(void) {
             u8 skillSource = READ_8_INC;
             if (skillSource == 1) {
                 ptr = gBattleSkills[gBattleScripting.abilityPopupOverwrite].name;
+            } else if (skillSource == 2) {
+                ptr = GetBattleRuleName(gBattleScripting.activeRule);
             } else {
                 ptr = gBattleEventNames[gLastBattleEvent];
             }
@@ -9162,6 +9164,18 @@ static void Cmd_various(void) {
         case VARIOUS_SET_RANDOM_TEMP_BERRY:
             SetRandomTempBerry(gActiveBattler);
             break;
+        case VARIOUS_BATTLE_RULE_STEP: {
+            const u8* endPtr = READ_PTR_INC;
+            const u8* script = RunBattleRuleStep();
+            if (script) {
+                // Come back to this command once the step's script returns
+                BattleScriptPush(runAgain);
+                gBattlescriptCurrInstr = script;
+            } else {
+                gBattlescriptCurrInstr = endPtr;
+            }
+            return;
+        }
     }  // End of switch (gBattlescriptCurrInstr[2])
 }
 

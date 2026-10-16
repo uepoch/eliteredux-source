@@ -284,6 +284,7 @@
 #define VARIOUS_SCHEDULE_SWITCH                 201
 #define VARIOUS_WATERLOG                        202
 #define VARIOUS_SET_RANDOM_TEMP_BERRY           203
+#define VARIOUS_BATTLE_RULE_STEP                204
 
 #define HAZARD_MODE_SPIKES 0
 #define HAZARD_MODE_ROCKS 1

@@ -2,6 +2,7 @@ package er.trainer
 
 import er.FileGenerator.IND
 import er.Generator
+import er.GeneratorUtils.BATTLE_RULE_INDEX
 import er.GeneratorUtils.SPECIES_MAP
 import er.GeneratorUtils.TRAINERS_LIST
 import er.GeneratorUtils.expandLearnset
@@ -100,6 +101,7 @@ object TrainerPartyGenerator : Generator {
   }
 
   const val HELL_MODE_MAX_SKILLS = 3;
+  const val HELL_MODE_MAX_RULES = 6
 
   override fun generate(writer: OutputStreamWriter) {
     val allParties =
@@ -186,6 +188,12 @@ object TrainerPartyGenerator : Generator {
           
           val skills = List(HELL_MODE_MAX_SKILLS) { index -> hell.skillList.getOrElse(index) { BattleSkillEnum.SKILL_NONE } } 
 
+          // Hard error: a dropped rule would silently change the fight
+          check(hell.ruleList.size <= HELL_MODE_MAX_RULES) {
+              "Trainer ${trainer.id} has ${hell.ruleList.size} Hell rules; max is ${HELL_MODE_MAX_RULES}."
+          }
+          val rules = hell.ruleList.map { BATTLE_RULE_INDEX[it]!! }
+
           val flags =
             buildList {
                 if (risky) add("AI_FLAG_RISKY")
@@ -222,6 +230,7 @@ object TrainerPartyGenerator : Generator {
             |$IND$IND.partySizeHell = ${actualHell.size},
             |$IND$IND.partyHell = __sParty_${actualHell.hashCode().toUInt()},
             |$IND$IND.hellSkills = { ${skills.joinToString(", ")} },
+            |$IND$IND.hellRules = { ${rules.ifEmpty { listOf(0) }.joinToString(", ")} },
             |$IND$IND.aiFlags = $flags,
             |$IND},
             """

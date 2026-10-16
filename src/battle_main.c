@@ -185,6 +185,7 @@ EWRAM_DATA struct ExtraSwitchActionStruct gQueuedSwitchData[MAX_BATTLERS_COUNT +
 EWRAM_DATA u8 gQueuedSwitchCount = 0;
 EWRAM_DATA u8 gCurrentActionFuncId = B_ACTION_FINISHED;
 EWRAM_DATA BattleSkillEnum gActiveSkills[2 * HELL_MODE_MAX_SKILLS] = {0};
+EWRAM_DATA struct ActiveBattleRule gActiveRules[MAX_ACTIVE_RULES] = {0};
 EWRAM_DATA struct BattlePokemon gBattleMons[MAX_BATTLERS_COUNT] = {0};
 EWRAM_DATA u8 gBattlerSpriteIds[MAX_BATTLERS_COUNT] = {0};
 EWRAM_DATA u8 gCurrMovePos = 0;
@@ -1772,7 +1773,11 @@ static u8 CreateNPCTrainerParty(struct Pokemon* party, u16 trainerNum, bool8 fir
 
     // Register battle events (hell mode extra skills) only in hell difficulty.
     // This function is also called for wild mons, not just trainers.
-    if (gBattleTypeFlags & BATTLE_TYPE_TRAINER && difficultySetting == DIFFICULTY_HELL) RegisterTrainerBattleEvents(trainerNum);
+    if (gBattleTypeFlags & BATTLE_TYPE_TRAINER && difficultySetting == DIFFICULTY_HELL) {
+        // Called once per opposing trainer: rules add up, so only clear them for the first one
+        if (firstTrainer == TRUE) ClearBattleRules();
+        RegisterTrainerBattleEvents(trainerNum);
+    }
 
     if (gBattleTypeFlags & BATTLE_TYPE_TRAINER && !(gBattleTypeFlags & (BATTLE_TYPE_FRONTIER | BATTLE_TYPE_EREADER_TRAINER | BATTLE_TYPE_TRAINER_HILL))) {
         if (firstTrainer == TRUE) ZeroEnemyPartyMons();
