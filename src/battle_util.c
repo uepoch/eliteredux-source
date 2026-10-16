@@ -9141,6 +9141,13 @@ int HandleSwitchInAbility(int abilityNumber, int battler) {
     // Extra Switch in effects
     if (abilityNumber == numPossibleAbilities) {
         int effect = 0;
+
+        // Hell-mode battle skills, once per entry (switchinabilities can rerun this slot for a mon already out)
+        if (IsBattlerAlive(battler) && !gVolatileStructs[battler].usedSkillEntry) {
+            gVolatileStructs[battler].usedSkillEntry = TRUE;
+            ON_SKILL(skill->onEntry, if (skill->onEntry(skillId, battler)) effect++)
+        }
+
         {
             int commander = IsAbilityOnSide(battler, ABILITY_COMMANDER);
             if (commander-- && !GetAbilityState(commander, ABILITY_COMMANDER) && IsBattlerAlive(BATTLE_PARTNER(commander)) &&
@@ -9252,8 +9259,10 @@ int HandleEndTurnAbility(int abilityNumber, int battler) {
     gBattlerAttacker = gBattlerAbility = battler;
 
     if (abilityNumber == numPossibleAbilities) {
-        // TODO: Handle non-ability actions that happen in this pass
-        return FALSE;
+        int effect = FALSE;
+        // Hell-mode battle skills
+        ON_SKILL(skill->onEndTurn, if (skill->onEndTurn(skillId, battler)) effect = TRUE)
+        return effect;
     }
 
     ability = GetBattlerAbilityInSlot(battler, abilityNumber);

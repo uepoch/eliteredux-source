@@ -9,6 +9,7 @@ extern "C" {
 
 typedef int (*BattleSkillOnBattleStart)(BattleSkillEnum skill);
 typedef int (*BattleSkillOnEntryHandler)(BattleSkillEnum skill, u8 battler);
+typedef int (*BattleSkillOnEndTurnHandler)(BattleSkillEnum skill, u8 battler);
 typedef void (*BattleSkillOnDefensiveMultiplier)(u8 battler, u16* resistance, u16* modifier);
 
 typedef struct BattleSkill {
@@ -16,6 +17,7 @@ typedef struct BattleSkill {
     const u8* announceString;
     BattleSkillOnBattleStart onBattleStart;
     BattleSkillOnEntryHandler onEntry;
+    BattleSkillOnEndTurnHandler onEndTurn;
     BattleSkillOnDefensiveMultiplier onDefensiveMultiplier;
 } BattleSkill;
 
