@@ -44,6 +44,8 @@ void RegisterBattleEvent(u8 battleEventID, u8 battleEventData0, u8 battleEventDa
 void UnregisterBattlesEvents() {
     gNbBattleEvents = 0;
     gCurrBattleEvent = 0;
+    // Hell skills are only re-registered for hell trainer battles, so clear them or they carry over to the next battle
+    ZERO(gActiveSkills)
 }
 
 /**
