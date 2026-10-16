@@ -111,6 +111,25 @@ constexpr BattleSkill BattleSkillTemplate<SKILL_TEMPLATE_EXTRA_ABILITY, Ability1
     },
 };
 
+// Raises a stat of each of the trainer's Pokémon when it enters. LeadOnly limits it to the battle-start leads.
+template <u8 Stat, s8 Amount, bool LeadOnly = false>
+constexpr BattleSkill StatUpOnEntry = {
+    .onEntry = +[](ON_ENTRY) -> int {
+        CHECK(IsSkillOwnerSide(battler))
+        CHECK(!LeadOnly || IsBattleStartEntry())
+        return RunStatUpScript(skill, battler, Stat, Amount);
+    },
+};
+
+// Raises a stat of each of the trainer's Pokémon on the field at the end of every turn
+template <u8 Stat, s8 Amount>
+constexpr BattleSkill StatUpOnEndTurn = {
+    .onEndTurn = +[](ON_END_TURN) -> int {
+        CHECK(IsSkillOwnerSide(battler))
+        return RunStatUpScript(skill, battler, Stat, Amount);
+    },
+};
+
 template <>
 constexpr BattleSkill Impl<SKILL_EVIOLITE> = {
     BATTLE_START_SIMPLE(BattleScript_ExtraSkillEviolite),
@@ -280,29 +299,13 @@ constexpr BattleSkill Impl<SKILL_PERMANENT_FIRE_SEA> = {
 };
 
 template <>
-constexpr BattleSkill Impl<SKILL_ON_ENTRY_DEF_UP_4> = {
-    .onEntry = +[](ON_ENTRY) -> int {
-        CHECK(IsSkillOwnerSide(battler))
-        CHECK(IsBattleStartEntry())
-        return RunStatUpScript(skill, battler, STAT_DEF, 4);
-    },
-};
+constexpr BattleSkill Impl<SKILL_ON_ENTRY_DEF_UP_4> = StatUpOnEntry<STAT_DEF, 4, true>;
 
 template <>
-constexpr BattleSkill Impl<SKILL_ON_END_TURN_DEF_UP_1> = {
-    .onEndTurn = +[](ON_END_TURN) -> int {
-        CHECK(IsSkillOwnerSide(battler))
-        return RunStatUpScript(skill, battler, STAT_DEF, 1);
-    },
-};
+constexpr BattleSkill Impl<SKILL_ON_END_TURN_DEF_UP_1> = StatUpOnEndTurn<STAT_DEF, 1>;
 
 template <>
-constexpr BattleSkill Impl<SKILL_ON_ENTRY_SPDEF_UP_1> = {
-    .onEntry = +[](ON_ENTRY) -> int {
-        CHECK(IsSkillOwnerSide(battler))
-        return RunStatUpScript(skill, battler, STAT_SPDEF, 1);
-    },
-};
+constexpr BattleSkill Impl<SKILL_ON_ENTRY_SPDEF_UP_1> = StatUpOnEntry<STAT_SPDEF, 1>;
 
 #include "generated/data/text/battle_skill_text.hh"
 
