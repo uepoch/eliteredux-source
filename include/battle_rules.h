@@ -25,6 +25,9 @@ int TryRunEntryRules(u8 battler);
 int TryRunEndTurnRules(u8 battler);
 int TryRunBattleStartRules(void);
 
+// Puts the abilities the trainer's rules grant into the empty extra ability slots, skipping duplicates
+void AddBattleRuleExtraAbilities(u16 trainerId, AbilityEnum slots[HELL_MODE_EXTRA_ABILITIES]);
+
 const u8* GetBattleRuleName(u16 rule);
 const u8* GetBattleRuleAnnounce(u16 rule);
 

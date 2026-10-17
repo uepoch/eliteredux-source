@@ -58,6 +58,7 @@ enum BattleRuleEffectKind : u8 {
     RULE_EFFECT_TERRAIN,
     RULE_EFFECT_ROOM,
     RULE_EFFECT_SIDE_CONDITION,
+    RULE_EFFECT_ABILITY,  // read by GetExtraAbilityToSetToBattler; the rule itself only announces it
 };
 
 enum BattleRuleHazard : u8 {
@@ -107,6 +108,7 @@ struct BattleRuleEffect {
     u8 sideMask;              // hazard / side condition: bit = B_SIDE_*
     u8 turns;                 // field: 0 = permanent
     u8 layers;                // hazard: Spikes / Toxic Spikes layers
+    AbilityEnum ability;      // ability
 };
 
 // Generated from the rule's filters. Subject = the mon the event is about.

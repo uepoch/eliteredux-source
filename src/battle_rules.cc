@@ -299,6 +299,9 @@ static bool StepApplies(const BattleRule& rule, int step, u8 subject) {
             return !battler && !stat && ApplyTerrain(effect, subject, FALSE);
         case RULE_EFFECT_ROOM:
             return !battler && !stat && ApplyRoom(effect, FALSE);
+        case RULE_EFFECT_ABILITY:
+            // Already on the Pokemon (GetExtraAbilityToSetToBattler): one step so the rule shows its popup
+            return !battler && !stat;
 
         default:
             return FALSE;
@@ -519,6 +522,23 @@ void RegisterTrainerBattleRules(u16 trainerId) {
             }
         }
         if (slot >= 0) gActiveRules[slot] = {.rule = rule};
+    }
+}
+
+void AddBattleRuleExtraAbilities(u16 trainerId, AbilityEnum slots[HELL_MODE_EXTRA_ABILITIES]) {
+    for (int i = 0; i < HELL_MODE_MAX_RULES; i++) {
+        const BattleRule& rule = gBattleRules[gTrainers[trainerId].hellRules[i]];
+        for (int j = 0; j < rule.effectCount; j++) {
+            AbilityEnum ability = rule.effects[j].ability;
+            if (rule.effects[j].kind != RULE_EFFECT_ABILITY) continue;
+            // First empty slot, unless another source already gives it
+            for (int slot = 0; slot < HELL_MODE_EXTRA_ABILITIES && slots[slot] != ability; slot++) {
+                if (slots[slot] == ABILITY_NONE) {
+                    slots[slot] = ability;
+                    break;
+                }
+            }
+        }
     }
 }
 

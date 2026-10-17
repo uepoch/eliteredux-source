@@ -2,9 +2,11 @@ package er.skill
 
 import er.FileGenerator.IND
 import er.Generator
+import er.GeneratorUtils.ABILITIES_LIST
 import er.GeneratorUtils.BATTLE_RULES
 import er.GeneratorUtils.MOVES_LIST
 import er.GeneratorUtils.TRAINERS_LIST
+import er.proto.AbilityEnum
 import er.proto.BattleRule
 import er.proto.MoveEnum
 import er.proto.RuleEffect
@@ -32,6 +34,7 @@ object BattleRuleGenerator : Generator {
   const val DEFAULT_ANNOUNCE = "{B_TRAINER1_NAME}'s battle skill\\nactivates!"
 
   private val MOVE_NAMES by lazy { MOVES_LIST.associate { it.id to it.shortName } }
+  private val ABILITY_NAMES by lazy { ABILITIES_LIST.associate { it.id to it.name } }
 
   private val TRAINERS_BY_RULE by lazy {
     TRAINERS_LIST.flatMap { trainer -> trainer.hell.ruleList.map { it to trainer.id } }
@@ -192,7 +195,19 @@ object BattleRuleGenerator : Generator {
       RuleEffect.KindCase.HEAL_PERCENT -> "Recovery"
       RuleEffect.KindCase.HAZARD -> effect.hazard.kind.info.label
       RuleEffect.KindCase.FIELD -> effect.field.info.label
+      RuleEffect.KindCase.ABILITY ->
+        if (effectCount > 1) "Extra Abilities" else ABILITY_NAMES[effect.ability] ?: "Extra Ability"
       else -> "Battle Skill"
+    }
+  }
+
+  private fun BattleRule.defaultAnnounce(): String {
+    if (effectList.any { it.kindCase != RuleEffect.KindCase.ABILITY }) return DEFAULT_ANNOUNCE
+    val names = effectList.map { ABILITY_NAMES[it.ability] ?: it.ability.name }
+    return when (names.size) {
+      1 -> "{B_TRAINER1_NAME}'s team gains the\\nability ${names[0]}!"
+      2 -> "{B_TRAINER1_NAME}'s team gains the\\nabilities ${names[0]} and ${names[1]}!"
+      else -> "{B_TRAINER1_NAME}'s team gains the\\nabilities ${names.dropLast(1).joinToString(", ")},\\pand ${names.last()}!"
     }
   }
 
@@ -306,6 +321,12 @@ object BattleRuleGenerator : Generator {
         if (field.kindCase == RuleField.KindCase.SIDE_CONDITION) fields += "sideMask" to sideMask(field.sideCondition.side)
         fields += "turns" to "${field.turns}"
       }
+      RuleEffect.KindCase.ABILITY -> {
+        check(effect.ability != AbilityEnum.ABILITY_NONE) { "ability effect without an ability" }
+        check(trigger.kindCase == RuleTrigger.KindCase.ALWAYS) { "ability effects need an always trigger" }
+        fields += "kind" to "RULE_EFFECT_ABILITY"
+        fields += "ability" to effect.ability.name
+      }
       else -> error("Empty effect (${where()})")
     }
     return "{${fields.joinToString(", ") { (name, value) -> ".$name = $value" }}}"
@@ -344,8 +365,14 @@ object BattleRuleGenerator : Generator {
         RuleTrigger.KindCase.ALWAYS -> {
           // No subject: nothing for filters, stat changes, moves or heals to work on
           check(filterCount == 0) { "battle_start / always rules can't have filters" }
-          check(effectList.all { it.kindCase == RuleEffect.KindCase.HAZARD || it.kindCase == RuleEffect.KindCase.FIELD }) {
-            "battle_start / always rules can only have hazard and field effects"
+          check(
+            effectList.all {
+              it.kindCase == RuleEffect.KindCase.HAZARD ||
+                it.kindCase == RuleEffect.KindCase.FIELD ||
+                it.kindCase == RuleEffect.KindCase.ABILITY
+            }
+          ) {
+            "battle_start / always rules can only have hazard, field and ability effects"
           }
           val kind = if (trigger.kindCase == RuleTrigger.KindCase.ALWAYS) "RULE_TRIGGER_ALWAYS" else "RULE_TRIGGER_BATTLE_START"
           listOf(kind, "RULE_ENTRY_EVERY", "RULE_TICK_EVERY", "1", "FALSE")
@@ -371,7 +398,7 @@ object BattleRuleGenerator : Generator {
       |$IND$IND.effectCount = $effectCount,
       |$IND$IND.effects = {${effectList.joinToString(", ") { effectCode(it) }}},
       |$IND$IND.name = ${textId(name.ifEmpty { defaultName() })},
-      |$IND$IND.announce = ${textId(announce.ifEmpty { DEFAULT_ANNOUNCE })},
+      |$IND$IND.announce = ${textId(announce.ifEmpty { defaultAnnounce() })},
       |$IND},"""
       .trimMargin()
   }
@@ -381,10 +408,16 @@ object BattleRuleGenerator : Generator {
       check(trainer.ace.ruleCount == 0 && trainer.elite.ruleCount == 0) {
         "${trainer.id}: rules only work in the hell {} party"
       }
+      val abilities =
+        trainer.hell.ruleList.flatMap { rule -> rule.effectList.filter { it.kindCase == RuleEffect.KindCase.ABILITY } }
+          .map { it.ability }
+      check(abilities.size == abilities.distinct().size && abilities.size <= 3) {
+        "${trainer.id}: rules can grant up to 3 different abilities, got $abilities"
+      }
     }
 
     val strings =
-      (BATTLE_RULES.map { it.name.ifEmpty { it.defaultName() } } + BATTLE_RULES.map { it.announce.ifEmpty { DEFAULT_ANNOUNCE } })
+      (BATTLE_RULES.map { it.name.ifEmpty { it.defaultName() } } + BATTLE_RULES.map { it.announce.ifEmpty { it.defaultAnnounce() } })
         .toSet()
     writer.appendLine(strings.joinToString("\n") { "constexpr u8 ${textId(it)}[] = _(\"$it\");" })
     writer.appendLine()
