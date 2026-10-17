@@ -27,7 +27,6 @@ u8 BattleEventStartTurnExec(struct BattleEvent*);
 
 void RegisterTrainerBattleEvents(u16 trainerId);
 bool8 isExtraSkillEnabled(u8 extraSkill);
-u16 GetTrainerBattleEventData(u16 trainerId, u8 number, u8 dataID);
 // enum to communicate to execBattleEvent as execEnum parameter
 
 // enum that returns from execBattleEvents to communicate if a rendering is needed or if all battleEvents were done correctly

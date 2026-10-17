@@ -6315,36 +6315,13 @@ u16 GetHeldItemIfNotDuplicate(u8 partyId) {
 }
 
 AbilityEnum GetExtraAbilityToSetToBattler(u8 abilityNumber, bool8 isEnemy) {
-    if (isEnemy && abilityNumber < HELL_MODE_EXTRA_ABILITIES) {
-        u16 trainerId = gTrainerBattleOpponent_A;
-        AbilityEnum slots[HELL_MODE_EXTRA_ABILITIES] = {ABILITY_NONE};
-        bool8 slotTaken[HELL_MODE_EXTRA_ABILITIES] = {FALSE};
-        u8 i;
+    AbilityEnum slots[HELL_MODE_EXTRA_ABILITIES] = {ABILITY_NONE};
 
-        // Old battle event table: each event owns a fixed slot, and the first event for a slot wins
-        for (i = 0; i < MAX_HELL_TRAINERS_GYM_SKILLS; i++) {
-            u8 slot;
-
-            switch (GetTrainerBattleEventData(trainerId, i, BATTLE_EVENT_ID)) {
-                case BATTLE_EVENT_EXTRA_ABILITIES_1: slot = 0; break;
-                case BATTLE_EVENT_EXTRA_ABILITIES_2: slot = 1; break;
-                case BATTLE_EVENT_EXTRA_ABILITIES_3: slot = 2; break;
-                default: continue;
-            }
-
-            if (slotTaken[slot]) continue;
-            slotTaken[slot] = TRUE;
-            slots[slot] = GetTrainerBattleEventData(trainerId, i, BATTLE_EVENT_DATA0);
-        }
-
-        // Hell-mode rules fill whatever slots are still empty
-        if ((gBattleTypeFlags & BATTLE_TYPE_TRAINER) && gSaveBlock2Ptr->gameDifficulty == DIFFICULTY_HELL)
-            AddBattleRuleExtraAbilities(trainerId, slots);
-
-        return slots[abilityNumber];
-    }
-
-    return ABILITY_NONE;
+    // Granted by the trainer's hell-mode rules
+    if (!isEnemy || abilityNumber >= HELL_MODE_EXTRA_ABILITIES || !(gBattleTypeFlags & BATTLE_TYPE_TRAINER) || !isHellMode())
+        return ABILITY_NONE;
+    AddBattleRuleExtraAbilities(gTrainerBattleOpponent_A, slots);
+    return slots[abilityNumber];
 }
 
 AbilityEnum GetExtraAbilityForBattler(u8 battler, u8 abilityNumber) {

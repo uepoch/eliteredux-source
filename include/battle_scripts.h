@@ -743,10 +743,6 @@ extern const u8 BattleScript_ExtraSkillSubstitute[];
 
 extern const u8 BattleScript_ExtraSkillStatusOnTeam[];
 
-extern const u8 BattleScript_ExtraSkillTerrainSwamp[];
-extern const u8 BattleScript_ExtraSkillTerrainRainbow[];
-extern const u8 BattleScript_ExtraSkillTerrainFireSea[];
-
 extern const u8 BattleScript_ExtraSkillTerrainStealthRock[];
 extern const u8 BattleScript_ExtraSkillTerrainSpikes[];
 extern const u8 BattleScript_ExtraSkillTerrainToxicSpikes[];
@@ -775,9 +771,6 @@ extern const u8 BattleScript_ExtraSkillCopyStats[];
 extern const u8 BattleScript_TagTeamSecondPhase[];
 
 // New Battle Skill script
-extern const u8 BattleScript_ExtraAbilities1[];
-extern const u8 BattleScript_ExtraAbilities2[];
-extern const u8 BattleScript_ExtraAbilities3[];
 extern const u8 BattleScript_BattleRule[];
 extern const u8 BattleScript_BattleRuleStatChange[];
 extern const u8 BattleScript_BattleRuleTargetStatChange[];

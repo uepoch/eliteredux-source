@@ -326,19 +326,6 @@ u8 BattleEventBeforeFirstTurnExec(struct BattleEvent* battleEvent) {
             SET_STR1(sText_Toxic)
             RUN_BATTLESCRIPT_UNREGISTER(BattleScript_ExtraSkillStatusOnTeam)
 
-        case BATTLE_EVENT_SWAMP:
-            gSideTimers[B_SIDE_PLAYER].started.swamp = TRUE;
-            gSideTimers[B_SIDE_PLAYER].swampTimer = 255;
-            RUN_BATTLESCRIPT_UNREGISTER(BattleScript_ExtraSkillTerrainSwamp)
-        case BATTLE_EVENT_RAINBOW:
-            gSideTimers[B_SIDE_OPPONENT].started.rainbow = TRUE;
-            gSideTimers[B_SIDE_OPPONENT].rainbowTimer = 255;
-            RUN_BATTLESCRIPT_UNREGISTER(BattleScript_ExtraSkillTerrainRainbow)
-        case BATTLE_EVENT_FIRE_SEA:
-            gSideTimers[B_SIDE_PLAYER].started.fireSea = TRUE;
-            gSideTimers[B_SIDE_PLAYER].fireSeaTimer = 255;
-            RUN_BATTLESCRIPT_UNREGISTER(BattleScript_ExtraSkillTerrainFireSea)
-            
         case BATTLE_EVENT_STEALTH_ROCK:
             gSideStatuses[B_SIDE_PLAYER] |= SIDE_STATUS_STEALTH_ROCK;
             gSideTimers[B_SIDE_PLAYER].stealthRockType = TYPE_ROCK;
@@ -389,24 +376,6 @@ u8 BattleEventBeforeFirstTurnExec(struct BattleEvent* battleEvent) {
         case BATTLE_EVENT_NO_PROTECT:
             if (!DepleteTeamPowerPointOfMove(MOVE_PROTECT)) return EXEC_BATTLE_EVENTS_ALL_CLEAR;
             RUN_BATTLESCRIPT_UNREGISTER(BattleScript_ExtraSkillNoProtect)
-
-        case BATTLE_EVENT_EXTRA_ABILITIES_1: {
-            u16 ability = GetExtraAbilityToSetToBattler(0, TRUE);
-            PREPARE_ABILITY_BUFFER(gBattleTextBuff1, ability);
-            RUN_BATTLESCRIPT_UNREGISTER(BattleScript_ExtraAbilities1)
-        }
-
-        case BATTLE_EVENT_EXTRA_ABILITIES_2: {
-            u16 ability = GetExtraAbilityToSetToBattler(1, TRUE);
-            PREPARE_ABILITY_BUFFER(gBattleTextBuff2, ability);
-            RUN_BATTLESCRIPT_UNREGISTER(BattleScript_ExtraAbilities2)
-        }
-
-        case BATTLE_EVENT_EXTRA_ABILITIES_3: {
-            u16 ability = GetExtraAbilityToSetToBattler(2, TRUE);
-            PREPARE_ABILITY_BUFFER(gBattleTextBuff3, ability);
-            RUN_BATTLESCRIPT_UNREGISTER(BattleScript_ExtraAbilities3)
-        }
 
         case BATTLE_EVENT_TENSE_BATTLE:
             CalculateEnemyPartyCount();
@@ -578,18 +547,7 @@ void RegisterTrainerBattleEvents(u16 trainerId) {
         u8 battleEventData0 = sTrainerSkillList[trainerId][i][BATTLE_EVENT_DATA0];  //& 0xF later
         u8 battleEventData1 = sTrainerSkillList[trainerId][i][BATTLE_EVENT_DATA1];  //& 0xF later
 
-        if (battleEvent != BATTLE_EVENT_NONE) {
-            switch (battleEvent) {
-                default:
-                    RegisterBattleEvent(battleEvent, battleEventData0, battleEventData1);
-                    break;
-                case BATTLE_EVENT_EXTRA_ABILITIES_1:
-                case BATTLE_EVENT_EXTRA_ABILITIES_2:
-                case BATTLE_EVENT_EXTRA_ABILITIES_3:
-                    RegisterBattleEvent(battleEvent, 0, 0);
-                    break;
-            }
-        }
+        if (battleEvent != BATTLE_EVENT_NONE) RegisterBattleEvent(battleEvent, battleEventData0, battleEventData1);
     }
 }
 
@@ -603,10 +561,4 @@ bool8 isExtraSkillEnabled(u8 extraSkill) {
     }
 
     return FALSE;
-}
-
-u16 GetTrainerBattleEventData(u16 trainerId, u8 number, u8 dataID) {
-    if (sTrainerSkillList[trainerId][number][BATTLE_EVENT_ID] == BATTLE_EVENT_NONE) return 0;
-
-    return sTrainerSkillList[trainerId][number][dataID];
 }

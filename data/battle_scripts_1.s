@@ -12423,21 +12423,6 @@ BattleScript_ExtraSkillEviolite::
 	playSE SE_M_BRICK_BREAK
 	end3
 
-BattleScript_ExtraAbilities1::
-	call BattleScript_ExtraSkillPopup
-	printstring STRINGID_EXTRA_ABILITIES_1
-	end2
-
-BattleScript_ExtraAbilities2::
-	call BattleScript_ExtraSkillPopup
-	printstring STRINGID_EXTRA_ABILITIES_2
-	end2
-
-BattleScript_ExtraAbilities3::
-	call BattleScript_ExtraSkillPopup
-	printstring STRINGID_EXTRA_ABILITIES_3
-	end2
-
 BattleScript_ExtraSkillNoProtect::
 	call BattleScript_ExtraSkillPopup
 	printstring STRINGID_EXTRASKILL_NOPROTECT
@@ -12712,23 +12697,3 @@ BattleScript_Teatime_EatBerriesLoop_Increment:
 	setbyte sBERRY_OVERRIDE, FALSE
 	goto BattleScript_MoveEnd
 
-BattleScript_ExtraSkillTerrainSwamp::
-	call BattleScript_ExtraSkillTerrain
-	swapbattlerandtargetvia34
-	call BattleScript_SwampStart
-	restoreattackerandtargetfrom34
-	end2
-	
-BattleScript_ExtraSkillTerrainRainbow::
-	call BattleScript_ExtraSkillTerrain
-	swapbattlerandtargetvia34
-	call BattleScript_RainbowStart
-	restoreattackerandtargetfrom34
-	end2
-
-BattleScript_ExtraSkillTerrainFireSea::
-	call BattleScript_ExtraSkillTerrain
-	swapbattlerandtargetvia34
-	call BattleScript_SeaOfFireStart
-	restoreattackerandtargetfrom34
-	end2
