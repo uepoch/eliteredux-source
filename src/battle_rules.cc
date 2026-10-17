@@ -63,16 +63,26 @@ static u8 GetRuleTargets(BattleRuleTarget target, u8 subject) {
             case RULE_TARGET_SUBJECT:
                 if (battler == subject) mask |= 1 << battler;
                 break;
-            case RULE_TARGET_SUBJECT_ALLY:
-                if (battler == BATTLE_PARTNER(subject) && battler != subject) mask |= 1 << battler;
-                break;
-            case RULE_TARGET_SUBJECT_FOES:
+            case RULE_TARGET_FOES:
                 if (GET_BATTLER_SIDE(battler) != GET_BATTLER_SIDE(subject)) mask |= 1 << battler;
+                break;
+            case RULE_TARGET_ALL:
+                mask |= 1 << battler;
                 break;
         }
     }
     return mask;
 }
+
+// Sides matching a target selector, as a bitmask of B_SIDE_*
+static u8 GetRuleSides(BattleRuleTarget target, u8 subject) {
+    if (target == RULE_TARGET_ALL) return (1 << B_SIDE_PLAYER) | (1 << B_SIDE_OPPONENT);
+    return 1 << (GET_BATTLER_SIDE(subject) ^ (target == RULE_TARGET_FOES));
+}
+
+// Subject of battle_start / always rules: targets are relative to the trainer, and its lead stands in for
+// animations and held-item checks
+static u8 GetTrainerLead() { return GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT); }
 
 static int RandomBattlerInMask(u8 mask) {
     int count = 0;
@@ -290,9 +300,9 @@ static bool StepApplies(const BattleRule& rule, int step, u8 subject) {
             return CanBattlerHeal(battler) && gBattleMons[battler].hp < gBattleMons[battler].maxHP;
 
         case RULE_EFFECT_HAZARD:
-            return !stat && (effect.sideMask & (1 << battler)) && ApplyHazard(effect, battler, FALSE);
+            return !stat && (GetRuleSides(effect.target, subject) & (1 << battler)) && ApplyHazard(effect, battler, FALSE);
         case RULE_EFFECT_SIDE_CONDITION:
-            return !stat && (effect.sideMask & (1 << battler)) && ApplySideCondition(effect, battler, subject, FALSE);
+            return !stat && (GetRuleSides(effect.target, subject) & (1 << battler)) && ApplySideCondition(effect, battler, subject, FALSE);
         case RULE_EFFECT_WEATHER:
             return !battler && !stat && ApplyWeather(effect, subject, FALSE);
         case RULE_EFFECT_TERRAIN:
@@ -405,7 +415,7 @@ static bool TriggerMatches(const BattleRule& rule, const ActiveBattleRule& activ
     // `always` rules get their first (announced) run at battle start
     if (trigger == RULE_TRIGGER_BATTLE_START) return rule.trigger == RULE_TRIGGER_BATTLE_START || rule.trigger == RULE_TRIGGER_ALWAYS;
     if (rule.trigger != trigger) return FALSE;
-    if (!SideMatches(rule.whose, subject)) return FALSE;
+    if (!SideMatches(rule.side, subject)) return FALSE;
 
     switch (trigger) {
         case RULE_TRIGGER_ENTRY:
@@ -481,7 +491,8 @@ int TryRunEntryRules(u8 battler) {
 }
 
 // Silently puts back whatever `always` rules set up and lost since (idempotent, so running it per battler is fine)
-static void ReapplyAlwaysRules(u8 subject) {
+static void ReapplyAlwaysRules() {
+    u8 subject = GetTrainerLead();
     for (int i = 0; i < MAX_ACTIVE_RULES; i++) {
         if (!gActiveRules[i].rule) continue;
         const BattleRule& rule = gBattleRules[gActiveRules[i].rule];
@@ -494,13 +505,12 @@ static void ReapplyAlwaysRules(u8 subject) {
 
 int TryRunEndTurnRules(u8 battler) {
     if (gVolatileStructs[battler].ruleTurnsOnField < 0xFF) gVolatileStructs[battler].ruleTurnsOnField++;
-    ReapplyAlwaysRules(battler);
+    ReapplyAlwaysRules();
     return TryRunRules(RULE_TRIGGER_END_TURN, battler);
 }
 
 int TryRunBattleStartRules(void) {
-    // No subject: the trainer's lead stands in for animations and held-item checks
-    return TryRunRules(RULE_TRIGGER_BATTLE_START, GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT));
+    return TryRunRules(RULE_TRIGGER_BATTLE_START, GetTrainerLead());
 }
 
 void ClearBattleRules(void) {

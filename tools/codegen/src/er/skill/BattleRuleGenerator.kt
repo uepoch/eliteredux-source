@@ -12,13 +12,13 @@ import er.proto.MoveEnum
 import er.proto.RuleEffect
 import er.proto.RuleEntry
 import er.proto.RuleField
-import er.proto.RuleFieldSide
 import er.proto.RuleFilter
 import er.proto.RuleHazard
 import er.proto.RuleMon
 import er.proto.RuleRoom
 import er.proto.RuleSideCondition
 import er.proto.RuleStat
+import er.proto.RuleTarget
 import er.proto.RuleTerrain
 import er.proto.RuleTrigger
 import er.proto.RuleTurnTick
@@ -171,13 +171,6 @@ object BattleRuleGenerator : Generator {
         else -> error("Empty field effect")
       }
 
-  private fun BattleRule.sideMask(side: RuleFieldSide): String =
-    when (side) {
-      RuleFieldSide.RULE_FIELD_SIDE_PLAYER -> "(1 << B_SIDE_PLAYER)"
-      RuleFieldSide.RULE_FIELD_SIDE_TRAINER -> "(1 << B_SIDE_OPPONENT)"
-      RuleFieldSide.RULE_FIELD_SIDE_BOTH -> "(1 << B_SIDE_PLAYER) | (1 << B_SIDE_OPPONENT)"
-      else -> error("Hazards and side conditions need a side (${where()}):\n$this")
-    }
 
   private fun BattleRule.defaultName(): String {
     val effect = effectList.first()
@@ -280,6 +273,7 @@ object BattleRuleGenerator : Generator {
         val move = effect.useMove
         check(move.move != MoveEnum.MOVE_NONE) { "use_move without a move" }
         check(move.power in 0..255) { "use_move power must be 0-255" }
+        check(move.user != RuleTarget.RULE_TARGET_ALL) { "use_move user must be RULE_TARGET_SUBJECT or RULE_TARGET_FOES" }
         fields += "kind" to "RULE_EFFECT_USE_MOVE"
         fields += "target" to effect.target.name
         fields += "user" to move.user.name
@@ -297,9 +291,9 @@ object BattleRuleGenerator : Generator {
         val layers = if (hazard.layers == 0) 1 else hazard.layers
         check(layers in 1..hazard.kind.maxLayers) { "${hazard.kind} layers must be 1-${hazard.kind.maxLayers}" }
         fields += "kind" to "RULE_EFFECT_HAZARD"
+        fields += "target" to effect.target.name
         fields += "move" to hazard.kind.info.anim
         fields += "id" to hazard.kind.info.id
-        fields += "sideMask" to sideMask(hazard.side)
         fields += "layers" to "$layers"
       }
       RuleEffect.KindCase.FIELD -> {
@@ -315,15 +309,16 @@ object BattleRuleGenerator : Generator {
               RuleField.KindCase.ROOM -> "RULE_EFFECT_ROOM"
               else -> "RULE_EFFECT_SIDE_CONDITION"
             }
+        if (field.kindCase == RuleField.KindCase.SIDE_CONDITION) fields += "target" to effect.target.name
         fields += "move" to info.anim
         fields += "id" to info.id
         fields += "flag" to info.flag
-        if (field.kindCase == RuleField.KindCase.SIDE_CONDITION) fields += "sideMask" to sideMask(field.sideCondition.side)
         fields += "turns" to "${field.turns}"
       }
       RuleEffect.KindCase.ABILITY -> {
         check(effect.ability != AbilityEnum.ABILITY_NONE) { "ability effect without an ability" }
         check(trigger.kindCase == RuleTrigger.KindCase.ALWAYS) { "ability effects need an always trigger" }
+        check(effect.target == RuleTarget.RULE_TARGET_SUBJECT) { "ability effects only work on the trainer's team (RULE_TARGET_SUBJECT)" }
         fields += "kind" to "RULE_EFFECT_ABILITY"
         fields += "ability" to effect.ability.name
       }
@@ -388,7 +383,7 @@ object BattleRuleGenerator : Generator {
       |$IND// $index: ${TRAINERS_BY_RULE[this]?.joinToString() ?: ""}
       |$IND{
       |$IND$IND.trigger = ${triggerFields[0]},
-      |$IND$IND.whose = ${trigger.whose.name},
+      |$IND$IND.side = ${trigger.side.name},
       |$IND$IND.entryWhen = ${triggerFields[1]},
       |$IND$IND.tick = ${triggerFields[2]},
       |$IND$IND.tickNum = ${triggerFields[3]},

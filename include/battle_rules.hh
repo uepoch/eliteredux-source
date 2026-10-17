@@ -35,10 +35,11 @@ enum BattleRuleTick : u8 {
     RULE_TICK_AFTER,
 };
 
+// A side relative to the subject. Mon effects: the subject itself / its active foes / every active mon.
 enum BattleRuleTarget : u8 {
     RULE_TARGET_SUBJECT,
-    RULE_TARGET_SUBJECT_ALLY,
-    RULE_TARGET_SUBJECT_FOES,
+    RULE_TARGET_FOES,
+    RULE_TARGET_ALL,
 };
 
 enum BattleRuleLimit : u8 {
@@ -94,7 +95,7 @@ enum BattleRuleStatPick : u8 {
 
 struct BattleRuleEffect {
     BattleRuleEffectKind kind;
-    BattleRuleTarget target;  // use_move: the move's target
+    BattleRuleTarget target;  // use_move: the move's target, hazard / side condition: the side(s)
     BattleRuleTarget user;    // use_move only
     u8 statMask;              // stat_change: bit = STAT_* id
     BattleRuleStatPick pick;  // stat_change: added to statMask per target
@@ -105,7 +106,6 @@ struct BattleRuleEffect {
     bool8 unblockable;        // stat_change: skip Clear Body, Mist, Mirror Armor... on the player's mons
     u8 id;                    // hazard: BattleRuleHazard, side condition: BattleRuleSideCondition, weather: ENUM_WEATHER_*
     u32 flag;                 // weather: WEATHER_*_ANY of that weather, terrain / room: its STATUS_FIELD_* flag
-    u8 sideMask;              // hazard / side condition: bit = B_SIDE_*
     u8 turns;                 // field: 0 = permanent
     u8 layers;                // hazard: Spikes / Toxic Spikes layers
     AbilityEnum ability;      // ability
@@ -116,7 +116,7 @@ typedef bool (*BattleRuleFilter)(u8 subject);
 
 struct BattleRule {
     BattleRuleTrigger trigger;
-    BattleRuleSide whose;  // entry / end_turn: whose mon the event is about
+    BattleRuleSide side;            // entry / end_turn: which side's mons the trigger watches
     BattleRuleEntryWhen entryWhen;  // entry
     BattleRuleTick tick;            // end_turn
     u8 tickNum;                     // end_turn
