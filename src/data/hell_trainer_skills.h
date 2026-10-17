@@ -29,9 +29,6 @@ const u16 sTrainerSkillList[TRAINERS_COUNT][MAX_HELL_TRAINERS_GYM_SKILLS][BATTLE
     [TRAINER_GRUNT_PETALBURG_WOODS] = {
         [HELL_MODE_TRAINER_SKILL_1] = {BATTLE_EVENT_EXTRA_ABILITIES_1, ABILITY_FILTER, 0},
     },
-    [TRAINER_JOSH] = {
-        [HELL_MODE_TRAINER_SKILL_1] = {BATTLE_EVENT_POSTURE_DEFENSE, 4, 0},
-    },
     [TRAINER_TOMMY] = {
         [HELL_MODE_TRAINER_SKILL_2] = {BATTLE_EVENT_LAST_BLEED, 2, 0}, // Last bleed does not affect the first Pokémon
     },
@@ -49,9 +46,6 @@ const u16 sTrainerSkillList[TRAINERS_COUNT][MAX_HELL_TRAINERS_GYM_SKILLS][BATTLE
     },
     [TRAINER_JOEY] = {
         [HELL_MODE_TRAINER_SKILL_2] = {BATTLE_EVENT_FIRST_BURNED, 3, 0},
-    },
-    [TRAINER_JERRY_1] = {
-        [HELL_MODE_TRAINER_SKILL_1] = {BATTLE_EVENT_STEADY_SPDEF, 0, 0},
     },
     //[TRAINER_DAWSON] = {
         // TODO: Permanent sun (can be overwritted by player)
@@ -121,7 +115,6 @@ const u16 sTrainerSkillList[TRAINERS_COUNT][MAX_HELL_TRAINERS_GYM_SKILLS][BATTLE
     [TRAINER_FOSTER] = {
         [HELL_MODE_TRAINER_SKILL_1] = {BATTLE_EVENT_EXTRA_ABILITIES_1, ABILITY_ACCELERATE, 0},
         [HELL_MODE_TRAINER_SKILL_2] = {BATTLE_EVENT_EXTRA_ABILITIES_2, ABILITY_ANALYTIC, 0},
-        [HELL_MODE_TRAINER_SKILL_3] = {BATTLE_EVENT_LAST_STAND_STAGES, 5, 1},
     },
     //[TRAINER_BEVERLY] = {
         // TODO: Power of Water moves is doubled (all or just opponent?)
