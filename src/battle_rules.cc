@@ -13,30 +13,16 @@ extern "C" {
 
 // ---- Filter helpers, called from the generated filters (unused ones are fine) ----
 
-static int RuleCountPartyMons(struct Pokemon* party) {
-    int count = 0;
-    for (int i = 0; i < PARTY_SIZE; i++) {
-        u16 species = GetMonData(&party[i], MON_DATA_SPECIES2);
-        if (species != SPECIES_NONE && species != SPECIES_EGG) count++;
-    }
-    return count;
-}
-
 [[maybe_unused]] static bool RuleMonFirstN(u8 subject, int n) { return gBattlerPartyIndexes[subject] < n; }
 
 [[maybe_unused]] static bool RuleMonLastN(u8 subject, int n) {
-    return gBattlerPartyIndexes[subject] >= RuleCountPartyMons(GetBattlerParty(subject)) - n;
+    int count = GET_BATTLER_SIDE(subject) == B_SIDE_PLAYER ? CalculatePlayerPartyCount() : CalculateEnemyPartyCount();
+    return gBattlerPartyIndexes[subject] >= count - n;
 }
 
+// No usable mon left in the party and no partner on the field
 [[maybe_unused]] static bool RuleMonLastRemaining(u8 subject) {
-    struct Pokemon* party = GetBattlerParty(subject);
-    for (int i = 0; i < PARTY_SIZE; i++) {
-        if (i == gBattlerPartyIndexes[subject]) continue;
-        u16 species = GetMonData(&party[i], MON_DATA_SPECIES2);
-        if (species == SPECIES_NONE || species == SPECIES_EGG) continue;
-        if (GetMonData(&party[i], MON_DATA_HP)) return FALSE;
-    }
-    return TRUE;
+    return !CountUsablePartyMons(subject) && !(IsDoubleBattle() && IsBattlerAlive(BATTLE_PARTNER(subject)));
 }
 
 [[maybe_unused]] static bool RuleMonSpecies(u8 subject, u16 species) { return gBattleMons[subject].species == species; }
@@ -97,52 +83,24 @@ static int RandomBattlerInMask(u8 mask) {
     return -1;
 }
 
-// The trainer's Pokémon behind a stat change on the player's side: the subject if it's the trainer's, else a
-// random one on the field. -1 = none (the change is then self-applied).
-static int GetStatChangeSource(u8 subject) {
+// The trainer's Pokémon behind a stat change on the player's side: the subject if it's the trainer's, else the
+// one facing the target (or its partner). -1 = none, the change is then self-applied.
+static int GetStatChangeSource(u8 subject, u8 target) {
     if (GET_BATTLER_SIDE(subject) == B_SIDE_OPPONENT) return subject;
-    u8 mask = 0;
-    for (u8 battler = 0; battler < gBattlersCount; battler++) {
-        if (GET_BATTLER_SIDE(battler) == B_SIDE_OPPONENT && IsBattlerAlive(battler)) mask |= 1 << battler;
-    }
-    return RandomBattlerInMask(mask);
+    u8 source = BATTLE_OPPOSITE(target);
+    if (!IsBattlerAlive(source)) source = BATTLE_PARTNER(source);
+    return IsBattlerAlive(source) ? source : -1;
 }
 
-static bool IsSpreadOrSelfMove(u32 moveTarget) {
-    return moveTarget & (MOVE_TARGET_BOTH | MOVE_TARGET_FOES_AND_ALLY | MOVE_TARGET_OPPONENTS_FIELD | MOVE_TARGET_DEPENDS |
-                         MOVE_TARGET_USER | MOVE_TARGET_ALLY);
-}
-
-// Like CanUseExtraMove, but self-targeting moves are fine
-static bool CanRuleUseMove(u8 user, u8 target) {
-    return IsBattlerAlive(user) && IsBattlerAlive(target) && !gRoundStructs[user].attackCancelled;
-}
-
-// Spread and self moves start where the game normally starts them (it moves on to the other targets itself);
-// single-target moves hit a random matching Pokémon. Returns a mask of the allowed targets.
-static u8 GetMoveTargets(const BattleRuleEffect& effect, u8 user, u8 subject) {
-    u32 moveTarget = GetBattlerBattleMoveTargetFlags(effect.move, user);
-    u8 mask = 0;
-    if (IsSpreadOrSelfMove(moveTarget)) {
-        mask = 1 << GetMoveTarget(user, effect.move, 0);
-    } else {
-        mask = GetRuleTargets(effect.target, subject);
-    }
-    u8 allowed = 0;
-    for (u8 battler = 0; battler < gBattlersCount; battler++) {
-        if ((mask & (1 << battler)) && CanRuleUseMove(user, battler)) allowed |= 1 << battler;
-    }
-    return allowed;
-}
-
-// Users that have at least one allowed target
-static u8 GetMoveUsers(const BattleRuleEffect& effect, u8 subject) {
-    u8 users = GetRuleTargets(effect.user, subject);
-    u8 allowed = 0;
-    for (u8 battler = 0; battler < gBattlersCount; battler++) {
-        if ((users & (1 << battler)) && GetMoveTargets(effect, battler, subject)) allowed |= 1 << battler;
-    }
-    return allowed;
+// User and target picked like abilities' follow-up moves (spread and self moves included). FALSE = can't use it.
+static bool PickMoveBattlers(const BattleRuleEffect& effect, u8 subject, u8* user, u8* target) {
+    int pickedUser = RandomBattlerInMask(GetRuleTargets(effect.user, subject));
+    int pickedTarget = RandomBattlerInMask(GetRuleTargets(effect.target, subject));
+    if (pickedUser < 0) return FALSE;
+    *user = pickedUser;
+    *target = pickedTarget < 0 ? pickedUser : pickedTarget;
+    return AdjustFollowupMoveTarget(*user, target, effect.move, (FollowupType)(FOLLOWUP_ALLOW_FAILED | FOLLOWUP_ALLOW_SELF)) &&
+           CanUseExtraMove(*user, *target);
 }
 
 static u8 GetEffectStatMask(const BattleRuleEffect& effect, u8 battler) {
@@ -168,21 +126,19 @@ static bool StepApplies(const BattleRule& rule, u8 step, u8 subject) {
         case RULE_EFFECT_STAT_CHANGE:
             if (!(GetRuleTargets(effect.target, subject) & (1 << battler))) return FALSE;
             if (!(GetEffectStatMask(effect, battler) & (1 << stat))) return FALSE;
-            if (effect.amount > 0) return gBattleMons[battler].statStages[stat] < MAX_STAT_STAGE;
-            return gBattleMons[battler].statStages[stat] > MIN_STAT_STAGE;
+            return effect.amount > 0 ? CanRaiseStat(battler, stat) : CanLowerStat(battler, stat);
 
         case RULE_EFFECT_USE_MOVE: {
             // One attempt per effect, on the step with battler 0 and stat 0
             if (battler || stat) return FALSE;
-            // The extra-attack queue holds MAX_BATTLERS_COUNT waiting attacks on purpose (balance); full = skip
-            return gQueuedAttackCount < MAX_BATTLERS_COUNT && GetMoveUsers(effect, subject);
+            u8 user, target;
+            return gQueuedAttackCount < MAX_BATTLERS_COUNT && PickMoveBattlers(effect, subject, &user, &target);
         }
 
         case RULE_EFFECT_HEAL:
             if (stat) return FALSE;
             if (!(GetRuleTargets(effect.target, subject) & (1 << battler))) return FALSE;
-            if (gStatuses3[battler] & STATUS3_HEAL_BLOCK) return FALSE;
-            return gBattleMons[battler].hp < gBattleMons[battler].maxHP;
+            return CanBattlerHeal(battler) && gBattleMons[battler].hp < gBattleMons[battler].maxHP;
 
         default:
             return FALSE;
@@ -197,25 +153,26 @@ static const u8* ApplyStep(const BattleRule& rule, u16 ruleId, u8 step, u8 subje
     switch (effect.kind) {
         case RULE_EFFECT_STAT_CHANGE: {
             SetStatChanger(RULE_STEP_STAT(step), effect.amount);
-            int source = (!effect.unblockable && GET_BATTLER_SIDE(battler) == B_SIDE_PLAYER) ? GetStatChangeSource(subject) : -1;
+            int source = (!effect.unblockable && GET_BATTLER_SIDE(battler) == B_SIDE_PLAYER) ? GetStatChangeSource(subject, battler) : -1;
             if (source >= 0) {
                 // Caused by the trainer's Pokémon: goes through Clear Body, Mist, Mirror Armor...
                 gBattlerAttacker = source;
                 gBattlerTarget = battler;
-                return effect.amount > 0 ? BattleScript_BattleRuleTargetStatUp : BattleScript_BattleRuleTargetStatDown;
+                return BattleScript_BattleRuleTargetStatChange;
             }
             gBattlerAttacker = battler;
-            return effect.amount > 0 ? BattleScript_BattleRuleStatUp : BattleScript_BattleRuleStatDown;
+            return BattleScript_BattleRuleStatChange;
         }
 
         case RULE_EFFECT_USE_MOVE: {
+            u8 user, target;
+            if (!PickMoveBattlers(effect, subject, &user, &target)) return NULL;
             // Field by field: the battler fields are 2-bit bitfields, which braced init treats as narrowing
             struct ExtraAttackActionStruct attack = {};
             attack.move = effect.move;
             attack.movePower = effect.power;
-            int user = RandomBattlerInMask(GetMoveUsers(effect, subject));
             attack.attacker = user;
-            attack.target = RandomBattlerInMask(GetMoveTargets(effect, user, subject));
+            attack.target = target;
             attack.rule = ruleId;
             gQueuedExtraAttackData[++gQueuedAttackCount] = attack;
             return NULL;

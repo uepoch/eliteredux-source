@@ -780,10 +780,8 @@ extern const u8 BattleScript_ExtraAbilities2[];
 extern const u8 BattleScript_ExtraAbilities3[];
 extern const u8 BattleScript_AnnounceBattleSkillEnd3[];
 extern const u8 BattleScript_BattleRule[];
-extern const u8 BattleScript_BattleRuleStatUp[];
-extern const u8 BattleScript_BattleRuleStatDown[];
-extern const u8 BattleScript_BattleRuleTargetStatUp[];
-extern const u8 BattleScript_BattleRuleTargetStatDown[];
+extern const u8 BattleScript_BattleRuleStatChange[];
+extern const u8 BattleScript_BattleRuleTargetStatChange[];
 extern const u8 BattleScript_BattleRuleHeal[];
 extern const u8 BattleScript_AttackerUsedRuleMove[];
 

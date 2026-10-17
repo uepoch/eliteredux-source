@@ -12478,35 +12478,10 @@ BattleScript_BattleRuleEnd:
 	end3
 
 @ Sub-scripts: C sets gBattlerAttacker to the Pokémon affected (and the stat changer / gBattleMoveDamage).
-@ The Target versions are for changes on the player's Pokémon caused by the trainer's (gBattlerAttacker = the
-@ trainer's Pokémon, gBattlerTarget = the affected one), so Clear Body, Mist, Mirror Armor... apply. Not Protect.
-BattleScript_BattleRuleTargetStatUp::
-	statbuffchange STAT_BUFF_ALLOW_PTR | STAT_BUFF_NOT_PROTECT_AFFECTED, BattleScript_BattleRuleStatChangeEnd
-	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_ROSE_EMPTY, BattleScript_BattleRuleStatChangeEnd
-	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_INCREASE, BattleScript_BattleRuleTargetStatUpString
-	setgraphicalstatchangevalues
-	playanimation BS_TARGET, B_ANIM_STATS_CHANGE, sB_ANIM_ARG1
-	waitanimation
-BattleScript_BattleRuleTargetStatUpString:
-	printfromtable gStatUpStringIds
-	waitmessage B_WAIT_TIME_LONG
-	return
-
-BattleScript_BattleRuleTargetStatDown::
-	statbuffchange STAT_BUFF_ALLOW_PTR | STAT_BUFF_NOT_PROTECT_AFFECTED, BattleScript_BattleRuleStatChangeEnd
-	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_FELL_EMPTY, BattleScript_BattleRuleStatChangeEnd
-	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_DECREASE, BattleScript_BattleRuleTargetStatDownString
-	setgraphicalstatchangevalues
-	playanimation BS_TARGET, B_ANIM_STATS_CHANGE, sB_ANIM_ARG1
-	waitanimation
-BattleScript_BattleRuleTargetStatDownString:
-	printfromtable gStatDownStringIds
-	waitmessage B_WAIT_TIME_LONG
-	return
-
-BattleScript_BattleRuleStatUp::
+@ Stat changes go through statbuffchange, so Contrary, Simple etc. apply. Rose and fell lines share one format
+@ (B_BUFF2 says which), so the gStatUpStringIds table prints both.
+BattleScript_BattleRuleStatChange::
 	statbuffchange MOVE_EFFECT_AFFECTS_USER | STAT_BUFF_ALLOW_PTR, BattleScript_BattleRuleStatChangeEnd
-	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_INCREASE, BattleScript_BattleRuleStatChangeEnd
 	setgraphicalstatchangevalues
 	playanimation BS_ATTACKER, B_ANIM_STATS_CHANGE, sB_ANIM_ARG1
 	waitanimation
@@ -12515,13 +12490,14 @@ BattleScript_BattleRuleStatUp::
 BattleScript_BattleRuleStatChangeEnd:
 	return
 
-BattleScript_BattleRuleStatDown::
-	statbuffchange MOVE_EFFECT_AFFECTS_USER | STAT_BUFF_ALLOW_PTR, BattleScript_BattleRuleStatChangeEnd
-	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_DECREASE, BattleScript_BattleRuleStatChangeEnd
+@ Change on the player's Pokémon caused by the trainer's (gBattlerAttacker = trainer's, gBattlerTarget = affected),
+@ so Clear Body, Mist, Mirror Armor... can stop it. Not Protect.
+BattleScript_BattleRuleTargetStatChange::
+	statbuffchange STAT_BUFF_ALLOW_PTR | STAT_BUFF_NOT_PROTECT_AFFECTED, BattleScript_BattleRuleStatChangeEnd
 	setgraphicalstatchangevalues
-	playanimation BS_ATTACKER, B_ANIM_STATS_CHANGE, sB_ANIM_ARG1
+	playanimation BS_TARGET, B_ANIM_STATS_CHANGE, sB_ANIM_ARG1
 	waitanimation
-	printfromtable gStatDownStringIds
+	printfromtable gStatUpStringIds
 	waitmessage B_WAIT_TIME_LONG
 	return
 
