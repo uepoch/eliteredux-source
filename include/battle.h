@@ -394,7 +394,7 @@ struct BattleHistory {
 struct SavedStackData {
     u16 abilityOverride;
     u16 activeRule;
-    u8 ruleStep;
+    u16 ruleStep;
     u8 multistringChooser;
     u8 statChanger;
     u8 stackBattler1:2;
@@ -834,7 +834,7 @@ struct BattleScripting {
     u8 acceleratedTwoTurn;
     u8 usingExtraMove;
     u8 abilityLoopCounter;
-    u8 ruleStep;  // Next step of the running hell-mode rule
+    u16 ruleStep;  // Next step of the running hell-mode rule
 };
 
 // rom_80A5C6C

@@ -23,6 +23,7 @@ void RegisterTrainerBattleRules(u16 trainerId);
 // Engine hooks. Truthy when a script was pushed (callers return and resume, as for abilities).
 int TryRunEntryRules(u8 battler);
 int TryRunEndTurnRules(u8 battler);
+int TryRunBattleStartRules(void);
 
 const u8* GetBattleRuleName(u16 rule);
 const u8* GetBattleRuleAnnounce(u16 rule);

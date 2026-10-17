@@ -12504,6 +12504,11 @@ BattleScript_BattleRuleTargetStatChange::
 BattleScript_BattleRuleHeal::
 	goto BattleScript_AbilityHpHeal_NoPopup
 
+@ Hazard / field effect: C already set the state and started its move animation
+BattleScript_BattleRuleAnimation::
+	waitanimation
+	return
+
 @ Extra attack queued by a rule (gQueuedExtraAttackData[0].rule)
 BattleScript_AttackerUsedRuleMove::
 	extraskillpopup 2

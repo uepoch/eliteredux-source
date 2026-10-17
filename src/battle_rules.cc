@@ -3,6 +3,8 @@
 extern "C" {
 #include "battle.h"
 #include "battle_anim.h"
+#include "battle_controllers.h"
+#include "event_data.h"
 #include "battle_scripts.h"
 #include "battle_script_commands.h"
 #include "battle_util.h"
@@ -110,14 +112,161 @@ static u8 GetEffectStatMask(const BattleRuleEffect& effect, u8 battler) {
     return mask;
 }
 
+// ---- Hazards and field effects. Each returns whether it would change anything; `apply` actually does it. ----
+
+static u8 GetFieldTurns(const BattleRuleEffect& effect, u8 permanent) { return effect.turns ? effect.turns : permanent; }
+
+static bool ApplyHazard(const BattleRuleEffect& effect, u8 side, bool apply) {
+    struct SideTimer& timer = gSideTimers[side];
+    u32& statuses = gSideStatuses[side];
+
+    switch (effect.id) {
+        case RULE_HAZARD_SPIKES:
+            if (timer.spikesAmount >= effect.layers) return FALSE;
+            if (apply) {
+                timer.spikesAmount = effect.layers;
+                statuses |= SIDE_STATUS_SPIKES;
+            }
+            return TRUE;
+        case RULE_HAZARD_TOXIC_SPIKES:
+            if (timer.toxicSpikesAmount >= effect.layers) return FALSE;
+            if (apply) {
+                timer.toxicSpikesAmount = effect.layers;
+                statuses |= SIDE_STATUS_TOXIC_SPIKES;
+            }
+            return TRUE;
+        case RULE_HAZARD_STEALTH_ROCK:
+            if (statuses & SIDE_STATUS_STEALTH_ROCK) return FALSE;
+            if (apply) {
+                statuses |= SIDE_STATUS_STEALTH_ROCK;
+                timer.stealthRockType = TYPE_ROCK;
+            }
+            return TRUE;
+        case RULE_HAZARD_STICKY_WEB:
+        case RULE_HAZARD_FOAMY_WEB: {
+            bool foamy = effect.id == RULE_HAZARD_FOAMY_WEB;
+            if ((statuses & SIDE_STATUS_STICKY_WEB) && (!foamy || timer.foamyWeb)) return FALSE;
+            if (apply) {
+                statuses |= SIDE_STATUS_STICKY_WEB;
+                timer.stickyWebTimer = 0;
+                timer.foamyWeb |= foamy;
+            }
+            return TRUE;
+        }
+        case RULE_HAZARD_CALTROPS:
+            if (timer.caltrops) return FALSE;
+            if (apply) timer.caltrops = TRUE;
+            return TRUE;
+        case RULE_HAZARD_HOT_COALS:
+            if (timer.hotCoals) return FALSE;
+            if (apply) timer.hotCoals = TRUE;
+            return TRUE;
+        default:
+            return FALSE;
+    }
+}
+
+// Same fields as the moves set: status flag (if any), timer, "started this turn" and the user for wear-off messages
+#define SIDE_CONDITION(flag, name, permanent)                                  \
+    if (timer.name##Timer) return FALSE;                                       \
+    if (apply) {                                                               \
+        statuses |= (flag);                                                    \
+        timer.name##Timer = GetFieldTurns(effect, permanent);                  \
+        timer.started.name = TRUE;                                             \
+    }                                                                          \
+    return TRUE;
+
+static bool ApplySideCondition(const BattleRuleEffect& effect, u8 side, u8 battler, bool apply) {
+    struct SideTimer& timer = gSideTimers[side];
+    u32& statuses = gSideStatuses[side];
+
+    switch (effect.id) {
+        case RULE_SIDE_CONDITION_REFLECT:
+            if (apply) timer.reflectBattlerId = battler;
+            SIDE_CONDITION(SIDE_STATUS_REFLECT, reflect, 0xFF)
+        case RULE_SIDE_CONDITION_LIGHT_SCREEN:
+            if (apply) timer.lightscreenBattlerId = battler;
+            SIDE_CONDITION(SIDE_STATUS_LIGHTSCREEN, lightscreen, 0xFF)
+        case RULE_SIDE_CONDITION_AURORA_VEIL:
+            if (apply) timer.auroraVeilBattlerId = battler;
+            SIDE_CONDITION(SIDE_STATUS_AURORA_VEIL, auroraVeil, 0xFF)
+        case RULE_SIDE_CONDITION_TAILWIND:
+            if (apply) timer.tailwindBattlerId = battler;
+            SIDE_CONDITION(SIDE_STATUS_TAILWIND, tailwind, 0xFF)
+        case RULE_SIDE_CONDITION_MIST:
+            if (apply) timer.mistBattlerId = battler;
+            SIDE_CONDITION(SIDE_STATUS_MIST, mist, 0xFF)
+        case RULE_SIDE_CONDITION_SAFEGUARD:
+            if (apply) timer.safeguardBattlerId = battler;
+            SIDE_CONDITION(SIDE_STATUS_SAFEGUARD, safeguard, 0xFF)
+        case RULE_SIDE_CONDITION_LUCKY_CHANT:
+            if (apply) timer.luckyChantBattlerId = battler;
+            SIDE_CONDITION(SIDE_STATUS_LUCKY_CHANT, luckyChant, 0xFF)
+        case RULE_SIDE_CONDITION_SWAMP:
+            SIDE_CONDITION(0, swamp, 0xFF)
+        case RULE_SIDE_CONDITION_SEA_OF_FIRE:
+            SIDE_CONDITION(0, fireSea, 0xFF)
+        case RULE_SIDE_CONDITION_RAINBOW:
+            SIDE_CONDITION(0, rainbow, 0xFF)
+        case RULE_SIDE_CONDITION_SMOKESCREEN:
+            // 3-bit timer, so "permanent" lasts 7 turns (an `always` rule puts it back)
+            if (apply) timer.smokescreenBattler = battler;
+            SIDE_CONDITION(SIDE_STATUS_SMOKESCREEN, smokescreen, 7)
+        default:
+            return FALSE;
+    }
+}
+
+static bool ApplyWeather(const BattleRuleEffect& effect, u8 battler, bool apply) {
+    bool locked = FlagGet(FLAG_PERMANENT_UNCHANGEABLE_WEATHER);
+    if (gBattleWeather & effect.flag) return effect.turns == 0 && !locked && (apply ? SetPermanentWeather(effect.id) : TRUE);
+    if (locked) return FALSE;  // another permanent weather (map or rule)
+    if (!apply) return TRUE;
+    if (!effect.turns) return SetPermanentWeather(effect.id);
+    if (!TryChangeBattleWeather(battler, effect.id, FALSE)) return FALSE;
+    gWishFutureKnock.weatherDuration = effect.turns;
+    return TRUE;
+}
+
+static bool ApplyTerrain(const BattleRuleEffect& effect, u8 battler, bool apply) {
+    if (gFieldStatuses & effect.flag) return FALSE;
+    if ((gFieldStatuses & STATUS_FIELD_TERRAIN_PERMANENT) && (gFieldStatuses & STATUS_FIELD_TERRAIN_ANY)) return FALSE;
+    if (!apply) return TRUE;
+    gFieldStatuses &= ~STATUS_FIELD_TERRAIN_PERMANENT;  // stale bit if the permanent terrain was removed
+    if (!TryChangeBattleTerrain(battler, effect.flag, &gFieldTimers.terrainTimer)) return FALSE;
+    if (effect.turns)
+        gFieldTimers.terrainTimer = effect.turns;
+    else
+        gFieldStatuses |= STATUS_FIELD_TERRAIN_PERMANENT;
+    return TRUE;
+}
+
+static bool ApplyRoom(const BattleRuleEffect& effect, bool apply) {
+    if (gFieldStatuses & effect.flag) return FALSE;
+    return !apply || TrySetFieldTimer(effect.flag, GetFieldTurns(effect, ROOM_DURATION_MAX));
+}
+
+// Plays the effect's move animation from `attacker` towards the other side; returns the script that waits for it
+static const u8* PlayRuleAnimation(const BattleRuleEffect& effect, u8 side) {
+    if (!effect.move) return NULL;
+    u8 target = GetBattlerAtPosition(side == B_SIDE_PLAYER ? B_POSITION_PLAYER_LEFT : B_POSITION_OPPONENT_LEFT);
+    u8 attacker = BATTLE_OPPOSITE(target);
+    gBattlerAttacker = gActiveBattler = attacker;
+    gBattlerTarget = target;
+    BtlController_EmitMoveAnimation(0, effect.move, 0, 0, 0, gBattleMons[attacker].friendship, &gVolatileStructs[attacker], 0);
+    MarkBattlerForControllerExec(attacker);
+    return BattleScript_BattleRuleAnimation;
+}
+
 // A rule's effects run as a list of steps: effect x battler x stat, so one push covers every target and stat.
+// Hazards and side conditions use the battler slot for the side; whole-field effects only use battler 0.
 #define RULE_STEP(effect, battler, stat) ((effect) * 32 + (battler) * 8 + (stat))
 #define RULE_STEP_COUNT(rule) RULE_STEP((rule).effectCount, 0, 0)
 #define RULE_STEP_EFFECT(step) ((step) / 32)
 #define RULE_STEP_BATTLER(step) (((step) / 8) % 4)
 #define RULE_STEP_STAT(step) ((step) % 8)
 
-static bool StepApplies(const BattleRule& rule, u8 step, u8 subject) {
+static bool StepApplies(const BattleRule& rule, int step, u8 subject) {
     const BattleRuleEffect& effect = rule.effects[RULE_STEP_EFFECT(step)];
     u8 battler = RULE_STEP_BATTLER(step);
     u8 stat = RULE_STEP_STAT(step);
@@ -140,13 +289,25 @@ static bool StepApplies(const BattleRule& rule, u8 step, u8 subject) {
             if (!(GetRuleTargets(effect.target, subject) & (1 << battler))) return FALSE;
             return CanBattlerHeal(battler) && gBattleMons[battler].hp < gBattleMons[battler].maxHP;
 
+        case RULE_EFFECT_HAZARD:
+            return !stat && (effect.sideMask & (1 << battler)) && ApplyHazard(effect, battler, FALSE);
+        case RULE_EFFECT_SIDE_CONDITION:
+            return !stat && (effect.sideMask & (1 << battler)) && ApplySideCondition(effect, battler, subject, FALSE);
+        case RULE_EFFECT_WEATHER:
+            return !battler && !stat && ApplyWeather(effect, subject, FALSE);
+        case RULE_EFFECT_TERRAIN:
+            return !battler && !stat && ApplyTerrain(effect, subject, FALSE);
+        case RULE_EFFECT_ROOM:
+            return !battler && !stat && ApplyRoom(effect, FALSE);
+
         default:
             return FALSE;
     }
 }
 
 // Does the step's work. Returns a sub-script to call, or NULL if there's nothing to show.
-static const u8* ApplyStep(const BattleRule& rule, u16 ruleId, u8 step, u8 subject) {
+// `silent` (re-applying `always` rules) skips the animations.
+static const u8* ApplyStep(const BattleRule& rule, u16 ruleId, int step, u8 subject, bool silent = FALSE) {
     const BattleRuleEffect& effect = rule.effects[RULE_STEP_EFFECT(step)];
     u8 battler = RULE_STEP_BATTLER(step);
 
@@ -185,6 +346,23 @@ static const u8* ApplyStep(const BattleRule& rule, u16 ruleId, u8 step, u8 subje
             gBattlerAttacker = battler;
             return BattleScript_BattleRuleHeal;
 
+        // Field effects change the state right away; the script only shows it
+        case RULE_EFFECT_HAZARD:
+            ApplyHazard(effect, battler, TRUE);
+            return silent ? NULL : PlayRuleAnimation(effect, battler);
+        case RULE_EFFECT_SIDE_CONDITION:
+            ApplySideCondition(effect, battler, subject, TRUE);
+            return silent ? NULL : PlayRuleAnimation(effect, battler);
+        case RULE_EFFECT_WEATHER:
+            ApplyWeather(effect, subject, TRUE);
+            return silent ? NULL : PlayRuleAnimation(effect, B_SIDE_PLAYER);
+        case RULE_EFFECT_TERRAIN:
+            ApplyTerrain(effect, subject, TRUE);
+            return silent ? NULL : PlayRuleAnimation(effect, B_SIDE_PLAYER);
+        case RULE_EFFECT_ROOM:
+            ApplyRoom(effect, TRUE);
+            return silent ? NULL : PlayRuleAnimation(effect, B_SIDE_PLAYER);
+
         default:
             return NULL;
     }
@@ -221,8 +399,10 @@ const u8* RunBattleRuleStep(void) {
 }
 
 static bool TriggerMatches(const BattleRule& rule, const ActiveBattleRule& active, BattleRuleTrigger trigger, u8 subject) {
+    // `always` rules get their first (announced) run at battle start
+    if (trigger == RULE_TRIGGER_BATTLE_START) return rule.trigger == RULE_TRIGGER_BATTLE_START || rule.trigger == RULE_TRIGGER_ALWAYS;
     if (rule.trigger != trigger) return FALSE;
-    if (!SideMatches(rule.side, subject)) return FALSE;
+    if (!SideMatches(rule.whose, subject)) return FALSE;
 
     switch (trigger) {
         case RULE_TRIGGER_ENTRY:
@@ -297,9 +477,27 @@ int TryRunEntryRules(u8 battler) {
     return TryRunRules(RULE_TRIGGER_ENTRY, battler);
 }
 
+// Silently puts back whatever `always` rules set up and lost since (idempotent, so running it per battler is fine)
+static void ReapplyAlwaysRules(u8 subject) {
+    for (int i = 0; i < MAX_ACTIVE_RULES; i++) {
+        if (!gActiveRules[i].rule) continue;
+        const BattleRule& rule = gBattleRules[gActiveRules[i].rule];
+        if (rule.trigger != RULE_TRIGGER_ALWAYS) continue;
+        for (int step = 0; step < RULE_STEP_COUNT(rule); step++) {
+            if (StepApplies(rule, step, subject)) ApplyStep(rule, gActiveRules[i].rule, step, subject, TRUE);
+        }
+    }
+}
+
 int TryRunEndTurnRules(u8 battler) {
     if (gVolatileStructs[battler].ruleTurnsOnField < 0xFF) gVolatileStructs[battler].ruleTurnsOnField++;
+    ReapplyAlwaysRules(battler);
     return TryRunRules(RULE_TRIGGER_END_TURN, battler);
+}
+
+int TryRunBattleStartRules(void) {
+    // No subject: the trainer's lead stands in for animations and held-item checks
+    return TryRunRules(RULE_TRIGGER_BATTLE_START, GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT));
 }
 
 void ClearBattleRules(void) {

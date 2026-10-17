@@ -8,12 +8,14 @@ extern "C" {
 #include "battle_rules.h"
 }
 
-#define BATTLE_RULE_MAX_EFFECTS 3
+#define BATTLE_RULE_MAX_EFFECTS 8
 
 enum BattleRuleTrigger : u8 {
     RULE_TRIGGER_NONE,
     RULE_TRIGGER_ENTRY,
     RULE_TRIGGER_END_TURN,
+    RULE_TRIGGER_BATTLE_START,
+    RULE_TRIGGER_ALWAYS,  // battle start, then silently re-applied at the end of each turn
 };
 
 enum BattleRuleSide : u8 {
@@ -51,6 +53,35 @@ enum BattleRuleEffectKind : u8 {
     RULE_EFFECT_STAT_CHANGE,
     RULE_EFFECT_USE_MOVE,
     RULE_EFFECT_HEAL,
+    RULE_EFFECT_HAZARD,
+    RULE_EFFECT_WEATHER,
+    RULE_EFFECT_TERRAIN,
+    RULE_EFFECT_ROOM,
+    RULE_EFFECT_SIDE_CONDITION,
+};
+
+enum BattleRuleHazard : u8 {
+    RULE_HAZARD_SPIKES,
+    RULE_HAZARD_TOXIC_SPIKES,
+    RULE_HAZARD_STEALTH_ROCK,
+    RULE_HAZARD_STICKY_WEB,
+    RULE_HAZARD_FOAMY_WEB,
+    RULE_HAZARD_CALTROPS,
+    RULE_HAZARD_HOT_COALS,
+};
+
+enum BattleRuleSideCondition : u8 {
+    RULE_SIDE_CONDITION_REFLECT,
+    RULE_SIDE_CONDITION_LIGHT_SCREEN,
+    RULE_SIDE_CONDITION_AURORA_VEIL,
+    RULE_SIDE_CONDITION_TAILWIND,
+    RULE_SIDE_CONDITION_MIST,
+    RULE_SIDE_CONDITION_SAFEGUARD,
+    RULE_SIDE_CONDITION_LUCKY_CHANT,
+    RULE_SIDE_CONDITION_SWAMP,
+    RULE_SIDE_CONDITION_SEA_OF_FIRE,
+    RULE_SIDE_CONDITION_RAINBOW,
+    RULE_SIDE_CONDITION_SMOKESCREEN,
 };
 
 // Stats picked per target when the effect runs
@@ -67,10 +98,15 @@ struct BattleRuleEffect {
     u8 statMask;              // stat_change: bit = STAT_* id
     BattleRuleStatPick pick;  // stat_change: added to statMask per target
     s8 amount;                // stat_change
-    MoveEnum move;            // use_move
+    MoveEnum move;            // use_move; hazard / field: the animation (MOVE_NONE = none)
     u8 power;                 // use_move, 0 = the move's own
     u8 percent;               // heal
     bool8 unblockable;        // stat_change: skip Clear Body, Mist, Mirror Armor... on the player's mons
+    u8 id;                    // hazard: BattleRuleHazard, side condition: BattleRuleSideCondition, weather: ENUM_WEATHER_*
+    u32 flag;                 // weather: WEATHER_*_ANY of that weather, terrain / room: its STATUS_FIELD_* flag
+    u8 sideMask;              // hazard / side condition: bit = B_SIDE_*
+    u8 turns;                 // field: 0 = permanent
+    u8 layers;                // hazard: Spikes / Toxic Spikes layers
 };
 
 // Generated from the rule's filters. Subject = the mon the event is about.
@@ -78,7 +114,7 @@ typedef bool (*BattleRuleFilter)(u8 subject);
 
 struct BattleRule {
     BattleRuleTrigger trigger;
-    BattleRuleSide side;
+    BattleRuleSide whose;  // entry / end_turn: whose mon the event is about
     BattleRuleEntryWhen entryWhen;  // entry
     BattleRuleTick tick;            // end_turn
     u8 tickNum;                     // end_turn

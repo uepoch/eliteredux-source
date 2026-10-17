@@ -783,6 +783,7 @@ extern const u8 BattleScript_BattleRule[];
 extern const u8 BattleScript_BattleRuleStatChange[];
 extern const u8 BattleScript_BattleRuleTargetStatChange[];
 extern const u8 BattleScript_BattleRuleHeal[];
+extern const u8 BattleScript_BattleRuleAnimation[];
 extern const u8 BattleScript_AttackerUsedRuleMove[];
 
 extern const u8 BattleScript_ExtraSkillEviolite[];

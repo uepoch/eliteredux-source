@@ -3367,6 +3367,7 @@ static void TryDoEventsBeforeFirstTurn(void) {
         int any = FALSE;
         gBattleStruct->ranSkillAnnounce = TRUE;
         ON_SKILL(skill->onBattleStart, any |= skill->onBattleStart(skillId))
+        any |= TryRunBattleStartRules();
         if (any) return;
     }
 

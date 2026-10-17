@@ -9,18 +9,25 @@ import er.proto.BattleRule
 import er.proto.MoveEnum
 import er.proto.RuleEffect
 import er.proto.RuleEntry
+import er.proto.RuleField
+import er.proto.RuleFieldSide
 import er.proto.RuleFilter
+import er.proto.RuleHazard
 import er.proto.RuleMon
+import er.proto.RuleRoom
+import er.proto.RuleSideCondition
 import er.proto.RuleStat
+import er.proto.RuleTerrain
 import er.proto.RuleTrigger
 import er.proto.RuleTurnTick
+import er.proto.RuleWeather
 import er.proto.Weather
 import java.io.OutputStreamWriter
 
 // Hell-mode rules (proto/BattleRule.proto) -> include/generated/data/battle_rules.hh, included by src/battle_rules.cc.
 // Filters become C++ expressions over the helpers in battle_rules.cc; everything else is plain data.
 object BattleRuleGenerator : Generator {
-  const val MAX_EFFECTS = 3
+  const val MAX_EFFECTS = 8
   const val MAX_FILTER_DEPTH = 3
   const val DEFAULT_ANNOUNCE = "{B_TRAINER1_NAME}'s battle skill\\nactivates!"
 
@@ -68,6 +75,107 @@ object BattleRuleGenerator : Generator {
       else -> emptyList()
     }
 
+  // Hazard / field kinds: popup label, animation move and the engine values the runtime needs
+  private data class FieldKind(val label: String, val anim: String, val id: String = "0", val flag: String = "0")
+
+  private val RuleHazard.Kind.info
+    get() =
+      when (this) {
+        RuleHazard.Kind.SPIKES -> FieldKind("Spikes", "MOVE_SPIKES")
+        RuleHazard.Kind.TOXIC_SPIKES -> FieldKind("Toxic Spikes", "MOVE_TOXIC_SPIKES")
+        RuleHazard.Kind.STEALTH_ROCK -> FieldKind("Stealth Rock", "MOVE_STEALTH_ROCK")
+        RuleHazard.Kind.STICKY_WEB -> FieldKind("Sticky Web", "MOVE_STICKY_WEB")
+        RuleHazard.Kind.FOAMY_WEB -> FieldKind("Foamy Web", "MOVE_STICKY_WEB")
+        RuleHazard.Kind.CALTROPS -> FieldKind("Caltrops", "MOVE_CALTROPS")
+        RuleHazard.Kind.HOT_COALS -> FieldKind("Hot Coals", "MOVE_NONE")
+        RuleHazard.Kind.UNRECOGNIZED -> error("Unrecognized hazard")
+      }.copy(id = "RULE_HAZARD_$name")
+
+  private val RuleHazard.Kind.maxLayers
+    get() =
+      when (this) {
+        RuleHazard.Kind.SPIKES -> 3
+        RuleHazard.Kind.TOXIC_SPIKES -> 2
+        else -> 1
+      }
+
+  private val RuleWeather.info
+    get() =
+      when (this) {
+        RuleWeather.RULE_WEATHER_RAIN -> FieldKind("Rain", "MOVE_RAIN_DANCE", "ENUM_WEATHER_RAIN", "WEATHER_RAIN_ANY")
+        RuleWeather.RULE_WEATHER_SUN -> FieldKind("Sun", "MOVE_SUNNY_DAY", "ENUM_WEATHER_SUN", "WEATHER_SUN_ANY")
+        RuleWeather.RULE_WEATHER_SANDSTORM ->
+          FieldKind("Sandstorm", "MOVE_SANDSTORM", "ENUM_WEATHER_SANDSTORM", "WEATHER_SANDSTORM_ANY")
+        RuleWeather.RULE_WEATHER_HAIL -> FieldKind("Hail", "MOVE_HAIL", "ENUM_WEATHER_HAIL", "WEATHER_HAIL_ANY")
+        RuleWeather.RULE_WEATHER_FOG -> FieldKind("Fog", "MOVE_NONE", "ENUM_WEATHER_FOG", "WEATHER_FOG_ANY")
+        RuleWeather.RULE_WEATHER_HEAVY_RAIN ->
+          FieldKind("Heavy Rain", "MOVE_RAIN_DANCE", "ENUM_WEATHER_RAIN_PRIMAL", "WEATHER_RAIN_PRIMAL")
+        RuleWeather.RULE_WEATHER_HARSH_SUN ->
+          FieldKind("Harsh Sun", "MOVE_SUNNY_DAY", "ENUM_WEATHER_SUN_PRIMAL", "WEATHER_SUN_PRIMAL")
+        RuleWeather.RULE_WEATHER_STRONG_WINDS ->
+          FieldKind("Strong Winds", "MOVE_NONE", "ENUM_WEATHER_STRONG_WINDS", "WEATHER_STRONG_WINDS")
+        RuleWeather.UNRECOGNIZED -> error("Unrecognized weather")
+      }
+
+  private val RuleTerrain.info
+    get() =
+      when (this) {
+        RuleTerrain.RULE_TERRAIN_ELECTRIC -> FieldKind("Electric Terrain", "MOVE_ELECTRIC_TERRAIN", flag = "STATUS_FIELD_ELECTRIC_TERRAIN")
+        RuleTerrain.RULE_TERRAIN_GRASSY -> FieldKind("Grassy Terrain", "MOVE_GRASSY_TERRAIN", flag = "STATUS_FIELD_GRASSY_TERRAIN")
+        RuleTerrain.RULE_TERRAIN_MISTY -> FieldKind("Misty Terrain", "MOVE_MISTY_TERRAIN", flag = "STATUS_FIELD_MISTY_TERRAIN")
+        RuleTerrain.RULE_TERRAIN_PSYCHIC -> FieldKind("Psychic Terrain", "MOVE_PSYCHIC_TERRAIN", flag = "STATUS_FIELD_PSYCHIC_TERRAIN")
+        RuleTerrain.RULE_TERRAIN_TOXIC -> FieldKind("Toxic Terrain", "MOVE_TOXIC_TERRAIN", flag = "STATUS_FIELD_TOXIC_TERRAIN")
+        RuleTerrain.UNRECOGNIZED -> error("Unrecognized terrain")
+      }
+
+  private val RuleRoom.info
+    get() =
+      when (this) {
+        RuleRoom.RULE_ROOM_TRICK_ROOM -> FieldKind("Trick Room", "MOVE_TRICK_ROOM", flag = "STATUS_FIELD_TRICK_ROOM")
+        RuleRoom.RULE_ROOM_MAGIC_ROOM -> FieldKind("Magic Room", "MOVE_MAGIC_ROOM", flag = "STATUS_FIELD_MAGIC_ROOM")
+        RuleRoom.RULE_ROOM_WONDER_ROOM -> FieldKind("Wonder Room", "MOVE_WONDER_ROOM", flag = "STATUS_FIELD_WONDER_ROOM")
+        RuleRoom.RULE_ROOM_INVERSE_ROOM -> FieldKind("Inverse Room", "MOVE_INVERSE_ROOM", flag = "STATUS_FIELD_INVERSE_ROOM")
+        RuleRoom.RULE_ROOM_GRAVITY -> FieldKind("Gravity", "MOVE_GRAVITY", flag = "STATUS_FIELD_GRAVITY")
+        RuleRoom.RULE_ROOM_MUD_SPORT -> FieldKind("Mud Sport", "MOVE_MUD_SPORT", flag = "STATUS_FIELD_MUDSPORT")
+        RuleRoom.RULE_ROOM_WATER_SPORT -> FieldKind("Water Sport", "MOVE_WATER_SPORT", flag = "STATUS_FIELD_WATERSPORT")
+        RuleRoom.UNRECOGNIZED -> error("Unrecognized room")
+      }
+
+  private val RuleSideCondition.Kind.info
+    get() =
+      when (this) {
+        RuleSideCondition.Kind.REFLECT -> FieldKind("Reflect", "MOVE_REFLECT")
+        RuleSideCondition.Kind.LIGHT_SCREEN -> FieldKind("Light Screen", "MOVE_LIGHT_SCREEN")
+        RuleSideCondition.Kind.AURORA_VEIL -> FieldKind("Aurora Veil", "MOVE_AURORA_VEIL")
+        RuleSideCondition.Kind.TAILWIND -> FieldKind("Tailwind", "MOVE_TAILWIND")
+        RuleSideCondition.Kind.MIST -> FieldKind("Mist", "MOVE_MIST")
+        RuleSideCondition.Kind.SAFEGUARD -> FieldKind("Safeguard", "MOVE_SAFEGUARD")
+        RuleSideCondition.Kind.LUCKY_CHANT -> FieldKind("Lucky Chant", "MOVE_LUCKY_CHANT")
+        RuleSideCondition.Kind.SWAMP -> FieldKind("Swamp", "MOVE_GRASS_PLEDGE")
+        RuleSideCondition.Kind.SEA_OF_FIRE -> FieldKind("Sea of Fire", "MOVE_FIRE_PLEDGE")
+        RuleSideCondition.Kind.RAINBOW -> FieldKind("Rainbow", "MOVE_WATER_PLEDGE")
+        RuleSideCondition.Kind.SMOKESCREEN -> FieldKind("Smokescreen", "MOVE_SMOKESCREEN")
+        RuleSideCondition.Kind.UNRECOGNIZED -> error("Unrecognized side condition")
+      }.copy(id = "RULE_SIDE_CONDITION_$name")
+
+  private val RuleField.info
+    get() =
+      when (kindCase) {
+        RuleField.KindCase.WEATHER -> weather.info
+        RuleField.KindCase.TERRAIN -> terrain.info
+        RuleField.KindCase.ROOM -> room.info
+        RuleField.KindCase.SIDE_CONDITION -> sideCondition.kind.info
+        else -> error("Empty field effect")
+      }
+
+  private fun BattleRule.sideMask(side: RuleFieldSide): String =
+    when (side) {
+      RuleFieldSide.RULE_FIELD_SIDE_PLAYER -> "(1 << B_SIDE_PLAYER)"
+      RuleFieldSide.RULE_FIELD_SIDE_TRAINER -> "(1 << B_SIDE_OPPONENT)"
+      RuleFieldSide.RULE_FIELD_SIDE_BOTH -> "(1 << B_SIDE_PLAYER) | (1 << B_SIDE_OPPONENT)"
+      else -> error("Hazards and side conditions need a side (${where()}):\n$this")
+    }
+
   private fun BattleRule.defaultName(): String {
     val effect = effectList.first()
     return when (effect.kindCase) {
@@ -82,6 +190,8 @@ object BattleRuleGenerator : Generator {
       }
       RuleEffect.KindCase.USE_MOVE -> MOVE_NAMES[effect.useMove.move] ?: "Extra Move"
       RuleEffect.KindCase.HEAL_PERCENT -> "Recovery"
+      RuleEffect.KindCase.HAZARD -> effect.hazard.kind.info.label
+      RuleEffect.KindCase.FIELD -> effect.field.info.label
       else -> "Battle Skill"
     }
   }
@@ -167,6 +277,35 @@ object BattleRuleGenerator : Generator {
         fields += "target" to effect.target.name
         fields += "percent" to "${effect.healPercent}"
       }
+      RuleEffect.KindCase.HAZARD -> {
+        val hazard = effect.hazard
+        val layers = if (hazard.layers == 0) 1 else hazard.layers
+        check(layers in 1..hazard.kind.maxLayers) { "${hazard.kind} layers must be 1-${hazard.kind.maxLayers}" }
+        fields += "kind" to "RULE_EFFECT_HAZARD"
+        fields += "move" to hazard.kind.info.anim
+        fields += "id" to hazard.kind.info.id
+        fields += "sideMask" to sideMask(hazard.side)
+        fields += "layers" to "$layers"
+      }
+      RuleEffect.KindCase.FIELD -> {
+        val field = effect.field
+        val info = field.info
+        val maxTurns = if (field.sideCondition.kind == RuleSideCondition.Kind.SMOKESCREEN) 7 else 255
+        check(field.turns in 0..maxTurns) { "field turns must be 0 (permanent) to $maxTurns" }
+        fields +=
+          "kind" to
+            when (field.kindCase) {
+              RuleField.KindCase.WEATHER -> "RULE_EFFECT_WEATHER"
+              RuleField.KindCase.TERRAIN -> "RULE_EFFECT_TERRAIN"
+              RuleField.KindCase.ROOM -> "RULE_EFFECT_ROOM"
+              else -> "RULE_EFFECT_SIDE_CONDITION"
+            }
+        fields += "move" to info.anim
+        fields += "id" to info.id
+        fields += "flag" to info.flag
+        if (field.kindCase == RuleField.KindCase.SIDE_CONDITION) fields += "sideMask" to sideMask(field.sideCondition.side)
+        fields += "turns" to "${field.turns}"
+      }
       else -> error("Empty effect (${where()})")
     }
     return "{${fields.joinToString(", ") { (name, value) -> ".$name = $value" }}}"
@@ -201,6 +340,16 @@ object BattleRuleGenerator : Generator {
           check(n in 1..255) { "end_turn every/after must be 1-255" }
           listOf("RULE_TRIGGER_END_TURN", "RULE_ENTRY_EVERY", kind, "$n", if (tick.onField) "TRUE" else "FALSE")
         }
+        RuleTrigger.KindCase.BATTLE_START,
+        RuleTrigger.KindCase.ALWAYS -> {
+          // No subject: nothing for filters, stat changes, moves or heals to work on
+          check(filterCount == 0) { "battle_start / always rules can't have filters" }
+          check(effectList.all { it.kindCase == RuleEffect.KindCase.HAZARD || it.kindCase == RuleEffect.KindCase.FIELD }) {
+            "battle_start / always rules can only have hazard and field effects"
+          }
+          val kind = if (trigger.kindCase == RuleTrigger.KindCase.ALWAYS) "RULE_TRIGGER_ALWAYS" else "RULE_TRIGGER_BATTLE_START"
+          listOf(kind, "RULE_ENTRY_EVERY", "RULE_TICK_EVERY", "1", "FALSE")
+        }
         else -> error("Rule without a trigger (${where()})")
       }
 
@@ -212,7 +361,7 @@ object BattleRuleGenerator : Generator {
       |$IND// $index: ${TRAINERS_BY_RULE[this]?.joinToString() ?: ""}
       |$IND{
       |$IND$IND.trigger = ${triggerFields[0]},
-      |$IND$IND.side = ${trigger.side.name},
+      |$IND$IND.whose = ${trigger.whose.name},
       |$IND$IND.entryWhen = ${triggerFields[1]},
       |$IND$IND.tick = ${triggerFields[2]},
       |$IND$IND.tickNum = ${triggerFields[3]},

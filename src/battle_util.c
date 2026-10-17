@@ -1353,7 +1353,7 @@ void SetActiveStatChanger(int stat, s8 change) {
     gBattleResources->battleScriptsStack->savedStackData[gBattleResources->battleScriptsStack->size].statChanger = gBattleScripting.statChanger.value;
 }
 
-void SetActiveRuleStep(u8 step) {
+void SetActiveRuleStep(u16 step) {
     gBattleScripting.ruleStep = step;
     gBattleResources->battleScriptsStack->savedStackData[gBattleResources->battleScriptsStack->size].ruleStep = step;
 }
@@ -3792,6 +3792,46 @@ bool8 UseOutOfTurnAttack(u8 battler, u8 target, AbilityEnum ability, MoveEnum mo
     return TRUE;
 }
 
+// Turns on a room, Gravity or a Sport for `duration` turns. FALSE if it's already on.
+bool32 TrySetFieldTimer(u32 statusFlag, u8 duration) {
+    if (gFieldStatuses & statusFlag) return FALSE;
+
+    switch (statusFlag) {
+        case STATUS_FIELD_TRICK_ROOM:
+            gFieldTimers.started.trickRoom = TRUE;
+            gFieldTimers.trickRoomTimer = duration;
+            break;
+        case STATUS_FIELD_MAGIC_ROOM:
+            gFieldTimers.started.magicRoom = TRUE;
+            gFieldTimers.magicRoomTimer = duration;
+            break;
+        case STATUS_FIELD_WONDER_ROOM:
+            gFieldTimers.started.wonderRoom = TRUE;
+            gFieldTimers.wonderRoomTimer = duration;
+            break;
+        case STATUS_FIELD_INVERSE_ROOM:
+            gFieldTimers.started.inverseRoom = TRUE;
+            gFieldTimers.inverseRoomTimer = duration;
+            break;
+        case STATUS_FIELD_GRAVITY:
+            gFieldTimers.started.gravity = TRUE;
+            gFieldTimers.gravityTimer = duration;
+            break;
+        case STATUS_FIELD_MUDSPORT:
+            gFieldTimers.started.mudSport = TRUE;
+            gFieldTimers.mudSportTimer = duration;
+            break;
+        case STATUS_FIELD_WATERSPORT:
+            gFieldTimers.started.waterSport = TRUE;
+            gFieldTimers.waterSportTimer = duration;
+            break;
+        default:
+            return FALSE;
+    }
+    gFieldStatuses |= statusFlag;
+    return TRUE;
+}
+
 bool32 TryChangeBattleTerrain(u32 battler, u32 statusFlag, u8* timer) {
     if (!(gFieldStatuses & statusFlag) && !(gFieldStatuses & STATUS_FIELD_TERRAIN_PERMANENT)) {
         gFieldStatuses &= ~STATUS_FIELD_TERRAIN_ANY;
@@ -4279,66 +4319,31 @@ bool8 TryToSetFieldEffect(u8 battler) {
         case BATTLE_FIELD_EFFECT_ROOM:
             switch (fieldEffectId) {
                 case STATUS_FIELD_TRICK_ROOM:
-                    if (!(gFieldStatuses & STATUS_FIELD_TRICK_ROOM)) {
-                        // Enable Trick Room
-                        gFieldTimers.started.trickRoom = TRUE;
-                        gFieldStatuses |= STATUS_FIELD_TRICK_ROOM;
-                        if (isTemporary)
-                            gFieldTimers.trickRoomTimer = TRICK_ROOM_DURATION;
-                        else
-                            gFieldTimers.trickRoomTimer = ROOM_DURATION_MAX;
+                    if (TrySetFieldTimer(STATUS_FIELD_TRICK_ROOM, isTemporary ? TRICK_ROOM_DURATION : ROOM_DURATION_MAX)) {
                         BattleScriptPushCursorAndCallback(BattleScript_SetTrickRoomFromScript);
                         return TRUE;
                     }
                     break;
                 case STATUS_FIELD_MAGIC_ROOM:
-                    if (!(gFieldStatuses & STATUS_FIELD_MAGIC_ROOM)) {
-                        // Enable Magic Room
-                        gFieldTimers.started.magicRoom = TRUE;
-                        gFieldStatuses |= STATUS_FIELD_MAGIC_ROOM;
-                        if (isTemporary)
-                            gFieldTimers.magicRoomTimer = MAGIC_ROOM_DURATION;
-                        else
-                            gFieldTimers.magicRoomTimer = ROOM_DURATION_MAX;
+                    if (TrySetFieldTimer(STATUS_FIELD_MAGIC_ROOM, isTemporary ? MAGIC_ROOM_DURATION : ROOM_DURATION_MAX)) {
                         BattleScriptPushCursorAndCallback(BattleScript_SetMagicRoomFromScript);
                         return TRUE;
                     }
                     break;
                 case STATUS_FIELD_WONDER_ROOM:
-                    if (!(gFieldStatuses & STATUS_FIELD_WONDER_ROOM)) {
-                        // Enable Wonder Room
-                        gFieldTimers.started.wonderRoom = TRUE;
-                        gFieldStatuses |= STATUS_FIELD_WONDER_ROOM;
-                        if (isTemporary)
-                            gFieldTimers.wonderRoomTimer = WONDER_ROOM_DURATION;
-                        else
-                            gFieldTimers.wonderRoomTimer = ROOM_DURATION_MAX;
+                    if (TrySetFieldTimer(STATUS_FIELD_WONDER_ROOM, isTemporary ? WONDER_ROOM_DURATION : ROOM_DURATION_MAX)) {
                         BattleScriptPushCursorAndCallback(BattleScript_SetTrickRoomFromScript);
                         return TRUE;
                     }
                     break;
                 case STATUS_FIELD_INVERSE_ROOM:
-                    if (!(gFieldStatuses & STATUS_FIELD_INVERSE_ROOM)) {
-                        // Enable Inverse Room
-                        gFieldTimers.started.inverseRoom = TRUE;
-                        gFieldStatuses |= STATUS_FIELD_INVERSE_ROOM;
-                        if (isTemporary)
-                            gFieldTimers.inverseRoomTimer = INVERSE_ROOM_DURATION;
-                        else
-                            gFieldTimers.inverseRoomTimer = ROOM_DURATION_MAX;
+                    if (TrySetFieldTimer(STATUS_FIELD_INVERSE_ROOM, isTemporary ? INVERSE_ROOM_DURATION : ROOM_DURATION_MAX)) {
                         BattleScriptPushCursorAndCallback(BattleScript_SetInverseRoomFromScript);
                         return TRUE;
                     }
                     break;
                 case STATUS_FIELD_GRAVITY:
-                    if (!(gFieldStatuses & STATUS_FIELD_GRAVITY)) {
-                        // Enable Trick Room
-                        gFieldStatuses |= STATUS_FIELD_GRAVITY;
-                        gFieldTimers.started.gravity = TRUE;
-                        if (isTemporary)
-                            gFieldTimers.gravityTimer = GRAVITY_DURATION;
-                        else
-                            gFieldTimers.gravityTimer = ROOM_DURATION_MAX;
+                    if (TrySetFieldTimer(STATUS_FIELD_GRAVITY, isTemporary ? GRAVITY_DURATION : ROOM_DURATION_MAX)) {
                         BattleScriptPushCursorAndCallback(BattleScript_SetGravityFromScript);
                         return TRUE;
                     }
