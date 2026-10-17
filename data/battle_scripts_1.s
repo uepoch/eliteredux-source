@@ -12362,10 +12362,6 @@ BattleScript_AnnounceBattleSkill::
 	waitmessage B_WAIT_TIME_LONG
 	return
 
-BattleScript_AnnounceBattleSkillEnd3::
-	call BattleScript_AnnounceBattleSkill
-	end3
-
 @ Hell-mode rules (src/battle_rules.cc). C pushes this with gBattleScripting.activeRule, ruleStep 0,
 @ gStackBattler1 = the subject and cMULTISTRING_CHOOSER = whether to print the announce line, all saved
 @ in this script's frame. battlerulestep then calls one sub-script per effect step.

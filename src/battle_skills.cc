@@ -25,14 +25,6 @@ extern "C" {
 
 #define MUL(val) MUL_MODIFIER(modifier, val)
 
-static void Unregister(BattleSkillEnum skill) {
-    for (int i = 0; i < ARRAY_COUNT(gActiveSkills); i++) {
-        FILTER(gActiveSkills[i] == skill)
-        gActiveSkills[i] = SKILL_NONE;
-        break;
-    }
-}
-
 static int RunEntryAnnounceScript(BattleSkillEnum skill, const u8* script) {
     gBattleScripting.abilityPopupOverwrite = skill;
     BattleScriptPushCursorAndCallback(script);
@@ -59,39 +51,6 @@ Hopefully this works without any issues :)
 
 template <BattleSkillTemplateEnum Template, auto... Args>
 constexpr BattleSkill BattleSkillTemplate;
-
-template <AbilityEnum Ability>
-constexpr BattleSkill BattleSkillTemplate<SKILL_TEMPLATE_EXTRA_ABILITY, Ability> = {
-    .onBattleStart = +[](ON_BATTLE_START) -> int {
-        Unregister(skill);
-        PREPARE_ABILITY_BUFFER(gBattleTextBuff1, Ability);
-
-        return RunEntryAnnounceScript(skill, BattleScript_AnnounceBattleSkillEnd3);
-    },
-};
-
-template <AbilityEnum Ability1, AbilityEnum Ability2>
-constexpr BattleSkill BattleSkillTemplate<SKILL_TEMPLATE_EXTRA_ABILITY, Ability1, Ability2> = {
-    .onBattleStart = +[](ON_BATTLE_START) -> int {
-        Unregister(skill);
-        PREPARE_ABILITY_BUFFER(gBattleTextBuff1, Ability1);
-        PREPARE_ABILITY_BUFFER(gBattleTextBuff2, Ability2);
-
-        return RunEntryAnnounceScript(skill, BattleScript_AnnounceBattleSkillEnd3);
-    },
-};
-
-template <AbilityEnum Ability1, AbilityEnum Ability2, AbilityEnum Ability3>
-constexpr BattleSkill BattleSkillTemplate<SKILL_TEMPLATE_EXTRA_ABILITY, Ability1, Ability2, Ability3> = {
-    .onBattleStart = +[](ON_BATTLE_START) -> int {
-        Unregister(skill);
-        PREPARE_ABILITY_BUFFER(gBattleTextBuff1, Ability1);
-        PREPARE_ABILITY_BUFFER(gBattleTextBuff2, Ability2);
-        PREPARE_ABILITY_BUFFER(gBattleTextBuff3, Ability3);
-
-        return RunEntryAnnounceScript(skill, BattleScript_AnnounceBattleSkillEnd3);
-    },
-};
 
 template <>
 constexpr BattleSkill Impl<SKILL_EVIOLITE> = {
