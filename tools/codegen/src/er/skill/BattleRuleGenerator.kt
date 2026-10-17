@@ -127,7 +127,8 @@ object BattleRuleGenerator : Generator {
   }
 
   private fun BattleRule.effectCode(effect: RuleEffect): String {
-    val fields = mutableListOf<String>()
+    // Field name to value, in struct declaration order (C++ designated initializers need it)
+    val fields = mutableListOf<Pair<String, String>>()
     when (effect.kindCase) {
       RuleEffect.KindCase.STAT_CHANGE -> {
         val change = effect.statChange
@@ -137,40 +138,38 @@ object BattleRuleGenerator : Generator {
           change.statList.filter { it == RuleStat.RULE_STAT_HIGHEST || it == RuleStat.RULE_STAT_HIGHEST_OFFENSE }.distinct()
         check(picks.size <= 1) { "stat_change can only have one of RULE_STAT_HIGHEST / RULE_STAT_HIGHEST_OFFENSE" }
         val mask = change.statList.flatMap { it.mask() }.distinct()
-        fields += "RULE_EFFECT_STAT_CHANGE"
-        fields += effect.target.name
-        fields += "RULE_TARGET_SUBJECT"
-        fields += if (mask.isEmpty()) "0" else mask.joinToString(" | ") { "(1 << $it)" }
+        fields += "kind" to "RULE_EFFECT_STAT_CHANGE"
+        fields += "target" to effect.target.name
+        fields += "statMask" to if (mask.isEmpty()) "0" else mask.joinToString(" | ") { "(1 << $it)" }
         fields +=
-          when (picks.firstOrNull()) {
-            RuleStat.RULE_STAT_HIGHEST -> "RULE_PICK_HIGHEST"
-            RuleStat.RULE_STAT_HIGHEST_OFFENSE -> "RULE_PICK_HIGHEST_OFFENSE"
-            else -> "RULE_PICK_NONE"
-          }
-        fields += "${change.amount}"
+          "pick" to
+            when (picks.firstOrNull()) {
+              RuleStat.RULE_STAT_HIGHEST -> "RULE_PICK_HIGHEST"
+              RuleStat.RULE_STAT_HIGHEST_OFFENSE -> "RULE_PICK_HIGHEST_OFFENSE"
+              else -> "RULE_PICK_NONE"
+            }
+        fields += "amount" to "${change.amount}"
+        if (change.unblockable) fields += "unblockable" to "TRUE"
       }
       RuleEffect.KindCase.USE_MOVE -> {
         val move = effect.useMove
         check(move.move != MoveEnum.MOVE_NONE) { "use_move without a move" }
         check(move.power in 0..255) { "use_move power must be 0-255" }
-        fields += "RULE_EFFECT_USE_MOVE"
-        fields += effect.target.name
-        fields += move.user.name
-        fields += listOf("0", "RULE_PICK_NONE", "0")
-        fields += move.move.name
-        fields += "${move.power}"
+        fields += "kind" to "RULE_EFFECT_USE_MOVE"
+        fields += "target" to effect.target.name
+        fields += "user" to move.user.name
+        fields += "move" to move.move.name
+        fields += "power" to "${move.power}"
       }
       RuleEffect.KindCase.HEAL_PERCENT -> {
         check(effect.healPercent in 1..100) { "heal_percent must be 1-100" }
-        fields += "RULE_EFFECT_HEAL"
-        fields += effect.target.name
-        fields += listOf("RULE_TARGET_SUBJECT", "0", "RULE_PICK_NONE", "0", "MOVE_NONE", "0")
-        fields += "${effect.healPercent}"
+        fields += "kind" to "RULE_EFFECT_HEAL"
+        fields += "target" to effect.target.name
+        fields += "percent" to "${effect.healPercent}"
       }
       else -> error("Empty effect (${where()})")
     }
-    val names = listOf("kind", "target", "user", "statMask", "pick", "amount", "move", "power", "percent")
-    return "{${names.zip(fields).joinToString(", ") { (name, value) -> ".$name = $value" }}}"
+    return "{${fields.joinToString(", ") { (name, value) -> ".$name = $value" }}}"
   }
 
   private fun BattleRule.code(index: Int): String {

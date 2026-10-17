@@ -12470,12 +12470,40 @@ BattleScript_BattleRule::
 	waitmessage B_WAIT_TIME_LONG
 BattleScript_BattleRuleEffects:
 	saveattackertostack3
+	writestackbattler BS_TARGET, 4
 	battlerulestep BattleScript_BattleRuleEnd
 BattleScript_BattleRuleEnd:
 	readattackerfromstack3
+	copybyte gBattlerTarget, gStackBattler4
 	end3
 
-@ Sub-scripts: C sets gBattlerAttacker to the target (and the stat changer / gBattleMoveDamage)
+@ Sub-scripts: C sets gBattlerAttacker to the Pokémon affected (and the stat changer / gBattleMoveDamage).
+@ The Target versions are for changes on the player's Pokémon caused by the trainer's (gBattlerAttacker = the
+@ trainer's Pokémon, gBattlerTarget = the affected one), so Clear Body, Mist, Mirror Armor... apply. Not Protect.
+BattleScript_BattleRuleTargetStatUp::
+	statbuffchange STAT_BUFF_ALLOW_PTR | STAT_BUFF_NOT_PROTECT_AFFECTED, BattleScript_BattleRuleStatChangeEnd
+	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_ROSE_EMPTY, BattleScript_BattleRuleStatChangeEnd
+	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_INCREASE, BattleScript_BattleRuleTargetStatUpString
+	setgraphicalstatchangevalues
+	playanimation BS_TARGET, B_ANIM_STATS_CHANGE, sB_ANIM_ARG1
+	waitanimation
+BattleScript_BattleRuleTargetStatUpString:
+	printfromtable gStatUpStringIds
+	waitmessage B_WAIT_TIME_LONG
+	return
+
+BattleScript_BattleRuleTargetStatDown::
+	statbuffchange STAT_BUFF_ALLOW_PTR | STAT_BUFF_NOT_PROTECT_AFFECTED, BattleScript_BattleRuleStatChangeEnd
+	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_FELL_EMPTY, BattleScript_BattleRuleStatChangeEnd
+	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_DECREASE, BattleScript_BattleRuleTargetStatDownString
+	setgraphicalstatchangevalues
+	playanimation BS_TARGET, B_ANIM_STATS_CHANGE, sB_ANIM_ARG1
+	waitanimation
+BattleScript_BattleRuleTargetStatDownString:
+	printfromtable gStatDownStringIds
+	waitmessage B_WAIT_TIME_LONG
+	return
+
 BattleScript_BattleRuleStatUp::
 	statbuffchange MOVE_EFFECT_AFFECTS_USER | STAT_BUFF_ALLOW_PTR, BattleScript_BattleRuleStatChangeEnd
 	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_INCREASE, BattleScript_BattleRuleStatChangeEnd

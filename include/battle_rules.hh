@@ -70,6 +70,7 @@ struct BattleRuleEffect {
     MoveEnum move;            // use_move
     u8 power;                 // use_move, 0 = the move's own
     u8 percent;               // heal
+    bool8 unblockable;        // stat_change: skip Clear Body, Mist, Mirror Armor... on the player's mons
 };
 
 // Generated from the rule's filters. Subject = the mon the event is about.
