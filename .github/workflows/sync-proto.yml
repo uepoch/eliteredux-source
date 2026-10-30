@@ -64,6 +64,26 @@ jobs:
             echo "__LOG__"
           } >> "$GITHUB_OUTPUT"
 
+      # Uses docker/Dockerfile (codegen stages only).
+      - name: Set up Docker Buildx
+        if: steps.bump.outputs.changed == 'true'
+        uses: docker/setup-buildx-action@v3
+
+      # Don't open a sync PR for a proto that the codegen can't handle. The headers are
+      # gitignored, so nothing is committed: this only checks that the new er-config content
+      # still compiles and generates. The layer cache keeps the Kotlin compile between runs.
+      - name: Run codegen on the new proto
+        if: steps.bump.outputs.changed == 'true'
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          file: docker/Dockerfile
+          target: headers-artifact
+          platforms: linux/amd64
+          outputs: type=cacheonly
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+
       - name: Open or update the sync PR
         if: steps.bump.outputs.changed == 'true'
         uses: peter-evans/create-pull-request@v7
@@ -84,6 +104,8 @@ jobs:
           title: Sync proto with er-config upcoming
           body: |
             Auto-sync `proto` with er-config `upcoming`.
+
+            Codegen ran successfully on this version of `proto`.
 
             [Full diff](https://github.com/Elite-Redux/er-config/compare/${{ steps.bump.outputs.old }}...${{ steps.bump.outputs.new }})
 
